@@ -1017,6 +1017,14 @@ import projectsData from '../data/projects.json';
   }
 }
 
+.project-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
 .project-row.expanded .project-images {
   max-height: 30vh;
 }

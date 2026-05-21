@@ -721,9 +721,9 @@ import projectsData from '../data/projects.json';
     to   { transform: translateX(0); }
   }
   @media (max-width: 768px) {
-    .clients-section { gap: 60px; }
-    .marquee-track { gap: 60px; }
-    .marquee-track img { height: 40px; }
+    .clients-section { gap: 0px; }
+    .marquee-track { gap: 00px; }
+    .marquee-track img { height: 70px; }
 
   }
 
@@ -918,34 +918,122 @@ import projectsData from '../data/projects.json';
     grid-auto-columns: 1fr;
     width: 100vw;
     max-height: 0;
+    gap: 0;
     overflow: hidden;
     transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .project-row.expanded .project-images {
-    max-height: 22vh;
+.project-row.expanded .project-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 768px) {
+  /* Tabs: horizontal scroll instead of wrapping */
+.projects-tabs {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px 0;
+  padding: 0 12px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+.projects-tabs::-webkit-scrollbar { display: none; }
+.projects-tab {
+  font-size: 0.55rem;
+  padding: 4px 0;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+   .project-summary {
+    grid-template-columns: 1fr auto;
+    gap: 4px 12px;
+    padding: 16px 12px;
+    height: auto;
+    font-size: 0.7rem;
+    align-items: center;
   }
-  .project-images img {
-    width: 100%;
-    height: 22vh;
-    object-fit: cover;
+  .project-title {
+    font-size: 0.85rem;
+    grid-column: 1;
+  }
+.project-year {
+    display: none;
+    font-size: 0.65rem;
+    color: grey;
+    grid-column: 2;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .project-row.expanded .project-year {
+    display: block;
+  }
+  .project-description {
+    display: none;
+    grid-column: 1 / -1;
+    margin-top: 8px;
+    font-size: 0.7rem;
+  }
+  .project-row.expanded .project-description {
     display: block;
   }
 
-  @media (max-width: 768px) {
-    .projects-tabs { padding: 0 20px; gap: 16p
-    x; }
-    .projects-tab { font-size: 0.7rem; }
-    .project-summary {
-      grid-template-columns: 1fr;
-      gap: 8px;
-      padding: 18px 20px;
-      font-size: 0.7rem;
-    }
-    .project-images { grid-auto-columns: 100%; }
-    .project-images img { height: 40vh; }
-    .project-row.expanded .project-images { max-height: 40vh; }
+  /* Image strip: horizontal scroll carousel */
+  .project-images {
+    display: flex;
+    grid-template-columns: none;
+    grid-auto-flow: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
+  .project-images::-webkit-scrollbar { display: none; }
+  .project-images img {
+    flex-shrink: 0;
+    width: 70vw;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    scroll-snap-align: start;
+  }
+  .project-row {
+    overflow: hidden;
+  }
+  .project-row.expanded .project-images {
+    display: flex;
+    width: max-content;
+    overflow: visible;
+    max-height: 30vh;
+    will-change: transform;
+    touch-action: pan-y;
+  }
+  .project-row.expanded .project-images img {
+    flex-shrink: 0;
+    height: 30vh;
+    width: auto;
+    margin: 0;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+  }
+}
 
+.project-row.expanded .project-images {
+  max-height: 30vh;
+}
+.project-row.expanded .project-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
   /* ════════════════════════════════════════════════════════════ */
   /* LIBRARY PREVIEW GRID                                          */
   /* ════════════════════════════════════════════════════════════ */
@@ -993,7 +1081,6 @@ function setRealVH() {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
   if (window.innerWidth <= 767) {
     document.body.style.overflow = 'hidden';
-    document.documentElement.style.transform = 'translateZ(0)';
   }
 }
 
@@ -1026,9 +1113,18 @@ window.scrollTo(0, 0);
 function startSlideshow() {
   const images = document.querySelectorAll('#flashSequence .flash-img');
   if (!images.length) return;
-  images.forEach(img => {
+  images.forEach((img, index) => {
     const isMobile = window.innerWidth <= 767;
     const heightValue = isMobile ? 'calc(var(--vh) * 100)' : '100vh';
+    // On mobile, align images 01 (index 0) and 06 (index 5) to the left
+    let objectPosition;
+if (isMobile && (index === 0 || index === 5)) {
+  objectPosition = 'left center';
+} else if (!isMobile && (index === 0 || index === 5 || index === 9)) {
+  objectPosition = 'center top';
+} else {
+  objectPosition = 'center center';
+}
     img.style.cssText += `
       opacity: 0 !important;
       transition: opacity 1.2s ease-in-out !important;
@@ -1039,6 +1135,7 @@ function startSlideshow() {
       width: 100vw !important;
       height: ${heightValue} !important;
       object-fit: cover !important;
+      object-position: ${objectPosition} !important;
       margin: 0 !important;
       padding: 0 !important;
       border: none !important;
@@ -1089,23 +1186,29 @@ setTimeout(() => {
   }
 
 
-// MOBILE: no moon animation, slideshow plays immediately
+// MOBILE: same moon animation as desktop, with delayed subText slide-in
   if (window.innerWidth <= 767) {
-    const moonEl = document.querySelector('.moon');
-    const heroEl = document.getElementById('cstHero');
-    const holeEl = document.getElementById('revealHole');
-    const rimEl = document.getElementById('holeRim');
+    // Trigger the moon's CSS transition (needs !important to beat the @media rule)
+    const _moonM = document.querySelector('.moon');
+    if (_moonM) {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        _moonM.style.setProperty('transform', 'translate(-50%, -50vh)', 'important');
+      }));
+    }
+    syncHoleToMoon(5500);
 
-    // Hide all moon-related elements
-    if (moonEl) moonEl.style.display = 'none';
-    if (holeEl) holeEl.style.display = 'none';
-    if (rimEl) rimEl.style.display = 'none';
-    if (heroEl) heroEl.style.backgroundColor = 'transparent';
+    setTimeout(() => startSlideshow(), 1000);
 
-    // Start slideshow right away
-    startSlideshow();
+    setTimeout(() => {
+      const moonEl = document.querySelector('.moon');
+      const holeEl = document.getElementById('revealHole');
+      const rimEl = document.getElementById('holeRim');
+      if (moonEl) moonEl.style.opacity = '0';
+      if (holeEl) holeEl.style.opacity = '0';
+      if (rimEl) rimEl.style.opacity = '0';
+    }, 4800);
 
-    // Slide subText in from the right
+    // Slide subText in after the veil starts fading
     setTimeout(() => {
       const subText = document.getElementById('subText');
       if (subText) {
@@ -1117,78 +1220,39 @@ setTimeout(() => {
         subText.style.transform = 'translate3d(0,0,0)';
         subText.style.opacity = '1';
       }
-    }, 600);
+    }, 4200);
 
-    try { sessionStorage.setItem('cst-intro-seen', 'true'); } catch (e) {}
+    setTimeout(() => {
+      try { sessionStorage.setItem('cst-intro-seen', 'true'); } catch (e) {}
+    }, 5500);
     return;
   }
 
-  setTimeout(() => {
-    const isPhone = window.innerWidth <= 767;
-    const subText = document.getElementById('subText');
-    if (isPhone && subText) {
-      subText.style.visibility = 'visible';
-      subText.style.transform = 'translateX(140vw)';
-      subText.style.opacity = '0';
-      subText.offsetHeight;
-      subText.style.transition = 'transform 900ms cubic-bezier(0.22,1,0.36,1), opacity 900ms ease-out';
-      subText.style.transform = 'translate3d(0,0,0)';
-      subText.style.opacity = '1';
-    }
-  }, 2500);
-}, 100);
+  // DESKTOP: play moon animation
 
-let resizeTimeout;
-window.addEventListener('resize', () => {
-  if (resizeTimeout) return;
-  resizeTimeout = setTimeout(() => {
-    setRealVH();
-    resizeTimeout = null;
-  }, 100);
-}, { passive: true });
-
-window.addEventListener('orientationchange', setRealVH, { passive: true });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const mqPhone = window.matchMedia('(max-width: 767px)');
-  const imgs = Array.from(document.querySelectorAll('#flashSequence .flash-img'));
-
-  imgs.forEach(img => {
-    if (!img.dataset.desktop) {
-      img.dataset.desktop = img.getAttribute('src') || '';
-      img.dataset.desktopSrcset = img.getAttribute('srcset') || '';
-    }
-  });
-
-  function applyResponsiveImages() {
-    imgs.forEach(img => {
-      const desktop = img.dataset.desktop || '';
-      if (!mqPhone.matches) {
-        if (desktop && img.src.indexOf(desktop) === -1) {
-          img.src = desktop;
-          const deskSet = img.dataset.desktopSrcset || '';
-          if (deskSet) img.srcset = deskSet;
-        }
-      }
-    });
+  // Trigger the moon's CSS transition
+  const _moonD = document.querySelector('.moon');
+  if (_moonD) {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      _moonD.style.transform = 'translate(calc(-50vw - var(--vh) * 47.5), -50%)';
+    }));
   }
-  applyResponsiveImages();
-  mqPhone.addEventListener('change', applyResponsiveImages);
-});
+  syncHoleToMoon(5500);
+  setTimeout(() => startSlideshow(), 1000);
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth < 768) return;
-  const container = document.getElementById('textContainer');
-  const sub = document.querySelector('.sub-text');
-  if (!container || !sub) return;
-  const onSubDone = (e) => {
-    if (e.target !== sub) return;
-    requestAnimationFrame(() => container.classList.add('text-centered'));
-    sub.removeEventListener('animationend', onSubDone);
-  };
-  sub.addEventListener('animationend', onSubDone);
-});
+  setTimeout(() => {
+    const moonEl = document.querySelector('.moon');
+    const holeEl = document.getElementById('revealHole');
+    const rimEl = document.getElementById('holeRim');
+    if (moonEl) moonEl.style.opacity = '0';
+    if (holeEl) holeEl.style.opacity = '0';
+    if (rimEl) rimEl.style.opacity = '0';
+  }, 4800);
 
+  setTimeout(() => {
+    try { sessionStorage.setItem('cst-intro-seen', 'true'); } catch (e) {}
+  }, 5500);
+}, 100);
 // ════════════════════════════════════════════════════════════
 // PROJECTS — tab switching + expandable rows
 // ════════════════════════════════════════════════════════════
@@ -1223,6 +1287,74 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Auto-scroll project image strips on mobile (pauses on touch/hover)
+function initProjectImageAutoScroll() {
+  if (window.innerWidth > 767) return;
+
+  document.querySelectorAll('.project-row').forEach(row => {
+    const strip = row.querySelector('.project-images');
+    if (!strip) return;
+
+    let pos = 0;
+    let direction = 1;
+    const speed = 0.5;
+    let isPaused = false;
+    let isDragging = false;
+    let startX = 0, startY = 0, startPos = 0;
+    let resumeTimer;
+
+    function getMaxPos() {
+      const total = Array.from(strip.children).reduce((s, el) => s + el.offsetWidth, 0);
+      return Math.max(0, total - (strip.parentElement?.offsetWidth || window.innerWidth));
+    }
+
+    function tick() {
+      if (row.classList.contains('expanded') && !isPaused && !isDragging) {
+        const max = getMaxPos();
+        if (max > 0) {
+          pos += direction * speed;
+          if (pos >= max) { direction = -1; pos = max; }
+          if (pos <= 0) { direction = 1; pos = 0; }
+          strip.style.transform = `translateX(${-pos}px)`;
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    strip.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      clearTimeout(resumeTimer);
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      startPos = pos;
+    }, { passive: true });
+
+    strip.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const dx = e.touches[0].clientX - startX;
+      const dy = e.touches[0].clientY - startY;
+      if (Math.abs(dx) > Math.abs(dy) * 1.5) {
+        e.preventDefault();
+        pos = Math.max(0, Math.min(getMaxPos(), startPos - dx));
+        strip.style.transform = `translateX(${-pos}px)`;
+      }
+    }, { passive: false });
+
+    strip.addEventListener('touchend', () => {
+      isDragging = false;
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => { isPaused = false; }, 2000);
+    });
+
+    tick();
+  });
+}
+
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  initProjectImageAutoScroll();
+} else {
+  document.addEventListener('DOMContentLoaded', initProjectImageAutoScroll);
+}
 // ════════════════════════════════════════════════════════════
 // SERVICES tabs — wired here because this script runs reliably
 // ════════════════════════════════════════════════════════════

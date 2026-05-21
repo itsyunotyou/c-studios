@@ -396,17 +396,11 @@ import projectsData from '../data/projects.json';
       height: calc(var(--vh) * 100) !important;
     }
 
-  .moon {
-    background: transparent !important;
-    width: 80vw !important;
-    height: 80vw !important;
-    left: 50% !important;
-    top: auto !important;
-    bottom: -40vw !important;
-    transform: translate(-50%, 80vw) !important;
-    transition: transform 1.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 1s ease-out !important;
+.moon { 
+    width: calc(var(--vh) * 75) !important; 
+    height: calc(var(--vh) * 75) !important; 
+    left: 100vw; 
   }
-
     #cstHero .container.text-centered {
       left: 5vw !important;
       transform: translateY(-50%) !important;
@@ -1169,123 +1163,80 @@ setTimeout(() => {
   swapMobileImages();
   setRealVH();
 
-  // Skip intro on revisits — go straight to slideshow loop
+  // Skip intro on revisits — go straight to slideshow
   let introSeen = false;
   try { introSeen = sessionStorage.getItem('cst-intro-seen') === 'true'; } catch (e) {}
   if (introSeen) {
-    const moon = document.querySelector('.moon');
-    if (moon) moon.style.display = 'none';
-    const hole = document.getElementById('revealHole');
-    if (hole) hole.style.display = 'none';
-    const rim = document.getElementById('holeRim');
-    if (rim) rim.style.display = 'none';
+    const m = document.querySelector('.moon');
+    if (m) m.style.display = 'none';
+    const h = document.getElementById('revealHole');
+    if (h) h.style.display = 'none';
+    const r = document.getElementById('holeRim');
+    if (r) r.style.display = 'none';
     const hero = document.getElementById('cstHero');
     if (hero) hero.style.backgroundColor = 'transparent';
-    startSlideshow();
-    return;
-  }
-
-
-// MOBILE: no moon animation, slideshow plays immediately
-  if (window.innerWidth <= 767) {
-    const moonEl = document.querySelector('.moon');
-    const heroEl = document.getElementById('cstHero');
-    const holeEl = document.getElementById('revealHole');
-    const rimEl = document.getElementById('holeRim');
-
-    // Hide all moon-related elements
-    if (moonEl) moonEl.style.display = 'none';
-    if (holeEl) holeEl.style.display = 'none';
-    if (rimEl) rimEl.style.display = 'none';
-    if (heroEl) heroEl.style.backgroundColor = 'transparent';
-
-    // Start slideshow right away
-    startSlideshow();
-
-    // Slide subText in from the right
-    setTimeout(() => {
-      const subText = document.getElementById('subText');
-      if (subText) {
-        subText.style.visibility = 'visible';
-        subText.style.transform = 'translateX(140vw)';
-        subText.style.opacity = '0';
-        void subText.offsetHeight;
-        subText.style.transition = 'transform 900ms cubic-bezier(0.22,1,0.36,1), opacity 900ms ease-out';
-        subText.style.transform = 'translate3d(0,0,0)';
-        subText.style.opacity = '1';
+    if (window.innerWidth <= 767) {
+      const sub = document.getElementById('subText');
+      if (sub) {
+        sub.style.visibility = 'visible';
+        sub.style.opacity = '1';
+        sub.style.transform = 'translateX(0)';
       }
-    }, 600);
-
-    try { sessionStorage.setItem('cst-intro-seen', 'true'); } catch (e) {}
+    }
+    startSlideshow();
     return;
   }
 
-  setTimeout(() => {
-    const isPhone = window.innerWidth <= 767;
-    const subText = document.getElementById('subText');
-    if (isPhone && subText) {
-      subText.style.visibility = 'visible';
-      subText.style.transform = 'translateX(140vw)';
-      subText.style.opacity = '0';
-      subText.offsetHeight;
-      subText.style.transition = 'transform 900ms cubic-bezier(0.22,1,0.36,1), opacity 900ms ease-out';
-      subText.style.transform = 'translate3d(0,0,0)';
-      subText.style.opacity = '1';
-    }
-  }, 2500);
-}, 100);
+  const moon = document.querySelector('.moon');
+  if (!moon) return;
 
-let resizeTimeout;
-window.addEventListener('resize', () => {
-  if (resizeTimeout) return;
-  resizeTimeout = setTimeout(() => {
-    setRealVH();
-    resizeTimeout = null;
-  }, 100);
-}, { passive: true });
+  syncHoleToMoon(5200);
 
-window.addEventListener('orientationchange', setRealVH, { passive: true });
+  const overhangRatio = (window.innerWidth <= 767) ? 0.45 : 0.10;
+  const r0 = moon.getBoundingClientRect();
+  const overhangPx = r0.width * overhangRatio;
+  moon.style.transform = `translateY(-50%) translateX(${-(r0.width - overhangPx)}px)`;
 
-document.addEventListener('DOMContentLoaded', () => {
-  const mqPhone = window.matchMedia('(max-width: 767px)');
-  const imgs = Array.from(document.querySelectorAll('#flashSequence .flash-img'));
+  moon.addEventListener('transitionend', function onMoonSlideEnd(e) {
+    if (e.propertyName !== 'transform') return;
+    moon.removeEventListener('transitionend', onMoonSlideEnd);
 
-  imgs.forEach(img => {
-    if (!img.dataset.desktop) {
-      img.dataset.desktop = img.getAttribute('src') || '';
-      img.dataset.desktopSrcset = img.getAttribute('srcset') || '';
-    }
+    moon.style.transition = 'transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 1s ease-in';
+    moon.style.transform = 'translateY(-50%) translateX(-72vw) scale(2.3)';
+
+    moon.addEventListener('transitionend', function onExpandEnd(ev) {
+      if (ev.propertyName !== 'transform') return;
+      moon.removeEventListener('transitionend', onExpandEnd);
+
+      const hole = document.getElementById('revealHole');
+      const rim = document.getElementById('holeRim');
+      if (hole) hole.style.opacity = '0';
+      if (rim) rim.style.opacity = '0';
+      const hero = document.getElementById('cstHero');
+      if (hero) hero.style.backgroundColor = 'transparent';
+
+      setTimeout(() => startSlideshow(), 200);
+      try { sessionStorage.setItem('cst-intro-seen', 'true'); } catch (e) {}
+    }, { once: true });
   });
 
-  function applyResponsiveImages() {
-    imgs.forEach(img => {
-      const desktop = img.dataset.desktop || '';
-      if (!mqPhone.matches) {
-        if (desktop && img.src.indexOf(desktop) === -1) {
-          img.src = desktop;
-          const deskSet = img.dataset.desktopSrcset || '';
-          if (deskSet) img.srcset = deskSet;
-        }
+  // Mobile subText slide-in (parallel to moon)
+  setTimeout(() => {
+    if (window.innerWidth <= 767) {
+      const sub = document.getElementById('subText');
+      if (sub) {
+        sub.style.visibility = 'visible';
+        sub.style.transform = 'translateX(140vw)';
+        sub.style.opacity = '0';
+        sub.offsetHeight;
+        sub.style.transition = 'transform 900ms cubic-bezier(0.22,1,0.36,1), opacity 900ms ease-out';
+        sub.style.transform = 'translate3d(0,0,0)';
+        sub.style.opacity = '1';
       }
-    });
-  }
-  applyResponsiveImages();
-  mqPhone.addEventListener('change', applyResponsiveImages);
-});
+    }
+  }, 2500);
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth < 768) return;
-  const container = document.getElementById('textContainer');
-  const sub = document.querySelector('.sub-text');
-  if (!container || !sub) return;
-  const onSubDone = (e) => {
-    if (e.target !== sub) return;
-    requestAnimationFrame(() => container.classList.add('text-centered'));
-    sub.removeEventListener('animationend', onSubDone);
-  };
-  sub.addEventListener('animationend', onSubDone);
-});
-
+}, 100);
 // ════════════════════════════════════════════════════════════
 // PROJECTS — tab switching + expandable rows
 // ════════════════════════════════════════════════════════════

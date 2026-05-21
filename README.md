@@ -33,10 +33,22 @@ c-studios-astro/
 │   │   └── library.astro  # Full interactive library page
 │   └── styles/
 │       └── global.css
-└── scripts/
-    ├── csv-to-json.mjs    # Import additional CSVs (Image/Sound/Film)
-    └── compute-colors.mjs # Average-color computation for images
+└── scripts/                          # Build-time + one-off helpers
+    ├── csv-to-json.mjs                # Library CSVs → JSON (data sync)
+    ├── csv-to-projects.mjs            # projects.csv → projects.json (npm run sync-projects)
+    ├── json-to-csv.mjs                # Reverse direction, for editing in a spreadsheet
+    ├── compute-colors.mjs             # Dominant RGB per reference image (npm run compute-colors)
+    ├── generate-variants.mjs          # Responsive image variants (npm run generate-variants)
+    ├── generate-library-thumbs.mjs    # Library thumbnails
+    ├── import-library.mjs             # One-off: WordPress library import
+    ├── import-library-text.mjs        # One-off: text-category import
+    └── import-wp-images.mjs           # One-off: WordPress images import
 ```
+
+**Active scripts** (wired into npm): `csv-to-json`, `csv-to-projects`,
+`compute-colors`, `generate-variants`. **One-off imports** (kept for
+reference; not part of the build): `import-library*`, `import-wp-images`,
+`generate-library-thumbs`.
 
 ## Setup steps after `npm install`
 
@@ -140,3 +152,16 @@ The library page (`src/pages/library.astro`) is a single big component that:
 If you want to update the cylinder rendering logic later, edit the `<script>`
 block at the bottom of `library.astro`. The structure is preserved from the
 WordPress version, so changes should feel familiar.
+
+## Known refactor opportunities
+
+These are tracked but not yet done:
+
+- **Split the monolith pages.** `src/pages/index.astro` (~1800 lines) and
+  `src/pages/library.astro` (~1500 lines) bundle HTML, CSS, and a long
+  inline `<script is:inline>` block. The scripts can be moved to
+  `src/scripts/*.ts` once you can verify in a browser; library.astro's
+  script needs a thin shim because it depends on `define:vars={{ referencesJSON }}`.
+- **Squash the "Mobile cylinder spacing fix" commits.** Last five commits
+  share that message; consider squashing into one with a descriptive message
+  before pushing further.

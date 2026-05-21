@@ -24,3 +24,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Backups & one-off exports
+*.bak
+*.WordPress.*.xml

@@ -107,10 +107,10 @@ const referencesJSON = JSON.stringify(references);
 </div>
 
 <!-- Pile overlay for multi-image refs -->
-<div id="pile-overlay" style="display:none;position:fixed;inset:0;z-index:500;pointer-events:all;cursor:crosshair;">
-  <div id="pile-close" style="position:absolute;top:20px;left:28px;font-family:inherit;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);cursor:crosshair;z-index:2;">✕ close</div>
-  <div id="pile-counter" style="position:absolute;top:20px;right:28px;font-family:inherit;font-size:9px;color:var(--grey);"></div>
-  <div id="pile-stack" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"></div>
+<div id="pile-overlay" hidden>
+  <div id="pile-close">✕ close</div>
+  <div id="pile-counter"></div>
+  <div id="pile-stack"></div>
 </div>
 
 
@@ -241,6 +241,7 @@ const referencesJSON = JSON.stringify(references);
   .thumb-item.active { opacity:1;outline:1px solid rgba(0,0,0,0.25); }
   .thumb-item:hover { opacity:0.8; }
   .thumb-item img,.thumb-item div { width:100%;height:100%;object-fit:cover;display:block; }
+  #card-stack {
     position:fixed;top:0;left:0;right:0;bottom:0;z-index:3;
     pointer-events:none;display:none;
   }
@@ -349,6 +350,64 @@ const referencesJSON = JSON.stringify(references);
     height: calc(100vh - 100px) !important;
   }
 
+  /* Pile overlay for multi-image refs */
+  #pile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    pointer-events: all;
+    cursor: crosshair;
+  }
+  #pile-overlay[hidden] { display: none; }
+  #pile-overlay.open {
+    background: rgba(255, 255, 255, 0.92);
+  }
+  #pile-close {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    font-family: inherit;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey);
+    cursor: crosshair;
+    z-index: 2;
+  }
+  #pile-counter {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+    font-family: inherit;
+    font-size: 9px;
+    color: var(--grey);
+  }
+  #pile-stack {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Stacked cards inside the pile use CSS custom props set from JS */
+  .pile-card {
+    position: absolute;
+    width: min(55vw, 420px);
+    aspect-ratio: 1;
+    cursor: crosshair;
+    transform: rotate(var(--rot, 0deg)) scale(var(--scale, 1)) translateY(var(--ty, 0px));
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    background: #eee;
+    overflow: hidden;
+    z-index: var(--z, 1);
+  }
+  .pile-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 </style>
 
 <script is:inline define:vars={{ referencesJSON }}>
@@ -1365,6 +1424,12 @@ document.addEventListener('keydown',e=>{
   const counter=document.getElementById('pile-counter');
   const closeBtn=document.getElementById('pile-close');
   let pileRef=null, pileIdx=0;
+  let pileCards=[]; // cached card refs — avoid re-querying stack.children on every cycle
+
+  function closePile(){
+    overlay.hidden=true;
+    overlay.classList.remove('open');
+  }
 
   function buildPile(ref){
     pileRef=ref; pileIdx=0;
@@ -1373,59 +1438,51 @@ document.addEventListener('keydown',e=>{
     counter.textContent=`${pileIdx+1} / ${n}`;
 
     // Create stacked cards — slight rotation offsets
+    const frag=document.createDocumentFragment();
     for(let i=n-1;i>=0;i--){
       const card=document.createElement('div');
+      card.className='pile-card';
       const rot=(i-Math.floor(n/2))*3.5*(Math.random()*0.4+0.8);
-      card.style.cssText=`
-        position:absolute;
-        width:min(55vw,420px);
-        aspect-ratio:1;
-        cursor:crosshair;
-        transform:rotate(${rot}deg);
-        transition:transform 0.3s ease;
-        box-shadow:0 4px 24px rgba(0,0,0,0.18);
-        background:#eee;
-        overflow:hidden;
-      `;
+      card.style.setProperty('--rot',`${rot}deg`);
       const img=document.createElement('img');
-      img.style.cssText='width:100%;height:100%;object-fit:cover;display:block;';
       const im=getImgAt(ref,i);
       if(im) img.src=im.src;
       card.appendChild(img);
       card.dataset.idx=i;
-      stack.appendChild(card);
+      frag.appendChild(card);
     }
+    stack.appendChild(frag);
+    pileCards=Array.from(stack.children);
 
-    // Top card click — cycle to next
-    overlay.style.display='block';
-    overlay.style.background='rgba(255,255,255,0.92)';
+    overlay.hidden=false;
+    overlay.classList.add('open');
     updateTop();
   }
 
   function updateTop(){
     const n=imgCount(pileRef);
     counter.textContent=`${pileIdx+1} / ${n}`;
-    const cards=[...stack.children];
-    // Bring pileIdx card to top
-    cards.forEach(c=>{
+    // Bring pileIdx card to top — write CSS vars, no transform string concat
+    for(let k=0;k<pileCards.length;k++){
+      const c=pileCards[k];
       const i=parseInt(c.dataset.idx);
       const offset=i-pileIdx;
-      const rot=offset*3.5;
-      const scale=1-Math.abs(offset)*0.04;
-      const ty=Math.abs(offset)*6;
-      c.style.transform=`rotate(${rot}deg) scale(${scale}) translateY(${ty}px)`;
-      c.style.zIndex=n-Math.abs(offset);
-    });
+      const absOffset=Math.abs(offset);
+      c.style.setProperty('--rot',`${offset*3.5}deg`);
+      c.style.setProperty('--scale',`${1-absOffset*0.04}`);
+      c.style.setProperty('--ty',`${absOffset*6}px`);
+      c.style.setProperty('--z',`${n-absOffset}`);
+    }
   }
 
-  stack.addEventListener('click',e=>{
+  stack.addEventListener('click',()=>{
     const n=imgCount(pileRef);
     pileIdx=(pileIdx+1)%n;
     updateTop();
   });
 
-  closeBtn.addEventListener('click',()=>{ overlay.style.display='none'; });
-  overlay.addEventListener('keydown',e=>{ if(e.key==='Escape') overlay.style.display='none'; });
+  closeBtn.addEventListener('click',closePile);
+  overlay.addEventListener('keydown',e=>{ if(e.key==='Escape') closePile(); });
 
   // Expose openPile globally so expanded view can trigger it
   window.openPile=buildPile;

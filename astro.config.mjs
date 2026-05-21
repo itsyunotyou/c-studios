@@ -6,4 +6,11 @@ export default defineConfig({
     inlineStylesheets: 'auto',
   },
   compressHTML: true,
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'hover',
+  },
+  image: {
+    service: { entrypoint: 'astro/assets/services/sharp' },
+  },
 });

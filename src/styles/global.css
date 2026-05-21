@@ -1,0 +1,58 @@
+/* ════════════════════════════════════════════════════════════ */
+/* C-STUDIOS — Global styles                                     */
+/* ════════════════════════════════════════════════════════════ */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Every section locks to exactly 100vh height */
+.home-section {
+  height: 100vh;
+  padding: 80px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  position: relative;
+  z-index: 1;
+  scroll-margin-top: 0;
+}
+.home-section h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.home-section .section-body {
+  max-width: 800px;
+  font-size: 0.95rem;
+}
+
+#cstudios, #services, #clients, #projects, #info, #library {
+  scroll-margin-top: 0;
+}

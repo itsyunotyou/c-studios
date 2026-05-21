@@ -1,0 +1,82 @@
+---
+// Footer — logo bottom-left, text bottom-right.
+// Colors switch based on body.bg-dark (set by Header script).
+---
+
+<footer class="cst-footer">
+  <a href="/" class="cst-footer-logo" aria-label="C-STUDIOS home">
+    <img src="/images/brand/c-studios-logo.png" alt="C-STUDIOS" />
+  </a>
+  <div class="cst-footer-links">
+    <a href="mailto:info@c-studios.co.uk">INFO@C-STUDIOS.CO.UK</a>
+    <span class="cst-footer-copy">©C-STUDIOS, 2025.</span>
+  </div>
+</footer>
+
+<style is:global>
+  .cst-footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 9998;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    pointer-events: none;
+  }
+
+  .cst-footer-logo {
+    pointer-events: auto;
+    display: block;
+    line-height: 0;
+    transition: filter 0.25s ease;
+  }
+  .cst-footer-logo img {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
+  /* Invert the black logo on dark backgrounds so it stays visible */
+  body.bg-dark .cst-footer-logo { filter: invert(1); }
+
+  .cst-footer-links {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: lightgrey;
+    transition: color 0.25s ease;
+  }
+  .cst-footer-links a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.25s ease;
+  }
+  .cst-footer-links a:hover { color: grey; }
+  .cst-footer-copy { white-space: nowrap; }
+
+  /* Dark bg: mix-blend so text adapts to varying photo brightness */
+  body.bg-dark .cst-footer { mix-blend-mode: difference; }
+  body.bg-dark .cst-footer-links { color: lightgrey; }
+  body.bg-dark .cst-footer-links a:hover { color: grey; }
+  /* Logo's invert filter stays (mix-blend would make a black PNG invisible on black) */
+
+  @media (max-width: 768px) {
+    .cst-footer {
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+    }
+    .cst-footer-logo img { height: 20px; }
+    .cst-footer-links {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.55rem;
+    }
+  }
+</style>

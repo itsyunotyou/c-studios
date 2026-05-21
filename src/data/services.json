@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Creative Strategy",
+    "slug": "creative-strategy",
+    "columns": [
+      {
+        "image": "strategy-01",
+        "alt": "Brand framework",
+        "category": null,
+        "services": [
+          "BRAND PLAYBOOK",
+          "BRAND ARCHITECTURE",
+          "BRAND ACTIVATION & EXPERIENCE",
+          "COLLABORATION STRATEGY"
+        ]
+      },
+      {
+        "image": "strategy-02",
+        "alt": "Adoption curve",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "strategy-03",
+        "alt": "Ecosystems globe",
+        "category": null,
+        "services": [
+          "CONTENT STRATEGY",
+          "SOCIAL PLAYBOOK",
+          "GO-TO-MARKET PLAN",
+          "STRATEGIC PLANNING"
+        ]
+      },
+      {
+        "image": "strategy-04",
+        "alt": "Culture / Consumer frame",
+        "category": null,
+        "services": []
+      }
+    ]
+  },
+  {
+    "name": "Consulting",
+    "slug": "consulting",
+    "columns": [
+      {
+        "image": "consulting-01",
+        "alt": "Choir performance",
+        "category": "BRAND",
+        "services": [
+          "PARTNERSHIPS",
+          "CREATIVE ADVISORY & IDEATION",
+          "AUDIENCE & TALENT",
+          "NARRATIVE DEVELOPMENT"
+        ]
+      },
+      {
+        "image": "consulting-02",
+        "alt": "Music studio",
+        "category": "MUSIC",
+        "services": [
+          "A&R",
+          "COMMUNICATION & ROLLOUT",
+          "MUSIC DIRECTION",
+          "MUSIC PROGRAMMING"
+        ]
+      },
+      {
+        "image": "consulting-03",
+        "alt": "Burning Desire artwork",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "consulting-04",
+        "alt": "Gallery opening",
+        "category": "ART",
+        "services": [
+          "ARTISTIC DIRECTION",
+          "DEVELOPMENT & GROWTH STRATEGY",
+          "PARTNERSHIPS",
+          "WORLDBUILDING & PLAYBOOK"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Curation",
+    "slug": "curation",
+    "columns": [
+      {
+        "image": "curation-01",
+        "alt": "Stage with installation",
+        "category": "ART",
+        "services": [
+          "EXHIBITION CONCEPT",
+          "EXHIBITION DESIGN & PLANNING",
+          "ARCHIVE DEVELOPMENT",
+          "ARTIST & VISUAL RESEARCH"
+        ]
+      },
+      {
+        "image": "curation-02",
+        "alt": "BLKNWS poster",
+        "category": "MUSIC",
+        "services": [
+          "MUSIC DIRECTION",
+          "MUSIC PROGRAMMING",
+          "EVENT CURATION"
+        ]
+      },
+      {
+        "image": "curation-03",
+        "alt": "Sculptural installation",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "curation-04",
+        "alt": "Event space with cushions",
+        "category": "BRAND",
+        "services": [
+          "BRAND WORKSHOP",
+          "EVENT PROGRAMMING",
+          "CULTURE CALENDAR",
+          "SPECIAL PROJECTS"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Creative Direction",
+    "slug": "creative-direction",
+    "columns": [
+      {
+        "image": "direction-01",
+        "alt": "",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "direction-02",
+        "alt": "",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "direction-03",
+        "alt": "",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "direction-04",
+        "alt": "",
+        "category": null,
+        "services": []
+      }
+    ]
+  },
+  {
+    "name": "Cultural Research",
+    "slug": "cultural-research",
+    "columns": [
+      {
+        "image": "research-01",
+        "alt": "",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "research-02",
+        "alt": "",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "research-03",
+        "alt": "",
+        "category": null,
+        "services": []
+      },
+      {
+        "image": "research-04",
+        "alt": "",
+        "category": null,
+        "services": []
+      }
+    ]
+  }
+]

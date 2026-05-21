@@ -1,0 +1,1459 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import libraryText from '../data/library-text.json';
+import libraryImage from '../data/library-image.json';
+import librarySound from '../data/library-sound.json';
+import libraryFilm from '../data/library-film.json';
+
+const allEntries = [
+  ...libraryText,
+  ...libraryImage,
+  ...librarySound,
+  ...libraryFilm,
+];
+
+// Dedupe by normalized title+author+year (strips punctuation, case, whitespace)
+const norm = (v) => String(v ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+const seen = new Set();
+const deduped = allEntries.filter((entry) => {
+  const key = norm(entry.title) + '|' + norm(entry.author) + '|' + norm(entry.year);
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
+
+console.log(`[Library] ${allEntries.length} entries → ${deduped.length} unique (${allEntries.length - deduped.length} duplicates removed)`);
+
+// Transform entries into the shape the cylinder code expects.
+const references = deduped.map((entry) => ({
+  title: entry.title,
+  artist: entry.author || '',
+  year: entry.year || '',
+  cat: entry.category || 'text',
+  addedBy: entry.by || '',
+  color: entry.color || [128, 128, 128], // default grey; run compute-colors.mjs later for proper colors
+  img: entry.image ? entry.image.replace(/\.[^.]+$/, '-thumb.webp') : '',
+  imgFull: entry.image || '',
+  images: [],
+  imagesFull: [],
+  imageTitles: [],
+}));
+
+const referencesJSON = JSON.stringify(references);
+
+---
+
+<Layout title="C-STUDIOS — Library">
+  <div class="library-root">
+
+<div id="header">
+  <!-- Left: info panel always visible -->
+  <div id="header-left">
+    <div id="info-panel"></div>
+  </div>
+  <!-- Right: filter dropdown + size toggle -->
+  <div id="header-right">
+    <!-- Cylinder nav (hidden in row view) -->
+    <div id="cyl-nav" style="display:flex;flex-direction:row;gap:14px;align-items:center;">
+      <div class="hdr-dropdown" id="filter-drop">
+        <button class="hdr-btn" id="filter-btn">
+          <span id="filter-label">All</span>
+        </button>
+        <div class="hdr-menu" id="filter-menu">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="Image">Image</button>
+          <button data-filter="Sound">Sound</button>
+          <button data-filter="Film">Film</button>
+          <button data-filter="Text">Text</button>
+        </div>
+      </div>
+    </div>
+    <!-- Back button (shown in row view) -->
+    <button id="back-btn" title="Return to grid">
+      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="6" height="6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <rect x="9" y="1" width="6" height="6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <rect x="1" y="9" width="6" height="6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <rect x="9" y="9" width="6" height="6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+    </button>
+  </div>
+  <!-- keep these for JS compatibility -->
+  <div id="header-info" style="display:none"></div>
+  <div id="threads" style="display:none">
+    <button class="thread-btn active" data-filter="all">All</button>
+    <button class="thread-btn" data-filter="Image">Image</button>
+    <button class="thread-btn" data-filter="Sound">Sound</button>
+    <button class="thread-btn" data-filter="Film">Film</button>
+    <button class="thread-btn" data-filter="Text">Text</button>
+  </div>
+</div>
+
+<div id="scrubber-wrap">
+  <div id="scrubber"><div id="scrubber-track"><div id="scrubber-dot"></div></div></div>
+</div>
+
+<canvas id="bg-canvas"></canvas>
+<canvas id="grid-canvas"></canvas>
+
+<div id="thumb-strip"></div>
+<div id="card-stack"></div>
+
+<div id="detail">
+  <div id="detail-img-wrap">
+    <img id="detail-img" src="" alt="">
+  </div>
+</div>
+
+<!-- Pile overlay for multi-image refs -->
+<div id="pile-overlay" style="display:none;position:fixed;inset:0;z-index:500;pointer-events:all;cursor:crosshair;">
+  <div id="pile-close" style="position:absolute;top:20px;left:28px;font-family:inherit;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);cursor:crosshair;z-index:2;">✕ close</div>
+  <div id="pile-counter" style="position:absolute;top:20px;right:28px;font-family:inherit;font-size:9px;color:var(--grey);"></div>
+  <div id="pile-stack" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"></div>
+</div>
+
+
+
+  </div>
+</Layout>
+
+<style is:global>
+  /* Library page only — these styles are scoped via .library-root */
+  body[data-is-home="false"]:has(.library-root) {
+    overflow: hidden;
+    cursor: crosshair;
+  }
+  
+  * { margin:0;padding:0;box-sizing:border-box; }
+  :root { --red:#C8001A;--black:#0a0a0a;--white:#ffffff;--grey:#555;--gap:3px; }
+  html,body { width:100%;height:100%;background:var(--white);overflow:hidden;cursor:crosshair;color:var(--black); }
+
+  /* ── HEADER ── */
+  #header {
+    position:fixed;top:0;left:0;right:0;z-index:200;
+    display:flex;align-items:flex-start;justify-content:space-between;
+    padding:18px 28px;pointer-events:none;
+  }
+  #header-left { display:flex;align-items:flex-start;pointer-events:all; }
+  #header-right { display:flex;flex-direction:row;gap:14px;align-items:flex-start;pointer-events:all; }
+
+  /* Info panel — top left, always visible, labels always shown */
+  #info-panel {
+    pointer-events:none;
+    display:grid;grid-template-columns:auto auto;gap:3px 12px;
+  }
+  .info-row { display:contents; }
+  .info-label {
+    font-family:inherit;
+    font-size:9px;letter-spacing:0;text-transform:uppercase;
+    color:#bbb;white-space:nowrap;
+  }
+  .info-value {
+    font-family:inherit;
+    font-size:9px;letter-spacing:0;color:var(--black);white-space:nowrap;
+  }
+  #info-panel.show { opacity:1; } /* kept for JS compat */
+
+  /* Dropdowns — right side, menu opens right-aligned */
+  .hdr-dropdown { position:relative;display:inline-block; }
+  .hdr-btn {
+    font-family:inherit;
+    font-size:9px;letter-spacing:0;text-transform:uppercase;color:var(--grey);
+    background:none;border:none;cursor:crosshair;padding:0;
+  }
+  .hdr-btn:hover { color:#222; }
+  .hdr-menu {
+    display:none;position:absolute;top:100%;right:0;margin-top:6px;
+    background:var(--white);min-width:70px;z-index:500;padding:2px 0;
+  }
+  .hdr-menu::before {
+    content:'';position:absolute;top:-6px;left:0;right:0;height:6px;
+  }
+  .hdr-dropdown:hover .hdr-menu,
+  .hdr-dropdown.open .hdr-menu { display:block; }
+  .hdr-menu button {
+    display:block;width:100%;text-align:right;padding:4px 0;
+    font-family:inherit;
+    font-size:9px;text-transform:uppercase;letter-spacing:0;
+    color:var(--grey);background:none;border:none;cursor:crosshair;
+  }
+  .hdr-menu button:hover { color:#222; }
+  .hdr-menu button.active { display:none; }
+  #header-info { display:none; }
+  #threads { display:none; }
+
+  /* ── CANVASES ── */
+  #bg-canvas,#grid-canvas {
+    position:fixed;top:0;left:0;width:100%;height:100%;
+  }
+  #bg-canvas { z-index:0; }
+  #grid-canvas { z-index:2; }
+
+  /* ── DETAIL ── */
+  #detail { position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;pointer-events:none; }
+  #detail-img-wrap { position:absolute;opacity:0;overflow:hidden;will-change:width,height,left,top; }
+  #detail-img { display:block;width:100%;height:100%;object-fit:cover; }
+
+  #back-btn {
+    background:none;border:none;cursor:crosshair;
+    color:var(--grey);padding:0;
+    display:none;align-items:center;justify-content:center;
+    transition:color .15s;
+    font-family:inherit;
+    font-size:9px;letter-spacing:0;text-transform:uppercase;
+    gap:6px;
+  }
+  #back-btn.show { display:flex; }
+  #back-btn:hover { color:var(--black); }
+  #back-btn svg { width:14px;height:14px; }
+
+  #scrubber-wrap {
+    position:fixed;bottom:48px;left:0;right:0;z-index:400;
+    display:none;pointer-events:all;cursor:crosshair;
+    height:20px;padding:0;
+  }
+  #scrubber-wrap.show { display:block; }
+  #scrubber {
+    width:100%;height:100%;
+    display:flex;align-items:center;padding:0;
+    transform:scaleX(0);transform-origin:left;
+  }
+  #scrubber.show { display:flex; }
+  #scrubber-track { position:relative;width:100%;height:1px;background:var(--grey); }
+  #scrubber-dot {
+    position:absolute;top:50%;transform:translate(-50%,-50%);
+    width:8px;height:8px;border-radius:0;background:#888;cursor:crosshair;
+  }
+
+  /* ── THUMBNAIL STRIP ── */
+  #thumb-strip {
+    position:fixed;z-index:250;
+    display:none;gap:6px;
+    align-items:center;justify-content:center;
+    pointer-events:all;
+  }
+  #thumb-strip.show { display:flex; }
+  .thumb-item {
+    width:44px;height:44px;cursor:crosshair;
+    overflow:hidden;opacity:0.45;transition:opacity .15s;flex-shrink:0;
+  }
+  .thumb-item.active { opacity:1;outline:1px solid rgba(0,0,0,0.25); }
+  .thumb-item:hover { opacity:0.8; }
+  .thumb-item img,.thumb-item div { width:100%;height:100%;object-fit:cover;display:block; }
+    position:fixed;top:0;left:0;right:0;bottom:0;z-index:3;
+    pointer-events:none;display:none;
+  }
+  #card-stack.active { display:block;pointer-events:all; }
+  .stack-card { position:absolute;background:transparent;cursor:crosshair; }
+
+
+  /* ── GRID SIZE TOGGLE ── */
+  #grid-sizer { display:none; }
+  .gs-btn {
+    background:none;border:none;cursor:crosshair;padding:0;
+    color:var(--grey);opacity:0.45;transition:opacity .15s;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .gs-btn:hover { opacity:0.8; }
+  .gs-btn.active { opacity:1; }
+
+  /* ── WORDPRESS NAV SPACING ──
+     The library is full-screen fixed-position. When embedded in an Elementor
+     HTML widget on a WordPress page, this CSS leaves space at the top so the
+     site's main nav appears above the library instead of being overlaid.
+     Adjust --nav-h to match your actual nav height (inspect in DevTools first).
+  */
+  :root { --nav-h: 60px; }
+  #header, #bg-canvas, #grid-canvas, #thumb-strip {
+    top: var(--nav-h) !important;
+  }
+  #bg-canvas, #grid-canvas {
+    height: calc(100% - var(--nav-h)) !important;
+  }
+
+
+@media (max-width: 767px) {
+  #header {
+    padding: 0;
+    pointer-events: none;
+  }
+
+  /* Info panel — bottom-left with backdrop, labels + values both visible */
+  #header-left {
+    position: fixed;
+    bottom: 50px;
+    left: 12px;
+    right: 12px;
+    z-index: 100;
+    pointer-events: auto;
+  }
+ #info-panel {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 2px 12px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#info-panel .info-row:last-child {
+  display: none;
+}
+  .info-label,
+  .info-value {
+    font-size: 10px;
+  }
+
+  /* Filter dropdown — top-right */
+  #header-right {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 40px);
+    right: 12px;
+    z-index: 100;
+  }
+  .hdr-btn { font-size: 10px; }
+
+    #bg-canvas,
+  #grid-canvas {
+    height: calc(100vh - 100px) !important;
+  }
+}
+</style>
+
+<script is:inline define:vars={{ referencesJSON }}>
+  // Inject references data
+  const REFS = JSON.parse(referencesJSON);
+// ── CANVAS ────────────────────────────────────────────────────────────────────
+const bgCvs = document.getElementById('bg-canvas');
+const bgCtx = bgCvs.getContext('2d');
+const cvs   = document.getElementById('grid-canvas');
+const ctx   = cvs.getContext('2d');
+
+let W, H;
+let tiles=[], particles=[], floaters=[];
+let state='grid';
+let gridScrollY=0, gridScrollMax=0;
+let animFrame, phase=0, revealPhase=0;
+let activeFilter='all', activeSort='color';
+let sortedRefs=[], currentRefIdx=0, selectedRef=null;
+
+const imgCache=new Map();
+// Single reusable offscreen canvas for pixel dissolve
+const _oc=document.createElement('canvas');
+const _oc2=_oc.getContext('2d');
+// ── Multi-image support ───────────────────────────────────────────────────────
+const imgCacheExtra=new Map();
+function getImgAt(ref, idx){
+  if(idx===0) return getImg(ref); // main image
+  const imgs=ref.images;
+  if(!imgs||!imgs[idx-1]) return getImg(ref); // fallback
+  const key=ref.title+':'+idx;
+  if(imgCacheExtra.has(key)) return imgCacheExtra.get(key);
+  const im=new window.Image(); im.src=imgs[idx-1];
+  imgCacheExtra.set(key,im); return im;
+}
+function imgCount(ref){ return 1+(ref.images?ref.images.length:0); }
+
+// LRU-evicting image cache — caps memory at 1000-entry scale.
+const IMG_CACHE_MAX=200;
+function getImg(ref){
+  if(!ref||!ref.img)return null;
+  if(imgCache.has(ref)){
+    const im=imgCache.get(ref);
+    // refresh LRU position
+    imgCache.delete(ref); imgCache.set(ref,im);
+    return im;
+  }
+  // evict oldest entry if at cap
+  if(imgCache.size>=IMG_CACHE_MAX){
+    imgCache.delete(imgCache.keys().next().value);
+  }
+  const im=new window.Image(); im.src=ref.img;
+  imgCache.set(ref,im); return im;
+}
+function preloadImages(){ REFS.forEach(r=>{ getImg(r); if(r.images) r.images.forEach((_,i)=>getImgAt(r,i)); }); }
+
+// Flicker state per tile: which image index showing
+const flickerIdx=new Map();
+let flickerT=0;
+const FLICKER_INTERVAL=90; // frames between flicks
+
+function getFlickerImg(ref){
+  const n=imgCount(ref);
+  if(n<=1) return getImg(ref);
+  let idx=flickerIdx.get(ref)||0;
+  return getImgAt(ref,idx);
+}
+
+function tickFlicker(){
+  flickerT++;
+  if(flickerT%FLICKER_INTERVAL===0){
+    for(const t of tiles){
+      const n=imgCount(t.ref);
+      if(n>1){
+        const cur=flickerIdx.get(t.ref)||0;
+        flickerIdx.set(t.ref,(cur+1)%n);
+      }
+    }
+  }
+}
+
+function drawRef(ref,x,y,w,h,alpha,imgOverride){
+  if(alpha<=0)return;
+  const im=imgOverride||getImg(ref);
+  ctx.save(); ctx.globalAlpha=alpha;
+  if(im&&im.complete&&im.naturalWidth>0){
+    // Crop to fill — centre crop, no squash
+    const iw=im.naturalWidth, ih=im.naturalHeight;
+    const scale=Math.max(w/iw, h/ih);
+    const sw=w/scale, sh=h/scale;
+    const sx=(iw-sw)/2, sy=(ih-sh)/2;
+    ctx.drawImage(im, sx, sy, sw, sh, x, y, w, h);
+  } else {
+    ctx.fillStyle=`rgb(${ref.color[0]},${ref.color[1]},${ref.color[2]})`;
+    ctx.fillRect(x,y,w,h);
+  }
+  ctx.restore();
+}
+
+let cfScrollX=0, cfScrollVel=0;
+let cfDragging=false, cfDragX=0;
+function getCF(){ const sz=Math.min(220,W*0.24,H*0.34); return{sz,spread:sz*0.78,cx:W/2,cy:H/2}; }
+function cfPos(off){ const{sz,spread,cx,cy}=getCF(); return{x:cx-sz/2+off*spread+cfScrollX,y:cy-sz/2,sz}; }
+
+function hue(r,g,b){
+  r/=255;g/=255;b/=255;
+  const mx=Math.max(r,g,b),mn=Math.min(r,g,b),d=mx-mn;
+  if(!d)return 0;
+  let h;
+  if(mx===r)h=((g-b)/d+6)%6; else if(mx===g)h=(b-r)/d+2; else h=(r-g)/d+4;
+  return h/6;
+}
+function sortRefs(src){
+  const s=[...src];
+  if(activeSort==='color')return s.sort((a,b)=>hue(...a.color)-hue(...b.color));
+  if(activeSort==='year') return s.sort((a,b)=>parseInt(a.year)-parseInt(b.year));
+  return s.sort((a,b)=>a.title.localeCompare(b.title));
+}
+
+const GAP=3;
+const HEADER_H=72;
+const FOOTER_H=80; // space for scrubber + footer at bottom
+const GRID_H=()=>H-HEADER_H-FOOTER_H; // usable height for cylinder
+let popInStart=null;
+const POP_DURATION=600; // ms per tile fade in
+const POP_STAGGER=40;  // ms between tiles
+
+let gridSize='large';
+function getGridRows(){
+  return 6;
+}
+
+function buildGrid(){
+  const src=activeFilter==='all'?REFS:REFS.filter(r=>r.cat===activeFilter);
+  sortedRefs=sortRefs(src);
+  const N=sortedRefs.length;
+  const ROWS=getGridRows();
+  const TILE=Math.floor(GRID_H()/ROWS);
+  const totalW=Math.ceil(N/ROWS)*TILE;
+  tiles=sortedRefs.map((ref,i)=>({ref,
+    x:Math.floor(i/ROWS)*TILE+GAP/2, y:HEADER_H+(i%ROWS)*TILE+GAP/2,
+       sz:TILE-GAP, tw:TILE-GAP, th:TILE-GAP, color:ref.color,
+    popDelay:Math.random()*2500})); // random stagger up to 2.5s — wider for clear sequential reveal
+  gridScrollMax=Math.max(0, totalW-W);
+  gridScrollY=0;
+  popInStart=performance.now();
+  cylPopStart=performance.now();   // trigger cylinder pop-in animation (incl. initial load)
+}
+
+// ── 3D Cylinder state ──────────────────────────────────────────────────────
+let cylAngle=0, cylVel=0, cylDragging=false, cylDragX=0;
+let cylHoverIdx=-1, cylHoverX=0, cylHoverY=0, cylHoverRotT=0;
+let cylPopStart=null;
+
+function drawCylinder(){
+  const now=performance.now();
+  const ROWS=getGridRows();
+  // Tile height fills viewport exactly
+  const TILE=Math.floor(GRID_H()/ROWS);
+
+  // Radius: front face fills viewport width
+  // At front (z3=R), scale = FOCAL/(FOCAL+R-R) = 1, so tileW = TILE
+  // We want ~(W/TILE) tiles visible across front half of cylinder
+  // Circumference = 2*PI*R, front half arc = PI*R
+  // Tiles in front half = PI*R/TILE = W/TILE => R = W/PI
+  const R=W/Math.PI*2.2;
+  const FOCAL=R*0.55; // focal length relative to radius feels good
+
+  const CY=HEADER_H+GRID_H()/2;
+  const CX=W/2;
+
+  const anglePerCol=TILE/R;
+  const colsFor360=Math.ceil(2*Math.PI/anglePerCol);
+  const N=sortedRefs.length;
+  const COLS=Math.max(Math.ceil(N/ROWS), colsFor360); // enough for full 360
+
+  const drawn=[];
+  for(let col=0;col<COLS;col++){
+    const tileAngle=col*anglePerCol + cylAngle;
+    const x3=Math.sin(tileAngle)*R;
+    const z3=Math.cos(tileAngle)*R;
+    if(z3<0) continue; // back-facing
+    const scale=FOCAL/(FOCAL+R-z3);
+    const screenX=CX + x3*scale;
+
+    for(let row=0;row<ROWS;row++){
+      const i=col*ROWS+row;
+      if(N===0) continue;
+      const ref=sortedRefs[i%N];
+      const tile=tiles[i%N];
+      if(!ref) continue;
+      const screenY=CY + (row-(ROWS-1)/2)*TILE*scale;
+      const tileW=TILE*scale;
+      const tileH=TILE*scale;
+      const delay=tile?tile.popDelay:Math.random()*1200;
+      const elapsed=cylPopStart?(performance.now()-cylPopStart)-delay:Infinity;
+      const growT=Math.max(0,Math.min(1,elapsed/450));
+      const alpha=growT>0?1:0;
+      const popScale=cylPopStart?(0.01+0.99*growT):1;
+      drawn.push({ref,screenX,screenY,tileW,tileH,z3,alpha,i:i%N,scale,popScale});
+    }
+  }
+
+  const drawnRefs=new Set();
+  drawn.sort((a,b)=>a.z3-b.z3);
+
+  for(const d of drawn){
+    if(drawnRefs.has(d.i)) continue;
+    drawnRefs.add(d.i);
+    const{ref,screenX,screenY,tileW,tileH,alpha,scale,popScale=1}=d;
+    const g=GAP*scale;
+    const ps=popScale; // scale from dot to full
+    const isHovered=cylHoverIdx===d.i;
+
+    if(isHovered) cylHoverRotT=Math.min(1, cylHoverRotT+0.08);
+
+    const x=screenX-tileW*ps/2+g*ps/2;
+    const y=screenY-tileH*ps/2+g*ps/2;
+    const w=(tileW-g)*ps, h=(tileH-g)*ps;
+
+    // Depth-based alpha — front tiles full opacity, sides fade to ~15%
+    const depthAlpha=alpha*(0.1+0.9*Math.pow(d.z3/R, 2.5));
+
+    if(isHovered && cylHoverRotT>0){
+      const sc=1+cylHoverRotT*0.1;
+      const hw=(tileW-g)*sc, hh=(tileH-g)*sc;
+      const hx=screenX-hw/2, hy=screenY-hh/2;
+      ctx.save();
+      ctx.globalAlpha=depthAlpha;
+      const im=getImg(ref)||getFlickerImg(ref);
+      if(im&&im.complete&&im.naturalWidth>0){
+        const iw=im.naturalWidth,ih=im.naturalHeight;
+        const s2=Math.max(hw/iw,hh/ih);
+        const sw=hw/s2,sh=hh/s2,sx=(iw-sw)/2,sy=(ih-sh)/2;
+        ctx.drawImage(im,sx,sy,sw,sh,hx,hy,hw,hh);
+      } else {
+        ctx.fillStyle=`rgb(${ref.color[0]},${ref.color[1]},${ref.color[2]})`;
+        ctx.fillRect(hx,hy,hw,hh);
+      }
+      ctx.restore();
+      d.sx=hx; d.sy=hy; d.sw=hw; d.sh=hh;
+    } else {
+      drawRef(ref,x,y,w,h,depthAlpha,getFlickerImg(ref));
+    }
+    d.sx=x; d.sy=y; d.sw=w; d.sh=h;
+  }
+
+  // Decay hover when nothing hovered
+  if(cylHoverIdx===-1) cylHoverRotT=Math.max(0, cylHoverRotT-0.1);
+
+  drawnCylTiles=drawn;
+}
+
+let drawnCylTiles=[];
+let hoverRaf;
+const headerInfo=document.getElementById('header-info');
+function updateHoverInfo(mx,my){
+  if(state!=='grid') return;
+  let found=null;
+  for(const d of [...drawnCylTiles].reverse()){
+    if(mx>=d.sx&&mx<=d.sx+d.sw&&my>=d.sy&&my<=d.sy+d.sh){ found=d; break; }
+  }
+  if(found) updateMeta(found.ref);
+  else updateMetaEmpty();
+}
+
+function updateMetaEmpty(){
+  const panel=document.getElementById('info-panel');
+  const fields=[['Title',''],['Creator',''],['Year',''],['Added by',''],['Category','']];
+  panel.innerHTML=fields.map(([label,val])=>
+    `<div class="info-row"><span class="info-label">${label}</span><span class="info-value">${val}</span></div>`
+  ).join('');
+}
+window.addEventListener('mousemove',e=>{
+  if(state==='grid') updateHoverInfo(e.clientX,e.clientY);
+});
+
+function resize(){
+  const bottomPad = window.innerWidth <= 767 ? 100 : 0;
+  W=cvs.width=bgCvs.width=window.innerWidth;
+  H=cvs.height=bgCvs.height=window.innerHeight - bottomPad;
+  cvs.style.height = H + 'px';
+  bgCvs.style.height = H + 'px';
+  if(state==='grid')buildGrid();
+  if(state==='floated'||state==='exploding'){rebuildFloaters();buildHitTargets();}
+}
+function draw(){
+  ctx.clearRect(0,0,W,H); bgCtx.clearRect(0,0,W,H);
+  if(state==='grid'){
+    drawCylinder();
+    // Spin inertia
+    if(!cylDragging){
+      cylAngle+=cylVel;
+      cylVel*=0.96;
+    }
+    return;
+  }
+  if(state==='returning'){
+    bgCtx.fillStyle='#ffffff'; bgCtx.fillRect(0,0,W,H);
+  } else {
+    bgCtx.fillStyle='#ffffff'; bgCtx.fillRect(0,0,W,H);
+  }
+  // Draw particles — pure X/Y, no Z perspective
+  for(const p of particles){
+    if(!p.visible) continue;
+    const im=getImg(p.ref);
+    ctx.save();
+    ctx.globalAlpha=p.alpha;
+    ctx.translate(p.x+p.sz/2, p.y+p.sz/2);
+    ctx.rotate(p.rot);
+    if(im&&im.complete&&im.naturalWidth>0){
+      ctx.drawImage(im,-p.sz/2,-p.sz/2,p.sz,p.sz);
+    } else {
+      ctx.fillStyle=`rgb(${p.color[0]},${p.color[1]},${p.color[2]})`;
+      ctx.fillRect(-p.sz/2,-p.sz/2,p.sz,p.sz);
+    }
+    ctx.restore();
+  }
+  if(floaters.length>0){
+    if(state==='returning'){
+      // Draw at animated positions directly — don't recalculate from coverflow
+      for(const f of floaters){
+        const sc=f.offset===0?1.7:1.0;
+        const fh=f.sz*sc;
+        const natW=f.natRatio?fh*f.natRatio:fh;
+        const fw=fh+(natW-fh)*(f.reveal||0);
+        const fx=f.x+(f.sz-fw)/2;
+        const fy=f.y+(f.sz-fh)/2;
+        drawRef(f.ref,fx,fy,fw,fh,f.alpha,getFlickerImg(f.ref));
+      }
+    } else {
+      const{sz,cx,cy}=getCF();
+      const GAP_CF=18;
+
+      function cardWidth(f){
+        const sc=f.offset===0?1.7:1.0;
+        const fh=f.sz*sc;
+        const natW=f.natRatio?fh*f.natRatio:fh;
+        return fh+(natW-fh)*(f.reveal||0);
+      }
+
+      const centre=floaters.find(f=>f.offset===0);
+      const cw=centre?cardWidth(centre):sz;
+
+      for(const f of [...floaters].sort((a,b)=>a.offset-b.offset)){
+        const sc=f.offset===0?1.7:1.0;
+        const fh=f.sz*sc;
+        const natW=f.natRatio?fh*f.natRatio:fh;
+        const fw=fh+(natW-fh)*(f.reveal||0);
+
+        let fx=cx-fw/2;
+        if(f.offset!==0){
+          const dir=Math.sign(f.offset);
+          let accum=cw/2+GAP_CF;
+          for(let o=dir;Math.abs(o)<Math.abs(f.offset);o+=dir){
+            const nb=floaters.find(n=>n.offset===o);
+            if(nb) accum+=cardWidth(nb)+GAP_CF;
+          }
+          fx=dir>0 ? cx+accum : cx-accum-fw;
+        }
+
+        const fy=cy-fh/2;
+        // Store actual top-left of the bounding box for hit targets / rebuild
+        f.drawX=fx; f.drawY=fy; f.drawW=fw; f.drawH=fh;
+        f.x=fx-(f.sz-fw)/2;
+        f.y=fy-(f.sz-fh)/2;
+        drawRef(f.ref,fx,fy,fw,fh,f.alpha,getFlickerImg(f.ref));
+      }
+    }
+  }
+}
+
+function startExplode(mx,my,forcedIdx){
+  if(state!=='grid')return;
+  let sIdx=forcedIdx!==undefined?forcedIdx:0;
+  if(forcedIdx===undefined){
+    // Flat grid fallback hit test
+    let found=false;
+    for(let i=0;i<tiles.length;i++){
+      const t=tiles[i];
+      const sx=t.x-gridScrollY, sy=t.y, sw=t.tw||t.sz, sh=t.th||t.sz;
+      if(mx>=sx&&mx<=sx+sw&&my>=sy&&my<=sy+sh){ sIdx=i; found=true; break; }
+    }
+    if(!found){
+      let minD=Infinity;
+      tiles.forEach((t,i)=>{ const sx=t.x-gridScrollY,sy=t.y; const d=Math.hypot(sx+(t.tw||t.sz)/2-mx,sy+(t.th||t.sz)/2-my); if(d<minD){minD=d;sIdx=i;} });
+    }
+  }
+  selectedRef=tiles[sIdx].ref;
+  currentRefIdx=sortedRefs.findIndex(r=>r===selectedRef);
+  const SIDES=7,n=sortedRefs.length;
+
+  // Floaters start from their ACTUAL rendered cylinder position (no jump to flat grid)
+  // and ease smoothly into coverflow targets.
+  floaters=[];
+  for(let off=-SIDES;off<=SIDES;off++){
+    const idx=(currentRefIdx+off+n)%n, ref=sortedRefs[idx];
+    if(!ref) continue;
+    const tgt=cfPos(off);
+    const im=getImg(ref);
+    const natRatio=(im&&im.naturalWidth&&im.naturalHeight)?im.naturalWidth/im.naturalHeight:1;
+
+    // Use the currently rendered cylinder tile as the starting position.
+    // If the ref isn't visible on the cylinder (back-facing), fall back to the clicked tile.
+    let sx, sy, ssz;
+    const drawn = drawnCylTiles.find(d => d.i === idx);
+    if (drawn) {
+      sx = drawn.sx; sy = drawn.sy; ssz = drawn.sw;
+    } else {
+      const clicked = drawnCylTiles.find(d => d.i === currentRefIdx);
+      if (clicked) { sx = clicked.sx; sy = clicked.sy; ssz = clicked.sw; }
+      else { sx = W/2; sy = H/2; ssz = 80; }
+    }
+
+    floaters.push({ref,color:ref.color,
+      x:sx, y:sy,
+      tx:tgt.x, ty:tgt.y, tsz:tgt.sz,
+      sz:ssz, offset:off, alpha:1, reveal:0, natRatio});
+  }
+
+  particles=[];
+  state='exploding'; phase=0;
+  cfScrollX=0; cfScrollVel=0;
+  cancelAnimationFrame(animFrame);
+  showUI();
+  animFrame=requestAnimationFrame(loopExplode);
+}
+
+function stepParticles(){
+  for(const p of particles){
+    p.vx*=0.98; p.vy*=0.98;
+    p.vy+=0.3; // strong gravity so they fall fast
+    p.x+=p.vx; p.y+=p.vy;
+    p.rot+=p.rotV;
+    const offscreen=p.x+p.sz<-50||p.x>W+50||p.y+p.sz<-50||p.y>H+50;
+    if(offscreen){
+      p.alpha=Math.max(0,p.alpha-0.15);
+      if(p.alpha<=0) p.visible=false;
+    }
+  }
+}
+
+function loopFloated(){
+  tickFlicker();
+  draw();
+  animFrame=requestAnimationFrame(loopFloated);
+}
+const loopFloat=loopFloated; // alias for safety
+
+function loopExplode(){
+  phase++;
+  stepParticles();
+
+  // Floaters ease toward coverflow targets
+  let done=true;
+  for(const f of floaters){
+    f.x+=(f.tx-f.x)*0.1; f.y+=(f.ty-f.y)*0.1; f.sz+=(f.tsz-f.sz)*0.1;
+    f.reveal=Math.min(1,(f.reveal||0)+0.05);
+    if(Math.hypot(f.tx-f.x,f.ty-f.y)>2) done=false;
+  }
+
+  draw();
+  if(done&&phase>20){
+    for(const f of floaters){f.x=f.tx;f.y=f.ty;f.sz=f.tsz;}
+    particles=[];
+    state='floated'; phase=0;
+    buildHitTargets();
+    animFrame=requestAnimationFrame(loopFloated);
+    return;
+  }
+  animFrame=requestAnimationFrame(loopExplode);
+}
+
+
+function getCylPos(refIdx){
+  const ROWS=getGridRows();
+  const TILE=Math.floor(GRID_H()/ROWS);
+  const R=W/Math.PI*2.2;
+  const FOCAL=R*0.55; // tighter focal = more dramatic perspective
+  const CY=HEADER_H+GRID_H()/2;
+  const CX=W/2;
+  const anglePerCol=TILE/R;
+  const col=Math.floor(refIdx/ROWS);
+  const row=refIdx%ROWS;
+  const tileAngle=col*anglePerCol+cylAngle;
+  const x3=Math.sin(tileAngle)*R;
+  const z3=Math.cos(tileAngle)*R;
+  const scale=FOCAL/(FOCAL+R-z3);
+  const screenX=CX+x3*scale;
+  const screenY=CY+(row-(ROWS-1)/2)*TILE*scale;
+  const tileW=TILE*scale;
+  return{x:screenX-tileW/2, y:screenY-tileW/2, sz:tileW};
+}
+
+function startReassemble(){
+  if(state!=='floated'&&state!=='exploding') return;
+  hideUI(); clearHitTargets();
+
+  // Snapshot floater positions for the implosion
+  const snap=[...floaters];
+  const cx=W/2, cy=H/2;
+
+  state='returning'; phase=0;
+  cancelAnimationFrame(animFrame);
+
+  // Phase 1 (~35 frames): neighbours suck into centre card
+  // Phase 2 (~20 frames): centre card shrinks to dot
+  // Phase 3: dots appear on screen and grow into cylinder tiles
+
+  let implodePhase=0;
+  const IMPLODE_DUR=35;
+  const SHRINK_DUR=20;
+  let bigBangStarted=false;
+
+  function loopImplode(){
+    implodePhase++;
+    ctx.clearRect(0,0,W,H); bgCtx.clearRect(0,0,W,H);
+    bgCtx.fillStyle='#ffffff'; bgCtx.fillRect(0,0,W,H);
+
+    if(implodePhase<=IMPLODE_DUR){
+      const t=implodePhase/IMPLODE_DUR;
+      const ease=t<0.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+      // Draw neighbours first (behind), then centre on top
+      const sorted=[...snap].sort((a,b)=>Math.abs(b.offset)-Math.abs(a.offset));
+      for(const f of sorted){
+        const fh=f.offset===0?f.sz*1.7:f.sz;
+        const natW=f.natRatio?fh*f.natRatio:fh;
+        const fw=fh+(natW-fh)*(f.reveal||0);
+        const fx0=f.x+(f.sz-fw)/2;
+        const fy0=f.y+(f.sz-fh)/2;
+        const tx=cx-fw/2, ty=cy-fh/2;
+        const fx=fx0+(tx-fx0)*ease;
+        const fy=fy0+(ty-fy0)*ease;
+        drawRef(f.ref,fx,fy,fw,fh,1,getFlickerImg(f.ref));
+      }
+    } else {
+      // Centre card shrinks to dot, keeping its natural ratio
+      const t2=(implodePhase-IMPLODE_DUR)/SHRINK_DUR;
+      const sc=Math.max(0,1-t2);
+      const centre=snap.find(f=>f.offset===0)||snap[0];
+      if(centre&&sc>0){
+        const fh=centre.sz*1.7*sc;
+        const natW=centre.natRatio?fh*centre.natRatio:fh;
+        const fw=fh+(natW-fh)*(centre.reveal||0);
+        drawRef(centre.ref,cx-fw/2,cy-fh/2,fw,fh,1,getFlickerImg(centre.ref));
+      }
+
+      if(implodePhase>=IMPLODE_DUR+SHRINK_DUR && !bigBangStarted){
+        bigBangStarted=true;
+        buildGrid();
+        tiles.forEach(t=>{ t.popDelay=Math.random()*1200; t._popped=false; });
+        cylPopStart=performance.now();
+        state='grid'; phase=0;
+        cancelAnimationFrame(animFrame);
+        animFrame=requestAnimationFrame(loopGrid);
+        return;
+      }
+    }
+    animFrame=requestAnimationFrame(loopImplode);
+  }
+  animFrame=requestAnimationFrame(loopImplode);
+}
+
+function loopReassembleBlast(){
+  // Step particles
+  for(const p of particles){
+    p.vx*=0.97; p.vy*=0.97; p.vy+=0.12;
+    p.x+=p.vx; p.y+=p.vy; p.rot+=p.rotV; p.frames++;
+    const off=p.x+p.sz<-50||p.x>W+50||p.y+p.sz<-50||p.y>H+50;
+    if(off){p.alpha=Math.max(0,p.alpha-0.15);if(p.alpha<=0)p.visible=false;}
+  }
+  // Draw cylinder (tiles pop in one by one — alpha is 0 or 1, no fade)
+  ctx.clearRect(0,0,W,H); bgCtx.clearRect(0,0,W,H);
+  bgCtx.fillStyle='#ffffff'; bgCtx.fillRect(0,0,W,H);
+  drawCylinder();
+  // Draw blast particles on top
+  for(const p of particles){
+    if(!p.visible)continue;
+    const im=getImg(p.ref);
+    ctx.save();ctx.globalAlpha=p.alpha;
+    ctx.translate(p.x+p.sz/2,p.y+p.sz/2);ctx.rotate(p.rot);
+    if(im&&im.complete&&im.naturalWidth>0) ctx.drawImage(im,-p.sz/2,-p.sz/2,p.sz,p.sz);
+    else{ctx.fillStyle=`rgb(${p.color[0]},${p.color[1]},${p.color[2]})`;ctx.fillRect(-p.sz/2,-p.sz/2,p.sz,p.sz);}
+    ctx.restore();
+  }
+  const anyVisible=particles.some(p=>p.visible);
+  const popDone=!cylPopStart||performance.now()-cylPopStart>1200;
+  if(!anyVisible&&popDone){
+    particles=[];cylPopStart=null;
+    animFrame=requestAnimationFrame(loopGrid);
+  } else {
+    animFrame=requestAnimationFrame(loopReassembleBlast);
+  }
+}
+
+function blastToGrid(callback){
+  // Simply ease all floaters back to their grid tile positions
+  // For non-floater tiles (grid size / filter change), just rebuild immediately
+  if(floaters.length===0){
+    if(callback) callback();
+    state='grid'; phase=0; buildGrid();
+    cancelAnimationFrame(animFrame);
+    animFrame=requestAnimationFrame(loopGrid);
+    return;
+  }
+
+  // Set each floater's target to its grid tile position
+  for(const f of floaters){
+    const tile=tiles.find(t=>t.ref===f.ref);
+    if(tile){
+      f.tx=tile.x-gridScrollY; f.ty=tile.y; f.tsz=tile.sz;
+    } else {
+      f.tx=f.x<W/2?-f.sz:W+f.sz; f.ty=f.y; f.tsz=f.sz;
+    }
+    f.reveal=0;
+  }
+
+  state='returning'; phase=0;
+  cancelAnimationFrame(animFrame);
+  animFrame=requestAnimationFrame(loopReturn);
+}
+
+function loopGrid(){
+  tickFlicker();
+  if(cylPopStart&&performance.now()-cylPopStart>3500) cylPopStart=null;
+  updateCylScrubber();
+  draw();
+  animFrame=requestAnimationFrame(loopGrid);
+}
+
+function rebuildFloaters(){
+  const n=sortedRefs.length,SIDES=7;
+  // Build a map of current floater positions by ref
+  const curPos=new Map();
+  for(const f of floaters) curPos.set(f.ref,{x:f.x,y:f.y,sz:f.sz,reveal:f.reveal||0});
+  const{cx,cy}=getCF();
+  floaters=[];
+  for(let off=-SIDES;off<=SIDES;off++){
+    const idx=(currentRefIdx+off+n)%n,ref=sortedRefs[idx],tgt=cfPos(off);
+    if(!ref) continue;
+    const im=getImg(ref);
+    const natRatio=(im&&im.naturalWidth&&im.naturalHeight)?im.naturalWidth/im.naturalHeight:1;
+    const prev=curPos.get(ref);
+    floaters.push({ref,color:ref.color,
+      // Start from previous position if known, else target
+      x:prev?prev.x:tgt.x, y:prev?prev.y:tgt.y, sz:prev?prev.sz:tgt.sz,
+      tx:tgt.x, ty:tgt.y, tsz:tgt.sz,
+      offset:off, alpha:1, reveal:prev?prev.reveal:1, natRatio});
+  }
+  // Animate to new positions via loopExplode
+  state='exploding'; phase=0;
+  cancelAnimationFrame(animFrame);
+  animFrame=requestAnimationFrame(loopExplode);
+}
+
+function buildHitTargets(){
+  const stack=document.getElementById('card-stack');
+  stack.innerHTML='';
+  const{sz}=getCF(),n=sortedRefs.length,VISIBLE=7;
+  for(let off=-VISIBLE;off<=VISIBLE;off++){
+    const idx=(currentRefIdx+off+n)%n,ref=sortedRefs[idx],pos=cfPos(off);
+    if(!ref) continue;
+    const sc=off===0?1.5:1.0;
+    const w=sz*sc,h=sz*sc,x=pos.x+(sz-w)/2,y=pos.y+(sz-h)/2;
+    const div=document.createElement('div');
+    div.className='stack-card';
+    div.style.cssText=`left:${x}px;top:${y}px;width:${w}px;height:${h}px;z-index:${VISIBLE+1-Math.abs(off)};`;
+    if(off!==0){
+      div.addEventListener('click',e=>{
+        e.stopPropagation();
+        currentRefIdx=idx;selectedRef=ref;
+        rebuildFloaters();buildHitTargets();updateMeta(ref);updateScrubber();
+      });
+    }
+    stack.appendChild(div);
+  }
+  stack.classList.add('active');
+}
+
+function clearHitTargets(){
+  const stack=document.getElementById('card-stack');
+  stack.innerHTML=''; stack.classList.remove('active');
+}
+
+// ── Thumbnail strip ───────────────────────────────────────────────────────
+let thumbInterval=null, thumbIdx=0, thumbPaused=false;
+
+function buildThumbStrip(ref){
+  const strip=document.getElementById('thumb-strip');
+  strip.innerHTML='';
+  strip.classList.remove('show');
+  clearInterval(thumbInterval);
+  if(!ref.images||ref.images.length===0) return;
+
+  thumbIdx=flickerIdx.get(ref)||0;
+
+  // Position strip below the centre card
+  const{sz,cx,cy}=getCF();
+  const sc=1.7, fh=sz*sc;
+  const stripY=cy+fh/2+14;
+  strip.style.top=stripY+'px';
+  strip.style.left='0'; strip.style.right='0';
+
+  // Build thumbnails — main img first, then images array
+  const allImgs=[ref.img,...(ref.images||[])];
+  allImgs.forEach((src,i)=>{
+    const item=document.createElement('div');
+    item.className='thumb-item'+(i===thumbIdx?' active':'');
+    if(src){
+      const img=document.createElement('img');
+      img.src=src; item.appendChild(img);
+    } else {
+      item.style.background=`rgb(${ref.color[0]},${ref.color[1]},${ref.color[2]})`;
+    }
+    item.addEventListener('click',()=>{ thumbIdx=i; flickerIdx.set(ref,i); updateThumbActive(strip,i); });
+    strip.appendChild(item);
+  });
+
+  strip.classList.add('show');
+
+  // Auto-slideshow
+  clearInterval(thumbInterval);
+  thumbInterval=setInterval(()=>{
+    if(thumbPaused) return;
+    thumbIdx=(thumbIdx+1)%allImgs.length;
+    flickerIdx.set(ref,thumbIdx);
+    updateThumbActive(strip,thumbIdx);
+  }, 1200);
+}
+
+function updateThumbActive(strip, idx){
+  [...strip.children].forEach((c,i)=>c.classList.toggle('active',i===idx));
+}
+
+function hideThumbStrip(){
+  clearInterval(thumbInterval);
+  document.getElementById('thumb-strip').classList.remove('show');
+}
+
+// Pause strip when hovering centre card area
+function isOverCentreCard(mx,my){
+  const centre=floaters.find(f=>f.offset===0);
+  if(!centre) return false;
+  const{sz,cx,cy}=getCF();
+  const sc=1.7, fh=centre.sz*sc;
+  const natW=centre.natRatio?fh*centre.natRatio:fh;
+  const fw=fh+(natW-fh)*(centre.reveal||0);
+  const fx=centre.x+(centre.sz-fw)/2;
+  const fy=centre.y+(centre.sz-fh)/2;
+  return mx>=fx&&mx<=fx+fw&&my>=fy&&my<=fy+fh;
+}
+window.addEventListener('mousemove',e=>{
+  if(state==='floated'||state==='exploding'){
+    thumbPaused=isOverCentreCard(e.clientX,e.clientY);
+  }
+});
+function showUI(){
+  document.getElementById('cyl-nav').style.display='none';
+  document.getElementById('back-btn').classList.add('show');
+  updateMeta(selectedRef); updateScrubber();
+  buildThumbStrip(selectedRef);
+}
+
+function hideUI(){
+  document.getElementById('cyl-nav').style.display='flex';
+  document.getElementById('back-btn').classList.remove('show');
+  hideThumbStrip();
+  updateCylScrubber();
+  updateMetaEmpty();
+}
+
+function updateMeta(ref){
+  // Header info (cylinder hover — single line)
+  const info=document.getElementById('header-info');
+  info.innerHTML=`${ref.title}<span class="sep">·</span>${ref.artist}<span class="sep">·</span>${ref.year}`;
+
+  // Info panel (expanded view — 2-col list)
+  const panel=document.getElementById('info-panel');
+  const fields=[
+    ['Title',    ref.title||'—'],
+    ['Creator',  ref.artist||'—'],
+    ['Year',     ref.year||'—'],
+    ['Added by', ref.addedBy||'—'],
+    ['Category', ref.cat||'—'],
+  ];
+  panel.innerHTML=fields.map(([label,val])=>
+    `<div class="info-row"><span class="info-label">${label}</span><span class="info-value">${val}</span></div>`
+  ).join('');
+}
+
+function updateScrubber(){
+  const n=sortedRefs.length,pct=n>1?currentRefIdx/(n-1):0;
+  const dot=document.getElementById('scrubber-dot');
+  dot.style.transition='none'; dot.style.left=(pct*100)+'%';
+}
+
+// ── Dropdown menus ────────────────────────────────────────────────────────
+// Open dropdown on button click
+document.getElementById('filter-btn').addEventListener('click',e=>{
+  e.stopPropagation();
+  document.getElementById('filter-drop').classList.toggle('open');
+});
+// Close dropdowns on click outside
+document.addEventListener('click',()=>{ document.querySelectorAll('.hdr-dropdown').forEach(d=>d.classList.remove('open')); });
+
+document.querySelectorAll('#filter-menu button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('#filter-menu button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('filter-label').textContent=btn.textContent;
+    document.getElementById('filter-drop').classList.remove('open');
+    activeFilter=btn.dataset.filter;
+    if(state==='grid'){ buildGrid(); cancelAnimationFrame(animFrame); animFrame=requestAnimationFrame(loopGrid); }
+  });
+});
+
+function updateCylScrubber(){
+  // Map cylAngle to scrubber dot position (mod 2PI → 0-100%)
+  const dot=document.getElementById('scrubber-dot');
+  if(!dot) return;
+  const pct=((cylAngle%(Math.PI*2))+Math.PI*2)%(Math.PI*2) / (Math.PI*2);
+  dot.style.transition='none';
+  dot.style.left=(pct*100)+'%';
+}
+
+function setupScrubberDrag(){
+  const wrap=document.getElementById('scrubber-wrap');
+  let s=false;
+  function to(cx){
+    const r=wrap.getBoundingClientRect();
+    const pct=Math.max(0,Math.min(1,(cx-r.left)/r.width));
+    if(state==='floated'||state==='exploding'){
+      // Expanded view: step through refs
+      const n=sortedRefs.length, idx=Math.round(pct*(n-1));
+      document.getElementById('scrubber-dot').style.left=(pct*100)+'%';
+      if(idx!==currentRefIdx) cfStep(idx-currentRefIdx);
+    } else if(state==='grid'){
+      // Cylinder: drag scrubber to rotate
+      document.getElementById('scrubber-dot').style.left=(pct*100)+'%';
+      cylAngle=pct*Math.PI*2;
+      cylVel=0;
+    }
+  }
+  wrap.addEventListener('mousedown',e=>{
+    if(e.target.closest('#scrubber-wrap')){ s=true; to(e.clientX); }
+  });
+  window.addEventListener('mousemove',e=>{if(s)to(e.clientX);});
+  window.addEventListener('mouseup',()=>{s=false;});
+  wrap.addEventListener('touchstart',e=>{s=true;to(e.touches[0].clientX);},{passive:true});
+  window.addEventListener('touchmove',e=>{if(s)to(e.touches[0].clientX);},{passive:true});
+  window.addEventListener('touchend',()=>{s=false;});
+}
+
+// Wheel scrolls through refs in expanded view
+let cfWheelAcc=0;
+function cfStep(steps){
+  if(state==='grid'||state==='returning') return;
+  hideThumbStrip();
+  const n=sortedRefs.length;
+  if(n===0) return;
+  currentRefIdx=Math.max(0,Math.min(n-1,currentRefIdx+steps));
+  selectedRef=sortedRefs[currentRefIdx];
+  if(!selectedRef) return;
+  updateMeta(selectedRef);
+  updateScrubber();
+  buildThumbStrip(selectedRef);
+  const SIDES=7;
+  const prevReveal=floaters.length>0?(floaters[0].reveal||1):1;
+  floaters=[];
+  for(let off=-SIDES;off<=SIDES;off++){
+    const i=(currentRefIdx+off+n)%n, ref=sortedRefs[i];
+    if(!ref) continue;
+    const tgt=cfPos(off);
+    const im=getImg(ref);
+    const natRatio=(im&&im.naturalWidth&&im.naturalHeight)?im.naturalWidth/im.naturalHeight:1;
+    floaters.push({ref,color:ref.color,x:tgt.x,y:tgt.y,sz:tgt.sz,tx:tgt.x,ty:tgt.y,tsz:tgt.sz,offset:off,alpha:1,reveal:prevReveal,natRatio});
+  }
+  buildHitTargets();
+  if(state!=='floated'){ state='floated'; cancelAnimationFrame(animFrame); animFrame=requestAnimationFrame(loopFloated); }
+}
+function cfWheelScroll(delta){
+  if(state==='grid'||state==='returning') return;
+  cfWheelAcc+=delta;
+  const threshold=50;
+  if(Math.abs(cfWheelAcc)>=threshold){
+    const steps=Math.round(cfWheelAcc/threshold);
+    cfWheelAcc=0;
+    cfStep(steps);
+  }
+}
+cvs.addEventListener('mousedown',e=>{
+  if(state==='grid'){ cylDragging=true; cylDragX=e.clientX; cylVel=0; }
+});
+document.addEventListener('mousedown',e=>{
+  // Don't start cfDrag if clicking the scrubber
+  if(e.target.closest('#scrubber-wrap')) return;
+  if(state==='floated'||state==='exploding'){ cfDragging=true; cfDragX=e.clientX; cfScrollVel=0; cfDragMoved=false; }
+});
+let cfDragMoved=false;
+window.addEventListener('mousemove',e=>{
+  if(cylDragging&&state==='grid'){
+    const dx=e.clientX-cylDragX; cylAngle+=dx*0.003; cylVel=dx*0.003; cylDragX=e.clientX;
+  }
+  if(cfDragging&&(state==='floated'||state==='exploding')){
+    const dx=e.clientX-cfDragX;
+    if(Math.abs(dx)>3) cfDragMoved=true;
+    cfDragX=e.clientX;
+    cfWheelScroll(-dx*0.7);
+  }
+  // Cylinder hover peek
+  if(state==='grid'&&!cylDragging){
+    cylHoverIdx=-1;
+    for(const d of [...drawnCylTiles].reverse()){
+      if(e.clientX>=d.sx&&e.clientX<=d.sx+d.sw&&e.clientY>=d.sy&&e.clientY<=d.sy+d.sh){
+        cylHoverIdx=d.i;
+        cylHoverX=(e.clientX-d.sx)/d.sw;
+        cylHoverY=(e.clientY-d.sy)/d.sh;
+        break;
+      }
+    }
+  } else if(state!=='grid'){
+    cylHoverIdx=-1;
+  }
+});
+window.addEventListener('mouseup',()=>{ cylDragging=false; cfDragging=false; });
+
+cvs.addEventListener('wheel',e=>{
+  e.preventDefault();
+  if(state==='grid'){ cylVel+=(e.deltaX+e.deltaY)*0.0006; }
+  if(state==='floated'||state==='exploding'){ e.preventDefault(); const d=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY; cfWheelScroll(d); }
+},{passive:false});
+
+['card-stack','scrubber-wrap','header'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el) el.addEventListener('wheel',e=>{
+    if(state==='floated'||state==='exploding'){ e.preventDefault(); cfWheelScroll(Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY); }
+  },{passive:false});
+});
+cvs.addEventListener('click',e=>{
+  const ui=['BUTTON','INPUT','SELECT','A'];
+  if(ui.includes(e.target.tagName)) return;
+  if(e.target.closest('#grid-sizer,#threads,#back-btn,#scrubber-wrap,#pile-overlay,#header')) return;
+  if(state!=='grid') return;
+  // Hit test against cylinder-projected tiles (front to back)
+  for(const d of [...drawnCylTiles].reverse()){
+    if(e.clientX>=d.sx&&e.clientX<=d.sx+d.sw&&e.clientY>=d.sy&&e.clientY<=d.sy+d.sh){
+      startExplode(e.clientX, e.clientY, d.i);
+      break;
+    }
+  }
+});
+// Touch for cylinder and coverflow row
+let touchStartX=0, touchStartY=0;
+cvs.addEventListener('touchstart',e=>{
+  touchStartX=e.touches[0].clientX;
+  touchStartY=e.touches[0].clientY;
+  if(state==='grid'){ cylDragX=e.touches[0].clientX; cylVel=0; cylDragging=true; }
+  if(state==='floated'||state==='exploding'){ cfDragX=e.touches[0].clientX; cfScrollVel=0; cfDragging=true; }
+},{passive:true});
+
+window.addEventListener('touchmove',e=>{
+  if(state==='grid'&&cylDragging){
+    const dx=e.touches[0].clientX-cylDragX;
+    cylAngle+=dx*0.003; cylVel=dx*0.003; cylDragX=e.touches[0].clientX;
+  }
+  if((state==='floated'||state==='exploding')&&cfDragging){
+    const dx=e.touches[0].clientX-cfDragX;
+    cfDragX=e.touches[0].clientX;
+    cfWheelScroll(-dx*0.5);
+    e.preventDefault();
+  }
+},{passive:false});
+
+window.addEventListener('wheel',e=>{
+  if(state==='floated'||state==='exploding'){ e.preventDefault(); cfWheelScroll(Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY); }
+},{passive:false});
+window.addEventListener('touchend',()=>{ cylDragging=false; cfDragging=false; });
+
+cvs.addEventListener('touchend',e=>{
+  e.preventDefault();
+  const t=e.changedTouches[0];
+  if(state!=='grid') return;
+  for(const d of [...drawnCylTiles].reverse()){
+    if(t.clientX>=d.sx&&t.clientX<=d.sx+d.sw&&t.clientY>=d.sy&&t.clientY<=d.sy+d.sh){
+      startExplode(t.clientX,t.clientY,d.i); break;
+    }
+  }
+},{passive:false});
+
+document.getElementById('back-btn').addEventListener('click',()=>{ if(state==='floated'||state==='exploding')startReassemble(); });
+
+document.querySelectorAll('.thread-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(state!=='grid')return;
+    document.querySelectorAll('.thread-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active'); activeFilter=btn.dataset.filter;
+    if(state==='grid'){ buildGrid(); cancelAnimationFrame(animFrame); animFrame=requestAnimationFrame(loopGrid); }
+  });
+});
+
+
+
+document.addEventListener('keydown',e=>{
+  if(state!=='floated')return;
+  const n=sortedRefs.length;
+  if(e.key==='ArrowRight') cfStep(1);
+  if(e.key==='ArrowLeft') cfStep(-1);
+  if(e.key==='Escape')startReassemble();
+});
+
+// ── Pile overlay for multi-image expanded view ────────────────────────────────
+(function(){
+  const overlay=document.getElementById('pile-overlay');
+  const stack=document.getElementById('pile-stack');
+  const counter=document.getElementById('pile-counter');
+  const closeBtn=document.getElementById('pile-close');
+  let pileRef=null, pileIdx=0;
+
+  function buildPile(ref){
+    pileRef=ref; pileIdx=0;
+    stack.innerHTML='';
+    const n=imgCount(ref);
+    counter.textContent=`${pileIdx+1} / ${n}`;
+
+    // Create stacked cards — slight rotation offsets
+    for(let i=n-1;i>=0;i--){
+      const card=document.createElement('div');
+      const rot=(i-Math.floor(n/2))*3.5*(Math.random()*0.4+0.8);
+      card.style.cssText=`
+        position:absolute;
+        width:min(55vw,420px);
+        aspect-ratio:1;
+        cursor:crosshair;
+        transform:rotate(${rot}deg);
+        transition:transform 0.3s ease;
+        box-shadow:0 4px 24px rgba(0,0,0,0.18);
+        background:#eee;
+        overflow:hidden;
+      `;
+      const img=document.createElement('img');
+      img.style.cssText='width:100%;height:100%;object-fit:cover;display:block;';
+      const im=getImgAt(ref,i);
+      if(im) img.src=im.src;
+      card.appendChild(img);
+      card.dataset.idx=i;
+      stack.appendChild(card);
+    }
+
+    // Top card click — cycle to next
+    overlay.style.display='block';
+    overlay.style.background='rgba(255,255,255,0.92)';
+    updateTop();
+  }
+
+  function updateTop(){
+    const n=imgCount(pileRef);
+    counter.textContent=`${pileIdx+1} / ${n}`;
+    const cards=[...stack.children];
+    // Bring pileIdx card to top
+    cards.forEach(c=>{
+      const i=parseInt(c.dataset.idx);
+      const offset=i-pileIdx;
+      const rot=offset*3.5;
+      const scale=1-Math.abs(offset)*0.04;
+      const ty=Math.abs(offset)*6;
+      c.style.transform=`rotate(${rot}deg) scale(${scale}) translateY(${ty}px)`;
+      c.style.zIndex=n-Math.abs(offset);
+    });
+  }
+
+  stack.addEventListener('click',e=>{
+    const n=imgCount(pileRef);
+    pileIdx=(pileIdx+1)%n;
+    updateTop();
+  });
+
+  closeBtn.addEventListener('click',()=>{ overlay.style.display='none'; });
+  overlay.addEventListener('keydown',e=>{ if(e.key==='Escape') overlay.style.display='none'; });
+
+  // Expose openPile globally so expanded view can trigger it
+  window.openPile=buildPile;
+})();
+
+// In expanded view, clicking the centre card opens pile if multi-image
+document.getElementById('card-stack').addEventListener('click',e=>{
+  if(state!=='floated') return;
+  const centre=floaters.find(f=>f.offset===0);
+  if(centre && imgCount(centre.ref)>1){
+    // Check click is on centre card area
+    const f=centre;
+    const{sz,cx,cy}=getCF();
+    const sc=1.3, fh=f.sz*sc;
+    const natW=f.natRatio?fh*f.natRatio:fh;
+    const fw=fh+(natW-fh)*(f.reveal||0);
+    const fx=f.x+(f.sz-fw)/2, fy=f.y+(f.sz-fh)/2;
+    if(e.clientX>fx&&e.clientX<fx+fw&&e.clientY>fy&&e.clientY<fy+fh){
+      window.openPile(centre.ref);
+    }
+  }
+});
+
+
+// ── Grid size switcher
+document.querySelectorAll('.gs-btn').forEach(btn=>{
+  btn.addEventListener('click',(e)=>{
+    e.stopPropagation();
+    document.querySelectorAll('.gs-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    gridSize=btn.dataset.cols;
+    if(state==='grid'){
+      gridSize=btn.dataset.cols;
+      buildGrid();
+      tiles.forEach(t=>{ t.popDelay=Math.random()*800; t._popped=false; });
+      cylPopStart=performance.now();
+      cancelAnimationFrame(animFrame);
+      animFrame=requestAnimationFrame(loopGrid);
+    }
+  });
+});
+
+// Data already loaded from REFS constant (set inline in HTML before this script)
+setupScrubberDrag();
+updateMetaEmpty();
+const scrubWrap=document.getElementById('scrubber-wrap');
+const scrub=document.getElementById('scrubber');
+scrubWrap.classList.add('show');
+scrub.classList.add('show');
+scrub.style.transform='scaleX(1)';
+resize();
+animFrame=requestAnimationFrame(loopGrid);
+
+
+
+
+</script>

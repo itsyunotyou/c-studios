@@ -1,0 +1,152 @@
+---
+interface Props {
+  isHome: boolean;
+}
+const { isHome } = Astro.props;
+---
+
+<div class="cst-menu" id="cstMenu">
+  <nav class="cst-submenu" id="cstSubmenu">
+    <a href="/#cstudios" data-key="cstudios">C-STUDIOS</a>
+    <a href="/#services" data-key="services">SERVICES</a>
+    <a href="/#clients"  data-key="clients">CLIENTS</a>
+    <a href="/#projects" data-key="projects">PROJECTS</a>
+    <a href="/#info"     data-key="info">INFO</a>
+    <a href="/library/"  data-key="library">LIBRARY</a>
+  </nav>
+</div>
+
+<style is:global>
+html { scroll-behavior: smooth; }
+
+#cstudios, #services, #clients, #projects, #info {
+  scroll-margin-top: 80px;
+}
+
+  .cst-menu {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    pointer-events: auto;
+  }
+  .cst-submenu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .cst-submenu a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    color: lightgrey;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color .25s ease;
+    letter-spacing: 0.05em;
+  }
+  /* Default: light backgrounds (services, clients, projects, info) — fixed colors */
+  .cst-submenu a:hover { color: grey; }
+  .cst-submenu a.active { color: #0a0a0a; }
+
+  /* Dark backgrounds (hero slideshow, library): mix-blend-mode so text auto-adapts to photos.
+     Applied to the OUTER wrapper so it blends with body content, not just menu siblings. */
+  body.bg-dark .cst-menu { mix-blend-mode: difference; }
+  /* With mix-blend: lightgrey source renders consistent light grey on near-black photos.
+     Brighter source = brighter result (and darker when bg is light). */
+  body.bg-dark .cst-submenu a { color: lightgrey; }
+  body.bg-dark .cst-submenu a:hover { color: grey; }
+  body.bg-dark .cst-submenu a.active { color: #fff; }
+
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a {
+    opacity: 0;
+    animation: cst-fade-in 0.3s ease both;
+  }
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(1) { animation-delay: 4s; }
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(2) { animation-delay: 4.3s; }
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(3) { animation-delay: 4.6s; }
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(4) { animation-delay: 4.9s; }
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(5) { animation-delay: 5.2s; }
+  body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(6) { animation-delay: 5.5s; }
+  @keyframes cst-fade-in { to { opacity: 1; } }
+
+@media (max-width: 768px) {
+  .cst-menu {
+    top: calc(env(safe-area-inset-top, 0px) + 12px);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+  .cst-submenu {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0;
+  }
+  .cst-submenu a {
+    font-size: 0.5rem;
+    padding: 4px 0;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+}
+</style>
+
+<script>
+  const IS_HOME = (document.body as HTMLBodyElement).dataset.isHome === 'true';
+  // Sections with dark backgrounds (used to flip menu palette for visibility)
+  const DARK_SECTIONS = new Set(['cstudios']);
+
+  const submenu = document.getElementById('cstSubmenu')!;
+  const links = submenu.querySelectorAll<HTMLAnchorElement>('a');
+
+  // Library page (not homepage) — always dark
+  if (!IS_HOME) {
+    document.body.classList.add('bg-dark');
+  }
+
+  if (IS_HOME) {
+    function setActive(idx: number) {
+      links.forEach((l, i) => l.classList.toggle('active', i === idx));
+      // Toggle dark-bg class based on which section is centered in viewport
+      const key = links[idx]?.dataset.key;
+      if (key && DARK_SECTIONS.has(key)) {
+        document.body.classList.add('bg-dark');
+      } else {
+        document.body.classList.remove('bg-dark');
+      }
+    }
+
+    const sections = Array.from(links).map(link => {
+      const key = link.dataset.key;
+      if (!key || key === 'library') return null;
+      return document.getElementById(key);
+    });
+
+    let ticking = false;
+    function updateActive() {
+      const centerY = window.innerHeight / 2;
+      let bestIdx = -1, minDist = Infinity;
+      sections.forEach((sec, i) => {
+        if (!sec) return;
+        const r = sec.getBoundingClientRect();
+        const d = Math.abs(r.top + r.height / 2 - centerY);
+        if (d < minDist) { minDist = d; bestIdx = i; }
+      });
+      if (bestIdx !== -1) setActive(bestIdx);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(updateActive); }
+    }, { passive: true });
+    window.addEventListener('resize', updateActive);
+    updateActive();
+  }
+</script>

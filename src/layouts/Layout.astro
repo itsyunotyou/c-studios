@@ -1,0 +1,50 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = 'C-STUDIOS', 
+  description = 'Creative strategy studio working across cultural research, concepts, creative direction, consulting, and curation.' 
+} = Astro.props;
+
+const url = Astro.url.pathname;
+const isHome = url === '/';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body data-is-home={isHome ? 'true' : 'false'}>
+    <!-- Runs synchronously before CSS animations have a chance to start.
+         Adds .skip-intro on revisits so the menu fade-in doesn't replay. -->
+    <script is:inline>
+      (function () {
+        try {
+          if (sessionStorage.getItem('cst-intro-seen') === 'true') {
+  document.body.classList.add('skip-intro');
+}
+// Note: the flag is now set in index.astro after the moon animation completes,
+// not here — so first-time visitors actually see the intro.
+        } catch (e) { /* sessionStorage may be unavailable in some contexts */ }
+      })();
+    </script>
+
+    <Header isHome={isHome} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -281,8 +281,8 @@ const referencesJSON = JSON.stringify(references);
   /* Info panel — center top */
   #header-left {
     position: fixed;
-    top: calc(env(safe-area-inset-top, 0px) + 56px);
-    left: 12px;
+    top: calc(env(safe-area-inset-top, 0px) + 80px);
+    left: 0px;
     right: 12px;
     z-index: 100;
     pointer-events: auto;
@@ -291,7 +291,7 @@ const referencesJSON = JSON.stringify(references);
 
   #info-panel {
     display: grid;
-    grid-template-columns: auto 1fr auto 1fr;
+    grid-template-columns: auto 1fr;
     gap: 2px 12px;
     padding: 8px 12px;
     background: rgba(255, 255, 255, 0.92);
@@ -308,7 +308,7 @@ const referencesJSON = JSON.stringify(references);
 
   .info-label,
   .info-value {
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 
   /* Filter dropdown — top-right (unchanged but moved further down) */
@@ -348,7 +348,7 @@ const referencesJSON = JSON.stringify(references);
   #grid-canvas {
     height: calc(100vh - 100px) !important;
   }
-}
+
 </style>
 
 <script is:inline define:vars={{ referencesJSON }}>
@@ -626,9 +626,9 @@ window.addEventListener('mousemove',e=>{
 });
 
 function resize(){
-  const bottomPad = window.innerWidth <= 767 ? 100 : 0;
-  W=cvs.width=bgCvs.width=window.innerWidth;
-  H=cvs.height=bgCvs.height=window.innerHeight - bottomPad;
+  const rect = cvs.getBoundingClientRect();
+W = cvs.width = bgCvs.width = Math.round(rect.width);
+H = cvs.height = bgCvs.height = Math.round(rect.height);
   cvs.style.height = H + 'px';
   bgCvs.style.height = H + 'px';
   if(state==='grid')buildGrid();

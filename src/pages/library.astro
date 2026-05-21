@@ -469,7 +469,7 @@ function sortRefs(src){
 
 const GAP=3;
 const HEADER_H = window.innerWidth <= 767 ? 150 : 72;
-const FOOTER_H=80; // space for scrubber + footer at bottom
+const FOOTER_H = window.innerWidth <= 767 ? 130 : 80;
 const GRID_H=()=>H-HEADER_H-FOOTER_H; // usable height for cylinder
 let popInStart=null;
 const POP_DURATION=600; // ms per tile fade in

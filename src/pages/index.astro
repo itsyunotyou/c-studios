@@ -723,9 +723,14 @@ for brands, labels, artists, institutions and beyond.</p>
 
   /* ─── Mobile: 2-column grid, same slide-from-stack logic per row ─── */
   @media (max-width: 768px) {
-    .services-tabs { padding: 0 10px; gap: 0px; }
+    .services-tabs {flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px 20px;
+  padding: 0 12px;}
     .services-tabs::before, .services-tabs::after { display: none; }   /* no L on mobile */
-    .services-tab { font-size: 0.5rem; }
+    .services-tab { font-size: 0.65rem; }
 
     .services-images {
     position: relative;
@@ -1030,16 +1035,16 @@ for brands, labels, artists, institutions and beyond.</p>
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  gap: 8px 0;
+  gap: 8px 20px;
   padding: 0 12px;
   box-sizing: border-box;
   overflow: visible;
 }
 .projects-tabs::-webkit-scrollbar { display: none; }
 .projects-tab {
-  font-size: 0.5rem;
-  padding: 4px 0;
-  letter-spacing: 0.02em;
+  font-size: 0.65rem;
+  padding: 0px 0px;
+  gap: 8px;
   white-space: nowrap;
   flex-shrink: 0;
 }

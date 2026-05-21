@@ -190,7 +190,7 @@ import projectsData from '../data/projects.json';
                   <span class="project-description">{project.description}</span>
                 </button>
                 {project.images.length > 0 && (
-                  <div class="project-images">
+                  <div class="project-images" data-scrubber>
                     {project.images.map((img) => {
                       const stem = img.replace(/\.[^.]+$/, '');
                       return (
@@ -233,6 +233,80 @@ for brands, labels, artists, institutions and beyond.</p>
 <!-- ════════════════════════════════════════════════════════════ -->
 <style is:global>
   :root { --vh: 1vh; }
+
+ /* Hide native scrollbar on scrubber-enabled elements */
+[data-scrubber] {
+  scrollbar-width: none;
+}
+[data-scrubber]::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrubber container */
+.scrubber {
+  cursor: crosshair;
+  pointer-events: all;
+  transition: opacity 0.3s ease;
+}
+.scrubber-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Horizontal */
+.scrubber-h {
+  width: 100%;
+  height: 20px;
+  padding: 0 28px;
+  box-sizing: border-box;
+  position: relative;
+}
+.scrubber-h .scrubber-track {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.scrubber-h .scrubber-dot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #0a0a0a;
+}
+
+/* Vertical (for later use) */
+.scrubber-v {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 100vh;
+  padding: 28px 0;
+  box-sizing: border-box;
+  z-index: 200;
+}
+.scrubber-v .scrubber-track {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.scrubber-v .scrubber-dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #0a0a0a;
+}
 
   .container, .home-text, .sub-text, .moon, .flash-img {
     will-change: transform, opacity;
@@ -649,20 +723,36 @@ for brands, labels, artists, institutions and beyond.</p>
 
   /* ─── Mobile: 2-column grid, same slide-from-stack logic per row ─── */
   @media (max-width: 768px) {
-    .services-tabs { padding: 0 20px; gap: 16px; }
+    .services-tabs { padding: 0 10px; gap: 0px; }
     .services-tabs::before, .services-tabs::after { display: none; }   /* no L on mobile */
-    .services-tab { font-size: 0.7rem; }
+    .services-tab { font-size: 0.5rem; }
 
     .services-images {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
+    position: relative;
+    display: block;
+    grid-template-columns: none;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+  }
+  .services-images img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+  }
+  .services-images img.active {
+    opacity: 1;
+  }
 
     .services-texts {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 10px;
     }
-    .services-list, .services-category { font-size: 0.7rem; }
+    .services-list, .services-category { font-size: 0.5rem; }
   }
 
   /* ════════════════════════════════════════════════════════════ */
@@ -879,8 +969,8 @@ for brands, labels, artists, institutions and beyond.</p>
   grid-template-columns: 2fr 0.5fr 3fr;
   gap: 30px;
   width: 100%;
-  padding: 0 28px;
-  height: 56px;
+  padding: 18px 28px;
+  min-height: 56px;
   align-items: center;
   background: none;
   border: none;
@@ -907,25 +997,31 @@ for brands, labels, artists, institutions and beyond.</p>
   overflow: hidden;
 }
 
+.project-row.expanded .project-description {
+  -webkit-line-clamp: unset;
+  display: block;
+  overflow: visible;
+}
   /* Expandable image strip — full viewport width, slides down on expand */
-  .project-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    width: 100vw;
-    max-height: 0;
-    gap: 0;
-    overflow: hidden;
-    transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-.project-row.expanded .project-images img {
-  width: 100%;
-  height: 100%;
+.project-images {
+  display: flex;
+  width: 100vw;
+  max-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0;
+  transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-images img {
+  height: 30vh;
+  width: auto;
+  flex-shrink: 0;
   object-fit: cover;
   display: block;
   pointer-events: none;
   user-select: none;
+
 }
 @media (max-width: 768px) {
   /* Tabs: horizontal scroll instead of wrapping */
@@ -941,7 +1037,7 @@ for brands, labels, artists, institutions and beyond.</p>
 }
 .projects-tabs::-webkit-scrollbar { display: none; }
 .projects-tab {
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   padding: 4px 0;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -954,22 +1050,26 @@ for brands, labels, artists, institutions and beyond.</p>
     height: auto;
     font-size: 0.7rem;
     align-items: center;
+    grid-template-rows: 24px auto;  /* lock row 1 to fixed height */
   }
+
+    
   .project-title {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     grid-column: 1;
+    line-height: 1;
   }
 .project-year {
-    display: none;
-    font-size: 0.65rem;
-    color: grey;
-    grid-column: 2;
-    white-space: nowrap;
-    text-align: right;
-  }
-  .project-row.expanded .project-year {
-    display: block;
-  }
+  visibility: hidden;
+  font-size: 0.65rem;
+  color: grey;
+  grid-column: 2;
+  white-space: nowrap;
+  text-align: right;
+}
+.project-row.expanded .project-year {
+  visibility: visible;
+}
   .project-description {
     display: none;
     grid-column: 1 / -1;
@@ -981,48 +1081,34 @@ for brands, labels, artists, institutions and beyond.</p>
   }
 
   /* Image strip: horizontal scroll carousel */
-  .project-images {
-    display: flex;
-    grid-template-columns: none;
-    grid-auto-flow: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-  .project-images::-webkit-scrollbar { display: none; }
-  .project-images img {
-    flex-shrink: 0;
-    width: 70vw;
-    height: auto;
-    aspect-ratio: 3 / 4;
-    scroll-snap-align: start;
-  }
+
   .project-row {
     overflow: hidden;
   }
-  .project-row.expanded .project-images {
+
+
+  .project-images {
     display: flex;
-    width: max-content;
-    overflow: visible;
-    max-height: 30vh;
-    will-change: transform;
-    touch-action: pan-y;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
-  .project-row.expanded .project-images img {
+  .project-images img {
     flex-shrink: 0;
-    height: 30vh;
+    height: 70vh;
     width: auto;
-    margin: 0;
-    object-fit: contain;
-    pointer-events: none;
-    user-select: none;
+    object-fit: cover;
+  }
+  .project-row.expanded .project-images {
+    max-height: 70vh;
   }
 }
 
 .project-images img {
-  width: 100%;
+  width: auto;
   height: 30vh;
+    flex-shrink: 0;
+
   object-fit: cover;
   display: block;
   pointer-events: none;
@@ -1030,14 +1116,29 @@ for brands, labels, artists, institutions and beyond.</p>
 }
 .project-row.expanded .project-images {
   max-height: 30vh;
+    flex-shrink: 0;
+
 }
 .project-row.expanded .project-images img {
-  width: 100%;
+  width: auto;
   height: 30vh;
   object-fit: cover;
+    flex-shrink: 0;
+
   display: block;
   pointer-events: none;
   user-select: none;
+}
+
+
+/* When project row is collapsed, hide the scrubber that appears below project-images */
+.project-row .scrubber {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.project-row.expanded .scrubber {
+  max-height: 20px;
 }
   /* ════════════════════════════════════════════════════════════ */
   /* LIBRARY PREVIEW GRID                                          */
@@ -1282,64 +1383,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Auto-scroll project image strips on mobile (pauses on touch/hover)
 function initProjectImageAutoScroll() {
-  if (window.innerWidth > 767) return;
-
   document.querySelectorAll('.project-row').forEach(row => {
     const strip = row.querySelector('.project-images');
     if (!strip) return;
 
-    let pos = 0;
     let direction = 1;
-    const speed = 0.5;
+    const speed = window.innerWidth <= 767 ? 0.4 : 0.6;
     let isPaused = false;
-    let isDragging = false;
-    let startX = 0, startY = 0, startPos = 0;
     let resumeTimer;
 
-    function getMaxPos() {
-      const total = Array.from(strip.children).reduce((s, el) => s + el.offsetWidth, 0);
-      return Math.max(0, total - (strip.parentElement?.offsetWidth || window.innerWidth));
-    }
-
     function tick() {
-      if (row.classList.contains('expanded') && !isPaused && !isDragging) {
-        const max = getMaxPos();
+      if (row.classList.contains('expanded') && !isPaused) {
+        const max = strip.scrollWidth - strip.clientWidth;
         if (max > 0) {
-          pos += direction * speed;
-          if (pos >= max) { direction = -1; pos = max; }
-          if (pos <= 0) { direction = 1; pos = 0; }
-          strip.style.transform = `translateX(${-pos}px)`;
+          let next = strip.scrollLeft + (direction * speed);
+          if (next >= max) { direction = -1; next = max; }
+          if (next <= 0) { direction = 1; next = 0; }
+          strip.scrollLeft = next;
         }
       }
       requestAnimationFrame(tick);
     }
 
-    strip.addEventListener('touchstart', (e) => {
-      isDragging = true;
+    function pauseTemp(delay = 1500) {
+      isPaused = true;
       clearTimeout(resumeTimer);
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      startPos = pos;
-    }, { passive: true });
+      resumeTimer = setTimeout(() => { isPaused = false; }, delay);
+    }
 
-    strip.addEventListener('touchmove', (e) => {
-      if (!isDragging) return;
-      const dx = e.touches[0].clientX - startX;
-      const dy = e.touches[0].clientY - startY;
-      if (Math.abs(dx) > Math.abs(dy) * 1.5) {
-        e.preventDefault();
-        pos = Math.max(0, Math.min(getMaxPos(), startPos - dx));
-        strip.style.transform = `translateX(${-pos}px)`;
-      }
-    }, { passive: false });
+    strip.addEventListener('mouseenter', () => { isPaused = true; });
+    strip.addEventListener('mouseleave', () => pauseTemp(800));
 
-    strip.addEventListener('touchend', () => {
-      isDragging = false;
-      clearTimeout(resumeTimer);
-      resumeTimer = setTimeout(() => { isPaused = false; }, 2000);
-    });
+    const scrubber = strip.nextElementSibling;
+    if (scrubber && scrubber.classList.contains('scrubber')) {
+      scrubber.addEventListener('mouseenter', () => { isPaused = true; });
+      scrubber.addEventListener('mouseleave', () => pauseTemp(800));
+    }
+
+    strip.addEventListener('touchstart', () => { isPaused = true; }, { passive: true });
+    strip.addEventListener('touchend', () => pauseTemp(2000), { passive: true });
+    strip.addEventListener('wheel', () => pauseTemp(1500), { passive: true });
 
     tick();
   });
@@ -1372,6 +1456,32 @@ window.addEventListener('load', alignServicesTabs);
 window.addEventListener('resize', alignServicesTabs);
 setTimeout(alignServicesTabs, 200);
 
+
+
+function initServicesSlideshows() {
+  if (window.innerWidth > 768) return;
+  document.querySelectorAll('.services-images').forEach(container => {
+    if (container.dataset.slideshowInit) return;
+    container.dataset.slideshowInit = '1';
+    const imgs = container.querySelectorAll('img');
+    if (!imgs.length) return;
+    if (imgs.length === 1) { imgs[0].classList.add('active'); return; }
+    let current = 0;
+    imgs[current].classList.add('active');
+    setInterval(() => {
+      const prev = current;
+      current = (current + 1) % imgs.length;
+      imgs[current].classList.add('active');
+      setTimeout(() => imgs[prev].classList.remove('active'), 600);
+    }, 2500);
+  });
+}
+
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  initServicesSlideshows();
+} else {
+  document.addEventListener('DOMContentLoaded', initServicesSlideshows);
+}
 
 // ═══════════════════════════ INFO: dots → letters ═══════════════════════════
 function setupInfoReveal() {
@@ -1602,4 +1712,77 @@ document.addEventListener('DOMContentLoaded', () => {
     obs.observe(servicesSection);
   }
 });
+
+// ════════════════════════════════════════════════════════════
+// Reusable custom scrubber
+// Usage: <div data-scrubber>...</div>  (defaults to horizontal)
+//        <div data-scrubber="vertical">...</div>
+// ════════════════════════════════════════════════════════════
+function initScrubber(el) {
+  if (el.dataset.scrubberInit) return;
+  el.dataset.scrubberInit = '1';
+
+  const vertical = el.dataset.scrubber === 'vertical';
+
+  // Create scrubber DOM and inject right after the element
+  const scrubber = document.createElement('div');
+  scrubber.className = 'scrubber' + (vertical ? ' scrubber-v' : ' scrubber-h');
+  scrubber.innerHTML = '<div class="scrubber-track"><div class="scrubber-dot"></div></div>';
+  el.parentNode.insertBefore(scrubber, el.nextSibling);
+
+  const track = scrubber.querySelector('.scrubber-track');
+  const dot = scrubber.querySelector('.scrubber-dot');
+
+  function update() {
+    if (vertical) {
+      const max = el.scrollHeight - el.clientHeight;
+      if (max <= 0) { scrubber.classList.add('scrubber-hidden'); return; }
+      scrubber.classList.remove('scrubber-hidden');
+      dot.style.top = ((el.scrollTop / max) * 100) + '%';
+    } else {
+      const max = el.scrollWidth - el.clientWidth;
+      if (max <= 0) { scrubber.classList.add('scrubber-hidden'); return; }
+      scrubber.classList.remove('scrubber-hidden');
+      dot.style.left = ((el.scrollLeft / max) * 100) + '%';
+    }
+  }
+
+  el.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  // Re-check after CSS animations
+  setTimeout(update, 100);
+  setTimeout(update, 700);
+
+  // Drag the dot to scroll
+  let dragging = false;
+  function setFromPointer(x, y) {
+    const r = track.getBoundingClientRect();
+    if (vertical) {
+      const pct = Math.max(0, Math.min(1, (y - r.top) / r.height));
+      el.scrollTop = pct * (el.scrollHeight - el.clientHeight);
+    } else {
+      const pct = Math.max(0, Math.min(1, (x - r.left) / r.width));
+      el.scrollLeft = pct * (el.scrollWidth - el.clientWidth);
+    }
+  }
+  track.addEventListener('mousedown', (e) => {
+    dragging = true;
+    setFromPointer(e.clientX, e.clientY);
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (dragging) setFromPointer(e.clientX, e.clientY);
+  });
+  window.addEventListener('mouseup', () => { dragging = false; });
+}
+
+function initAllScrubbers() {
+  document.querySelectorAll('[data-scrubber]').forEach(initScrubber);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAllScrubbers);
+} else {
+  initAllScrubbers();
+}
 </script>

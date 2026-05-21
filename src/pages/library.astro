@@ -272,33 +272,59 @@ const referencesJSON = JSON.stringify(references);
     height: calc(100% - var(--nav-h)) !important;
   }
 
-
 @media (max-width: 767px) {
   #header {
     padding: 0;
     pointer-events: none;
   }
 
-  /* Info panel — bottom-left with backdrop, labels + values both visible */
+  /* Info panel — center top */
   #header-left {
     position: fixed;
-    bottom: 50px;
+    top: calc(env(safe-area-inset-top, 0px) + 56px);
     left: 12px;
     right: 12px;
     z-index: 100;
     pointer-events: auto;
+    justify-content: center;
   }
- #info-panel {
-  display: grid;
-  grid-template-columns: auto 1fr auto 1fr;
-  gap: 2px 12px;
-  padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 4px;
-  width: 100%;
-  max-width: 100%;
+
+  #info-panel {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    gap: 2px 12px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #info-panel .info-row:last-child {
+    display: none;
+  }
+
+  .info-label,
+  .info-value {
+    font-size: 10px;
+  }
+
+  /* Filter dropdown — top-right (unchanged but moved further down) */
+  #header-right {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 40px);
+    right: 12px;
+    z-index: 100;
+  }
+
+  .hdr-btn { font-size: 10px; }
+
+  #bg-canvas,
+  #grid-canvas {
+    height: calc(100vh - 100px) !important;
+  }
 }
 
 #info-panel .info-row:last-child {
@@ -442,7 +468,7 @@ function sortRefs(src){
 }
 
 const GAP=3;
-const HEADER_H=72;
+const HEADER_H = window.innerWidth <= 767 ? 150 : 72;
 const FOOTER_H=80; // space for scrubber + footer at bottom
 const GRID_H=()=>H-HEADER_H-FOOTER_H; // usable height for cylinder
 let popInStart=null;
@@ -451,7 +477,7 @@ const POP_STAGGER=40;  // ms between tiles
 
 let gridSize='large';
 function getGridRows(){
-  return 6;
+  return window.innerWidth <= 767 ? 4 : 6;
 }
 
 function buildGrid(){

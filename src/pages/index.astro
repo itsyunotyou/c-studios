@@ -813,7 +813,16 @@ for brands, labels, artists, institutions and beyond.</p>
     to   { transform: translateX(0); }
   }
   @media (max-width: 768px) {
-    .clients-section { gap: 0px; }
+      .clients-section {
+    justify-content: center;   /* sit in the middle of the section, not the bottom */
+    padding: 0;                /* drop the desktop 12vh bottom padding */
+    gap: 16px;                 /* slightly tighter row gap than desktop */
+  }
+  .marquee-track img {
+    height: 70px;
+    margin-right: 32px;        /* logos are smaller, tighten spacing to match */
+  }
+
     .marquee-track { gap: 00px; }
     .padding{ 0 0 30vh;}
     .marquee-track img { height: 70px; }

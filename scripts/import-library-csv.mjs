@@ -34,7 +34,6 @@ const SRC_FILES = {
 
 const cleanCell = (v) => String(v ?? '').replace(/\s+/g, ' ').trim();
 const norm = (v) => String(v ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
-const firstName = (v) => cleanCell(v).split(' ')[0] || '';
 
 // Build a filename → actual path lookup per category by scanning the public dir.
 function buildFileLookup(category) {
@@ -72,7 +71,7 @@ function rowToEntry(row, category, cols) {
   const author = cleanCell(row[cols.author]);
   const year   = cleanCell(row[cols.year]);
   const added  = cleanCell(row[cols.added]);
-  const by     = firstName(row[cols.by]);
+  const by     = cleanCell(row[cols.by]);
   const notes  = cleanCell(row[cols.notes]);
   const image  = resolveImagePath(category, row[cols.filename]);
 
@@ -111,7 +110,13 @@ function importCategory(category) {
     if (seenKeys.has(key)) continue;
     seenKeys.add(key);
     if (existingByKey.has(key)) {
-      synced.push(existingByKey.get(key));
+      // Refresh every field from the CSV, but keep the existing image path
+      // when it has a real extension (the importer's best-guess fallback
+      // produces an extension-less path).
+      const prev = existingByKey.get(key);
+      const prevHasExt = /\.[a-z0-9]+$/i.test(prev.image || '');
+      const newHasExt  = /\.[a-z0-9]+$/i.test(entry.image || '');
+      synced.push({ ...entry, image: (prevHasExt && !newHasExt) ? prev.image : entry.image });
       kept++;
     } else {
       synced.push(entry);

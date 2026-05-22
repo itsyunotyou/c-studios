@@ -250,10 +250,10 @@ import projectsData from '../data/projects.json';
         <svg class="venn-svg" viewBox="172 32 456 336" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
           <circle class="venn-circle venn-circle-left"  cx="340" cy="200" r="160" />
           <circle class="venn-circle venn-circle-right" cx="460" cy="200" r="160" />
+          <circle class="venn-c-logo" cx="400" cy="200" r="18" />
         </svg>
         <span class="venn-label venn-label-left">Strategy</span>
         <span class="venn-label venn-label-right">Curation</span>
-        <img class="venn-c-logo" src="/images/brand/c-studios-logo.png" alt="" aria-hidden="true" />
       </div>
       <p class="venn-text venn-text-right">
         How we test and expand our ideas through collaborative models that explore new forms of cultural production and collective care.
@@ -968,13 +968,7 @@ import projectsData from '../data/projects.json';
 .venn-label-right { right: 3.5%; }
 
 .venn-c-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 7%;
-  height: auto;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+  fill: #0a0a0a;
 }
 
 .info-body {
@@ -1084,7 +1078,6 @@ import projectsData from '../data/projects.json';
   }
   .venn-label-left  { left: 6%;  }
   .venn-label-right { right: 6%; }
-  .venn-c-logo { width: 9%; }
   .info-paragraph {
     font-size: 0.62rem;
     line-height: 1.7;

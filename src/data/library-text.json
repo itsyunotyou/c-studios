@@ -1,23 +1,5 @@
 [
   {
-    "title": "Exploring Degrowth: A Critical Guide",
-    "author": "Anitra Nelson Vincent Liegey",
-    "year": "2020",
-    "image": "/images/library/text/AnitraNelson+VincentLiegey_ExploringDegrowth_ACriticalGuide_2020_CI",
-    "added": "05/05/2026",
-    "by": "Cynthia",
-    "category": "text"
-  },
-  {
-    "title": "Philosophy of the Home: Domestic Space and Happiness",
-    "author": "Emenuale Coccia",
-    "year": "2024",
-    "image": "/images/library/text/EmenualeCoccia_PhilosophyoftheHome_2024_N_A.png",
-    "added": "06/05/2026",
-    "by": "Jess",
-    "category": "text"
-  },
-  {
     "title": "Ways of Seeing",
     "author": "John Berger",
     "year": "1972",
@@ -1045,6 +1027,60 @@
     "image": "/images/library/text/FlorenceOstende_MichaelClark_CosmicDancer_2020_JY.jpg",
     "added": "10/05/2026",
     "by": "Jess",
+    "category": "text"
+  },
+  {
+    "title": "Yoruba Proverbs",
+    "author": "Oyekan Owomoyela",
+    "year": "2008",
+    "image": "/images/library/text/OyekanOwomoyela_YorubaProverbs_2008_CI",
+    "added": "12/05/2026",
+    "by": "Cynthia",
+    "category": "text"
+  },
+  {
+    "title": "New York Magazine's 2022 'Reasons to Love New York' Issue",
+    "author": "New York Magazine",
+    "year": "2022",
+    "image": "/images/library/text/NewYorkMagazine_NewYorkMagazine's2022'ReasonstoLoveNewYork'Issue_2022_CI",
+    "added": "12/05/2026",
+    "by": "Cynthia",
+    "category": "text"
+  },
+  {
+    "title": "Darkwater: Voices from Within the Veil",
+    "author": "W.E.B. Du Bois",
+    "year": "1920",
+    "image": "/images/library/text/W.E.B.DuBois_Darkwater:VoicesfromWithintheVeil_1920_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "text"
+  },
+  {
+    "title": "Rhythms of the Afro-Atlantic World: Rituals and Remembrances",
+    "author": "Mamadou Diouf Ifeoma Kiddoe",
+    "year": "2010",
+    "image": "/images/library/text/MamadouDiouf+IfeomaKiddoeNwankwo_RhythymsoftheAfro-AtlanticWorld:RitualsandRemembrances_2010_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "text"
+  },
+  {
+    "title": "Flash of the Spirit: African & Afro-American Art & Philosophy",
+    "author": "Robert Farris Thompson",
+    "year": "1983",
+    "image": "/images/library/text/RobertFarrisThompson_FlashoftheSpirit:African&Afro-AmericanArt&Philosophy_1983_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "text"
+  },
+  {
+    "title": "Orientalism",
+    "author": "Edward W. Said",
+    "year": "1978",
+    "image": "/images/library/text/EdwardW.Said_Orientalism_1978_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
     "category": "text"
   }
 ]

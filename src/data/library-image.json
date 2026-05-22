@@ -1,42 +1,5 @@
 [
   {
-    "title": "Batwoman",
-    "author": "Frida Orupabo",
-    "year": "2021",
-    "image": "/images/library/image/FridaOrupabo_Batwoman_2021_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "notes": "Hi Maggie all images added so far are by cynthia x",
-    "category": "image"
-  },
-  {
-    "title": "Untitled",
-    "author": "Frida Orupabo",
-    "year": "2020",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Frida Orupabo",
-    "year": "N/A",
-    "image": "/images/library/image/FridaOrupabo_N_A_N_A_CI.webp",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Untitled",
-    "author": "Frida Orupabo",
-    "year": "2019",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Untitled",
     "author": "Frida Orupabo",
     "year": "2019",
@@ -235,24 +198,6 @@
     "category": "image"
   },
   {
-    "title": "Data Visualizations",
-    "author": "W.E.B. Du Bois",
-    "year": "1900",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Data Visualizations",
-    "author": "W.E.B. Du Bois",
-    "year": "1900",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Two Women, Mannequin's Hand",
     "author": "Roy Decarava",
     "year": "1952",
@@ -284,33 +229,6 @@
     "author": "Roy Decarava",
     "year": "1954",
     "image": "/images/library/image/RoyDecarava_TwoMen,SubwayStairs_1954_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Sojourn",
-    "author": "Allen Golder-Carpenter",
-    "year": "2025",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Sojourn",
-    "author": "Allen Golder-Carpenter",
-    "year": "2025",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Sojourn",
-    "author": "Allen Golder-Carpenter",
-    "year": "2025",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
     "added": "07/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -370,172 +288,10 @@
     "category": "image"
   },
   {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "09/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "10/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Ganja & Hess",
     "author": "Bill Gunn",
     "year": "1973",
     "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ganja & Hess",
-    "author": "Bill Gunn",
-    "year": "1973",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ganja & Hess",
-    "author": "Bill Gunn",
-    "year": "1973",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ganja & Hess",
-    "author": "Bill Gunn",
-    "year": "1973",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ganja & Hess",
-    "author": "Bill Gunn",
-    "year": "1973",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ganja & Hess",
-    "author": "Bill Gunn",
-    "year": "1973",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ganja & Hess",
-    "author": "Bill Gunn",
-    "year": "1973",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
-    "author": "Ladji Diaby",
-    "year": "2023",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
-    "author": "Ladji Diaby",
-    "year": "2023",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI.jpg",
     "added": "07/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -559,49 +315,14 @@
     "category": "image"
   },
   {
-    "title": "A Different Type of Church",
-    "author": "Ryan Cardoso",
+    "title": "M.C",
+    "author": "Josiane M.H. Pozi",
     "year": "2023",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "A Different Type of Church",
-    "author": "Ryan Cardoso",
-    "year": "2023",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
-    "added": "07/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Josiane M.H. Pozi",
-    "year": "N/A",
     "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI.jpg",
     "added": "08/05/2026",
     "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Josiane M.H. Pozi",
-    "year": "N/A",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Josiane M.H. Pozi",
-    "year": "N/A",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
+    "category": "image",
+    "notes": "BLK NWS"
   },
   {
     "title": "Studio Books",
@@ -617,60 +338,6 @@
     "author": "Nella Tarantino",
     "year": "2022",
     "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "There Where Silence Reigns",
-    "author": "Nella Tarantino",
-    "year": "2022",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "There Where Silence Reigns",
-    "author": "Nella Tarantino",
-    "year": "2022",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Nella Tarantino",
-    "year": "N/A",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Nella Tarantino",
-    "year": "N/A",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Nella Tarantino",
-    "year": "N/A",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "N/A",
-    "author": "Nella Tarantino",
-    "year": "N/A",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI.jpg",
     "added": "08/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -865,15 +532,6 @@
     "category": "image"
   },
   {
-    "title": "Rainbow Dance",
-    "author": "Len Lye",
-    "year": "1936",
-    "image": "/images/library/image/LenLye_RainbowDance_1936_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Free Radicals",
     "author": "Len Lye",
     "year": "1958 - 1979",
@@ -973,42 +631,6 @@
     "category": "image"
   },
   {
-    "title": "Apex",
-    "author": "Arthur Jafa",
-    "year": "2013",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Apex",
-    "author": "Arthur Jafa",
-    "year": "2013",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Apex",
-    "author": "Arthur Jafa",
-    "year": "2013",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Apex",
-    "author": "Arthur Jafa",
-    "year": "2013",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Le Rage",
     "author": "Arthur Jafa",
     "year": "2017",
@@ -1036,46 +658,10 @@
     "category": "image"
   },
   {
-    "title": "akingdoncomethas",
-    "author": "Arthur Jafa",
-    "year": "2018",
-    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "akingdoncomethas",
-    "author": "Arthur Jafa",
-    "year": "2018",
-    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Ibaraki Kasugaoka Church (Church of the Light)",
     "author": "Tadao Ando",
     "year": "1989",
     "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ibaraki Kasugaoka Church (Church of the Light)",
-    "author": "Tadao Ando",
-    "year": "1989",
-    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI.jpg",
-    "added": "08/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Cinema in the Round",
-    "author": "Mark Leckey",
-    "year": "2008",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI.png",
     "added": "08/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -1178,6 +764,16 @@
     "added": "10/05/2026",
     "by": "Jess",
     "category": "image"
+  },
+  {
+    "title": "Seven Twists I-V1",
+    "author": "Dóra Maurer",
+    "year": "1979",
+    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY",
+    "added": "10/05/2026",
+    "by": "Jess",
+    "category": "image",
+    "notes": "C-Studios"
   },
   {
     "title": "Apparition, Blueberries",
@@ -1315,6 +911,15 @@
     "category": "image"
   },
   {
+    "title": "Stehplätze - Störplätze",
+    "author": "Kurt Buchwald",
+    "year": "1984",
+    "image": "/images/library/image/KurtBuchwald_Stehplätze-Störplätze_1984_JY",
+    "added": "10/05/2026",
+    "by": "Jess",
+    "category": "image"
+  },
+  {
     "title": "Experimentum Crucis",
     "author": "Isaac Newton",
     "year": "1666",
@@ -1432,15 +1037,6 @@
     "category": "image"
   },
   {
-    "title": "Common Side Effects",
-    "author": "Joe Bennett Steve Hely",
-    "year": "2024",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Schema: Art-Public Space",
     "author": "Thomas Hirschhorn",
     "year": "2016-2022",
@@ -1531,46 +1127,10 @@
     "category": "image"
   },
   {
-    "title": "A Clay Sermon at Whitechapel Gallery (Installation View)",
-    "author": "Theaster Gates",
-    "year": "2021",
-    "image": "/images/library/image/TheasterGates_AClaySermonatWhitechapelGallery_2021_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "A Clay Sermon at Whitechapel Gallery (Installation View)",
-    "author": "Theaster Gates",
-    "year": "2021",
-    "image": "/images/library/image/TheasterGates_AClaySermonatWhitechapelGallery_2021_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "A Complete Run of The Source Magazine",
     "author": "The Source Magazine",
     "year": "1988-2020",
     "image": "/images/library/image/TheSourceMagazine_ACompleteRunofTheSourceMagazine_1988-2020_CI.png",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "All That Jazz",
-    "author": "Bob Fosse",
-    "year": "1979",
-    "image": "/images/library/image/BobFosse_AllThatJazz_1979_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "All That Jazz",
-    "author": "Bob Fosse",
-    "year": "1979",
-    "image": "/images/library/image/BobFosse_AllThatJazz_1979_CI.jpg",
     "added": "11/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -1612,20 +1172,11 @@
     "category": "image"
   },
   {
-    "title": "Mirror",
-    "author": "Andrei Tarkovsky",
-    "year": "2004",
-    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Mirror",
-    "author": "Andrei Tarkovsky",
-    "year": "2004",
-    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI.jpg",
-    "added": "11/05/2026",
+    "title": "40 Acres and a Unicorn",
+    "author": "Noah Davis",
+    "year": "2007",
+    "image": "/images/library/image/NoahDavis_40AcresandauUnicorn_2007_CI",
+    "added": "13/05/2026",
     "by": "Cynthia",
     "category": "image"
   },
@@ -1643,15 +1194,6 @@
     "author": "Avant Garde Magazine",
     "year": "1968",
     "image": "/images/library/image/AvantGardeMagazine_AvantGardeMagazineCover_1968_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Avant Garde Magazine Cover",
-    "author": "Avant Garde Magazine",
-    "year": "1983",
-    "image": "/images/library/image/AvantGardeMagazine_AvantGardeMagazineCover_1983_CI.webp",
     "added": "11/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -1711,24 +1253,6 @@
     "category": "image"
   },
   {
-    "title": "Ghost in the Shell",
-    "author": "Mamoru Oshii",
-    "year": "1995",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Ghost in the Shell",
-    "author": "Mamoru Oshii",
-    "year": "1995",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Street Portraits of 1980's NYC",
     "author": "Keizo Kitajima",
     "year": "1983",
@@ -1742,15 +1266,6 @@
     "author": "Akos Halasz",
     "year": "2014",
     "image": "/images/library/image/AkosHalasz_InterstellarTesseractScene_2014_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Dancer in the Dark",
-    "author": "Lars von Trier",
-    "year": "2000",
-    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI.jpg",
     "added": "11/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -1783,100 +1298,10 @@
     "category": "image"
   },
   {
-    "title": "Michael Jackson Scream (Music Video)",
-    "author": "Brian Drucker",
-    "year": "1995",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Michael Jackson Scream (Music Video)",
-    "author": "Brian Drucker",
-    "year": "1995",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Hero",
     "author": "Christopher Doyle",
     "year": "2002",
     "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Hero",
-    "author": "Christopher Doyle",
-    "year": "2002",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Hero",
-    "author": "Christopher Doyle",
-    "year": "2002",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Hero",
-    "author": "Christopher Doyle",
-    "year": "2002",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI(1).jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI(1).jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI(1).jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI(1).jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI(1).jpg",
     "added": "12/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -1895,42 +1320,6 @@
     "author": "James Laxton",
     "year": "2008",
     "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Medicine for Melancholy",
-    "author": "James Laxton",
-    "year": "2008",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Medicine for Melancholy",
-    "author": "James Laxton",
-    "year": "2008",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Michel Gondry for Louis Vuitton",
-    "author": "Michel Gondry",
-    "year": "2023",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Michel Gondry for Louis Vuitton",
-    "author": "Michel Gondry",
-    "year": "2023",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
     "added": "12/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -1990,73 +1379,10 @@
     "category": "image"
   },
   {
-    "title": "Mulholland Drive",
-    "author": "Peter Deming",
-    "year": "2001",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Mulholland Drive",
-    "author": "Peter Deming",
-    "year": "2001",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Mulholland Drive",
-    "author": "Peter Deming",
-    "year": "2001",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
     "title": "Akira",
     "author": "Katsuji Misawa",
     "year": "1988",
     "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Akira",
-    "author": "Katsuji Misawa",
-    "year": "1988",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Akira",
-    "author": "Katsuji Misawa",
-    "year": "1988",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Akira",
-    "author": "Katsuji Misawa",
-    "year": "1988",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.jpg",
-    "added": "12/05/2026",
-    "by": "Cynthia",
-    "category": "image"
-  },
-  {
-    "title": "Perfect Blue",
-    "author": "Hisao Shirai",
-    "year": "1997",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg",
     "added": "12/05/2026",
     "by": "Cynthia",
     "category": "image"
@@ -2076,6 +1402,1374 @@
     "year": "2023",
     "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI.jpg",
     "added": "12/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "America",
+    "author": "Garrett Bradley",
+    "year": "2019",
+    "image": "/images/library/image/GarrettBradley_America_2019_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "N/A",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_N/A_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Ivan's Childhood",
+    "author": "Andrei Tarkovsky",
+    "year": "1962",
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "N/A",
+    "author": "Diana Palermo",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_DianaPalermo_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Adidas Originals by Wales Bonner",
+    "author": "Vivane Sassen",
+    "year": "2024",
+    "image": "/images/library/image/AdidasOriginalsbyWalesBonner_VivaneSassen_2024_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Disney's Aladdin",
+    "author": "Ron Clements John Musker",
+    "year": "1993",
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Disney's Pinocchio",
+    "author": "Ben Shapersteen Hamilton Luske Norm Ferguson Wilfred Jackson Bill Roberts Jack Kinney T. Hee",
+    "year": "1940",
+    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Samuel L. Jackson for Adidas",
+    "author": "Thibaut Grevet",
+    "year": "2025",
+    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Vortex Drawing 19",
+    "author": "Nnena Kalu",
+    "year": "2018",
+    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Super Limbo",
+    "author": "LimboAccra Super Yaya",
+    "year": "2023",
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Togo National Museum",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_TogoNationalMuseum_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Astro Boy",
+    "author": "Osamu Tezuka",
+    "year": "1963",
+    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Bill Gunn in Stop (1970)",
+    "author": "N/A",
+    "year": "1970",
+    "image": "/images/library/image/N/A_BillGunninStop(1970)_1970_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Near the Cross",
+    "author": "The Misissippi Mass Choir",
+    "year": "2014",
+    "image": "/images/library/image/TheMississippiMassChoir_NeartheCross_2014_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Ricky Dillard & New G - There Is No Way, featuring Nikki Ross",
+    "author": "Ricky Dillard & New G Nikki Ross",
+    "year": "2009",
+    "image": "/images/library/image/RickyDillard&NewG+NikkiRoss_RickyDillard&NewG-ThereIsNoWay,featuringNikkiRoss_2009_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "F50 YY Tunit Tiger",
+    "author": "Y-3",
+    "year": "2006",
+    "image": "/images/library/image/Y-3_F50YYTunitTiger_2006_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Mémoire",
+    "author": "Sammy Baloji",
+    "year": "2004-06",
+    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Untitled 17",
+    "author": "Sammy Baloji",
+    "year": "2004-06",
+    "image": "/images/library/image/SammyBaloji_Untitled17_2004-06_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Precious Renee Tucker Live (Poster)",
+    "author": "Jonas Pequeno",
+    "year": "2025",
+    "image": "/images/library/image/JonasPequeno_PreciousReneeTuckerLive(Poster)_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Precious at Holy Trinity Church, London",
+    "author": "Yumi Mameko",
+    "year": "2025",
+    "image": "/images/library/image/YumiMameko_PreciousatHolyTrinityChurch_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "The Backrooms",
+    "author": "Kane Parsons",
+    "year": "2022",
+    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Parchment Makulatura",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_ParchmentMakulatura_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Drum Beam Energy 5",
+    "author": "Dozie Kanu",
+    "year": "2023",
+    "image": "/images/library/image/DozieKanu_DrumBeamEnergy5_2023_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "to prop and ignore",
+    "author": "Dozie Kanu",
+    "year": "2021",
+    "image": "/images/library/image/DozieKanu_topropandignore_2021_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "How to Get Business",
+    "author": "N/A",
+    "year": "ca. 1970",
+    "image": "/images/library/image/N/A_HowtoGetBusiness_ca.1970_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "The Du Boisian Visualization Toolkit",
+    "author": "W.E.B. Du Bois",
+    "year": "1900",
+    "image": "/images/library/image/W.E.B.DuBois_TheDuBoisianVisualizationToolkit_1900_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "ELEMENT (Music Video)",
+    "author": "Dave Free Jonas Lindstroem",
+    "year": "2017",
+    "image": "/images/library/image/DaveFree+JonasLindstroem_ELEMENT(MusicVideo)_2017_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Paprika",
+    "author": "Satoshi Kon",
+    "year": "2006",
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld?_2026_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "ANDERSON .PAAK x KAYTRANDA \"Twin Flame\"",
+    "author": "Greg Yaro",
+    "year": "2022",
+    "image": "/images/library/image/GregYaro_ANDERSON.PAAKxKAYTRANADA\"TwinFlame\"_2022_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "STEVE LACEY \"HELMET\"",
+    "author": "Greg Yaro",
+    "year": "2022",
+    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Hyperfate",
+    "author": "Christelle Oyiri",
+    "year": "2022",
+    "image": "/images/library/image/ChristelleOyiri_Hyperfate_2022_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Levi's Silver Tab",
+    "author": "Graham Rounthwaite",
+    "year": "1999",
+    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Comme des Garçons S/S 1995",
+    "author": "Keizo Kitajima",
+    "year": "1995",
+    "image": "/images/library/image/KeizoKitajima_CommedesGarçonsS/S1995_1995_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Amina Claudine Myers",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_AminaClaudineMyers_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "throwers",
+    "author": "Nolan Oswald Dennis",
+    "year": "2025",
+    "image": "/images/library/image/NolanOswaldDennis_throwers_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "RPS Awards 2025 Stage (Rachel Jones)",
+    "author": "Rachel Jones",
+    "year": "2025",
+    "image": "/images/library/image/RachelJones_RPSAwards2025Stage(RachelJones)_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Este quarto parece uma República!",
+    "author": "Sandra Poulson",
+    "year": "2025",
+    "image": "/images/library/image/SandraPoulson_EstequartopareceumaRepública!_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Childhood (Card)",
+    "author": "AREA Nightclub",
+    "year": "1986",
+    "image": "/images/library/image/AREANightclub_Childhood(Card)_1986_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "The Businessmen",
+    "author": "Jacob Lawrence",
+    "year": "1947",
+    "image": "/images/library/image/JacobLawrence_TheBusinessmen_1947_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Lii Fall 2025",
+    "author": "Zane Li",
+    "year": "2025",
+    "image": "/images/library/image/ZaneLi_LiiFall2025_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Lii Spring 2026",
+    "author": "Zane Li",
+    "year": "2026",
+    "image": "/images/library/image/ZaneLi_LiiSpring2026_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Disco! (Album Cover)",
+    "author": "MIKE",
+    "year": "2021",
+    "image": "/images/library/image/MIKE_Disco!(AlbumCover)_2021_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Sun Ra Space II, New York",
+    "author": "Ming Smith",
+    "year": "1978",
+    "image": "/images/library/image/MingSmith_SunRaSpaceII,NewYork_MingSmith_1978_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Astro Boy: The Brave in Space",
+    "author": "Osamu Tezuka",
+    "year": "1964",
+    "image": "/images/library/image/OsamuTezuka_AstroBoy:TheBraveinSpace_1964_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "A Library as Large as the World",
+    "author": "Dozie Kanu Federico Campagna",
+    "year": "2025",
+    "image": "/images/library/image/DozieKanu+FedericoCampagna_ALibraryasLargeastheWorld_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Gabu Qu",
+    "author": "Google Maps",
+    "year": "N/A",
+    "image": "/images/library/image/GoogleMaps_GabuQu_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Notes Line C Exposition",
+    "author": "Kandis Williams",
+    "year": "2021",
+    "image": "/images/library/image/KandisWilliams_NotesLineCExposition_2021_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Performance: Sheryl Sutton",
+    "author": "Sheryl Sutton",
+    "year": "1979",
+    "image": "/images/library/image/SherylSutton_Performance:SherylSutton_1979_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Import/Export Funk Office",
+    "author": "Renée Green",
+    "year": "1992-93",
+    "image": "/images/library/image/RenéeGreen_Import/ExportFunkOffice_1992-93_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Max Siegel's Indianapolis Home",
+    "author": "Ebony Magazine",
+    "year": "2007",
+    "image": "/images/library/image/EbonyMagazine_MaxSiegel'sIndianapolisHome_2007_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Manu Dibango (Air Afrique)",
+    "author": "Air Afrique",
+    "year": "1996",
+    "image": "/images/library/image/AirAfrique_ManuDibango(AirAfrique)_1996_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Born Like This (Album Cover)",
+    "author": "MF Doom",
+    "year": "2009",
+    "image": "/images/library/image/MFDoom_BornLikeThis(AlbumCover)_2009_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Stalker",
+    "author": "Andrei Tarkovsky",
+    "year": "1979",
+    "image": "/images/library/image/AndreiTarkovsky_Stalker_1979_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "The Good, positive/The Bad, positive",
+    "author": "Marina Abramović",
+    "year": "2019",
+    "image": "/images/library/image/MarinaAbramović_TheGood,positive/TheBad,positive_2019_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Angel (Aurora Consurgens)",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_Angel(AuroraConsurgens)_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Nina Simone",
+    "author": "Ken Harris",
+    "year": "ca. 1970",
+    "image": "/images/library/image/KenHarris_NinaSimone_ca.1970_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "sou ni tile (Album Cover)",
+    "author": "Amodou et Mariam",
+    "year": "2005",
+    "image": "/images/library/image/AmadouetMariam_sounitile(AlbumCover)_2005_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Y-3 Spring 2010 Fashion Show",
+    "author": "Y-3",
+    "year": "2010",
+    "image": "/images/library/image/Y-3_Y-3Spring2010FashionShow_2010_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Twen Magazine",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_TwenMagazine_N/A_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Twen Magazine Editorial (April 1969)",
+    "author": "N/A",
+    "year": "1969",
+    "image": "/images/library/image/N/A_TwenMagazineEditorial(April1969)_1969_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "2022",
+    "author": "Satoshi Kon",
+    "year": "2006",
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Safe",
+    "author": "Garrett Bradley",
+    "year": "2022",
+    "image": "/images/library/image/GarrettBradley_Safe_2022_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Perfect Blue",
+    "author": "Satoshi Kon",
+    "year": "1997",
+    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "N/A",
+    "author": "Robert Valley",
+    "year": "2025",
+    "image": "/images/library/image/RobertValley_N/A_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Augustus Hill (Oz)",
+    "author": "Jean de Segonzac",
+    "year": "1998",
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "BLACK BRITISH MUSIC 2025 Hat",
+    "author": "Jim Legxacy",
+    "year": "2025",
+    "image": "/images/library/image/JimLegxacy_BLACKBRITISHMUSIC2025Hat_2025_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "BLACK PICTURE SHOW",
+    "author": "Bill Gunn",
+    "year": "1975",
+    "image": "/images/library/image/BillGunn_BLACKPICTURESHOW_1975_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Tlalnepantla Park",
+    "author": "PRODUCTORA",
+    "year": "2019",
+    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Pluto at the Zoo",
+    "author": "Disney",
+    "year": "1942",
+    "image": "/images/library/image/Disney_PlutoattheZoo_1942_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Art in Our Time",
+    "author": "Fred Wilson",
+    "year": "1998",
+    "image": "/images/library/image/FredWilson_ArtinOurTime_1998_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Adidas Originals by Wales Bonner",
+    "author": "Renell Medrano",
+    "year": "2024",
+    "image": "/images/library/image/RenellMedrano_AdidasOriginalsbyWalesBonner_2024_CI",
+    "added": "13/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "2 hommes dansent un pas de deux",
+    "author": "Jean Depara",
+    "year": "1955-1965",
+    "image": "/images/library/image/JeanDepara_2hommesdansentunpasdedeux_1955-1965_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Couple en noir et blanc",
+    "author": "Jean Depara",
+    "year": "1955-1965",
+    "image": "/images/library/image/JeanDepara_Coupleennoiretblanc_1955-1965_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Les jeunes twistent",
+    "author": "Jean Depara",
+    "year": "1955-1965",
+    "image": "/images/library/image/JeanDepara_Lesjeunestwistent_1955-1965_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "AHI X IB X PU",
+    "author": "Angel Harvey-Ideozu",
+    "year": "2026",
+    "image": "/images/library/image/AngelHarvey-Ideozu_AHIXIBXPU_2026_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "A \"mistake\" with Negritude, Pan-Africanism, and Postcolonial African Identity: African Portrait Photography",
+    "author": "Angel Harvey-Ideozu",
+    "year": "2026",
+    "image": "/images/library/image/AngelHarvey-Ideozu_A\"mistake\"withNegritude,Pan-Africanism,andPostcolonialAfricanIdentity:AfricanPortraitPhotography_2026_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Benga Tunes Vol. 2 - DJ Jojo (Album Cover)",
+    "author": "Jojo Records",
+    "year": "2020",
+    "image": "/images/library/image/JojoRecords_BengaTunesVol.2-DJJjojo(AlbumCover)_2020_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Candy Darling on Her Deathbed",
+    "author": "Peter Hujar",
+    "year": "1973",
+    "image": "/images/library/image/PeterHujar_CandyDarlingonHerDeathbed_1973_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Charles Mombaya - Retro (Album Cover)",
+    "author": "Charles Mombaya",
+    "year": "1999",
+    "image": "/images/library/image/CharlesMombaya_CharlesMombara–Retro(AlbumCover)_1999_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Joanna Lumley, Carnegie Tower, NYC, 1994 (Verso)",
+    "author": "David Koppel",
+    "year": "2015",
+    "image": "/images/library/image/DavidKoppel_JoannaLumley,CarnegieTower,NYC,1994(Verso)_2015_AHI",
+    "added": "17/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Instagram Image",
+    "author": "Whak&Mo",
+    "year": "2022",
+    "image": "/images/library/image/Whak&Mo_InstagramImage_2022_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Magazine Cover",
+    "author": "Trim Magazine",
+    "year": "1959",
+    "image": "/images/library/image/TrimMagazine_MagazineCover_1959_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Tony Allen",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_TonyAllen_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Tomy Wright III Promotional Poster",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_TomyWrightIII_PromotionalPoster_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Telfar Sweat Skirt",
+    "author": "Telfar",
+    "year": "2023",
+    "image": "/images/library/image/Telfar_TelfarSweatSkirt_2023_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Tangled Roots",
+    "author": "Brixton Art Gallery",
+    "year": "1986",
+    "image": "/images/library/image/BrixtonArtGallery_TangledRoots_1986_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Sampha Process",
+    "author": "Khali Joseph",
+    "year": "2017",
+    "image": "/images/library/image/KhaliJoseph_SamphaProcess_2017_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Passage",
+    "author": "Saint Heron",
+    "year": "2021",
+    "image": "/images/library/image/SaintHeron_Passage_2021_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Tulip Boy",
+    "author": "Rotimi Fani-Kayode",
+    "year": "1989",
+    "image": "/images/library/image/RotimiFani-Kayode_TulipBoy_1989_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Self-Portrait of Macky Kane and Fatou Thioune, Saint Louis (Senegal)",
+    "author": "Macky Kane Fatou Thioune",
+    "year": "1941",
+    "image": "/images/library/image/MackyKane+FatouThioune_Self-PortraitofMackyKaneandFatouThioune_SaintLouis(Senegal)_1941_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Issue 3: Earthbound",
+    "author": "Sports Banger",
+    "year": "2021",
+    "image": "/images/library/image/SportsBanger_Issue3:Earthbound_2021_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Silver Lake Lounge",
+    "author": "Kevin McCarty",
+    "year": "N/A",
+    "image": "/images/library/image/KevinMcCarty_SilverLakeLounge_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Signature",
+    "author": "Isamu Noguchi",
+    "year": "1984",
+    "image": "/images/library/image/IsamuNoguchi_Signature_1984_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Charles Bursey",
+    "author": "Ruth-Marion Baruch",
+    "year": "ca. 1970",
+    "image": "/images/library/image/Ruth-MarionBaruch_CharlesBursey_ca.1970_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "smack",
+    "author": "Google Dictionary",
+    "year": "N/A",
+    "image": "/images/library/image/GoogleDictionary_smack_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Casa Insinga Floor Plan",
+    "author": "N/A",
+    "year": "ca. 1987",
+    "image": "/images/library/image/N/A_CasaInsingaFloorPlan_ca.1987_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "The Ritual of Contemplation - Shifting Landscapes",
+    "author": "Melissa Andrea Cortes",
+    "year": "2014",
+    "image": "/images/library/image/MelissaAndreaCortes_TheRitualofContemplation-ShiftingLandscapes_2014_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Lucille",
+    "author": "Luciano Castelli",
+    "year": "1973",
+    "image": "/images/library/image/LucianoCastelli_Lucille_1973_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Richie Havens",
+    "author": "Günther KIESER",
+    "year": "1970",
+    "image": "/images/library/image/GüntherKIESER_RichieHavens_ca.1970_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "The Pharcyde",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_ThePharcyde_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Walmer Yard Drawing",
+    "author": "Peter Salter",
+    "year": "2004",
+    "image": "/images/library/image/PeterSalter_WalmerYardDrawing_2004_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "The Original Paradise Garage, 1971",
+    "author": "David Parkinson",
+    "year": "1971",
+    "image": "/images/library/image/DavidParkinson_TheOriginalParadiseGarage,1971_1971_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Intervention on the facade of the Auditorium",
+    "author": "Pablo Palazuelo",
+    "year": "1989",
+    "image": "/images/library/image/PabloPalazuelo_InterventiononthefacadeoftheAuditorium_1989_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Original Image",
+    "author": "Angel Harvey-Ideozu",
+    "year": "2025",
+    "image": "/images/library/image/AngelHarvey-Ideozu_OriginalImage_2025_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "The American Mysteries",
+    "author": "Elizabeth Diller Ricardo Scofidio",
+    "year": "1987",
+    "image": "/images/library/image/ElizabethDiller+RicardoScofidio_TheAmericanMysteries_1987_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Original Image",
+    "author": "Angel Harvey-Ideozu",
+    "year": "2022",
+    "image": "/images/library/image/AngelHarvey-Ideozu_OriginalImage_2022_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "LeBron's Real Dad",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_LeBron'sRealDad_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Jimmy Cliffy (The Harder They Come)",
+    "author": "Perry Henzell",
+    "year": "1972",
+    "image": "/images/library/image/PerryHenzell_JimmyCliffy(TheHarderTheyCome)_1972_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Hotel on Calle Princessa",
+    "author": "Pablo Palazuelo",
+    "year": "1961",
+    "image": "/images/library/image/PabloPalazuelo_HotelonCallePrinces_1961_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Edgar Cairo",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_EdgarCairo_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "ETERNAL AND SACRED",
+    "author": "Tati au Miel",
+    "year": "2023",
+    "image": "/images/library/image/TatiauMiel_ETERNALANDSACRED_2023_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "Gordon Ominde and Black Savage Band",
+    "author": "Afro7",
+    "year": "N/A",
+    "image": "/images/library/image/Afro7_GordonOmindeandBlackSavageBand_N/A_AHI",
+    "added": "19/05/2026",
+    "by": "Angel",
+    "category": "image"
+  },
+  {
+    "title": "The Taking of Christ",
+    "author": "John Simmons",
+    "year": "2016",
+    "image": "/images/library/image/JohnSimmons_TheTakingofChrist_2016_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "zungenkuß für den weißen mann",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_zungenkußfürdenweißenmann_N/A_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Urgeischt im Dschrungel. Es gehört einem Herrscher",
+    "author": "Pete Turner",
+    "year": "1972",
+    "image": "/images/library/image/PeteTurner_UrgeischtimDschungel.EsgehörteinemHerrscher_1972_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "boote sind schmal wie Hängbrücken in Afrika",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_bootesindschmalwieHängbrückeninAfrika_N/A_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Speaker / Girl",
+    "author": "Peter Doig",
+    "year": "2015",
+    "image": "/images/library/image/PeterDoig_Speaker/Girl_2015_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Congo",
+    "author": "Noah Davis",
+    "year": "2015",
+    "image": "/images/library/image/NoahDavis_Congo_2015_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Hair Advertisement",
+    "author": "Deana Lawson",
+    "year": "2005",
+    "image": "/images/library/image/DeanaLawson_HairAdvertisement_2005_CI",
+    "added": "19/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "A Time of Innocence",
+    "author": "Jamel Shabazz",
+    "year": "1980",
+    "image": "/images/library/image/JamelShabazz_ATimeofInnocence_1980_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Howard Universal",
+    "author": "Grace Wales Bonner",
+    "year": "2025",
+    "image": "/images/library/image/GraceWalesBonner_HowardUniversal_2025_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Josephine Baker",
+    "author": "George Hoyingen-Huene",
+    "year": "ca. 1927",
+    "image": "/images/library/image/GeorgeHoyningen-Huene_JosephineBaker_ca.1927_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Alessando de Medici",
+    "author": "N/A",
+    "year": "ca. 1570",
+    "image": "/images/library/image/N/A_AlessandrodeMedici_ca.1570_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Working Girls",
+    "author": "Lizzie Borden",
+    "year": "1989",
+    "image": "/images/library/image/LizzieBorden_WorkingGirls_1986_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Keith Haring",
+    "author": "Tseng Kwong Chi",
+    "year": "ca. 1983",
+    "image": "/images/library/image/TsengKwongChi_KeithHaring_ca.1983_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Nina Chow",
+    "author": "Tony Viramontes",
+    "year": "ca. 1980",
+    "image": "/images/library/image/TonyViramontes_NinaChow_ca.1980_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Jackie Kennedy Onasis",
+    "author": "Ron Galella",
+    "year": "1971",
+    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Mick Jagger and Jerry Hall",
+    "author": "Ron Galella",
+    "year": "1978",
+    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Polaroids",
+    "author": "Maripol",
+    "year": "N/A",
+    "image": "/images/library/image/Maripol_Polaroids_N/A_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Puck Ball (The Gang's All Here)",
+    "author": "Tseng Kwong Chi",
+    "year": "1983",
+    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Diane Keaton and Carol Kane",
+    "author": "Bill Cunningham",
+    "year": "1989",
+    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Betty Davis",
+    "author": "Bill Cunningham",
+    "year": "1969",
+    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "On the Street",
+    "author": "Bill Cunningham",
+    "year": "N/A",
+    "image": "/images/library/image/BillCunningham_OntheStreet_N/A_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Come Out!!",
+    "author": "Peter Hujar",
+    "year": "1970",
+    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Lisa Lyon",
+    "author": "Robert Mapplethorpe",
+    "year": "1980",
+    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Fran Lebowitz at Home in Morristown",
+    "author": "Peter Hujar",
+    "year": "1974",
+    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Tongues Untied",
+    "author": "Marlon Riggs",
+    "year": "1989",
+    "image": "/images/library/image/MarlonRiggs_TonguesUntied_1989_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Debbie Harry",
+    "author": "Kate Simons",
+    "year": "ca. 1980",
+    "image": "/images/library/image/KateSimons_DebbieHarry_ca.1980_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Aluminum Foil #1 (Self-Portrait)",
+    "author": "Jimmy DeSana",
+    "year": "1985",
+    "image": "/images/library/image/JimmyDeSana_AluminumFoil#1(Self-Portrait)_1985_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "The Portrait Project",
+    "author": "Carleen De Sozer",
+    "year": "2019",
+    "image": "/images/library/image/CarleenDeSozer_ThePortraitProject_2019_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Broken Silence (Official Video)",
+    "author": "So Solid Crew",
+    "year": "2003",
+    "image": "/images/library/image/SoSolidCrew_BrokenSilence(OfficialVideo)_2003_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Rinse FM 100.3",
+    "author": "Wiley and Flowdan",
+    "year": "2005",
+    "image": "/images/library/image/WileyandFlowdan_RinseFM100.3(2005)_2005_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "That's Not Me (Official Video)",
+    "author": "Skepta JME",
+    "year": "2016",
+    "image": "/images/library/image/Skepta+JME_That'sNotMe(OfficialVideo)_2016_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Wot Do U Call It? (High Quality Video)",
+    "author": "Wiley",
+    "year": "2004",
+    "image": "/images/library/image/Wiley_WotDoUCallIt?(HighQualityVideo)_2004_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Paul Simonon",
+    "author": "Syd Shelton",
+    "year": "1978",
+    "image": "/images/library/image/SydShelton_PaulSimonon_1978_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "The Home of Music",
+    "author": "Levy's",
+    "year": "N/A",
+    "image": "/images/library/image/Levy's_TheHomeofMusic_N/A_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Brady Club Social Hanbury Street",
+    "author": "N/A",
+    "year": "ca. 1960",
+    "image": "/images/library/image/N/A_BradyClubSocialHanburyStreet_ca.1960_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Dizzee Rascal and Wiley in front of Crossways Estate",
+    "author": "N/A",
+    "year": "N/A",
+    "image": "/images/library/image/N/A_DizzeeRascalandWileyinfrontofCrosswaysEstate_N/A_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Amy Winehouse at George Tavern",
+    "author": "Blake Wood",
+    "year": "2008",
+    "image": "/images/library/image/BlakeWood_AmyWinehouseatGeorgeTavern_2008_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "About Us",
+    "author": "The George",
+    "year": "N/A",
+    "image": "/images/library/image/TheGeorge_AboutUs_N/A_CI",
+    "added": "21/05/2026",
+    "by": "Cynthia",
+    "category": "image"
+  },
+  {
+    "title": "Crossways Estate",
+    "author": "Gary Kinsman",
+    "year": "2016",
+    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI",
+    "added": "21/05/2026",
     "by": "Cynthia",
     "category": "image"
   }

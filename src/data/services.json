@@ -4,38 +4,40 @@
     "slug": "creative-strategy",
     "columns": [
       {
-        "image": "strategy-01",
-        "alt": "Brand framework",
+        "image": "strategy-04",
+        "alt": "Creative Strategy Overview — Product",
         "category": null,
         "services": [
-          "BRAND PLAYBOOK",
-          "BRAND ARCHITECTURE",
-          "BRAND ACTIVATION & EXPERIENCE",
-          "COLLABORATION STRATEGY"
+          "Brand Playbook",
+          "Concept Development",
+          "Cultural Strategy"
         ]
       },
       {
         "image": "strategy-02",
-        "alt": "Adoption curve",
+        "alt": "Creative Strategy Overview — Early Adopters",
+        "category": null,
+        "services": [
+          "Creative Guidelines",
+          "Social Playbook",
+          "Go-To-Market Planning"
+        ]
+      },
+      {
+        "image": "strategy-01",
+        "alt": "Creative Strategy Overview — Culture",
         "category": null,
         "services": []
       },
       {
         "image": "strategy-03",
-        "alt": "Ecosystems globe",
+        "alt": "Creative Strategy Overview — Ecosystems",
         "category": null,
         "services": [
-          "CONTENT STRATEGY",
-          "SOCIAL PLAYBOOK",
-          "GO-TO-MARKET PLAN",
-          "STRATEGIC PLANNING"
+          "Collaboration Strategy",
+          "Communication Strategy",
+          "Copywriting"
         ]
-      },
-      {
-        "image": "strategy-04",
-        "alt": "Culture / Consumer frame",
-        "category": null,
-        "services": []
       }
     ]
   },
@@ -45,41 +47,39 @@
     "columns": [
       {
         "image": "consulting-01",
-        "alt": "Choir performance",
+        "alt": "Dauan Jacari — Projection, 2024",
         "category": "BRAND",
         "services": [
-          "PARTNERSHIPS",
-          "CREATIVE ADVISORY & IDEATION",
-          "AUDIENCE & TALENT",
-          "NARRATIVE DEVELOPMENT"
+          "Narrative Development",
+          "Partnerships & Positioning",
+          "Audience & Talent Research"
         ]
       },
       {
         "image": "consulting-02",
-        "alt": "Music studio",
+        "alt": "Dauan Jacari, 2024",
         "category": "MUSIC",
         "services": [
           "A&R",
-          "COMMUNICATION & ROLLOUT",
-          "MUSIC DIRECTION",
-          "MUSIC PROGRAMMING"
+          "Music Direction",
+          "Music Marketing"
         ]
       },
       {
         "image": "consulting-03",
-        "alt": "Burning Desire artwork",
+        "alt": "Liz Johnson Artur — 180 Listening Sessions, 2025",
         "category": null,
         "services": []
       },
       {
         "image": "consulting-04",
-        "alt": "Gallery opening",
+        "alt": "10k Global, 2023",
+        "align": "top",
         "category": "ART",
         "services": [
-          "ARTISTIC DIRECTION",
-          "DEVELOPMENT & GROWTH STRATEGY",
-          "PARTNERSHIPS",
-          "WORLDBUILDING & PLAYBOOK"
+          "Talent Development & Growth",
+          "Visual Research",
+          "Creative Advisory"
         ]
       }
     ]
@@ -90,40 +90,40 @@
     "columns": [
       {
         "image": "curation-01",
-        "alt": "Stage with installation",
+        "alt": "Rachel Jones — Britten Pears, 2024",
+        "align": "center",
         "category": "ART",
         "services": [
-          "EXHIBITION CONCEPT",
-          "EXHIBITION DESIGN & PLANNING",
-          "ARCHIVE DEVELOPMENT",
-          "ARTIST & VISUAL RESEARCH"
+          "Exhibition Concept",
+          "Exhibition Design",
+          "Publishing"
         ]
       },
       {
         "image": "curation-02",
-        "alt": "BLKNWS poster",
+        "alt": "Precious Renee Tucker — Love Magazine, 2025",
         "category": "MUSIC",
         "services": [
-          "MUSIC DIRECTION",
-          "MUSIC PROGRAMMING",
-          "EVENT CURATION"
+          "Event Programming",
+          "Live Performance",
+          "Music Direction"
         ]
       },
       {
         "image": "curation-03",
-        "alt": "Sculptural installation",
+        "alt": "BLKNWS In Residence — Music Centre LA, 2024",
+        "align": "top",
         "category": null,
         "services": []
       },
       {
         "image": "curation-04",
-        "alt": "Event space with cushions",
+        "alt": "Ladji Diaby — Kunstverein Nürnberg, 2025",
         "category": "BRAND",
         "services": [
-          "BRAND WORKSHOP",
-          "EVENT PROGRAMMING",
-          "CULTURE CALENDAR",
-          "SPECIAL PROJECTS"
+          "Experiental Design",
+          "Special Projects",
+          "Concept Development"
         ]
       }
     ]
@@ -134,27 +134,41 @@
     "columns": [
       {
         "image": "direction-01",
-        "alt": "",
+        "alt": "NUBA SS24 Smoke, 2023",
         "category": null,
-        "services": []
+        "services": [
+          "Creative Campaign",
+          "Visual / Styling Research",
+          "Editorial & Content Direction"
+        ]
       },
       {
         "image": "direction-02",
-        "alt": "",
+        "alt": "Klein — Fact Magazine, 2021",
+        "align": "top",
         "category": null,
-        "services": []
+        "services": [
+          "Album Direction",
+          "Music Supervision",
+          "Creatve Production"
+        ]
       },
       {
         "image": "direction-03",
-        "alt": "",
+        "alt": "NUBA SS26 Fashion East Presentation, 2025",
+        "align": "top",
         "category": null,
         "services": []
       },
       {
         "image": "direction-04",
-        "alt": "",
+        "alt": "Ola Ebiti — Acne Paper (Nocturne), 2024",
         "category": null,
-        "services": []
+        "services": [
+          "Production Design",
+          "Film & Moving Image",
+          "Treatment & Pitch Development"
+        ]
       }
     ]
   },
@@ -164,27 +178,39 @@
     "columns": [
       {
         "image": "research-01",
-        "alt": "",
+        "alt": "NISM — Self-Study Room, 2024",
         "category": null,
-        "services": []
+        "services": [
+          "Public Engagement",
+          "Educational Programming",
+          "Residency Design"
+        ]
       },
       {
         "image": "research-02",
-        "alt": "",
+        "alt": "Josiane M.H. Pozi — Cura Magazine, 2025",
         "category": null,
-        "services": []
+        "services": [
+          "Research & Publishing",
+          "Archive Development & Activation",
+          "Institutional Development"
+        ]
       },
       {
         "image": "research-03",
-        "alt": "",
+        "alt": "Dauan Jacari — Boy.Brother.Friend, 2025",
         "category": null,
         "services": []
       },
       {
         "image": "research-04",
-        "alt": "",
+        "alt": "Locally Grown — C-Studios TV, 2020",
         "category": null,
-        "services": []
+        "services": [
+          "Exhibition Texts & Essays",
+          "Cultural Insights & Calendar",
+          "Market Research"
+        ]
       }
     ]
   }

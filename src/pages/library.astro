@@ -136,7 +136,7 @@ const referencesJSON = JSON.stringify(references);
     padding:18px 28px;pointer-events:none;
   }
   #header-left { display:flex;align-items:flex-start;pointer-events:all; }
-  #header-right { display:flex;flex-direction:row;gap:14px;align-items:flex-start;pointer-events:all; }
+  #header-right { display:flex;flex-direction:row;gap:14px;align-items:flex-start;pointer-events:all; right: 30px;}
 
   /* Info panel — top left, always visible, labels always shown */
   #info-panel {
@@ -273,6 +273,11 @@ const referencesJSON = JSON.stringify(references);
     height: calc(100% - var(--nav-h)) !important;
   }
 
+
+.hdr-btn, .hdr-menu button{
+  font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}
 @media (max-width: 767px) {
   #header {
     padding: 0;
@@ -316,11 +321,12 @@ const referencesJSON = JSON.stringify(references);
   #header-right {
     position: fixed;
     top: calc(env(safe-area-inset-top, 0px) + 40px);
-    right: 12px;
+    right: 30px;
     z-index: 100;
+    
   }
 
-  .hdr-btn { font-size: 10px; }
+  .hdr-btn { font-size: 0.6rem;}
 
   #bg-canvas,
   #grid-canvas {
@@ -333,22 +339,10 @@ const referencesJSON = JSON.stringify(references);
 }
   .info-label,
   .info-value {
-    font-size: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
   }
 
-  /* Filter dropdown — top-right */
-  #header-right {
-    position: fixed;
-    top: calc(env(safe-area-inset-top, 0px) + 40px);
-    right: 12px;
-    z-index: 100;
-  }
-  .hdr-btn { font-size: 10px; }
-
-    #bg-canvas,
-  #grid-canvas {
-    height: calc(100vh - 100px) !important;
-  }
 
   /* Pile overlay for multi-image refs */
   #pile-overlay {
@@ -367,8 +361,8 @@ const referencesJSON = JSON.stringify(references);
     top: 20px;
     left: 28px;
     font-family: inherit;
-    font-size: 9px;
-    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--grey);
     cursor: crosshair;
@@ -379,7 +373,8 @@ const referencesJSON = JSON.stringify(references);
     top: 20px;
     right: 28px;
     font-family: inherit;
-    font-size: 9px;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
     color: var(--grey);
   }
   #pile-stack {
@@ -558,6 +553,7 @@ function buildGrid(){
 
 // ── 3D Cylinder state ──────────────────────────────────────────────────────
 let cylAngle=0, cylVel=0, cylDragging=false, cylDragX=0;
+let autoRotate = true;
 let cylHoverIdx=-1, cylHoverX=0, cylHoverY=0, cylHoverRotT=0;
 let cylPopStart=null;
 
@@ -696,13 +692,13 @@ H = cvs.height = bgCvs.height = Math.round(rect.height);
 function draw(){
   ctx.clearRect(0,0,W,H); bgCtx.clearRect(0,0,W,H);
   if(state==='grid'){
-    drawCylinder();
-    // Spin inertia
-    if(!cylDragging){
-      cylAngle+=cylVel;
-      cylVel*=0.96;
-    }
-    return;
+      drawCylinder();
+      if(!cylDragging){
+        if(autoRotate) cylAngle += 0.0005;   // slow ambient rotation
+        cylAngle+=cylVel;
+        cylVel*=0.96;
+      }
+      return;
   }
   if(state==='returning'){
     bgCtx.fillStyle='#ffffff'; bgCtx.fillRect(0,0,W,H);
@@ -1248,6 +1244,7 @@ function setupScrubberDrag(){
       document.getElementById('scrubber-dot').style.left=(pct*100)+'%';
       cylAngle=pct*Math.PI*2;
       cylVel=0;
+      autoRotate=false;     
     }
   }
   wrap.addEventListener('mousedown',e=>{
@@ -1298,7 +1295,7 @@ function cfWheelScroll(delta){
   }
 }
 cvs.addEventListener('mousedown',e=>{
-  if(state==='grid'){ cylDragging=true; cylDragX=e.clientX; cylVel=0; }
+  if(state==='grid'){ cylDragging=true; cylDragX=e.clientX; cylVel=0; autoRotate=false; }
 });
 document.addEventListener('mousedown',e=>{
   // Don't start cfDrag if clicking the scrubber
@@ -1335,8 +1332,8 @@ window.addEventListener('mouseup',()=>{ cylDragging=false; cfDragging=false; });
 
 cvs.addEventListener('wheel',e=>{
   e.preventDefault();
-  if(state==='grid'){ cylVel+=(e.deltaX+e.deltaY)*0.0006; }
-  if(state==='floated'||state==='exploding'){ e.preventDefault(); const d=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY; cfWheelScroll(d); }
+  if(state==='grid'){ cylVel+=(e.deltaX+e.deltaY)*0.0006; autoRotate=false; }
+  if(state==='floated'||state==='exploding'){ const d=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY; cfWheelScroll(d); }
 },{passive:false});
 
 ['card-stack','scrubber-wrap','header'].forEach(id=>{
@@ -1363,7 +1360,7 @@ let touchStartX=0, touchStartY=0;
 cvs.addEventListener('touchstart',e=>{
   touchStartX=e.touches[0].clientX;
   touchStartY=e.touches[0].clientY;
-  if(state==='grid'){ cylDragX=e.touches[0].clientX; cylVel=0; cylDragging=true; }
+  if(state==='grid'){ cylDragX=e.touches[0].clientX; cylVel=0; cylDragging=true; autoRotate=false; }
   if(state==='floated'||state==='exploding'){ cfDragX=e.touches[0].clientX; cfScrollVel=0; cfDragging=true; }
 },{passive:true});
 
@@ -1533,6 +1530,14 @@ const scrub=document.getElementById('scrubber');
 scrubWrap.classList.add('show');
 scrub.classList.add('show');
 scrub.style.transform='scaleX(1)';
+// Re-measure canvas whenever the viewport changes (URL bar show/hide, rotate, etc.)
+let _resizeT;
+window.addEventListener('resize', () => {
+  clearTimeout(_resizeT);
+  _resizeT = setTimeout(resize, 100);
+});
+window.addEventListener('orientationchange', resize);
+
 resize();
 animFrame=requestAnimationFrame(loopGrid);
 

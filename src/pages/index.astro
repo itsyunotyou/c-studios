@@ -20,6 +20,7 @@ import projectsData from '../data/projects.json';
           src="/images/hero/intro01-1280w.webp"
           srcset="/images/hero/intro01-640w.webp 640w, /images/hero/intro01-828w.webp 828w, /images/hero/intro01-1280w.webp 1280w, /images/hero/intro01-2560w.webp 2560w"
           sizes="100vw"
+          data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
         <img
           src="/images/hero/intro02-1280w.webp"
@@ -41,12 +42,12 @@ import projectsData from '../data/projects.json';
           src="/images/hero/intro05-1280w.webp"
           srcset="/images/hero/intro05-640w.webp 640w, /images/hero/intro05-828w.webp 828w, /images/hero/intro05-1280w.webp 1280w, /images/hero/intro05-2560w.webp 2560w"
           sizes="100vw"
-          data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
         <img
           src="/images/hero/intro06-1280w.webp"
           srcset="/images/hero/intro06-640w.webp 640w, /images/hero/intro06-828w.webp 828w, /images/hero/intro06-1280w.webp 1280w, /images/hero/intro06-2560w.webp 2560w"
           sizes="100vw"
+          data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
         <img
           src="/images/hero/intro07-1280w.webp"
@@ -58,17 +59,40 @@ import projectsData from '../data/projects.json';
           src="/images/hero/intro08-1280w.webp"
           srcset="/images/hero/intro08-640w.webp 640w, /images/hero/intro08-828w.webp 828w, /images/hero/intro08-1280w.webp 1280w, /images/hero/intro08-2560w.webp 2560w"
           sizes="100vw"
+          data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
         <img
           src="/images/hero/intro09-1280w.webp"
           srcset="/images/hero/intro09-640w.webp 640w, /images/hero/intro09-828w.webp 828w, /images/hero/intro09-1280w.webp 1280w, /images/hero/intro09-2560w.webp 2560w"
           sizes="100vw"
-          data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
         <img
           src="/images/hero/intro10-1280w.webp"
           srcset="/images/hero/intro10-640w.webp 640w, /images/hero/intro10-828w.webp 828w, /images/hero/intro10-1280w.webp 1280w, /images/hero/intro10-2560w.webp 2560w"
           sizes="100vw"
+          class="flash-img" loading="lazy" decoding="async" />
+        <img
+          src="/images/hero/intro11-1280w.webp"
+          srcset="/images/hero/intro11-640w.webp 640w, /images/hero/intro11-828w.webp 828w, /images/hero/intro11-1280w.webp 1280w, /images/hero/intro11-2560w.webp 2560w"
+          sizes="100vw"
+          data-align="center"
+          class="flash-img" loading="lazy" decoding="async" />
+        <img
+          src="/images/hero/intro12-1280w.webp"
+          srcset="/images/hero/intro12-640w.webp 640w, /images/hero/intro12-828w.webp 828w, /images/hero/intro12-1280w.webp 1280w, /images/hero/intro12-2560w.webp 2560w"
+          sizes="100vw"
+          class="flash-img" loading="lazy" decoding="async" />
+        <img
+          src="/images/hero/intro13-1280w.webp"
+          srcset="/images/hero/intro13-640w.webp 640w, /images/hero/intro13-828w.webp 828w, /images/hero/intro13-1280w.webp 1280w, /images/hero/intro13-2560w.webp 2560w"
+          sizes="100vw"
+          data-align="center"
+          class="flash-img" loading="lazy" decoding="async" />
+        <img
+          src="/images/hero/intro14-1280w.webp"
+          srcset="/images/hero/intro14-640w.webp 640w, /images/hero/intro14-828w.webp 828w, /images/hero/intro14-1280w.webp 1280w"
+          sizes="100vw"
+          data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
       </div>
 
@@ -105,17 +129,18 @@ import projectsData from '../data/projects.json';
 
     {services.map((tab, i) => (
       <div class:list={["services-panel", { active: i === 0 }]} data-tab={tab.slug}>
-        <div class="services-images">
+        <div class="services-images" style={`grid-template-columns: repeat(${tab.columns.length}, 1fr)`}>
           {tab.columns.map(col => (
             <img
               src={`/images/services/${col.image}-1280w.webp`}
               srcset={`/images/services/${col.image}-640w.webp 640w, /images/services/${col.image}-828w.webp 828w, /images/services/${col.image}-1280w.webp 1280w, /images/services/${col.image}-2560w.webp 2560w`}
               sizes="25vw"
               alt={col.alt}
+              data-align={col.align}
               loading="lazy" />
           ))}
         </div>
-        <div class="services-texts">
+        <div class="services-texts" style={`grid-template-columns: repeat(${tab.columns.length}, 1fr)`}>
           {tab.columns.map(col => {
             const hasContent = col.category || col.services.length > 0;
             return (
@@ -215,16 +240,35 @@ import projectsData from '../data/projects.json';
   <!-- ════════════════════════════════════════════════════════════ -->
   <!-- INFO (placeholder)                                            -->
   <!-- ════════════════════════════════════════════════════════════ -->
-  <section id="info" class="info-section">
-    <div class="info-content">
-      <p class="info-paragraph">C-STUDIOS is a collective of cross-disciplinary translators 
-– from strategists, researchers and artists to academics, designers and creative practitioners.
-Together we operates across industry sectors, creative ecosystems and artistic expressions.</p>
-      <p class="info-paragraph">At every level, culture continues to accelerate. 
-In this climate, C-STUDIOS applies cultural literacy to design effective creative industry solutions
-for brands, labels, artists, institutions and beyond.</p>
+<section id="info" class="info-section">
+  <div class="info-wrap">
+    <div class="info-venn">
+      <p class="venn-text venn-text-left">
+        Where we translate our insights into sustainable solutions for an evolving network of international clients.
+      </p>
+      <div class="venn-stage">
+        <svg class="venn-svg" viewBox="172 32 456 336" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <circle class="venn-circle venn-circle-left"  cx="340" cy="200" r="160" />
+          <circle class="venn-circle venn-circle-right" cx="460" cy="200" r="160" />
+        </svg>
+        <span class="venn-label venn-label-left">Strategy</span>
+        <span class="venn-label venn-label-right">Curation</span>
+        <img class="venn-c-logo" src="/images/brand/c-studios-logo.png" alt="" aria-hidden="true" />
+      </div>
+      <p class="venn-text venn-text-right">
+        How we test and expand our ideas through collaborative models that explore new forms of cultural production and collective care.
+      </p>
     </div>
-  </section>
+    <div class="info-body">
+      <p class="info-paragraph">
+        C-STUDIOS is a collective of cross-disciplinary translators – from strategists, researchers and artists to academics, designers and creative practitioners. Together we operate across industry sectors, creative ecosystems and artistic expressions.
+      </p>
+      <p class="info-paragraph">
+        At every level, culture continues to accelerate. In this climate, C-STUDIOS applies cultural literacy to design effective creative industry solutions for brands, labels, artists, institutions and beyond.
+      </p>
+    </div>
+  </div>
+</section>
 
 </Layout>
 
@@ -379,7 +423,7 @@ for brands, labels, artists, institutions and beyond.</p>
     align-items: center;
     gap: 0;
     flex-wrap: nowrap;
-    mix-blend-mode: difference;       /* text auto-adapts to slideshow photo brightness */
+       /* text auto-adapts to slideshow photo brightness */
   }
 
   .text-centered {
@@ -394,6 +438,7 @@ for brands, labels, artists, institutions and beyond.</p>
     white-space: nowrap;
     text-transform: uppercase;
     font: 400 16px/1.2 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    letter-spacing: 0.05em;
     opacity: 0;
   }
 
@@ -549,7 +594,7 @@ for brands, labels, artists, institutions and beyond.</p>
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.6);
     pointer-events: none;
     z-index: 1;
     opacity: 0;
@@ -614,7 +659,7 @@ for brands, labels, artists, institutions and beyond.</p>
     color: lightgrey;
     cursor: pointer;
     font: inherit;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     transition: color 0.2s ease;
@@ -690,6 +735,10 @@ for brands, labels, artists, institutions and beyond.</p>
     display: block;
     position: relative;
   }
+  .services-images img[data-align="top"]    { object-position: center top; }
+  .services-images img[data-align="bottom"] { object-position: center bottom; }
+  .services-images img[data-align="left"]   { object-position: left center; }
+  .services-images img[data-align="right"]  { object-position: right center; }
 
 
 
@@ -701,11 +750,11 @@ for brands, labels, artists, institutions and beyond.</p>
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
-    padding: 30px 40px 0;        /* text gets the side padding */
+    padding: 30px 30px 0;        /* text gets the side padding */
   }
   .services-column { padding-right: 30px; }
   .services-category {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #0a0a0a;
@@ -715,8 +764,8 @@ for brands, labels, artists, institutions and beyond.</p>
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 0.75rem;
-    letter-spacing: 0.03em;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 1.7;
   }
@@ -772,7 +821,7 @@ for brands, labels, artists, institutions and beyond.</p>
     flex-direction: column;
     justify-content: flex-end;     /* logos anchor toward bottom */
     gap: 24px;                      /* tighter row gap */
-    padding: 0 0 12vh 0;
+    padding: 0 0 20vh 0;
     overflow: hidden;
   }
   .marquee {
@@ -831,84 +880,207 @@ for brands, labels, artists, institutions and beyond.</p>
   /* ════════════════════════════════════════════════════════════ */
   /* ════════════════════════════════════════════════════════════ */
   /* INFO — dots animate into letters                               */
-  /* ════════════════════════════════════════════════════════════ */
-  .info-section {
-    height: 100vh;
-    width: 100%;
-    background: white;
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-    /* No flex; absolute centering instead so the content position is fixed
-       and immune to sub-pixel layout changes during the animation. */
-  }
-  .info-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Match Header / Footer horizontal padding (20px from each edge) */
-    width: calc(100% - 40px);
-    max-width: 900px;
-    /* Promote to its own compositor layer so descendant animations don't affect host layout */
-    will-change: transform;
-  }
-  /* Three paragraphs — same style (no hierarchy), all caps, with breathing room between */
-  .info-paragraph {
-    font-size: clamp(13px, 1vw, 15px);
-    line-height: 1.8;
-    color: #0a0a0a;
-    font-weight: 400;
-    margin: 0 0 1.5em;
-    max-width: 700px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-  .info-paragraph:last-child { margin-bottom: 0; }
+  /* ═════════════════/* ════════════════════════════════════════════════════════════ */
+/* INFO — Venn layout                                            */
+/* ════════════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════════════ */
+/* INFO — Venn diagram with split-from-one animation             */
+/* ════════════════════════════════════════════════════════════ */
+.info-section {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
-  /* Letters fade in via pure opacity — no transform, no inline-block,
-     so the spans don't affect the paragraph's baseline / line-height calculations.
-     Pairs to each dot's dissolve timing. */
-  .info-section .letter {
-    opacity: 0;
-    transition: opacity 1.6s ease;
-  }
-  .info-section .letter.reveal {
-    opacity: 1;
-  }
+.info-wrap {
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
 
-  /* The dots layer: absolute over .info-content; dots animate from random spots to their letter target */
-  .info-dots-layer {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-  .info-dot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 3px;
-    background: #0a0a0a;
-    border-radius: 50%;
-    opacity: 0;
-    transition:
-      transform 1.4s cubic-bezier(0.65, 0, 0.35, 1),
-      opacity 0.5s ease;
-  }
-  /* When dissolving: slower fade + subtle scale up so dots "puff out" softly */
-  /* (Not strictly used — phase 3 sets inline styles — but kept in sync as fallback) */
-  .info-dot.dissolve {
-    transition: opacity 1.6s ease, transform 1.6s ease;
-    transform: scale(0);
-    opacity: 0;
-  }
+.info-venn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
 
-  @media (max-width: 768px) {
-    .info-manifesto { font-size: 18px; margin-bottom: 40px; }
-    .info-body { font-size: 12px; }
-  }
+.venn-text {
+  flex: 0 1 180px;
+  min-width: 0;
+  font-size: 0.5rem;
+  line-height: 1.7;
+  color: #0a0a0a;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.venn-text-left  { text-align: right; }
+.venn-text-right { text-align: left;  }
 
+.venn-stage {
+  position: relative;
+  flex: 0 1 540px;
+  width: 100%;
+  max-width: min(540px, calc((100vh - 360px) * 1.357));
+  aspect-ratio: 456 / 336;
+}
+
+.venn-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.venn-circle {
+  fill: none;
+  stroke: rgba(10, 10, 10, 0.55);
+  stroke-width: 1;
+}
+
+.venn-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  font-weight: 400;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.venn-label-left  { left: 3.5%;  }
+.venn-label-right { right: 3.5%; }
+
+.venn-c-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7%;
+  height: auto;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.info-body {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.info-paragraph {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  color: #0a0a0a;
+  font-weight: 400;
+  margin: 0 0 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.info-paragraph:last-child { margin-bottom: 0; }
+
+
+/* ─── INITIAL STATES (before scroll-in) ─── */
+
+/* Both circles start at the center — overlapping perfectly so they read as ONE circle */
+.venn-circle-left  { transform: translateX(60px);  }   /* shifts cx 340 → visual 400 */
+.venn-circle-right { transform: translateX(-60px); }   /* shifts cx 460 → visual 400 */
+.venn-circle {
+  transition: transform 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.3s;
+}
+
+/* Labels start hidden — fade in at their final position inside the circles after the split */
+.venn-label-left,
+.venn-label-right { opacity: 0; }
+.venn-label-left  { transition: opacity 0.6s ease 1.5s; }
+.venn-label-right { transition: opacity 0.6s ease 1.7s; }
+
+/* C logo waits for the split to settle, then materializes in discrete steps (no bounce) */
+.venn-c-logo {
+  opacity: 0;
+  transition: opacity 0.6s steps(8, end) 2.2s;
+  /* base transform set in .venn-c-logo above; not animated here */
+}
+
+/* Captions + paragraphs */
+.venn-text,
+.info-paragraph {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* ─── IN-VIEW STATES (animated) ─── */
+
+.info-section.in-view .venn-circle-left,
+.info-section.in-view .venn-circle-right {
+  transform: translateX(0);
+}
+
+.info-section.in-view .venn-label-left,
+.info-section.in-view .venn-label-right {
+  opacity: 1;
+}
+
+.info-section.in-view .venn-c-logo {
+  opacity: 1;
+}
+
+.info-section.in-view .venn-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.info-section.in-view .venn-text-left  { transition-delay: 2.4s; }
+.info-section.in-view .venn-text-right { transition-delay: 2.6s; }
+
+.info-section.in-view .info-paragraph {
+  opacity: 1;
+  transform: translateY(0);
+}
+.info-section.in-view .info-paragraph:nth-of-type(1) { transition-delay: 2.8s; }
+.info-section.in-view .info-paragraph:nth-of-type(2) { transition-delay: 3.0s; }
+
+
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+  .info-section { padding: 60px 20px; }
+  .info-wrap { gap: 40px; }
+  .info-venn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .venn-text {
+    flex: 0 0 auto;
+    font-size: 0.5rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  .venn-text-left,
+  .venn-text-right {
+    text-align: center;
+  }
+  .venn-svg { max-width: 100%; }
+  .info-paragraph { font-size: 0.65rem; }
+}
   /* PROJECTS — tabs + expandable rows                             */
   /* ════════════════════════════════════════════════════════════ */
   .projects-section {
@@ -936,7 +1108,7 @@ for brands, labels, artists, institutions and beyond.</p>
     color: lightgrey;
     cursor: pointer;
     font: inherit;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     transition: color 0.2s ease;
@@ -962,8 +1134,8 @@ for brands, labels, artists, institutions and beyond.</p>
   }
 
   .projects-empty {
-    padding: 0 28px;
-    font-size: 0.85rem;
+    padding: 0 20px;
+    font-size: 0.7rem;
     color: lightgrey;
     font-style: italic;
   }
@@ -985,13 +1157,13 @@ for brands, labels, artists, institutions and beyond.</p>
   width: 100%;
   padding: 18px 28px;
   min-height: 56px;
-  align-items: center;
+  align-items: start;
   background: none;
   border: none;
   text-align: left;
   cursor: pointer;
   font: inherit;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #0a0a0a;
@@ -1236,11 +1408,12 @@ function startSlideshow() {
   images.forEach((img, index) => {
     const isMobile = window.innerWidth <= 767;
     const heightValue = isMobile ? 'calc(var(--vh) * 100)' : '100vh';
-    // On mobile, align images 01 (index 0) and 06 (index 5) to the left
+    // Per-slide overrides indexed into the current slideshow order (see #flashSequence).
+    // After the 2026-05 reorder these indices map to: 3 = old intro01, 4 = old intro06, 11 = old intro10.
     let objectPosition;
-if (isMobile && (index === 0 || index === 5)) {
+if (isMobile && (index === 3 || index === 4)) {
   objectPosition = 'left center';
-} else if (!isMobile && (index === 0 || index === 5 || index === 9)) {
+} else if (!isMobile && (index === 3 || index === 4 || index === 11)) {
   objectPosition = 'center top';
 } else {
   objectPosition = 'center center';
@@ -1363,6 +1536,22 @@ setTimeout(() => {
   }, 2500);
 
 }, 100);
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth < 768) return;
+
+  const container = document.getElementById('textContainer');
+  const sub = document.querySelector('.sub-text');
+  if (!container || !sub) return;
+
+  const onSubDone = (e) => {
+    if (e.target !== sub) return;
+    requestAnimationFrame(() => container.classList.add('text-centered'));
+    sub.removeEventListener('animationend', onSubDone);
+  };
+  sub.addEventListener('animationend', onSubDone);
+});
+
 // ════════════════════════════════════════════════════════════
 // PROJECTS — tab switching + expandable rows
 // ════════════════════════════════════════════════════════════
@@ -1498,154 +1687,19 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
 }
 
 // ═══════════════════════════ INFO: dots → letters ═══════════════════════════
+// INFO — trigger entrance animation when section enters viewport
 function setupInfoReveal() {
-  console.log('[info] setupInfoReveal start');
   const section = document.getElementById('info');
-  if (!section) { console.warn('[info] no #info section'); return; }
-  const contentEl = section.querySelector('.info-content');
-  if (!contentEl) { console.warn('[info] no .info-content'); return; }
-
-  // Wrap every non-space char into <span class="letter">
-  const paragraphs = contentEl.querySelectorAll('p');
-  let letterCount = 0;
-  paragraphs.forEach((p) => {
-    if (p.dataset.split === 'true') return;
-    const text = p.textContent || '';
-    p.textContent = '';
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i];
-      if (ch === ' ') {
-        p.appendChild(document.createTextNode(' '));
-      } else {
-        const span = document.createElement('span');
-        span.className = 'letter';
-        span.textContent = ch;
-        p.appendChild(span);
-        letterCount++;
-      }
-    }
-    p.dataset.split = 'true';
-  });
-  console.log('[info] wrapped letters:', letterCount);
-
-  let triggered = false;
-
-  function runAnimation() {
-    if (triggered) return;
-    triggered = true;
-    console.log('[info] triggering animation');
-
-    // Wait two rAFs to ensure all layout/font measurements are stable
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      const letters = Array.from(contentEl.querySelectorAll('.letter'));
-      if (!letters.length) { console.warn('[info] no letters to animate'); return; }
-      const contentRect = contentEl.getBoundingClientRect();
-      const sectionRect = section.getBoundingClientRect();
-
-      // Dots layer overlay
-      const dotsLayer = document.createElement('div');
-      dotsLayer.className = 'info-dots-layer';
-      contentEl.appendChild(dotsLayer);
-
-      // Build dot data — random initial positions over the whole section
-      const dots = letters.map((letter) => {
-        const lr = letter.getBoundingClientRect();
-        // For uppercase text with line-height: 1.8, the letter glyph sits in the upper
-        // portion of the bounding rect (above the baseline). Using a 0.62 multiplier
-        // instead of 0.5 places the dot at the visual middle of the letter glyph,
-        // close to the baseline area where the eye naturally reads the letter.
-        const targetX = (lr.left + lr.width / 2) - contentRect.left - 1.5;
-        const targetY = (lr.top + lr.height * 0.62) - contentRect.top - 1.5;
-        // Random initial position relative to dotsLayer
-        const startX = (Math.random() * sectionRect.width) - (contentRect.left - sectionRect.left);
-        const startY = (Math.random() * sectionRect.height) - (contentRect.top - sectionRect.top);
-        return { letter, targetX, targetY, startX, startY };
-      });
-
-      // Place all dots at their start positions (no transition yet)
-      dots.forEach((d) => {
-        const dot = document.createElement('div');
-        dot.className = 'info-dot';
-        dot.style.transform = `translate(${d.startX}px, ${d.startY}px)`;
-        dotsLayer.appendChild(dot);
-        d.dot = dot;
-      });
-
-      // Force reflow so the start positions apply before we animate
-      void dotsLayer.offsetWidth;
-
-      // Phase 1: dots fade in at random positions (small per-dot stagger)
-      dots.forEach((d) => {
-        const delay = Math.random() * 250;
-        setTimeout(() => { d.dot.style.opacity = '1'; }, delay);
-      });
-
-      // Phase 2: 400ms later, animate each dot to its letter target
-      setTimeout(() => {
-        dots.forEach((d) => {
-          const delay = Math.random() * 300;
-          setTimeout(() => {
-            d.dot.style.transform = `translate(${d.targetX}px, ${d.targetY}px)`;
-          }, delay);
-        });
-      }, 400);
-
-      // Phase 3: ~2100ms — dots have settled at letter positions, now morph individually.
-      // Each (dot, letter) pair morphs at a random moment within a wide stagger window.
-      // We set inline styles directly because inline beats class rules — the .dissolve class
-      // was being overridden by the inline opacity/transform we set in earlier phases.
-      setTimeout(() => {
-        const STAGGER_MAX = 2800;
-        dots.forEach((d) => {
-          const delay = Math.random() * STAGGER_MAX;
-          setTimeout(() => {
-            // Slow fade-out for the dot (inline transition + opacity, beats CSS class)
-            d.dot.style.transition = 'opacity 1.6s ease, transform 1.6s ease';
-            d.dot.style.opacity = '0';
-            // Shrink to nothing while fading — feels like the dot collapses into the letter
-            const currentTransform = d.dot.style.transform || '';
-            d.dot.style.transform = currentTransform + ' scale(0)';
-            // Reveal the matching letter at the same moment
-            d.letter.classList.add('reveal');
-          }, delay);
-        });
-        // Don't remove dotsLayer from DOM (DOM mutation can cause sub-pixel shifts).
-        // Dots are at opacity 0; the layer has pointer-events: none, so it's harmless to keep.
-      }, 2100);
-    }));
-  }
-
-  // Observer — fire as soon as any of the section is visible.
-  // Explicit root: null forces viewport-based observation regardless of ancestor overflow.
+  if (!section) return;
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
-      console.log('[info] IO entry:', e.isIntersecting, 'ratio:', e.intersectionRatio);
       if (e.isIntersecting) {
-        runAnimation();
+        section.classList.add('in-view');
         io.disconnect();
-        window.removeEventListener('scroll', scrollFallback);
       }
     });
-  }, { root: null, threshold: 0, rootMargin: '0px' });
+  }, { root: null, threshold: 0.2 });
   io.observe(section);
-
-  // Fallback: scroll listener that checks if section is in viewport.
-  // Triggers in case IntersectionObserver doesn't fire (e.g., due to nested overflow contexts).
-  function scrollFallback() {
-    const rect = section.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      console.log('[info] scroll fallback triggered animation');
-      runAnimation();
-      window.removeEventListener('scroll', scrollFallback);
-      io.disconnect();
-    }
-  }
-  window.addEventListener('scroll', scrollFallback, { passive: true });
-
-  // Also check on page load in case section is already in viewport
-  setTimeout(scrollFallback, 100);
-
-  console.log('[info] observer attached');
 }
 
 document.addEventListener('DOMContentLoaded', () => {

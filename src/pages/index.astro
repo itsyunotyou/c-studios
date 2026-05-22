@@ -1062,24 +1062,34 @@ import projectsData from '../data/projects.json';
 
 /* ─── Mobile ─── */
 @media (max-width: 768px) {
-  .info-section { padding: 60px 20px; }
-  .info-wrap { gap: 40px; }
+  .info-section {
+    height: 100vh;
+    padding: 56px 20px;
+  }
+  .info-wrap { gap: 32px; max-width: 480px; }
   .info-venn {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
   }
-  .venn-text {
+  .venn-text { display: none; }
+  .venn-stage {
     flex: 0 0 auto;
-    font-size: 0.5rem;
+    width: 100%;
     max-width: 100%;
-    text-align: center;
+    align-self: center;
   }
-  .venn-text-left,
-  .venn-text-right {
-    text-align: center;
+  .venn-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.06em;
   }
-  .venn-svg { max-width: 100%; }
-  .info-paragraph { font-size: 0.65rem; }
+  .venn-label-left  { left: 6%;  }
+  .venn-label-right { right: 6%; }
+  .venn-c-logo { width: 9%; }
+  .info-paragraph {
+    font-size: 0.62rem;
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+  }
 }
   /* PROJECTS — tabs + expandable rows                             */
   /* ════════════════════════════════════════════════════════════ */

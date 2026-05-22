@@ -606,12 +606,9 @@ function drawCylinder(){
     }
   }
 
-  const drawnRefs=new Set();
   drawn.sort((a,b)=>a.z3-b.z3);
 
   for(const d of drawn){
-    if(drawnRefs.has(d.i)) continue;
-    drawnRefs.add(d.i);
     const{ref,screenX,screenY,tileW,tileH,alpha,scale,popScale=1}=d;
     const g=GAP*scale;
     const ps=popScale; // scale from dot to full

@@ -165,13 +165,15 @@ import projectsData from '../data/projects.json';
   <!-- CLIENTS — two-row marquee, opposite directions                -->
   <!-- ════════════════════════════════════════════════════════════ -->
   <section id="clients" class="clients-section">
-    <!-- Top row — scrolls left → right -->
+    <!-- Top row — scrolls left → right. 4x duplication keeps the track
+         wider than 2x viewport so no blank slot appears during translate.
+         eager loading prevents off-screen logos from popping in mid-scroll. -->
     <div class="marquee">
       <div
         class="marquee-track marquee-right"
-        style={`animation-duration: ${clients.row1.length * 5.5}s`}>
-        {[...clients.row1, ...clients.row1].map((slug) => (
-          <img src={`/images/clients/${slug}.webp`} alt={slug} loading="lazy" />
+        style={`animation-duration: ${clients.row1.length * 5.5 * 2}s`}>
+        {[...clients.row1, ...clients.row1, ...clients.row1, ...clients.row1].map((slug) => (
+          <img src={`/images/clients/${slug}.webp`} alt={slug} loading="eager" />
         ))}
       </div>
     </div>
@@ -179,9 +181,9 @@ import projectsData from '../data/projects.json';
     <div class="marquee">
       <div
         class="marquee-track marquee-left"
-        style={`animation-duration: ${clients.row2.length * 5.5}s`}>
-        {[...clients.row2, ...clients.row2].map((slug) => (
-          <img src={`/images/clients/${slug}.webp`} alt={slug} loading="lazy" />
+        style={`animation-duration: ${clients.row2.length * 5.5 * 2}s`}>
+        {[...clients.row2, ...clients.row2, ...clients.row2, ...clients.row2].map((slug) => (
+          <img src={`/images/clients/${slug}.webp`} alt={slug} loading="eager" />
         ))}
       </div>
     </div>
@@ -250,7 +252,9 @@ import projectsData from '../data/projects.json';
         <svg class="venn-svg" viewBox="172 32 456 336" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
           <circle class="venn-circle venn-circle-left"  cx="340" cy="200" r="160" />
           <circle class="venn-circle venn-circle-right" cx="460" cy="200" r="160" />
-          <circle class="venn-c-logo" cx="400" cy="200" r="18" />
+          <image class="venn-c-logo" href="/images/brand/c-studios-logo.png"
+                 x="370" y="180" width="60" height="43"
+                 preserveAspectRatio="xMidYMid meet" />
         </svg>
         <span class="venn-label venn-label-left">Strategy</span>
         <span class="venn-label venn-label-right">Curation</span>
@@ -968,7 +972,7 @@ import projectsData from '../data/projects.json';
 .venn-label-right { right: 3.5%; }
 
 .venn-c-logo {
-  fill: #0a0a0a;
+  /* SVG <image> respects PNG transparency; no fill needed */
 }
 
 .info-body {
@@ -1057,8 +1061,9 @@ import projectsData from '../data/projects.json';
 /* ─── Mobile ─── */
 @media (max-width: 768px) {
   .info-section {
-    height: 100vh;
-    padding: 56px 20px;
+    height: 100dvh;
+    padding: 48px 20px;
+    justify-content: center;
   }
   .info-wrap { gap: 32px; max-width: 480px; }
   .info-venn {
@@ -1203,7 +1208,7 @@ import projectsData from '../data/projects.json';
 }
 
 .project-images img {
-  height: 30vh;
+  height: 50vh;
   width: auto;
   flex-shrink: 0;
   object-fit: cover;
@@ -1284,18 +1289,18 @@ import projectsData from '../data/projects.json';
   }
   .project-images img {
     flex-shrink: 0;
-    height: 70vh;
+    height: 50vh;
     width: auto;
     object-fit: cover;
   }
   .project-row.expanded .project-images {
-    max-height: 70vh;
+    max-height: 50vh;
   }
 }
 
 .project-images img {
   width: auto;
-  height: 30vh;
+  height: 50vh;
     flex-shrink: 0;
 
   object-fit: cover;
@@ -1304,13 +1309,13 @@ import projectsData from '../data/projects.json';
   user-select: none;
 }
 .project-row.expanded .project-images {
-  max-height: 30vh;
+  max-height: 50vh;
     flex-shrink: 0;
 
 }
 .project-row.expanded .project-images img {
   width: auto;
-  height: 30vh;
+  height: 50vh;
   object-fit: cover;
     flex-shrink: 0;
 
@@ -1590,22 +1595,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initProjectImageAutoScroll() {
+  // Constant pixel-per-second speed — same on web and mobile, independent
+  // of refresh rate and image count.
+  const SPEED_PX_PER_SEC = 50;
+
   document.querySelectorAll('.project-row').forEach(row => {
     const strip = row.querySelector('.project-images');
     if (!strip) return;
 
     let direction = 1;
-    const speed = window.innerWidth <= 767 ? 0.4 : 0.6;
     let isPaused = false;
     let resumeTimer;
+    let lastTs = 0;
 
-    function tick() {
+    function tick(ts) {
+      const dt = lastTs ? (ts - lastTs) / 1000 : 0;
+      lastTs = ts;
+
       if (row.classList.contains('expanded') && !isPaused) {
         const max = strip.scrollWidth - strip.clientWidth;
         if (max > 0) {
-          let next = strip.scrollLeft + (direction * speed);
+          let next = strip.scrollLeft + (direction * SPEED_PX_PER_SEC * dt);
           if (next >= max) { direction = -1; next = max; }
-          if (next <= 0) { direction = 1; next = 0; }
+          if (next <= 0)   { direction =  1; next = 0;   }
           strip.scrollLeft = next;
         }
       }
@@ -1631,7 +1643,7 @@ function initProjectImageAutoScroll() {
     strip.addEventListener('touchend', () => pauseTemp(2000), { passive: true });
     strip.addEventListener('wheel', () => pauseTemp(1500), { passive: true });
 
-    tick();
+    requestAnimationFrame(tick);
   });
 }
 

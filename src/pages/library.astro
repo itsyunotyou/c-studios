@@ -132,11 +132,11 @@ const referencesJSON = JSON.stringify(references);
   /* ── HEADER ── */
   #header {
     position:fixed;top:0;left:0;right:0;z-index:200;
-    display:flex;align-items:flex-start;justify-content:space-between;
+    display:flex;align-items:baseline;justify-content:space-between;
     padding:18px 28px;pointer-events:none;
   }
-  #header-left { display:flex;align-items:flex-start;pointer-events:all; }
-  #header-right { display:flex;flex-direction:row;gap:14px;align-items:flex-start;pointer-events:all; right: 30px;}
+  #header-left { display:flex;align-items:baseline;pointer-events:all; }
+  #header-right { display:flex;flex-direction:row;gap:14px;align-items:baseline;pointer-events:all; }
 
   /* Info panel — top left, always visible, labels always shown */
   #info-panel {
@@ -146,12 +146,12 @@ const referencesJSON = JSON.stringify(references);
   .info-row { display:contents; }
   .info-label {
     font-family:inherit;
-    font-size:9px;letter-spacing:0;text-transform:uppercase;
+    font-size:0.6rem;letter-spacing:0;text-transform:uppercase;
     color:#bbb;white-space:nowrap;
   }
   .info-value {
     font-family:inherit;
-    font-size:9px;letter-spacing:0;color:var(--black);white-space:nowrap;
+    font-size:0.6rem;letter-spacing:0;color:var(--black);white-space:nowrap;
   }
   #info-panel.show { opacity:1; } /* kept for JS compat */
 
@@ -159,7 +159,7 @@ const referencesJSON = JSON.stringify(references);
   .hdr-dropdown { position:relative;display:inline-block; }
   .hdr-btn {
     font-family:inherit;
-    font-size:9px;letter-spacing:0;text-transform:uppercase;color:var(--grey);
+    font-size:0.6rem;letter-spacing:0;text-transform:uppercase;color:var(--grey);
     background:none;border:none;cursor:crosshair;padding:0;
   }
   .hdr-btn:hover { color:#222; }
@@ -175,7 +175,7 @@ const referencesJSON = JSON.stringify(references);
   .hdr-menu button {
     display:block;width:100%;text-align:right;padding:4px 0;
     font-family:inherit;
-    font-size:9px;text-transform:uppercase;letter-spacing:0;
+    font-size:0.6rem;text-transform:uppercase;letter-spacing:0;
     color:var(--grey);background:none;border:none;cursor:crosshair;
   }
   .hdr-menu button:hover { color:#222; }
@@ -201,7 +201,7 @@ const referencesJSON = JSON.stringify(references);
     display:none;align-items:center;justify-content:center;
     transition:color .15s;
     font-family:inherit;
-    font-size:9px;letter-spacing:0;text-transform:uppercase;
+    font-size:0.6rem;letter-spacing:0;text-transform:uppercase;
     gap:6px;
   }
   #back-btn.show { display:flex; }

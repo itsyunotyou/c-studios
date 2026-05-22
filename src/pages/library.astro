@@ -535,7 +535,7 @@ function getGridRows(){
 }
 
 function buildGrid(){
-  const src=activeFilter==='all'?REFS:REFS.filter(r=>r.cat===activeFilter);
+  const src=activeFilter==='all'?REFS:REFS.filter(r=>(r.cat||'').toLowerCase()===activeFilter.toLowerCase());
   sortedRefs=sortRefs(src);
   const N=sortedRefs.length;
   const ROWS=getGridRows();

@@ -778,14 +778,54 @@ import projectsData from '../data/projects.json';
 
   /* ─── Mobile: 2-column grid, same slide-from-stack logic per row ─── */
   @media (max-width: 768px) {
-    .services-tabs {flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 8px 20px;
-  padding: 0 12px;}
-    .services-tabs::before, .services-tabs::after { display: none; }   /* no L on mobile */
-    .services-tab { font-size: 0.6rem; }
+    .services-tabs {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 0;
+      width: auto;
+      margin: 0 16px;
+      padding: 0;
+      position: relative;
+      background: white;
+      z-index: 5;
+      box-sizing: border-box;
+    }
+    .services-tabs::before, .services-tabs::after { display: none; }
+    .services-tab {
+      display: none;
+      width: 100%;
+      text-align: left;
+      padding: 12px 14px;
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: white;
+      border: none;
+      cursor: pointer;
+      color: grey;
+      white-space: nowrap;
+    }
+    .services-tab.active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #0a0a0a;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .services-tab.active::after {
+      content: '+';
+      font-weight: 300;
+      margin-left: 12px;
+      transition: transform 0.2s ease;
+    }
+    .services-tabs.open .services-tab { display: flex; }
+    .services-tabs.open .services-tab.active::after { transform: rotate(45deg); }
+    .services-tabs.open .services-tab:not(.active) {
+      border-bottom: 1px solid #f5f5f5;
+    }
+    .services-tabs.open .services-tab:not(.active):last-child { border-bottom: none; }
 
     .services-images {
     position: relative;
@@ -1220,25 +1260,57 @@ import projectsData from '../data/projects.json';
 
 }
 @media (max-width: 768px) {
-  /* Tabs: horizontal scroll instead of wrapping */
+  /* Tabs as click-to-open dropdown on mobile */
 .projects-tabs {
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 8px 20px;
-  padding: 0 12px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  width: auto;
+  margin: 0 16px;
+  padding: 0;
+  position: relative;
+  background: white;
+  z-index: 5;
   box-sizing: border-box;
   overflow: visible;
 }
 .projects-tabs::-webkit-scrollbar { display: none; }
 .projects-tab {
-  font-size: 0.6rem;
-  padding: 0px 0px;
-  gap: 8px;
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: white;
+  border: none;
+  cursor: pointer;
+  color: grey;
   white-space: nowrap;
   flex-shrink: 0;
 }
+.projects-tab.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0a0a0a;
+  border-bottom: 1px solid #e5e5e5;
+}
+.projects-tab.active::after {
+  content: '+';
+  font-weight: 300;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+.projects-tabs.open .projects-tab { display: flex; }
+.projects-tabs.open .projects-tab.active::after { transform: rotate(45deg); }
+.projects-tabs.open .projects-tab:not(.active) {
+  border-bottom: 1px solid #f5f5f5;
+}
+.projects-tabs.open .projects-tab:not(.active):last-child { border-bottom: none; }
    .project-summary {
     grid-template-columns: 1fr auto;
     gap: 4px 12px;
@@ -1571,6 +1643,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const pPanels = document.querySelectorAll('.projects-panel');
   pTabs.forEach((tab) => {
     tab.onclick = () => {
+      const tabsEl = tab.parentElement;
+      // Mobile dropdown: first tap on the active (visible) tab opens the
+      // menu without switching; any subsequent tap closes the menu and
+      // proceeds with the normal switch.
+      if (window.innerWidth <= 768) {
+        if (!tabsEl.classList.contains('open')) {
+          tabsEl.classList.add('open');
+          return;
+        }
+        tabsEl.classList.remove('open');
+      }
       const target = tab.getAttribute('data-target');
       pTabs.forEach((t) => t.classList.toggle('active', t === tab));
       pPanels.forEach((p) => {
@@ -1722,10 +1805,25 @@ function setupInfoReveal() {
 document.addEventListener('DOMContentLoaded', () => {
   setupInfoReveal();
   alignServicesTabs();
+  // Close mobile tab dropdowns when tapping outside them
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.services-tabs.open, .projects-tabs.open').forEach((el) => {
+      if (!el.contains(e.target)) el.classList.remove('open');
+    });
+  });
   const sTabs = document.querySelectorAll('.services-tab');
   const sPanels = document.querySelectorAll('.services-panel');
   sTabs.forEach((tab) => {
     tab.onclick = () => {
+      const tabsEl = tab.parentElement;
+      // Mobile dropdown: first tap opens menu without switching.
+      if (window.innerWidth <= 768) {
+        if (!tabsEl.classList.contains('open')) {
+          tabsEl.classList.add('open');
+          return;
+        }
+        tabsEl.classList.remove('open');
+      }
       const target = tab.getAttribute('data-target');
       const currentPanel = document.querySelector('.services-panel.active');
       const newPanel = document.querySelector(`.services-panel[data-tab="${target}"]`);

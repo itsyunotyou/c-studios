@@ -1046,10 +1046,10 @@ import projectsData from '../data/projects.json';
 }
 
 /* Each character is wrapped in <span class="letter"> at run-time; the
-   dot animation reveals them one-by-one. */
+   dot animation reveals them one-by-one (typewriter). */
 .info-section .letter {
   opacity: 0;
-  transition: opacity 1.6s ease;
+  transition: opacity 0.18s ease;
 }
 .info-section .letter.reveal { opacity: 1; }
 
@@ -1067,9 +1067,7 @@ import projectsData from '../data/projects.json';
   background: #0a0a0a;
   border-radius: 50%;
   opacity: 0;
-  transition:
-    transform 1.4s cubic-bezier(0.65, 0, 0.35, 1),
-    opacity 0.5s ease;
+  transition: opacity 0.12s ease, transform 0.18s ease;
 }
 
 .info-paragraph {
@@ -1927,57 +1925,38 @@ function setupInfoReveal() {
       const letters = Array.from(infoBody.querySelectorAll('.letter'));
       if (!letters.length) return;
       const bodyRect = infoBody.getBoundingClientRect();
-      const sectionRect = section.getBoundingClientRect();
 
       const dotsLayer = document.createElement('div');
       dotsLayer.className = 'info-dots-layer';
       infoBody.appendChild(dotsLayer);
 
+      // Each dot starts at its FINAL letter position, invisible.
       const dots = letters.map((letter) => {
         const lr = letter.getBoundingClientRect();
         const targetX = (lr.left + lr.width / 2) - bodyRect.left - 1.5;
         const targetY = (lr.top + lr.height * 0.62) - bodyRect.top - 1.5;
-        const startX = (Math.random() * sectionRect.width) - (bodyRect.left - sectionRect.left);
-        const startY = (Math.random() * sectionRect.height) - (bodyRect.top - sectionRect.top);
-        return { letter, targetX, targetY, startX, startY };
-      });
-
-      dots.forEach((d) => {
         const dot = document.createElement('div');
         dot.className = 'info-dot';
-        dot.style.transform = `translate(${d.startX}px, ${d.startY}px)`;
+        dot.style.transform = `translate(${targetX}px, ${targetY}px)`;
         dotsLayer.appendChild(dot);
-        d.dot = dot;
+        return { letter, dot };
       });
 
-      void dotsLayer.offsetWidth; // commit start positions
+      void dotsLayer.offsetWidth; // commit start state
 
-      // Phase 1: dots fade in scattered
-      dots.forEach((d) => {
-        setTimeout(() => { d.dot.style.opacity = '1'; }, Math.random() * 250);
+      // Typewriter: per character in order, fade the dot in at its target
+      // position, then quickly morph it into the actual letter.
+      const STEP_MS = 10;          // gap between consecutive characters
+      const MORPH_DELAY_MS = 70;   // how long the dot is fully visible before swapping
+      dots.forEach((d, i) => {
+        const t = i * STEP_MS;
+        setTimeout(() => { d.dot.style.opacity = '1'; }, t);
+        setTimeout(() => {
+          d.dot.style.opacity = '0';
+          d.dot.style.transform = (d.dot.style.transform || '') + ' scale(0)';
+          d.letter.classList.add('reveal');
+        }, t + MORPH_DELAY_MS);
       });
-
-      // Phase 2: dots travel to letter positions
-      setTimeout(() => {
-        dots.forEach((d) => {
-          setTimeout(() => {
-            d.dot.style.transform = `translate(${d.targetX}px, ${d.targetY}px)`;
-          }, Math.random() * 300);
-        });
-      }, 400);
-
-      // Phase 3: each dot morphs into its letter on a wide random stagger
-      setTimeout(() => {
-        const STAGGER_MAX = 2800;
-        dots.forEach((d) => {
-          setTimeout(() => {
-            d.dot.style.transition = 'opacity 1.6s ease, transform 1.6s ease';
-            d.dot.style.opacity = '0';
-            d.dot.style.transform = (d.dot.style.transform || '') + ' scale(0)';
-            d.letter.classList.add('reveal');
-          }, Math.random() * STAGGER_MAX);
-        });
-      }, 2100);
     }));
   }
 

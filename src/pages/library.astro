@@ -304,7 +304,7 @@ const referencesJSON = JSON.stringify(references);
   /* Info panel — same vertical level as the filter button on the right */
   #header-left {
     position: fixed;
-    top: calc(env(safe-area-inset-top, 0px) + 40px);
+    top: calc(var(--cst-nav-bottom) + 10px);
     left: 12px;
     right: 12px;
     z-index: 100;
@@ -340,7 +340,7 @@ const referencesJSON = JSON.stringify(references);
   /* Filter dropdown — same vertical anchor as #header-left so they baseline */
   #header-right {
     position: fixed;
-    top: calc(env(safe-area-inset-top, 0px) + 40px);
+    top: calc(var(--cst-nav-bottom) + 10px);
     right: 12px;
     z-index: 100;
   }

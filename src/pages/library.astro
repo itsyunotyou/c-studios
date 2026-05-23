@@ -138,34 +138,53 @@ const referencesJSON = JSON.stringify(references);
   #header-left { display:flex;align-items:baseline;pointer-events:all; }
   #header-right { display:flex;flex-direction:row;gap:14px;align-items:baseline;pointer-events:all; }
 
-  /* Info panel — top left, always visible, labels always shown */
+  /* Info panel — top left, always visible, labels always shown.
+     Row rhythm = font * line-height. No row gap so it matches the
+     dropdown items below (no extra `gap` margin between rows). */
   #info-panel {
     pointer-events:none;
-    display:grid;grid-template-columns:auto auto;gap:3px 12px;
+    display:grid;grid-template-columns:auto auto;gap:0 12px;
+    line-height:1.7;
   }
   .info-row { display:contents; }
   .info-label {
     font-family:inherit;
     font-size:0.6rem;letter-spacing:0;text-transform:uppercase;
+    line-height:1.7;
     color:#bbb;white-space:nowrap;
   }
   .info-value {
     font-family:inherit;
-    font-size:0.6rem;letter-spacing:0;color:var(--black);white-space:nowrap;
+    font-size:0.6rem;letter-spacing:0;
+    line-height:1.7;
+    color:var(--black);white-space:nowrap;
   }
   #info-panel.show { opacity:1; } /* kept for JS compat */
 
-  /* Dropdowns — right side, menu opens right-aligned */
+  /* Filter dropdown — right side; follows the services/projects design
+     system (label + `+` indicator that rotates 45deg into × when open). */
   .hdr-dropdown { position:relative;display:inline-block; }
   .hdr-btn {
     font-family:inherit;
-    font-size:0.6rem;letter-spacing:0;text-transform:uppercase;color:var(--grey);
+    font-size:0.6rem;letter-spacing:0;text-transform:uppercase;
+    line-height:1.7;
+    color:var(--black);
     background:none;border:none;cursor:crosshair;padding:0;
+    display:inline-flex;align-items:baseline;gap:10px;
   }
+  .hdr-btn::after {
+    content:'+';
+    font-weight:300;
+    display:inline-block;
+    transition:transform 0.2s ease;
+    line-height:1.7;
+  }
+  .hdr-dropdown:hover .hdr-btn::after,
+  .hdr-dropdown.open .hdr-btn::after { transform:rotate(45deg); }
   .hdr-btn:hover { color:#222; }
   .hdr-menu {
-    display:none;position:absolute;top:100%;right:0;margin-top:6px;
-    background:var(--white);min-width:70px;z-index:500;padding:2px 0;
+    display:none;position:absolute;top:100%;right:0;margin-top:0;
+    background:var(--white);min-width:70px;z-index:500;padding:0;
   }
   .hdr-menu::before {
     content:'';position:absolute;top:-6px;left:0;right:0;height:6px;
@@ -173,9 +192,10 @@ const referencesJSON = JSON.stringify(references);
   .hdr-dropdown:hover .hdr-menu,
   .hdr-dropdown.open .hdr-menu { display:block; }
   .hdr-menu button {
-    display:block;width:100%;text-align:right;padding:4px 0;
+    display:block;width:100%;text-align:right;padding:0;
     font-family:inherit;
     font-size:0.6rem;text-transform:uppercase;letter-spacing:0;
+    line-height:1.7;
     color:var(--grey);background:none;border:none;cursor:crosshair;
   }
   .hdr-menu button:hover { color:#222; }

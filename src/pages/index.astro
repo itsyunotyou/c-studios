@@ -787,7 +787,7 @@ import projectsData from '../data/projects.json';
       width: 100vw;
       margin-left: calc(50% - 50vw);
       margin-right: calc(50% - 50vw);
-      padding: 0 12px;          /* 12px viewport inset = nav baseline */
+      padding: 0;
       position: relative;
       background: white;
       z-index: 100;
@@ -797,7 +797,7 @@ import projectsData from '../data/projects.json';
     .services-tab {
       width: 100%;
       text-align: left;
-      padding: 10px 0;
+      padding: 10px 12px;        /* 12px viewport inset; background spans full width */
       font-size: 0.6rem;
       letter-spacing: 0.02em;
       text-transform: uppercase;
@@ -822,18 +822,26 @@ import projectsData from '../data/projects.json';
       transition: transform 0.2s ease;
     }
     /* Open: inactive tabs render as an absolute overlay below the active one
-       so the rest of the section doesn't push down. */
+       so the rest of the section doesn't push down. Each item plays a
+       short fade+drop animation in DOM order so the menu reads as
+       "growing from below the active tab". */
     .services-tabs.open .services-tab:not(.active) {
       display: flex;
       position: absolute;
-      left: 12px;
-      right: 12px;
+      left: 0;                  /* edge-to-edge background */
+      right: 0;
       top: calc(100% * var(--tab-i, 1));
       background: white;
       z-index: 99;
       border-bottom: 1px solid #f5f5f5;
+      animation: tab-dropdown-in 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+      animation-delay: calc(var(--tab-i, 1) * 55ms);
     }
     .services-tabs.open .services-tab.active::after { transform: rotate(45deg); }
+    @keyframes tab-dropdown-in {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0);     }
+    }
 
     .services-images {
     position: relative;
@@ -1301,7 +1309,7 @@ import projectsData from '../data/projects.json';
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding: 0 12px;
+  padding: 0;
   position: relative;
   background: white;
   z-index: 100;
@@ -1312,7 +1320,7 @@ import projectsData from '../data/projects.json';
 .projects-tab {
   width: 100%;
   text-align: left;
-  padding: 10px 0;
+  padding: 10px 12px;
   font-size: 0.6rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -1340,12 +1348,14 @@ import projectsData from '../data/projects.json';
 .projects-tabs.open .projects-tab:not(.active) {
   display: flex;
   position: absolute;
-  left: 12px;
-  right: 12px;
+  left: 0;
+  right: 0;
   top: calc(100% * var(--tab-i, 1));
   background: white;
   z-index: 99;
   border-bottom: 1px solid #f5f5f5;
+  animation: tab-dropdown-in 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--tab-i, 1) * 55ms);
 }
 .projects-tabs.open .projects-tab.active::after { transform: rotate(45deg); }
    .project-summary {

@@ -776,7 +776,7 @@ import projectsData from '../data/projects.json';
     line-height: 1.7;
   }
 
-  /* ─── Mobile: 2-column grid, same slide-from-stack logic per row ─── */
+  /* ─── Mobile: tabs collapse to a click-to-open dropdown ─── */
   @media (max-width: 768px) {
     .services-tabs {
       flex-direction: column;
@@ -785,21 +785,20 @@ import projectsData from '../data/projects.json';
       justify-content: flex-start;
       gap: 0;
       width: auto;
-      margin: 0 16px;
+      margin: 0 12px;        /* match nav's 12px viewport inset */
       padding: 0;
       position: relative;
       background: white;
-      z-index: 5;
+      z-index: 100;
       box-sizing: border-box;
     }
     .services-tabs::before, .services-tabs::after { display: none; }
     .services-tab {
-      display: none;
       width: 100%;
       text-align: left;
-      padding: 12px 14px;
-      font-size: 0.7rem;
-      letter-spacing: 0.04em;
+      padding: 10px 0;        /* zero horizontal — text aligns to nav baseline */
+      font-size: 0.6rem;      /* match nav font-size */
+      letter-spacing: 0.02em; /* match nav letter-spacing */
       text-transform: uppercase;
       background: white;
       border: none;
@@ -807,6 +806,7 @@ import projectsData from '../data/projects.json';
       color: grey;
       white-space: nowrap;
     }
+    .services-tab:not(.active) { display: none; }
     .services-tab.active {
       display: flex;
       justify-content: space-between;
@@ -820,12 +820,19 @@ import projectsData from '../data/projects.json';
       margin-left: 12px;
       transition: transform 0.2s ease;
     }
-    .services-tabs.open .services-tab { display: flex; }
-    .services-tabs.open .services-tab.active::after { transform: rotate(45deg); }
+    /* Open: inactive tabs render as an absolute overlay below the active one
+       so the rest of the section doesn't push down. */
     .services-tabs.open .services-tab:not(.active) {
+      display: flex;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% * var(--tab-i, 1));
+      background: white;
+      z-index: 99;
       border-bottom: 1px solid #f5f5f5;
     }
-    .services-tabs.open .services-tab:not(.active):last-child { border-bottom: none; }
+    .services-tabs.open .services-tab.active::after { transform: rotate(45deg); }
 
     .services-images {
     position: relative;
@@ -1021,6 +1028,34 @@ import projectsData from '../data/projects.json';
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
+  position: relative;          /* anchor for the dots overlay */
+}
+
+/* Each character is wrapped in <span class="letter"> at run-time; the
+   dot animation reveals them one-by-one. */
+.info-section .letter {
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+.info-section .letter.reveal { opacity: 1; }
+
+.info-dots-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.info-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background: #0a0a0a;
+  border-radius: 50%;
+  opacity: 0;
+  transition:
+    transform 1.4s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.5s ease;
 }
 
 .info-paragraph {
@@ -1058,9 +1093,9 @@ import projectsData from '../data/projects.json';
   /* base transform set in .venn-c-logo above; not animated here */
 }
 
-/* Captions + paragraphs */
-.venn-text,
-.info-paragraph {
+/* Side captions still fade in; paragraphs are revealed by the dot-to-letter
+   animation, so the container itself stays visible. */
+.venn-text {
   opacity: 0;
   transform: translateY(20px);
   transition:
@@ -1092,12 +1127,7 @@ import projectsData from '../data/projects.json';
 .info-section.in-view .venn-text-left  { transition-delay: 2.4s; }
 .info-section.in-view .venn-text-right { transition-delay: 2.6s; }
 
-.info-section.in-view .info-paragraph {
-  opacity: 1;
-  transform: translateY(0);
-}
-.info-section.in-view .info-paragraph:nth-of-type(1) { transition-delay: 2.8s; }
-.info-section.in-view .info-paragraph:nth-of-type(2) { transition-delay: 3.0s; }
+/* paragraph-level reveal is handled by per-letter dot animation now */
 
 
 /* ─── Mobile ─── */
@@ -1260,7 +1290,7 @@ import projectsData from '../data/projects.json';
 
 }
 @media (max-width: 768px) {
-  /* Tabs as click-to-open dropdown on mobile */
+  /* Tabs as click-to-open dropdown overlay (matches nav inset + font) */
 .projects-tabs {
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1268,22 +1298,21 @@ import projectsData from '../data/projects.json';
   justify-content: flex-start;
   gap: 0;
   width: auto;
-  margin: 0 16px;
+  margin: 0 12px;
   padding: 0;
   position: relative;
   background: white;
-  z-index: 5;
+  z-index: 100;
   box-sizing: border-box;
   overflow: visible;
 }
 .projects-tabs::-webkit-scrollbar { display: none; }
 .projects-tab {
-  display: none;
   width: 100%;
   text-align: left;
-  padding: 12px 14px;
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
+  padding: 10px 0;
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   background: white;
   border: none;
@@ -1292,6 +1321,7 @@ import projectsData from '../data/projects.json';
   white-space: nowrap;
   flex-shrink: 0;
 }
+.projects-tab:not(.active) { display: none; }
 .projects-tab.active {
   display: flex;
   justify-content: space-between;
@@ -1305,12 +1335,17 @@ import projectsData from '../data/projects.json';
   margin-left: 12px;
   transition: transform 0.2s ease;
 }
-.projects-tabs.open .projects-tab { display: flex; }
-.projects-tabs.open .projects-tab.active::after { transform: rotate(45deg); }
 .projects-tabs.open .projects-tab:not(.active) {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% * var(--tab-i, 1));
+  background: white;
+  z-index: 99;
   border-bottom: 1px solid #f5f5f5;
 }
-.projects-tabs.open .projects-tab:not(.active):last-child { border-bottom: none; }
+.projects-tabs.open .projects-tab.active::after { transform: rotate(45deg); }
    .project-summary {
     grid-template-columns: 1fr auto;
     gap: 4px 12px;
@@ -1656,6 +1691,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const target = tab.getAttribute('data-target');
       pTabs.forEach((t) => t.classList.toggle('active', t === tab));
+      refreshTabIndices(tabsEl);
       pPanels.forEach((p) => {
         p.classList.remove('active');
         void p.offsetWidth;
@@ -1787,14 +1823,107 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
 }
 
 // ═══════════════════════════ INFO: dots → letters ═══════════════════════════
-// INFO — trigger entrance animation when section enters viewport
+// Triggers when #info enters the viewport: adds .in-view (drives venn
+// animation) AND wraps every glyph in the two info paragraphs in <span
+// class="letter">, then floats dots in from random points across the
+// section, settles each on its letter's position, and morphs each dot
+// into its letter on a staggered timeline.
 function setupInfoReveal() {
   const section = document.getElementById('info');
   if (!section) return;
+  const infoBody = section.querySelector('.info-body');
+
+  // Pre-wrap each non-space character so target rects are stable before
+  // the animation runs. Idempotent via the data-split flag.
+  if (infoBody) {
+    infoBody.querySelectorAll('p').forEach((p) => {
+      if (p.dataset.split === 'true') return;
+      const text = p.textContent || '';
+      p.textContent = '';
+      for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (ch === ' ' || ch === '\n') {
+          p.appendChild(document.createTextNode(ch));
+        } else {
+          const span = document.createElement('span');
+          span.className = 'letter';
+          span.textContent = ch;
+          p.appendChild(span);
+        }
+      }
+      p.dataset.split = 'true';
+    });
+  }
+
+  let triggered = false;
+
+  function runDotAnimation() {
+    if (triggered || !infoBody) return;
+    triggered = true;
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const letters = Array.from(infoBody.querySelectorAll('.letter'));
+      if (!letters.length) return;
+      const bodyRect = infoBody.getBoundingClientRect();
+      const sectionRect = section.getBoundingClientRect();
+
+      const dotsLayer = document.createElement('div');
+      dotsLayer.className = 'info-dots-layer';
+      infoBody.appendChild(dotsLayer);
+
+      const dots = letters.map((letter) => {
+        const lr = letter.getBoundingClientRect();
+        const targetX = (lr.left + lr.width / 2) - bodyRect.left - 1.5;
+        const targetY = (lr.top + lr.height * 0.62) - bodyRect.top - 1.5;
+        const startX = (Math.random() * sectionRect.width) - (bodyRect.left - sectionRect.left);
+        const startY = (Math.random() * sectionRect.height) - (bodyRect.top - sectionRect.top);
+        return { letter, targetX, targetY, startX, startY };
+      });
+
+      dots.forEach((d) => {
+        const dot = document.createElement('div');
+        dot.className = 'info-dot';
+        dot.style.transform = `translate(${d.startX}px, ${d.startY}px)`;
+        dotsLayer.appendChild(dot);
+        d.dot = dot;
+      });
+
+      void dotsLayer.offsetWidth; // commit start positions
+
+      // Phase 1: dots fade in scattered
+      dots.forEach((d) => {
+        setTimeout(() => { d.dot.style.opacity = '1'; }, Math.random() * 250);
+      });
+
+      // Phase 2: dots travel to letter positions
+      setTimeout(() => {
+        dots.forEach((d) => {
+          setTimeout(() => {
+            d.dot.style.transform = `translate(${d.targetX}px, ${d.targetY}px)`;
+          }, Math.random() * 300);
+        });
+      }, 400);
+
+      // Phase 3: each dot morphs into its letter on a wide random stagger
+      setTimeout(() => {
+        const STAGGER_MAX = 2800;
+        dots.forEach((d) => {
+          setTimeout(() => {
+            d.dot.style.transition = 'opacity 1.6s ease, transform 1.6s ease';
+            d.dot.style.opacity = '0';
+            d.dot.style.transform = (d.dot.style.transform || '') + ' scale(0)';
+            d.letter.classList.add('reveal');
+          }, Math.random() * STAGGER_MAX);
+        });
+      }, 2100);
+    }));
+  }
+
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
       if (e.isIntersecting) {
         section.classList.add('in-view');
+        runDotAnimation();
         io.disconnect();
       }
     });
@@ -1802,9 +1931,27 @@ function setupInfoReveal() {
   io.observe(section);
 }
 
+// Refresh the --tab-i CSS var on every non-active tab in a strip so the
+// open mobile dropdown stacks them at consecutive 100% offsets below the
+// active one. Call after any active-class swap.
+function refreshTabIndices(tabsEl) {
+  if (!tabsEl) return;
+  let n = 0;
+  tabsEl.querySelectorAll(':scope > button').forEach((t) => {
+    if (t.classList.contains('active')) {
+      t.style.removeProperty('--tab-i');
+    } else {
+      n += 1;
+      t.style.setProperty('--tab-i', n);
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setupInfoReveal();
   alignServicesTabs();
+  // Initial pass so the dropdown stack positions are correct on load.
+  document.querySelectorAll('.services-tabs, .projects-tabs').forEach(refreshTabIndices);
   // Close mobile tab dropdowns when tapping outside them
   document.addEventListener('click', (e) => {
     document.querySelectorAll('.services-tabs.open, .projects-tabs.open').forEach((el) => {
@@ -1838,6 +1985,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Tab button highlights
       sTabs.forEach((t) => t.classList.toggle('active', t === tab));
+      refreshTabIndices(tabsEl);
 
       // Clean up any lingering states on unrelated panels
       allPanels.forEach((p) => {

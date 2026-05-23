@@ -59,8 +59,10 @@ html { scroll-behavior: smooth; }
   .cst-submenu a.active { color: #0a0a0a; }
 
   /* Dark backgrounds (hero slideshow, library): mix-blend-mode so text auto-adapts to photos.
-     Applied to the OUTER wrapper so it blends with body content, not just menu siblings. */
+     Applied to the OUTER wrapper so it blends with body content, not just menu siblings.
+     Disabled on the home hero — fixed light colours read cleaner there. */
   body.bg-dark .cst-menu { mix-blend-mode: difference; }
+  body[data-is-home="true"].bg-dark .cst-menu { mix-blend-mode: normal; }
   /* With mix-blend: lightgrey source renders consistent light grey on near-black photos.
      Brighter source = brighter result (and darker when bg is light). */
   body.bg-dark .cst-submenu a { color: lightgrey; }

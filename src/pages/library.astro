@@ -320,10 +320,10 @@ const referencesJSON = JSON.stringify(references);
   #info-panel {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* Reserve two lines per row so values that wrap don't shift the next
-       row down — height stays constant regardless of which card is selected. */
-    grid-auto-rows: minmax(2.4em, auto);
-    gap: 2px 12px;
+    /* Single-line rows — same line-height as the ALL+ dropdown items so
+       rows sit on the same y-axis baselines as the dropdown's labels. */
+    grid-auto-rows: 1.7em;
+    gap: 0 12px;
     padding: 0;
     background: transparent;
     backdrop-filter: none;
@@ -337,36 +337,35 @@ const referencesJSON = JSON.stringify(references);
     display: none;
   }
 
-  /* More specific than the global .info-label/.info-value override below
-     so the mobile font size actually applies. Matches the .hdr-btn size. */
+  /* Match the .hdr-btn / .hdr-menu button size + line-height so each
+     info row baselines with the corresponding dropdown row. */
   #info-panel .info-label,
   #info-panel .info-value {
     font-size: 0.6rem;
     letter-spacing: 0;
+    line-height: 1.7;
   }
 
-  /* Allow long values to wrap onto a second line within the row's
-     reserved height instead of pushing under the ALL+ button. */
+  /* Long values truncate with ellipsis instead of overlapping the ALL+
+     area — the row height stays locked so the layout never shifts. */
   #info-panel .info-value {
-    white-space: normal;
-    overflow-wrap: anywhere;
-    line-height: 1.2;
-  }
-  #info-panel .info-label {
-    line-height: 1.2;
-    align-self: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
   }
 
   /* Filter dropdown — same vertical anchor as #header-left so they baseline.
-     min-height matches the 4 visible info-panel rows (4 × 2.4em ≈ 9.6em),
+     min-height matches the 4 visible info-panel rows (4 × 1.7em ≈ 6.8em),
      so the ALL+ button reserves the same vertical band whether the
-     dropdown is open or closed. */
+     dropdown is open or closed — dropdown items land in the same y slots
+     as the info list rows. */
   #header-right {
     position: fixed;
     top: calc(var(--cst-nav-bottom) + 10px);
     right: 12px;
     z-index: 100;
-    min-height: 9.6em;
+    min-height: 6.8em;
   }
 
   .hdr-btn,

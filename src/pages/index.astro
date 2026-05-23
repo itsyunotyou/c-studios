@@ -1243,14 +1243,8 @@ import projectsData from '../data/projects.json';
 
   .project-row {
     border-bottom: 1px solid #eee;
-    /* When we scroll a row into view on expand, leave room for the
-       sticky projects-tabs (which sit at top:50px desktop, --cst-nav-bottom mobile). */
-    scroll-margin-top: 80px;
   }
   .project-row:first-child { border-top: 1px solid #eee; }
-  @media (max-width: 768px) {
-    .project-row { scroll-margin-top: var(--cst-nav-bottom); }
-  }
 
 .project-summary {
   display: grid;
@@ -1760,14 +1754,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (r !== row) r.classList.remove('expanded');
       });
       row.classList.toggle('expanded', willOpen);
-      // After the row expands, bring its top up to align with the sticky
-      // tabs bar. Uses scroll-margin-top on .project-row to leave space for
-      // the tabs, and scrollIntoView so it walks the right scroll container
-      // (the panel, which has overflow-y: auto). Two rAFs let the closing
-      // animations on the previously-expanded row commit layout first.
+      // After the row expands, scroll the panel so the row's top lines up
+      // with the panel's content top (which sits just under the tabs).
+      // Only touches the panel — leaves body scroll alone so mobile's
+      // scroll-snap doesn't kick the user out of the section.
       if (willOpen) {
         requestAnimationFrame(() => requestAnimationFrame(() => {
-          row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const panel = row.closest('.projects-panel');
+          if (!panel) return;
+          const offset = row.getBoundingClientRect().top - panel.getBoundingClientRect().top;
+          if (Math.abs(offset) < 2) return;
+          panel.scrollTo({ top: panel.scrollTop + offset, behavior: 'smooth' });
         }));
       }
     });

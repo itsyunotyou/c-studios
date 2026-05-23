@@ -169,7 +169,7 @@ const referencesJSON = JSON.stringify(references);
     background:none;border:none;cursor:crosshair;padding:0;
     display:inline-flex;align-items:center;gap:10px;
   }
-  .hdr-btn::after {
+  .hdr-btn::before {
     content:'+';
     font-weight:300;
     font-size:1rem;
@@ -177,8 +177,8 @@ const referencesJSON = JSON.stringify(references);
     transition:transform 0.2s ease;
     line-height:1;
   }
-  .hdr-dropdown:hover .hdr-btn::after,
-  .hdr-dropdown.open .hdr-btn::after { transform:rotate(45deg); }
+  .hdr-dropdown:hover .hdr-btn::before,
+  .hdr-dropdown.open .hdr-btn::before { transform:rotate(45deg); }
   .hdr-btn:hover { color:#222; }
   .hdr-menu {
     display:none;position:absolute;top:100%;right:0;margin-top:0;

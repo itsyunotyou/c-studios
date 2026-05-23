@@ -621,10 +621,13 @@ function drawCylinder(){
   const CY=HEADER_H+GRID_H()/2;
   const CX=W/2;
 
-  const anglePerCol=TILE/R;
-  const colsFor360=Math.ceil(2*Math.PI/anglePerCol);
   const N=sortedRefs.length;
-  const COLS=Math.max(Math.ceil(N/ROWS), colsFor360); // enough for full 360
+  const colsFor360=Math.ceil(2*Math.PI*R/TILE);
+  // Spread every item evenly around exactly one rotation of the cylinder so
+  // the cards don't wind multiple times (which is what produced the chunky
+  // bands at certain angles).
+  const COLS=Math.max(Math.ceil(N/ROWS), colsFor360);
+  const anglePerCol=(2*Math.PI)/COLS;
 
   const drawn=[];
   for(let col=0;col<COLS;col++){
@@ -928,7 +931,10 @@ function getCylPos(refIdx){
   const FOCAL=R*0.55; // tighter focal = more dramatic perspective
   const CY=HEADER_H+GRID_H()/2;
   const CX=W/2;
-  const anglePerCol=TILE/R;
+  const N=sortedRefs.length||1;
+  const colsFor360=Math.ceil(2*Math.PI*R/TILE);
+  const COLS=Math.max(Math.ceil(N/ROWS), colsFor360);
+  const anglePerCol=(2*Math.PI)/COLS;
   const col=Math.floor(refIdx/ROWS);
   const row=refIdx%ROWS;
   const tileAngle=col*anglePerCol+cylAngle;

@@ -32,6 +32,7 @@ const references = deduped.map((entry) => ({
   addedBy: entry.by || '',
   color: entry.color || [128, 128, 128], // default grey; run compute-colors.mjs later for proper colors
   img: entry.image ? entry.image.replace(/\.[^.]+$/, '-thumb.webp') : '',
+  imgLarge: entry.image ? entry.image.replace(/\.[^.]+$/, '-large.webp') : '',
   imgFull: entry.image || '',
   images: [],
   imagesFull: [],
@@ -478,6 +479,16 @@ function getImg(ref){
   const im=new window.Image(); im.src=ref.img;
   imgCache.set(ref,im); return im;
 }
+
+// Larger variant used only by the coverflow / row view. Lazy-loaded per ref —
+// the cylinder never touches this, so its preload stays small.
+const largeCache=new Map();
+function getLargeImg(ref){
+  if(!ref||!ref.imgLarge) return getImg(ref);
+  if(largeCache.has(ref)) return largeCache.get(ref);
+  const im=new window.Image(); im.src=ref.imgLarge;
+  largeCache.set(ref,im); return im;
+}
 function preloadImages(){ REFS.forEach(r=>{ getImg(r); if(r.images) r.images.forEach((_,i)=>getImgAt(r,i)); }); }
 
 // Flicker state per tile: which image index showing
@@ -488,6 +499,16 @@ const FLICKER_INTERVAL=90; // frames between flicks
 function getFlickerImg(ref){
   const n=imgCount(ref);
   if(n<=1) return getImg(ref);
+  let idx=flickerIdx.get(ref)||0;
+  return getImgAt(ref,idx);
+}
+
+// Larger version for the row/coverflow view. Single-image refs get the
+// 800w -large.webp; multi-image refs stay on the cycling thumbs since
+// they swap too fast for the larger load to be worth it.
+function getFlickerImgLarge(ref){
+  const n=imgCount(ref);
+  if(n<=1) return getLargeImg(ref);
   let idx=flickerIdx.get(ref)||0;
   return getImgAt(ref,idx);
 }
@@ -750,7 +771,7 @@ function draw(){
         const fw=fh+(natW-fh)*(f.reveal||0);
         const fx=f.x+(f.sz-fw)/2;
         const fy=f.y+(f.sz-fh)/2;
-        drawRef(f.ref,fx,fy,fw,fh,f.alpha,getFlickerImg(f.ref));
+        drawRef(f.ref,fx,fy,fw,fh,f.alpha,getFlickerImgLarge(f.ref));
       }
     } else {
       const{sz,cx,cy}=getCF();
@@ -788,7 +809,7 @@ function draw(){
         f.drawX=fx; f.drawY=fy; f.drawW=fw; f.drawH=fh;
         f.x=fx-(f.sz-fw)/2;
         f.y=fy-(f.sz-fh)/2;
-        drawRef(f.ref,fx,fy,fw,fh,f.alpha,getFlickerImg(f.ref));
+        drawRef(f.ref,fx,fy,fw,fh,f.alpha,getFlickerImgLarge(f.ref));
       }
     }
   }
@@ -955,7 +976,7 @@ function startReassemble(){
         const tx=cx-fw/2, ty=cy-fh/2;
         const fx=fx0+(tx-fx0)*ease;
         const fy=fy0+(ty-fy0)*ease;
-        drawRef(f.ref,fx,fy,fw,fh,1,getFlickerImg(f.ref));
+        drawRef(f.ref,fx,fy,fw,fh,1,getFlickerImgLarge(f.ref));
       }
     } else {
       // Centre card shrinks to dot, keeping its natural ratio
@@ -966,7 +987,7 @@ function startReassemble(){
         const fh=centre.sz*1.7*sc;
         const natW=centre.natRatio?fh*centre.natRatio:fh;
         const fw=fh+(natW-fh)*(centre.reveal||0);
-        drawRef(centre.ref,cx-fw/2,cy-fh/2,fw,fh,1,getFlickerImg(centre.ref));
+        drawRef(centre.ref,cx-fw/2,cy-fh/2,fw,fh,1,getFlickerImgLarge(centre.ref));
       }
 
       if(implodePhase>=IMPLODE_DUR+SHRINK_DUR && !bigBangStarted){

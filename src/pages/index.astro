@@ -1934,7 +1934,7 @@ function setupInfoReveal() {
       const dots = letters.map((letter) => {
         const lr = letter.getBoundingClientRect();
         const targetX = (lr.left + lr.width / 2) - bodyRect.left - 1.5;
-        const targetY = (lr.top + lr.height * 0.62) - bodyRect.top - 1.5;
+        const targetY = (lr.top + lr.height / 2) - bodyRect.top - 1.5;
         const dot = document.createElement('div');
         dot.className = 'info-dot';
         dot.style.transform = `translate(${targetX}px, ${targetY}px)`;

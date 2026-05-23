@@ -17,7 +17,13 @@ const { isHome } = Astro.props;
 </div>
 
 <style is:global>
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* Stop iOS Safari from auto-inflating font sizes in narrow containers
+     (this was what made certain library info-list entries render big). */
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
 
 /* Shared anchor: where the nav menu ends. Sticky section bars (projects/services
    tabs on mobile) pin to this so there's no transparent gap below the nav. */

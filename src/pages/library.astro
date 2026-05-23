@@ -305,12 +305,13 @@ const referencesJSON = JSON.stringify(references);
     pointer-events: none;
   }
 
-  /* Info panel — same vertical level as the filter button on the right */
+  /* Info panel — same vertical level as the filter button on the right.
+     Reserve room on the right so the values never run into the ALL+ button. */
   #header-left {
     position: fixed;
     top: calc(var(--cst-nav-bottom) + 10px);
     left: 12px;
-    right: 12px;
+    right: 100px;
     z-index: 100;
     pointer-events: auto;
     justify-content: flex-start;
@@ -319,6 +320,9 @@ const referencesJSON = JSON.stringify(references);
   #info-panel {
     display: grid;
     grid-template-columns: auto 1fr;
+    /* Reserve two lines per row so values that wrap don't shift the next
+       row down — height stays constant regardless of which card is selected. */
+    grid-auto-rows: minmax(2.4em, auto);
     gap: 2px 12px;
     padding: 0;
     background: transparent;
@@ -341,12 +345,28 @@ const referencesJSON = JSON.stringify(references);
     letter-spacing: 0;
   }
 
-  /* Filter dropdown — same vertical anchor as #header-left so they baseline */
+  /* Allow long values to wrap onto a second line within the row's
+     reserved height instead of pushing under the ALL+ button. */
+  #info-panel .info-value {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+  }
+  #info-panel .info-label {
+    line-height: 1.2;
+    align-self: start;
+  }
+
+  /* Filter dropdown — same vertical anchor as #header-left so they baseline.
+     min-height matches the 4 visible info-panel rows (4 × 2.4em ≈ 9.6em),
+     so the ALL+ button reserves the same vertical band whether the
+     dropdown is open or closed. */
   #header-right {
     position: fixed;
     top: calc(var(--cst-nav-bottom) + 10px);
     right: 12px;
     z-index: 100;
+    min-height: 9.6em;
   }
 
   .hdr-btn,

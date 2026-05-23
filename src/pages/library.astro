@@ -364,10 +364,12 @@ const referencesJSON = JSON.stringify(references);
 #info-panel .info-row:last-child {
   display: none;
 }
-  .info-label,
-  .info-value {
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
+  @media (min-width: 768px) {
+    .info-label,
+    .info-value {
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+    }
   }
 
 

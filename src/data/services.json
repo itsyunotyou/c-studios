@@ -11,7 +11,8 @@
           "Brand Playbook",
           "Concept Development",
           "Cultural Strategy"
-        ]
+        ],
+        "align": "top"
       },
       {
         "image": "strategy-02",
@@ -21,13 +22,15 @@
           "Creative Guidelines",
           "Social Playbook",
           "Go-To-Market Planning"
-        ]
+        ],
+        "align": "top"
       },
       {
         "image": "strategy-01",
         "alt": "Creative Strategy Overview — Culture",
         "category": null,
-        "services": []
+        "services": [],
+        "align": "top"
       },
       {
         "image": "strategy-03",
@@ -37,7 +40,8 @@
           "Collaboration Strategy",
           "Communication Strategy",
           "Copywriting"
-        ]
+        ],
+        "align": "top"
       }
     ]
   },

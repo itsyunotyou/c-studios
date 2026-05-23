@@ -140,21 +140,23 @@ import projectsData from '../data/projects.json';
               loading="lazy" />
           ))}
         </div>
-        <div class="services-texts" style={`grid-template-columns: repeat(${tab.columns.length}, 1fr)`}>
-          {tab.columns.map(col => {
-            const hasContent = col.category || col.services.length > 0;
-            return (
-              <div class="services-column">
-                {hasContent && col.category && <div class="services-category">[ {col.category} ]</div>}
-                {hasContent && col.services.length > 0 && (
-                  <ul class="services-list">
-                    {col.services.map(s => <li>{s}</li>)}
-                  </ul>
-                )}
-              </div>
-            );
-          })}
-        </div>
+        {(() => {
+          const textCols = tab.columns.filter(c => c.category || c.services.length > 0);
+          return (
+            <div class="services-texts" style={`grid-template-columns: repeat(${textCols.length}, 1fr)`}>
+              {textCols.map(col => (
+                <div class="services-column">
+                  {col.category && <div class="services-category">[ {col.category} ]</div>}
+                  {col.services.length > 0 && (
+                    <ul class="services-list">
+                      {col.services.map(s => <li>{s}</li>)}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          );
+        })()}
       </div>
     ))}
   </section>
@@ -807,7 +809,7 @@ import projectsData from '../data/projects.json';
   }
 
     .services-texts {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       padding: 10px;
     }
     .services-list, .services-category { font-size: 0.5rem; }

@@ -4,13 +4,11 @@ import Layout from '../layouts/Layout.astro';
 import libraryText from '../data/library-text.json';
 import libraryImage from '../data/library-image.json';
 import librarySound from '../data/library-sound.json';
-import libraryFilm from '../data/library-film.json';
 
 const allEntries = [
   ...libraryText,
   ...libraryImage,
   ...librarySound,
-  ...libraryFilm,
 ];
 
 // Dedupe by normalized title+author+year (strips punctuation, case, whitespace)
@@ -64,7 +62,6 @@ const referencesJSON = JSON.stringify(references);
           <button class="active" data-filter="all">All</button>
           <button data-filter="Image">Image</button>
           <button data-filter="Sound">Sound</button>
-          <button data-filter="Film">Film</button>
           <button data-filter="Text">Text</button>
         </div>
       </div>
@@ -85,7 +82,6 @@ const referencesJSON = JSON.stringify(references);
     <button class="thread-btn active" data-filter="all">All</button>
     <button class="thread-btn" data-filter="Image">Image</button>
     <button class="thread-btn" data-filter="Sound">Sound</button>
-    <button class="thread-btn" data-filter="Film">Film</button>
     <button class="thread-btn" data-filter="Text">Text</button>
   </div>
 </div>
@@ -166,7 +162,7 @@ const referencesJSON = JSON.stringify(references);
   .hdr-dropdown { position:relative;display:inline-block; }
   .hdr-btn {
     font-family:inherit;
-    font-size:0.6rem;letter-spacing:0;text-transform:uppercase;
+    font-size:0.7rem;letter-spacing:0.05em;text-transform:uppercase;
     line-height:1.7;
     color:var(--black);
     background:none;border:none;cursor:crosshair;padding:0;
@@ -194,7 +190,7 @@ const referencesJSON = JSON.stringify(references);
   .hdr-menu button {
     display:block;width:100%;text-align:right;padding:0;
     font-family:inherit;
-    font-size:0.6rem;text-transform:uppercase;letter-spacing:0;
+    font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;
     line-height:1.7;
     color:var(--grey);background:none;border:none;cursor:crosshair;
   }
@@ -348,7 +344,11 @@ const referencesJSON = JSON.stringify(references);
     z-index: 100;
   }
 
-  .hdr-btn { font-size: 0.6rem;}
+  .hdr-btn,
+  .hdr-menu button {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+  }
 
   #bg-canvas,
   #grid-canvas {

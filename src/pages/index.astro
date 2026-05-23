@@ -778,6 +778,10 @@ import projectsData from '../data/projects.json';
 
   /* ─── Mobile: tabs collapse to a click-to-open dropdown ─── */
   @media (max-width: 768px) {
+    /* Tabs sit directly under the nav — same anchor projects uses. */
+    .services-section {
+      padding-top: var(--cst-nav-bottom);
+    }
     .services-tabs {
       flex-direction: column;
       flex-wrap: nowrap;
@@ -787,6 +791,7 @@ import projectsData from '../data/projects.json';
       width: 100vw;
       margin-left: calc(50% - 50vw);
       margin-right: calc(50% - 50vw);
+      margin-bottom: 0;
       padding: 0;
       position: relative;
       background: white;
@@ -1303,7 +1308,18 @@ import projectsData from '../data/projects.json';
 
 }
 @media (max-width: 768px) {
-  /* Tabs as click-to-open dropdown overlay (matches nav inset + font) */
+  /* Lock the section to one viewport: tabs sit at the top right under the nav,
+     the active panel scrolls internally. Body scroll can't reveal the next
+     section while the projects view is in frame. */
+  .projects-section {
+    height: 100vh;
+    min-height: 0;
+    overflow: hidden;
+    padding: var(--cst-nav-bottom) 0 0;
+    box-sizing: border-box;
+  }
+  /* Tabs no longer need sticky — they're naturally pinned by the section's
+     padding-top, and the section is fixed-height so they don't drift. */
 .projects-tabs {
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1313,15 +1329,27 @@ import projectsData from '../data/projects.json';
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  margin-bottom: 0;
   padding: 0;
-  position: sticky;
-  top: 40px;
+  position: relative;
+  top: auto;
   background: white;
   z-index: 100;
   box-sizing: border-box;
   overflow: visible;
+  flex-shrink: 0;
 }
 .projects-tabs::-webkit-scrollbar { display: none; }
+  /* Active panel fills the remaining height under the tabs and scrolls
+     internally so expanding a row never pushes the page past the section. */
+  .projects-panel.active {
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
 .projects-tab {
   width: 100%;
   text-align: left;
@@ -1728,19 +1756,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (r !== row) r.classList.remove('expanded');
       });
       row.classList.toggle('expanded', willOpen);
-      // After the row expands, scroll the clicked row up to the
-      // "first row position" — i.e. the spot right below the projects
-      // tabs. Tabs are position: sticky, so they stay anchored at the
-      // top of the viewport; we use their current bottom in viewport
-      // coords as the target Y for the row.
+      // After the row expands, bring it up to the spot right below the tabs.
+      // Always scroll the panel (never the window) when a panel exists: the
+      // body has scroll-snap on mobile, so window.scrollBy would jump to the
+      // next snap point (info) instead of keeping the user in projects.
       if (willOpen) {
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
             const tabsEl = row.closest('.projects-section')?.querySelector('.projects-tabs');
+            const panel = row.closest('.projects-panel');
             const tabsBottom = tabsEl ? tabsEl.getBoundingClientRect().bottom : 0;
             const distance = row.getBoundingClientRect().top - tabsBottom;
             if (Math.abs(distance) < 2) return;
-            window.scrollBy({ top: distance, behavior: 'smooth' });
+            const target = panel || window;
+            target.scrollBy({ top: distance, behavior: 'smooth' });
           });
         });
       }

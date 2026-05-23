@@ -1,6 +1,6 @@
 // scripts/prepare-library-images.mjs
 //
-// For every entry across library-{text,image,sound,film}.json whose
+// For every entry across library-{text,image,sound}.json whose
 // `image` field points to a file on disk:
 //   1. Compute dominant RGB and write it back as entry.color
 //   2. Generate a 300w -thumb.webp next to it (if not already present)
@@ -15,7 +15,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { resolve, join, basename, extname, dirname } from 'path';
 
 const DATA_DIR = resolve('src/data');
-const CATEGORIES = ['text', 'image', 'film', 'sound'];
+const CATEGORIES = ['text', 'image', 'sound'];
 
 const THUMB_WIDTH = 300;
 const THUMB_QUALITY = 70;

@@ -1,6 +1,6 @@
 // scripts/import-library-csv.mjs
 // Merge new rows from /Users/u/Downloads/NEWLIBRARY/{TEXT,IMAGE,SOUND,FILM}.csv
-// into src/data/library-{text,image,sound,film}.json.
+// into src/data/library-{text,image,sound}.json.
 //
 // Dedupes against existing entries using normalized title|author|year
 // (same key library.astro uses to dedupe at render time).
@@ -21,14 +21,12 @@ const PUBLIC_DIR = resolve('public/images/library');
 const CATEGORIES = {
   text:  { headerRow: 8, cols: { title: 3, author: 4, year: 5, added: 8,  by: 9,  filename: 10, notes: 11 } },
   image: { headerRow: 8, cols: { title: 3, author: 4, year: 5, added: 6,  by: 7,  filename: 8,  notes: 9  } },
-  film:  { headerRow: 8, cols: { title: 3, author: 4, year: 5, added: 7,  by: 8,  filename: 9,  notes: 10 } },
   sound: { headerRow: 8, cols: { title: 3, author: 4, year: 6, added: 8,  by: 9,  filename: 10, notes: 12 } },
 };
 
 const SRC_FILES = {
   text:  'TEXT.csv',
   image: 'IMAGE.csv',
-  film:  'FILM.csv',
   sound: 'SOUND.csv',
 };
 

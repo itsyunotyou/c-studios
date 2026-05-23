@@ -5,7 +5,6 @@
 //   node scripts/import-library.mjs text
 //   node scripts/import-library.mjs image
 //   node scripts/import-library.mjs sound
-//   node scripts/import-library.mjs film
 //
 // Or import all categories at once:
 //   node scripts/import-library.mjs all
@@ -25,7 +24,7 @@ import { dirname, resolve, join } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 
-const VALID_CATEGORIES = ['text', 'image', 'sound', 'film'];
+const VALID_CATEGORIES = ['text', 'image', 'sound'];
 const arg = (process.argv[2] || '').toLowerCase();
 
 if (!arg) {

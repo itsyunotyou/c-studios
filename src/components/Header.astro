@@ -19,6 +19,12 @@ const { isHome } = Astro.props;
 <style is:global>
 html { scroll-behavior: smooth; }
 
+/* Shared anchor: where the nav menu ends. Sticky section bars (projects/services
+   tabs on mobile) pin to this so there's no transparent gap below the nav. */
+:root {
+  --cst-nav-bottom: 50px;
+}
+
 #cstudios, #services, #clients, #projects, #info {
   scroll-margin-top: 80px;
 }
@@ -74,13 +80,41 @@ html { scroll-behavior: smooth; }
   @keyframes cst-fade-in { to { opacity: 1; } }
 
 @media (max-width: 768px) {
+  /* Inset moves into padding so a solid bg can extend to the very top of the
+     viewport — no transparent strip above the menu text. */
+  :root {
+    --cst-nav-bottom: calc(env(safe-area-inset-top, 0px) + 42px);
+  }
+  /* Land tabbed sections so their tabs sit directly under the nav, not 80px below. */
+  #services, #projects {
+    scroll-margin-top: var(--cst-nav-bottom);
+  }
+  /* Lock body scroll to one full-viewport section at a time. Every section is
+     100vh; snap stops the page from settling mid-section, which is what made
+     the projects tabs scroll out and the info section peek in below. */
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  body > main > section,
+  body > main > footer,
+  body > section,
+  body > footer {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
   .cst-menu {
-    top: calc(env(safe-area-inset-top, 0px) + 12px);
+    top: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    padding: 0 12px;
+    padding: calc(env(safe-area-inset-top, 0px) + 12px) 12px 12px;
     box-sizing: border-box;
+  }
+  /* On light sections the nav has no blend mode, so it needs an opaque
+     background or content scrolls visibly behind the text. Hero/library use
+     mix-blend-mode: difference (body.bg-dark) and stay transparent. */
+  body:not(.bg-dark) .cst-menu {
+    background: white;
   }
   .cst-submenu {
     flex-direction: row;

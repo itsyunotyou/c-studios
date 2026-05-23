@@ -1189,6 +1189,10 @@ import projectsData from '../data/projects.json';
     gap: 30px;
     margin-bottom: 40px;
     padding: 0 28px;
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+    background: white;
   }
   .projects-tab {
     background: none;
@@ -1310,7 +1314,8 @@ import projectsData from '../data/projects.json';
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   padding: 0;
-  position: relative;
+  position: sticky;
+  top: 40px;
   background: white;
   z-index: 100;
   box-sizing: border-box;
@@ -1723,17 +1728,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (r !== row) r.classList.remove('expanded');
       });
       row.classList.toggle('expanded', willOpen);
-      // After the row expands, scroll so the clicked row sits where the
-      // FIRST row currently is on screen — i.e. it slides up to the top
-      // of the projects list, not the top of the viewport.
+      // After the row expands, scroll the clicked row up to the
+      // "first row position" — i.e. the spot right below the projects
+      // tabs. Tabs are position: sticky, so they stay anchored at the
+      // top of the viewport; we use their current bottom in viewport
+      // coords as the target Y for the row.
       if (willOpen) {
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
-            const panel = row.closest('.projects-panel');
-            const firstRow = panel?.querySelector('.project-row');
-            if (!firstRow) return;
-            const distance = row.getBoundingClientRect().top - firstRow.getBoundingClientRect().top;
-            if (Math.abs(distance) < 2) return;  // already at top
+            const tabsEl = row.closest('.projects-section')?.querySelector('.projects-tabs');
+            const tabsBottom = tabsEl ? tabsEl.getBoundingClientRect().bottom : 0;
+            const distance = row.getBoundingClientRect().top - tabsBottom;
+            if (Math.abs(distance) < 2) return;
             window.scrollBy({ top: distance, behavior: 'smooth' });
           });
         });

@@ -170,12 +170,15 @@ const referencesJSON = JSON.stringify(references);
     display:inline-flex;align-items:center;gap:10px;
   }
   .hdr-btn::before {
-    content:'+';
-    font-weight:300;
-    font-size:1rem;
+    content:'';
     display:inline-block;
+    width:12px;
+    height:12px;
+    flex-shrink:0;
+    background-color:currentColor;
+    -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M6 0h2v14H6zM0 6h14v2H0z'/></svg>") center/contain no-repeat;
+            mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M6 0h2v14H6zM0 6h14v2H0z'/></svg>") center/contain no-repeat;
     transition:transform 0.2s ease;
-    line-height:1;
   }
   .hdr-dropdown:hover .hdr-btn::before,
   .hdr-dropdown.open .hdr-btn::before { transform:rotate(45deg); }

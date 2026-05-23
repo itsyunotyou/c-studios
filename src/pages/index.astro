@@ -821,11 +821,14 @@ import projectsData from '../data/projects.json';
       border-bottom: 1px solid #e5e5e5;
     }
     .services-tab.active::after {
-      content: '+';
-      font-weight: 300;
-      font-size: 1rem;
-      line-height: 1;
+      content: '';
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
       margin-left: 12px;
+      background-color: currentColor;
+      -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M6 0h2v14H6zM0 6h14v2H0z'/></svg>") center/contain no-repeat;
+              mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M6 0h2v14H6zM0 6h14v2H0z'/></svg>") center/contain no-repeat;
       transition: transform 0.2s ease;
     }
     /* Open: inactive tabs render as an absolute overlay below the active one
@@ -1375,11 +1378,14 @@ import projectsData from '../data/projects.json';
   border-bottom: 1px solid #e5e5e5;
 }
 .projects-tab.active::after {
-  content: '+';
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1;
+  content: '';
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
   margin-left: 12px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M6 0h2v14H6zM0 6h14v2H0z'/></svg>") center/contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M6 0h2v14H6zM0 6h14v2H0z'/></svg>") center/contain no-repeat;
   transition: transform 0.2s ease;
 }
 .projects-tabs.open .projects-tab:not(.active) {

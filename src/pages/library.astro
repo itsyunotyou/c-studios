@@ -320,9 +320,11 @@ const referencesJSON = JSON.stringify(references);
   #info-panel {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* Reserve 2 lines per row up-front so a wrap doesn't shift the next
-       row down — the row height is fixed regardless of value length. */
-    grid-auto-rows: 3.4em;
+    /* Tight 1-line rows that share the same baseline cadence as the
+       ALL+ dropdown items. Values that wrap grow the row downward,
+       which can push the next row — accept that as the trade for the
+       tight default spacing. */
+    grid-auto-rows: minmax(1.7em, auto);
     gap: 0 12px;
     padding: 0;
     background: transparent;
@@ -355,28 +357,17 @@ const referencesJSON = JSON.stringify(references);
   }
   #info-panel .info-label { align-self: start; }
 
-  /* Dropdown menu items + the ALL button each take the same 3.4em row
-     slot as the info-panel rows, so the dropdown labels baseline with
-     TITLE / CREATOR / YEAR / ADDED BY when the menu is open. */
+  /* Dropdown menu items and the ALL button each render as a tight
+     1-line slot (1.7em) matching the info-panel rows. */
   .hdr-btn,
   .hdr-menu button {
     line-height: 1.7;
     padding: 0;
-    min-height: 3.4em;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
   }
-  /* Restore the '+' / × on the left of the ALL button (was overridden
-     by the flex justify-content above). */
-  .hdr-btn { gap: 10px; }
-  .hdr-btn::before { align-self: center; }
 
-  /* Filter dropdown — same vertical anchor as #header-left so they baseline.
-     min-height matches the 4 visible info-panel rows (4 × 1.7em ≈ 6.8em),
-     so the ALL+ button reserves the same vertical band whether the
-     dropdown is open or closed — dropdown items land in the same y slots
-     as the info list rows. */
+  /* Filter dropdown — same vertical anchor as #header-left so the ALL+
+     button baselines with TITLE, and the dropdown items (when open)
+     fall on the same y as the rest of the info rows. */
   #header-right {
     position: fixed;
     top: calc(var(--cst-nav-bottom) + 10px);

@@ -1099,18 +1099,20 @@ import projectsData from '../data/projects.json';
   transition: transform 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.3s;
 }
 
-/* Labels (STRATEGY / CURATION) start translated INWARD from each circle's
-   rim, then slide outward into their final positions in the lobes. */
+/* Labels start tucked behind each circle's outer rim (STRATEGY behind
+   the LEFT rim, CURATION behind the RIGHT rim) and slide inward into
+   the lobe to their natural positions — like emerging from beneath
+   the rim line. */
 .venn-label-left {
   opacity: 0;
-  transform: translateY(-50%) translateX(40px);   /* shifted right toward rim */
+  transform: translateY(-50%) translateX(-32px);  /* tucked behind LEFT rim */
   transition:
     opacity 0.8s ease 1.6s,
     transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 1.6s;
 }
 .venn-label-right {
   opacity: 0;
-  transform: translateY(-50%) translateX(-40px);  /* shifted left toward rim */
+  transform: translateY(-50%) translateX(32px);   /* tucked behind RIGHT rim */
   transition:
     opacity 0.8s ease 2.0s,
     transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 2.0s;
@@ -1943,8 +1945,14 @@ function setupInfoReveal() {
     if (triggered || !infoBody) return;
     triggered = true;
 
-    // Hold typewriter until the venn sequence (split → labels → captions →
-    // logo) has settled, so the paragraph reveal feels like the finale.
+    // Pre-create the dots layer right now (not when the animation runs)
+    // so the DOM mutation doesn't shift the venn diagram later.
+    const dotsLayer = document.createElement('div');
+    dotsLayer.className = 'info-dots-layer';
+    infoBody.appendChild(dotsLayer);
+
+    // Hold the dot reveal until the venn sequence (split → labels →
+    // captions → logo) has settled, so the paragraphs are the finale.
     const TYPEWRITER_DELAY = 4800; // ms after section enters view
 
     setTimeout(() => {
@@ -1953,14 +1961,10 @@ function setupInfoReveal() {
         if (!letters.length) return;
         const bodyRect = infoBody.getBoundingClientRect();
 
-        const dotsLayer = document.createElement('div');
-        dotsLayer.className = 'info-dots-layer';
-        infoBody.appendChild(dotsLayer);
-
-        // Each dot starts at its FINAL letter position, invisible. The Y
-        // offset puts the dot at the visual centre of an uppercase letter
-        // (these paragraphs use text-transform: uppercase with line-height
-        // 1.8, so the bounding box is much taller than the cap height).
+        // Build a dot for each letter at its visual centre. Uses 0.55 of
+        // bounding-box height because the paragraphs are uppercase with
+        // line-height 1.8 — the actual cap letter sits slightly above
+        // the bounding-box midpoint.
         const dots = letters.map((letter) => {
           const lr = letter.getBoundingClientRect();
           const targetX = (lr.left + lr.width / 2) - bodyRect.left - 1.5;
@@ -1969,24 +1973,50 @@ function setupInfoReveal() {
           dot.className = 'info-dot';
           dot.style.transform = `translate(${targetX}px, ${targetY}px)`;
           dotsLayer.appendChild(dot);
-          return { letter, dot };
+          return { letter, dot, targetY };
         });
 
         void dotsLayer.offsetWidth; // commit start state
 
-        // Typewriter: per character in order, fade the dot in at its
-        // target position, then morph it into the actual letter. Slowed
-        // down vs the snap version so it feels fluid / magical.
-        const STEP_MS = 16;          // gap between consecutive characters
-        const MORPH_DELAY_MS = 180;  // dot is visible for ~180ms before swap
-        dots.forEach((d, i) => {
-          const t = i * STEP_MS;
-          setTimeout(() => { d.dot.style.opacity = '1'; }, t);
-          setTimeout(() => {
-            d.dot.style.opacity = '0';
-            d.dot.style.transform = (d.dot.style.transform || '') + ' scale(0)';
-            d.letter.classList.add('reveal');
-          }, t + MORPH_DELAY_MS);
+        // ── Phase A ── every dot fades in at its target position with a
+        // small random stagger.
+        const PHASE_A_WINDOW = 700;   // ms over which all dots come in
+        dots.forEach((d) => {
+          const delay = Math.random() * PHASE_A_WINDOW;
+          setTimeout(() => { d.dot.style.opacity = '1'; }, delay);
+        });
+
+        // ── Phase B ── group dots into rows by their targetY, then for
+        // each row top-down, morph the dots into letters in a randomised
+        // order within that row.
+        const rowBuckets = new Map(); // roundedY → [dots]
+        dots.forEach((d) => {
+          const key = Math.round(d.targetY / 4) * 4;
+          if (!rowBuckets.has(key)) rowBuckets.set(key, []);
+          rowBuckets.get(key).push(d);
+        });
+        const rowKeys = [...rowBuckets.keys()].sort((a, b) => a - b);
+
+        const PHASE_A_DONE = PHASE_A_WINDOW + 250; // buffer after fade-in
+        const ROW_GAP_MS = 380;       // pause between rows
+        const ROW_DURATION_MS = 700;  // window for the random morphs in a row
+
+        rowKeys.forEach((key, rowIdx) => {
+          const rowDots = rowBuckets.get(key).slice();
+          // shuffle row
+          for (let i = rowDots.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [rowDots[i], rowDots[j]] = [rowDots[j], rowDots[i]];
+          }
+          const rowStart = PHASE_A_DONE + rowIdx * ROW_GAP_MS;
+          rowDots.forEach((d) => {
+            const delay = rowStart + Math.random() * ROW_DURATION_MS;
+            setTimeout(() => {
+              d.dot.style.opacity = '0';
+              d.dot.style.transform = (d.dot.style.transform || '') + ' scale(0)';
+              d.letter.classList.add('reveal');
+            }, delay);
+          });
         });
       }));
     }, TYPEWRITER_DELAY);

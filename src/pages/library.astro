@@ -355,12 +355,22 @@ const referencesJSON = JSON.stringify(references);
   }
   #info-panel .info-label { align-self: start; }
 
-  /* Dropdown menu items inherit the same line-height + font-size so the
-     vertical rhythm matches the info list rows. */
+  /* Dropdown menu items + the ALL button each take the same 3.4em row
+     slot as the info-panel rows, so the dropdown labels baseline with
+     TITLE / CREATOR / YEAR / ADDED BY when the menu is open. */
+  .hdr-btn,
   .hdr-menu button {
     line-height: 1.7;
     padding: 0;
+    min-height: 3.4em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
   }
+  /* Restore the '+' / × on the left of the ALL button (was overridden
+     by the flex justify-content above). */
+  .hdr-btn { gap: 10px; }
+  .hdr-btn::before { align-self: center; }
 
   /* Filter dropdown — same vertical anchor as #header-left so they baseline.
      min-height matches the 4 visible info-panel rows (4 × 1.7em ≈ 6.8em),

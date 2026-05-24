@@ -1782,17 +1782,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (r !== row) r.classList.remove('expanded');
       });
       row.classList.toggle('expanded', willOpen);
-      // After the row expands, scroll the panel so the row's top lines up
-      // with the panel's content top (which sits just under the tabs).
-      // Only touches the panel — leaves body scroll alone so mobile's
-      // scroll-snap doesn't kick the user out of the section.
+      // After the row expands, bring its top up to align with the
+      // sticky tabs' bottom edge — i.e. visually right below the tab bar.
+      // Scrolls the panel first (its internal overflow); if the panel
+      // is already at its scroll limit, the remainder gets absorbed by
+      // window scroll on desktop. Mobile skips the window step to keep
+      // section-level scroll-snap from kicking the user away.
       if (willOpen) {
         requestAnimationFrame(() => requestAnimationFrame(() => {
           const panel = row.closest('.projects-panel');
-          if (!panel) return;
-          const offset = row.getBoundingClientRect().top - panel.getBoundingClientRect().top;
-          if (Math.abs(offset) < 2) return;
-          panel.scrollTo({ top: panel.scrollTop + offset, behavior: 'smooth' });
+          const tabsEl = row.closest('.projects-section')?.querySelector('.projects-tabs');
+          if (!panel || !tabsEl) return;
+
+          const tabsBottom = tabsEl.getBoundingClientRect().bottom;
+          const rowTop = row.getBoundingClientRect().top;
+          const distance = rowTop - tabsBottom;
+          if (Math.abs(distance) < 2) return;
+
+          const maxScroll = Math.max(0, panel.scrollHeight - panel.clientHeight);
+          const targetScroll = panel.scrollTop + distance;
+          const clampedScroll = Math.max(0, Math.min(maxScroll, targetScroll));
+          const consumed = clampedScroll - panel.scrollTop;
+          const remaining = distance - consumed;
+
+          panel.scrollTo({ top: clampedScroll, behavior: 'smooth' });
+
+          // Whatever the panel couldn't absorb, scroll the page (desktop
+          // only — mobile body scroll triggers the section snap).
+          if (Math.abs(remaining) > 2 && window.innerWidth > 768) {
+            window.scrollBy({ top: remaining, behavior: 'smooth' });
+          }
         }));
       }
     });

@@ -323,8 +323,11 @@ const referencesJSON = JSON.stringify(references);
     /* Always reserve 2 lines per row whether the value wraps or not,
        so CREATOR / YEAR / ADDED BY don't shift down when a long TITLE
        wraps onto two lines. Cells are vertically centred so a 1-line
-       value still baselines with the matching dropdown item. */
-    grid-auto-rows: 3.4em;
+       value still baselines with the matching dropdown item.
+       Rem-based so the row height computes the same as the dropdown
+       items (em on the panel resolves to its inherited 16px, not the
+       0.6rem cell font, which used to be the mismatch). */
+    grid-auto-rows: 2.04rem;
     gap: 0 12px;
     padding: 0;
     background: transparent;
@@ -360,15 +363,15 @@ const referencesJSON = JSON.stringify(references);
   }
   #info-panel .info-label { align-self: center; }
 
-  /* Dropdown menu items and the ALL button render as 3.4em slots so
+  /* Dropdown menu items and the ALL button render as 2.04rem slots so
      each one baselines with one info-panel row (TITLE / CREATOR /
-     YEAR / ADDED BY). Content is vertically centred so the + icon
-     stays horizontal with 'ALL'. */
+     YEAR / ADDED BY). Same rem-based height keeps the dropdown stack
+     in lock-step with the info list. */
   .hdr-btn,
   .hdr-menu button {
     line-height: 1.7;
     padding: 0;
-    min-height: 3.4em;
+    min-height: 2.04rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;

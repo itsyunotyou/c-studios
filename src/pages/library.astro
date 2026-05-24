@@ -327,7 +327,7 @@ const referencesJSON = JSON.stringify(references);
        Rem-based so the row height computes the same as the dropdown
        items (em on the panel resolves to its inherited 16px, not the
        0.6rem cell font, which used to be the mismatch). */
-    grid-auto-rows: 2.04rem;
+    grid-auto-rows: 1.8rem;
     gap: 0 12px;
     padding: 0;
     background: transparent;
@@ -359,9 +359,9 @@ const referencesJSON = JSON.stringify(references);
     white-space: normal;
     overflow-wrap: anywhere;
     min-width: 0;
-    align-self: center;
+    align-self: start;
   }
-  #info-panel .info-label { align-self: center; }
+  #info-panel .info-label { align-self: start; }
 
   /* Dropdown menu items and the ALL button render as 2.04rem slots so
      each one baselines with one info-panel row (TITLE / CREATOR /
@@ -371,7 +371,7 @@ const referencesJSON = JSON.stringify(references);
   .hdr-menu button {
     line-height: 1.7;
     padding: 0;
-    min-height: 2.04rem;
+    min-height: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;

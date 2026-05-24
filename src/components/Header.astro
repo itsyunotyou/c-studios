@@ -151,9 +151,12 @@ body > footer {
   const submenu = document.getElementById('cstSubmenu')!;
   const links = submenu.querySelectorAll<HTMLAnchorElement>('a');
 
-  // Library page (not homepage) — always dark
+  // Library page (not homepage) — always dark, and the LIBRARY link is
+  // the active one so the other nav links read as the dim/grey default.
   if (!IS_HOME) {
     document.body.classList.add('bg-dark');
+    const libraryLink = submenu.querySelector<HTMLAnchorElement>('a[data-key="library"]');
+    libraryLink?.classList.add('active');
   }
 
   if (IS_HOME) {

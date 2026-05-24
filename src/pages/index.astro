@@ -1747,6 +1747,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = tab.getAttribute('data-target');
       pTabs.forEach((t) => t.classList.toggle('active', t === tab));
       refreshTabIndices(tabsEl);
+      // Collapse any expanded rows across all panels before switching, so a
+      // new tab always starts with everything closed.
+      document.querySelectorAll('.project-row.expanded').forEach((r) => r.classList.remove('expanded'));
       pPanels.forEach((p) => {
         p.classList.remove('active');
         void p.offsetWidth;

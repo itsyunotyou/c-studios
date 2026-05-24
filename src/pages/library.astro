@@ -320,11 +320,11 @@ const referencesJSON = JSON.stringify(references);
   #info-panel {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* Tight 1-line rows that share the same baseline cadence as the
-       ALL+ dropdown items. Values that wrap grow the row downward,
-       which can push the next row — accept that as the trade for the
-       tight default spacing. */
-    grid-auto-rows: minmax(1.7em, auto);
+    /* Always reserve 2 lines per row whether the value wraps or not,
+       so CREATOR / YEAR / ADDED BY don't shift down when a long TITLE
+       wraps onto two lines. Cells are vertically centred so a 1-line
+       value still baselines with the matching dropdown item. */
+    grid-auto-rows: 3.4em;
     gap: 0 12px;
     padding: 0;
     background: transparent;
@@ -349,21 +349,31 @@ const referencesJSON = JSON.stringify(references);
   }
 
   /* Long values wrap onto multiple lines within the row rather than
-     overlapping the ALL+ button. */
+     overlapping the ALL+ button. Both label and value are vertically
+     centred in the 3.4em cell so 1-line values sit on the same y as
+     the dropdown item next to them. */
   #info-panel .info-value {
     white-space: normal;
     overflow-wrap: anywhere;
     min-width: 0;
+    align-self: center;
   }
-  #info-panel .info-label { align-self: start; }
+  #info-panel .info-label { align-self: center; }
 
-  /* Dropdown menu items and the ALL button each render as a tight
-     1-line slot (1.7em) matching the info-panel rows. */
+  /* Dropdown menu items and the ALL button render as 3.4em slots so
+     each one baselines with one info-panel row (TITLE / CREATOR /
+     YEAR / ADDED BY). Content is vertically centred so the + icon
+     stays horizontal with 'ALL'. */
   .hdr-btn,
   .hdr-menu button {
     line-height: 1.7;
     padding: 0;
+    min-height: 3.4em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
+  .hdr-btn { gap: 10px; }
 
   /* Filter dropdown — same vertical anchor as #header-left so the ALL+
      button baselines with TITLE, and the dropdown items (when open)

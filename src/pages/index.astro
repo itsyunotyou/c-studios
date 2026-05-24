@@ -1264,9 +1264,13 @@ import projectsData from '../data/projects.json';
   }
 
   .project-row {
-    border-bottom: 1px solid #eee;
+    /* Every row carries its own top border so when any row scrolls to
+       the panel's content top, the divider is visible above it
+       (otherwise the line came from the previous row's bottom border,
+       which gets clipped above panel.top when you scroll). */
+    border-top: 1px solid #eee;
   }
-  .project-row:first-child { border-top: 1px solid #eee; }
+  .project-row:last-child { border-bottom: 1px solid #eee; }
 
 .project-summary {
   display: grid;

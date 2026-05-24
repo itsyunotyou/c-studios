@@ -1314,6 +1314,12 @@ import projectsData from '../data/projects.json';
   overflow-x: auto;
   overflow-y: hidden;
   gap: 0;
+  /* No transition on base — collapse is instant so the auto-close of
+     a previously expanded row doesn't keep its height during the new
+     row's scroll-into-view measurement. The .expanded rule adds the
+     transition for the smooth expand. */
+}
+.project-row.expanded .project-images {
   transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 

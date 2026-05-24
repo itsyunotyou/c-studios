@@ -320,9 +320,8 @@ const referencesJSON = JSON.stringify(references);
   #info-panel {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* Single-line rows — same line-height as the ALL+ dropdown items so
-       rows sit on the same y-axis baselines as the dropdown's labels. */
-    grid-auto-rows: 1.7em;
+    /* Each row reserves at least one line; grows if the value wraps. */
+    grid-auto-rows: minmax(1.7em, auto);
     gap: 0 12px;
     padding: 0;
     background: transparent;
@@ -346,13 +345,20 @@ const referencesJSON = JSON.stringify(references);
     line-height: 1.7;
   }
 
-  /* Long values truncate with ellipsis instead of overlapping the ALL+
-     area — the row height stays locked so the layout never shifts. */
+  /* Long values wrap onto multiple lines within the row rather than
+     overlapping the ALL+ button. */
   #info-panel .info-value {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: anywhere;
     min-width: 0;
+  }
+  #info-panel .info-label { align-self: start; }
+
+  /* Dropdown menu items inherit the same line-height + font-size so the
+     vertical rhythm matches the info list rows. */
+  .hdr-menu button {
+    line-height: 1.7;
+    padding: 0;
   }
 
   /* Filter dropdown — same vertical anchor as #header-left so they baseline.

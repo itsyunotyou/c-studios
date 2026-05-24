@@ -1210,7 +1210,7 @@ import projectsData from '../data/projects.json';
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
     padding: 0 28px;
     position: sticky;
     top: 50px;
@@ -1258,11 +1258,9 @@ import projectsData from '../data/projects.json';
   .projects-list {
     display: flex;
     flex-direction: column;
-    /* Reserve a panel-height of empty scroll room at the bottom so any
-       row (including the last) can scroll up to the panel's content top.
-       Without this, tabs with few rows have no overflow → panel.scrollTo
-       does nothing → the clicked row stays put. */
-    padding-bottom: 70vh;
+    /* Modest scroll headroom so the last few rows can still reach the
+       panel's content top when clicked. */
+    padding-bottom: 30vh;
   }
 
   .project-row {

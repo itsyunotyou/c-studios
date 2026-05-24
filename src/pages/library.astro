@@ -320,8 +320,9 @@ const referencesJSON = JSON.stringify(references);
   #info-panel {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* Each row reserves at least one line; grows if the value wraps. */
-    grid-auto-rows: minmax(1.7em, auto);
+    /* Reserve 2 lines per row up-front so a wrap doesn't shift the next
+       row down — the row height is fixed regardless of value length. */
+    grid-auto-rows: 3.4em;
     gap: 0 12px;
     padding: 0;
     background: transparent;

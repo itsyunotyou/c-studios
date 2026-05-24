@@ -924,11 +924,15 @@ function loopExplode(){
   phase++;
   stepParticles();
 
-  // Floaters ease toward coverflow targets
+  // Floaters ease toward coverflow targets. Match reveal's curve to the
+  // x/y/sz easing — using a linear 0.05/frame for reveal made portrait
+  // cards (text books) "catch up" to their natural ratio late, giving
+  // a visible bounce that square sound covers don't show.
   let done=true;
   for(const f of floaters){
     f.x+=(f.tx-f.x)*0.1; f.y+=(f.ty-f.y)*0.1; f.sz+=(f.tsz-f.sz)*0.1;
-    f.reveal=Math.min(1,(f.reveal||0)+0.05);
+    f.reveal=(f.reveal||0)+(1-(f.reveal||0))*0.1;
+    if(f.reveal>0.995) f.reveal=1;
     if(Math.hypot(f.tx-f.x,f.ty-f.y)>2) done=false;
   }
 

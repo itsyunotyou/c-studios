@@ -87,6 +87,22 @@ html {
   body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(6) { animation-delay: 5.5s; }
   @keyframes cst-fade-in { to { opacity: 1; } }
 
+/* Lock body scroll to one full-viewport section at a time on every screen.
+   Every section is 100vh; snap stops the page from settling mid-section,
+   which is what made content scroll behind the sticky nav / tabs. The
+   projects panel still has its own internal overflow so users can browse
+   the list within its section without the body moving. */
+html {
+  scroll-snap-type: y mandatory;
+}
+body > main > section,
+body > main > footer,
+body > section,
+body > footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 @media (max-width: 768px) {
   /* Inset moves into padding so a solid bg can extend to the very top of the
      viewport — no transparent strip above the menu text. */
@@ -96,19 +112,6 @@ html {
   /* Land tabbed sections so their tabs sit directly under the nav, not 80px below. */
   #services, #projects {
     scroll-margin-top: var(--cst-nav-bottom);
-  }
-  /* Lock body scroll to one full-viewport section at a time. Every section is
-     100vh; snap stops the page from settling mid-section, which is what made
-     the projects tabs scroll out and the info section peek in below. */
-  html {
-    scroll-snap-type: y mandatory;
-  }
-  body > main > section,
-  body > main > footer,
-  body > section,
-  body > footer {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
   }
   .cst-menu {
     top: 0;

@@ -1806,12 +1806,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const remaining = distance - consumed;
 
           panel.scrollTo({ top: clampedScroll, behavior: 'smooth' });
-
-          // Whatever the panel couldn't absorb, scroll the page (desktop
-          // only — mobile body scroll triggers the section snap).
-          if (Math.abs(remaining) > 2 && window.innerWidth > 768) {
-            window.scrollBy({ top: remaining, behavior: 'smooth' });
-          }
+          // Note: don't fall through to window.scrollBy — body scroll-snap
+          // (now active on every viewport) would relocate the section.
         }));
       }
     });

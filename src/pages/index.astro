@@ -968,11 +968,13 @@ function setupInfoReveal() {
           d.dot.style.transform = `translate(${d.targetX}px, ${d.targetY}px)`;
         });
 
-        // Phase 2 — morph: fade every dot and reveal every letter at
-        // the same instant.
+        // Phase 2 — morph: fade + shrink every dot to 0, and reveal every
+        // letter at the same instant. The transform keeps its translate so
+        // the dot stays anchored to its letter; only the scale shrinks.
         setTimeout(() => {
           dots.forEach((d) => {
-            d.dot.style.transition = `opacity ${MORPH_MS}ms ease`;
+            d.dot.style.transition = `opacity ${MORPH_MS}ms ease, transform ${MORPH_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`;
+            d.dot.style.transform = `translate(${d.targetX}px, ${d.targetY}px) scale(0)`;
             d.dot.style.opacity = '0';
             d.letter.classList.add('reveal');
           });

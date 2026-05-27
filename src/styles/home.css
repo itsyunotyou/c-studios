@@ -887,7 +887,7 @@
   opacity: 0;
   transition:
     opacity 1.6s ease 1s,
-    transform 1.2s cubic-bezier(0.76, 0, 0.24, 1) 2.6s;
+    transform 1.6s cubic-bezier(0.76, 0, 0.24, 1) 1s;
 }
 
 /* Labels start tucked behind each circle's outer rim and slide inward.

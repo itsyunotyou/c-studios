@@ -1123,15 +1123,35 @@
   transition: max-height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-images img {
+/* Each project image is wrapped in a .project-image div whose inline
+   style sets `aspect-ratio` (so the box reserves correct width before
+   the image arrives) and a tiny base64 WebP as `background-image` (the
+   LQIP). The browser scales that 20px placeholder up across the full
+   row height, naturally producing a blurred preview. The real <img>
+   sits on top at opacity 0; the inline `onload` adds .loaded to the
+   wrapper which fades it in over the blurry preview. */
+.project-images .project-image {
   height: 50vh;
-  width: auto;
   flex-shrink: 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
+}
+.project-images .project-image > img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
   pointer-events: none;
   user-select: none;
-
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.project-images .project-image.loaded > img {
+  opacity: 1;
 }
 @media (max-width: 768px) {
   /* Lock the section to one viewport: tabs sit at the top right under the nav,
@@ -1280,6 +1300,10 @@
     height: 38vh;
     width: auto;
     object-fit: cover;
+  }
+  /* Mobile wrapper height matches the original 38vh image height. */
+  .project-images .project-image {
+    height: 38vh;
   }
   .project-row.expanded .project-images {
     max-height: 38vh;

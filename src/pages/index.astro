@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import services from '../data/services.json';
 import clients from '../data/clients.json';
 import projectsData from '../data/projects.json';
+import projectLqip from '../data/project-lqip.json';
 import '../styles/home.css';
 ---
 
@@ -230,13 +231,20 @@ import '../styles/home.css';
                   <div class="project-images" data-scrubber>
                     {project.images.map((img) => {
                       const stem = img.replace(/\.[^.]+$/, '');
+                      const lqip = projectLqip[img];
+                      const wrapStyle = lqip
+                        ? `background-image: url('${lqip.src}'); aspect-ratio: ${lqip.ratio};`
+                        : '';
                       return (
-                        <img
-                          src={`${stem}-1280w.webp`}
-                          srcset={`${stem}-640w.webp 640w, ${stem}-828w.webp 828w, ${stem}-1280w.webp 1280w, ${stem}-2560w.webp 2560w`}
-                          sizes="(max-width: 768px) 90vw, 60vw"
-                          alt={project.title}
-                          loading="lazy" />
+                        <div class="project-image" style={wrapStyle}>
+                          <img
+                            src={`${stem}-1280w.webp`}
+                            srcset={`${stem}-640w.webp 640w, ${stem}-828w.webp 828w, ${stem}-1280w.webp 1280w, ${stem}-2560w.webp 2560w`}
+                            sizes="(max-width: 768px) 90vw, 60vw"
+                            alt={project.title}
+                            loading="lazy"
+                            onload="this.parentElement.classList.add('loaded')" />
+                        </div>
                       );
                     })}
                   </div>

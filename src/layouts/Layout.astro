@@ -8,9 +8,9 @@ interface Props {
   description?: string;
 }
 
-const { 
-  title = 'C-STUDIOS', 
-  description = 'Creative strategy studio working across cultural research, concepts, creative direction, consulting, and curation.' 
+const {
+  title = 'C-STUDIOS',
+  description = 'A creative strategy and curatorial studio.'
 } = Astro.props;
 
 const url = Astro.url.pathname;
@@ -25,6 +25,12 @@ const isHome = url === '/';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
   </head>
   <body data-is-home={isHome ? 'true' : 'false'}>
     <!-- Runs synchronously before CSS animations have a chance to start.
@@ -33,10 +39,8 @@ const isHome = url === '/';
       (function () {
         try {
           if (sessionStorage.getItem('cst-intro-seen') === 'true') {
-  document.body.classList.add('skip-intro');
-}
-// Note: the flag is now set in index.astro after the moon animation completes,
-// not here — so first-time visitors actually see the intro.
+            document.body.classList.add('skip-intro');
+          }
         } catch (e) { /* sessionStorage may be unavailable in some contexts */ }
       })();
     </script>

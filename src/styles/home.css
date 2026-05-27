@@ -886,7 +886,7 @@
 .venn-circle {
   opacity: 0;
   transition:
-    opacity 2s ease 0.5s,
+    opacity 1.5s ease 1s,
     transform 1.2s cubic-bezier(0.76, 0, 0.24, 1) 2.7s;
 }
 

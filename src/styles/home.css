@@ -136,7 +136,7 @@
   .container {
     position: absolute;
     top: 50%;
-    left: 96vw;
+    left: 93vw;
     transform: translateY(-50%);
     white-space: nowrap;
     opacity: 1;

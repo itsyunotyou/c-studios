@@ -136,7 +136,7 @@
   .container {
     position: absolute;
     top: 50%;
-    left: 93vw;
+    left: 96vw;
     transform: translateY(-50%);
     white-space: nowrap;
     opacity: 1;
@@ -336,13 +336,14 @@
 
   @media (min-width: 768px) {
     .sub-text {
-      /* Stays invisible during the home-text slide-in so the user only
-         sees "C-STUDIOS" sliding to the right. The fade-in is triggered
-         from JS on the same frame the container starts moving to centre,
-         so the sub-text appears to be pulled out alongside C-STUDIOS. */
-      opacity: 0;
-      transform: translateX(0);
-      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      /* Starts visible but parked off-screen right of the viewport via a
+         large translateX, so the user only sees "C-STUDIOS" during the
+         slide-in. JS resets transform to translateX(0) on the same frame
+         the container starts moving to centre, so the sub-text reads as
+         being pulled out of the right edge alongside the centre-move. */
+      opacity: 1;
+      transform: translateX(40vw);
+      transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
     }
     #textContainer {
       transition: left 800ms cubic-bezier(0.22, 1, 0.36, 1),

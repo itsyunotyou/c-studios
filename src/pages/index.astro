@@ -528,10 +528,11 @@ setTimeout(() => {
     if (window.innerWidth >= 768) {
       const container = document.getElementById('textContainer');
       if (container) container.classList.add('text-centered');
-      // Reveal the sub-text on the same frame as the centre-move so it
-      // appears to be pulled along with C-STUDIOS toward the centre.
+      // Slide the sub-text in from off-screen-right on the same frame the
+      // container starts moving to centre — looks like it's being pulled
+      // out of the viewport's right edge by C-STUDIOS.
       const subForReveal = document.querySelector('.sub-text');
-      if (subForReveal) subForReveal.style.opacity = '1';
+      if (subForReveal) subForReveal.style.transform = 'translateX(0)';
     }
     // Start the slideshow + fade the mask out partway through the expand.
     // With scale 3.0 the moon hole is past every viewport corner well

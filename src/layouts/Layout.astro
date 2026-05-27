@@ -24,6 +24,16 @@ const isHome = url === '/';
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {isHome && (
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero/intro01-1280w.webp"
+        imagesrcset="/images/hero/intro01-640w.webp 640w, /images/hero/intro01-828w.webp 828w, /images/hero/intro01-1280w.webp 1280w, /images/hero/intro01-2560w.webp 2560w"
+        imagesizes="100vw"
+        fetchpriority="high"
+      />
+    )}
     <title>{title}</title>
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

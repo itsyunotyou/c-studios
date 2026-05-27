@@ -336,9 +336,13 @@
 
   @media (min-width: 768px) {
     .sub-text {
+      /* Stays invisible during the home-text slide-in so the user only
+         sees "C-STUDIOS" sliding to the right. The fade-in is triggered
+         from JS on the same frame the container starts moving to centre,
+         so the sub-text appears to be pulled out alongside C-STUDIOS. */
       opacity: 0;
-      transform: translateX(20vw);
-      animation: slideInLeft 1.2s cubic-bezier(0.22, 1, 0.36, 1) 1.05s forwards;
+      transform: translateX(0);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
     }
     #textContainer {
       transition: left 800ms cubic-bezier(0.22, 1, 0.36, 1),

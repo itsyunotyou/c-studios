@@ -742,8 +742,8 @@ function drawCylinder(){
       d.sx=hx; d.sy=hy; d.sw=hw; d.sh=hh;
     } else {
       drawRef(ref,x,y,w,h,depthAlpha,getFlickerImg(ref));
+      d.sx=x; d.sy=y; d.sw=w; d.sh=h;
     }
-    d.sx=x; d.sy=y; d.sw=w; d.sh=h;
   }
 
   // Decay hover when nothing hovered
@@ -1498,9 +1498,13 @@ cvs.addEventListener('touchend',e=>{
   const dx = t.clientX - touchStartX;
   const dy = t.clientY - touchStartY;
   if (Math.sqrt(dx*dx + dy*dy) > 12) return;  // drag, not tap
+  // Generous hit-test padding so fingertip taps don't need pixel-perfect
+  // accuracy — the cylinder tiles are small and the 3D depth makes their
+  // visual centres slightly different from the exact draw rect.
+  const PAD = 8;
   let tappedIdx = -1;
   for(const d of [...drawnCylTiles].reverse()){
-    if(t.clientX>=d.sx&&t.clientX<=d.sx+d.sw&&t.clientY>=d.sy&&t.clientY<=d.sy+d.sh){
+    if(t.clientX>=d.sx-PAD&&t.clientX<=d.sx+d.sw+PAD&&t.clientY>=d.sy-PAD&&t.clientY<=d.sy+d.sh+PAD){
       tappedIdx = d.i; break;
     }
   }

@@ -831,12 +831,19 @@
 }
 
 /* Each character is wrapped in <span class="letter"> at run-time; the
-   dot animation reveals them one-by-one (typewriter). */
+   dot animation reveals them one-by-one. Letters grow from scale(0) to
+   full size as they fade in, mirroring the dots shrinking into them. */
 .info-section .letter {
   opacity: 0;
-  transition: opacity 1.1s ease;
+  display: inline-block;
+  transform: scale(0);
+  transform-origin: center;
+  transition: opacity 1.1s ease, transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.info-section .letter.reveal { opacity: 1; }
+.info-section .letter.reveal {
+  opacity: 1;
+  transform: scale(1);
+}
 
 .info-dots-layer {
   position: absolute;

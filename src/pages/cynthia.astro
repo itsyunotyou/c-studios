@@ -1,50 +1,89 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
+import cynthiaData from '../data/cynthia.json';
+import cynthiaReferences from '../data/cynthia-references.json';
 import libraryText from '../data/library-text.json';
 import libraryImage from '../data/library-image.json';
 import librarySound from '../data/library-sound.json';
 
-const allEntries = [
-  ...libraryText,
-  ...libraryImage,
-  ...librarySound,
-];
-
-// Dedupe by normalized title+author+year (strips punctuation, case, whitespace)
-const norm = (v) => String(v ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
-const seen = new Set();
-const deduped = allEntries.filter((entry) => {
-  const key = norm(entry.title) + '|' + norm(entry.author) + '|' + norm(entry.year);
-  if (seen.has(key)) return false;
-  seen.add(key);
-  return true;
+// Cards in the cynthia cylinder: one per project image. The shape matches
+// the library cylinder so the rendering code can stay almost identical.
+// Each card carries its project slug so hover/click can look up meta.
+const references = cynthiaData.cards.map(({ slug, img }) => {
+  const proj = cynthiaData.projects[slug];
+  // Strip the source extension and point at the existing webp variants
+  // (same pattern the home projects panel uses).
+  const stem = img.replace(/\.[^.]+$/, '');
+  return {
+    title: proj.title,
+    artist: '',
+    year: String(proj.year || ''),
+    cat: 'image',
+    addedBy: '',
+    color: [128, 128, 128],
+    img: `${stem}-640w.webp`,
+    imgLarge: `${stem}-1280w.webp`,
+    imgFull: `${stem}-2560w.webp`,
+    images: [],
+    imagesFull: [],
+    imageTitles: [],
+    projectSlug: slug,
+  };
 });
 
-console.log(`[Library] ${allEntries.length} entries → ${deduped.length} unique (${allEntries.length - deduped.length} duplicates removed)`);
-
-// Transform entries into the shape the cylinder code expects.
-const references = deduped.map((entry) => ({
-  title: entry.title,
-  artist: entry.author || '',
-  year: entry.year || '',
-  cat: entry.category || 'text',
-  addedBy: entry.by || '',
-  color: entry.color || [128, 128, 128], // default grey; run compute-colors.mjs later for proper colors
-  img: entry.image ? entry.image.replace(/\.[^.]+$/, '-thumb.webp') : '',
-  imgLarge: entry.image ? entry.image.replace(/\.[^.]+$/, '-large.webp') : '',
-  imgFull: entry.image || '',
-  images: [],
-  imagesFull: [],
-  imageTitles: [],
-}));
-
 const referencesJSON = JSON.stringify(references);
+const projectsJSON  = JSON.stringify(cynthiaData.projects);
+
+// Build a stem → library entry index so curated references in
+// cynthia-references.json can be resolved at build time to real image URLs.
+const allLibrary = [...libraryText, ...libraryImage, ...librarySound]
+  .filter(e => e.image);
+const libraryByStem = {};
+for (const e of allLibrary) {
+  const stem = e.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '');
+  libraryByStem[stem] = {
+    title: e.title,
+    img: e.image.replace(/\.[^.]+$/, '-thumb.webp'),
+    imgLarge: e.image.replace(/\.[^.]+$/, '-large.webp'),
+  };
+}
+
+// For every project, resolve its curated reference stems to library tiles.
+// Stems that aren't in the library are silently skipped (with a warning at
+// build time) — see cynthia-references.json _comment for the format.
+const curatedRefs = {};
+const missingStems = [];
+for (const [slug, stems] of Object.entries(cynthiaReferences)) {
+  if (slug.startsWith('_') || !Array.isArray(stems)) continue;
+  const tiles = [];
+  for (const stem of stems) {
+    const tile = libraryByStem[stem];
+    if (tile) tiles.push(tile);
+    else missingStems.push(`${slug}: ${stem}`);
+  }
+  curatedRefs[slug] = tiles;
+}
+if (missingStems.length) {
+  console.warn(`[Cynthia] ${missingStems.length} curated reference stems not found in library:`);
+  missingStems.forEach(s => console.warn(`  - ${s}`));
+}
+
+// Placeholder pool — used only for projects with no curated references yet,
+// so the panel doesn't render empty.
+const placeholderRefsJSON = JSON.stringify(
+  allLibrary.map(e => ({
+    title: e.title,
+    img: e.image.replace(/\.[^.]+$/, '-thumb.webp'),
+    imgLarge: e.image.replace(/\.[^.]+$/, '-large.webp'),
+  }))
+);
+const curatedRefsJSON = JSON.stringify(curatedRefs);
 
 ---
 
-<Layout title="C-STUDIOS — Library">
-  <div class="library-root">
+<Layout title="C-STUDIOS — Cynthia">
+  <div class="library-root cynthia-root">
 
 <div id="header">
   <!-- Left: info panel always visible -->
@@ -110,6 +149,30 @@ const referencesJSON = JSON.stringify(references);
   <div id="pile-stack"></div>
 </div>
 
+<!-- ═══ CYNTHIA: rows layout ════════════════════════════════════════ -->
+<!-- TOP: project info bar (updates on cylinder hover) -->
+<header id="cyn-info-bar" aria-hidden="true">
+  <h2 id="cyn-title">—</h2>
+  <p id="cyn-category">—</p>
+  <p id="cyn-year">—</p>
+  <p id="cyn-desc"></p>
+</header>
+
+<!-- BOTTOM: horizontal strip of curated references for the hovered project -->
+<div id="cyn-ref-strip" aria-hidden="true"></div>
+
+<!-- Expanded view: large clicked image (locked in place) + masonic grid of
+     other project images (scrolls within the right column). Reference
+     strip stays visible underneath. -->
+<div id="cyn-expand" hidden>
+  <div id="cyn-expand-img-wrap">
+    <img id="cyn-expand-img" src="" alt="" />
+  </div>
+  <div id="cyn-expand-grid"></div>
+</div>
+<!-- Close button is fixed to the viewport so it lines up with the project
+     title in the info bar — not nested inside #cyn-expand. -->
+<button id="cyn-expand-close" type="button" aria-label="Close expanded view" hidden>✕</button>
 
 
   </div>
@@ -304,7 +367,6 @@ const referencesJSON = JSON.stringify(references);
   font-size: 0.7rem;
     letter-spacing: 0.05em;
 }
-
 @media (max-width: 767px) {
   #header {
     padding: 0;
@@ -324,6 +386,7 @@ const referencesJSON = JSON.stringify(references);
   }
 
   #info-panel {
+ 
     display: grid;
     grid-template-columns: auto 1fr;
     /* Always reserve 2 lines per row whether the value wraps or not,
@@ -479,11 +542,278 @@ const referencesJSON = JSON.stringify(references);
     object-fit: cover;
     display: block;
   }
+
+  /* ═══ CYNTHIA: rows layout ════════════════════════════════════════════ */
+  /* Inherited library DOM bits we don't use on cynthia — info-panel (the
+     mobile TITLE/CREATOR list) and the filter dropdown header. */
+  .cynthia-root #header-left,
+  .cynthia-root #header-right,
+  .cynthia-root #info-panel,
+  .cynthia-root #cyl-nav { display: none !important; }
+  /* Cynthia is desktop-only — show a "view on desktop" message on mobile
+     and hide everything else (cylinder, panels, references). */
+  @media (max-width: 768px) {
+    .cynthia-root #header,
+    .cynthia-root #scrubber-wrap,
+    .cynthia-root #bg-canvas,
+    .cynthia-root #grid-canvas,
+    .cynthia-root #cyn-info-bar,
+    .cynthia-root #cyn-ref-strip,
+    .cynthia-root #cyn-expand,
+    .cynthia-root #cyn-expand-close { display: none !important; }
+    .cynthia-root::before {
+      content: "CYNTHIA IS BEST VIEWED ON DESKTOP.";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: #0a0a0a;
+      background: white;
+      z-index: 400;
+    }
+  }
+
+  /* Three stacked rows: info bar at the top, cylinder in the middle (the
+     library canvas is full-viewport for math simplicity — we just reserve
+     space top/bottom via the cylinder's HEADER_H/FOOTER_H constants), and
+     a horizontal reference strip at the bottom.                          */
+  .cynthia-root #cyn-info-bar {
+    position: fixed;
+    top: 56px;                        /* sits just below the nav strip */
+    left: 0;
+    right: 0;
+    z-index: 250;
+    background: white;
+    padding: 14px 24px 16px;
+    box-sizing: border-box;
+    display: grid;
+    /* Three rows: title (row 1), category + year (row 2), description
+       (row 3). Category and year sit together on the LEFT side of row 2. */
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title    title  title"
+      "category year   ."
+      "desc     desc   desc";
+    column-gap: 16px;
+    row-gap: 6px;
+    pointer-events: none;
+    min-height: 96px;
+  }
+  .cynthia-root #cyn-info-bar h2 {
+    grid-area: title;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .cynthia-root #cyn-info-bar #cyn-category {
+    grid-area: category;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: grey;
+    margin: 0;
+  }
+  .cynthia-root #cyn-info-bar #cyn-year {
+    grid-area: year;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: grey;
+    margin: 0;
+    white-space: nowrap;
+  }
+  .cynthia-root #cyn-info-bar #cyn-desc {
+    grid-area: desc;
+    font-size: 0.65rem;
+    line-height: 1.5;
+    color: #0a0a0a;
+    letter-spacing: 0.02em;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Bottom reference strip — single horizontal row, full viewport width,
+     no gaps, fixed height. Each tile keeps its image's natural aspect
+     ratio (height pinned, width auto) so the row reads as a continuous
+     mosaic. Scrolls horizontally on overflow. */
+  .cynthia-root #cyn-ref-strip {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 60px;                     /* sits above the site footer */
+    z-index: 250;
+    background: transparent;
+    height: 220px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: stretch;
+    scrollbar-width: none;
+  }
+  .cynthia-root #cyn-ref-strip::-webkit-scrollbar { display: none; }
+  .cynthia-root #cyn-ref-strip .cyn-ref {
+    height: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+    background: #f4f4f4;
+    cursor: crosshair;
+  }
+  .cynthia-root #cyn-ref-strip .cyn-ref img {
+    height: 100%;
+    width: auto;
+    display: block;
+    transition: opacity 0.25s ease;
+    opacity: 0;
+  }
+  .cynthia-root #cyn-ref-strip .cyn-ref img.loaded { opacity: 0.7; }
+  .cynthia-root #cyn-ref-strip .cyn-ref:hover img { opacity: 1; }
+
+  /* Scrubber line is the visible divider between the cylinder (or expand
+     grid) above and the reference strip below. With ref-strip moved up
+     by 60px (above the footer), the scrubber follows.
+       desktop: ref-strip top at vh - 280 → wrap bottom 270 */
+  @media (min-width: 769px) {
+    .cynthia-root #scrubber-wrap { bottom: 270px !important; }
+  }
+
+  /* Expanded view — covers the cylinder area (between info bar and ref
+     strip). 2-column grid: locked big image on the left, scrollable
+     masonry grid on the right (the right column has its own overflow so
+     extra tiles aren't visible outside the expand area). */
+  /* Expand view — big locked image flush-left, contiguous grid of the
+     project's other images on the right (no gaps; scrolls horizontally
+     when there are more than fit, otherwise stationary). The container
+     itself is transparent so the cylinder colours show through underneath. */
+  .cynthia-root #cyn-expand {
+    position: fixed;
+    top: 168px;                       /* below info bar (nav 56 + bar ~112) */
+    left: 0;
+    right: 0;
+    bottom: 280px;                    /* above scrubber line / ref strip */
+    z-index: 320;
+    background: white;
+    padding: 16px 0;                  /* big image flush to the left edge */
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+  .cynthia-root #cyn-expand[hidden] { display: none; }
+  .cynthia-root #cyn-expand-img-wrap {
+    flex: 0 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: transparent;
+    overflow: hidden;
+  }
+  .cynthia-root #cyn-expand-img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+  }
+  /* Other project images: single ROW to the right of the big image.
+     No gaps, all the same height as the big image. Scrolls horizontally
+     when overflowing; sits stationary when it fits. */
+  .cynthia-root #cyn-expand-grid {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .cynthia-root #cyn-expand-grid::-webkit-scrollbar { display: none; }
+  .cynthia-root #cyn-expand-grid .cyn-extra {
+    flex: 0 0 auto;
+    height: 100%;
+    cursor: crosshair;
+    overflow: hidden;
+    background: transparent;
+  }
+  .cynthia-root #cyn-expand-grid .cyn-extra img {
+    height: 100%;
+    width: auto;
+    display: block;
+    transition: opacity 0.25s ease;
+    opacity: 0;
+  }
+  .cynthia-root #cyn-expand-grid .cyn-extra img.loaded { opacity: 1; }
+
+  /* Close button is fixed to the viewport so it aligns with the project
+     title in the info bar — same vertical baseline. Only visible while
+     the expand view is open. */
+  .cynthia-root #cyn-expand-close {
+    position: fixed;
+    top: 64px;                        /* matches info-bar padding-top + ~baseline */
+    right: 24px;
+    z-index: 340;
+    background: none;
+    border: none;
+    font-size: 0.75rem;
+    color: #0a0a0a;
+    cursor: crosshair;
+    padding: 4px 8px;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+  }
+  .cynthia-root #cyn-expand-close[hidden] { display: none; }
+
+  @media (max-width: 768px) {
+    /* Mobile: same row layout, tighter sizing. */
+    .cynthia-root #cyn-info-bar {
+      top: calc(env(safe-area-inset-top, 0px) + 42px);
+      padding: 8px 12px 10px;
+      grid-template-columns: 1fr;
+      gap: 4px;
+      min-height: 0;
+    }
+    .cynthia-root #cyn-info-bar #cyn-desc { -webkit-line-clamp: 2; }
+    .cynthia-root #cyn-ref-strip { height: 160px; }
+    .cynthia-root #cyn-expand {
+      top: calc(env(safe-area-inset-top, 0px) + 124px);
+      bottom: 160px;
+      padding: 16px;
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 12px;
+    }
+    .cynthia-root #cyn-expand-close {
+      top: calc(env(safe-area-inset-top, 0px) + 48px);
+      right: 14px;
+    }
+  }
 </style>
 
-<script is:inline define:vars={{ referencesJSON }}>
-  // Inject references data
+<script is:inline define:vars={{ referencesJSON, projectsJSON, placeholderRefsJSON, curatedRefsJSON }}>
+  // Inject references data (cylinder cards) + cynthia-specific maps.
   const REFS = JSON.parse(referencesJSON);
+  const CYN_PROJECTS = JSON.parse(projectsJSON);
+  const CYN_PLACEHOLDER_REFS = JSON.parse(placeholderRefsJSON);
+  const CYN_CURATED_REFS = JSON.parse(curatedRefsJSON);
 // ── CANVAS ────────────────────────────────────────────────────────────────────
 const bgCvs = document.getElementById('bg-canvas');
 const bgCtx = bgCvs.getContext('2d');
@@ -618,8 +948,12 @@ function sortRefs(src){
 }
 
 const GAP=3;
-const HEADER_H = window.innerWidth <= 767 ? 150 : 72;
-const FOOTER_H = window.innerWidth <= 767 ? 160 : 110;
+// Cynthia overrides: leave room for the top info bar (nav 56 + bigger
+// info bar ~92 = ~148 desktop) and the bottom reference strip + scrubber
+// + footer (220 strip + 60 footer = 280, plus scrubber clearance).
+// (Mobile is unused — cynthia is desktop-only.)
+const HEADER_H = window.innerWidth <= 767 ? 160 : 170;
+const FOOTER_H = window.innerWidth <= 767 ? 220 : 340;
 const GRID_H=()=>H-HEADER_H-FOOTER_H; // usable height for cylinder
 let popInStart=null;
 const POP_DURATION=600; // ms per tile fade in
@@ -627,7 +961,8 @@ const POP_STAGGER=40;  // ms between tiles
 
 let gridSize='large';
 function getGridRows(){
-  return window.innerWidth <= 767 ? 4 : 6;
+  // Cynthia uses 3 rows — bigger cards than library's grid.
+  return 3;
 }
 
 function buildGrid(){
@@ -671,11 +1006,9 @@ function drawCylinder(){
   const CX=W/2;
 
   const N=sortedRefs.length;
-  const colsFor360=Math.ceil(2*Math.PI*R/TILE);
-  // Expand the column count to fill 360° even if it means cards repeat —
-  // the cylinder looks fuller this way and the visible duplicates were
-  // intentional in the original design.
-  const COLS=Math.max(Math.ceil(N/ROWS), colsFor360);
+  // One column per ceil(N/ROWS) — never expand to fill 360° via i%N wrap,
+  // which was visually duplicating cards on the cylinder.
+  const COLS=Math.max(1, Math.ceil(N/ROWS));
   const anglePerCol=(2*Math.PI)/COLS;
 
   const drawn=[];
@@ -689,9 +1022,9 @@ function drawCylinder(){
 
     for(let row=0;row<ROWS;row++){
       const i=col*ROWS+row;
-      if(N===0) continue;
-      const ref=sortedRefs[i%N];
-      const tile=tiles[i%N];
+      if(i>=N) continue;            // no wrap — gaps preferred over dupes
+      const ref=sortedRefs[i];
+      const tile=tiles[i];
       if(!ref) continue;
       const screenY=CY + (row-(ROWS-1)/2)*TILE*scale;
       const tileW=TILE*scale;
@@ -701,7 +1034,7 @@ function drawCylinder(){
       const growT=Math.max(0,Math.min(1,elapsed/450));
       const alpha=growT>0?1:0;
       const popScale=cylPopStart?(0.01+0.99*growT):1;
-      drawn.push({ref,screenX,screenY,tileW,tileH,z3,alpha,i:i%N,scale,popScale});
+      drawn.push({ref,screenX,screenY,tileW,tileH,z3,alpha,i,scale,popScale});
     }
   }
 
@@ -1485,36 +1818,14 @@ window.addEventListener('wheel',e=>{
 },{passive:false});
 window.addEventListener('touchend',()=>{ cylDragging=false; cfDragging=false; });
 
-// Mobile two-tap interaction: tap once to SELECT (info panel updates,
-// like hover on desktop), tap again on the same tile within 4s to OPEN
-// (coverflow). Touches with significant movement are treated as cylinder
-// rotation and ignored here.
-let cylLastTapIdx = -1;
-let cylLastTapTime = 0;
 cvs.addEventListener('touchend',e=>{
   e.preventDefault();
   const t=e.changedTouches[0];
   if(state!=='grid') return;
-  const dx = t.clientX - touchStartX;
-  const dy = t.clientY - touchStartY;
-  if (Math.sqrt(dx*dx + dy*dy) > 12) return;  // drag, not tap
-  let tappedIdx = -1;
   for(const d of [...drawnCylTiles].reverse()){
     if(t.clientX>=d.sx&&t.clientX<=d.sx+d.sw&&t.clientY>=d.sy&&t.clientY<=d.sy+d.sh){
-      tappedIdx = d.i; break;
+      startExplode(t.clientX,t.clientY,d.i); break;
     }
-  }
-  if (tappedIdx < 0) return;
-  const now = performance.now();
-  if (tappedIdx === cylLastTapIdx && now - cylLastTapTime < 4000) {
-    startExplode(t.clientX, t.clientY, tappedIdx);
-    cylLastTapIdx = -1;
-  } else {
-    cylHoverIdx = tappedIdx;
-    cylLastTapIdx = tappedIdx;
-    cylLastTapTime = now;
-    const ref = sortedRefs[tappedIdx];
-    if (ref) updateMeta(ref);
   }
 },{passive:false});
 
@@ -1666,7 +1977,136 @@ window.addEventListener('orientationchange', resize);
 resize();
 animFrame=requestAnimationFrame(loopGrid);
 
+// ═══ CYNTHIA: info-bar + ref-strip + click-expand grid ═══════════════════
+(function cynInit() {
+  const titleEl = document.getElementById('cyn-title');
+  const catEl   = document.getElementById('cyn-category');
+  const yearEl  = document.getElementById('cyn-year');
+  const descEl  = document.getElementById('cyn-desc');
+  const stripEl = document.getElementById('cyn-ref-strip');
+  const expEl   = document.getElementById('cyn-expand');
+  const expImg  = document.getElementById('cyn-expand-img');
+  const expGrid = document.getElementById('cyn-expand-grid');
+  const expClose= document.getElementById('cyn-expand-close');
 
+  // Stable hash so the placeholder ref strip is deterministic per project.
+  function hash(s) {
+    let h = 2166136261;
+    for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = (h * 16777619) >>> 0; }
+    return h;
+  }
 
+  function refsForProject(slug) {
+    // Use curated references from cynthia-references.json when present.
+    // Falls back to deterministic placeholder samples for projects that
+    // don't have curated references yet so the strip doesn't render empty.
+    const curated = CYN_CURATED_REFS[slug];
+    if (curated && curated.length) return curated;
+    const seed = hash(slug);
+    const out = [];
+    for (let i = 0; i < 12 && i < CYN_PLACEHOLDER_REFS.length; i++) {
+      out.push(CYN_PLACEHOLDER_REFS[(seed + i * 7919) % CYN_PLACEHOLDER_REFS.length]);
+    }
+    return out;
+  }
 
+  let lastSlug = null;
+  function renderInfo(slug) {
+    if (slug === lastSlug) return;
+    lastSlug = slug;
+    const proj = CYN_PROJECTS[slug];
+    if (!proj) return;
+    titleEl.textContent = proj.title;
+    catEl.textContent   = proj.category || '';
+    yearEl.textContent  = proj.year || '';
+    descEl.textContent  = proj.description || '';
+    stripEl.scrollLeft = 0;
+    stripEl.innerHTML = '';
+    for (const ref of refsForProject(slug)) {
+      const tile = document.createElement('div');
+      tile.className = 'cyn-ref';
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      img.src = ref.img;
+      img.alt = ref.title || '';
+      img.addEventListener('load', () => img.classList.add('loaded'));
+      tile.appendChild(img);
+      stripEl.appendChild(tile);
+    }
+  }
+
+  // Patch updateMeta so every cylinder hover/scrub update also refreshes
+  // the top info bar + bottom reference strip — but freeze updates while
+  // the expand view is open so the user's selection stays pinned in the
+  // info bar / ref strip regardless of where the cursor is.
+  const origUpdateMeta = updateMeta;
+  updateMeta = function patchedUpdateMeta(ref) {
+    if (!expEl.hidden) return;        // expand open → ignore cylinder hovers
+    origUpdateMeta(ref);
+    if (ref && ref.projectSlug) renderInfo(ref.projectSlug);
+  };
+
+  // Override the cylinder click handler: open the cynthia expand view with
+  // the big image + masonry grid of the project's other images, instead of
+  // letting the library coverflow transition fire.
+  cvs.addEventListener('click', (e) => {
+    if (state !== 'grid') return;
+    const ui = ['BUTTON','INPUT','SELECT','A'];
+    if (ui.includes(e.target.tagName)) return;
+    if (e.target.closest('#grid-sizer,#threads,#back-btn,#scrubber-wrap,#pile-overlay,#header,#cyn-info-bar,#cyn-ref-strip,#cyn-expand')) return;
+    for (const d of [...drawnCylTiles].reverse()) {
+      if (e.clientX >= d.sx && e.clientX <= d.sx + d.sw && e.clientY >= d.sy && e.clientY <= d.sy + d.sh) {
+        const ref = REFS[d.i];
+        if (!ref || !ref.projectSlug) return;
+        e.stopImmediatePropagation();
+        openExpand(ref);
+        break;
+      }
+    }
+  }, true);
+
+  function openExpand(ref) {
+    const proj = CYN_PROJECTS[ref.projectSlug];
+    if (!proj) return;
+    expImg.src = ref.imgLarge || ref.imgFull;
+    expImg.alt = proj.title;
+    // Masonry grid = every OTHER image in the project (exclude the one
+    // already shown big). Clicking one promotes it to the big slot and
+    // demotes the previous big back into the grid.
+    expGrid.innerHTML = '';
+    const activeBig = ref.imgLarge;
+    proj.images.forEach((srcUrl) => {
+      const stem = srcUrl.replace(/\.[^.]+$/, '');
+      const bigUrl = `${stem}-1280w.webp`;
+      if (bigUrl === activeBig) return;
+      const cell = document.createElement('div');
+      cell.className = 'cyn-extra';
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      img.src = `${stem}-640w.webp`;
+      img.alt = proj.title;
+      img.addEventListener('load', () => img.classList.add('loaded'));
+      cell.appendChild(img);
+      cell.addEventListener('click', () => {
+        openExpand({ ...ref, imgLarge: bigUrl, imgFull: bigUrl.replace('-1280w.webp', '-2560w.webp') });
+      });
+      expGrid.appendChild(cell);
+    });
+    renderInfo(ref.projectSlug);
+    expEl.hidden = false;
+    expClose.hidden = false;
+  }
+
+  function closeExpand() {
+    expEl.hidden = true;
+    expClose.hidden = true;
+    expImg.src = '';
+    expGrid.innerHTML = '';
+  }
+
+  expClose.addEventListener('click', closeExpand);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !expEl.hidden) closeExpand();
+  });
+})();
 </script>

@@ -1,0 +1,317 @@
+{
+  "_comment": "Project slug -> ordered list of library file stems (without extension). Cross-referenced visually from the PROJECT REFERENCES Google Sheet. Distinctive book/cover matches; photographs without identifying text are skipped (NEEDS REVIEW) and items not in the library are flagged NEEDS UPLOAD in the next pass.",
+
+  "adidas-originals-wales-bonner": [
+    "GeorgeHoyningen-Huene_JosephineBaker_ca.1927_CI",
+    "RobertFarrisThompson_FlashoftheSpirit_African&Afro-AmericanArt&Philosophy_1983_CI",
+    "EdwardW.Said_Orientalism_1978_CI",
+    "AliceColtrane_TheEcstaticMusicofAliceColtraneTuriyasangitananda__TheEcstaticMusicofAliceColtraneTuriyasangitananda_2017_CI",
+    "SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse_JourneysinAfricanArt_2000_N_A",
+    "AdidasOriginalsbyWalesBonner_VivaneSassen_2024_CI",
+    "RenellMedrano_AdidasOriginalsbyWalesBonner_2024_CI"
+  ],
+
+  "nts-strategic-partnerships": [
+    "HansUlrichObrist_WaysofCurating_2014_JY"
+  ],
+
+  "convoy": [
+    "VictoriaAdukweiBulley_Quiet_2022_N_A",
+    "DerekJarman_ModernNature_Journals,1989-1990_2018_RJ"
+  ],
+
+  "adidas-ag-bu-sportswear-training": [
+    "PeterSavilleforSupremexYohjiYamamoto_ThisWasTomorrow_1991_CI",
+    "AphexTwin_Avril14th_2001_CI",
+    "CocteauTwins_Frou-frouFoxesinMidsummerFires_HeavenorLasVegas_1990_JY",
+    "GraceWalesBonner_ATimeforNewDreams_2019_CI"
+  ],
+
+  "xl-recordings-keiyaa-hookes-law-album-release": [
+    "Detente_FromtheMoon_Ghosts_2024_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "GwendolynBrooks_MaudMartha_1953_RJ"
+  ],
+
+  "roc-nation-artist-development": [
+    "DanCharnas_DillaTime_TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI",
+    "MarkFisher_K-Punk_TheCollectedandUnpublishedWritingsofMarkFisher_2018_CI",
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI"
+  ],
+
+  "10k-global": [
+    "DanCharnas_DillaTime_TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI",
+    "MarkFisher_K-Punk_TheCollectedandUnpublishedWritingsofMarkFisher_2018_CI",
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI"
+  ],
+
+  "allen-golder-carpenter-sojourn-camden-arts-centre": [
+    "Allen-GolderCarpenter_Sojourn_2025_CI(2)"
+  ],
+
+  "edition-patrick-frey-lsp-black-ark-book-launch": [
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI",
+    "W.E.B.DuBois_Darkwater_VoicesfromWithintheVeil_1920_CI",
+    "CarolTulloch_BlackStyle_2004_CI",
+    "StuartHall_FamiliarStranger_ALifeBetweenTwoIslands_2017_N_A",
+    "JohnBerger_WaysofSeeing_1972_JY",
+    "SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse_JourneysinAfricanArt_2000_N_A",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "RichardReeves_OfBoysandMen_2023_JY",
+    "ToniMorrison_Beloved_1987_CI",
+    "GwendolynBrooks_MaudMartha_1953_RJ",
+    "GraceWalesBonner_ATimeforNewDreams_2019_CI",
+    "GregTate_Flyboy2_TheGregTateReader_2016_CI",
+    "KodwoEshun+AnjalikaSagar_TheGhostsofSongs_TheFilmArtoftheBlackAudioFilmCollective_2007_N_A"
+  ],
+
+  "ewusie-aw26-cut-from-the-same-cloth-activation": [
+    "AREANightclub_Fashion_1984_CI",
+    "W.E.B.DuBois_Darkwater_VoicesfromWithintheVeil_1920_CI",
+    "CarolTulloch_BlackStyle_2004_CI",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "StuartHall_FamiliarStranger_ALifeBetweenTwoIslands_2017_N_A",
+    "JohnBerger_WaysofSeeing_1972_JY",
+    "SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse_JourneysinAfricanArt_2000_N_A"
+  ],
+
+  "precious-renee-tucker-telfar": [
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI",
+    "MiguelSicart_PlayMatters(PlayfulThinking)_2017_JY",
+    "PauloFreire_EducationforCriticalConsciousness_2013_CI"
+  ],
+
+  "precious-renee-tucker-love-magazine": [
+    "JohnBerger_WaysofSeeing_1972_JY",
+    "SusanSontag_NotesonCamp_2018_JY",
+    "GuyDebord_TheSocietyoftheSpectacle_2002_JY"
+  ],
+
+  "mcqueen-reverb": [
+    "Pixies_Hey_Doolittle_1989_CI",
+    "FionaApple_LoveRidden_1999_CI",
+    "JohnBerger_WaysofSeeing_1972_JY",
+    "SusanSontag_NotesonCamp_2018_JY",
+    "SusanSontag_OnPhotography_2008_JY",
+    "GuyDebord_TheSocietyoftheSpectacle_2002_JY",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ"
+  ],
+
+  "xl-recordings-keiyaa-hookes-law": [
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "ToniMorrison_Beloved_1987_CI",
+    "GwendolynBrooks_MaudMartha_1953_RJ",
+    "ClaireBishop_DisorderedAttention_HowWeLookatArtandPerformanceToday_2024_JY",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI",
+    "GraceWalesBonner_ATimeforNewDreams_2019_CI",
+    "KatsujiMisawa_Akira_1988_CI(1)"
+  ],
+
+  "ladji-diaby-kunstverein-nuernberg": [
+    "KatsujiMisawa_Akira_1988_CI(1)"
+  ],
+
+  "prologue-supreme": [
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI",
+    "Supreme_ClayBrick_2016_JY",
+    "GuyDebord_TheSocietyoftheSpectacle_2002_JY"
+  ],
+
+  "blknws-in-residence-music-centre-la": [
+    "W.E.B.DuBois_Darkwater_VoicesfromWithintheVeil_1920_CI",
+    "W.E.B.DuBois_TheDuBoisianVisualizationToolkit_1900_CI",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "GuyDebord_TheSocietyoftheSpectacle_2002_JY",
+    "KodwoEshun+AnjalikaSagar_TheGhostsofSongs_TheFilmArtoftheBlackAudioFilmCollective_2007_N_A",
+    "GregTate_Flyboy2_TheGregTateReader_2016_CI",
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "FrankOcean_Nights_2016_CI",
+    "JohnColtrane_ALoveSupreme,Pt.1-Acknowledgement-MonophonicMix_1965_CI"
+  ],
+
+  "church-of-sound-james-baldwin": [
+    "JamesBaldwin_GoTellItontheMountain_2001_RJ",
+    "GregTate_Flyboy2_TheGregTateReader_2016_CI",
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "FrankOcean_Nights_2016_CI",
+    "JohnColtrane_ALoveSupreme,Pt.1-Acknowledgement-MonophonicMix_1965_CI"
+  ],
+
+  "rachel-jones-messiaen-song-cycles-britten-pears": [],
+
+  "rachel-jones-a-shorn-root": [
+    "PeterSavilleforSupremexYohjiYamamoto_ThisWasTomorrow_1991_CI",
+    "W.E.B.DuBois_TheDuBoisianVisualizationToolkit_1900_CI"
+  ],
+
+  "taka-young-records": [
+    "DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_CI"
+  ],
+
+  "klein-fact-magazine": [
+    "KodwoEshun+AnjalikaSagar_TheGhostsofSongs_TheFilmArtoftheBlackAudioFilmCollective_2007_N_A",
+    "MarkFisher_K-Punk_TheCollectedandUnpublishedWritingsofMarkFisher_2018_CI",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ",
+    "GregTate_Flyboy2_TheGregTateReader_2016_CI",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ"
+  ],
+
+  "moses-boyd-dark-matter": [
+    "StuartHall_CulturalStudies1983_ATheoreticalHistory_2016_CI",
+    "JohnColtrane_ALoveSupreme,Pt.1-Acknowledgement-MonophonicMix_1965_CI",
+    "FelaKuti_Je_nwiTemi(Don_tGagMe)_Afrodisiac_1973_CI",
+    "DanCharnas_DillaTime_TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "GregTate_Flyboy2_TheGregTateReader_2016_CI",
+    "StuartHall_FamiliarStranger_ALifeBetweenTwoIslands_2017_N_A"
+  ],
+
+  "nuba-ss26-solid-fashion-east": [],
+
+  "ola-ebiti-acne-paper-nocturne": [],
+
+  "akeem-smith-studio": [
+    "BillCunningham_BettyDavis_1969_CI",
+    "BillCunningham_OntheStreet_N_A_CI",
+    "PeterHujar_CandyDarlingonHerDeathbed_1973_AHI",
+    "PeterHujar_FranLebowitzatHomeinMorristown_1974_CI"
+  ],
+
+  "suutoo-extra-loud": [
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "MarkFisher_K-Punk_TheCollectedandUnpublishedWritingsofMarkFisher_2018_CI",
+    "DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_CI",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ"
+  ],
+
+  "nuba-ss24-smoke": [
+    "Sade_INeverThoughtI_dSeetheDay_1984_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ",
+    "GraceWalesBonner_ATimeforNewDreams_2019_CI"
+  ],
+
+  "10k-global-beware-of-the-monkey": [
+    "PeterSavilleforSupremexYohjiYamamoto_ThisWasTomorrow_1991_CI",
+    "MFDoom_BornLikeThis(AlbumCover)_2009_CI",
+    "Madvillain_Madlib_MFDoom_2004_CI",
+    "EarlSweatshirt_Huey_2015_CI",
+    "DanCharnas_DillaTime_TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI",
+    "DonnyHathaway_MakeItOnYourOwn_1978_CI"
+  ],
+
+  "royal-academy-of-arts-obi-agwam-reimagining-the-canon-panel": [
+    "MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_N_A",
+    "KerryJamesMarshall_KerryJamesMarshall_TheHistories_2025_CI",
+    "Sade_INeverThoughtI_dSeetheDay_1984_CI",
+    "JohnBerger_WaysofSeeing_1972_JY",
+    "JohnBerger_Portraits_JohnBergeronArtists_2017_JY",
+    "ToniMorrison_Beloved_1987_CI",
+    "GwendolynBrooks_MaudMartha_1953_RJ",
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI"
+  ],
+
+  "stone-island-pompeii-utility-album-release": [
+    "DanCharnas_DillaTime_TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI",
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "RichardReeves_OfBoysandMen_2023_JY",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "ClaireBishop_DisorderedAttention_HowWeLookatArtandPerformanceToday_2024_JY",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI"
+  ],
+
+  "the-face-earl-sweatshirt-mike-interview": [
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "RichardReeves_OfBoysandMen_2023_JY",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "TriciaRose_BlackNoise_RapMusicandBlackCultureinContemporaryAmerica_1994_CI",
+    "DanCharnas_DillaTime_TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI",
+    "ClaireBishop_DisorderedAttention_HowWeLookatArtandPerformanceToday_2024_JY",
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "EarlSweatshirt_Huey_2015_CI"
+  ],
+
+  "trippin-new-balance-the-runners-atlas": [],
+
+  "josiane-mh-pozi-cura-magazine": [
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "SusanSontag_OnPhotography_2008_JY",
+    "VilemFlusser_TowardsaPhilosophyofPhotography_2000_JY",
+    "ErkkiHuhtamo+JussiParikka_MediaArchaeology_Approaches,Applications,andImplications_2011_JY",
+    "MarshallMcLuhan_UnderstandingMedia_TheExtensionofMan_2001_JY",
+    "JohnBerger_WaysofSeeing_1972_JY",
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI",
+    "ClaireBishop_DisorderedAttention_HowWeLookatArtandPerformanceToday_2024_JY",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_CI"
+  ],
+
+  "dauan-jacari-boy-brother-friend": [
+    "MFDoom_BornLikeThis(AlbumCover)_2009_CI",
+    "Madvillain_Madlib_MFDoom_2004_CI",
+    "DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ",
+    "GregTate_Flyboy2_TheGregTateReader_2016_CI",
+    "EarlSweatshirt_Huey_2015_CI"
+  ],
+
+  "nism-self-study-room": [
+    "PauloFreire_PedgagogyoftheOppressed_1996_JY",
+    "PauloFreire_EducationforCriticalConsciousness_2013_CI",
+    "MiguelSicart_PlayMatters(PlayfulThinking)_2017_JY"
+  ],
+
+  "rachel-jones-studio-whitechapel-gallery": [
+    "DerekJarman_ModernNature_Journals,1989-1990_2018_RJ",
+    "KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors_InnovationsinthePoeticsofStudy)_2021_RJ",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "GwendolynBrooks_MaudMartha_1953_RJ",
+    "ToniMorrison_Beloved_1987_CI",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "MarkFisher_CapitalistRealism_IsThereNoAlternative__2012_JY",
+    "StuartHall_EssentialEssays,Volume1_FoundationsofCulturalStudies_2019_CI"
+  ],
+
+  "air-afrique-issue-1-london-stopover": [
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "StuartHall_FamiliarStranger_ALifeBetweenTwoIslands_2017_N_A",
+    "StuartHall_EssentialEssays,Volume1_FoundationsofCulturalStudies_2019_CI",
+    "HansUlrichObrist_WaysofCurating_2014_JY",
+    "Sade_INeverThoughtI_dSeetheDay_1984_CI"
+  ],
+
+  "nuba-boy-brother-friend": [
+    "ElizabethAlexander_TheBlackInterior_Essays_2004_RJ",
+    "SaidiyaHartman_WaywardLives,BeautifulExperiments_2021_CI",
+    "StuartHall_FamiliarStranger_ALifeBetweenTwoIslands_2017_N_A",
+    "BellHooks_ArtonMyMind_VisualPolitics_1995_CI",
+    "ClaireBishop_DisorderedAttention_HowWeLookatArtandPerformanceToday_2024_JY",
+    "StuartHall_EssentialEssays,Volume1_FoundationsofCulturalStudies_2019_CI",
+    "ToniMorrison_Beloved_1987_CI",
+    "DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_CI"
+  ],
+
+  "locally-grown-c-studios-tv": [
+    "AREANightclub_Fashion_1984_CI",
+    "AREANightclub_GraceJonesInvitesYoutoCelebratethePublicationofRichardBernstein_sBookMegastar_1984_CI"
+  ]
+}

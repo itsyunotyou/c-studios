@@ -60,20 +60,39 @@ html {
     transition: color .25s ease;
     letter-spacing: 0.05em;
   }
-  /* Default: light backgrounds (services, clients, projects, info) — fixed colors */
-  .cst-submenu a:hover { color: #0a0a0a; }
+  /* Site-wide interactive state palette — keep these in sync wherever an
+     element has inactive / hover / active states (tabs, library buttons,
+     footer links, etc.) so the page reads consistently. */
+  .cst-submenu a:hover { color: grey; }
   .cst-submenu a.active { color: #0a0a0a; }
 
-  /* Dark backgrounds (hero slideshow, library): mix-blend-mode so text auto-adapts to photos.
-     Applied to the OUTER wrapper so it blends with body content, not just menu siblings.
-     Disabled on the home hero — fixed light colours read cleaner there. */
-  body.bg-dark .cst-menu { mix-blend-mode: difference; }
-  body[data-is-home="true"].bg-dark .cst-menu { mix-blend-mode: normal; }
-  /* With mix-blend: lightgrey source renders consistent light grey on near-black photos.
-     Brighter source = brighter result (and darker when bg is light). */
+  /* mix-blend-mode removed everywhere — it was de-pinning the fixed nav
+     on iOS Safari. Visual contrast on dark backgrounds is handled with
+     explicit colours instead. */
   body.bg-dark .cst-submenu a { color: lightgrey; }
-  body.bg-dark .cst-submenu a:hover { color: #fff; }
+  body.bg-dark .cst-submenu a:hover { color: grey; }
   body.bg-dark .cst-submenu a.active { color: #fff; }
+  body[data-is-home="false"].bg-dark .cst-submenu a { color: lightgrey; }
+  body[data-is-home="false"].bg-dark .cst-submenu a:hover { color: grey; }
+  body[data-is-home="false"].bg-dark .cst-submenu a.active { color: #0a0a0a; }
+
+  /* Non-home pages on desktop: full-width white strip at the top — same
+     treatment as the footer (strip on library, transparent on the home
+     hero so the full-bleed image isn't interrupted). Mobile already gets
+     a white nav strip via the mobile media query below. Padding-top
+     matches the home nav's top: 20px so the content baseline doesn't
+     shift between pages. */
+  @media (min-width: 769px) {
+    body[data-is-home="false"] .cst-menu {
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 20px 20px 12px;
+      background: white;
+      box-sizing: border-box;
+    }
+  }
 
   body[data-is-home="true"]:not(.skip-intro) .cst-submenu a {
     opacity: 0;
@@ -87,13 +106,13 @@ html {
   body[data-is-home="true"]:not(.skip-intro) .cst-submenu a:nth-child(6) { animation-delay: 5.5s; }
   @keyframes cst-fade-in { to { opacity: 1; } }
 
-/* Lock body scroll to one full-viewport section at a time on every screen.
-   Every section is 100vh; snap stops the page from settling mid-section,
-   which is what made content scroll behind the sticky nav / tabs. The
-   projects panel still has its own internal overflow so users can browse
-   the list within its section without the body moving. */
+/* Soft snap — sections snap into place once the user releases a scroll
+   gesture near a boundary, but anchor navigation (e.g. clicking SERVICES
+   from /library/) is not forced to land at a snap point. Mandatory snap
+   was fighting the cross-page anchor jump and landing at the wrong y. */
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 0;
 }
 body > main > section,
 body > main > footer,
@@ -104,29 +123,58 @@ body > footer {
 }
 
 @media (max-width: 768px) {
+  /* iOS Safari mis-renders `position: fixed` while scroll-snap is active —
+     the nav drifts down mid-snap. Turn snap off on mobile; the sections
+     are still tall enough to read naturally. */
+  html { scroll-snap-type: none; }
+  body > main > section,
+  body > main > footer,
+  body > section,
+  body > footer {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+
   /* Inset moves into padding so a solid bg can extend to the very top of the
      viewport — no transparent strip above the menu text. */
   :root {
     --cst-nav-bottom: calc(env(safe-area-inset-top, 0px) + 42px);
   }
-  /* Land tabbed sections so their tabs sit directly under the nav, not 80px below. */
-  #services, #projects {
-    scroll-margin-top: var(--cst-nav-bottom);
-  }
+  /* Both sections snap to viewport top (y=0). Their internal padding-top
+     handles nav clearance + the +28 gap so tabs land at cst-nav-bottom + 28,
+     matching the library page content. Using padding (not scroll-margin)
+     also keeps the 100vh sections from overflowing the viewport. */
+  #services, #projects { scroll-margin-top: 0; }
   .cst-menu {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
     padding: calc(env(safe-area-inset-top, 0px) + 12px) 12px 12px;
     box-sizing: border-box;
   }
-  /* On light sections the nav has no blend mode, so it needs an opaque
-     background or content scrolls visibly behind the text. Hero/library use
-     mix-blend-mode: difference (body.bg-dark) and stay transparent. */
-  body:not(.bg-dark) .cst-menu {
+  /* Mobile: no mix-blend at all (iOS Safari mis-positions fixed elements
+     that have mix-blend-mode set). Hero gets a transparent nav with
+     white text + subtle shadow so it reads over the full-bleed photo;
+     every other context gets a solid-white strip with dark text. */
+  .cst-menu { mix-blend-mode: normal !important; }
+  body[data-is-home="true"].bg-dark .cst-menu {
+    background: transparent;
+  }
+  body[data-is-home="true"].bg-dark .cst-submenu a {
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+  body[data-is-home="true"].bg-dark .cst-submenu a.active {
+    color: #fff;
+  }
+  /* Everywhere else on mobile (services/clients/projects/info on home,
+     library, all other pages): white nav strip with grey-on-light text. */
+  body:not([data-is-home="true"].bg-dark) .cst-menu {
     background: white;
   }
+  body[data-is-home="false"] .cst-submenu a { color: lightgrey; }
+  body[data-is-home="false"] .cst-submenu a.active { color: #0a0a0a; }
   .cst-submenu {
     flex-direction: row;
     justify-content: space-between;
@@ -140,6 +188,9 @@ body > footer {
     letter-spacing: 0.02em;
     white-space: nowrap;
   }
+  /* Cynthia is desktop-only — hide its nav link on mobile so users
+     don't end up on the "view on desktop" stub page. */
+  .cst-submenu a[data-key="cynthia"] { display: none; }
 }
 </style>
 
@@ -155,8 +206,15 @@ body > footer {
   // the active one so the other nav links read as the dim/grey default.
   if (!IS_HOME) {
     document.body.classList.add('bg-dark');
-    const libraryLink = submenu.querySelector<HTMLAnchorElement>('a[data-key="library"]');
-    libraryLink?.classList.add('active');
+    // Highlight whichever non-home page we're on (library or cynthia) so
+    // the other nav links read as the dim/grey default.
+    const path = location.pathname;
+    let activeKey: string | null = null;
+    if (path.startsWith('/library')) activeKey = 'library';
+    else if (path.startsWith('/cynthia')) activeKey = 'cynthia';
+    if (activeKey) {
+      submenu.querySelector<HTMLAnchorElement>(`a[data-key="${activeKey}"]`)?.classList.add('active');
+    }
   }
 
   if (IS_HOME) {
@@ -196,5 +254,27 @@ body > footer {
     }, { passive: true });
     window.addEventListener('resize', updateActive);
     updateActive();
+  }
+
+  // Cross-page hash navigation (e.g. clicking SERVICES from /library/) can
+  // land at the wrong y because browsers don't reliably apply
+  // scroll-margin-top combined with scroll-snap. Force the scroll to the
+  // section top in absolute coordinates, then retry after window load so
+  // late layout shifts (images, fonts) don't strand the section off-screen.
+  if (IS_HOME && location.hash.length > 1) {
+    const targetId = location.hash.slice(1);
+    function scrollToTarget() {
+      const el = document.getElementById(targetId);
+      if (!el) return;
+      const margin = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+      const top = Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - margin);
+      window.scrollTo({ top, behavior: 'auto' });
+    }
+    requestAnimationFrame(() => requestAnimationFrame(scrollToTarget));
+    window.addEventListener('load', () => {
+      scrollToTarget();
+      // One more after images settle in case the layout shifted
+      setTimeout(scrollToTarget, 100);
+    });
   }
 </script>

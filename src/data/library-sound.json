@@ -378,20 +378,6 @@
     ]
   },
   {
-    "title": "Drinking Age",
-    "author": "Cameron Winter",
-    "year": "2024",
-    "image": "/images/library/sound/CameronWinter_DrinkingAge_2024_CI.jpg",
-    "added": "11/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "sound",
-    "color": [
-      88,
-      88,
-      104
-    ]
-  },
-  {
     "title": "Tomorrow Comes Today",
     "author": "Gorillaz",
     "year": "2001",
@@ -4517,34 +4503,6 @@
     "category": "sound",
     "color": [
       40,
-      8,
-      8
-    ]
-  },
-  {
-    "title": "Rated X",
-    "author": "Miles Davis",
-    "year": "1974",
-    "image": "/images/library/sound/MilesDavis_RatedX_GetUpWithIt_1974_JY.jpg",
-    "added": "14/05/2026",
-    "by": "Jess Young",
-    "category": "sound",
-    "color": [
-      72,
-      40,
-      56
-    ]
-  },
-  {
-    "title": "get 2 kno",
-    "author": "1995 epilepsy",
-    "year": "2020",
-    "image": "/images/library/sound/1995epilepsy_get2kno_1995epilepsy_2020_CI.jpg",
-    "added": "20/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "sound",
-    "color": [
-      8,
       8,
       8
     ]

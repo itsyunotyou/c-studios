@@ -104,18 +104,15 @@ import '../styles/home.css';
         <p class="sub-text" id="subText"><span class="line">IS A CREATIVE STRATEGY </span><span class="line">AND A CURATORIAL STUDIO.</span></p>
       </div>
 
-      <!-- Inverted mask (SVG <mask> + blurred <circle>). The Gaussian blur
-           on the circle gives the moon-hole edge a soft falloff instead of
-           a razor-sharp boundary, so the inside-vs-outside contrast doesn't
-           read as a visible outline as the slideshow fades in. -->
+      <!-- Inverted mask (SVG <mask> + animated <circle>). With moon scale
+           3.0 the hole edge is off-screen by the time the slideshow is
+           revealed, so we don't need the Gaussian blur softening (that
+           filter was the main per-frame cost on mobile GPUs). -->
       <svg id="revealHole" class="reveal-hole" aria-hidden="true">
         <defs>
-          <filter id="moonHoleSoftEdge" x="-5%" y="-5%" width="110%" height="110%">
-            <feGaussianBlur stdDeviation="8"></feGaussianBlur>
-          </filter>
           <mask id="moonHoleMask" maskUnits="userSpaceOnUse">
             <rect width="100%" height="100%" fill="white"></rect>
-            <circle id="moonHoleCircle" cx="0" cy="0" r="0" fill="black" filter="url(#moonHoleSoftEdge)"></circle>
+            <circle id="moonHoleCircle" cx="0" cy="0" r="0" fill="black"></circle>
           </mask>
         </defs>
         <rect width="100%" height="100%" fill="white" mask="url(#moonHoleMask)"></rect>
@@ -507,7 +504,7 @@ setTimeout(() => {
   const moon = document.querySelector('.moon');
   if (!moon) return;
 
-  syncHoleToMoon(2500);
+  syncHoleToMoon(2800);
 
   const overhangRatio = (window.innerWidth <= 767) ? 0.45 : 0.10;
   const r0 = moon.getBoundingClientRect();
@@ -521,7 +518,12 @@ setTimeout(() => {
     // Moon arrives at slide-end together with the texts; the centre-move
     // and expand fire on the same frame, no setTimeout pause.
     moon.style.transition = 'transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 1s ease-in';
-    moon.style.transform = 'translateY(-50%) translateX(-72vw) scale(3.0)';
+    // Mobile uses a smaller final scale: the composited layer is dramatically
+    // smaller (2.5² vs 3.0² = ~30% less area), which reduces GPU work on
+    // mid-range phones. Scale 2.5 still puts the hole's edge off every
+    // viewport corner on typical phone aspect ratios.
+    const _finalScale = window.innerWidth <= 767 ? 2.5 : 3.0;
+    moon.style.transform = `translateY(-50%) translateX(-72vw) scale(${_finalScale})`;
 
     if (window.innerWidth >= 768) {
       const container = document.getElementById('textContainer');
@@ -557,7 +559,7 @@ setTimeout(() => {
         sub.style.opacity = '1';
       }
     }
-  }, 1200);
+  }, 1500);
 
 }, 100);
 

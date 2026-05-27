@@ -59,17 +59,54 @@
   .cst-footer-links a:hover { color: grey; }
   .cst-footer-copy { white-space: nowrap; }
 
-  /* Dark bg: mix-blend so text adapts to varying photo brightness */
-  body.bg-dark .cst-footer { mix-blend-mode: difference; }
+  /* mix-blend removed — keep explicit colours. (mix-blend was contributing
+     to the iOS Safari fixed-positioning bug on the nav; removing it here
+     too for consistency and to avoid surprise interactions.) */
   body.bg-dark .cst-footer-links { color: lightgrey; }
   body.bg-dark .cst-footer-links a:hover { color: grey; }
-  /* Logo's invert filter stays (mix-blend would make a black PNG invisible on black) */
+  /* Logo's invert filter stays so a black PNG remains visible on dark bg. */
+
+  /* Non-home pages (library): solid white strip across the bottom so footer
+     text stays legible over the cylinder photos. Home stays transparent /
+     mix-blend so the full-bleed hero image isn't interrupted. The padding
+     keeps the footer content at the same y as the floating home footer
+     (bottom: 20px → padding-bottom: 20px) so the y position doesn't visibly
+     shift when switching between pages. */
+  body[data-is-home="false"] .cst-footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: white;
+    mix-blend-mode: normal;
+  }
+  body[data-is-home="false"].bg-dark .cst-footer-logo { filter: none; }
+  body[data-is-home="false"].bg-dark .cst-footer-links { color: lightgrey; }
 
   @media (max-width: 768px) {
     .cst-footer {
       bottom: 12px;
       left: 12px;
       right: 12px;
+    }
+    /* On home, give the footer a white fill when scrolled OFF the hero
+       (any section that isn't bg-dark). The hero itself stays transparent
+       with mix-blend so the full-bleed image isn't broken up. */
+    body[data-is-home="true"]:not(.bg-dark) .cst-footer {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px 12px calc(env(safe-area-inset-bottom, 0px) + 12px);
+      background: white;
+      mix-blend-mode: normal;
+    }
+    /* padding-bottom matches the home footer's bottom: 12px so content
+       sits at the same y; safe-area inset is added on notched devices. */
+    body[data-is-home="false"] .cst-footer {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px 12px calc(env(safe-area-inset-bottom, 0px) + 12px);
     }
     .cst-footer-logo img { height: 10px; }
     .cst-footer-links {

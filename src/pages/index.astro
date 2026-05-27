@@ -618,17 +618,51 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   });
 
+  // Reveal a row's images left-to-right, waiting for each to fully load
+  // before fading it in. Prevents the top-to-bottom progressive render
+  // and gives a deliberate cascade instead of random parallel pop-in.
+  async function cascadeRowImages(row) {
+    const imgs = Array.from(row.querySelectorAll('.project-images img'));
+    for (const img of imgs) {
+      if (!row.classList.contains('expanded')) return;
+      if (!(img.complete && img.naturalWidth > 0)) {
+        await new Promise(resolve => {
+          img.addEventListener('load', resolve, { once: true });
+          img.addEventListener('error', resolve, { once: true });
+        });
+      }
+      if (!row.classList.contains('expanded')) return;
+      img.classList.add('loaded');
+      await new Promise(r => setTimeout(r, 60));
+    }
+  }
+
+  function resetRowImages(row) {
+    row.querySelectorAll('.project-images img.loaded').forEach(img => {
+      img.classList.remove('loaded');
+    });
+  }
+
   // Row expand / collapse on click of the summary button
   document.querySelectorAll('.project-summary').forEach((btn) => {
     btn.addEventListener('click', () => {
       const row = btn.closest('.project-row');
       if (!row) return;
       const willOpen = !row.classList.contains('expanded');
-      // Close any other open rows in the same panel
+      // Close any other open rows in the same panel (and reset their image
+      // reveal state so the cascade re-runs next time they're opened).
       row.parentElement?.querySelectorAll('.project-row.expanded').forEach((r) => {
-        if (r !== row) r.classList.remove('expanded');
+        if (r !== row) {
+          r.classList.remove('expanded');
+          resetRowImages(r);
+        }
       });
       row.classList.toggle('expanded', willOpen);
+      if (willOpen) {
+        cascadeRowImages(row);
+      } else {
+        resetRowImages(row);
+      }
       // After the row expands, scroll the panel so the row's top edge
       // sits at the panel's content top. Aligning to the tabs' bottom
       // would over-scroll past the panel's visible bounds (panel.top

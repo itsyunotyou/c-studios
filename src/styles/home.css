@@ -1131,6 +1131,14 @@
   display: block;
   pointer-events: none;
   user-select: none;
+  /* Images stay invisible until they're fully loaded so the user never
+     sees the top-to-bottom progressive render. JS adds .loaded in
+     left-to-right order on row expand, fading each in. */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.project-images img.loaded {
+  opacity: 1;
 }
 @media (max-width: 768px) {
   /* Lock the section to one viewport: tabs sit at the top right under the nav,

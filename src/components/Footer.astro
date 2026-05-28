@@ -85,7 +85,11 @@
 
   @media (max-width: 768px) {
     .cst-footer {
-      bottom: 12px;
+      /* Bumped from 12px → 28px so the footer clears the rounded
+         corners of the browser tab / phone bezel — leaves a visible
+         gutter under the logo + text instead of letting them hug
+         the very bottom edge. */
+      bottom: 28px;
       left: 12px;
       right: 12px;
     }
@@ -96,17 +100,18 @@
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 12px 12px calc(env(safe-area-inset-bottom, 0px) + 12px);
+      padding: 12px 12px calc(env(safe-area-inset-bottom, 0px) + 28px);
       background: white;
       mix-blend-mode: normal;
     }
-    /* padding-bottom matches the home footer's bottom: 12px so content
-       sits at the same y; safe-area inset is added on notched devices. */
+    /* padding-bottom matches the floating home footer's bottom inset so
+       content sits at the same y across pages; safe-area inset added on
+       notched devices. */
     body[data-is-home="false"] .cst-footer {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 12px 12px calc(env(safe-area-inset-bottom, 0px) + 12px);
+      padding: 12px 12px calc(env(safe-area-inset-bottom, 0px) + 28px);
     }
     .cst-footer-logo img { height: 10px; }
     .cst-footer-links {

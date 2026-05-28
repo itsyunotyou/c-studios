@@ -811,6 +811,30 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
 } else {
   document.addEventListener('DOMContentLoaded', initProjectImageAutoScroll);
 }
+
+// Marquee rows: wait until every <img> in a row has loaded before
+// starting that row's animation. Without this, a slow logo on one row
+// holds the track at the wrong width while the keyframes are already
+// running — the row visibly "doesn't load" until the bytes arrive.
+function initMarquees() {
+  document.querySelectorAll('.marquee-track').forEach(track => {
+    const imgs = Array.from(track.querySelectorAll('img'));
+    const waits = imgs.map(img =>
+      (img.complete && img.naturalWidth > 0)
+        ? null
+        : new Promise(resolve => {
+            img.addEventListener('load', resolve, { once: true });
+            img.addEventListener('error', resolve, { once: true });
+          })
+    );
+    Promise.all(waits).then(() => track.classList.add('ready'));
+  });
+}
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  initMarquees();
+} else {
+  document.addEventListener('DOMContentLoaded', initMarquees);
+}
 // ════════════════════════════════════════════════════════════
 // SERVICES tabs — wired here because this script runs reliably
 // ════════════════════════════════════════════════════════════

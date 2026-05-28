@@ -675,6 +675,18 @@
     /* No `gap` here — we use `margin-right` on each logo so the loop is seamless */
     width: max-content;
     align-items: center;
+    /* Hold the track invisible and paused until every <img> in it has
+       loaded. Otherwise the track's width is wrong while images are
+       arriving (width: auto + missing bytes = 0px) and the marquee
+       animation visibly jumps as widths fill in. JS adds .ready to
+       flip both back on. */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    animation-play-state: paused;
+  }
+  .marquee-track.ready {
+    opacity: 1;
+    animation-play-state: running;
   }
   .marquee-track img {
     height: 120px;                   /* 1.2x size */

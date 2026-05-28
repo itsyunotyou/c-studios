@@ -33,6 +33,12 @@ import '../styles/home.css';
           sizes="100vw"
           class="flash-img" loading="lazy" decoding="async" />
         <img
+          src="/images/hero/intro14-1280w.webp"
+          srcset="/images/hero/intro14-640w.webp 640w, /images/hero/intro14-828w.webp 828w, /images/hero/intro14-1280w.webp 1280w"
+          sizes="100vw"
+          data-align="center"
+          class="flash-img" loading="lazy" decoding="async" />
+        <img
           src="/images/hero/intro04-1280w.webp"
           srcset="/images/hero/intro04-640w.webp 640w, /images/hero/intro04-828w.webp 828w, /images/hero/intro04-1280w.webp 1280w, /images/hero/intro04-2560w.webp 2560w"
           sizes="100vw"
@@ -84,12 +90,6 @@ import '../styles/home.css';
         <img
           src="/images/hero/intro13-1280w.webp"
           srcset="/images/hero/intro13-640w.webp 640w, /images/hero/intro13-828w.webp 828w, /images/hero/intro13-1280w.webp 1280w, /images/hero/intro13-2560w.webp 2560w"
-          sizes="100vw"
-          data-align="center"
-          class="flash-img" loading="lazy" decoding="async" />
-        <img
-          src="/images/hero/intro14-1280w.webp"
-          srcset="/images/hero/intro14-640w.webp 640w, /images/hero/intro14-828w.webp 828w, /images/hero/intro14-1280w.webp 1280w"
           sizes="100vw"
           data-align="center"
           class="flash-img" loading="lazy" decoding="async" />
@@ -387,11 +387,12 @@ function startSlideshow(skipFirstFade = false) {
     const isMobile = window.innerWidth <= 767;
     const heightValue = isMobile ? 'calc(var(--vh) * 100)' : '100vh';
     // Per-slide overrides indexed into the current slideshow order (see #flashSequence).
-    // After the 2026-05 reorder these indices map to: 3 = old intro01, 4 = old intro06, 11 = old intro10.
+    // After moving intro14 into position 3 (4th slide) the override targets
+    // shift by 1: old 3 → 4, old 4 → 5, old 11 → 12.
     let objectPosition;
-if (isMobile && (index === 3 || index === 4)) {
+if (isMobile && (index === 4 || index === 5)) {
   objectPosition = 'left center';
-} else if (!isMobile && (index === 3 || index === 4 || index === 11)) {
+} else if (!isMobile && (index === 4 || index === 5 || index === 12)) {
   objectPosition = 'center top';
 } else {
   objectPosition = 'center center';

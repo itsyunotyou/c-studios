@@ -908,15 +908,15 @@
   opacity: 0;
   transform: translateY(-50%) translateX(-32px);
   transition:
-    opacity 0.8s ease 4.0s,
-    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 4.0s;
+    opacity 0.8s ease 2.8s,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 2.8s;
 }
 .venn-label-right {
   opacity: 0;
   transform: translateY(-50%) translateX(32px);
   transition:
-    opacity 0.8s ease 4.0s,
-    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 4.0s;
+    opacity 0.8s ease 2.8s,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 2.8s;
 }
 
 /* 2-column subtexts beneath the venn — both fade in together. */
@@ -931,7 +931,7 @@
 /* C logo: last beat, after subtexts land. */
 .venn-c-logo {
   opacity: 0;
-  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1) 5.9s;
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1) 4.7s;
 }
 
 
@@ -958,7 +958,7 @@
   transform: translateY(0);
 }
 .info-section.in-view .venn-text-left,
-.info-section.in-view .venn-text-right { transition-delay: 4.9s; }
+.info-section.in-view .venn-text-right { transition-delay: 3.7s; }
 
 /* paragraph-level reveal is handled by per-letter dot animation now */
 

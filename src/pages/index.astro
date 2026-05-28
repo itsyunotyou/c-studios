@@ -378,6 +378,9 @@ try { __cstWasIntroSeen = sessionStorage.getItem('cst-intro-seen') === 'true'; }
 try { sessionStorage.setItem('cst-intro-seen', 'true'); } catch (e) {}
 
 function startSlideshow(skipFirstFade = false) {
+  // Fade the footer in alongside the slideshow kicking off. Footer
+  // CSS hides it on home until body.footer-visible is set.
+  document.body.classList.add('footer-visible');
   const images = document.querySelectorAll('#flashSequence .flash-img');
   if (!images.length) return;
   images.forEach((img, index) => {

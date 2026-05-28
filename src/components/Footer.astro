@@ -26,6 +26,17 @@
     pointer-events: none;
   }
 
+  /* Home page only: footer starts hidden and fades in when the
+     slideshow kicks off (index.astro adds body.footer-visible inside
+     startSlideshow). Other pages keep the footer visible from frame 1. */
+  body[data-is-home="true"] .cst-footer {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  body[data-is-home="true"].footer-visible .cst-footer {
+    opacity: 1;
+  }
+
   .cst-footer-logo {
     pointer-events: auto;
     display: block;

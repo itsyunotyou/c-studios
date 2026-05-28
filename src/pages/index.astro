@@ -434,7 +434,7 @@ if (isMobile && (index === 3 || index === 4)) {
     images[current].classList.add('active');
   }
 
-  setInterval(() => {
+  const slideshowIntervalId = setInterval(() => {
     const prev = current;
     current = (current + 1) % images.length;
     images[current].style.cssText += 'opacity: 1 !important; z-index: 1 !important;';
@@ -444,6 +444,10 @@ if (isMobile && (index === 3 || index === 4)) {
       images[prev].classList.remove('active');
     }, 600);
   }, 1200);
+  // Recording helper: let the script stop the slideshow before scrolling
+  // away so the crossfade interval doesn't keep firing during the smooth-
+  // scroll (which causes visible jank during the transition).
+  window.__cstStopSlideshow = () => clearInterval(slideshowIntervalId);
 }
 
 // Skip-intro path runs synchronously (no 100ms setTimeout) so reloads on

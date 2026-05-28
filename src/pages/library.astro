@@ -776,6 +776,32 @@ window.addEventListener('mousemove',e=>{
   if(state==='grid') updateHoverInfo(e.clientX,e.clientY);
 });
 
+// Recording helper: jump the cylinder so the card whose title matches
+// `rx` lands at the front. No-op when nothing matches. Exposed on window
+// so the record.mjs script can call it directly instead of probing
+// titles by hovering (which is unreliable due to cylVel inertia).
+window.__libJumpToTitle = function(rx){
+  try {
+    const re = typeof rx === 'string' ? new RegExp(rx, 'i') : rx;
+    const idx = sortedRefs.findIndex(r => re.test(r.title || ''));
+    if (idx < 0) return false;
+    const ROWS = getGridRows();
+    const TILE = Math.floor(GRID_H()/ROWS);
+    const R = W/Math.PI*2.2;
+    const N = sortedRefs.length;
+    const colsFor360 = Math.ceil(2*Math.PI*R/TILE);
+    const COLS = Math.max(Math.ceil(N/ROWS), colsFor360);
+    const anglePerCol = (2*Math.PI)/COLS;
+    const col = Math.floor(idx/ROWS);
+    cylAngle = -col * anglePerCol;
+    cylVel = 0;
+    autoRotate = false;
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
+
 function resize(){
   const rect = cvs.getBoundingClientRect();
 W = cvs.width = bgCvs.width = Math.round(rect.width);

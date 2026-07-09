@@ -243,6 +243,19 @@ const referencesJSON = JSON.stringify(references);
      typed but is hidden — it only reserves the exact advance width, so the
      black text in the input lands precisely over it and the untyped remainder
      trails off in grey. Same font on both, so they can't drift apart. */
+  /* The ghost and the input MUST render with identical glyph advances, or the
+     grey remainder starts at the wrong x. Three things break that on mobile:
+       1. iOS text-size-adjust / Android font-boosting inflate text inside block
+          containers (.iv-field) but never inside form controls (.iv-input).
+       2. iOS gives inputs an intrinsic inner inset that padding:0 can't clear;
+          only appearance:none removes it.
+       3. Ligatures/kerning may be applied to a span but not to an input.
+     Pinning all three keeps the two layers locked together. */
+  #info-panel { -webkit-text-size-adjust:100%;text-size-adjust:100%; }
+  .iv-ghost, .iv-input {
+    font-variant-ligatures:none;font-kerning:none;
+  }
+
   .iv-field { position:relative;display:none;width:100%;max-width:220px; }
   .info-row.searching .iv-text { display:none; }
   .info-row.searching .iv-field { display:block; }
@@ -258,13 +271,21 @@ const referencesJSON = JSON.stringify(references);
 
   .iv-input {
     position:relative;z-index:1;display:block;
-    font:inherit;letter-spacing:inherit;line-height:inherit;
+    -webkit-appearance:none;appearance:none;      /* removes iOS inner inset */
+    font:inherit;
+    font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;
+    letter-spacing:inherit;line-height:inherit;
     color:var(--black);background:transparent;
     border:none;border-bottom:1px solid var(--black);
+    border-radius:0;box-shadow:none;text-indent:0;
     padding:0;margin:0;
     width:100%;min-width:0;box-sizing:border-box;
     outline:none;pointer-events:auto;
+    transition:border-bottom-color .18s ease;
   }
+  /* Committing: the underline fades out alongside the icon, which already
+     transitions its colour. Both settle together rather than one snapping. */
+  .info-row.settling .iv-input { border-bottom-color:transparent; }
   .info-row.no-match .iv-input { border-bottom-color:var(--red);color:var(--red); }
 
   /* Layout hardening: the info panel is a grid whose value column is 1fr, so
@@ -1553,6 +1574,7 @@ function activeRow(){
 }
 
 function resetRowSearchUI(){
+  clearSettle();
   rowSearchField=null; rowSearchQuery='';
   if(panelBuilt) document.querySelectorAll('.iv-input').forEach(i=>{ i.value=''; });
   syncSearchUI();
@@ -1573,6 +1595,7 @@ function applyRowSearch(from){
 
 function openRowSearch(field){
   if(!inRowView()) return;
+  clearSettle();                        // cancel a pending commit fade
   rowSearchField=field;                 // set before reorder so syncSearchUI paints it
   rowSearchQuery='';
   const i=activeInput(); if(i) i.value='';
@@ -1615,6 +1638,31 @@ function acceptCompletion(){
   return true;
 }
 
+// Commit: settle the search. The row keeps its A–Z order and stays on the
+// centred card, but the underbar and the icon highlight go away — the value
+// reverts to plain static text. Since that text is already the centred card's
+// full title, in the same font at the same spot, the swap is seamless.
+let settleTimer=null;
+function clearSettle(){
+  if(settleTimer){ clearTimeout(settleTimer); settleTimer=null; }
+  document.querySelectorAll('.info-row.settling').forEach(r=>r.classList.remove('settling'));
+}
+
+function commitRowSearch(){
+  const row=activeRow(), input=activeInput();
+  if(input) input.blur();               // also dismisses the mobile keyboard
+  if(!row){ closeRowSearch(); return; }
+  const icon=row.querySelector('.info-search-icon');
+  if(icon) icon.classList.remove('active');   // un-highlight now, so both fade together
+  clearSettle();
+  row.classList.add('settling');              // underline fades to transparent
+  settleTimer=setTimeout(()=>{
+    settleTimer=null;
+    row.classList.remove('settling');
+    closeRowSearch();                         // swap input → static value text
+  },180);                                     // matches the .18s transition
+}
+
 // The inputs persist across steps now, so delegation just keeps this tidy.
 _panel.addEventListener('mousedown',e=>{ if(e.target.closest('.iv-input')) e.stopPropagation(); });
 _panel.addEventListener('input',e=>{
@@ -1627,11 +1675,13 @@ _panel.addEventListener('keydown',e=>{
   if(e.key==='Escape'){ closeRowSearch(); }
   else if(e.key==='Enter'){
     e.preventDefault();
-    // First Enter completes the word; a second one steps to the next match.
-    if(!acceptCompletion()) applyRowSearch(currentRefIdx+1);
-    syncGhost();
+    const row=activeRow();
+    // Nothing found: hold the red underbar rather than silently settling.
+    if(row&&row.classList.contains('no-match')) return;
+    acceptCompletion();                 // fill in any grey remainder first
+    commitRowSearch();                  // then drop the underline + icon highlight
   }
-  else if(e.key==='Tab'){               // Tab completes too, as in an address bar
+  else if(e.key==='Tab'){               // accept the completion, stay in the field
     if(acceptCompletion()) e.preventDefault();
   }
   else if(e.key==='ArrowRight'){        // caret at end + grey text showing → accept

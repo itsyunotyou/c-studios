@@ -1598,6 +1598,23 @@ _panel.addEventListener('click',e=>{
   if(rowSearchField===f) closeRowSearch(); else openRowSearch(f);
 });
 
+// Accept the grey completion: fill the input with the centred card's full
+// value (in ITS casing, so "ak" becomes "Akira"). Returns false when there's
+// nothing to accept — the caller then falls through to cycling matches.
+function acceptCompletion(){
+  const input=activeInput();
+  if(!input||!selectedRef||!rowSearchField) return false;
+  const cur=fieldVal(selectedRef,rowSearchField);
+  const typed=input.value;
+  if(!typed||!cur) return false;
+  if(!cur.toLowerCase().startsWith(typed.toLowerCase())) return false;  // mid-word hit: nothing to trail
+  if(typed.length>=cur.length) return false;                            // already complete
+  input.value=cur; rowSearchQuery=cur;
+  try{ input.setSelectionRange(cur.length,cur.length); }catch(_){}      // caret to end
+  syncGhost();
+  return true;
+}
+
 // The inputs persist across steps now, so delegation just keeps this tidy.
 _panel.addEventListener('mousedown',e=>{ if(e.target.closest('.iv-input')) e.stopPropagation(); });
 _panel.addEventListener('input',e=>{
@@ -1608,7 +1625,21 @@ _panel.addEventListener('keydown',e=>{
   if(!e.target.closest('.iv-input')) return;
   e.stopPropagation();                  // keep arrows/escape from driving the coverflow
   if(e.key==='Escape'){ closeRowSearch(); }
-  else if(e.key==='Enter'){ e.preventDefault(); applyRowSearch(currentRefIdx+1); } // next match
+  else if(e.key==='Enter'){
+    e.preventDefault();
+    // First Enter completes the word; a second one steps to the next match.
+    if(!acceptCompletion()) applyRowSearch(currentRefIdx+1);
+    syncGhost();
+  }
+  else if(e.key==='Tab'){               // Tab completes too, as in an address bar
+    if(acceptCompletion()) e.preventDefault();
+  }
+  else if(e.key==='ArrowRight'){        // caret at end + grey text showing → accept
+    const i=e.target;
+    if(i.selectionStart===i.value.length&&i.selectionStart===i.selectionEnd){
+      if(acceptCompletion()) e.preventDefault();
+    }
+  }
 });
 
 function updateCylScrubber(){

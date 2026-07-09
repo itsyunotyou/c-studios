@@ -50,15 +50,6 @@ const referencesJSON = JSON.stringify(references);
   <!-- Left: info panel always visible -->
   <div id="header-left">
     <div id="info-panel"></div>
-    <div id="search-wrap" class="hdr-search">
-      <button id="search-btn" class="hdr-search-icon" aria-label="Search" title="Search">
-        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.2"/>
-          <line x1="10.8" y1="10.8" x2="15" y2="15" stroke="currentColor" stroke-width="1.2"/>
-        </svg>
-      </button>
-      <input id="search-input" type="text" placeholder="Search" autocomplete="off" spellcheck="false">
-    </div>
   </div>
   <!-- Right: filter dropdown + size toggle -->
   <div id="header-right">
@@ -224,59 +215,47 @@ const referencesJSON = JSON.stringify(references);
   #threads { display:none; }
 
   /* ── ROW-VIEW SEARCH ──
-     Icon sits next to the info panel and is only visible in the expanded row
-     view (toggled via .row-active in showUI/hideUI). Clicking it expands a
-     minimal underbar that live-filters the row by title or creator. */
-  .hdr-search {
-    display:none;
-    align-items:center;gap:8px;
-    margin-left:18px;
-    pointer-events:all;
-  }
-  .hdr-search.row-active { display:inline-flex; }
-  .hdr-search-icon {
-    background:none;border:none;padding:0;cursor:crosshair;
-    color:var(--black);
+     A small magnifier sits on the TITLE and CREATOR rows of the info panel,
+     rendered only in the expanded row view. Clicking one lines the whole row
+     up A–Z on that field and opens a minimal underbar; typing walks you to
+     the first match. Nothing is ever removed from the row.
+     The panel is built once and only its text is updated on each step, so the
+     open input keeps its focus and caret while typing walks the row. */
+  .info-search-icon {
+    background:none;border:none;padding:0;margin-left:6px;
+    cursor:crosshair;color:#ddd;pointer-events:auto;
     display:inline-flex;align-items:center;justify-content:center;
-    width:14px;height:14px;flex-shrink:0;
+    width:11px;height:11px;flex:0 0 auto;vertical-align:middle;
     transition:color .15s;
   }
-  .hdr-search-icon:hover { color:grey; }
-  .hdr-search-icon svg { width:13px;height:13px;display:block; }
-  #search-input {
-    font-family:inherit;
-    font-size:0.7rem;letter-spacing:0.05em;text-transform:uppercase;
+  .info-search-icon:hover { color:var(--black); }
+  .info-search-icon.active { color:var(--black); }
+  .info-search-icon svg { width:10px;height:10px;display:block; }
+
+  /* Icons only exist in the row view. */
+  #info-panel:not(.row-view) .info-search-icon { display:none; }
+
+  /* Underbar — lives INSIDE the value cell of the row being searched, so the
+     typed text sits exactly where that row's value text sits. `font:inherit`
+     pulls the value's own size/leading, which is what keeps them aligned. */
+  .iv-input {
+    display:none;
+    font:inherit;letter-spacing:inherit;line-height:inherit;
     color:var(--black);background:none;
     border:none;border-bottom:1px solid var(--black);
-    padding:0 0 2px;margin:0;
-    width:0;opacity:0;
-    transition:width .25s ease,opacity .2s ease;
-    outline:none;
+    padding:0;margin:0;
+    width:100%;max-width:220px;min-width:0;box-sizing:border-box;
+    outline:none;pointer-events:auto;
   }
-  .hdr-search.open #search-input { width:150px;opacity:1; }
-  #search-input::placeholder { color:#bbb; }
-  .hdr-search.no-match #search-input { border-bottom-color:var(--red);color:var(--red); }
+  .iv-input::placeholder { color:#ddd; }
+  .info-row.searching .iv-text { display:none; }
+  .info-row.searching .iv-input { display:block; }
+  .info-row.no-match .iv-input { border-bottom-color:var(--red);color:var(--red); }
 
-  /* Layout hardening. #header-left is a flex row holding the info panel (a
-     grid whose value column is 1fr, so it will happily eat the whole row).
-     The panel must yield; the icon must never shrink or disappear. */
+  /* Layout hardening: the info panel is a grid whose value column is 1fr, so
+     it will otherwise eat the whole flex row. */
   #header-left { min-width:0; flex-wrap:wrap; }
   #info-panel { flex:0 1 auto; min-width:0; }
-  .hdr-search { flex:0 0 auto; }
-  .hdr-search-icon { flex:0 0 auto; }
-  #search-input { min-width:0; box-sizing:border-box; }
-
-  @media (max-width:767px) {
-    /* On mobile #header-left is fixed left:12px→right:100px and the back
-       button is a SEPARATE fixed box at right:12px — nothing stops one
-       overflowing under the other. So when the bar opens, drop it onto its
-       own line: it can then never reach the back button. */
-    .hdr-search { margin-left:10px; }
-    .hdr-search.open { flex-basis:100%;margin-left:0;margin-top:4px; }
-    .hdr-search.open #search-input { width:100%;max-width:190px; }
-    /* iOS Safari zooms the whole page when focusing an input under 16px. */
-    #search-input { font-size:16px;letter-spacing:0.03em; }
-  }
 
   /* ── CANVASES ── */
   #bg-canvas,#grid-canvas {
@@ -854,10 +833,9 @@ function updateHoverInfo(mx,my){
 
 function updateMetaEmpty(){
   const panel=document.getElementById('info-panel');
-  const fields=[['Title',''],['Creator',''],['Year',''],['Added by',''],['Category','']];
-  panel.innerHTML=fields.map(([label,val])=>
-    `<div class="info-row"><span class="info-label">${label}</span><span class="info-value">${val}</span></div>`
-  ).join('');
+  if(!panelBuilt) buildInfoPanel();
+  panel.classList.remove('row-view');
+  panel.querySelectorAll('.iv-text').forEach(el=>el.textContent='');
 }
 window.addEventListener('mousemove',e=>{
   if(state==='grid') updateHoverInfo(e.clientX,e.clientY);
@@ -1352,7 +1330,6 @@ window.addEventListener('mousemove',e=>{
 function showUI(){
   document.getElementById('cyl-nav').style.display='none';
   document.getElementById('back-btn').classList.add('show');
-  document.getElementById('search-wrap').classList.add('row-active');
   resetRowSearchUI();
   updateMeta(selectedRef); updateScrubber();
   buildThumbStrip(selectedRef);
@@ -1362,10 +1339,47 @@ function hideUI(){
   document.getElementById('cyl-nav').style.display='flex';
   document.getElementById('back-btn').classList.remove('show');
   resetRowSearchUI();
-  document.getElementById('search-wrap').classList.remove('row-active');
   hideThumbStrip();
   updateCylScrubber();
   updateMetaEmpty();
+}
+
+// Panel rows: [label, ref key, searchable field or null]
+const PANEL_ROWS=[
+  ['Title',    'title',   'title'],
+  ['Creator',  'artist',  'artist'],
+  ['Year',     'year',    null],
+  ['Added by', 'addedBy', null],
+  ['Category', 'cat',     null],
+];
+let panelBuilt=false;
+
+// Built ONCE. Rebuilding on every step would destroy the open input (and its
+// focus and caret) on each keystroke, since typing walks the row.
+function buildInfoPanel(){
+  const panel=document.getElementById('info-panel');
+  panel.innerHTML=PANEL_ROWS.map(([label,key,field])=>{
+    const name=field==='artist'?'creator':'title';
+    return `<div class="info-row" data-field="${field||''}">`
+      +`<span class="info-label">${label}${field?searchIconHTML(field):''}</span>`
+      +`<span class="info-value"><span class="iv-text"></span>`
+      +(field?`<input class="iv-input" type="text" data-field="${field}" autocomplete="off" spellcheck="false" placeholder="Search ${name}">`:'')
+      +`</span></div>`;
+  }).join('');
+  panelBuilt=true;
+}
+
+// Reflect rowSearchField onto the icons and rows.
+function syncSearchUI(){
+  if(!panelBuilt) return;
+  const panel=document.getElementById('info-panel');
+  panel.querySelectorAll('.info-search-icon').forEach(b=>
+    b.classList.toggle('active',b.dataset.field===rowSearchField));
+  panel.querySelectorAll('.info-row').forEach(r=>{
+    const on=!!r.dataset.field&&r.dataset.field===rowSearchField;
+    r.classList.toggle('searching',on);
+    if(!on) r.classList.remove('no-match');
+  });
 }
 
 function updateMeta(ref){
@@ -1373,18 +1387,26 @@ function updateMeta(ref){
   const info=document.getElementById('header-info');
   info.innerHTML=`${ref.title}<span class="sep">·</span>${ref.artist}<span class="sep">·</span>${ref.year}`;
 
-  // Info panel (expanded view — 2-col list)
   const panel=document.getElementById('info-panel');
-  const fields=[
-    ['Title',    ref.title||'—'],
-    ['Creator',  ref.artist||'—'],
-    ['Year',     ref.year||'—'],
-    ['Added by', ref.addedBy||'—'],
-    ['Category', ref.cat||'—'],
-  ];
-  panel.innerHTML=fields.map(([label,val])=>
-    `<div class="info-row"><span class="info-label">${label}</span><span class="info-value">${val}</span></div>`
-  ).join('');
+  if(!panelBuilt) buildInfoPanel();
+  panel.classList.toggle('row-view',inRowView());
+  PANEL_ROWS.forEach(([,key],i)=>{
+    const cell=panel.children[i].querySelector('.iv-text');
+    if(cell) cell.textContent=ref[key]||'—';
+  });
+  syncSearchUI();
+}
+
+// Magnifier markup for the TITLE / CREATOR rows. Only rendered in the row
+// view — updateMeta() also runs on cylinder hover, where search doesn't apply.
+function searchIconHTML(field){
+  const name=field==='artist'?'creator':'title';
+  const on=rowSearchField===field?' active':'';
+  return `<button class="info-search-icon${on}" data-field="${field}" aria-label="Search ${name}" title="Search ${name}">`
+    +`<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">`
+    +`<circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/>`
+    +`<line x1="10.8" y1="10.8" x2="15" y2="15" stroke="currentColor" stroke-width="1.8"/>`
+    +`</svg></button>`;
 }
 
 function updateScrubber(){
@@ -1432,79 +1454,116 @@ document.querySelectorAll('#sort-menu button').forEach(btn=>{
 });
 
 // ── Row-view search ─────────────────────────────────────────────────────────
-// Live-filters the coverflow by title or creator. Works by narrowing the
-// shared `sortedRefs` to matches — so the scrubber, arrow keys, drag and thumb
-// strip all traverse the results for free. Returning to the cylinder re-runs
-// buildGrid(), which rebuilds sortedRefs from scratch, so this never leaks into
-// the cylinder view. Only ever active while state is 'floated' / 'exploding'.
-let rowSearchActive=false, rowSearchQuery='';
+// Clicking the magnifier on TITLE or CREATOR lines the ENTIRE row up A–Z on
+// that field — nothing is removed. Typing then walks the view to the first
+// match (Enter cycles to the next). Closing keeps the alphabetical order.
+// Only ever active in the row view; returning to the cylinder re-runs
+// buildGrid(), which rebuilds sortedRefs, so this never leaks into the grid.
+let rowSearchField=null, rowSearchQuery='';
 
-function rowBaseRefs(){
-  // The full, unfiltered row list for the current type filter + sort.
+function inRowView(){ return state==='floated'||state==='exploding'; }
+
+// Value of the field being searched, for one ref.
+function fieldVal(r,f){ return ((f==='artist'?r.artist:r.title)||'').toString(); }
+
+// The current type filter's refs, lined up A–Z on `field`.
+function alphaSorted(field){
   const src=activeFilter==='all'?REFS:REFS.filter(r=>(r.cat||'').toLowerCase()===activeFilter.toLowerCase());
-  return sortRefs(src);
+  return [...src].sort((a,b)=>
+    fieldVal(a,field).localeCompare(fieldVal(b,field),undefined,{sensitivity:'base',numeric:true})
+    || (a.title||'').localeCompare(b.title||'')
+  );
+}
+
+// Swap the row order, staying on whatever cover is currently centred.
+function reorderRow(list){
+  const keep=selectedRef;
+  sortedRefs=list;
+  const i=keep?sortedRefs.indexOf(keep):-1;
+  currentRefIdx=i>=0?i:0;
+  cfStep(0);                            // rebuilds floaters + meta around the new index
+}
+
+// First match scanning forward from `from`, wrapping. Prefers a prefix match
+// (typing "b" lands on the B's, not the first title containing a "b").
+function findMatch(q,from){
+  const n=sortedRefs.length;
+  if(!q||n===0||!rowSearchField) return -1;
+  const tests=[v=>v.startsWith(q), v=>v.includes(q)];
+  for(const test of tests){
+    for(let k=0;k<n;k++){
+      const i=((from+k)%n+n)%n;
+      if(test(fieldVal(sortedRefs[i],rowSearchField).toLowerCase().trim())) return i;
+    }
+  }
+  return -1;
+}
+
+// The input belonging to the field currently being searched.
+function activeInput(){
+  if(!rowSearchField||!panelBuilt) return null;
+  return document.querySelector(`.iv-input[data-field="${rowSearchField}"]`);
+}
+function activeRow(){
+  if(!rowSearchField||!panelBuilt) return null;
+  return document.querySelector(`.info-row[data-field="${rowSearchField}"]`);
 }
 
 function resetRowSearchUI(){
-  rowSearchActive=false;
-  rowSearchQuery='';
-  const w=document.getElementById('search-wrap');
-  if(w) w.classList.remove('open','no-match');
-  const i=document.getElementById('search-input');
-  if(i) i.value='';
+  rowSearchField=null; rowSearchQuery='';
+  if(panelBuilt) document.querySelectorAll('.iv-input').forEach(i=>{ i.value=''; });
+  syncSearchUI();
 }
 
-function applyRowSearch(){
-  if(state!=='floated'&&state!=='exploding') return;
+function applyRowSearch(from){
+  if(!inRowView()||!rowSearchField) return;
+  const row=activeRow();
   const q=rowSearchQuery.trim().toLowerCase();
-  const w=document.getElementById('search-wrap');
-  const base=rowBaseRefs();
-  const next=q
-    ? base.filter(r=>(r.title||'').toLowerCase().includes(q)||(r.artist||'').toLowerCase().includes(q))
-    : base;
-  if(next.length===0){ w.classList.add('no-match'); return; } // hold current view, flag no result
-  w.classList.remove('no-match');
-  const keepRef=selectedRef;            // stay on the current item if it's still a match
-  sortedRefs=next;
-  const ki=keepRef?next.indexOf(keepRef):-1;
-  currentRefIdx=ki>=0?ki:0;
-  selectedRef=next[currentRefIdx];
-  cfStep(0);                            // rebuild coverflow around the new index
+  if(!q){ row&&row.classList.remove('no-match'); return; }  // empty box: stay put, row already A–Z
+  const idx=findMatch(q,from===undefined?0:from);
+  if(idx<0){ row&&row.classList.add('no-match'); return; }  // no match: hold position, flag it
+  row&&row.classList.remove('no-match');
+  currentRefIdx=idx;
+  cfStep(0);                                                // walk the row to the match
 }
 
-function openRowSearch(){
-  rowSearchActive=true;
-  document.getElementById('search-wrap').classList.add('open');
-  const i=document.getElementById('search-input');
-  i.value=rowSearchQuery;
-  setTimeout(()=>i.focus(),0);
+function openRowSearch(field){
+  if(!inRowView()) return;
+  rowSearchField=field;                 // set before reorder so syncSearchUI paints it
+  rowSearchQuery='';
+  const i=activeInput(); if(i) i.value='';
+  reorderRow(alphaSorted(field));       // line the whole row up A–Z on this field
+  syncSearchUI();
+  const inp=activeInput();
+  if(inp) setTimeout(()=>inp.focus(),0);
 }
 
 function closeRowSearch(){
-  const hadQuery=rowSearchQuery.trim()!=='';
-  resetRowSearchUI();
-  // Restore the full row if a filter was applied and we're still in row view.
-  if(hadQuery&&(state==='floated'||state==='exploding')){
-    const keepRef=selectedRef;
-    sortedRefs=rowBaseRefs();
-    const ki=keepRef?sortedRefs.indexOf(keepRef):-1;
-    currentRefIdx=ki>=0?ki:0;
-    selectedRef=sortedRefs[currentRefIdx]||null;
-    cfStep(0);
-  }
+  resetRowSearchUI();                   // order stays alphabetical, as requested
 }
 
-document.getElementById('search-btn').addEventListener('click',e=>{
+const _panel=document.getElementById('info-panel');
+
+// Toggle a field's search. Opening one closes the other — only ever one at a time.
+_panel.addEventListener('click',e=>{
+  const btn=e.target.closest('.info-search-icon');
+  if(!btn) return;
   e.stopPropagation();
-  if(rowSearchActive) closeRowSearch(); else openRowSearch();
+  const f=btn.dataset.field;
+  if(rowSearchField===f) closeRowSearch(); else openRowSearch(f);
 });
-const _searchInput=document.getElementById('search-input');
-_searchInput.addEventListener('click',e=>e.stopPropagation());
-_searchInput.addEventListener('input',()=>{ rowSearchQuery=_searchInput.value; applyRowSearch(); });
-_searchInput.addEventListener('keydown',e=>{
+
+// The inputs persist across steps now, so delegation just keeps this tidy.
+_panel.addEventListener('mousedown',e=>{ if(e.target.closest('.iv-input')) e.stopPropagation(); });
+_panel.addEventListener('input',e=>{
+  const i=e.target.closest('.iv-input'); if(!i) return;
+  rowSearchQuery=i.value; applyRowSearch(0);
+});
+_panel.addEventListener('keydown',e=>{
+  if(!e.target.closest('.iv-input')) return;
   e.stopPropagation();                  // keep arrows/escape from driving the coverflow
-  if(e.key==='Escape') closeRowSearch();
-  if(e.key==='Enter') _searchInput.blur(); // dismiss keyboard, keep results
+  if(e.key==='Escape'){ closeRowSearch(); }
+  else if(e.key==='Enter'){ e.preventDefault(); applyRowSearch(currentRefIdx+1); } // next match
 });
 
 function updateCylScrubber(){

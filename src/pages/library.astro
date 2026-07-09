@@ -243,50 +243,63 @@ const referencesJSON = JSON.stringify(references);
      typed but is hidden — it only reserves the exact advance width, so the
      black text in the input lands precisely over it and the untyped remainder
      trails off in grey. Same font on both, so they can't drift apart. */
-  /* The ghost and the input MUST render with identical glyph advances, or the
-     grey remainder starts at the wrong x. Three things break that on mobile:
-       1. iOS text-size-adjust / Android font-boosting inflate text inside block
-          containers (.iv-field) but never inside form controls (.iv-input).
-       2. iOS gives inputs an intrinsic inner inset that padding:0 can't clear;
-          only appearance:none removes it.
-       3. Ligatures/kerning may be applied to a span but not to an input.
-     Pinning all three keeps the two layers locked together. */
-  #info-panel { -webkit-text-size-adjust:100%;text-size-adjust:100%; }
-  .iv-ghost, .iv-input {
-    font-variant-ligatures:none;font-kerning:none;
-  }
+  /* The input's text and caret are INVISIBLE. Everything you see is drawn by
+     the ghost span, so the typed text and the grey remainder are the same
+     element and cannot misalign — whatever a browser does to a form control's
+     metrics (mobile text inflation, iOS inner insets, ligature shaping) is now
+     irrelevant. The input only catches keystrokes and holds focus.
 
-  .iv-field { position:relative;display:none;width:100%;max-width:220px; }
+     Because it's invisible, its font-size is purely mechanical: it's pinned to
+     16px, below which iOS Safari zooms the page on focus. The ghost sits in the
+     flow and defines the field's height and the text position; the input is
+     absolutely positioned over it, so its 16px never affects layout. The
+     underline therefore lives on .iv-field, not on the input. */
+  #info-panel { -webkit-text-size-adjust:100%;text-size-adjust:100%; }
+
+  .iv-field {
+    position:relative;display:none;width:100%;max-width:220px;
+    border-bottom:1px solid var(--black);
+    transition:border-bottom-color .18s ease;
+  }
   .info-row.searching .iv-text { display:none; }
   .info-row.searching .iv-field { display:block; }
+  .info-row.settling .iv-field { border-bottom-color:transparent; }
+  .info-row.no-match .iv-field { border-bottom-color:var(--red); }
 
-  .iv-ghost {
-    position:absolute;left:0;top:0;right:0;
+  .iv-ghost {                        /* in the flow — this is what you see */
+    display:block;
     font:inherit;letter-spacing:inherit;line-height:inherit;
     white-space:pre;overflow:hidden;
     pointer-events:none;user-select:none;
   }
-  .iv-ghost-typed { visibility:hidden; }   /* spacer only */
+  .iv-ghost-typed { color:var(--black); }
   .iv-ghost-rest  { color:#ddd; }
+  .info-row.no-match .iv-ghost-typed { color:var(--red); }
 
-  .iv-input {
-    position:relative;z-index:1;display:block;
-    -webkit-appearance:none;appearance:none;      /* removes iOS inner inset */
-    font:inherit;
-    font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;
-    letter-spacing:inherit;line-height:inherit;
-    color:var(--black);background:transparent;
-    border:none;border-bottom:1px solid var(--black);
-    border-radius:0;box-shadow:none;text-indent:0;
-    padding:0;margin:0;
-    width:100%;min-width:0;box-sizing:border-box;
-    outline:none;pointer-events:auto;
-    transition:border-bottom-color .18s ease;
+  /* Our own caret, sitting exactly at the split in the typed text. */
+  .iv-caret {
+    display:none;width:1px;height:1em;
+    background:var(--black);
+    vertical-align:-0.15em;
+    margin:0 -0.5px;                 /* zero-width: must not shift the text */
   }
-  /* Committing: the underline fades out alongside the icon, which already
-     transitions its colour. Both settle together rather than one snapping. */
-  .info-row.settling .iv-input { border-bottom-color:transparent; }
-  .info-row.no-match .iv-input { border-bottom-color:var(--red);color:var(--red); }
+  .info-row.focused .iv-caret { display:inline-block;animation:ivBlink 1.1s steps(1) infinite; }
+  @keyframes ivBlink { 0%,50%{opacity:1;} 51%,100%{opacity:0;} }
+
+  .iv-input {                        /* overlay: catches keys, shows nothing */
+    position:absolute;left:0;top:0;right:0;bottom:0;
+    z-index:1;width:100%;height:100%;
+    -webkit-appearance:none;appearance:none;
+    font-family:inherit;
+    font-size:16px;                  /* < 16px makes iOS zoom on focus */
+    color:transparent;-webkit-text-fill-color:transparent;caret-color:transparent;
+    background:transparent;
+    border:none;border-radius:0;box-shadow:none;text-indent:0;
+    padding:0;margin:0;min-width:0;box-sizing:border-box;
+    outline:none;pointer-events:auto;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .iv-input::selection { background:transparent; }
 
   /* Layout hardening: the info panel is a grid whose value column is 1fr, so
      it will otherwise eat the whole flex row. */
@@ -1419,10 +1432,10 @@ function syncSearchUI(){
   });
 }
 
-// Paint the grey completion behind the input so you can always read which card
-// is centred. Empty box → the whole value. Typing a prefix → the remainder
-// trails off in grey. A non-prefix (mid-word) hit still names the card, after
-// a dash, since the typed text can't overlay it.
+// Paint the whole field: your typed text (black), the caret, and the centred
+// card's untyped remainder (grey). All three are spans in one element, so they
+// share a single layout pass and can never drift apart. The input underneath is
+// invisible — it only holds focus and captures keystrokes.
 function syncGhost(){
   if(!panelBuilt) return;
   const panel=document.getElementById('info-panel');
@@ -1433,15 +1446,27 @@ function syncGhost(){
     if(!ghost||!input||!f) return;
     ghost.textContent='';
     if(f!==rowSearchField||!selectedRef) return;
+
     const cur=fieldVal(selectedRef,f);
     const typed=input.value;
     let rest;
     if(!typed) rest=cur;
     else if(cur.toLowerCase().startsWith(typed.toLowerCase())) rest=cur.slice(typed.length);
     else rest=cur?'  —  '+cur:'';
-    const a=document.createElement('span'); a.className='iv-ghost-typed'; a.textContent=typed;
-    const b=document.createElement('span'); b.className='iv-ghost-rest';  b.textContent=rest;
-    ghost.append(a,b);
+
+    // Split the typed text at the caret so our drawn caret sits where the real
+    // (invisible) one does, even if you arrow back into the middle of a word.
+    let pos=typed.length;
+    try{ if(input.selectionStart!=null) pos=input.selectionStart; }catch(_){}
+
+    const mk=(cls,txt)=>{ const s=document.createElement('span'); s.className=cls; s.textContent=txt; return s; };
+    if(pos>0)            ghost.append(mk('iv-ghost-typed',typed.slice(0,pos)));
+    ghost.append(mk('iv-caret',''));
+    if(pos<typed.length) ghost.append(mk('iv-ghost-typed',typed.slice(pos)));
+    if(rest)             ghost.append(mk('iv-ghost-rest',rest));
+    // The ghost is in the flow and sets the field's height. A zero-width space
+    // keeps a line box (and so the underline) even when there's nothing to show.
+    ghost.append(document.createTextNode('\u200B'));
   });
 }
 
@@ -1576,7 +1601,10 @@ function activeRow(){
 function resetRowSearchUI(){
   clearSettle();
   rowSearchField=null; rowSearchQuery='';
-  if(panelBuilt) document.querySelectorAll('.iv-input').forEach(i=>{ i.value=''; });
+  if(panelBuilt){
+    document.querySelectorAll('.iv-input').forEach(i=>{ i.value=''; });
+    document.querySelectorAll('.info-row.focused').forEach(r=>r.classList.remove('focused'));
+  }
   syncSearchUI();
   syncGhost();
 }
@@ -1665,6 +1693,22 @@ function commitRowSearch(){
 
 // The inputs persist across steps now, so delegation just keeps this tidy.
 _panel.addEventListener('mousedown',e=>{ if(e.target.closest('.iv-input')) e.stopPropagation(); });
+
+// Caret only blinks while the field actually has focus.
+_panel.addEventListener('focusin',e=>{
+  const i=e.target.closest('.iv-input'); if(!i) return;
+  const row=i.closest('.info-row'); if(row) row.classList.add('focused');
+  syncGhost();
+});
+_panel.addEventListener('focusout',e=>{
+  const i=e.target.closest('.iv-input'); if(!i) return;
+  const row=i.closest('.info-row'); if(row) row.classList.remove('focused');
+});
+
+// Anything that can move the caret has to repaint it: typing, arrows, taps.
+['keyup','click','select'].forEach(evt=>
+  _panel.addEventListener(evt,e=>{ if(e.target.closest('.iv-input')) syncGhost(); }));
+
 _panel.addEventListener('input',e=>{
   const i=e.target.closest('.iv-input'); if(!i) return;
   rowSearchQuery=i.value; applyRowSearch(0); syncGhost();

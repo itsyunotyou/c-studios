@@ -238,18 +238,33 @@ const referencesJSON = JSON.stringify(references);
   /* Underbar — lives INSIDE the value cell of the row being searched, so the
      typed text sits exactly where that row's value text sits. `font:inherit`
      pulls the value's own size/leading, which is what keeps them aligned. */
-  .iv-input {
-    display:none;
+  /* The input is transparent and sits ON TOP of a grey "ghost" showing the
+     centred card's value. The ghost's leading span holds the characters you've
+     typed but is hidden — it only reserves the exact advance width, so the
+     black text in the input lands precisely over it and the untyped remainder
+     trails off in grey. Same font on both, so they can't drift apart. */
+  .iv-field { position:relative;display:none;width:100%;max-width:220px; }
+  .info-row.searching .iv-text { display:none; }
+  .info-row.searching .iv-field { display:block; }
+
+  .iv-ghost {
+    position:absolute;left:0;top:0;right:0;
     font:inherit;letter-spacing:inherit;line-height:inherit;
-    color:var(--black);background:none;
+    white-space:pre;overflow:hidden;
+    pointer-events:none;user-select:none;
+  }
+  .iv-ghost-typed { visibility:hidden; }   /* spacer only */
+  .iv-ghost-rest  { color:#ddd; }
+
+  .iv-input {
+    position:relative;z-index:1;display:block;
+    font:inherit;letter-spacing:inherit;line-height:inherit;
+    color:var(--black);background:transparent;
     border:none;border-bottom:1px solid var(--black);
     padding:0;margin:0;
-    width:100%;max-width:220px;min-width:0;box-sizing:border-box;
+    width:100%;min-width:0;box-sizing:border-box;
     outline:none;pointer-events:auto;
   }
-  .iv-input::placeholder { color:#ddd; }
-  .info-row.searching .iv-text { display:none; }
-  .info-row.searching .iv-input { display:block; }
   .info-row.no-match .iv-input { border-bottom-color:var(--red);color:var(--red); }
 
   /* Layout hardening: the info panel is a grid whose value column is 1fr, so
@@ -1363,7 +1378,8 @@ function buildInfoPanel(){
     return `<div class="info-row" data-field="${field||''}">`
       +`<span class="info-label">${label}${field?searchIconHTML(field):''}</span>`
       +`<span class="info-value"><span class="iv-text"></span>`
-      +(field?`<input class="iv-input" type="text" data-field="${field}" autocomplete="off" spellcheck="false" placeholder="Search ${name}">`:'')
+      +(field?`<span class="iv-field"><span class="iv-ghost"></span>`
+        +`<input class="iv-input" type="text" data-field="${field}" autocomplete="off" spellcheck="false"></span>`:'')
       +`</span></div>`;
   }).join('');
   panelBuilt=true;
@@ -1382,6 +1398,32 @@ function syncSearchUI(){
   });
 }
 
+// Paint the grey completion behind the input so you can always read which card
+// is centred. Empty box → the whole value. Typing a prefix → the remainder
+// trails off in grey. A non-prefix (mid-word) hit still names the card, after
+// a dash, since the typed text can't overlay it.
+function syncGhost(){
+  if(!panelBuilt) return;
+  const panel=document.getElementById('info-panel');
+  panel.querySelectorAll('.info-row[data-field]').forEach(row=>{
+    const f=row.dataset.field;
+    const ghost=row.querySelector('.iv-ghost');
+    const input=row.querySelector('.iv-input');
+    if(!ghost||!input||!f) return;
+    ghost.textContent='';
+    if(f!==rowSearchField||!selectedRef) return;
+    const cur=fieldVal(selectedRef,f);
+    const typed=input.value;
+    let rest;
+    if(!typed) rest=cur;
+    else if(cur.toLowerCase().startsWith(typed.toLowerCase())) rest=cur.slice(typed.length);
+    else rest=cur?'  —  '+cur:'';
+    const a=document.createElement('span'); a.className='iv-ghost-typed'; a.textContent=typed;
+    const b=document.createElement('span'); b.className='iv-ghost-rest';  b.textContent=rest;
+    ghost.append(a,b);
+  });
+}
+
 function updateMeta(ref){
   // Header info (cylinder hover — single line)
   const info=document.getElementById('header-info');
@@ -1395,6 +1437,7 @@ function updateMeta(ref){
     if(cell) cell.textContent=ref[key]||'—';
   });
   syncSearchUI();
+  syncGhost();
 }
 
 // Magnifier markup for the TITLE / CREATOR rows. Only rendered in the row
@@ -1513,6 +1556,7 @@ function resetRowSearchUI(){
   rowSearchField=null; rowSearchQuery='';
   if(panelBuilt) document.querySelectorAll('.iv-input').forEach(i=>{ i.value=''; });
   syncSearchUI();
+  syncGhost();
 }
 
 function applyRowSearch(from){
@@ -1534,6 +1578,7 @@ function openRowSearch(field){
   const i=activeInput(); if(i) i.value='';
   reorderRow(alphaSorted(field));       // line the whole row up A–Z on this field
   syncSearchUI();
+  syncGhost();
   const inp=activeInput();
   if(inp) setTimeout(()=>inp.focus(),0);
 }
@@ -1557,7 +1602,7 @@ _panel.addEventListener('click',e=>{
 _panel.addEventListener('mousedown',e=>{ if(e.target.closest('.iv-input')) e.stopPropagation(); });
 _panel.addEventListener('input',e=>{
   const i=e.target.closest('.iv-input'); if(!i) return;
-  rowSearchQuery=i.value; applyRowSearch(0);
+  rowSearchQuery=i.value; applyRowSearch(0); syncGhost();
 });
 _panel.addEventListener('keydown',e=>{
   if(!e.target.closest('.iv-input')) return;

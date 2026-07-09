@@ -50,6 +50,15 @@ const referencesJSON = JSON.stringify(references);
   <!-- Left: info panel always visible -->
   <div id="header-left">
     <div id="info-panel"></div>
+    <div id="search-wrap" class="hdr-search">
+      <button id="search-btn" class="hdr-search-icon" aria-label="Search" title="Search">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <line x1="10.8" y1="10.8" x2="15" y2="15" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+      </button>
+      <input id="search-input" type="text" placeholder="Search" autocomplete="off" spellcheck="false">
+    </div>
   </div>
   <!-- Right: filter dropdown + size toggle -->
   <div id="header-right">
@@ -213,6 +222,61 @@ const referencesJSON = JSON.stringify(references);
   .hdr-menu button.active { display:none; }
   #header-info { display:none; }
   #threads { display:none; }
+
+  /* ── ROW-VIEW SEARCH ──
+     Icon sits next to the info panel and is only visible in the expanded row
+     view (toggled via .row-active in showUI/hideUI). Clicking it expands a
+     minimal underbar that live-filters the row by title or creator. */
+  .hdr-search {
+    display:none;
+    align-items:center;gap:8px;
+    margin-left:18px;
+    pointer-events:all;
+  }
+  .hdr-search.row-active { display:inline-flex; }
+  .hdr-search-icon {
+    background:none;border:none;padding:0;cursor:crosshair;
+    color:var(--black);
+    display:inline-flex;align-items:center;justify-content:center;
+    width:14px;height:14px;flex-shrink:0;
+    transition:color .15s;
+  }
+  .hdr-search-icon:hover { color:grey; }
+  .hdr-search-icon svg { width:13px;height:13px;display:block; }
+  #search-input {
+    font-family:inherit;
+    font-size:0.7rem;letter-spacing:0.05em;text-transform:uppercase;
+    color:var(--black);background:none;
+    border:none;border-bottom:1px solid var(--black);
+    padding:0 0 2px;margin:0;
+    width:0;opacity:0;
+    transition:width .25s ease,opacity .2s ease;
+    outline:none;
+  }
+  .hdr-search.open #search-input { width:150px;opacity:1; }
+  #search-input::placeholder { color:#bbb; }
+  .hdr-search.no-match #search-input { border-bottom-color:var(--red);color:var(--red); }
+
+  /* Layout hardening. #header-left is a flex row holding the info panel (a
+     grid whose value column is 1fr, so it will happily eat the whole row).
+     The panel must yield; the icon must never shrink or disappear. */
+  #header-left { min-width:0; flex-wrap:wrap; }
+  #info-panel { flex:0 1 auto; min-width:0; }
+  .hdr-search { flex:0 0 auto; }
+  .hdr-search-icon { flex:0 0 auto; }
+  #search-input { min-width:0; box-sizing:border-box; }
+
+  @media (max-width:767px) {
+    /* On mobile #header-left is fixed left:12px→right:100px and the back
+       button is a SEPARATE fixed box at right:12px — nothing stops one
+       overflowing under the other. So when the bar opens, drop it onto its
+       own line: it can then never reach the back button. */
+    .hdr-search { margin-left:10px; }
+    .hdr-search.open { flex-basis:100%;margin-left:0;margin-top:4px; }
+    .hdr-search.open #search-input { width:100%;max-width:190px; }
+    /* iOS Safari zooms the whole page when focusing an input under 16px. */
+    #search-input { font-size:16px;letter-spacing:0.03em; }
+  }
 
   /* ── CANVASES ── */
   #bg-canvas,#grid-canvas {
@@ -1288,6 +1352,8 @@ window.addEventListener('mousemove',e=>{
 function showUI(){
   document.getElementById('cyl-nav').style.display='none';
   document.getElementById('back-btn').classList.add('show');
+  document.getElementById('search-wrap').classList.add('row-active');
+  resetRowSearchUI();
   updateMeta(selectedRef); updateScrubber();
   buildThumbStrip(selectedRef);
 }
@@ -1295,6 +1361,8 @@ function showUI(){
 function hideUI(){
   document.getElementById('cyl-nav').style.display='flex';
   document.getElementById('back-btn').classList.remove('show');
+  resetRowSearchUI();
+  document.getElementById('search-wrap').classList.remove('row-active');
   hideThumbStrip();
   updateCylScrubber();
   updateMetaEmpty();
@@ -1361,6 +1429,82 @@ document.querySelectorAll('#sort-menu button').forEach(btn=>{
     activeSort=btn.dataset.sort;
     if(state==='grid'){ buildGrid(); cancelAnimationFrame(animFrame); animFrame=requestAnimationFrame(loopGrid); }
   });
+});
+
+// ── Row-view search ─────────────────────────────────────────────────────────
+// Live-filters the coverflow by title or creator. Works by narrowing the
+// shared `sortedRefs` to matches — so the scrubber, arrow keys, drag and thumb
+// strip all traverse the results for free. Returning to the cylinder re-runs
+// buildGrid(), which rebuilds sortedRefs from scratch, so this never leaks into
+// the cylinder view. Only ever active while state is 'floated' / 'exploding'.
+let rowSearchActive=false, rowSearchQuery='';
+
+function rowBaseRefs(){
+  // The full, unfiltered row list for the current type filter + sort.
+  const src=activeFilter==='all'?REFS:REFS.filter(r=>(r.cat||'').toLowerCase()===activeFilter.toLowerCase());
+  return sortRefs(src);
+}
+
+function resetRowSearchUI(){
+  rowSearchActive=false;
+  rowSearchQuery='';
+  const w=document.getElementById('search-wrap');
+  if(w) w.classList.remove('open','no-match');
+  const i=document.getElementById('search-input');
+  if(i) i.value='';
+}
+
+function applyRowSearch(){
+  if(state!=='floated'&&state!=='exploding') return;
+  const q=rowSearchQuery.trim().toLowerCase();
+  const w=document.getElementById('search-wrap');
+  const base=rowBaseRefs();
+  const next=q
+    ? base.filter(r=>(r.title||'').toLowerCase().includes(q)||(r.artist||'').toLowerCase().includes(q))
+    : base;
+  if(next.length===0){ w.classList.add('no-match'); return; } // hold current view, flag no result
+  w.classList.remove('no-match');
+  const keepRef=selectedRef;            // stay on the current item if it's still a match
+  sortedRefs=next;
+  const ki=keepRef?next.indexOf(keepRef):-1;
+  currentRefIdx=ki>=0?ki:0;
+  selectedRef=next[currentRefIdx];
+  cfStep(0);                            // rebuild coverflow around the new index
+}
+
+function openRowSearch(){
+  rowSearchActive=true;
+  document.getElementById('search-wrap').classList.add('open');
+  const i=document.getElementById('search-input');
+  i.value=rowSearchQuery;
+  setTimeout(()=>i.focus(),0);
+}
+
+function closeRowSearch(){
+  const hadQuery=rowSearchQuery.trim()!=='';
+  resetRowSearchUI();
+  // Restore the full row if a filter was applied and we're still in row view.
+  if(hadQuery&&(state==='floated'||state==='exploding')){
+    const keepRef=selectedRef;
+    sortedRefs=rowBaseRefs();
+    const ki=keepRef?sortedRefs.indexOf(keepRef):-1;
+    currentRefIdx=ki>=0?ki:0;
+    selectedRef=sortedRefs[currentRefIdx]||null;
+    cfStep(0);
+  }
+}
+
+document.getElementById('search-btn').addEventListener('click',e=>{
+  e.stopPropagation();
+  if(rowSearchActive) closeRowSearch(); else openRowSearch();
+});
+const _searchInput=document.getElementById('search-input');
+_searchInput.addEventListener('click',e=>e.stopPropagation());
+_searchInput.addEventListener('input',()=>{ rowSearchQuery=_searchInput.value; applyRowSearch(); });
+_searchInput.addEventListener('keydown',e=>{
+  e.stopPropagation();                  // keep arrows/escape from driving the coverflow
+  if(e.key==='Escape') closeRowSearch();
+  if(e.key==='Enter') _searchInput.blur(); // dismiss keyboard, keep results
 });
 
 function updateCylScrubber(){
@@ -1442,8 +1586,8 @@ cvs.addEventListener('mousedown',e=>{
   if(state==='grid'){ cylDragging=true; cylDragX=e.clientX; cylVel=0; autoRotate=false; }
 });
 document.addEventListener('mousedown',e=>{
-  // Don't start cfDrag if clicking the scrubber
-  if(e.target.closest('#scrubber-wrap')) return;
+  // Don't start cfDrag when interacting with the scrubber or the header (search/back)
+  if(e.target.closest('#scrubber-wrap, #header')) return;
   if(state==='floated'||state==='exploding'){ cfDragging=true; cfDragX=e.clientX; cfScrollVel=0; cfDragMoved=false; }
 });
 let cfDragMoved=false;

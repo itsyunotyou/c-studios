@@ -256,12 +256,19 @@ const referencesJSON = JSON.stringify(references);
      underline therefore lives on .iv-field, not on the input. */
   #info-panel { -webkit-text-size-adjust:100%;text-size-adjust:100%; }
 
+  /* Toggling search must not move any other row. So .iv-text KEEPS its space
+     (visibility, not display) and .iv-field is absolutely positioned over it.
+     The field's 1px underline and its single unwrapped line therefore never
+     contribute to the row's height, however the title wraps underneath. */
+  #info-panel .info-value { position:relative; }
+  .info-row.searching .iv-text { visibility:hidden; }
+
   .iv-field {
-    position:relative;display:none;width:100%;max-width:220px;
+    position:absolute;left:0;top:0;
+    display:none;width:100%;max-width:220px;
     border-bottom:1px solid var(--black);
     transition:border-bottom-color .18s ease;
   }
-  .info-row.searching .iv-text { display:none; }
   .info-row.searching .iv-field { display:block; }
   .info-row.settling .iv-field { border-bottom-color:transparent; }
   .info-row.no-match .iv-field { border-bottom-color:var(--red); }
@@ -890,12 +897,28 @@ window.addEventListener('mousemove',e=>{
   if(state==='grid') updateHoverInfo(e.clientX,e.clientY);
 });
 
+// Cap at 2. A phone reporting DPR 3 would mean 9x the fill rate of DPR 1,
+// which the rotating cylinder can't afford. 2 doubles the resolution of every
+// image for 4x fill — raise to 3 if it still looks soft and stays smooth.
+const MAX_DPR = 2;
+
 function resize(){
   const rect = cvs.getBoundingClientRect();
-W = cvs.width = bgCvs.width = Math.round(rect.width);
-H = cvs.height = bgCvs.height = Math.round(rect.height);
+  const dpr = Math.min(window.devicePixelRatio||1, MAX_DPR);
+  // W/H stay in CSS pixels — every bit of layout maths below depends on that.
+  W = Math.round(rect.width);
+  H = Math.round(rect.height);
+  // ...but the backing store is device-resolution, else the canvas renders at
+  // 1/dpr and the browser upscales it. That was the mobile blur.
+  cvs.width  = bgCvs.width  = Math.round(W*dpr);
+  cvs.height = bgCvs.height = Math.round(H*dpr);
   cvs.style.height = H + 'px';
   bgCvs.style.height = H + 'px';
+  // Scale once, so all drawing code can keep speaking in CSS pixels.
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  bgCtx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.imageSmoothingEnabled = bgCtx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = bgCtx.imageSmoothingQuality = 'high';
   if(state==='grid')buildGrid();
   if(state==='floated'||state==='exploding'){rebuildFloaters();buildHitTargets();}
 }

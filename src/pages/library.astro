@@ -630,6 +630,17 @@ function getGridRows(){
   return window.innerWidth <= 767 ? 4 : 6;
 }
 
+// Recording helper: queue a one-shot pre-rotation for the next
+// buildGrid() call. When the filter button is clicked, buildGrid runs
+// with the new sortedRefs — at that moment we can position cylAngle to
+// (target - offsetCols * anglePerCol) so the cylinder pops in already
+// rotated to the START position of an upcoming __libRotateToTitle, no
+// visible blink between default and start.
+let __pendingCylPreset = null;
+window.__libQueuePresetForTitle = function(rx, offsetCols = 3){
+  __pendingCylPreset = { rx, offsetCols };
+};
+
 function buildGrid(){
   const src=activeFilter==='all'?REFS:REFS.filter(r=>(r.cat||'').toLowerCase()===activeFilter.toLowerCase());
   sortedRefs=sortRefs(src);
@@ -645,6 +656,26 @@ function buildGrid(){
   gridScrollY=0;
   popInStart=performance.now();
   cylPopStart=performance.now();   // trigger cylinder pop-in animation (incl. initial load)
+  // Apply a queued pre-rotation, if any. Uses the freshly-built
+  // sortedRefs so the column index is correct for the new filter.
+  if (__pendingCylPreset) {
+    try {
+      const { rx, offsetCols } = __pendingCylPreset;
+      const re = typeof rx === 'string' ? new RegExp(rx, 'i') : rx;
+      const idx = sortedRefs.findIndex(r => re.test(r.title || ''));
+      if (idx >= 0) {
+        const R = W/Math.PI*2.2;
+        const colsFor360 = Math.ceil(2*Math.PI*R/TILE);
+        const COLS = Math.max(Math.ceil(N/ROWS), colsFor360);
+        const anglePerCol = (2*Math.PI)/COLS;
+        const col = Math.floor(idx/ROWS);
+        cylAngle = -col * anglePerCol - offsetCols * anglePerCol;
+        cylVel = 0;
+        autoRotate = false;
+      }
+    } catch (e) {}
+    __pendingCylPreset = null;
+  }
 }
 
 // ── 3D Cylinder state ──────────────────────────────────────────────────────
@@ -799,6 +830,141 @@ window.__libJumpToTitle = function(rx){
     return true;
   } catch (e) {
     return false;
+  }
+};
+
+// Recording helper: toggle the ambient slow auto-rotation of the
+// cylinder. Once a user interacts (drag / scroll / scrubber / jump) the
+// auto-rotation is disabled and never re-enables — so the recording
+// script needs this hook to resume it after closing a row view.
+window.__libSetAutoRotate = function(on){
+  autoRotate = !!on;
+  if (on) cylVel = 0;
+};
+
+// Recording helper: animate the cylinder from its CURRENT cylAngle to
+// the target column for the matching title, over `durationMs`. Uses
+// current cylAngle as the start — caller is responsible for setting up
+// a sensible starting position (e.g. via __libQueuePresetForTitle
+// before a filter switch) so the rotation is visibly long enough.
+window.__libRotateToTitle = function(rx, durationMs = 2000){
+  return new Promise(resolve => {
+    try {
+      const re = typeof rx === 'string' ? new RegExp(rx, 'i') : rx;
+      const idx = sortedRefs.findIndex(r => re.test(r.title || ''));
+      if (idx < 0) return resolve(false);
+      const ROWS = getGridRows();
+      const TILE = Math.floor(GRID_H()/ROWS);
+      const R = W/Math.PI*2.2;
+      const N = sortedRefs.length;
+      const colsFor360 = Math.ceil(2*Math.PI*R/TILE);
+      const COLS = Math.max(Math.ceil(N/ROWS), colsFor360);
+      const anglePerCol = (2*Math.PI)/COLS;
+      const col = Math.floor(idx/ROWS);
+      const target = -col * anglePerCol;
+      const start = cylAngle;   // animate from wherever we are now
+      cylVel = 0;
+      autoRotate = false;
+      const t0 = performance.now();
+      function step(now){
+        const t = Math.min(1, (now - t0) / durationMs);
+        // easeInOutQuad
+        const e = t < 0.5 ? 2*t*t : 1 - Math.pow(-2*t+2, 2)/2;
+        cylAngle = start + (target - start) * e;
+        if (t < 1) requestAnimationFrame(step);
+        else { cylAngle = target; resolve(true); }
+      }
+      requestAnimationFrame(step);
+    } catch (e) { resolve(false); }
+  });
+};
+
+// Recording helper: return the centre screen position of the FRONT-MOST
+// rendered tile matching `rx` (sorted by z3 so we pick the one closest
+// to camera). Null if nothing matches in the currently drawn tiles.
+window.__libGetCardScreenPos = function(rx){
+  try {
+    const re = typeof rx === 'string' ? new RegExp(rx, 'i') : rx;
+    let best = null;
+    for (const d of drawnCylTiles) {
+      if (d.ref && re.test(d.ref.title || '')) {
+        if (!best || d.z3 > best.z3) best = d;
+      }
+    }
+    if (!best) return null;
+    return { x: best.sx + best.sw/2, y: best.sy + best.sh/2, w: best.sw, h: best.sh };
+  } catch (e) {
+    return null;
+  }
+};
+
+// Recording helper: force the hover-info panel to update for the tile
+// under (x, y). The native handler only listens to `mousemove`, which
+// on a touch-emulated mobile context can be flaky — Playwright's
+// page.mouse.move may not dispatch the event the library is listening
+// for. Calling this directly bypasses event plumbing entirely.
+window.__libTriggerHover = function(x, y){
+  try { updateHoverInfo(x, y); } catch (e) {}
+};
+
+// Recording helper: keep calling updateHoverInfo at a fixed (x, y) for
+// `durationMs` so the info-panel stays populated (and refreshes as the
+// cylinder rotates a new card through that pixel position). Fire-and-
+// forget — returns synchronously, polling continues in background.
+window.__libStartHoverPoll = function(x, y, durationMs){
+  const start = performance.now();
+  const id = setInterval(() => {
+    if (performance.now() - start >= durationMs) {
+      clearInterval(id);
+      return;
+    }
+    try { updateHoverInfo(x, y); } catch (e) {}
+  }, 100);
+};
+
+// Recording helper: kick off fetches for the LARGE images of the ref
+// matching `rx` plus its ±sides neighbours (the 1+2*sides cards that
+// appear in the coverflow row view). Synchronous — just calls
+// getLargeImg() on each, which sets img.src and starts the browser's
+// fetch. By the time the row view opens those images are warm in
+// largeCache (and hopefully decoded) so the row paints crisply
+// immediately instead of fading in.
+window.__libPreloadRowImages = function(rx, sides = 7){
+  try {
+    const re = typeof rx === 'string' ? new RegExp(rx, 'i') : rx;
+    const idx = sortedRefs.findIndex(r => re.test(r.title || ''));
+    if (idx < 0) return false;
+    const n = sortedRefs.length;
+    for (let off = -sides; off <= sides; off++) {
+      const ref = sortedRefs[(idx + off + n) % n];
+      if (ref) getLargeImg(ref);
+    }
+    return true;
+  } catch (e) { return false; }
+};
+
+// Recording helper: return the rows of the cylinder's CURRENT front
+// column (cards with z3 closest to R — the ones the audience clearly
+// sees, fully facing camera). Sorted top → bottom by screenY. Used by
+// the recording script so the cursor only lands on visibly-front cards
+// (not side-column tiles partially obscured behind the front column).
+window.__libGetFrontColumnTiles = function(){
+  try {
+    if (!drawnCylTiles.length) return [];
+    const maxZ = drawnCylTiles.reduce((m, d) => Math.max(m, d.z3), -Infinity);
+    // Tolerance: tiles within 2% of max z3 belong to the same column.
+    const tol = Math.max(1, Math.abs(maxZ) * 0.02);
+    const front = drawnCylTiles.filter(d => Math.abs(d.z3 - maxZ) < tol);
+    front.sort((a, b) => a.screenY - b.screenY);
+    return front.map(d => ({
+      x: d.sx + d.sw/2,
+      y: d.sy + d.sh/2,
+      w: d.sw,
+      h: d.sh,
+      title: d.ref && d.ref.title || '',
+    }));
+  } catch (e) {
+    return [];
   }
 };
 

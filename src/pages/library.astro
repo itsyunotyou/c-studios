@@ -1612,7 +1612,7 @@ const PANEL_ROWS=[
   ['Title',    'title',   'title'],
   ['Creator',  'artist',  'artist'],
   ['Year',     'year',    null],
-  ['Added by', 'addedBy', null],
+  ['Added by', 'addedBy', 'addedBy'],
   ['Category', 'cat',     null],
 ];
 let panelBuilt=false;
@@ -1700,10 +1700,10 @@ function updateMeta(ref){
   syncGhost();
 }
 
-// Magnifier markup for the TITLE / CREATOR rows. Only rendered in the row
-// view — updateMeta() also runs on cylinder hover, where search doesn't apply.
+// Magnifier markup for the TITLE / CREATOR / ADDED BY rows. Only rendered in
+// the row view — updateMeta() also runs on cylinder hover, where search doesn't apply.
 function searchIconHTML(field){
-  const name=field==='artist'?'creator':'title';
+  const name=field==='artist'?'creator':field==='addedBy'?'added by':'title';
   const on=rowSearchField===field?' active':'';
   return `<button class="info-search-icon${on}" data-field="${field}" aria-label="Search ${name}" title="Search ${name}">`
     +`<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">`
@@ -1757,7 +1757,7 @@ document.querySelectorAll('#sort-menu button').forEach(btn=>{
 });
 
 // ── Row-view search ─────────────────────────────────────────────────────────
-// Clicking the magnifier on TITLE or CREATOR lines the ENTIRE row up A–Z on
+// Clicking the magnifier on TITLE, CREATOR, or ADDED BY lines the ENTIRE row up A–Z on
 // that field — nothing is removed. Typing then walks the view to the first
 // match (Enter cycles to the next). Closing keeps the alphabetical order.
 // Only ever active in the row view; returning to the cylinder re-runs
@@ -1767,7 +1767,7 @@ let rowSearchField=null, rowSearchQuery='';
 function inRowView(){ return state==='floated'||state==='exploding'; }
 
 // Value of the field being searched, for one ref.
-function fieldVal(r,f){ return ((f==='artist'?r.artist:r.title)||'').toString(); }
+function fieldVal(r,f){ return ((f==='artist'?r.artist:f==='addedBy'?r.addedBy:r.title)||'').toString(); }
 
 // The current type filter's refs, lined up A–Z on `field`.
 function alphaSorted(field){

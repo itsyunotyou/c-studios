@@ -1,4 +1,4 @@
-// POST /api/publish-library
+// Handles POST /api/publish-library — see worker/index.js for routing.
 //
 // Called by the Apps Script "Publish to site" menu item, once per library
 // tab (text/image/sound). Body:
@@ -16,9 +16,9 @@
 // REPLACED with exactly those rows (mapped to the site's entry shape) — so
 // deleting a row from the sheet removes it from the site on the next publish.
 //
-// This can't run sharp (Cloudflare Pages Functions have no native modules),
-// so it only stages new/changed raw images under _incoming/<category>/ —
-// the process-library-images GitHub Action turns those into the actual
+// This can't run sharp (Workers have no native modules), so it only stages
+// new/changed raw images under _incoming/<category>/ — the
+// process-library-images GitHub Action turns those into the actual
 // thumb/large webp variants + dominant color and commits the result.
 //
 // Each GitHub Contents API write is its own commit (simpler than building a
@@ -84,7 +84,7 @@ async function putFile(env, path, contentB64, message, sha) {
   return res.json();
 }
 
-export async function onRequestPost({ request, env }) {
+export async function handlePublishLibrary(request, env) {
   if (!env.PUBLISH_SECRET || request.headers.get('X-Publish-Secret') !== env.PUBLISH_SECRET) {
     return new Response('Unauthorized', { status: 401 });
   }

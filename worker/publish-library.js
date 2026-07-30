@@ -97,8 +97,17 @@ async function putFile(env, path, contentB64, message, sha) {
 }
 
 export async function handlePublishLibrary(request, env) {
-  if (!env.PUBLISH_SECRET || request.headers.get('X-Publish-Secret') !== env.PUBLISH_SECRET) {
-    return new Response('Unauthorized', { status: 401 });
+  const received = request.headers.get('X-Publish-Secret');
+  if (!env.PUBLISH_SECRET || received !== env.PUBLISH_SECRET) {
+    // TEMPORARY diagnostic — reveals only lengths/presence, never the actual
+    // secret value, to debug a setup mismatch. Remove once resolved.
+    return new Response(JSON.stringify({
+      error: 'Unauthorized',
+      envSecretSet: !!env.PUBLISH_SECRET,
+      envSecretLength: env.PUBLISH_SECRET ? env.PUBLISH_SECRET.length : 0,
+      headerReceived: received !== null,
+      receivedLength: received ? received.length : 0,
+    }), { status: 401, headers: { 'Content-Type': 'application/json' } });
   }
 
   let body;

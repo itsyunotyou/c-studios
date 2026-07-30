@@ -39,6 +39,18 @@ function entryKey(entry) {
   return `${norm(entry.title)}|${norm(entry.author)}|${norm(entry.year)}`;
 }
 
+// Both the sheet's FILE NAME value and the images map's keys end up in a
+// GitHub file path below, and both come from the request body — untrusted
+// as far as this code is concerned, whether or not the real Apps Script is
+// what sent it. Real filenames here (derived from titles) legitimately use
+// all sorts of punctuation — ! & ' , @ [ ] etc. — so this blocks the actual
+// path-escape vectors (separators, ".." traversal, control characters)
+// rather than whitelisting an exact charset.
+function isSafeFileSegment(s) {
+  return typeof s === 'string' && s.length > 0
+    && !/[/\\]/.test(s) && !s.includes('..') && !/[\x00-\x1f]/.test(s);
+}
+
 async function gh(env, path, options = {}) {
   const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/${path}`, {
     ...options,
@@ -116,8 +128,14 @@ export async function handlePublishLibrary(request, env) {
       // The sheet's FILE NAME column is always extension-less — the real
       // extension only exists on the actual uploaded file (or, for a row
       // that hasn't changed, on the existing entry we already committed).
-      const base = String(r.fileName).trim();
-      const uploadedExt = Object.keys(images || {}).find(k => k.startsWith(base + '.'));
+      // Stripped of path separators and leading dots: this value flows
+      // straight into a GitHub file path below, and rows come from the
+      // sheet — untrusted input as far as this code is concerned.
+      const rawBase = String(r.fileName).trim();
+      const base = isSafeFileSegment(rawBase) ? rawBase : '';
+      const uploadedExt = base
+        ? Object.keys(images || {}).find(k => k.startsWith(base + '.') && isSafeFileSegment(k))
+        : undefined;
 
       const entry = {
         title: r.title,

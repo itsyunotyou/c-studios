@@ -15,9 +15,18 @@
  *        SHEET_TEXT   TEXT DATABASE
  *        SHEET_IMAGE  IMAGE DATABASE
  *        SHEET_SOUND  SOUND DATABASE
- *   4. Save, then reload the spreadsheet — a "C-STUDIOS" menu appears with
+ *   4. Gear icon (Project Settings) → check "Show 'appsscript.json' manifest
+ *      file in editor" → a new appsscript.json appears in the file list.
+ *      Replace its contents with this folder's appsscript.json (keep
+ *      "timeZone" matching whatever the project already had if different —
+ *      it affects how ADDED dates are formatted). This declares narrow,
+ *      explicit permissions (read-only Drive access, and only this bound
+ *      spreadsheet rather than every Sheet in your account) instead of the
+ *      broad access Apps Script requests by default when scopes aren't
+ *      declared explicitly.
+ *   5. Save, then reload the spreadsheet — a "C-STUDIOS" menu appears with
  *      "Publish to site". The first click asks you to authorize the script
- *      (it needs to read this spreadsheet and the Drive folder) — that's a
+ *      (read-only access to this spreadsheet and the Drive folder) — a
  *      one-time prompt for whoever's Google account owns the script.
  *
  * What it does: reads every row from each of the three library tabs, finds

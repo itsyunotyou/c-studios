@@ -143,7 +143,15 @@ const referencesJSON = JSON.stringify(references);
     padding:18px 28px;pointer-events:none;
   }
   #header-left { display:flex;align-items:baseline;pointer-events:all; }
-  #header-right { display:flex;flex-direction:row;gap:14px;align-items:baseline;pointer-events:all; }
+  /* align-self:flex-start (not baseline) — header-right swaps between the
+     text-baseline cyl-nav buttons and the icon-only back-btn depending on
+     view state, and an icon has no text baseline to share. Left as a baseline
+     participant, header-right's own contribution to #header's shared baseline
+     would flip between those two states, shifting header-left (and every
+     info-panel row with it) by a few px whenever row view opens/closes. Fixed
+     to its own box instead, so header-left's baseline is the only one left
+     and never moves. */
+  #header-right { display:flex;flex-direction:row;gap:14px;align-items:baseline;align-self:flex-start;pointer-events:all; }
 
   /* Info panel — top left, always visible, labels always shown.
      Row rhythm = font * line-height. No row gap so it matches the

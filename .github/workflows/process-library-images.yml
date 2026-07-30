@@ -1,0 +1,50 @@
+name: Process library images
+
+# The publish endpoint (functions/api/publish-library.js) commits new rows
+# plus their raw images staged under _incoming/<category>/ — it can't do the
+# actual image processing itself (Cloudflare Pages Functions can't run sharp).
+# This runs the same processing script used for local/manual additions,
+# generating the derived thumb/large webp files + dominant color, then
+# commits the result and cleans up the raw. If nothing under _incoming/
+# needed processing, this exits without committing (safe against re-triggering
+# itself in a loop).
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_incoming/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: process-library-images
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: node scripts/prepare-library-images.mjs
+
+      - name: Commit processed images, if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/library-text.json src/data/library-image.json src/data/library-sound.json public/images/library _incoming
+          if git diff --cached --quiet; then
+            echo "Nothing to process — no commit."
+          else
+            git commit -m "Process staged library images [skip ci]"
+            git push origin main
+          fi

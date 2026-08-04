@@ -61,7 +61,7 @@ function publishAll() {
     return;
   }
 
-  const imagesByBase = indexDriveFolder(folderId);
+  const rootFolder = DriveApp.getFolderById(folderId);
   const results = [];
 
   for (const category of Object.keys(CATEGORIES)) {
@@ -71,6 +71,12 @@ function publishAll() {
     if (!sheet) {
       results.push(`${category}: sheet tab "${sheetName}" not found — skipped`);
       continue;
+    }
+
+    const categoryFolder = findSubfolder(rootFolder, category);
+    const imagesByBase = categoryFolder ? indexDriveFolder(categoryFolder) : {};
+    if (!categoryFolder) {
+      results.push(`${category}: no "${category}" subfolder found under DRIVE_FOLDER_ID — image matching skipped`);
     }
 
     try {
@@ -85,11 +91,23 @@ function publishAll() {
   ui.alert('Publish results\n\n' + results.join('\n'));
 }
 
-// Map every file in the Drive folder by its basename (no extension,
+// Covers live in per-category subfolders (image/sound/text) under
+// DRIVE_FOLDER_ID rather than directly in it — find the one matching this
+// category's name (case-insensitive).
+function findSubfolder(parentFolder, name) {
+  const target = name.trim().toLowerCase();
+  const subfolders = parentFolder.getFolders();
+  while (subfolders.hasNext()) {
+    const sub = subfolders.next();
+    if (sub.getName().trim().toLowerCase() === target) return sub;
+  }
+  return null;
+}
+
+// Map every file in a Drive folder by its basename (no extension,
 // lowercased) so it can be matched against the sheet's extension-less
 // FILE NAME column regardless of case or actual file type.
-function indexDriveFolder(folderId) {
-  const folder = DriveApp.getFolderById(folderId);
+function indexDriveFolder(folder) {
   const files = folder.getFiles();
   const map = {};
   while (files.hasNext()) {

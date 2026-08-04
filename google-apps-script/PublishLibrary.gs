@@ -80,7 +80,9 @@ function publishAll() {
     }
 
     try {
-      const { rows, images } = buildPayload(sheet, imagesByBase);
+      const rows = collectRows(sheet);
+      const needsImage = planCategory(endpoint, secret, category, rows);
+      const images = encodeImages(rows, imagesByBase, needsImage);
       const res = callEndpoint(endpoint, secret, category, rows, images);
       results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`);
     } catch (e) {
@@ -130,7 +132,7 @@ function findHeaderRow(values) {
   throw new Error('Could not find a header row (no "TITLE" column found in the first 20 rows)');
 }
 
-function buildPayload(sheet, imagesByBase) {
+function collectRows(sheet) {
   const values = sheet.getDataRange().getValues();
   const headerRow = findHeaderRow(values);
   const headers = values[headerRow].map(h => String(h).trim().toUpperCase());
@@ -151,7 +153,6 @@ function buildPayload(sheet, imagesByBase) {
   }
 
   const rows = [];
-  const images = {};
   const tz = Session.getScriptTimeZone();
 
   for (let i = headerRow + 1; i < values.length; i++) {
@@ -169,7 +170,7 @@ function buildPayload(sheet, imagesByBase) {
       ? Utilities.formatDate(addedRaw, tz, 'dd/MM/yyyy')
       : String(addedRaw || '').trim();
 
-    const entry = {
+    rows.push({
       title,
       name: String(row[cols.name] || '').trim(),
       year,
@@ -177,21 +178,46 @@ function buildPayload(sheet, imagesByBase) {
       by: String(row[cols.by] || '').trim(),
       fileName,
       notes: cols.notes >= 0 ? String(row[cols.notes] || '').trim() : '',
-    };
-    rows.push(entry);
-
-    if (fileName) {
-      const file = imagesByBase[fileName.toLowerCase()];
-      if (file) {
-        const key = file.getName(); // real filename, with its actual extension
-        if (!images[key]) {
-          images[key] = Utilities.base64Encode(file.getBlob().getBytes());
-        }
-      }
-    }
+    });
   }
 
-  return { rows, images };
+  return rows;
+}
+
+// Only reads + base64-encodes the Drive files the endpoint's dry-run plan
+// actually asked for (see planCategory below) — reading every cover on
+// every publish is what used to blow Apps Script's 6-minute execution cap.
+function encodeImages(rows, imagesByBase, needsImage) {
+  const images = {};
+  for (const r of rows) {
+    if (!r.fileName || !needsImage.has(r.fileName.toLowerCase())) continue;
+    const file = imagesByBase[r.fileName.toLowerCase()];
+    if (!file) continue;
+    const key = file.getName(); // real filename, with its actual extension
+    if (!images[key]) {
+      images[key] = Utilities.base64Encode(file.getBlob().getBytes());
+    }
+  }
+  return images;
+}
+
+// Asks the endpoint which covers are actually new/changed before reading
+// and encoding anything from Drive — see worker/publish-library.js for the
+// dryRun branch this talks to.
+function planCategory(endpoint, secret, category, rows) {
+  const res = UrlFetchApp.fetch(endpoint, {
+    method: 'post',
+    contentType: 'application/json',
+    headers: { 'X-Publish-Secret': secret },
+    payload: JSON.stringify({ category, rows, dryRun: true }),
+    muteHttpExceptions: true,
+  });
+  const code = res.getResponseCode();
+  if (code !== 200) {
+    throw new Error(`plan HTTP ${code}: ${res.getContentText()}`);
+  }
+  const body = JSON.parse(res.getContentText());
+  return new Set(body.needsImage || []);
 }
 
 function callEndpoint(endpoint, secret, category, rows, images) {

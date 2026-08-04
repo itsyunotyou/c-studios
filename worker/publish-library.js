@@ -1,15 +1,18 @@
 // Handles POST /api/publish-library — see worker/index.js for routing.
 //
-// Called by the Apps Script "Publish to site" menu item, once per library
-// tab (text/image/sound). Body:
-//   {
-//     category: 'text' | 'image' | 'sound',
-//     rows: [{ title, author, year, added, by, fileName, notes? }, ...],
-//     images: { "<fileName>.<ext>": "<base64 bytes>", ... }   // only for
-//                                                              // rows whose
-//                                                              // cover is new
-//                                                              // or changed
-//   }
+// Called by the Apps Script "Publish to site" menu item, twice per library
+// tab (text/image/sound):
+//
+//   1. A dry-run plan call — { category, rows, dryRun: true } — with no
+//      images. Diffs `rows` against what's already published and responds
+//      with { needsImage: ["<fileName base, lowercased>", ...] }, the only
+//      covers actually worth reading from Drive and base64-encoding.
+//   2. The real commit call — { category, rows, images } — where `images`
+//      only needs to contain the files `needsImage` asked for.
+//
+// Splitting it this way keeps Apps Script from having to read + encode a
+// Drive file for every row on every publish, which used to blow its own
+// 6-minute execution cap once cover matching actually started working.
 //
 // The sheet is treated as the full source of truth: `rows` is every row
 // currently in that tab, and the resulting library-<category>.json is
@@ -37,6 +40,17 @@ function norm(v) {
 
 function entryKey(entry) {
   return `${norm(entry.title)}|${norm(entry.author)}|${norm(entry.year)}`;
+}
+
+// Looks up a row's existing published entry (if any) by title/author/year,
+// shared between the dry-run plan and the real commit so both agree on
+// what counts as "unchanged".
+function oldEntryFor(r, existingByKey) {
+  return existingByKey.get(entryKey({
+    title: r.title,
+    author: r.name || r.author || '',
+    year: r.year || '',
+  }));
 }
 
 // Both the sheet's FILE NAME value and the images map's keys end up in a
@@ -118,7 +132,7 @@ export async function handlePublishLibrary(request, env) {
     return new Response('Invalid JSON body', { status: 400 });
   }
 
-  const { category, rows, images } = body;
+  const { category, rows, images, dryRun } = body;
   if (!CATEGORIES.has(category)) {
     return new Response(`Invalid category: ${category}`, { status: 400 });
   }
@@ -130,6 +144,28 @@ export async function handlePublishLibrary(request, env) {
   const existingFile = await getFile(env, jsonPath);
   const existingEntries = existingFile ? JSON.parse(b64ToText(existingFile.content)) : [];
   const existingByKey = new Map(existingEntries.map(e => [entryKey(e), e]));
+
+  // Reading + base64-encoding a cover from Drive for every row on every
+  // publish is what blew Apps Script's own 6-minute execution cap once the
+  // folder-matching fix meant covers actually started resolving. Instead,
+  // Apps Script calls this first with just `rows` (no images) to find out
+  // which covers are actually new/changed, then only encodes and sends
+  // those in the real (non-dryRun) call that follows.
+  if (dryRun) {
+    const needsImage = new Set();
+    for (const r of rows) {
+      if (!r.title || !r.fileName) continue;
+      const rawBase = String(r.fileName).trim();
+      const base = isSafeFileSegment(rawBase) ? rawBase : '';
+      if (!base) continue;
+      const old = oldEntryFor(r, existingByKey);
+      const oldBase = old ? old.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '') : null;
+      if (oldBase !== base) needsImage.add(base.toLowerCase());
+    }
+    return new Response(JSON.stringify({ needsImage: [...needsImage] }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
 
   const staged = [];
   const finalEntries = rows
@@ -157,7 +193,7 @@ export async function handlePublishLibrary(request, env) {
       };
       if (r.notes) entry.notes = r.notes;
 
-      const old = existingByKey.get(entryKey(entry));
+      const old = oldEntryFor(r, existingByKey);
       const oldBase = old ? old.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '') : null;
       const sameImage = old && oldBase === base;
 

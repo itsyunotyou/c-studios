@@ -61,6 +61,14 @@ function publishAll() {
     return;
   }
 
+  // TEMPORARY — Logger.log buffers in memory and is lost if the script is
+  // force-killed for exceeding the execution cap, so it can't catch a hang.
+  // Script Properties writes commit immediately, so a checkpoint written
+  // right before each slow step survives even a timeout kill. Check
+  // DEBUG_CHECKPOINT in Script Properties after a failed run. Remove once
+  // resolved.
+  const checkpoint = (msg) => props.setProperty('DEBUG_CHECKPOINT', `${new Date().toISOString()} ${msg}`);
+
   const rootFolder = DriveApp.getFolderById(folderId);
   const results = [];
 
@@ -73,29 +81,25 @@ function publishAll() {
       continue;
     }
 
-    let t = Date.now();
+    checkpoint(`${category}: before findSubfolder`);
     const categoryFolder = findSubfolder(rootFolder, category);
-    Logger.log(`${category}: findSubfolder took ${Date.now() - t}ms`);
-    t = Date.now();
+    checkpoint(`${category}: before indexDriveFolder`);
     const imagesByBase = categoryFolder ? indexDriveFolder(categoryFolder) : {};
-    Logger.log(`${category}: indexDriveFolder took ${Date.now() - t}ms, found ${Object.keys(imagesByBase).length} files`);
+    checkpoint(`${category}: indexed ${Object.keys(imagesByBase).length} files`);
     if (!categoryFolder) {
       results.push(`${category}: no "${category}" subfolder found under DRIVE_FOLDER_ID — image matching skipped`);
     }
 
     try {
-      t = Date.now();
+      checkpoint(`${category}: before collectRows`);
       const rows = collectRows(sheet);
-      Logger.log(`${category}: collectRows took ${Date.now() - t}ms, ${rows.length} rows`);
-      t = Date.now();
+      checkpoint(`${category}: collected ${rows.length} rows, before planCategory`);
       const needsImage = planCategory(endpoint, secret, category, rows);
-      Logger.log(`${category}: planCategory took ${Date.now() - t}ms, needs ${needsImage.size} images`);
-      t = Date.now();
+      checkpoint(`${category}: plan needs ${needsImage.size} images, before encodeImages`);
       const images = encodeImages(rows, imagesByBase, needsImage);
-      Logger.log(`${category}: encodeImages took ${Date.now() - t}ms, encoded ${Object.keys(images).length}`);
-      t = Date.now();
+      checkpoint(`${category}: encoded ${Object.keys(images).length}, before callEndpoint`);
       const res = callEndpoint(endpoint, secret, category, rows, images);
-      Logger.log(`${category}: callEndpoint took ${Date.now() - t}ms`);
+      checkpoint(`${category}: callEndpoint done`);
       results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`);
     } catch (e) {
       results.push(`${category}: FAILED — ${e.message}`);

@@ -73,17 +73,29 @@ function publishAll() {
       continue;
     }
 
+    let t = Date.now();
     const categoryFolder = findSubfolder(rootFolder, category);
+    Logger.log(`${category}: findSubfolder took ${Date.now() - t}ms`);
+    t = Date.now();
     const imagesByBase = categoryFolder ? indexDriveFolder(categoryFolder) : {};
+    Logger.log(`${category}: indexDriveFolder took ${Date.now() - t}ms, found ${Object.keys(imagesByBase).length} files`);
     if (!categoryFolder) {
       results.push(`${category}: no "${category}" subfolder found under DRIVE_FOLDER_ID — image matching skipped`);
     }
 
     try {
+      t = Date.now();
       const rows = collectRows(sheet);
+      Logger.log(`${category}: collectRows took ${Date.now() - t}ms, ${rows.length} rows`);
+      t = Date.now();
       const needsImage = planCategory(endpoint, secret, category, rows);
+      Logger.log(`${category}: planCategory took ${Date.now() - t}ms, needs ${needsImage.size} images`);
+      t = Date.now();
       const images = encodeImages(rows, imagesByBase, needsImage);
+      Logger.log(`${category}: encodeImages took ${Date.now() - t}ms, encoded ${Object.keys(images).length}`);
+      t = Date.now();
       const res = callEndpoint(endpoint, secret, category, rows, images);
+      Logger.log(`${category}: callEndpoint took ${Date.now() - t}ms`);
       results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`);
     } catch (e) {
       results.push(`${category}: FAILED — ${e.message}`);

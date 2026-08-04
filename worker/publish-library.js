@@ -71,7 +71,16 @@ function b64ToText(b64) {
   return new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g, '')), c => c.charCodeAt(0)));
 }
 function textToB64(text) {
-  return btoa(String.fromCharCode(...new TextEncoder().encode(text)));
+  const bytes = new TextEncoder().encode(text);
+  // Spreading the whole array into String.fromCharCode blows the call-stack
+  // limit once `text` is large enough (library-image.json, with 400+
+  // entries, hits this) — build it up in chunks instead.
+  let binary = '';
+  const chunkSize = 0x8000;
+  for (let i = 0; i < bytes.length; i += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+  }
+  return btoa(binary);
 }
 
 async function getFile(env, path) {

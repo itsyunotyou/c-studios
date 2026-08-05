@@ -160,7 +160,11 @@ export async function handlePublishLibrary(request, env) {
       if (!base) continue;
       const old = oldEntryFor(r, existingByKey);
       const oldBase = old ? old.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '') : null;
-      if (oldBase !== base) needsImage.add(base.toLowerCase());
+      // "Reference unchanged" isn't the same as "already processed" — a lot
+      // of entries have had the same broken, extension-less reference sit
+      // there since before Drive matching ever worked, so also retry
+      // anything that was never actually staged into a real image/color.
+      if (oldBase !== base || !old.color) needsImage.add(base.toLowerCase());
     }
     return new Response(JSON.stringify({ needsImage: [...needsImage] }), {
       headers: { 'Content-Type': 'application/json' },

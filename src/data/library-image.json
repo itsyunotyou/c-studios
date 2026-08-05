@@ -437,7 +437,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png"
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -1392,7 +1397,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI.png"
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Cinema in the Round",
@@ -4477,7 +4487,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GraceWalesBonner_HowardUniversal_2025_CI"
+    "image": "/images/library/image/GraceWalesBonner_HowardUniversal_2025_CI",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Josephine Baker",

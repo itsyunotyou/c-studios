@@ -284,12 +284,14 @@ function callEndpoint(endpoint, secret, category, rows, images) {
 const MAX_BATCH_PAYLOAD_BYTES = 20 * 1024 * 1024;
 
 // Cloudflare caps how many outbound fetches a single Worker invocation can
-// make (50 on free/low-tier plans). Every staged cover costs the endpoint
-// 2 of those — a GET to check for an existing file sha, then the PUT — on
-// top of the 2 it always spends rewriting library-<category>.json, so a
-// batch that's well under the byte cap above can still trip that limit if
-// it's made up of a lot of small files. Keeps well clear of it.
-const MAX_BATCH_IMAGE_COUNT = 20;
+// make (50 on free/low-tier plans — this is what an actual "Too many
+// subrequests" failure turned out to be). Every staged cover costs the
+// endpoint 2 of those — a GET to check for an existing file sha, then the
+// PUT — on top of the 2 it always spends rewriting library-<category>.json,
+// so a batch that's well under the byte cap above can still trip that limit
+// if it's made up of a lot of small files. Kept low enough to leave real
+// headroom rather than sitting right at the edge of the limit.
+const MAX_BATCH_IMAGE_COUNT = 10;
 
 function callEndpointBatched(endpoint, secret, category, rows, images) {
   const keys = Object.keys(images);

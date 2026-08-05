@@ -123,6 +123,10 @@ async function getFile(env, path) {
 // 422 "sha wasn't supplied" means the file didn't exist on our GET but does
 // now. Both are the same read-then-write race, not a real failure — refetch
 // the current sha and retry instead of failing the whole publish over it.
+// Capped at 3 attempts rather than more: Apps Script's UrlFetchApp.fetch
+// blocks synchronously on this whole chain, and its caller (publishAll) is
+// already working against a tight budget against Apps Script's own 6-minute
+// execution cap — a long retry chain on one file eats straight into that.
 async function putFile(env, path, contentB64, message, sha, attempt = 1) {
   const res = await gh(env, `contents/${encodePath(path)}`, {
     method: 'PUT',
@@ -136,7 +140,7 @@ async function putFile(env, path, contentB64, message, sha, attempt = 1) {
   if (!res.ok) {
     const bodyText = await res.text();
     const isRace = res.status === 409 || (res.status === 422 && bodyText.includes('sha'));
-    if (isRace && attempt < 5) {
+    if (isRace && attempt < 3) {
       const latest = await getFile(env, path);
       return putFile(env, path, contentB64, message, latest?.sha, attempt + 1);
     }

@@ -64,14 +64,20 @@ function publishAll() {
   const rootFolder = DriveApp.getFolderById(folderId);
   const results = [];
 
-  // Apps Script kills the whole run at 6 minutes. Retrying every
-  // never-processed image (not just changed ones) can mean far more Drive
-  // reads than fit in one run, so stop starting new ones once the budget's
-  // spent and let a re-run pick up the rest — anything still missing a
-  // computed color keeps getting flagged by the plan call regardless of
-  // reference, so nothing is lost, just spread across runs.
+  // Apps Script kills the whole run at 6 minutes, with no way to catch or
+  // clean up when it happens. Retrying every never-processed image (not
+  // just changed ones) can mean far more Drive reads than fit in one run,
+  // so stop starting new ones once the budget's spent and let a re-run pick
+  // up the rest — anything still missing a computed color keeps getting
+  // flagged by the plan call regardless of reference, so nothing is lost,
+  // just spread across runs. Left well short of the 6-minute cap (rather
+  // than e.g. 5 minutes) because the time after the cutoff isn't free:
+  // every category still gets a callEndpointBatched call, and the
+  // endpoint's own retry-on-conflict logic (see worker/publish-library.js)
+  // means a single one of those can now take much longer to respond than
+  // it used to whenever it races the image-processing Action.
   const startTime = Date.now();
-  const TIME_BUDGET_MS = 5 * 60 * 1000;
+  const TIME_BUDGET_MS = 3 * 60 * 1000;
   const hasTimeLeft = () => (Date.now() - startTime) < TIME_BUDGET_MS;
 
   for (const category of Object.keys(CATEGORIES)) {

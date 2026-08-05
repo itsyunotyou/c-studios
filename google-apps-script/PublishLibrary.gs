@@ -64,6 +64,16 @@ function publishAll() {
   const rootFolder = DriveApp.getFolderById(folderId);
   const results = [];
 
+  // Apps Script kills the whole run at 6 minutes. Retrying every
+  // never-processed image (not just changed ones) can mean far more Drive
+  // reads than fit in one run, so stop starting new ones once the budget's
+  // spent and let a re-run pick up the rest — anything still missing a
+  // computed color keeps getting flagged by the plan call regardless of
+  // reference, so nothing is lost, just spread across runs.
+  const startTime = Date.now();
+  const TIME_BUDGET_MS = 5 * 60 * 1000;
+  const hasTimeLeft = () => (Date.now() - startTime) < TIME_BUDGET_MS;
+
   for (const category of Object.keys(CATEGORIES)) {
     const { sheetProp, sheetDefault } = CATEGORIES[category];
     const sheetName = props.getProperty(sheetProp) || sheetDefault;
@@ -82,9 +92,11 @@ function publishAll() {
     try {
       const rows = collectRows(sheet);
       const needsImage = planCategory(endpoint, secret, category, rows);
-      const images = encodeImages(rows, imagesByBase, needsImage);
+      const images = encodeImages(rows, imagesByBase, needsImage, hasTimeLeft);
       const res = callEndpoint(endpoint, secret, category, rows, images);
-      results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`);
+      const ranOutOfTime = !hasTimeLeft() && Object.keys(images).length < needsImage.size;
+      results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`
+        + (ranOutOfTime ? ' (time budget reached — run Publish again to continue the rest)' : ''));
     } catch (e) {
       results.push(`${category}: FAILED — ${e.message}`);
     }
@@ -210,9 +222,12 @@ function keyFor(file) {
 // Only reads + base64-encodes the Drive files the endpoint's dry-run plan
 // actually asked for (see planCategory below) — reading every cover on
 // every publish is what used to blow Apps Script's 6-minute execution cap.
-function encodeImages(rows, imagesByBase, needsImage) {
+// Stops starting new reads once hasTimeLeft() says the budget's spent,
+// leaving the rest for a subsequent run.
+function encodeImages(rows, imagesByBase, needsImage, hasTimeLeft) {
   const images = {};
   for (const r of rows) {
+    if (!hasTimeLeft()) break;
     if (!r.fileName || !needsImage.has(r.fileName.toLowerCase())) continue;
     const file = imagesByBase[r.fileName.toLowerCase()];
     if (!file) continue;

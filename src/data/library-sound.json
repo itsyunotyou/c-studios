@@ -308,12 +308,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/MilesDavis_RatedX_1974_CI.jpg",
-    "color": [
-      72,
-      40,
-      56
-    ]
+    "image": "/images/library/sound/MilesDavis_RatedX_1974_CI"
   },
   {
     "title": "Trapping in C Major",
@@ -945,12 +940,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/1955epilepsy_get2kno_2020_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/sound/1955epilepsy_get2kno_2020_CI"
   },
   {
     "title": "Couture",
@@ -1029,12 +1019,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_2026_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_2026_CI"
   },
   {
     "title": "Wey U",
@@ -5101,14 +5086,5 @@
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
     "image": "/images/library/sound/OsOriginaisDoSamba_FrevoDoSabere_ÉPrecisoCantar_1973_AHI"
-  },
-  {
-    "title": "Yu",
-    "author": "Yu",
-    "year": "",
-    "added": "",
-    "by": "",
-    "category": "sound",
-    "image": "/images/library/sound/Actress_FALLINGRIZLAS_2017_CI"
   }
 ]

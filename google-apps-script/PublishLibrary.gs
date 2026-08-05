@@ -205,6 +205,29 @@ function collectRows(sheet) {
   return rows;
 }
 
+const MIME_EXTENSIONS = {
+  'image/jpeg': 'jpg',
+  'image/png': 'png',
+  'image/gif': 'gif',
+  'image/webp': 'webp',
+  'image/heic': 'heic',
+  'image/bmp': 'bmp',
+  'image/tiff': 'tiff',
+};
+
+// Some covers in Drive turn out to have no extension in their stored name
+// at all (confirmed by hand — Drive shows the name completely bare). The
+// worker keys staged images by "<base>.<ext>" to recover the extension, so
+// a name with no dot in it would silently never match despite being read
+// and sent correctly. Falls back to the file's actual MIME type instead of
+// trusting the name to have one.
+function keyFor(file) {
+  const name = file.getName();
+  if (name.lastIndexOf('.') > 0) return name;
+  const ext = MIME_EXTENSIONS[file.getMimeType()];
+  return ext ? `${name}.${ext}` : name;
+}
+
 // Only reads + base64-encodes the Drive files the endpoint's dry-run plan
 // actually asked for (see planCategory below) — reading every cover on
 // every publish is what used to blow Apps Script's 6-minute execution cap.
@@ -214,7 +237,7 @@ function encodeImages(rows, imagesByBase, needsImage) {
     if (!r.fileName || !needsImage.has(r.fileName.toLowerCase())) continue;
     const file = imagesByBase[r.fileName.toLowerCase()];
     if (!file) continue;
-    const key = file.getName(); // real filename, with its actual extension
+    const key = keyFor(file);
     if (!images[key]) {
       images[key] = Utilities.base64Encode(file.getBlob().getBytes());
     }

@@ -116,7 +116,14 @@ async function getFile(env, path) {
   return { sha: json.sha, content: json.content };
 }
 
-async function putFile(env, path, contentB64, message, sha) {
+// The process-library-images Action commits its own changes (computed
+// colors, thumb/large variants) to these same files independently of this
+// endpoint, straight to main — so a PUT here can land right as that
+// Action's commit does too. A 409 means the `sha` we read is now stale; a
+// 422 "sha wasn't supplied" means the file didn't exist on our GET but does
+// now. Both are the same read-then-write race, not a real failure — refetch
+// the current sha and retry instead of failing the whole publish over it.
+async function putFile(env, path, contentB64, message, sha, attempt = 1) {
   const res = await gh(env, `contents/${encodePath(path)}`, {
     method: 'PUT',
     body: JSON.stringify({
@@ -126,7 +133,15 @@ async function putFile(env, path, contentB64, message, sha) {
       ...(sha ? { sha } : {}),
     }),
   });
-  if (!res.ok) throw new Error(`PUT ${path} failed: ${res.status} ${await res.text()}`);
+  if (!res.ok) {
+    const bodyText = await res.text();
+    const isRace = res.status === 409 || (res.status === 422 && bodyText.includes('sha'));
+    if (isRace && attempt < 5) {
+      const latest = await getFile(env, path);
+      return putFile(env, path, contentB64, message, latest?.sha, attempt + 1);
+    }
+    throw new Error(`PUT ${path} failed: ${res.status} ${bodyText}`);
+  }
   return res.json();
 }
 

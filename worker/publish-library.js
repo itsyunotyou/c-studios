@@ -141,6 +141,12 @@ async function putFile(env, path, contentB64, message, sha, attempt = 1) {
     const bodyText = await res.text();
     const isRace = res.status === 409 || (res.status === 422 && bodyText.includes('sha'));
     if (isRace && attempt < 3) {
+      // A 422 here (as opposed to 409) means our GET said this file didn't
+      // exist but the PUT says it does — GitHub's Contents API read path
+      // can lag slightly behind a very recent write from the other writer.
+      // An immediate re-GET can see the exact same stale answer that
+      // caused this in the first place; give it a moment to catch up.
+      await new Promise(r => setTimeout(r, attempt * 750));
       const latest = await getFile(env, path);
       return putFile(env, path, contentB64, message, latest?.sha, attempt + 1);
     }

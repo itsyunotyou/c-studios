@@ -58,75 +58,94 @@ async function processCategory(category) {
   const outDir = join(IMAGES_ROOT, category);
   const incomingDir = join(INCOMING_ROOT, category);
 
+  // Multiple catalog entries can legitimately share one cover file (the
+  // same image reused across a few rows) — group by basename so a shared
+  // _incoming/ raw source only gets deleted once every entry that needs it
+  // this run has actually been processed against it. Deleting it after
+  // just the first one to finish used to permanently strand the rest:
+  // their `color` would never get computed since the source was already
+  // gone, so every future publish kept re-flagging and re-staging the same
+  // file for nothing.
+  const groups = new Map();
   for (const entry of entries) {
     if (!entry.image) { skippedNoFile++; continue; }
+    const base = basename(entry.image, extname(entry.image));
+    if (!groups.has(base)) groups.set(base, []);
+    groups.get(base).push(entry);
+  }
 
-    const ext = extname(entry.image);
-    const base = basename(entry.image, ext);
+  for (const [base, group] of groups) {
     const thumbPath = join(outDir, `${base}-thumb.webp`);
     const largePath = join(outDir, `${base}-large.webp`);
-    const needsThumb = !existsSync(thumbPath);
-    const needsLarge = !existsSync(largePath);
-
-    // Tally what's already done before we even need a raw source.
-    const needsColor = !entry.color;
-    if (!needsColor) colorAlreadyPresent++;
-    if (!needsThumb) thumbAlreadyPresent++;
-    if (!needsLarge) largeAlreadyPresent++;
-    if (!needsColor && !needsThumb && !needsLarge) continue;
-
-    // Find a raw source: canonical public/ path first (the rare manually
-    // -added case), else a staged upload waiting in _incoming/.
-    let srcPath = resolve('public' + entry.image);
+    let srcPath = null;
     let fromIncoming = false;
-    if (!existsSync(srcPath)) {
-      srcPath = findByBase(incomingDir, base);
-      fromIncoming = !!srcPath;
-    }
-    if (!srcPath || !existsSync(srcPath)) {
-      skippedNoFile++;
-      continue;
-    }
 
-    // 1) Dominant color
-    if (needsColor) {
-      try {
-        const { dominant } = await sharp(srcPath).stats();
-        entry.color = [dominant.r, dominant.g, dominant.b];
-        coloredCount++;
-      } catch (e) {
-        console.warn(`  color fail ${entry.image}: ${e.message}`);
+    for (const entry of group) {
+      const needsThumb = !existsSync(thumbPath);
+      const needsLarge = !existsSync(largePath);
+      const needsColor = !entry.color;
+      if (!needsColor) colorAlreadyPresent++;
+      if (!needsThumb) thumbAlreadyPresent++;
+      if (!needsLarge) largeAlreadyPresent++;
+      if (!needsColor && !needsThumb && !needsLarge) continue;
+
+      // Find a raw source: canonical public/ path first (the rare manually
+      // -added case), else a staged upload waiting in _incoming/. Resolved
+      // per entry (not hoisted above the loop) since the canonical path is
+      // entry-specific even when the basename is shared.
+      if (!srcPath) {
+        srcPath = resolve('public' + entry.image);
+        if (!existsSync(srcPath)) {
+          srcPath = findByBase(incomingDir, base);
+          fromIncoming = !!srcPath;
+        }
+      }
+      if (!srcPath || !existsSync(srcPath)) {
+        skippedNoFile++;
+        continue;
+      }
+
+      // 1) Dominant color
+      if (needsColor) {
+        try {
+          const { dominant } = await sharp(srcPath).stats();
+          entry.color = [dominant.r, dominant.g, dominant.b];
+          coloredCount++;
+        } catch (e) {
+          console.warn(`  color fail ${entry.image}: ${e.message}`);
+        }
+      }
+
+      // 2) Thumbnail
+      if (needsThumb) {
+        try {
+          await sharp(srcPath)
+            .resize(THUMB_WIDTH, null, { withoutEnlargement: true })
+            .webp({ quality: THUMB_QUALITY })
+            .toFile(thumbPath);
+          thumbedCount++;
+        } catch (e) {
+          console.warn(`  thumb fail ${entry.image}: ${e.message}`);
+        }
+      }
+
+      // 3) Large variant
+      if (needsLarge) {
+        try {
+          await sharp(srcPath)
+            .resize(LARGE_WIDTH, null, { withoutEnlargement: true })
+            .webp({ quality: LARGE_QUALITY })
+            .toFile(largePath);
+          largedCount++;
+        } catch (e) {
+          console.warn(`  large fail ${entry.image}: ${e.message}`);
+        }
       }
     }
 
-    // 2) Thumbnail
-    if (needsThumb) {
-      try {
-        await sharp(srcPath)
-          .resize(THUMB_WIDTH, null, { withoutEnlargement: true })
-          .webp({ quality: THUMB_QUALITY })
-          .toFile(thumbPath);
-        thumbedCount++;
-      } catch (e) {
-        console.warn(`  thumb fail ${entry.image}: ${e.message}`);
-      }
-    }
-
-    // 3) Large variant
-    if (needsLarge) {
-      try {
-        await sharp(srcPath)
-          .resize(LARGE_WIDTH, null, { withoutEnlargement: true })
-          .webp({ quality: LARGE_QUALITY })
-          .toFile(largePath);
-        largedCount++;
-      } catch (e) {
-        console.warn(`  large fail ${entry.image}: ${e.message}`);
-      }
-    }
-
-    // Raw staged uploads are transient — once both variants exist, discard it.
-    if (fromIncoming && existsSync(thumbPath) && existsSync(largePath)) {
+    // Raw staged uploads are transient — once every entry sharing this
+    // basename has had its turn, discard it.
+    if (fromIncoming && existsSync(srcPath) && existsSync(thumbPath) && existsSync(largePath)) {
       unlinkSync(srcPath);
     }
   }

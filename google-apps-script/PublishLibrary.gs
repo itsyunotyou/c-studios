@@ -93,7 +93,7 @@ function publishAll() {
       const rows = collectRows(sheet);
       const needsImage = planCategory(endpoint, secret, category, rows);
       const images = encodeImages(rows, imagesByBase, needsImage, hasTimeLeft);
-      const res = callEndpoint(endpoint, secret, category, rows, images);
+      const res = callEndpointBatched(endpoint, secret, category, rows, images);
       const ranOutOfTime = !hasTimeLeft() && Object.keys(images).length < needsImage.size;
       results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`
         + (ranOutOfTime ? ' (time budget reached — run Publish again to continue the rest)' : ''));
@@ -271,4 +271,43 @@ function callEndpoint(endpoint, secret, category, rows, images) {
     throw new Error(`HTTP ${code}: ${res.getContentText()}`);
   }
   return JSON.parse(res.getContentText());
+}
+
+// Apps Script's own URLFetch POST body cap (~50MB) is per-request, not
+// per-run — a backlog of covers that never got a computed color (see the
+// "reference unchanged" comment in encodeImages) can mean enough base64
+// piles up in one go to blow that even though it's well within the time
+// budget. Stays well under the cap and splits `images` across as many
+// commit calls as needed; sending the same full `rows` with each batch is
+// safe because the endpoint treats an image it just wrote in an earlier
+// batch as "same reference, not yet processed" and skips re-staging it.
+const MAX_BATCH_PAYLOAD_BYTES = 20 * 1024 * 1024;
+
+function callEndpointBatched(endpoint, secret, category, rows, images) {
+  const keys = Object.keys(images);
+  if (keys.length === 0) return callEndpoint(endpoint, secret, category, rows, images);
+
+  let entries = 0;
+  let staged = 0;
+  let batch = {};
+  let batchSize = 0;
+
+  const flush = () => {
+    if (Object.keys(batch).length === 0) return;
+    const res = callEndpoint(endpoint, secret, category, rows, batch);
+    entries = res.entries;
+    staged += res.staged;
+    batch = {};
+    batchSize = 0;
+  };
+
+  for (const key of keys) {
+    const size = images[key].length;
+    if (batchSize > 0 && batchSize + size > MAX_BATCH_PAYLOAD_BYTES) flush();
+    batch[key] = images[key];
+    batchSize += size;
+  }
+  flush();
+
+  return { entries, staged };
 }

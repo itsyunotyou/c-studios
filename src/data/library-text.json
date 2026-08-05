@@ -1247,7 +1247,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MarkFisher_CapitalistRealism:IsThereNoAlternative?_2012_JY.jpg"
+    "image": "/images/library/text/MarkFisher_CapitalistRealism:IsThereNoAlternative?_2012_JY.jpg",
+    "color": [
+      216,
+      72,
+      56
+    ]
   },
   {
     "title": "Reconceptualizing Cultural Literacy as a Dialogic Practice",

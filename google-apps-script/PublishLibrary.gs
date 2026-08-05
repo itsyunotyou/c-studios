@@ -63,11 +63,16 @@ function publishAll() {
 
   // TEMPORARY — Logger.log buffers in memory and is lost if the script is
   // force-killed for exceeding the execution cap, so it can't catch a hang.
-  // Script Properties writes commit immediately, so a checkpoint written
-  // right before each slow step survives even a timeout kill. Check
-  // DEBUG_CHECKPOINT in Script Properties after a failed run. Remove once
-  // resolved.
-  const checkpoint = (msg) => props.setProperty('DEBUG_CHECKPOINT', `${new Date().toISOString()} ${msg}`);
+  // Script Properties writes commit immediately and survive that. Logs
+  // accumulate (not overwrite) so the full run is visible afterward even
+  // though it now finishes in seconds — check DEBUG_LOG in Script
+  // Properties. Remove once resolved.
+  props.deleteProperty('DEBUG_LOG');
+  const checkpoint = (msg) => {
+    const line = `${new Date().toISOString()} ${msg}`;
+    const prev = props.getProperty('DEBUG_LOG') || '';
+    props.setProperty('DEBUG_LOG', (prev ? prev + '\n' : '') + line);
+  };
 
   const rootFolder = DriveApp.getFolderById(folderId);
   const results = [];
@@ -83,9 +88,9 @@ function publishAll() {
 
     checkpoint(`${category}: before findSubfolder`);
     const categoryFolder = findSubfolder(rootFolder, category);
-    checkpoint(`${category}: before indexDriveFolder`);
+    checkpoint(`${category}: subfolder ${categoryFolder ? 'found: ' + categoryFolder.getName() : 'NOT FOUND'}`);
     const imagesByBase = categoryFolder ? indexDriveFolder(categoryFolder) : {};
-    checkpoint(`${category}: indexed ${Object.keys(imagesByBase).length} files`);
+    checkpoint(`${category}: indexed ${Object.keys(imagesByBase).length} files: ${Object.keys(imagesByBase).slice(0, 15).join(', ')}`);
     if (!categoryFolder) {
       results.push(`${category}: no "${category}" subfolder found under DRIVE_FOLDER_ID — image matching skipped`);
     }
@@ -95,9 +100,9 @@ function publishAll() {
       const rows = collectRows(sheet);
       checkpoint(`${category}: collected ${rows.length} rows, before planCategory`);
       const needsImage = planCategory(endpoint, secret, category, rows);
-      checkpoint(`${category}: plan needs ${needsImage.size} images, before encodeImages`);
+      checkpoint(`${category}: plan needs: ${[...needsImage].join(', ')}`);
       const images = encodeImages(rows, imagesByBase, needsImage);
-      checkpoint(`${category}: encoded ${Object.keys(images).length}, before callEndpoint`);
+      checkpoint(`${category}: encoded ${Object.keys(images).length}: ${Object.keys(images).join(', ')}, before callEndpoint`);
       const res = callEndpoint(endpoint, secret, category, rows, images);
       checkpoint(`${category}: callEndpoint done`);
       results.push(`${category}: ${res.entries} entries, ${res.staged} image(s) staged for processing`);

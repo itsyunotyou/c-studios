@@ -47,7 +47,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg"
+    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Untitled",
@@ -67,7 +72,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_\"12SelfPortraits\"_2020_CI.jpg"
+    "image": "/images/library/image/FridaOrupabo_\"12SelfPortraits\"_2020_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "Untitled",
@@ -107,7 +117,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_\"VeniceBiennale2019:MayYouLiveinInterestingTimes\"_2019_CI.jpg"
+    "image": "/images/library/image/FridaOrupabo_\"VeniceBiennale2019:MayYouLiveinInterestingTimes\"_2019_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "You Better Know",
@@ -147,7 +162,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/FridaOrupabo_\"ThingsISawatNight\"_2023_CI.jpg"
+    "image": "/images/library/image/FridaOrupabo_\"ThingsISawatNight\"_2023_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Waiting",
@@ -382,7 +402,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/RoyDecarava_TwoWomen,Mannequin'sHand_1952_CI.jpg"
+    "image": "/images/library/image/RoyDecarava_TwoWomen,Mannequin'sHand_1952_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "This Was Tomorrow",
@@ -437,7 +462,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png"
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -447,7 +477,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg"
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",

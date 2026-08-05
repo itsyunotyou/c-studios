@@ -97,8 +97,19 @@ function textToB64(text) {
   return btoa(binary);
 }
 
+// isSafeFileSegment above only blocks path-escape vectors, not URL-reserved
+// characters — a title-derived filename legitimately containing "?" (as
+// "MarkFisher_CapitalistRealism:IsThereNoAlternative?_2012_JY.jpg" did)
+// otherwise gets truncated at that character once dropped straight into a
+// URL, since fetch parses everything from "?" on as a query string. Every
+// path segment needs its own encodeURIComponent — encoding the whole path
+// at once would also escape the "/" separators.
+function encodePath(path) {
+  return path.split('/').map(encodeURIComponent).join('/');
+}
+
 async function getFile(env, path) {
-  const res = await gh(env, `contents/${path}?ref=${BRANCH}`);
+  const res = await gh(env, `contents/${encodePath(path)}?ref=${BRANCH}`);
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`GET ${path} failed: ${res.status} ${await res.text()}`);
   const json = await res.json();
@@ -106,7 +117,7 @@ async function getFile(env, path) {
 }
 
 async function putFile(env, path, contentB64, message, sha) {
-  const res = await gh(env, `contents/${path}`, {
+  const res = await gh(env, `contents/${encodePath(path)}`, {
     method: 'PUT',
     body: JSON.stringify({
       message,

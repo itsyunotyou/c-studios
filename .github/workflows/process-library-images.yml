@@ -44,7 +44,24 @@ jobs:
           git add src/data/library-text.json src/data/library-image.json src/data/library-sound.json public/images/library _incoming
           if git diff --cached --quiet; then
             echo "Nothing to process — no commit."
-          else
-            git commit -m "Process staged library images [skip ci]"
-            git push origin main
+            exit 0
           fi
+          git commit -m "Process staged library images [skip ci]"
+
+          # The publish endpoint commits straight to main via the GitHub API
+          # for every staged image, completely outside this workflow — the
+          # concurrency group above only serializes against other runs of
+          # THIS workflow, not those. A burst of those commits landing while
+          # this job was busy in npm ci / the processing script means main
+          # has very likely moved on by now, so a plain push would reject as
+          # non-fast-forward. Rebase onto whatever's current and retry.
+          for i in 1 2 3 4 5; do
+            if git push origin main; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $i) — rebasing onto latest main and retrying."
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Still couldn't push after 5 attempts."
+          exit 1

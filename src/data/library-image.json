@@ -47,7 +47,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg"
+    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Untitled",
@@ -457,7 +462,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png"
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -467,7 +477,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg"
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -707,7 +722,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -787,7 +807,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -817,7 +842,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -891,7 +921,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",

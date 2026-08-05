@@ -807,7 +807,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -837,7 +842,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -911,7 +921,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -1155,7 +1170,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,PenelopeCruz_2006_CI.jpg"
+    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,PenelopeCruz_2006_CI.jpg",
+    "color": [
+      152,
+      40,
+      72
+    ]
   },
   {
     "title": "Rainbow Dance",
@@ -1239,7 +1259,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png",
+    "color": [
+      24,
+      24,
+      40
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2010",

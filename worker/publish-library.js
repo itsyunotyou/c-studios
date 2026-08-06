@@ -74,6 +74,20 @@ function isSafeFileSegment(s) {
     && !/[/\\]/.test(s) && !s.includes('..') && !/[\x00-\x1f]/.test(s);
 }
 
+// Astro's own public/ asset-copy cleanup builds a `new URL()` straight from
+// every filename it walks (see node_modules/astro/dist/core/fs/index.js),
+// so "#" or "?" anywhere in a real committed file's name gets parsed as a
+// fragment/query delimiter and silently truncates the path it stats,
+// breaking the site's build outright — this already happened for real
+// titles containing both ("Jeu de 54 cartes #30", "...Alternative?").
+// Real titles legitimately use these characters, so they're only stripped
+// from the STORED filename (what actually lands in the repo/public/) —
+// matching against Apps Script's raw Drive-derived keys still uses the
+// unsanitized name, since those still refer to the real file in Drive.
+function sanitizeForFilename(s) {
+  return s.replace(/[#?]/g, '');
+}
+
 async function gh(env, path, options = {}) {
   const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/${path}`, {
     ...options,
@@ -232,7 +246,11 @@ export async function handlePublishLibrary(request, env) {
       // of entries have had the same broken, extension-less reference sit
       // there since before Drive matching ever worked, so also retry
       // anything that was never actually staged into a real image/color.
-      if (oldBase !== base || !old.color) needsImage.add(base.toLowerCase());
+      // Compared against the SANITIZED base, since that's what oldBase was
+      // actually derived from (see sanitizeForFilename) — comparing against
+      // the raw base here would permanently read as "changed" for any title
+      // containing "#" or "?" and needlessly re-stage it on every publish.
+      if (oldBase !== sanitizeForFilename(base) || !old.color) needsImage.add(base.toLowerCase());
     }
     return new Response(JSON.stringify({ needsImage: [...needsImage] }), {
       headers: { 'Content-Type': 'application/json' },
@@ -265,9 +283,17 @@ export async function handlePublishLibrary(request, env) {
       };
       if (r.notes) entry.notes = r.notes;
 
+      // The stored path/filename is sanitized (see sanitizeForFilename)
+      // even though `base`/`uploadedExt` above stay raw — those still need
+      // to match Apps Script's raw Drive-derived keys in `images`, but
+      // what actually lands in the repo can't contain "#" or "?" without
+      // breaking Astro's build.
+      const storedBase = sanitizeForFilename(base);
+      const storedExt = uploadedExt ? sanitizeForFilename(uploadedExt) : undefined;
+
       const old = oldEntryFor(r, existingByKey);
       const oldBase = old ? old.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '') : null;
-      const sameImage = old && oldBase === base;
+      const sameImage = old && oldBase === storedBase;
 
       if (sameImage && old.color && !uploadedExt) {
         // Nothing changed — keep the existing (already-processed) image path
@@ -276,8 +302,8 @@ export async function handlePublishLibrary(request, env) {
         entry.image = old.image;
         entry.color = old.color;
       } else if (uploadedExt) {
-        entry.image = `/images/library/${category}/${uploadedExt}`;
-        staged.push({ path: `_incoming/${category}/${uploadedExt}`, b64: images[uploadedExt] });
+        entry.image = `/images/library/${category}/${storedExt}`;
+        staged.push({ path: `_incoming/${category}/${storedExt}`, b64: images[uploadedExt] });
       } else if (sameImage) {
         // Same file reference but not yet fully processed (e.g. a previous
         // publish is still mid-flight) — keep pointing at it, no new upload.
@@ -286,7 +312,7 @@ export async function handlePublishLibrary(request, env) {
         // Brand-new row with no matching upload — Apps Script should always
         // send one, but if it didn't, fall back to an extension-less path;
         // the site shows a grey placeholder until this is corrected.
-        entry.image = `/images/library/${category}/${base}`;
+        entry.image = `/images/library/${category}/${storedBase}`;
       }
       return entry;
     });

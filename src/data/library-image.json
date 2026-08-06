@@ -467,7 +467,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI"
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -1607,7 +1612,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI"
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Cinema in the Round",
@@ -1616,7 +1626,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI"
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Dream English Kid, 1964-1999 AD",
@@ -1676,7 +1691,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/ZofiaKulik+PrzemysławKwiek_Kwiekulik:ActivitieswithDobromierz_2008_JY.jpg"
+    "image": "/images/library/image/ZofiaKulik+PrzemysławKwiek_Kwiekulik:ActivitieswithDobromierz_2008_JY.jpg",
+    "color": [
+      120,
+      104,
+      72
+    ]
   },
   {
     "title": "World Finance Corporation and Associates, ca. 1970 - 84: Miami - Ajman - Bogota - Caracas (7th Version)",
@@ -1752,7 +1772,12 @@
     "by": "Jess Young",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY.png"
+    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Apparition, Blueberries",
@@ -1868,7 +1893,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/RobertRehfeldt_\"MakeaCreativeWorldNow\"_1976_JY.jpg"
+    "image": "/images/library/image/RobertRehfeldt_\"MakeaCreativeWorldNow\"_1976_JY.jpg",
+    "color": [
+      248,
+      248,
+      216
+    ]
   },
   {
     "title": "Jeu de 54 cartes #30",
@@ -1877,7 +1907,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/JorgeMolder_Jeude54cartes#30_2017_JY.jpg"
+    "image": "/images/library/image/JorgeMolder_Jeude54cartes#30_2017_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Choreartium (Three Men Jumping)",
@@ -1956,7 +1991,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/KurtBuchwald_Stehplätze-Störplätze_1984_JY.png"
+    "image": "/images/library/image/KurtBuchwald_Stehplätze-Störplätze_1984_JY.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Experimentum Crucis",
@@ -2021,7 +2061,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/SanjaIveković_PersonalCuts_1982_JY.jpg"
+    "image": "/images/library/image/SanjaIveković_PersonalCuts_1982_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Classroom (Book Cover)",
@@ -2128,7 +2173,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp"
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp",
+    "color": [
+      40,
+      56,
+      24
+    ]
   },
   {
     "title": "Common Side Effects",
@@ -2137,7 +2187,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp"
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp",
+    "color": [
+      40,
+      56,
+      24
+    ]
   },
   {
     "title": "Schema: Art-Public Space",
@@ -2146,7 +2201,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:Art-Public_2016-2022_CI.jpg"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:Art-Public_2016-2022_CI.jpg",
+    "color": [
+      200,
+      200,
+      216
+    ]
   },
   {
     "title": "Schema: Art as Movement",
@@ -2155,7 +2215,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:ArtasMovement_2025_CI.jpg"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:ArtasMovement_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Schema: Natural Friend + Natural Enemies",
@@ -2164,7 +2229,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:NaturalFriend+NaturalEnemies_2023_CI.jpg"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:NaturalFriend+NaturalEnemies_2023_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Village Voice Covers",
@@ -2187,7 +2257,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GregTate_BadBrains:HardcoreofDarkness_1982_CI.png"
+    "image": "/images/library/image/GregTate_BadBrains:HardcoreofDarkness_1982_CI.png",
+    "color": [
+      216,
+      216,
+      200
+    ]
   },
   {
     "title": "Nobody Loves a Genius Child",
@@ -2350,7 +2425,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NoahDavis_SingleMotherwithFatheroutofthePicture_2007-8_CI.webp"
+    "image": "/images/library/image/NoahDavis_SingleMotherwithFatheroutofthePicture_2007-8_CI.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Man with Alien and a Shotgun",
@@ -2541,7 +2621,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -2550,7 +2635,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -2559,7 +2649,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Street Portraits of 1980's NYC",
@@ -3435,7 +3530,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -3444,7 +3544,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "ANDERSON .PAAK x KAYTRANDA \"Twin Flame\"",
@@ -5715,7 +5820,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Deceptive Détournement' of the Physical, after 'The Détournement' of the 'Social/Human'",

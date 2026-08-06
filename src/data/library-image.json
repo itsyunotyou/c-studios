@@ -467,7 +467,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI"
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -1607,7 +1612,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI"
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Cinema in the Round",
@@ -1616,7 +1626,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI"
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Dream English Kid, 1964-1999 AD",
@@ -2718,7 +2733,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2727,7 +2747,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2736,7 +2761,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Hero",
@@ -2745,7 +2775,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png",
+    "color": [
+      120,
+      168,
+      120
+    ]
   },
   {
     "title": "Hero",
@@ -2754,7 +2789,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png",
+    "color": [
+      120,
+      168,
+      120
+    ]
   },
   {
     "title": "Hero",
@@ -2763,7 +2803,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png",
+    "color": [
+      120,
+      168,
+      120
+    ]
   },
   {
     "title": "Hero",
@@ -2772,7 +2817,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI.png",
+    "color": [
+      120,
+      168,
+      120
+    ]
   },
   {
     "title": "City of God",
@@ -2781,7 +2831,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "City of God",
@@ -2790,7 +2845,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "City of God",
@@ -2799,7 +2859,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "City of God",
@@ -2808,7 +2873,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "City of God",
@@ -2817,7 +2887,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "City of God",
@@ -2826,7 +2901,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -2835,7 +2915,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -2844,7 +2929,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -2853,7 +2943,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2862,7 +2957,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2871,7 +2971,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2880,7 +2985,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Be Kind Rewind",
@@ -3002,7 +3112,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -3012,7 +3127,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -3022,7 +3142,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -3032,7 +3157,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -3042,7 +3172,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg"
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg",
+    "color": [
+      184,
+      168,
+      152
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -3052,7 +3187,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg"
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg",
+    "color": [
+      184,
+      168,
+      152
+    ]
   },
   {
     "title": "Extrema Noir 2023 (Stage Design)",
@@ -3098,7 +3238,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "N/A",
@@ -3130,7 +3275,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg"
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg",
+    "color": [
+      40,
+      24,
+      120
+    ]
   },
   {
     "title": "Disney's Pinocchio",
@@ -3176,7 +3326,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI.jpg",
+    "color": [
+      216,
+      200,
+      200
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3185,7 +3340,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI.jpg",
+    "color": [
+      216,
+      200,
+      200
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3194,7 +3354,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI.jpg",
+    "color": [
+      216,
+      200,
+      200
+    ]
   },
   {
     "title": "Togo National Museum",
@@ -3286,7 +3451,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI.jpg"
+    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Untitled 17",
@@ -3295,7 +3465,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SammyBaloji_Untitled17_2004-06_CI.webp"
+    "image": "/images/library/image/SammyBaloji_Untitled17_2004-06_CI.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Precious Renee Tucker Live (Poster)",
@@ -3434,7 +3609,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png"
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png",
+    "color": [
+      72,
+      56,
+      40
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3443,7 +3623,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3452,7 +3637,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3461,7 +3651,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3470,7 +3665,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3479,7 +3679,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3488,7 +3693,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3497,7 +3707,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3506,7 +3721,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg"
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -3552,7 +3772,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI.jpg"
+    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "STEVE LACEY \"HELMET\"",
@@ -3561,7 +3786,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI.jpg"
+    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Hyperfate",
@@ -3584,7 +3814,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI.jpg"
+    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Comme des Garçons S/S 1995",
@@ -3684,7 +3919,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "The Businessmen",
@@ -3763,7 +4003,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OsamuTezuka_AstroBoy:TheBraveinSpace_1964_CI.jpg"
+    "image": "/images/library/image/OsamuTezuka_AstroBoy:TheBraveinSpace_1964_CI.jpg",
+    "color": [
+      104,
+      136,
+      152
+    ]
   },
   {
     "title": "A Library as Large as the World",
@@ -3956,7 +4201,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png"
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png",
+    "color": [
+      72,
+      56,
+      40
+    ]
   },
   {
     "title": "Paprika",
@@ -3965,7 +4215,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png"
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png",
+    "color": [
+      72,
+      56,
+      40
+    ]
   },
   {
     "title": "Safe",
@@ -5990,7 +6245,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI.jpg"
+    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Off-Centre (Album Cover)",

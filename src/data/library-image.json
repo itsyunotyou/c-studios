@@ -5179,7 +5179,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png"
+    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png",
+    "color": [
+      152,
+      168,
+      200
+    ]
   },
   {
     "title": "Arcadia",
@@ -5188,7 +5193,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg"
+    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Vasulka Effect: Grandparents of Video Art",
@@ -5197,7 +5207,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg"
+    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "How Not to Be Seen: A Fucking Didactic Educational",
@@ -5206,7 +5221,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HitoSteyerl_HowNottoBeSeen:AFuckingDidacticEducational_2013_JY.jpg"
+    "image": "/images/library/image/HitoSteyerl_HowNottoBeSeen:AFuckingDidacticEducational_2013_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "As You See",
@@ -5215,7 +5235,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg"
+    "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Cinema in the Round",
@@ -5224,7 +5249,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_JY.jpg"
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Workers Leaving the Lumière Factory",
@@ -5233,7 +5263,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/LouisLumière_WorkersLeavingtheLumièreFactory_1895_JY.jpg"
+    "image": "/images/library/image/LouisLumière_WorkersLeavingtheLumièreFactory_1895_JY.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "A Trip to the Moon",
@@ -5242,7 +5277,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/GeorgesMéliès_ATriptotheMoon_1902_JY.jpg"
+    "image": "/images/library/image/GeorgesMéliès_ATriptotheMoon_1902_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Goin' On",
@@ -5251,7 +5291,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/WilliamMcRae_Goin'On_1981_JY.jpg"
+    "image": "/images/library/image/WilliamMcRae_Goin'On_1981_JY.jpg",
+    "color": [
+      40,
+      24,
+      24
+    ]
   },
   {
     "title": "David Foster Wallace on Reading, Consumerism, and American Politics",
@@ -5260,7 +5305,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/ManufacturingIntellect(YouTubeChannel)_DavidFosterWallaceonReading,Consumerism,andAmericanPolitics_2003_JY.png"
+    "image": "/images/library/image/ManufacturingIntellect(YouTubeChannel)_DavidFosterWallaceonReading,Consumerism,andAmericanPolitics_2003_JY.png",
+    "color": [
+      152,
+      184,
+      200
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -5269,7 +5319,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI.png"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI.png",
+    "color": [
+      104,
+      104,
+      88
+    ]
   },
   {
     "title": "City of God",
@@ -5278,7 +5333,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KátiaLund+FernandoMeirelles_CityofGod_2002_CI.png"
+    "image": "/images/library/image/KátiaLund+FernandoMeirelles_CityofGod_2002_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Hero",
@@ -5287,7 +5347,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ZhangYimou_Hero_2002_CI.jpg"
+    "image": "/images/library/image/ZhangYimou_Hero_2002_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -5296,7 +5361,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BarryJenkins_MedicineforMelancholy_2008_CI.jpg"
+    "image": "/images/library/image/BarryJenkins_MedicineforMelancholy_2008_CI.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -5305,7 +5375,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DavidLynch_MulhollandDrive_2001_CI.png"
+    "image": "/images/library/image/DavidLynch_MulhollandDrive_2001_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -5337,7 +5412,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_TheMirror_1975_CI.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_TheMirror_1975_CI.jpg",
+    "color": [
+      24,
+      40,
+      24
+    ]
   },
   {
     "title": "Peter Hujar's Day",
@@ -5346,7 +5426,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/IraSachs_PeterHujar'sDay_2025_CI.png"
+    "image": "/images/library/image/IraSachs_PeterHujar'sDay_2025_CI.png",
+    "color": [
+      136,
+      88,
+      56
+    ]
   },
   {
     "title": "Mos Def and the Black Jack Johnson - Umi Says (Live at the Bowery Ballroom, New York, July 31 2001)",
@@ -5364,7 +5449,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/DavidLynch_TwinPeaks_1990_AHI.jpg"
+    "image": "/images/library/image/DavidLynch_TwinPeaks_1990_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "No Hammer (Original Music Video)",
@@ -5373,7 +5463,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/A$APNAST_NoHammer(OriginalMusicVideo)_2025_AHI.jpg"
+    "image": "/images/library/image/A$APNAST_NoHammer(OriginalMusicVideo)_2025_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Drop (Original Music Video)",
@@ -5382,7 +5477,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/ThePharcyde_Drop(OriginalMusicVideo)_1995_AHI.jpg"
+    "image": "/images/library/image/ThePharcyde_Drop(OriginalMusicVideo)_1995_AHI.jpg",
+    "color": [
+      120,
+      120,
+      136
+    ]
   },
   {
     "title": "Babylon",
@@ -6103,7 +6203,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_CI"
+    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_CI",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "SWAYING IN THE WIND",
@@ -6896,7 +7001,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/CraigKauffman_TheWallGoesAway_1969_ME.jpg"
+    "image": "/images/library/image/CraigKauffman_TheWallGoesAway_1969_ME.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "N/A",
@@ -6914,7 +7024,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/AlvaroBarrington_SeatoC,PrettyMas,Mangrove,R2_2023_ME.webp"
+    "image": "/images/library/image/AlvaroBarrington_SeatoC,PrettyMas,Mangrove,R2_2023_ME.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Protective Bae",
@@ -6923,7 +7038,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/AidanDuffy_ProtectiveBae_2022-23_ME.webp"
+    "image": "/images/library/image/AidanDuffy_ProtectiveBae_2022-23_ME.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Dun Cana Remix",
@@ -6932,7 +7052,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/AidanDuffy_DunCanaRemix_2022-23_ME.png"
+    "image": "/images/library/image/AidanDuffy_DunCanaRemix_2022-23_ME.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "The Machine Age (Installation Shot)",
@@ -6941,7 +7066,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/CarolBove_TheMachineAge(InstallationShot)_2024_ME.jpg"
+    "image": "/images/library/image/CarolBove_TheMachineAge(InstallationShot)_2024_ME.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "derelict house Jamaica",
@@ -6959,7 +7089,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png",
+    "color": [
+      184,
+      72,
+      72
+    ]
   },
   {
     "title": "Carribean Commercial",
@@ -6968,7 +7103,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png",
+    "color": [
+      184,
+      72,
+      72
+    ]
   },
   {
     "title": "Carribean Commercial",
@@ -6977,7 +7117,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png",
+    "color": [
+      184,
+      72,
+      72
+    ]
   },
   {
     "title": "Carribean Commercial",
@@ -6986,7 +7131,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png",
+    "color": [
+      184,
+      72,
+      72
+    ]
   },
   {
     "title": "Carribean Commercial",
@@ -6995,7 +7145,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png",
+    "color": [
+      184,
+      72,
+      72
+    ]
   },
   {
     "title": "Carribean Commercial",
@@ -7004,7 +7159,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI.png",
+    "color": [
+      184,
+      72,
+      72
+    ]
   },
   {
     "title": "Talks about Jamaican Life",
@@ -7013,7 +7173,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Talks about Jamaican Life",
@@ -7022,7 +7187,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Talks about Jamaican Life",
@@ -7031,7 +7201,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Talks about Jamaican Life",
@@ -7040,7 +7215,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "G Sudden and Boofka in Jamaica",
@@ -7058,7 +7238,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianKanagaki_ChinatownNews_2019_CI.jpg"
+    "image": "/images/library/image/BrianKanagaki_ChinatownNews_2019_CI.jpg",
+    "color": [
+      8,
+      8,
+      24
+    ]
   },
   {
     "title": "Leopold Takawira Street, Harare, Zimbabwe, 2016",
@@ -7067,7 +7252,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GuyTillim_LeopoldTakawiraStreet,Harare,Zimbabwe,2016_2016_CI.jpg"
+    "image": "/images/library/image/GuyTillim_LeopoldTakawiraStreet,Harare,Zimbabwe,2016_2016_CI.jpg",
+    "color": [
+      168,
+      184,
+      216
+    ]
   },
   {
     "title": "N/A",
@@ -7130,7 +7320,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DavidAnastácio+FilipePenajoia+JoaodeBotelho_REKKI-DinamoTypefaces_2019_CI.jpg"
+    "image": "/images/library/image/DavidAnastácio+FilipePenajoia+JoaodeBotelho_REKKI-DinamoTypefaces_2019_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -7148,7 +7343,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MartinParr_ThePhoneBook:1998-2002_2002_CI.jpg"
+    "image": "/images/library/image/MartinParr_ThePhoneBook:1998-2002_2002_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Hands Touching at Player's Ball",
@@ -7157,7 +7357,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JonLowenstein_HandsTouchingatPlayer'sBall_2000_CI.jpg"
+    "image": "/images/library/image/JonLowenstein_HandsTouchingatPlayer'sBall_2000_CI.jpg",
+    "color": [
+      72,
+      40,
+      24
+    ]
   },
   {
     "title": "See Naples and Die",
@@ -7166,7 +7371,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SamGregg_SeeNaplesandDie_2019_CI.jpg"
+    "image": "/images/library/image/SamGregg_SeeNaplesandDie_2019_CI.jpg",
+    "color": [
+      216,
+      200,
+      200
+    ]
   },
   {
     "title": "The Gods",
@@ -7175,7 +7385,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/IvarWiggin_TheGods_2010-2012_CI.jpg"
+    "image": "/images/library/image/IvarWiggin_TheGods_2010-2012_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Fashion Shoot, Brixton Market",
@@ -7184,7 +7399,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ArmetFrancis_FashionShoot,BrixtonMarket_1973_CI.jpg"
+    "image": "/images/library/image/ArmetFrancis_FashionShoot,BrixtonMarket_1973_CI.jpg",
+    "color": [
+      120,
+      152,
+      184
+    ]
   },
   {
     "title": "Violet Isle: A Duet of Photographs from Cuba",
@@ -7193,7 +7413,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AlexWebb+RebeccaNorrisWebb_VioletIsle:ADuetofPhotographsfromCuba_1993_CI.jpg"
+    "image": "/images/library/image/AlexWebb+RebeccaNorrisWebb_VioletIsle:ADuetofPhotographsfromCuba_1993_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -7234,7 +7459,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AlexisJamet_NantoNaturingDays_2024_CI.png"
+    "image": "/images/library/image/AlexisJamet_NantoNaturingDays_2024_CI.png",
+    "color": [
+      8,
+      24,
+      24
+    ]
   },
   {
     "title": "Kodwo Eshun: More Brilliant Than The Sun: Adventures In Science Fiction Cover",
@@ -7252,7 +7482,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JanSlothouber+WilliamGraatsma_CentrumCubischeConstructies_1965-70_CI.jpg"
+    "image": "/images/library/image/JanSlothouber+WilliamGraatsma_CentrumCubischeConstructies_1965-70_CI.jpg",
+    "color": [
+      8,
+      24,
+      24
+    ]
   },
   {
     "title": "Timeline Tools",
@@ -7261,7 +7496,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/FlorianKräutli_TimelineTools_2016_CI.png"
+    "image": "/images/library/image/FlorianKräutli_TimelineTools_2016_CI.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Philippine Cassette Archive",
@@ -7270,7 +7510,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChiaAmisola_PhilippineCassetteArchive_2022_CI.png"
+    "image": "/images/library/image/ChiaAmisola_PhilippineCassetteArchive_2022_CI.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Manasseh Sound System, Notting Hill Carnival, London, 1994",
@@ -7279,7 +7524,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DavidCorio_ManassehSoundSystem,NottingHillCarnival,London,1994_1994_CI.jpg"
+    "image": "/images/library/image/DavidCorio_ManassehSoundSystem,NottingHillCarnival,London,1994_1994_CI.jpg",
+    "color": [
+      8,
+      24,
+      24
+    ]
   },
   {
     "title": "Herbie Hancock 1976 Performance",
@@ -7315,7 +7565,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoelWebster_Elixir(AlbumCover)_1974_CI.png"
+    "image": "/images/library/image/JoelWebster_Elixir(AlbumCover)_1974_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Antologia Vol. 1 (Album Cover)",
@@ -7333,7 +7588,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NewMusicalExpress_Page28_1981_CI.jpg"
+    "image": "/images/library/image/NewMusicalExpress_Page28_1981_CI.jpg",
+    "color": [
+      248,
+      216,
+      152
+    ]
   },
   {
     "title": "Poster",

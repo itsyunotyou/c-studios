@@ -141,13 +141,16 @@ async function ghJson(env, path, options) {
 // The only race left is the ref update itself (someone else — almost
 // always the image-processing Action — advancing main between our GET and
 // our PATCH). That's a genuine conflict, not a cache-lag artifact, so it's
-// handled by rebuilding the tree on top of the new HEAD and retrying,
-// rather than just re-sending the same PATCH.
-async function commitFiles(env, files, message, attempt = 1) {
-  const ref = await ghJson(env, `git/refs/heads/${BRANCH}`);
-  const parentSha = ref.object.sha;
-  const parentCommit = await ghJson(env, `git/commits/${parentSha}`);
-
+// handled by rebuilding the tree on top of the new HEAD and retrying.
+//
+// Blobs are created ONCE, outside the retry loop — they're content-
+// addressed and independent of which commit ends up using them, so a ref
+// conflict only needs the tree/commit/ref-update redone against the fresh
+// parent. Retrying the whole thing including blob creation is what caused
+// an actual "Too many subrequests" failure: a batch of 10 files costs ~15
+// subrequests for one attempt, and repeating that on every retry (blobs
+// included) pushed a 2-retry run to ~45, right at the cap.
+async function commitFiles(env, files, message) {
   const tree = [];
   for (const file of files) {
     const blob = await ghJson(env, 'git/blobs', {
@@ -157,28 +160,31 @@ async function commitFiles(env, files, message, attempt = 1) {
     tree.push({ path: file.path, mode: '100644', type: 'blob', sha: blob.sha });
   }
 
-  const newTree = await ghJson(env, 'git/trees', {
-    method: 'POST',
-    body: JSON.stringify({ base_tree: parentCommit.tree.sha, tree }),
-  });
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const ref = await ghJson(env, `git/refs/heads/${BRANCH}`);
+    const parentSha = ref.object.sha;
+    const parentCommit = await ghJson(env, `git/commits/${parentSha}`);
 
-  const newCommit = await ghJson(env, 'git/commits', {
-    method: 'POST',
-    body: JSON.stringify({ message, tree: newTree.sha, parents: [parentSha] }),
-  });
+    const newTree = await ghJson(env, 'git/trees', {
+      method: 'POST',
+      body: JSON.stringify({ base_tree: parentCommit.tree.sha, tree }),
+    });
 
-  const updateRes = await gh(env, `git/refs/heads/${BRANCH}`, {
-    method: 'PATCH',
-    body: JSON.stringify({ sha: newCommit.sha }),
-  });
-  if (!updateRes.ok) {
-    const bodyText = await updateRes.text();
-    if (attempt < 3) {
-      return commitFiles(env, files, message, attempt + 1);
+    const newCommit = await ghJson(env, 'git/commits', {
+      method: 'POST',
+      body: JSON.stringify({ message, tree: newTree.sha, parents: [parentSha] }),
+    });
+
+    const updateRes = await gh(env, `git/refs/heads/${BRANCH}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ sha: newCommit.sha }),
+    });
+    if (updateRes.ok) return newCommit.sha;
+
+    if (attempt === 3) {
+      throw new Error(`update ref failed: ${updateRes.status} ${await updateRes.text()}`);
     }
-    throw new Error(`update ref failed: ${updateRes.status} ${bodyText}`);
   }
-  return newCommit.sha;
 }
 
 export async function handlePublishLibrary(request, env) {

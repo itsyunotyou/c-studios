@@ -24,10 +24,19 @@
 // process-library-images GitHub Action turns those into the actual
 // thumb/large webp variants + dominant color and commits the result.
 //
-// Each GitHub Contents API write is its own commit (simpler than building a
-// single atomic multi-file commit via the Git Data API) — a publish with
-// several new images lands as a handful of commits in quick succession
-// rather than one. Fine for how infrequently this runs.
+// The library-<category>.json rewrite and every staged image land in ONE
+// atomic commit via the Git Data API (blobs + tree + commit + ref update),
+// not one Contents-API PUT per file. That used to be N+1 separate commits
+// per batch, and every single one of them independently triggers
+// process-library-images.yml (it filters on any push touching
+// _incoming/**) — which takes 20-45+ seconds to run. A batch of 10 staged
+// images could fire that Action 10 times while this same request was still
+// mid-batch writing more commits, and the Action's own commit (adding
+// colors, deleting processed _incoming/ files) landing in that window is
+// exactly what caused the recurring sha conflicts. One commit per batch
+// means one trigger, which shrinks that collision window by the same
+// factor as the batch size — and tree entries don't need an existing sha
+// at all, so the whole per-file conflict dance just doesn't apply anymore.
 
 const OWNER = 'itsyunotyou';
 const REPO = 'c-studios';
@@ -116,43 +125,60 @@ async function getFile(env, path) {
   return { sha: json.sha, content: json.content };
 }
 
-// The process-library-images Action commits its own changes (computed
-// colors, thumb/large variants) to these same files independently of this
-// endpoint, straight to main — so a PUT here can land right as that
-// Action's commit does too. A 409 means the `sha` we read is now stale; a
-// 422 "sha wasn't supplied" means the file didn't exist on our GET but does
-// now. Both are the same read-then-write race, not a real failure — refetch
-// the current sha and retry instead of failing the whole publish over it.
-// Capped at 3 attempts rather than more: Apps Script's UrlFetchApp.fetch
-// blocks synchronously on this whole chain, and its caller (publishAll) is
-// already working against a tight budget against Apps Script's own 6-minute
-// execution cap — a long retry chain on one file eats straight into that.
-async function putFile(env, path, contentB64, message, sha, attempt = 1) {
-  const res = await gh(env, `contents/${encodePath(path)}`, {
-    method: 'PUT',
-    body: JSON.stringify({
-      message,
-      content: contentB64,
-      branch: BRANCH,
-      ...(sha ? { sha } : {}),
-    }),
-  });
-  if (!res.ok) {
-    const bodyText = await res.text();
-    const isRace = res.status === 409 || (res.status === 422 && bodyText.includes('sha'));
-    if (isRace && attempt < 3) {
-      // A 422 here (as opposed to 409) means our GET said this file didn't
-      // exist but the PUT says it does — GitHub's Contents API read path
-      // can lag slightly behind a very recent write from the other writer.
-      // An immediate re-GET can see the exact same stale answer that
-      // caused this in the first place; give it a moment to catch up.
-      await new Promise(r => setTimeout(r, attempt * 750));
-      const latest = await getFile(env, path);
-      return putFile(env, path, contentB64, message, latest?.sha, attempt + 1);
-    }
-    throw new Error(`PUT ${path} failed: ${res.status} ${bodyText}`);
-  }
+async function ghJson(env, path, options) {
+  const res = await gh(env, path, options);
+  if (!res.ok) throw new Error(`${options?.method || 'GET'} ${path} failed: ${res.status} ${await res.text()}`);
   return res.json();
+}
+
+// Commits every file in `files` ({path, contentB64}) as ONE atomic commit
+// via the Git Data API, instead of one Contents-API PUT per file — see the
+// header comment above for why that distinction actually matters here.
+// Tree entries reference files purely by JSON `path` strings (no URL
+// involved), so this also sidesteps the whole "?" -in-filename truncation
+// class of bug that the Contents API's URL-based paths were exposed to.
+//
+// The only race left is the ref update itself (someone else — almost
+// always the image-processing Action — advancing main between our GET and
+// our PATCH). That's a genuine conflict, not a cache-lag artifact, so it's
+// handled by rebuilding the tree on top of the new HEAD and retrying,
+// rather than just re-sending the same PATCH.
+async function commitFiles(env, files, message, attempt = 1) {
+  const ref = await ghJson(env, `git/refs/heads/${BRANCH}`);
+  const parentSha = ref.object.sha;
+  const parentCommit = await ghJson(env, `git/commits/${parentSha}`);
+
+  const tree = [];
+  for (const file of files) {
+    const blob = await ghJson(env, 'git/blobs', {
+      method: 'POST',
+      body: JSON.stringify({ content: file.contentB64, encoding: 'base64' }),
+    });
+    tree.push({ path: file.path, mode: '100644', type: 'blob', sha: blob.sha });
+  }
+
+  const newTree = await ghJson(env, 'git/trees', {
+    method: 'POST',
+    body: JSON.stringify({ base_tree: parentCommit.tree.sha, tree }),
+  });
+
+  const newCommit = await ghJson(env, 'git/commits', {
+    method: 'POST',
+    body: JSON.stringify({ message, tree: newTree.sha, parents: [parentSha] }),
+  });
+
+  const updateRes = await gh(env, `git/refs/heads/${BRANCH}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ sha: newCommit.sha }),
+  });
+  if (!updateRes.ok) {
+    const bodyText = await updateRes.text();
+    if (attempt < 3) {
+      return commitFiles(env, files, message, attempt + 1);
+    }
+    throw new Error(`update ref failed: ${updateRes.status} ${bodyText}`);
+  }
+  return newCommit.sha;
 }
 
 export async function handlePublishLibrary(request, env) {
@@ -259,17 +285,14 @@ export async function handlePublishLibrary(request, env) {
       return entry;
     });
 
-  await putFile(
-    env, jsonPath,
-    textToB64(JSON.stringify(finalEntries, null, 2) + '\n'),
-    `Publish ${category} library from sheet`,
-    existingFile?.sha
-  );
-
-  for (const file of staged) {
-    const existing = await getFile(env, file.path);
-    await putFile(env, file.path, file.b64, `Stage ${file.path}`, existing?.sha);
-  }
+  const filesToCommit = [
+    { path: jsonPath, contentB64: textToB64(JSON.stringify(finalEntries, null, 2) + '\n') },
+    ...staged.map(f => ({ path: f.path, contentB64: f.b64 })),
+  ];
+  const message = staged.length
+    ? `Publish ${category} library from sheet (+${staged.length} staged image${staged.length === 1 ? '' : 's'})`
+    : `Publish ${category} library from sheet`;
+  await commitFiles(env, filesToCommit, message);
 
   return new Response(JSON.stringify({
     ok: true,

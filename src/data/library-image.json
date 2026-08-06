@@ -467,7 +467,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png"
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -892,7 +897,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -902,7 +912,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -912,7 +927,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "M.C",
@@ -966,7 +986,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -975,7 +1000,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -984,7 +1014,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -1299,7 +1334,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png",
+    "color": [
+      24,
+      24,
+      40
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2010",
@@ -1308,7 +1348,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png",
+    "color": [
+      24,
+      24,
+      40
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2012",
@@ -1317,7 +1362,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI.png",
+    "color": [
+      24,
+      24,
+      40
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1327,7 +1377,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1337,7 +1392,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1347,7 +1407,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1357,7 +1422,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Apex",
@@ -1367,7 +1437,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Apex",
@@ -1377,7 +1452,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Apex",
@@ -1387,7 +1467,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Apex",
@@ -1397,7 +1482,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Apex",
@@ -1407,7 +1497,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Le Rage",
@@ -1446,7 +1541,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png"
+    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "akingdoncomethas",
@@ -1455,7 +1555,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png"
+    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "akingdoncomethas",
@@ -1464,7 +1569,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png"
+    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Ibaraki Kasugaoka Church (Church of the Light)",
@@ -1474,7 +1584,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI.jpg"
+    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Ibaraki Kasugaoka Church (Church of the Light)",
@@ -1483,7 +1598,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI.jpg"
+    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Cinema in the Round",

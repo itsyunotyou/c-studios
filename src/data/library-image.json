@@ -467,12 +467,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/AllenGolder-Carpenter_Sojourn_2025_CI.png"
   },
   {
     "title": "Sojourn",
@@ -1757,7 +1752,7 @@
     "by": "Jess Young",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY"
+    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY.png"
   },
   {
     "title": "Apparition, Blueberries",
@@ -1873,7 +1868,7 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/RobertRehfeldt_\"MakeaCreativeWorldNow\"_1976_JY"
+    "image": "/images/library/image/RobertRehfeldt_\"MakeaCreativeWorldNow\"_1976_JY.jpg"
   },
   {
     "title": "Jeu de 54 cartes #30",
@@ -1882,7 +1877,7 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/JorgeMolder_Jeude54cartes#30_2017_JY"
+    "image": "/images/library/image/JorgeMolder_Jeude54cartes#30_2017_JY.jpg"
   },
   {
     "title": "Choreartium (Three Men Jumping)",
@@ -1961,7 +1956,7 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/KurtBuchwald_Stehplätze-Störplätze_1984_JY"
+    "image": "/images/library/image/KurtBuchwald_Stehplätze-Störplätze_1984_JY.png"
   },
   {
     "title": "Experimentum Crucis",
@@ -2026,7 +2021,7 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/SanjaIveković_PersonalCuts_1982_JY"
+    "image": "/images/library/image/SanjaIveković_PersonalCuts_1982_JY.jpg"
   },
   {
     "title": "The Classroom (Book Cover)",
@@ -2133,7 +2128,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI"
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp"
   },
   {
     "title": "Common Side Effects",
@@ -2142,7 +2137,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI"
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI.webp"
   },
   {
     "title": "Schema: Art-Public Space",
@@ -2151,7 +2146,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:Art-Public_2016-2022_CI"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:Art-Public_2016-2022_CI.jpg"
   },
   {
     "title": "Schema: Art as Movement",

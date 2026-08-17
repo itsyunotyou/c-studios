@@ -62,30 +62,23 @@ function oldEntryFor(r, existingByKey) {
   }));
 }
 
-// Both the sheet's FILE NAME value and the images map's keys end up in a
-// GitHub file path below, and both come from the request body — untrusted
-// as far as this code is concerned, whether or not the real Apps Script is
-// what sent it. Real filenames here (derived from titles) legitimately use
-// all sorts of punctuation — ! & ' , @ [ ] etc. — so this blocks the actual
-// path-escape vectors (separators, ".." traversal, control characters)
-// rather than whitelisting an exact charset.
-function isSafeFileSegment(s) {
-  return typeof s === 'string' && s.length > 0
-    && !/[/\\]/.test(s) && !s.includes('..') && !/[\x00-\x1f]/.test(s);
-}
-
 // Astro's own public/ asset-copy cleanup builds a `new URL()` straight from
 // every filename it walks (see node_modules/astro/dist/core/fs/index.js),
 // so "#" or "?" anywhere in a real committed file's name gets parsed as a
 // fragment/query delimiter and silently truncates the path it stats,
 // breaking the site's build outright — this already happened for real
-// titles containing both ("Jeu de 54 cartes #30", "...Alternative?").
-// Real titles legitimately use these characters, so they're only stripped
-// from the STORED filename (what actually lands in the repo/public/) —
-// matching against Apps Script's raw Drive-derived keys still uses the
-// unsanitized name, since those still refer to the real file in Drive.
+// titles containing both ("Jeu de 54 cartes #30", "...Alternative?"). "/"
+// and "\" get replaced too — Drive genuinely allows a literal "/" in a
+// filename (Drive isn't path-based, so nothing stops it), and the FILE NAME
+// convention's "N/A" placeholder for a missing title or year means this
+// happens constantly in practice — one slipping into a GitHub tree path
+// creates a phantom subdirectory instead of landing as a file. Real titles
+// legitimately use all of these characters, so they're only stripped from
+// the STORED filename (what actually lands in the repo/public/) — matching
+// against Apps Script's raw Drive-derived keys still uses the unsanitized
+// name, since those still refer to the real file in Drive.
 function sanitizeForFilename(s) {
-  return s.replace(/[#?]/g, '');
+  return s.replace(/[#?]/g, '').replace(/[/\\]/g, '_').replace(/[\x00-\x1f]/g, '');
 }
 
 async function gh(env, path, options = {}) {
@@ -120,13 +113,14 @@ function textToB64(text) {
   return btoa(binary);
 }
 
-// isSafeFileSegment above only blocks path-escape vectors, not URL-reserved
-// characters — a title-derived filename legitimately containing "?" (as
-// "MarkFisher_CapitalistRealism:IsThereNoAlternative?_2012_JY.jpg" did)
-// otherwise gets truncated at that character once dropped straight into a
-// URL, since fetch parses everything from "?" on as a query string. Every
-// path segment needs its own encodeURIComponent — encoding the whole path
-// at once would also escape the "/" separators.
+// sanitizeForFilename strips "#"/"?" from stored filenames, but a title-
+// derived filename could still legitimately contain other URL-reserved
+// characters — a stray "?" (as in "MarkFisher_CapitalistRealism:
+// IsThereNoAlternative?_2012_JY.jpg" once did) otherwise gets truncated at
+// that character once dropped straight into a URL, since fetch parses
+// everything from "?" on as a query string. Every path segment needs its
+// own encodeURIComponent — encoding the whole path at once would also
+// escape the "/" separators.
 function encodePath(path) {
   return path.split('/').map(encodeURIComponent).join('/');
 }
@@ -237,8 +231,7 @@ export async function handlePublishLibrary(request, env) {
     const needsImage = new Set();
     for (const r of rows) {
       if (!r.title || !r.fileName) continue;
-      const rawBase = String(r.fileName).trim();
-      const base = isSafeFileSegment(rawBase) ? rawBase : '';
+      const base = String(r.fileName).trim();
       if (!base) continue;
       const old = oldEntryFor(r, existingByKey);
       const oldBase = old ? old.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '') : null;
@@ -264,13 +257,14 @@ export async function handlePublishLibrary(request, env) {
       // The sheet's FILE NAME column is always extension-less — the real
       // extension only exists on the actual uploaded file (or, for a row
       // that hasn't changed, on the existing entry we already committed).
-      // Stripped of path separators and leading dots: this value flows
-      // straight into a GitHub file path below, and rows come from the
-      // sheet — untrusted input as far as this code is concerned.
-      const rawBase = String(r.fileName).trim();
-      const base = isSafeFileSegment(rawBase) ? rawBase : '';
+      // `base`/`uploadedExt` here stay raw (rows come from the sheet —
+      // untrusted input as far as this code is concerned) because they're
+      // only ever used to MATCH against Apps Script's raw Drive-derived
+      // keys, never written into a path directly — sanitizeForFilename()
+      // below is what makes the STORED path safe.
+      const base = String(r.fileName).trim();
       const uploadedExt = base
-        ? Object.keys(images || {}).find(k => k.startsWith(base + '.') && isSafeFileSegment(k))
+        ? Object.keys(images || {}).find(k => k.startsWith(base + '.'))
         : undefined;
 
       const entry = {
@@ -285,9 +279,10 @@ export async function handlePublishLibrary(request, env) {
 
       // The stored path/filename is sanitized (see sanitizeForFilename)
       // even though `base`/`uploadedExt` above stay raw — those still need
-      // to match Apps Script's raw Drive-derived keys in `images`, but
-      // what actually lands in the repo can't contain "#" or "?" without
-      // breaking Astro's build.
+      // to match Apps Script's raw Drive-derived keys in `images`, but what
+      // actually lands in the repo can't contain "#" or "?" without
+      // breaking Astro's build, or "/" / "\" without creating a phantom
+      // subdirectory instead of a file.
       const storedBase = sanitizeForFilename(base);
       const storedExt = uploadedExt ? sanitizeForFilename(uploadedExt) : undefined;
 

@@ -124,6 +124,32 @@ function findSubfolder(parentFolder, name) {
   return null;
 }
 
+const MIME_EXTENSIONS = {
+  'image/jpeg': 'jpg',
+  'image/png': 'png',
+  'image/gif': 'gif',
+  'image/webp': 'webp',
+  'image/heic': 'heic',
+  'image/bmp': 'bmp',
+  'image/tiff': 'tiff',
+};
+const KNOWN_EXTENSIONS = new Set(Object.values(MIME_EXTENSIONS));
+
+// A dot in a Drive filename doesn't reliably mark a real extension — titles
+// routinely contain one on their own ("DavidR.Trask_...", "GregYaro_
+// ANDERSON.PAAKx..."), and naively splitting on the last dot truncates the
+// base down to whatever comes before that incidental dot instead of the
+// real name. Only treat it as an extension boundary if what follows is
+// actually a recognized one.
+function splitExt(name) {
+  const dot = name.lastIndexOf('.');
+  if (dot > 0) {
+    const ext = name.slice(dot + 1).toLowerCase();
+    if (KNOWN_EXTENSIONS.has(ext)) return { base: name.slice(0, dot), ext };
+  }
+  return { base: name, ext: null };
+}
+
 // Map every file in a Drive folder by its basename (no extension,
 // lowercased) so it can be matched against the sheet's extension-less
 // FILE NAME column regardless of case or actual file type.
@@ -132,9 +158,7 @@ function indexDriveFolder(folder) {
   const map = {};
   while (files.hasNext()) {
     const file = files.next();
-    const name = file.getName();
-    const dot = name.lastIndexOf('.');
-    const base = (dot > 0 ? name.slice(0, dot) : name).trim().toLowerCase();
+    const base = splitExt(file.getName()).base.trim().toLowerCase();
     map[base] = file;
   }
   return map;
@@ -202,27 +226,20 @@ function collectRows(sheet) {
   return rows;
 }
 
-const MIME_EXTENSIONS = {
-  'image/jpeg': 'jpg',
-  'image/png': 'png',
-  'image/gif': 'gif',
-  'image/webp': 'webp',
-  'image/heic': 'heic',
-  'image/bmp': 'bmp',
-  'image/tiff': 'tiff',
-};
-
 // Some covers in Drive turn out to have no extension in their stored name
-// at all (confirmed by hand — Drive shows the name completely bare). The
+// at all (confirmed by hand — Drive shows the name completely bare), and an
+// incidental dot elsewhere in the name isn't a reliable signal that one's
+// already there either — splitExt() only trusts a recognized extension. The
 // worker keys staged images by "<base>.<ext>" to recover the extension, so
-// a name with no dot in it would silently never match despite being read
-// and sent correctly. Falls back to the file's actual MIME type instead of
-// trusting the name to have one.
+// a name split as extension-less would silently never match despite being
+// read and sent correctly. Falls back to the file's actual MIME type in
+// that case.
 function keyFor(file) {
   const name = file.getName();
-  if (name.lastIndexOf('.') > 0) return name;
-  const ext = MIME_EXTENSIONS[file.getMimeType()];
-  return ext ? `${name}.${ext}` : name;
+  const { base, ext } = splitExt(name);
+  if (ext) return name;
+  const mimeExt = MIME_EXTENSIONS[file.getMimeType()];
+  return mimeExt ? `${base}.${mimeExt}` : name;
 }
 
 // Only reads + base64-encodes the Drive files the endpoint's dry-run plan

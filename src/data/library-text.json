@@ -24,7 +24,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/EmenualeCoccia_PhilosophyoftheHome_2024_N_A.png"
+    "image": "/images/library/text/EmenualeCoccia_PhilosophyoftheHome_2024_N_A.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Ways of Seeing",
@@ -233,7 +238,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/NaomiKlein_NoLogo_2000_N_A.png"
+    "image": "/images/library/text/NaomiKlein_NoLogo_2000_N_A.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Quiet",
@@ -242,7 +252,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/VictoriaAdukweiBulley_Quiet_2022_N_A.webp"
+    "image": "/images/library/text/VictoriaAdukweiBulley_Quiet_2022_N_A.webp",
+    "color": [
+      120,
+      56,
+      24
+    ]
   },
   {
     "title": "Issue 1: Let's Get Physical",
@@ -251,7 +266,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_N_A.webp"
+    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_N_A.webp",
+    "color": [
+      248,
+      104,
+      72
+    ]
   },
   {
     "title": "Call and Response: Journeys in African Art",
@@ -260,7 +280,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse:JourneysinAfricanArt_2000_N_A.png"
+    "image": "/images/library/text/SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse:JourneysinAfricanArt_2000_N_A.png",
+    "color": [
+      216,
+      104,
+      104
+    ]
   },
   {
     "title": "Black Art Notes",
@@ -269,7 +294,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/TomLloyd_BlackArtNotes_1971_N_A.jpg"
+    "image": "/images/library/text/TomLloyd_BlackArtNotes_1971_N_A.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Samuel Fosso",
@@ -278,7 +308,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_N_A.jpg"
+    "image": "/images/library/text/MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_N_A.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "The Ghosts of Songs: The Film Art of the Black Audio Film Collective",
@@ -287,7 +322,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/KodwoEshun+AnjalikaSagar_TheGhostsofSongs:TheFilmArtoftheBlackAudioFilmCollective_2007_N_A.jpg"
+    "image": "/images/library/text/KodwoEshun+AnjalikaSagar_TheGhostsofSongs:TheFilmArtoftheBlackAudioFilmCollective_2007_N_A.jpg",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "Structural Anthropology",
@@ -296,7 +336,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ClaudeLévi-Strauss_StructuralAnthropology_1968_N_A.jpg"
+    "image": "/images/library/text/ClaudeLévi-Strauss_StructuralAnthropology_1968_N_A.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Familiar Stranger: A Life Between Two Islands",
@@ -305,7 +350,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/StuartHall_FamiliarStranger:ALifeBetweenTwoIslands_2017_N_A.jpg"
+    "image": "/images/library/text/StuartHall_FamiliarStranger:ALifeBetweenTwoIslands_2017_N_A.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "Modern Nature: Journals, 1989-1990",
@@ -328,7 +378,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/GermaineAcogny_DanseAfricaine_1994_N_A.jpg"
+    "image": "/images/library/text/GermaineAcogny_DanseAfricaine_1994_N_A.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Assata: An Autobiography",
@@ -1795,7 +1850,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "text",
-    "image": "/images/library/text/ForColoredGirlswhoHaveConsideredSuicide_WhentheRainbowisEnuf_NtozakeShange_2025_AHI.jpg"
+    "image": "/images/library/text/ForColoredGirlswhoHaveConsideredSuicide_WhentheRainbowisEnuf_NtozakeShange_2025_AHI.jpg",
+    "color": [
+      24,
+      136,
+      168
+    ]
   },
   {
     "title": "Cruising Utopia: The Then and There of Queer Futurity",

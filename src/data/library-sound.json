@@ -104,7 +104,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/JuleeCruise_Falling_1989_CI"
+    "image": "/images/library/sound/JuleeCruise_Falling_1989_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Quiet Light",
@@ -505,7 +510,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Actress_FireandLight_2020_CI"
+    "image": "/images/library/sound/Actress_FireandLight_2020_CI.jpg",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "Burn",
@@ -794,7 +804,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/KingKrule_BabyBlue_2013_CI"
+    "image": "/images/library/sound/KingKrule_BabyBlue_2013_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "When the Sun Hits",

@@ -6377,7 +6377,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6414,7 +6419,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Cerberus Theaters, Washington, D.C.",
@@ -6432,7 +6442,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_03.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Bolaji Badejo in Alien",
@@ -6627,7 +6642,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_04.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Biblioteca Vasconcelos",
@@ -6762,7 +6782,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_CI.jpg"
+    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "SWAYING IN THE WIND",
@@ -6822,7 +6847,7 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ColumbiaRecords_MilesDavis_ca.1970_CI"
+    "image": "/images/library/image/ColumbiaRecords_MilesDavis_ca.1970_CI.jpg"
   },
   {
     "title": "Verner Panton Multifunctional Living Unit",
@@ -6845,7 +6870,7 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/QuasarKhanh_DomusNo.462_1968_CI"
+    "image": "/images/library/image/QuasarKhanh_DomusNo.462_1968_CI.jpg"
   },
   {
     "title": "Levi's Silver Tab",
@@ -6910,7 +6935,7 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ullsteinbildDtl._JosephineBakerinderRevue'Bitteeinsteigen'_1928_CI"
+    "image": "/images/library/image/ullsteinbildDtl._JosephineBakerinderRevue'Bitteeinsteigen'_1928_CI.jpg"
   },
   {
     "title": "Alek Wek",
@@ -6975,7 +7000,7 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichaelOchs_Norma-JeanWofford_ca.1958_CI"
+    "image": "/images/library/image/MichaelOchs_Norma-JeanWofford_ca.1958_CI.jpg"
   },
   {
     "title": "Courrèges Edge",
@@ -7068,7 +7093,7 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/PaulSharits_FrozenFilmFrame_ca.1966-77_ME"
+    "image": "/images/library/image/PaulSharits_FrozenFilmFrame_ca.1966-77_ME.webp"
   },
   {
     "title": "So much intellectual work to remain wrong",
@@ -7287,7 +7312,7 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/MaryLovelaceO'Neal_BlueWhalea.k.a.12_1983_ME"
+    "image": "/images/library/image/MaryLovelaceO'Neal_BlueWhalea.k.a.12_1983_ME.webp"
   },
   {
     "title": "Porte-Bouteilles",
@@ -7534,7 +7559,7 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/EricN.Mack_CuttheCameras_2022_ME"
+    "image": "/images/library/image/EricN.Mack_CuttheCameras_2022_ME.webp"
   },
   {
     "title": "Triple Disk Red Metal Flake - Black Edge",
@@ -7865,12 +7890,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
-    "color": [
-      200,
-      200,
-      168
-    ]
+    "image": "/images/library/image/N_A_N_A_N_A_CI_05.jpg"
   },
   {
     "title": "01marocco.jpg",

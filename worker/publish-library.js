@@ -292,22 +292,22 @@ export async function handlePublishLibrary(request, env) {
       const storedExt = uploadedExt ? sanitizeForFilename(uploadedExt) : undefined;
 
       const old = oldEntryFor(r, existingByKey);
-      const oldBase = old ? old.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '') : null;
-      const sameImage = old && oldBase === storedBase;
 
-      if (sameImage && old.color && !uploadedExt) {
-        // Nothing changed — keep the existing (already-processed) image path
-        // and color as-is rather than re-deriving a path we can't get the
-        // real extension for.
-        entry.image = old.image;
-        entry.color = old.color;
-      } else if (uploadedExt) {
+      if (uploadedExt) {
         entry.image = `/images/library/${category}/${storedExt}`;
         staged.push({ path: `_incoming/${category}/${storedExt}`, b64: images[uploadedExt] });
-      } else if (sameImage) {
-        // Same file reference but not yet fully processed (e.g. a previous
-        // publish is still mid-flight) — keep pointing at it, no new upload.
+      } else if (old) {
+        // No new upload came in for this row this run — keep whatever's
+        // already published rather than re-deriving a path from `base` and
+        // possibly replacing a working reference with a broken guess. This
+        // also covers rows whose sheet FILE NAME didn't resolve to a safe
+        // path (e.g. a literal "/" from an "N/A" year or a slash in the
+        // title, which makes `base` empty every single run) — comparing a
+        // freshly-recomputed base against the old one used to treat that as
+        // "changed" on every publish and stomp the image field down to a
+        // bare, extension-less directory path each time.
         entry.image = old.image;
+        if (old.color) entry.color = old.color;
       } else {
         // Brand-new row with no matching upload — Apps Script should always
         // send one, but if it didn't, fall back to an extension-less path;

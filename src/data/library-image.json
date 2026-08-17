@@ -7625,7 +7625,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_05.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "01marocco.jpg",
@@ -7643,25 +7648,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_06.jpg"
-  },
-  {
-    "title": "N/A",
-    "author": "N/A",
-    "year": "N/A",
-    "added": "22/06/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_07.webp"
-  },
-  {
-    "title": "N/A",
-    "author": "N/A",
-    "year": "N/A",
-    "added": "22/06/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_08.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "N/A",
@@ -7676,6 +7668,29 @@
       200,
       168
     ]
+  },
+  {
+    "title": "N/A",
+    "author": "N/A",
+    "year": "N/A",
+    "added": "22/06/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
+  },
+  {
+    "title": "N/A",
+    "author": "N/A",
+    "year": "N/A",
+    "added": "22/06/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg"
   },
   {
     "title": "REKKI - Dinamo Typefaces",
@@ -7698,12 +7713,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KristieMuller_N_A_2016_CI.jpg",
-    "color": [
-      200,
-      216,
-      184
-    ]
+    "image": "/images/library/image/KristieMuller_N_A_2016_CI.jpg"
   },
   {
     "title": "The Phone Book: 1998 - 2002",
@@ -7796,12 +7806,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/WaynO'HaraReid_N_A_N_A_CI.jpg",
-    "color": [
-      8,
-      8,
-      24
-    ]
+    "image": "/images/library/image/WaynO'HaraReid_N_A_N_A_CI.jpg"
   },
   {
     "title": "Installation of David Hockney's A Bigger Grand Canyon 1998",
@@ -7810,7 +7815,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/N_A_InstallationofDavidHockney'sABiggerGrandCanyon1998_2022_CI.webp"
   },
   {
     "title": "Instant City",
@@ -7847,7 +7852,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/N_A_KodwoEshun:MoreBrilliantThanTheSun:AdventuresInScienceFictionCover_N_A_CI.webp"
   },
   {
     "title": "Centrum Cubische Constructies",
@@ -7912,7 +7917,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/N_A_HerbieHancock1976Performance_1976_CI.png"
   },
   {
     "title": "Jeff Mills",
@@ -7921,7 +7926,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/N_A_JeffMills_N_A_CI.jpg"
   },
   {
     "title": "Herbie Hancock's back cover and linear notes for \"Sunlight\" 1978",
@@ -7930,7 +7935,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/N_A_HerbieHancock'sbackcoverandlinearnotesfor\"Sunlight\"(1978)_1978_CI.png"
   },
   {
     "title": "Elixir (Album Cover)",
@@ -8004,7 +8009,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/WalkerArtCenter_CreativeBlackMusic:SelectionsfromtheArchives_N_A_CI.png"
   },
   {
     "title": "Method: limit = 32",
@@ -8013,7 +8018,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/"
+    "image": "/images/library/image/EzekielAquinoStudio_Method:limit=32_N_A_CI.png"
   },
   {
     "title": "Black Boxes online archive",

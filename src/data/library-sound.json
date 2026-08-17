@@ -323,7 +323,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/MilesDavis_RatedX_1974_CI.jpg"
+    "image": "/images/library/sound/MilesDavis_RatedX_GetUpWithIt_1974_JY.jpg",
+    "color": [
+      72,
+      40,
+      56
+    ]
   },
   {
     "title": "Trapping in C Major",
@@ -980,7 +985,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/1955epilepsy_get2kno_2020_CI.jpg"
+    "image": "/images/library/sound/1995epilepsy_get2kno_1995epilepsy_2020_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Couture",
@@ -1059,7 +1069,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_2026_CI.jpg"
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI"
   },
   {
     "title": "Wey U",
@@ -5266,7 +5276,7 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/"
+    "image": "/images/library/sound/Novelist_NoWeapons_SeeMe_NoWeapons_SeeMe_2019_AHI.jpg"
   },
   {
     "title": "It's Cold Out",
@@ -5517,7 +5527,7 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/"
+    "image": "/images/library/sound/ShaneChubbz+DAP+Stan_Holiday_WhereI'mFrom_HolidayWhereI'mFrom_2013_AHI.jpg"
   },
   {
     "title": "Fit Me In",
@@ -5586,7 +5596,7 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/"
+    "image": "/images/library/sound/KEYAH_BLUE_tilBliss_tilBliss_2019_AHI.jpg"
   },
   {
     "title": "Plastic 100*C",

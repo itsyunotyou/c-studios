@@ -323,7 +323,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/MilesDavis_RatedX_1974_CI.jpg"
+    "image": "/images/library/sound/MilesDavis_RatedX_GetUpWithIt_1974_JY.jpg",
+    "color": [
+      72,
+      40,
+      56
+    ]
   },
   {
     "title": "Trapping in C Major",
@@ -980,7 +985,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/1955epilepsy_get2kno_2020_CI.jpg"
+    "image": "/images/library/sound/1995epilepsy_get2kno_1995epilepsy_2020_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Couture",
@@ -1059,7 +1069,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_2026_CI.jpg"
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI"
   },
   {
     "title": "Wey U",
@@ -4504,7 +4514,7 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/RichieCulver_Restaurants(Feat.MoorMother)_ScreamIfYouDon'tExist_2023_CI"
+    "image": "/images/library/sound/RichieCulver_Restaurants(Feat.MoorMother)_ScreamIfYouDon'tExist_2023_CI.jpg"
   },
   {
     "title": "Lust Is Stronger Than Us",
@@ -4653,7 +4663,7 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/SpaceAfrika_B£E(feat.Blackhaine)_HonestLabour_2021_CI"
+    "image": "/images/library/sound/SpaceAfrika_B£E(feat.Blackhaine)_HonestLabour_2021_CI.jpg"
   },
   {
     "title": "Magic",
@@ -4760,7 +4770,7 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Niontay+LeradoKhalil_3am@Tony's-feat.LeradoKhalil_SouljaHateRepellant_2025_CI"
+    "image": "/images/library/sound/Niontay+LeradoKhalil_3am@Tony's-feat.LeradoKhalil_SouljaHateRepellant_2025_CI.jpg"
   },
   {
     "title": "LYRICZ",
@@ -5152,7 +5162,7 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/Hante._Éternité_BetweenHope&Danger_2017_AHI"
+    "image": "/images/library/sound/Hante._Éternité_BetweenHope&Danger_2017_AHI.jpg"
   },
   {
     "title": "SpottieOttieDopalicious",
@@ -5175,7 +5185,7 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/BOOTS+Deradoorian_AQUARIA(feat.Deradoorian)_2015_AHI"
+    "image": "/images/library/sound/BOOTS+Deradoorian_AQUARIA(feat.Deradoorian)_2015_AHI.jpg"
   },
   {
     "title": "Will Blast",

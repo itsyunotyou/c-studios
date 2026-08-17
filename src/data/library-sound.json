@@ -2808,7 +2808,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/trickpony_Heart2Heart_24_7Heaven_2025_JY.jpg"
+    "image": "/images/library/sound/trickpony_Heart2Heart_24_7Heaven_2025_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "distance",
@@ -2999,7 +3004,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Outkast_LoveHater_Speakerboxxx_TheLoveBelow_2003_CI.jpg"
+    "image": "/images/library/sound/Outkast_LoveHater_Speakerboxxx_TheLoveBelow_2003_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "POPPING",
@@ -3148,7 +3158,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/UnnaturalFunkBand_LivingInThePast_StranegeHappeningsb_wLivingInThePast_2013_CI.jpg"
+    "image": "/images/library/sound/UnnaturalFunkBand_LivingInThePast_StranegeHappeningsb_wLivingInThePast_2013_CI.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "LOVE TRIP",
@@ -3348,7 +3363,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Greenflow_NoOtherLifeWithoutYou_IGot'Chab_wNoOther_1977_CI.jpg"
+    "image": "/images/library/sound/Greenflow_NoOtherLifeWithoutYou_IGot'Chab_wNoOther_1977_CI.jpg",
+    "color": [
+      216,
+      200,
+      152
+    ]
   },
   {
     "title": "Let Us Pray",
@@ -3664,7 +3684,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/TheStrokes_HardToExplain_HardToExplain_NewYorkCityCops_2002_CI.jpg"
+    "image": "/images/library/sound/TheStrokes_HardToExplain_HardToExplain_NewYorkCityCops_2002_CI.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "Stay Awake",
@@ -4317,7 +4342,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/DonnyHathaway_MakeItYourOwn_N_A_1975_CI.jpg"
+    "image": "/images/library/sound/DonnyHathaway_MakeItYourOwn_N_A_1975_CI.jpg",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Practice - Instrumental",
@@ -5276,7 +5306,12 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/Novelist_NoWeapons_SeeMe_NoWeapons_SeeMe_2019_AHI.jpg"
+    "image": "/images/library/sound/Novelist_NoWeapons_SeeMe_NoWeapons_SeeMe_2019_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "It's Cold Out",
@@ -5527,7 +5562,12 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/ShaneChubbz+DAP+Stan_Holiday_WhereI'mFrom_HolidayWhereI'mFrom_2013_AHI.jpg"
+    "image": "/images/library/sound/ShaneChubbz+DAP+Stan_Holiday_WhereI'mFrom_HolidayWhereI'mFrom_2013_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Fit Me In",
@@ -5596,7 +5636,12 @@
     "added": "23/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/KEYAH_BLUE_tilBliss_tilBliss_2019_AHI.jpg"
+    "image": "/images/library/sound/KEYAH_BLUE_tilBliss_tilBliss_2019_AHI.jpg",
+    "color": [
+      8,
+      8,
+      56
+    ]
   },
   {
     "title": "Plastic 100*C",

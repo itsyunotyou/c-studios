@@ -5440,7 +5440,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NoahDavis_Congo_2015_CI.png"
+    "image": "/images/library/image/NoahDavis_Congo_2015_CI.png",
+    "color": [
+      88,
+      104,
+      88
+    ]
   },
   {
     "title": "Hair Advertisement",
@@ -5449,7 +5454,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DeanaLawson_HairAdvertisement_2005_CI.webp"
+    "image": "/images/library/image/DeanaLawson_HairAdvertisement_2005_CI.webp",
+    "color": [
+      56,
+      24,
+      8
+    ]
   },
   {
     "title": "A Time of Innocence",
@@ -5724,7 +5734,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg"
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Debbie Harry",
@@ -6055,7 +6070,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png",
+    "color": [
+      104,
+      104,
+      88
+    ]
   },
   {
     "title": "City of God",
@@ -6120,7 +6140,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KatsuhiroOtomo_Akira_1988_CI.jpg"
+    "image": "/images/library/image/KatsuhiroOtomo_Akira_1988_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -6409,7 +6434,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS_1.png"
+    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS_1.png",
+    "color": [
+      200,
+      184,
+      168
+    ]
   },
   {
     "title": "Future Remembrance: Photography and Image Arts in Ghana (Still)",
@@ -6418,7 +6448,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS_2.png"
+    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS_2.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Untitled",
@@ -6455,7 +6490,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/KhatarMedia_FamilyArchive_2015_NS.jpg"
+    "image": "/images/library/image/KhatarMedia_FamilyArchive_2015_NS.jpg",
+    "color": [
+      216,
+      216,
+      200
+    ]
   },
   {
     "title": "Untitled",
@@ -6534,7 +6574,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_1.jpg"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_1.jpg",
+    "color": [
+      88,
+      72,
+      56
+    ]
   },
   {
     "title": "Untitled",
@@ -6543,7 +6588,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_2.png"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_2.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Untitled",
@@ -6552,7 +6602,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3.png"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled",

@@ -1041,7 +1041,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_1.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -1050,7 +1055,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_2.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -1073,7 +1083,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_1.jpg"
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -1082,7 +1097,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_2.jpg"
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -1091,7 +1111,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_3.jpg"
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -1100,7 +1125,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_4.jpg"
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -1390,7 +1420,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_1.png"
+    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_2.jpg",
+    "color": [
+      232,
+      232,
+      200
+    ]
   },
   {
     "title": "Rainbow Dance",
@@ -1590,27 +1625,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_1.png"
-  },
-  {
-    "title": "Apex",
-    "author": "Arthur Jafa",
-    "year": "2013",
-    "added": "08/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_2.png"
-  },
-  {
-    "title": "Apex",
-    "author": "Arthur Jafa",
-    "year": "2013",
-    "added": "08/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_3.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_5.png",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Apex",
@@ -1626,6 +1646,31 @@
       200,
       200
     ]
+  },
+  {
+    "title": "Apex",
+    "author": "Arthur Jafa",
+    "year": "2013",
+    "added": "08/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "notes": "Locally Grown",
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_5.png",
+    "color": [
+      200,
+      200,
+      200
+    ]
+  },
+  {
+    "title": "Apex",
+    "author": "Arthur Jafa",
+    "year": "2013",
+    "added": "08/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "notes": "Locally Grown",
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_4.png"
   },
   {
     "title": "Apex",
@@ -1693,12 +1738,7 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI_1.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/ArthurJafa_akingdoncomethas_2018_CI_2.png"
   },
   {
     "title": "akingdoncomethas",
@@ -1722,12 +1762,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI_2.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/TadaoAndo_IbarakiKasugaokaChurch(ChurchoftheLight)_1989_CI_1.jpg"
   },
   {
     "title": "Ibaraki Kasugaoka Church (Church of the Light)",
@@ -1750,12 +1785,7 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI_2.png",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_CI_1.png"
   },
   {
     "title": "Cinema in the Round",
@@ -2326,12 +2356,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI_2.webp",
-    "color": [
-      248,
-      232,
-      200
-    ]
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI_1.webp"
   },
   {
     "title": "Common Side Effects",
@@ -2480,12 +2505,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheasterGates_AClaySermonatWhitechapelGallery_2021_CI_3.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/TheasterGates_AClaySermonatWhitechapelGallery_2021_CI_1.jpg"
   },
   {
     "title": "A Clay Sermon at Whitechapel Gallery (Installation View)",
@@ -2494,12 +2514,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheasterGates_AClaySermonatWhitechapelGallery_2021_CI_3.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/TheasterGates_AClaySermonatWhitechapelGallery_2021_CI_2.jpg"
   },
   {
     "title": "A Clay Sermon at Whitechapel Gallery (Installation View)",
@@ -2536,12 +2551,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BobFosse_AllThatJazz_1979_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BobFosse_AllThatJazz_1979_CI_1.jpg"
   },
   {
     "title": "All That Jazz",
@@ -2550,12 +2560,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BobFosse_AllThatJazz_1979_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BobFosse_AllThatJazz_1979_CI_2.webp"
   },
   {
     "title": "All That Jazz",
@@ -2634,12 +2639,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI_3.webp",
-    "color": [
-      232,
-      216,
-      216
-    ]
+    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI_1.webp"
   },
   {
     "title": "Mirror",

@@ -2784,12 +2784,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6.jpg"
   },
   {
     "title": "City of God",
@@ -2798,12 +2793,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6.jpg"
   },
   {
     "title": "City of God",
@@ -2812,12 +2802,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6.jpg"
   },
   {
     "title": "City of God",
@@ -2826,7 +2811,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_4.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6.jpg"
   },
   {
     "title": "City of God",
@@ -2835,7 +2820,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_5.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6.jpg"
   },
   {
     "title": "City of God",
@@ -2853,7 +2838,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_1.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2862,7 +2847,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_2.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2880,7 +2865,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_1.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2889,7 +2874,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_2.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2963,15 +2948,6 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_1.jpg"
-  },
-  {
-    "title": "Mulholland Drive",
-    "author": "Peter Deming",
-    "year": "2001",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
     "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.webp",
     "color": [
       8,
@@ -2986,12 +2962,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.webp",
-    "color": [
-      8,
-      8,
-      104
-    ]
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_2.jpg"
   },
   {
     "title": "Mulholland Drive",
@@ -3000,12 +2971,16 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.webp",
-    "color": [
-      8,
-      8,
-      104
-    ]
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_3.webp"
+  },
+  {
+    "title": "Mulholland Drive",
+    "author": "Peter Deming",
+    "year": "2001",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4.webp"
   },
   {
     "title": "Akira",
@@ -3015,12 +2990,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
-    "color": [
-      24,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_1.webp"
   },
   {
     "title": "Akira",
@@ -3030,12 +3000,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
-    "color": [
-      24,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_2.jpg"
   },
   {
     "title": "Akira",
@@ -3045,12 +3010,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
-    "color": [
-      24,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_3.webp"
   },
   {
     "title": "Akira",
@@ -3060,12 +3020,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI.webp",
-    "color": [
-      24,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4.png"
   },
   {
     "title": "Perfect Blue",
@@ -3075,12 +3030,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg",
-    "color": [
-      184,
-      168,
-      152
-    ]
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_1.jpg"
   },
   {
     "title": "Perfect Blue",
@@ -3090,12 +3040,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI.jpg",
-    "color": [
-      184,
-      168,
-      152
-    ]
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_2.jpg"
   },
   {
     "title": "Extrema Noir 2023 (Stage Design)",
@@ -3146,12 +3091,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI.jpg",
-    "color": [
-      88,
-      88,
-      88
-    ]
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_1.jpg"
   },
   {
     "title": "N/A",

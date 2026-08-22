@@ -817,7 +817,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_4.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -827,7 +832,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_5.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -837,7 +847,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_6.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -847,7 +862,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_7.webp"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -872,7 +892,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_1.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg",
+    "color": [
+      104,
+      136,
+      168
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -882,7 +907,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_2.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg",
+    "color": [
+      104,
+      136,
+      168
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -907,7 +937,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_1.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -917,7 +952,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_2.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -942,7 +982,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_1.jpg"
+    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "M.C",
@@ -952,7 +997,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_2.jpg"
+    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "M.C",
@@ -991,12 +1041,16 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_1.jpg"
+  },
+  {
+    "title": "There Where Silence Reigns",
+    "author": "Nella Tarantino",
+    "year": "2022",
+    "added": "08/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_2.jpg"
   },
   {
     "title": "There Where Silence Reigns",
@@ -1013,18 +1067,13 @@
     ]
   },
   {
-    "title": "There Where Silence Reigns",
+    "title": "N/A",
     "author": "Nella Tarantino",
-    "year": "2022",
+    "year": "N/A",
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_1.jpg"
   },
   {
     "title": "N/A",
@@ -1033,12 +1082,7 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_2.jpg"
   },
   {
     "title": "N/A",
@@ -1047,12 +1091,7 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_3.jpg"
   },
   {
     "title": "N/A",
@@ -1061,26 +1100,7 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
-  },
-  {
-    "title": "N/A",
-    "author": "Nella Tarantino",
-    "year": "N/A",
-    "added": "08/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_4.jpg"
   },
   {
     "title": "N/A",
@@ -1285,12 +1305,7 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/JuliusAmbrosius_\"1000kysogkram,dinforevigtogaltid...\"_2024_BG.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/JuliusAmbrosius_\"1000kysogkram,dinforevigtogaltid...\"_2024_BG.jpg"
   },
   {
     "title": "N/A",
@@ -1299,12 +1314,7 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/@eveninginparis(Tumblr)_N_A_BG.jpg",
-    "color": [
-      136,
-      152,
-      152
-    ]
+    "image": "/images/library/image/@eveninginparis(Tumblr)_N_A_BG.jpg"
   },
   {
     "title": "\"summer scrapbook #2\"",
@@ -1313,12 +1323,7 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/@111044666(Tumblr)_\"summerscrapbook2\"_N_A_BG.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/@111044666(Tumblr)_\"summerscrapbook2\"_N_A_BG.jpg"
   },
   {
     "title": "Gap (PRODUCT) RED Campaign, Mary J. Blige",
@@ -1370,12 +1375,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_2.jpg",
-    "color": [
-      232,
-      232,
-      200
-    ]
+    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_1.png"
   },
   {
     "title": "Rainbow Dance",

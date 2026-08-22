@@ -4598,7 +4598,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_1.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4607,7 +4612,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_2.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4672,7 +4682,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_1.jpg"
+    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_2.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Tlalnepantla Park",
@@ -4849,7 +4864,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_AHI_1.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Joanna Lumley, Carnegie Tower, NYC, 1994 (Verso)",
@@ -5278,7 +5298,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_AHI_2.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "N/A",
@@ -5287,7 +5312,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_AHI_3.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Edgar Cairo",
@@ -5470,7 +5500,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_2.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Alessando de Medici",
@@ -5619,7 +5654,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_1.jpg"
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI.jpg",
+    "color": [
+      136,
+      136,
+      136
+    ]
   },
   {
     "title": "Come Out!!",
@@ -5684,12 +5724,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI.jpg",
-    "color": [
-      136,
-      136,
-      136
-    ]
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg"
   },
   {
     "title": "Debbie Harry",
@@ -6020,12 +6055,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI.png",
-    "color": [
-      104,
-      104,
-      88
-    ]
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png"
   },
   {
     "title": "City of God",
@@ -6090,7 +6120,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KatsuhiroOtomo_Akira_1988_CI"
+    "image": "/images/library/image/KatsuhiroOtomo_Akira_1988_CI.jpg"
   },
   {
     "title": "Perfect Blue",
@@ -6379,12 +6409,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS.png",
-    "color": [
-      200,
-      184,
-      168
-    ]
+    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS_1.png"
   },
   {
     "title": "Future Remembrance: Photography and Image Arts in Ghana (Still)",
@@ -6393,12 +6418,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS.png",
-    "color": [
-      200,
-      184,
-      168
-    ]
+    "image": "/images/library/image/TobiasWendl+NancyduPlessis_FutureRemembrance:PhotographyandImageArtsinGhana(Still)_1998_NS_2.png"
   },
   {
     "title": "Untitled",
@@ -6435,7 +6455,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/KhatarMedia_FamilyArchive_2015_NS"
+    "image": "/images/library/image/KhatarMedia_FamilyArchive_2015_NS.jpg"
   },
   {
     "title": "Untitled",
@@ -6514,12 +6534,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS.jpg",
-    "color": [
-      88,
-      72,
-      56
-    ]
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_1.jpg"
   },
   {
     "title": "Untitled",
@@ -6528,12 +6543,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS.jpg",
-    "color": [
-      88,
-      72,
-      56
-    ]
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_2.png"
   },
   {
     "title": "Untitled",
@@ -6542,12 +6552,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS.jpg",
-    "color": [
-      88,
-      72,
-      56
-    ]
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3.png"
   },
   {
     "title": "Untitled",

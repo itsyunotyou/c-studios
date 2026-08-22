@@ -2721,7 +2721,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_1.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2730,7 +2730,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_2.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2748,7 +2748,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_1.png"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg"
   },
   {
     "title": "Hero",
@@ -2757,7 +2757,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_2.jpg"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg"
   },
   {
     "title": "Hero",
@@ -2766,7 +2766,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_3.jpg"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg"
   },
   {
     "title": "Hero",
@@ -2784,33 +2784,6 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_1.jpg"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_2.jpg"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_3.jpg"
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
     "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
     "color": [
       248,
@@ -2847,18 +2820,31 @@
     ]
   },
   {
-    "title": "Medicine for Melancholy",
-    "author": "James Laxton",
-    "year": "2008",
+    "title": "City of God",
+    "author": "César Charlone",
+    "year": "2002",
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_4.jpg"
+  },
+  {
+    "title": "City of God",
+    "author": "César Charlone",
+    "year": "2002",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_5.jpg"
+  },
+  {
+    "title": "City of God",
+    "author": "César Charlone",
+    "year": "2002",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2867,12 +2853,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_1.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2881,12 +2862,16 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_2.jpg"
+  },
+  {
+    "title": "Medicine for Melancholy",
+    "author": "James Laxton",
+    "year": "2008",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2895,12 +2880,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_1.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2909,12 +2889,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_2.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2923,12 +2898,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Be Kind Rewind",
@@ -2993,12 +2963,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI.webp",
-    "color": [
-      8,
-      8,
-      104
-    ]
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_1.jpg"
   },
   {
     "title": "Mulholland Drive",

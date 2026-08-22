@@ -22,12 +22,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI_1.webp"
   },
   {
     "title": "N/A",
@@ -52,12 +47,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI_1.jpg"
   },
   {
     "title": "Untitled",
@@ -67,12 +57,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI_2.jpg"
   },
   {
     "title": "\"12 Self Portraits\"",
@@ -97,12 +82,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI_2.jpg"
   },
   {
     "title": "Labor I",
@@ -382,12 +362,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_1.jpg"
   },
   {
     "title": "Data Visualizations",
@@ -397,12 +372,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_2.jpg"
   },
   {
     "title": "Data Visualizations",
@@ -412,12 +382,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png"
   },
   {
     "title": "Two Women, Mannequin's Hand",
@@ -481,39 +446,39 @@
   },
   {
     "title": "Sojourn",
-    "author": "Allen Golder-Carpenter",
+    "author": "Allen-Golder Carpenter",
     "year": "2025",
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_1.png"
   },
   {
     "title": "Sojourn",
-    "author": "Allen Golder-Carpenter",
+    "author": "Allen-Golder Carpenter",
     "year": "2025",
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_2.jpg"
   },
   {
     "title": "Sojourn",
-    "author": "Allen Golder-Carpenter",
+    "author": "Allen-Golder Carpenter",
     "year": "2025",
     "added": "07/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "notes": "Allen Golder Carpenter",
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_3.jpg"
+  },
+  {
+    "title": "Sojourn",
+    "author": "Allen-Golder Carpenter",
+    "year": "2025",
+    "added": "17/08/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
@@ -1062,74 +1027,49 @@
     ]
   },
   {
-    "title": "N/A_01",
+    "title": "N/A",
     "author": "Nella Tarantino",
     "year": "N/A",
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_01.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_1"
   },
   {
-    "title": "N/A_02",
+    "title": "N/A",
     "author": "Nella Tarantino",
     "year": "N/A",
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_02.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_2"
   },
   {
-    "title": "N/A_03",
+    "title": "N/A",
     "author": "Nella Tarantino",
     "year": "N/A",
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_03.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_3"
   },
   {
-    "title": "N/A_04",
+    "title": "N/A",
     "author": "Nella Tarantino",
     "year": "N/A",
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_04.jpg",
-    "color": [
-      24,
-      24,
-      40
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_4"
   },
   {
-    "title": "N/A_05",
+    "title": "N/A",
     "author": "Nella Tarantino",
     "year": "N/A",
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_05.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/NellaTarantino_N_A_N_A_CI_5"
   },
   {
     "title": "Grand Army Plaza",
@@ -1423,6 +1363,24 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_03"
+  },
+  {
+    "title": "The Devil in Miss Jones, Dazed November 2013",
+    "author": "Chris Cunningham",
+    "year": "2008",
+    "added": "17/08/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_4"
+  },
+  {
+    "title": "The Devil in Miss Jones, Dazed November 2014",
+    "author": "Chris Cunningham",
+    "year": "2008",
+    "added": "17/08/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_5"
   },
   {
     "title": "Untitled Notebook",
@@ -3998,7 +3956,6 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "notes": "missing file",
     "image": "/images/library/image/RachelJones_RPSAwards2025Stage(RachelJones)_2025_CI_03"
   },
   {
@@ -5254,7 +5211,6 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "notes": "missing file",
     "image": "/images/library/image/"
   },
   {
@@ -5815,20 +5771,6 @@
     "by": "Jess Young",
     "category": "image",
     "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
-  },
-  {
-    "title": "Cinema in the Round",
-    "author": "Mark Leckey",
-    "year": "2008",
-    "added": "23/05/2026",
-    "by": "Jess Young",
-    "category": "image",
-    "image": "/images/library/image/MarkLeckey_CinemaintheRound_2008_JY.jpg",
     "color": [
       8,
       8,
@@ -6462,11 +6404,11 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS.png",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      216,
-      216,
-      200
+      200,
+      200,
+      168
     ]
   },
   {
@@ -6504,11 +6446,11 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS.png",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      216,
-      216,
-      200
+      200,
+      200,
+      168
     ]
   },
   {
@@ -6532,11 +6474,11 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_03.png",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      24,
-      24,
-      24
+      200,
+      200,
+      168
     ]
   },
   {
@@ -6737,11 +6679,11 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_04.jpg",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      184,
-      136,
-      152
+      200,
+      200,
+      168
     ]
   },
   {
@@ -6877,11 +6819,11 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_CI.jpg",
+    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_JY.jpg",
     "color": [
-      248,
-      248,
-      248
+      8,
+      8,
+      8
     ]
   },
   {
@@ -8020,11 +7962,11 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_05.jpg",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      120,
-      152,
-      136
+      200,
+      200,
+      168
     ]
   },
   {
@@ -8048,11 +7990,11 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_06.jpg",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      88,
-      72,
-      72
+      200,
+      200,
+      168
     ]
   },
   {
@@ -8062,11 +8004,11 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_07.webp",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      120,
-      104,
-      88
+      200,
+      200,
+      168
     ]
   },
   {
@@ -8076,11 +8018,11 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_08.jpg",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
     "color": [
-      168,
-      152,
-      136
+      200,
+      200,
+      168
     ]
   },
   {

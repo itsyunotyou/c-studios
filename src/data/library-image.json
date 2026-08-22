@@ -5368,7 +5368,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JohnSimmons_TheTakingofChrist_2016_CI.jpg"
+    "image": "/images/library/image/JohnSimmons_TheTakingofChrist_2016_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "zungenkuß für den weißen mann",
@@ -5378,7 +5383,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "missing file",
-    "image": "/images/library/image/N_A_zungenkuß für den weißen mann_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_zungenkuß für den weißen mann_N_A_CI.jpg",
+    "color": [
+      8,
+      8,
+      24
+    ]
   },
   {
     "title": "Urgeischt im Dschrungel. Es gehört einem Herrscher",
@@ -5387,7 +5397,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeteTurner_UrgeischtimDschungel.EsgehörteinemHerrscher_1972_CI.jpg"
+    "image": "/images/library/image/PeteTurner_UrgeischtimDschungel.EsgehörteinemHerrscher_1972_CI.jpg",
+    "color": [
+      8,
+      8,
+      24
+    ]
   },
   {
     "title": "boote sind schmal wie Hängbrücken in Afrika",
@@ -5397,7 +5412,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "missing file",
-    "image": "/images/library/image/N_A_bootesindschmalwieHängbrückeninAfrika_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_bootesindschmalwieHängbrückeninAfrika_N_A_CI.jpg",
+    "color": [
+      8,
+      8,
+      24
+    ]
   },
   {
     "title": "Speaker / Girl",
@@ -5406,7 +5426,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDoig_Speaker_Girl_2015_CI.png"
+    "image": "/images/library/image/PeterDoig_Speaker_Girl_2015_CI.png",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Congo",

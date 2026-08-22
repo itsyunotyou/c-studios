@@ -452,12 +452,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
   },
   {
     "title": "Sojourn",
@@ -467,12 +462,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
   },
   {
     "title": "Sojourn",
@@ -482,12 +472,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
   },
   {
     "title": "Sojourn",
@@ -567,7 +552,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_1.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -577,7 +567,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_2.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -587,7 +582,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_3.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -597,7 +597,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_4.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -607,7 +612,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_5.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -617,7 +627,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_6.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -627,7 +642,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_7.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -637,17 +657,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_8.jpg"
-  },
-  {
-    "title": "Black Ark",
-    "author": "Lee Scratch Perry",
-    "year": "2026",
-    "added": "07/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_9.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -672,12 +687,17 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_10.jpg"
+  },
+  {
+    "title": "Black Ark",
+    "author": "Lee Scratch Perry",
+    "year": "2026",
+    "added": "07/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "notes": "Edition Patrick Frey, Black Ark",
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -687,12 +707,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_1.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -702,12 +717,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_2.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -717,12 +727,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_3.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -732,12 +737,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_4.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -747,12 +747,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_5.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -762,12 +757,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_6.jpg"
   },
   {
     "title": "Ganja & Hess",
@@ -777,12 +767,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_7.webp"
   },
   {
     "title": "Ganja & Hess",
@@ -792,12 +777,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",

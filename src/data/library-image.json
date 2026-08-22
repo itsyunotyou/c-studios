@@ -2866,12 +2866,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI.webp",
-    "color": [
-      8,
-      24,
-      24
-    ]
+    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_2.webp"
   },
   {
     "title": "Interstellar Tesseract Scene",
@@ -3446,12 +3441,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI.jpg",
-    "color": [
-      88,
-      88,
-      88
-    ]
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_2.jpg"
   },
   {
     "title": "N/A",
@@ -3852,12 +3842,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI.png",
-    "color": [
-      72,
-      56,
-      40
-    ]
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI_3.jpg"
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -4516,7 +4501,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI_1.jpg"
+    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -4525,7 +4515,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI_2.jpg"
+    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -4548,7 +4543,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_1.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png"
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4557,7 +4552,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_2.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png"
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4612,7 +4607,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_1.jpg"
+    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI.jpg",
+    "color": [
+      200,
+      184,
+      184
+    ]
   },
   {
     "title": "Tlalnepantla Park",
@@ -4621,12 +4621,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI.jpg",
-    "color": [
-      200,
-      184,
-      184
-    ]
+    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_2.jpg"
   },
   {
     "title": "Pluto at the Zoo",
@@ -4789,12 +4784,7 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
-    "color": [
-      200,
-      200,
-      168
-    ]
+    "image": "/images/library/image/N_A_N_A_N_A_AHI_1.jpg"
   },
   {
     "title": "Joanna Lumley, Carnegie Tower, NYC, 1994 (Verso)",
@@ -5223,12 +5213,7 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
-    "color": [
-      200,
-      200,
-      168
-    ]
+    "image": "/images/library/image/N_A_N_A_N_A_AHI_2.png"
   },
   {
     "title": "N/A",

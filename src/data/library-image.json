@@ -2504,12 +2504,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI_3.webp",
-    "color": [
-      232,
-      216,
-      216
-    ]
+    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI_3.webp"
   },
   {
     "title": "Mirror",
@@ -2518,7 +2513,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI_2.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_Mirror_2004_CI_3.webp"
   },
   {
     "title": "Mirror",
@@ -2550,7 +2545,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AvantGardeMagazine_AvantGardeMagazineCover_1983_CI_1.webp"
+    "image": "/images/library/image/AvantGardeMagazine_AvantGardeMagazineCover_1983_CI_2.png"
   },
   {
     "title": "Avant Garde Magazine Cover",
@@ -2624,7 +2619,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_1.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -2633,7 +2633,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_2.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -2642,7 +2647,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_3.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI.png",
+    "color": [
+      152,
+      136,
+      136
+    ]
   },
   {
     "title": "Street Portraits of 1980's NYC",
@@ -2651,7 +2661,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_1.jpg"
+    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI.webp",
+    "color": [
+      8,
+      24,
+      24
+    ]
   },
   {
     "title": "Interstellar Tesseract Scene",
@@ -2674,7 +2689,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_1.jpg"
+    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_2.jpg"
   },
   {
     "title": "Dancer in the Dark",
@@ -2706,12 +2721,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_1.jpg"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2720,12 +2730,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_2.jpg"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2734,12 +2739,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
   },
   {
     "title": "Hero",
@@ -2748,12 +2748,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg",
-    "color": [
-      72,
-      24,
-      8
-    ]
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_1.png"
   },
   {
     "title": "Hero",
@@ -2762,12 +2757,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg",
-    "color": [
-      72,
-      24,
-      8
-    ]
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_2.jpg"
   },
   {
     "title": "Hero",
@@ -2776,12 +2766,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg",
-    "color": [
-      72,
-      24,
-      8
-    ]
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_3.jpg"
   },
   {
     "title": "Hero",
@@ -2790,12 +2775,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg",
-    "color": [
-      72,
-      24,
-      8
-    ]
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4.jpg"
   },
   {
     "title": "City of God",
@@ -2804,12 +2784,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_1.jpg"
   },
   {
     "title": "City of God",
@@ -2818,12 +2793,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_2.jpg"
   },
   {
     "title": "City of God",
@@ -2832,12 +2802,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_3.jpg"
   },
   {
     "title": "City of God",

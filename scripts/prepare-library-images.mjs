@@ -34,6 +34,19 @@ const THUMB_QUALITY = 70;
 const LARGE_WIDTH = 800;
 const LARGE_QUALITY = 80;
 
+// A brand-new entry's `image` field is stored extension-less (see
+// worker/publish-library.js) until this script resolves it against a real
+// staged file. `basename(x, extname(x))` assumes whatever follows the last
+// "." is a real extension, which mis-parses titles that legitimately
+// contain periods with no extension at all (e.g. "...C.P.Company_2021_JY"
+// reads as ext ".Company_2021_JY"). Only strip a suffix that's actually a
+// known image extension.
+const IMAGE_EXT_RE = /\.(jpe?g|png|webp|gif|avif|svg|tiff?)$/i;
+function baseOf(imagePath) {
+  const b = basename(imagePath);
+  return b.replace(IMAGE_EXT_RE, '');
+}
+
 // Find a raw source file for `base` (the image field's filename, sans
 // extension) in a directory, matching regardless of the actual extension —
 // the sheet's FILE NAME column never includes one.
@@ -69,7 +82,7 @@ async function processCategory(category) {
   const groups = new Map();
   for (const entry of entries) {
     if (!entry.image) { skippedNoFile++; continue; }
-    const base = basename(entry.image, extname(entry.image));
+    const base = baseOf(entry.image);
     if (!groups.has(base)) groups.set(base, []);
     groups.get(base).push(entry);
   }

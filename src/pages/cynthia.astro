@@ -37,15 +37,20 @@ const projectsJSON  = JSON.stringify(cynthiaData.projects);
 
 // Build a stem → library entry index so curated references in
 // cynthia-references.json can be resolved at build time to real image URLs.
+// Most sheet-imported library entries store `image` with no extension at
+// all (see prepare-library-images.mjs); only strip a trailing extension
+// when there really is one, so those entries still resolve to their
+// -thumb/-large variant instead of a URL that was never generated.
+const stripExt = (s) => s.replace(/\.(jpe?g|png|webp|gif|tiff?|heic)$/i, '');
 const allLibrary = [...libraryText, ...libraryImage, ...librarySound]
   .filter(e => e.image);
 const libraryByStem = {};
 for (const e of allLibrary) {
-  const stem = e.image.replace(/^.*\//, '').replace(/\.[^.]+$/, '');
+  const stem = e.image.replace(/^.*\//, '').replace(/\.(jpe?g|png|webp|gif|tiff?|heic)$/i, '');
   libraryByStem[stem] = {
     title: e.title,
-    img: e.image.replace(/\.[^.]+$/, '-thumb.webp'),
-    imgLarge: e.image.replace(/\.[^.]+$/, '-large.webp'),
+    img: `${stripExt(e.image)}-thumb.webp`,
+    imgLarge: `${stripExt(e.image)}-large.webp`,
   };
 }
 
@@ -74,8 +79,8 @@ if (missingStems.length) {
 const placeholderRefsJSON = JSON.stringify(
   allLibrary.map(e => ({
     title: e.title,
-    img: e.image.replace(/\.[^.]+$/, '-thumb.webp'),
-    imgLarge: e.image.replace(/\.[^.]+$/, '-large.webp'),
+    img: `${stripExt(e.image)}-thumb.webp`,
+    imgLarge: `${stripExt(e.image)}-large.webp`,
   }))
 );
 const curatedRefsJSON = JSON.stringify(curatedRefs);

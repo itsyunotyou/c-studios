@@ -23,6 +23,12 @@ const deduped = allEntries.filter((entry) => {
 
 console.log(`[Library] ${allEntries.length} entries → ${deduped.length} unique (${allEntries.length - deduped.length} duplicates removed)`);
 
+// Most sheet-imported entries store `image` with no extension at all (see
+// prepare-library-images.mjs); only strip a trailing extension when there
+// really is one, so those entries still get the -thumb/-large suffix
+// instead of silently falling through unchanged.
+const stripExt = (s) => s.replace(/\.(jpe?g|png|webp|gif|tiff?|heic)$/i, '');
+
 // Transform entries into the shape the cylinder code expects.
 const references = deduped.map((entry) => ({
   title: entry.title,
@@ -31,8 +37,8 @@ const references = deduped.map((entry) => ({
   cat: entry.category || 'text',
   addedBy: entry.by || '',
   color: entry.color || [128, 128, 128], // default grey; run compute-colors.mjs later for proper colors
-  img: entry.image ? entry.image.replace(/\.[^.]+$/, '-thumb.webp') : '',
-  imgLarge: entry.image ? entry.image.replace(/\.[^.]+$/, '-large.webp') : '',
+  img: entry.image ? `${stripExt(entry.image)}-thumb.webp` : '',
+  imgLarge: entry.image ? `${stripExt(entry.image)}-large.webp` : '',
   imgFull: entry.image || '',
   images: [],
   imagesFull: [],

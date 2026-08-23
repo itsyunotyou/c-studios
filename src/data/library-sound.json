@@ -1084,7 +1084,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI"
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Wey U",
@@ -4829,7 +4834,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI"
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Open",
@@ -5096,7 +5106,12 @@
     "added": "21/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/AmberMark+MiaMark_Monsoon_3:33am_2017_CI"
+    "image": "/images/library/sound/AmberMark+MiaMark_Monsoon_3_33am_2017_CI",
+    "color": [
+      248,
+      168,
+      8
+    ]
   },
   {
     "title": "Like A Hunger",

@@ -8142,7 +8142,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI_3.png"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI_3.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Talks about Jamaican Life",

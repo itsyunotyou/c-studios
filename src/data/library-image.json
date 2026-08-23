@@ -6598,7 +6598,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_2.png"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled",
@@ -6649,7 +6654,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS_1.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6658,7 +6668,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_1.jpg"
+    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_2.png",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6681,7 +6696,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS_2.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Cerberus Theaters, Washington, D.C.",
@@ -6704,7 +6724,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_3.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Bolaji Badejo in Alien",
@@ -6909,7 +6934,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_4.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_09.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Biblioteca Vasconcelos",
@@ -7044,7 +7074,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_CI.jpg"
+    "image": "/images/library/image/AngeloMereu_Andtomorrowandtomorrow_2021_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "SWAYING IN THE WIND",
@@ -8005,24 +8040,6 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_1.png"
-  },
-  {
-    "title": "Carribean Commercial",
-    "author": "Ethan Allen",
-    "year": "1998",
-    "added": "22/06/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_2.png"
-  },
-  {
-    "title": "Carribean Commercial",
-    "author": "Ethan Allen",
-    "year": "1998",
-    "added": "22/06/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
     "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_6.png",
     "color": [
       8,
@@ -8043,6 +8060,24 @@
       8,
       8
     ]
+  },
+  {
+    "title": "Carribean Commercial",
+    "author": "Ethan Allen",
+    "year": "1998",
+    "added": "22/06/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_3.png"
+  },
+  {
+    "title": "Carribean Commercial",
+    "author": "Ethan Allen",
+    "year": "1998",
+    "added": "22/06/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_4.png"
   },
   {
     "title": "Carribean Commercial",

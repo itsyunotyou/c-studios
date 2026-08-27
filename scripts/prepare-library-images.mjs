@@ -67,6 +67,7 @@ async function processCategory(category) {
   let thumbAlreadyPresent = 0;
   let largeAlreadyPresent = 0;
   let colorAlreadyPresent = 0;
+  let orphanedCleaned = 0;
 
   const outDir = join(IMAGES_ROOT, category);
   const incomingDir = join(INCOMING_ROOT, category);
@@ -157,9 +158,21 @@ async function processCategory(category) {
     }
 
     // Raw staged uploads are transient — once every entry sharing this
-    // basename has had its turn, discard it.
+    // basename has had its turn, discard it. The loop above only sets
+    // srcPath when it actually needed to do work this run; a basename whose
+    // thumb/large were already fully done (e.g. processed in an earlier
+    // run) never sets it, so re-check _incoming/ directly here — otherwise
+    // an already-processed source just sits there forever, un-cleaned.
+    if (!srcPath) {
+      const leftover = findByBase(incomingDir, base);
+      if (leftover) {
+        srcPath = leftover;
+        fromIncoming = true;
+      }
+    }
     if (fromIncoming && existsSync(srcPath) && existsSync(thumbPath) && existsSync(largePath)) {
       unlinkSync(srcPath);
+      orphanedCleaned++;
     }
   }
 
@@ -167,7 +180,8 @@ async function processCategory(category) {
   console.log(
     `${category.padEnd(6)} colors +${coloredCount} (${colorAlreadyPresent} already) · ` +
     `thumbs +${thumbedCount} (${thumbAlreadyPresent} already) · ` +
-    `large +${largedCount} (${largeAlreadyPresent} already) · ${skippedNoFile} no file on disk`
+    `large +${largedCount} (${largeAlreadyPresent} already) · ${skippedNoFile} no file on disk · ` +
+    `${orphanedCleaned} orphaned _incoming/ source(s) cleaned up`
   );
 }
 

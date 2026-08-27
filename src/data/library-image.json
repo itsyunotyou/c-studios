@@ -8152,7 +8152,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI_3.png"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI_3.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Talks about Jamaican Life",
@@ -8217,7 +8222,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_5.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_5.jpg",
+    "color": [
+      120,
+      152,
+      136
+    ]
   },
   {
     "title": "01marocco.jpg",

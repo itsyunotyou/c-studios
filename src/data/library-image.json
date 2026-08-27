@@ -8068,7 +8068,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_3.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_3.png",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "Carribean Commercial",
@@ -8077,7 +8082,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_4.png"
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_4.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Carribean Commercial",

@@ -1323,7 +1323,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/VilémFlusser_TowardsaPhilosophyofPhotography_2000_JY.jpg"
+    "image": "/images/library/text/VilémFlusser_TowardsaPhilosophyofPhotography_2000_JY.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Capitalist Realism: Is There No Alternative?",
@@ -1798,7 +1803,12 @@
     "by": "Angel Harvey-Ideozu",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/OkwuiEnwezor+OctavioZaya_Negritude,PanAfricanism,andPostcolonialAfricanIdentityAfricanPortraitPhotography_2013_AHI.jpg"
+    "image": "/images/library/text/OkwuiEnwezor+OctavioZaya_Negritude,PanAfricanism,andPostcolonialAfricanIdentityAfricanPortraitPhotography_2013_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Teaching to Transgress",
@@ -2032,7 +2042,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "text",
-    "image": "/images/library/text/NathalieOlah_BadTaste:OrthePoliticsofUgliness_2023_AHI.jpg"
+    "image": "/images/library/text/NathalieOlah_BadTaste:OrthePoliticsofUgliness_2023_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Mushroom at the End of the World: On the Possibility of Life in Capitalist Ruins",
@@ -2041,7 +2056,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/AnnaTsing_TheMushroomattheEndoftheWorld:OnthePossibilityofLifeinCapitalistRuins_2015_CI.jpg"
+    "image": "/images/library/text/AnnaTsing_TheMushroomattheEndoftheWorld:OnthePossibilityofLifeinCapitalistRuins_2015_CI.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "Flyboy in the Buttermilk: Essays on Contemporary America",
@@ -2078,7 +2098,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/OskarFischinger_ExperimentsinCinematicAbstraction:1900-1967_2013_ME.jpg"
+    "image": "/images/library/text/OskarFischinger_ExperimentsinCinematicAbstraction:1900-1967_2013_ME.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Realism, Rationalism, Surrealism: Art between the Wars",
@@ -2087,7 +2112,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/BrionyFer_Realism,Rationalism,Surrealism:ArtbetweentheWars_1993_ME.webp"
+    "image": "/images/library/text/BrionyFer_Realism,Rationalism,Surrealism:ArtbetweentheWars_1993_ME.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Air Guitar: Essays on Art and Democracy",
@@ -2096,7 +2126,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/DaveHickey_AirGuitar:EssaysonArtandDemocracy_1997_ME.jpg"
+    "image": "/images/library/text/DaveHickey_AirGuitar:EssaysonArtandDemocracy_1997_ME.jpg",
+    "color": [
+      56,
+      40,
+      56
+    ]
   },
   {
     "title": "Perfect Wave: More Essays on Art and Democracy",
@@ -2105,7 +2140,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/DaveHickey_PerfectWave:MoreEssaysonArtandDemocracy_2017_ME.jpg"
+    "image": "/images/library/text/DaveHickey_PerfectWave:MoreEssaysonArtandDemocracy_2017_ME.jpg",
+    "color": [
+      216,
+      232,
+      248
+    ]
   },
   {
     "title": "The Female Trickster: the mask that reveals",
@@ -2114,7 +2154,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/RickiStefanieTannen_TheFemaleTrickster:themaskthatreveals_2007_ME.jpg"
+    "image": "/images/library/text/RickiStefanieTannen_TheFemaleTrickster:themaskthatreveals_2007_ME.jpg",
+    "color": [
+      8,
+      40,
+      40
+    ]
   },
   {
     "title": "Eroticism: Death and Sensuality",
@@ -2123,7 +2168,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/GeorgesBataille_Eroticism:DeathandSensuality_1957_ME.jpg"
+    "image": "/images/library/text/GeorgesBataille_Eroticism:DeathandSensuality_1957_ME.jpg",
+    "color": [
+      168,
+      40,
+      24
+    ]
   },
   {
     "title": "Part Object Part Sculpture",
@@ -2132,7 +2182,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/HelenMolesworth_PartObjectPartSculpture_2005_ME.jpg"
+    "image": "/images/library/text/HelenMolesworth_PartObjectPartSculpture_2005_ME.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Abstract Bodies: Sixties Sculpture in the Expanded Field of Gender",
@@ -2141,7 +2196,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/DavidJ.Getsy_AbstractBodies:SixtiesSculptureintheExpandedFieldofGender_2015_ME.jpg"
+    "image": "/images/library/text/DavidJ.Getsy_AbstractBodies:SixtiesSculptureintheExpandedFieldofGender_2015_ME.jpg",
+    "color": [
+      136,
+      120,
+      136
+    ]
   },
   {
     "title": "Club Cultures: Music, Media and Subcultural Capital",
@@ -2150,7 +2210,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/SarahThornton_ClubCultures:Music,MediaandSubculturalCapital_1995_ME.jpg"
+    "image": "/images/library/text/SarahThornton_ClubCultures:Music,MediaandSubculturalCapital_1995_ME.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Face: A Cultural History",
@@ -2159,7 +2224,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/FayBoundAlberti_TheFace:ACulturalHistory_2026_ME.jpg"
+    "image": "/images/library/text/FayBoundAlberti_TheFace:ACulturalHistory_2026_ME.jpg",
+    "color": [
+      104,
+      184,
+      200
+    ]
   },
   {
     "title": "Seeing is forgetting the name of the thing one sees",
@@ -2182,7 +2252,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/MoranSheleg_LifeWork:OntheAutobiographicalImpulseinContemporaryArt,Writing,andTheory_2024_ME.jpg"
+    "image": "/images/library/text/MoranSheleg_LifeWork:OntheAutobiographicalImpulseinContemporaryArt,Writing,andTheory_2024_ME.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Mountain College as Multiverse",
@@ -2191,7 +2266,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/ArnoldDreyblatt+PetraMariaMeyer_BlackMountainCollegeasMultiverse_2022_ME.jpg"
+    "image": "/images/library/text/ArnoldDreyblatt+PetraMariaMeyer_BlackMountainCollegeasMultiverse_2022_ME.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Contingent Object of Contemporary Art",
@@ -2200,7 +2280,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/MarthaBuskirk_TheContingentObjectofContemporaryArt_2003_ME.jpg"
+    "image": "/images/library/text/MarthaBuskirk_TheContingentObjectofContemporaryArt_2003_ME.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Rewriting Conceptual Art",
@@ -2209,7 +2294,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/MichaelNewman+JonBird_RewritingConceptualArt_1999_ME.jpg"
+    "image": "/images/library/text/MichaelNewman+JonBird_RewritingConceptualArt_1999_ME.jpg",
+    "color": [
+      72,
+      104,
+      136
+    ]
   },
   {
     "title": "Minimalism: Art and Polemics in the Sixties",
@@ -2218,7 +2308,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/JamesMeyer_Minimalism:ArtandPolemicsintheSixties_2001_ME.jpg"
+    "image": "/images/library/text/JamesMeyer_Minimalism:ArtandPolemicsintheSixties_2001_ME.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "The Art of Return: The Sixties and Contemporary Culture",
@@ -2227,7 +2322,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/JamesMeyer_TheArtofReturn:TheSixtiesandContemporaryCulture_2019_ME.jpg"
+    "image": "/images/library/text/JamesMeyer_TheArtofReturn:TheSixtiesandContemporaryCulture_2019_ME.jpg",
+    "color": [
+      248,
+      88,
+      88
+    ]
   },
   {
     "title": "Introduction to Systems Thinking",
@@ -2236,7 +2336,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/CarnegieMellonUniversitySchoolofDesign_IntroductiontoSystemsThinking_2019_CI.webp"
+    "image": "/images/library/text/CarnegieMellonUniversitySchoolofDesign_IntroductiontoSystemsThinking_2019_CI.webp",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Cyberfeminism Index",
@@ -2245,7 +2350,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MindySeu_CyberfeminismIndex_2023_CI.png"
+    "image": "/images/library/text/MindySeu_CyberfeminismIndex_2023_CI.png",
+    "color": [
+      120,
+      248,
+      72
+    ]
   },
   {
     "title": "The Archaeology of Knowledge",
@@ -2254,7 +2364,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MichelFoucault_TheArchaeologyofKnowledge_2002_CI.webp"
+    "image": "/images/library/text/MichelFoucault_TheArchaeologyofKnowledge_2002_CI.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Visual Thinking",
@@ -2263,7 +2378,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RudolfArnheim_VisualThinking_2004_CI.webp"
+    "image": "/images/library/text/RudolfArnheim_VisualThinking_2004_CI.webp",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "Patternmaster",
@@ -2272,7 +2392,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/OctaviaE.Butler_Patternmaster_1976_CI.webp"
+    "image": "/images/library/text/OctaviaE.Butler_Patternmaster_1976_CI.webp",
+    "color": [
+      168,
+      24,
+      24
+    ]
   },
   {
     "title": "The Presentation of Self in Everyday Life",
@@ -2281,7 +2406,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ErvingGoffman_ThePresentationofSelfinEverydayLife_1956_CI.webp"
+    "image": "/images/library/text/ErvingGoffman_ThePresentationofSelfinEverydayLife_1956_CI.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Order of Things",
@@ -2290,7 +2420,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MichelFoucault_TheOrderofThings_2001_CI.webp"
+    "image": "/images/library/text/MichelFoucault_TheOrderofThings_2001_CI.webp",
+    "color": [
+      88,
+      120,
+      120
+    ]
   },
   {
     "title": "Visual Grammar: A Design Handbook",
@@ -2299,7 +2434,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ChristianLeborg_VisualGrammar:ADesignHandbook_2022_CI.webp"
+    "image": "/images/library/text/ChristianLeborg_VisualGrammar:ADesignHandbook_2022_CI.webp",
+    "color": [
+      248,
+      72,
+      72
+    ]
   },
   {
     "title": "Design, When Everybody Designs: An Introduction to Design for Social Innovation",
@@ -2308,7 +2448,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/EzioManzini_Design,WhenEverybodyDesigns:AnIntroductiontoDesignforSocialInnovation_2025_CI.webp"
+    "image": "/images/library/text/EzioManzini_Design,WhenEverybodyDesigns:AnIntroductiontoDesignforSocialInnovation_2025_CI.webp",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "Lectures on Liberation",
@@ -2317,7 +2462,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/AngelaDavis_LecturesonLiberation_1971_CI.webp"
+    "image": "/images/library/text/AngelaDavis_LecturesonLiberation_1971_CI.webp",
+    "color": [
+      248,
+      216,
+      200
+    ]
   },
   {
     "title": "Curating in the Post-Internet Age",
@@ -2326,7 +2476,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/BorisGroys_CuratinginthePost-InternetAge_2018_CI.png"
+    "image": "/images/library/text/BorisGroys_CuratinginthePost-InternetAge_2018_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "A Century of Artists Books",
@@ -2335,7 +2490,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RivaCastleman_ACenturyofArtistsBooks_1994_CI.webp"
+    "image": "/images/library/text/RivaCastleman_ACenturyofArtistsBooks_1994_CI.webp",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Representations of the Intellectual",
@@ -2344,7 +2504,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/EdwardW.Said_RepresentationsoftheIntellectual_1996_CI.webp"
+    "image": "/images/library/text/EdwardW.Said_RepresentationsoftheIntellectual_1996_CI.webp",
+    "color": [
+      248,
+      248,
+      216
+    ]
   },
   {
     "title": "See it Again, Say it Again: The Artist as Researcher",
@@ -2353,7 +2518,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/JannekeWesseling_SeeitAgain,SayitAgain:TheArtistasResearcher_2011_CI.webp"
+    "image": "/images/library/text/JannekeWesseling_SeeitAgain,SayitAgain:TheArtistasResearcher_2011_CI.webp",
+    "color": [
+      248,
+      8,
+      72
+    ]
   },
   {
     "title": "The Craft of Research",
@@ -2362,7 +2532,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/WayneC.Booth+GregoryG.Colomb+JosephM.Williams_TheCraftofResearch_2003_CI.webp"
+    "image": "/images/library/text/WayneC.Booth+GregoryG.Colomb+JosephM.Williams_TheCraftofResearch_2003_CI.webp",
+    "color": [
+      232,
+      232,
+      88
+    ]
   },
   {
     "title": "Visual Music",
@@ -2371,7 +2546,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/BrianEno_VisualMusic_2013_CI.jpg"
+    "image": "/images/library/text/BrianEno_VisualMusic_2013_CI.jpg",
+    "color": [
+      168,
+      184,
+      24
+    ]
   },
   {
     "title": "THE ONLY DANCE THERE IS: Talks at the Menninger Foundation and Spring Grove Hospital",

@@ -3558,7 +3558,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_2.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3609,7 +3614,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_1.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Bill Gunn in Stop (1970)",
@@ -3730,7 +3740,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI_1.png"
+    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI_2.png",
+    "color": [
+      104,
+      104,
+      24
+    ]
   },
   {
     "title": "The Backrooms",
@@ -3837,61 +3852,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI_1.png"
-  },
-  {
-    "title": "Who's Gonna Save the World?",
-    "author": "Ladji Diaby",
-    "year": "2026",
-    "added": "13/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_1.jpg"
-  },
-  {
-    "title": "Who's Gonna Save the World?",
-    "author": "Ladji Diaby",
-    "year": "2026",
-    "added": "13/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_2.jpg"
-  },
-  {
-    "title": "Who's Gonna Save the World?",
-    "author": "Ladji Diaby",
-    "year": "2026",
-    "added": "13/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_3.jpg"
-  },
-  {
-    "title": "Who's Gonna Save the World?",
-    "author": "Ladji Diaby",
-    "year": "2026",
-    "added": "13/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_4.jpg"
-  },
-  {
-    "title": "Who's Gonna Save the World?",
-    "author": "Ladji Diaby",
-    "year": "2026",
-    "added": "13/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_5.jpg"
-  },
-  {
-    "title": "Who's Gonna Save the World?",
-    "author": "Ladji Diaby",
-    "year": "2026",
-    "added": "13/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_6.jpg"
+    "image": "/images/library/image/SatoshiKon_Paprika_2006_CI_3.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Who's Gonna Save the World?",
@@ -3922,17 +3888,82 @@
     ]
   },
   {
-    "title": "Ghost in the Shell",
-    "author": "Mamoru Oshii",
-    "year": "1995",
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_6.jpg",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_8.jpg",
     "color": [
-      8,
       56,
-      72
+      24,
+      8
+    ]
+  },
+  {
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
+    "added": "13/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_8.jpg",
+    "color": [
+      56,
+      24,
+      8
+    ]
+  },
+  {
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
+    "added": "13/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_8.jpg",
+    "color": [
+      56,
+      24,
+      8
+    ]
+  },
+  {
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
+    "added": "13/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_8.jpg",
+    "color": [
+      56,
+      24,
+      8
+    ]
+  },
+  {
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
+    "added": "13/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_7.jpg"
+  },
+  {
+    "title": "Who's Gonna Save the World?",
+    "author": "Ladji Diaby",
+    "year": "2026",
+    "added": "13/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/LadjiDiaby_Who'sGonnaSavetheWorld_2026_CI_8.jpg",
+    "color": [
+      56,
+      24,
+      8
     ]
   },
   {
@@ -3942,12 +3973,16 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_6.jpg",
-    "color": [
-      8,
-      56,
-      72
-    ]
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_4.jpg"
+  },
+  {
+    "title": "Ghost in the Shell",
+    "author": "Mamoru Oshii",
+    "year": "1995",
+    "added": "13/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_5.jpg"
   },
   {
     "title": "ANDERSON .PAAK x KAYTRANDA \"Twin Flame\"",
@@ -3970,12 +4005,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI_2.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/GregYaro_STEVELACEY\"HELMET\"_2022_CI_1.jpg"
   },
   {
     "title": "STEVE LACEY \"HELMET\"",
@@ -4012,12 +4042,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI_2.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/GrahamRounthwaite_Levi'sSilverTab_1999_CI_1.jpg"
   },
   {
     "title": "Comme des Garçons S/S 1995",
@@ -4068,12 +4093,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RachelJones_RPSAwards2025Stage(RachelJones)_2025_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RachelJones_RPSAwards2025Stage(RachelJones)_2025_CI_1.jpg"
   },
   {
     "title": "Messianen Song Cycles Britten Pears Arts",
@@ -4516,12 +4536,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI_1.jpg"
   },
   {
     "title": "Perfect Blue",
@@ -4530,12 +4545,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI_2.jpg"
   },
   {
     "title": "N/A",

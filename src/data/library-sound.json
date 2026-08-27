@@ -561,17 +561,12 @@
   },
   {
     "title": "Pan over the hill",
-    "author": "Suntub",
+    "author": "ML Buch",
     "year": "2023",
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Suntub_Panoverthehill_2023_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/sound/MLBuch_Panoverthehill_Suntub_2023_CI"
   },
   {
     "title": "How Do You Let the Love Into the Heart That Isn't Split Wide Open",
@@ -631,17 +626,12 @@
   },
   {
     "title": "High speed calm air tonight",
-    "author": "Suntub",
+    "author": "ML Buch",
     "year": "2023",
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Suntub_Highspeedcalmairtonight_2023_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/sound/MLBuch_Highspeedcalmairtonight_Suntub_2023_CI"
   },
   {
     "title": "Under Your Command",
@@ -2874,20 +2864,6 @@
     ]
   },
   {
-    "title": "Rated X",
-    "author": "Miles Davis",
-    "year": "1974",
-    "added": "14/05/2026",
-    "by": "Jess Young",
-    "category": "sound",
-    "image": "/images/library/sound/MilesDavis_RatedX_GetUpWithIt_1974_JY.jpg",
-    "color": [
-      72,
-      40,
-      56
-    ]
-  },
-  {
     "title": "Hard Refresh [DJ_Dave Remix]",
     "author": "DJ_Dave",
     "year": "2025",
@@ -3942,18 +3918,13 @@
     ]
   },
   {
-    "title": "Jacon's Optical Illusion",
+    "title": "Jacob's Optical Illusion",
     "author": "Jacob's Optical Stairway",
     "year": "2009",
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Jacob'sOpticalStairway_Jacob'sOpticalIllusion_ReinforcedPresentsJacob'sOpticalStairway_2009_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/sound/Jacob'sOpticalStairway_Jacob'sOpticalIllusion_ReinforcedPresentsJacob'sOpticalStairway_2009_CI"
   },
   {
     "title": "Love Love Love",
@@ -4376,18 +4347,13 @@
     ]
   },
   {
-    "title": "Make It Your Own",
+    "title": "Make It Your Own - 1978 Demo",
     "author": "Donny Hathaway",
-    "year": "1975",
+    "year": "2010",
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/DonnyHathaway_MakeItYourOwn_N_A_1975_CI.jpg",
-    "color": [
-      24,
-      8,
-      8
-    ]
+    "image": "/images/library/sound/DonnyHathaway_MakeItYourOwn-1978Demo_SomedayWe'llAllBeFree_2010_CI"
   },
   {
     "title": "Practice - Instrumental",
@@ -4418,18 +4384,13 @@
     ]
   },
   {
-    "title": "born again freestyle (shed a tear)",
+    "title": "born again freestyle (shed a tear).mp3",
     "author": "Samba Jean-Baptiste",
     "year": "2025",
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/SambaJean-Baptiste_bornagainfreestyle(shedatear)_bornagainfreestyle(shedatear)_2025_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/sound/SambaJean-Baptiste_bornagainfreestyle(shedatear).mp3_bornagainfreestyle(shedatear).mp3_2025_CI"
   },
   {
     "title": "#2BaddiesFighting",
@@ -5891,5 +5852,50 @@
       184,
       184
     ]
+  },
+  {
+    "title": "Yves Tumor",
+    "author": "N/A",
+    "year": "2017",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "sound",
+    "image": "/images/library/sound/YvesTumor _ExperiencingTheDepositOfFaith_2017_LD"
+  },
+  {
+    "title": "Various",
+    "author": "N/A",
+    "year": "2002",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "sound",
+    "image": "/images/library/sound/Various_CirculationTheSoundsOfTheMoss_2002_LD"
+  },
+  {
+    "title": "Terre Thaemlitz",
+    "author": "N/A",
+    "year": "2019",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "sound",
+    "image": "/images/library/sound/TerreThaemlitz_CompxComp_2019_LD"
+  },
+  {
+    "title": "Rhythm & Sound",
+    "author": "N/A",
+    "year": "2001",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "sound",
+    "image": "/images/library/sound/Rhythm&Sound_Rhythm&Sound_2001_LD"
+  },
+  {
+    "title": "Monolake",
+    "author": "N/A",
+    "year": "1997",
+    "added": "",
+    "by": "Lucas Dupuy",
+    "category": "sound",
+    "image": "/images/library/sound/Monolake_Hongkong_1997_LD"
   }
 ]

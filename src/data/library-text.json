@@ -6,12 +6,7 @@
     "added": "05/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/AnitraNelson+VincentLiegey_ExploringDegrowth_ACriticalGuide_2020_CI",
-    "color": [
-      72,
-      72,
-      72
-    ]
+    "image": "/images/library/text/AnitraNelson+VincentLiegey_ExploringDegrowth:ACriticalGuide_2020_CI.jpg"
   },
   {
     "title": "Power/Knowledge: Selected Interviews and Other Writings, 1972-1977",
@@ -20,7 +15,7 @@
     "added": "05/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/"
+    "image": "/images/library/text/MichelFoucault_Power_Knowledge:SelectedInterviewsandOtherWritings,1972-1977_1980_CI.jpg"
   },
   {
     "title": "Philosophy of the Home: Domestic Space and Happiness",
@@ -66,17 +61,12 @@
   },
   {
     "title": "Ways of Curating",
-    "author": "Jans Ulrich Obrist",
+    "author": "Hans Ulrich Obrist",
     "year": "2014",
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/HansUlrichObrist_WaysofCurating_2014_JY.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/HansUlrichObrist_WaysofCurating_2014_JY.jpg"
   },
   {
     "title": "Perfection",
@@ -183,12 +173,7 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SuzanneSlesin+StaffordCliff+DanielRozenszrtoch_JapaneseStyle_1987_CI.png",
-    "color": [
-      184,
-      184,
-      184
-    ]
+    "image": "/images/library/text/SuzanneSlesin+StaffordCliff+DanielRozensztroch_JapaneseStyle_1987_CI.jpg"
   },
   {
     "title": "Close the App, Make the Ting: Transformative Prompts for the Modern Artist (Elijah)",
@@ -197,12 +182,7 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/Elijah_ClosetheApp,MaketheTing_2025_CI.png",
-    "color": [
-      232,
-      216,
-      72
-    ]
+    "image": "/images/library/text/Elijah_ClosetheApp,MaketheTing:TransformativePromptsfortheModernArtist(Elijah)_2025_CI.png"
   },
   {
     "title": "Beyond Cultural Diversity: The Case for Creativity",
@@ -211,26 +191,16 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RichardAppignanesi_BeyondCulturalDiversity_TheCasefforCreativity_2010_CI",
-    "color": [
-      24,
-      56,
-      56
-    ]
+    "image": "/images/library/text/RichardAppignanesi_BeyondCulturalDiversity:TheCaseforCreativity_2010_CI.jpg"
   },
   {
     "title": "say cheeeeese",
     "author": "Rachel Jones\nZoé Whitley\nAnaïs Duplan\nEllen Grieg\nAïcha Mehrez\nClaudia Rankine\nYates Norton",
-    "year": "2022",
+    "year": "2023",
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RachelJones+ZoéWhitley+AnaïsDuplan+EllenGrieg+AïchaMehrez+ClaudiaRankine+YatesNorton_saycheeeeese_2022_CI.png",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/RachelJones+ZoéWhitley+AnaïsDuplan+EllenGrieg+AïchaMehrez+ClaudiaRankine+YatesNorton_saycheeeeese_2023_CI.png"
   },
   {
     "title": "Summer of Something Special 2021",
@@ -253,12 +223,7 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/NaomiKlein_NoLogo_2000_N_A.png",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/text/NaomiKlein_NoLogo_2000_CI.png"
   },
   {
     "title": "Quiet",
@@ -267,12 +232,7 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/VictoriaAdukweiBulley_Quiet_2022_N_A.webp",
-    "color": [
-      120,
-      56,
-      24
-    ]
+    "image": "/images/library/text/VictoriaAdukweiBulley_Quiet_2022_RJ.webp"
   },
   {
     "title": "Issue 1: Let's Get Physical",
@@ -281,12 +241,7 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_N_A.webp",
-    "color": [
-      248,
-      104,
-      72
-    ]
+    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_RJ.webp"
   },
   {
     "title": "Call and Response: Journeys in African Art",
@@ -668,7 +623,7 @@
   },
   {
     "title": "Art on My Mind: Visual Politics",
-    "author": "Bell Hooks",
+    "author": "bell hooks",
     "year": "1995",
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
@@ -1018,17 +973,12 @@
   },
   {
     "title": "i-D Magazine: The Darker Issue",
-    "author": "Arthur Jafa, et al.",
+    "author": "Arthur Jafa",
     "year": "2021",
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ArthurJafa_i-DMagazine:TheDarkerIssue_2021_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/text/ArthurJafa_i-DMagazine:TheDarkerIssue_2021_CI"
   },
   {
     "title": "CURA 44: The Generational Issue",
@@ -1116,17 +1066,12 @@
   },
   {
     "title": "Rachel Jones: A Shorn Root",
-    "author": "Rachel Jones, Thaddeus Ropac",
+    "author": "Rachel Jones",
     "year": "2024",
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SepakeAngiama_RachelJones:AShornRoot_2024_CI.jpg",
-    "color": [
-      40,
-      24,
-      24
-    ]
+    "image": "/images/library/text/RachelJones_RachelJones:AShornRoot_2024_CI"
   },
   {
     "title": "Pedagogy of the Oppressed",
@@ -1863,6 +1808,7 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "text",
+    "notes": "Journal article, no cover image",
     "image": "/images/library/text/MTakahashi_Music,DanceandRavingBodies:RavingasSpiritualityintheCentralCanadianRaveScene_2003_AHI.gif",
     "color": [
       248,
@@ -2078,142 +2024,92 @@
   {
     "title": "Experiments in Cinematic Abstraction: 1900-1967",
     "author": "Oskar Fischinger",
-    "year": "",
+    "year": "2013",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/OskarFischinger_ExperimentsinCinematicAbstraction:1900-1967_2013_ME.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/text/OskarFischinger_ExperimentsinCinematicAbstraction:1900-1967_2013_ME"
   },
   {
     "title": "Realism, Rationalism, Surrealism: Art between the Wars",
     "author": "Briony Fer",
-    "year": "",
+    "year": "1993",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/BrionyFer_Realism,Rationalism,Surrealism:ArtbetweentheWars_1993_ME.webp",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/BrionyFer_Realism,Rationalism,Surrealism:ArtbetweentheWars_1993_ME"
   },
   {
     "title": "Air Guitar: Essays on Art and Democracy",
     "author": "Dave Hickey",
-    "year": "",
+    "year": "1997",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/DaveHickey_AirGuitar:EssaysonArtandDemocracy_1997_ME.jpg",
-    "color": [
-      56,
-      40,
-      56
-    ]
+    "image": "/images/library/text/DaveHickey_AirGuitar:EssaysonArtandDemocracy_1997_ME"
   },
   {
     "title": "Perfect Wave: More Essays on Art and Democracy",
     "author": "Dave Hickey",
-    "year": "",
+    "year": "2017",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/DaveHickey_PerfectWave:MoreEssaysonArtandDemocracy_2017_ME.jpg",
-    "color": [
-      216,
-      232,
-      248
-    ]
+    "image": "/images/library/text/DaveHickey_PerfectWave:MoreEssaysonArtandDemocracy_2017_ME"
   },
   {
     "title": "The Female Trickster: the mask that reveals",
     "author": "Ricki Stefanie Tannen",
-    "year": "",
+    "year": "2007",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/RickiStefanieTannen_TheFemaleTrickster:themaskthatreveals_2007_ME.jpg",
-    "color": [
-      8,
-      40,
-      40
-    ]
+    "image": "/images/library/text/RickiStefanieTannen_TheFemaleTrickster:themaskthatreveals_2007_ME"
   },
   {
     "title": "Eroticism: Death and Sensuality",
     "author": "Georges Bataille",
-    "year": "",
+    "year": "1957",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/GeorgesBataille_Eroticism:DeathandSensuality_1957_ME.jpg",
-    "color": [
-      168,
-      40,
-      24
-    ]
+    "image": "/images/library/text/GeorgesBataille_Eroticism:DeathandSensuality_1957_ME"
   },
   {
     "title": "Part Object Part Sculpture",
     "author": "Helen Molesworth",
-    "year": "",
+    "year": "2005",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/HelenMolesworth_PartObjectPartSculpture_2005_ME.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/HelenMolesworth_PartObjectPartSculpture_2005_ME"
   },
   {
     "title": "Abstract Bodies: Sixties Sculpture in the Expanded Field of Gender",
     "author": "David J. Getsy",
-    "year": "",
+    "year": "2015",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/DavidJ.Getsy_AbstractBodies:SixtiesSculptureintheExpandedFieldofGender_2015_ME.jpg",
-    "color": [
-      136,
-      120,
-      136
-    ]
+    "image": "/images/library/text/DavidJ.Getsy_AbstractBodies:SixtiesSculptureintheExpandedFieldofGender_2015_ME"
   },
   {
     "title": "Club Cultures: Music, Media and Subcultural Capital",
     "author": "Sarah Thornton",
-    "year": "",
+    "year": "1995",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/SarahThornton_ClubCultures:Music,MediaandSubculturalCapital_1995_ME.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/text/SarahThornton_ClubCultures:Music,MediaandSubculturalCapital_1995_ME"
   },
   {
     "title": "The Face: A Cultural History",
     "author": "Fay Bound Alberti",
-    "year": "",
+    "year": "2026",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/FayBoundAlberti_TheFace:ACulturalHistory_2026_ME.jpg",
-    "color": [
-      104,
-      184,
-      200
-    ]
+    "image": "/images/library/text/FayBoundAlberti_TheFace:ACulturalHistory_2026_ME"
   },
   {
     "title": "Seeing is forgetting the name of the thing one sees",
@@ -2232,309 +2128,244 @@
   {
     "title": "Life Work: On the Autobiographical Impulse in Contemporary Art, Writing, and Theory",
     "author": "Moran Sheleg",
-    "year": "",
+    "year": "2024",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/MoranSheleg_LifeWork:OntheAutobiographicalImpulseinContemporaryArt,Writing,andTheory_2024_ME.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/MoranSheleg_LifeWork:OntheAutobiographicalImpulseinContemporaryArt,Writing,andTheory_2024_ME"
   },
   {
     "title": "Black Mountain College as Multiverse",
     "author": "Arnold Dreyblatt\nPetra Maria Meyer",
-    "year": "",
+    "year": "2022",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/ArnoldDreyblatt+PetraMariaMeyer_BlackMountainCollegeasMultiverse_2022_ME.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/ArnoldDreyblatt+PetraMariaMeyer_BlackMountainCollegeasMultiverse_2022_ME"
   },
   {
     "title": "The Contingent Object of Contemporary Art",
     "author": "Martha Buskirk",
-    "year": "",
+    "year": "2003",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/MarthaBuskirk_TheContingentObjectofContemporaryArt_2003_ME.jpg",
-    "color": [
-      168,
-      168,
-      168
-    ]
+    "image": "/images/library/text/MarthaBuskirk_TheContingentObjectofContemporaryArt_2003_ME"
   },
   {
     "title": "Rewriting Conceptual Art",
     "author": "Michael Newman\nJon Bird",
-    "year": "",
+    "year": "1999",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/MichaelNewman+JonBird_RewritingConceptualArt_1999_ME.jpg",
-    "color": [
-      72,
-      104,
-      136
-    ]
+    "image": "/images/library/text/MichaelNewman+JonBird_RewritingConceptualArt_1999_ME"
   },
   {
     "title": "Minimalism: Art and Polemics in the Sixties",
     "author": "James Meyer",
-    "year": "",
+    "year": "2001",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/JamesMeyer_Minimalism:ArtandPolemicsintheSixties_2001_ME.jpg",
-    "color": [
-      40,
-      40,
-      40
-    ]
+    "image": "/images/library/text/JamesMeyer_Minimalism:ArtandPolemicsintheSixties_2001_ME"
   },
   {
     "title": "The Art of Return: The Sixties and Contemporary Culture",
     "author": "James Meyer",
-    "year": "",
+    "year": "2019",
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "text",
-    "image": "/images/library/text/JamesMeyer_TheArtofReturn:TheSixtiesandContemporaryCulture_2019_ME.jpg",
-    "color": [
-      248,
-      88,
-      88
-    ]
+    "image": "/images/library/text/JamesMeyer_TheArtofReturn:TheSixtiesandContemporaryCulture_2019_ME"
   },
   {
     "title": "Introduction to Systems Thinking",
     "author": "Carnegie Mellon University School of Design",
-    "year": "",
+    "year": "2019",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/CarnegieMellonUniversitySchoolofDesign_IntroductiontoSystemsThinking_2019_CI.webp",
-    "color": [
-      40,
-      40,
-      40
-    ]
+    "image": "/images/library/text/CarnegieMellonUniversitySchoolofDesign_IntroductiontoSystemsThinking_2019_CI"
   },
   {
     "title": "Cyberfeminism Index",
     "author": "Mindy Seu",
-    "year": "",
+    "year": "2023",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MindySeu_CyberfeminismIndex_2023_CI.png",
-    "color": [
-      120,
-      248,
-      72
-    ]
+    "image": "/images/library/text/MindySeu_CyberfeminismIndex_2023_CI"
   },
   {
     "title": "The Archaeology of Knowledge",
     "author": "Michel Foucault",
-    "year": "",
+    "year": "2002",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MichelFoucault_TheArchaeologyofKnowledge_2002_CI.webp",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/MichelFoucault_TheArchaeologyofKnowledge_2002_CI"
   },
   {
     "title": "Visual Thinking",
     "author": "Rudolf Arnheim",
-    "year": "",
+    "year": "2004",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RudolfArnheim_VisualThinking_2004_CI.webp",
-    "color": [
-      232,
-      232,
-      216
-    ]
+    "image": "/images/library/text/RudolfArnheim_VisualThinking_2004_CI"
   },
   {
     "title": "Patternmaster",
     "author": "Octavia E. Butler",
-    "year": "",
+    "year": "1976",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/OctaviaE.Butler_Patternmaster_1976_CI.webp",
-    "color": [
-      168,
-      24,
-      24
-    ]
+    "image": "/images/library/text/OctaviaE.Butler_Patternmaster_1976_CI"
   },
   {
     "title": "The Presentation of Self in Everyday Life",
     "author": "Erving Goffman",
-    "year": "",
+    "year": "1956",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ErvingGoffman_ThePresentationofSelfinEverydayLife_1956_CI.webp",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/ErvingGoffman_ThePresentationofSelfinEverydayLife_1956_CI"
   },
   {
     "title": "The Order of Things",
     "author": "Michel Foucault",
-    "year": "",
+    "year": "2001",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MichelFoucault_TheOrderofThings_2001_CI.webp",
-    "color": [
-      88,
-      120,
-      120
-    ]
+    "image": "/images/library/text/MichelFoucault_TheOrderofThings_2001_CI"
   },
   {
     "title": "Visual Grammar: A Design Handbook",
     "author": "Christian Leborg",
-    "year": "",
+    "year": "2022",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ChristianLeborg_VisualGrammar:ADesignHandbook_2022_CI.webp",
-    "color": [
-      248,
-      72,
-      72
-    ]
+    "image": "/images/library/text/ChristianLeborg_VisualGrammar:ADesignHandbook_2022_CI"
   },
   {
     "title": "Design, When Everybody Designs: An Introduction to Design for Social Innovation",
     "author": "Enzio Manzini",
-    "year": "",
+    "year": "2025",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/EzioManzini_Design,WhenEverybodyDesigns:AnIntroductiontoDesignforSocialInnovation_2025_CI.webp",
-    "color": [
-      248,
-      248,
-      232
-    ]
+    "image": "/images/library/text/EzioManzini_Design,WhenEverybodyDesigns:AnIntroductiontoDesignforSocialInnovation_2025_CI"
   },
   {
     "title": "Lectures on Liberation",
     "author": "Angela Davis",
-    "year": "",
+    "year": "1971",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/AngelaDavis_LecturesonLiberation_1971_CI.webp",
-    "color": [
-      248,
-      216,
-      200
-    ]
+    "image": "/images/library/text/AngelaDavis_LecturesonLiberation_1971_CI"
   },
   {
     "title": "Curating in the Post-Internet Age",
     "author": "Boris Groys",
-    "year": "",
+    "year": "2018",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/BorisGroys_CuratinginthePost-InternetAge_2018_CI.png",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/text/BorisGroys_CuratinginthePost-InternetAge_2018_CI"
   },
   {
     "title": "A Century of Artists Books",
     "author": "Riva Castleman",
-    "year": "",
+    "year": "1994",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RivaCastleman_ACenturyofArtistsBooks_1994_CI.webp",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/text/RivaCastleman_ACenturyofArtistsBooks_1994_CI"
   },
   {
     "title": "Representations of the Intellectual",
     "author": "Edward W. Said",
-    "year": "",
+    "year": "1996",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/EdwardW.Said_RepresentationsoftheIntellectual_1996_CI.webp",
-    "color": [
-      248,
-      248,
-      216
-    ]
+    "image": "/images/library/text/EdwardW.Said_RepresentationsoftheIntellectual_1996_CI"
   },
   {
     "title": "See it Again, Say it Again: The Artist as Researcher",
     "author": "Janneke Wesseling",
-    "year": "",
+    "year": "2011",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/JannekeWesseling_SeeitAgain,SayitAgain:TheArtistasResearcher_2011_CI.webp",
-    "color": [
-      248,
-      8,
-      72
-    ]
+    "image": "/images/library/text/JannekeWesseling_SeeitAgain,SayitAgain:TheArtistasResearcher_2011_CI"
   },
   {
     "title": "The Craft of Research",
     "author": "Wayne C. Booth\nGregory G. Colomb\nJoseph M. Williams",
-    "year": "",
+    "year": "2011",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/WayneC.Booth+GregoryG.Colomb+JosephM.Williams_TheCraftofResearch_2003_CI.webp",
-    "color": [
-      232,
-      232,
-      88
-    ]
+    "image": "/images/library/text/WayneC.Booth+GregoryG.Colomb+JosephM.Williams_TheCraftofResearch_2003_CI"
   },
   {
     "title": "Visual Music",
     "author": "Brian Eno",
-    "year": "",
+    "year": "2013",
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/BrianEno_VisualMusic_2013_CI.jpg",
-    "color": [
-      168,
-      184,
-      24
-    ]
+    "image": "/images/library/text/BrianEno_VisualMusic_2013_CI"
+  },
+  {
+    "title": "THE ONLY DANCE THERE IS: Talks at the Menninger Foundation and Spring Grove Hospital",
+    "author": "Ram Dass",
+    "year": "1972",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "text",
+    "image": "/images/library/text/RamDass_THEONLYDANCETHEREISTalksattheMenningerFoundationandSpringGroveHospital_1972_LD"
+  },
+  {
+    "title": "The Secret Life of Plants",
+    "author": "Peter Tompkins \nChristopher Bird",
+    "year": "1973",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "text",
+    "image": "/images/library/text/PeterTompkins _ChristopherBird_TheSecretlifeofplants_1973_LD"
+  },
+  {
+    "title": "Eden: It's an Endless World",
+    "author": "Hiroki Endo",
+    "year": "2000",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "text",
+    "image": "/images/library/text/HirokiEndo_EdenItsanendlessworld_2000_LD"
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance",
+    "author": "Robert Pirsig",
+    "year": "1972",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "text",
+    "image": "/images/library/text/RobertPirsig_ZenandtheArtofMotorcycleMaintenance_1972_LD"
+  },
+  {
+    "title": "The New Age Music Guide",
+    "author": "Patti Jean Birosik",
+    "year": "1989",
+    "added": "26/08/2026",
+    "by": "Lucas Dupuy",
+    "category": "text",
+    "image": "/images/library/text/PattiJeanBirosik_TheNewAgeMusicGuide_1989_LD"
   }
 ]

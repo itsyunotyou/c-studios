@@ -6598,7 +6598,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_2.png"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled",
@@ -6649,7 +6654,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS_1.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6658,7 +6668,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_1.jpg"
+    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_2.png",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6681,7 +6696,12 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_NS_2.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Cerberus Theaters, Washington, D.C.",
@@ -8132,7 +8152,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI_3.png"
+    "image": "/images/library/image/BujuBanton_TalksaboutJamaicanLife_1992_CI_4.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Talks about Jamaican Life",
@@ -8197,7 +8222,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_5.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "01marocco.jpg",
@@ -8220,16 +8250,12 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_6.jpg"
-  },
-  {
-    "title": "N/A",
-    "author": "N/A",
-    "year": "N/A",
-    "added": "22/06/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_7.webp"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "N/A",
@@ -8244,6 +8270,15 @@
       200,
       168
     ]
+  },
+  {
+    "title": "N/A",
+    "author": "N/A",
+    "year": "N/A",
+    "added": "22/06/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/N_A_N_A_N_A_CI_8.jpg"
   },
   {
     "title": "N/A",
@@ -8938,12 +8973,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/EllenvonUnwerth_GiorgioArmaniF_W1999_00_1999_00_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/EllenvonUnwerth_GiorgioArmaniF_W1999_00_1999_00_JY_1.jpg"
   },
   {
     "title": "Giorgio Armani F/W 1999/01",
@@ -8952,12 +8982,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/EllenvonUnwerth_GiorgioArmaniF_W1999_00_1999_00_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/EllenvonUnwerth_GiorgioArmaniF_W1999_00_1999_00_JY_2.jpg"
   },
   {
     "title": "And tomorrow and tomorrow",
@@ -8994,12 +9019,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/AldoFallai_EmporioArmani_ca.1980_JY.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/AldoFallai_EmporioArmani_ca.1980_JY_1.jpg"
   },
   {
     "title": "Emporio Armani",
@@ -9008,12 +9028,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/AldoFallai_EmporioArmani_ca.1980_JY.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/AldoFallai_EmporioArmani_ca.1980_JY_2.jpg"
   },
   {
     "title": "Emporio Armani Fall-Winter 1992",
@@ -9036,12 +9051,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/AldoFallai_EmporioArmani_ca.1980_JY.jpg",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/AldoFallai_EmporioArmani_ca.1980_JY_3.jpg"
   },
   {
     "title": "GA_W_FW_2020_85\nGA_2025_A/A_PHS",
@@ -9092,12 +9102,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/RichardMackson_PatRileyinGiorgioArmaniforSportsIllustrated_1982_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RichardMackson_PatRileyinGiorgioArmaniforSportsIllustrated_1982_JY_1.jpg"
   },
   {
     "title": "Pat Riley in Giorgio Armani for Sports Illustrated",
@@ -9106,12 +9111,7 @@
     "added": "22/06/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/RichardMackson_PatRileyinGiorgioArmaniforSportsIllustrated_1982_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RichardMackson_PatRileyinGiorgioArmaniforSportsIllustrated_1982_JY_2.jpg"
   },
   {
     "title": "Pat Riley",

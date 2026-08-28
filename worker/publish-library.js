@@ -133,6 +133,28 @@ async function getFile(env, path) {
   return { sha: json.sha, content: json.content };
 }
 
+const KNOWN_IMAGE_EXT_RE = /\.(jpe?g|png|webp|gif|avif|svg|heic|bmp|tiff?)$/i;
+
+// A row whose expected file is already sitting in _incoming/<category>/
+// (staged by an earlier publish, just waiting on process-library-images.yml
+// to actually turn it into thumb/large + color) doesn't need re-staging —
+// without this, needsImage kept re-flagging it every single publish until
+// that Action finally caught up, since `old.color` stays unset the whole
+// time it's waiting. Re-uploading the same bytes on every click wasted
+// Apps Script's execution budget on rows that were already handled and
+// crowded out ones that genuinely needed it.
+async function listIncomingBasenames(env, category) {
+  const res = await gh(env, `contents/${encodePath(`_incoming/${category}`)}?ref=${BRANCH}`);
+  if (res.status === 404) return new Set();
+  if (!res.ok) throw new Error(`GET _incoming/${category} failed: ${res.status} ${await res.text()}`);
+  const entries = await res.json();
+  return new Set(
+    entries
+      .filter(e => e.type === 'file')
+      .map(e => e.name.replace(KNOWN_IMAGE_EXT_RE, '').toLowerCase())
+  );
+}
+
 async function ghJson(env, path, options) {
   const res = await gh(env, path, options);
   if (!res.ok) throw new Error(`${options?.method || 'GET'} ${path} failed: ${res.status} ${await res.text()}`);
@@ -228,6 +250,7 @@ export async function handlePublishLibrary(request, env) {
   // which covers are actually new/changed, then only encodes and sends
   // those in the real (non-dryRun) call that follows.
   if (dryRun) {
+    const incomingBasenames = await listIncomingBasenames(env, category);
     const needsImage = new Set();
     for (const r of rows) {
       if (!r.title || !r.fileName) continue;
@@ -243,7 +266,12 @@ export async function handlePublishLibrary(request, env) {
       // actually derived from (see sanitizeForFilename) — comparing against
       // the raw base here would permanently read as "changed" for any title
       // containing "#" or "?" and needlessly re-stage it on every publish.
-      if (oldBase !== sanitizeForFilename(base) || !old.color) needsImage.add(base.toLowerCase());
+      if (oldBase === sanitizeForFilename(base) && old.color) continue;
+      // Already staged in _incoming/ by an earlier publish and just waiting
+      // on process-library-images.yml — re-uploading it again would only
+      // burn Apps Script's budget on a row that's already handled.
+      if (incomingBasenames.has(sanitizeForFilename(base).toLowerCase())) continue;
+      needsImage.add(base.toLowerCase());
     }
     return new Response(JSON.stringify({ needsImage: [...needsImage] }), {
       headers: { 'Content-Type': 'application/json' },

@@ -183,10 +183,26 @@ async function ghJson(env, path, options) {
 async function commitFiles(env, files, message) {
   const tree = [];
   for (const file of files) {
-    const blob = await ghJson(env, 'git/blobs', {
-      method: 'POST',
-      body: JSON.stringify({ content: file.contentB64, encoding: 'base64' }),
-    });
+    // A generic "POST git/blobs failed: 400 malformed request" gives no clue
+    // which of a batch of ~10 files was the actual problem — surfacing the
+    // path here is the difference between a debuggable error and a guess.
+    // Catching an empty/missing contentB64 before it even reaches GitHub
+    // covers the one concrete way to get exactly that 400: a staged image
+    // whose base64 never made it across intact (e.g. Apps Script's own
+    // request got interrupted mid-batch), where JSON.stringify would just
+    // silently drop an undefined `content` key rather than send one.
+    if (!file.contentB64) {
+      throw new Error(`commitFiles: empty/missing content for ${file.path} — refusing to send it to GitHub`);
+    }
+    let blob;
+    try {
+      blob = await ghJson(env, 'git/blobs', {
+        method: 'POST',
+        body: JSON.stringify({ content: file.contentB64, encoding: 'base64' }),
+      });
+    } catch (e) {
+      throw new Error(`commitFiles: blob creation failed for ${file.path}: ${e.message}`);
+    }
     tree.push({ path: file.path, mode: '100644', type: 'blob', sha: blob.sha });
   }
 

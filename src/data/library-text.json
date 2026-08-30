@@ -2560,7 +2560,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "text",
-    "image": "/images/library/text/RamDass_THEONLYDANCETHEREISTalksattheMenningerFoundationandSpringGroveHospital_1972_LD.jpg"
+    "image": "/images/library/text/RamDass_THEONLYDANCETHEREISTalksattheMenningerFoundationandSpringGroveHospital_1972_LD.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Secret Life of Plants",
@@ -2569,7 +2574,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "text",
-    "image": "/images/library/text/PeterTompkins _ChristopherBird_TheSecretlifeofplants_1973_LD.jpg"
+    "image": "/images/library/text/PeterTompkins _ChristopherBird_TheSecretlifeofplants_1973_LD.jpg",
+    "color": [
+      40,
+      72,
+      56
+    ]
   },
   {
     "title": "Eden: It's an Endless World",
@@ -2578,7 +2588,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "text",
-    "image": "/images/library/text/HirokiEndo_EdenItsanendlessworld_2000_LD.jpg"
+    "image": "/images/library/text/HirokiEndo_EdenItsanendlessworld_2000_LD.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "Zen and the Art of Motorcycle Maintenance",
@@ -2587,7 +2602,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "text",
-    "image": "/images/library/text/RobertPirsig_ZenandtheArtofMotorcycleMaintenance_1972_LD.jpg"
+    "image": "/images/library/text/RobertPirsig_ZenandtheArtofMotorcycleMaintenance_1972_LD.jpg",
+    "color": [
+      24,
+      8,
+      88
+    ]
   },
   {
     "title": "The New Age Music Guide",
@@ -2596,6 +2616,11 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "text",
-    "image": "/images/library/text/PattiJeanBirosik_TheNewAgeMusicGuide_1989_LD.jpg"
+    "image": "/images/library/text/PattiJeanBirosik_TheNewAgeMusicGuide_1989_LD.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   }
 ]

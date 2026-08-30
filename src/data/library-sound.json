@@ -6040,7 +6040,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "sound",
-    "image": "/images/library/sound/YvesTumor _ExperiencingTheDepositOfFaith_2017_LD.jpg"
+    "image": "/images/library/sound/YvesTumor _ExperiencingTheDepositOfFaith_2017_LD.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Various",
@@ -6049,7 +6054,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "sound",
-    "image": "/images/library/sound/Various_CirculationTheSoundsOfTheMoss_2002_LD.png"
+    "image": "/images/library/sound/Various_CirculationTheSoundsOfTheMoss_2002_LD.png",
+    "color": [
+      88,
+      88,
+      72
+    ]
   },
   {
     "title": "Terre Thaemlitz",
@@ -6058,7 +6068,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "sound",
-    "image": "/images/library/sound/TerreThaemlitz_CompxComp_2019_LD.jpg"
+    "image": "/images/library/sound/TerreThaemlitz_CompxComp_2019_LD.jpg",
+    "color": [
+      136,
+      120,
+      120
+    ]
   },
   {
     "title": "Rhythm & Sound",
@@ -6067,7 +6082,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "sound",
-    "image": "/images/library/sound/Rhythm&Sound_Rhythm&Sound_2001_LD.jpg"
+    "image": "/images/library/sound/Rhythm&Sound_Rhythm&Sound_2001_LD.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Monolake",
@@ -6076,6 +6096,11 @@
     "added": "",
     "by": "Lucas Dupuy",
     "category": "sound",
-    "image": "/images/library/sound/Monolake_Hongkong_1997_LD.jpg"
+    "image": "/images/library/sound/Monolake_Hongkong_1997_LD.jpg",
+    "color": [
+      120,
+      136,
+      136
+    ]
   }
 ]

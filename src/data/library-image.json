@@ -9230,7 +9230,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "image",
-    "image": "/images/library/image/UnexplainedMagazine_2001_LD.jpg"
+    "image": "/images/library/image/UnexplainedMagazine_2001_LD.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Modern Meteorology and Climatology",
@@ -9239,7 +9244,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "image",
-    "image": "/images/library/image/TJChandler_ModernMeteorologyandClimatology_1969_LD.jpg"
+    "image": "/images/library/image/TJChandler_ModernMeteorologyandClimatology_1969_LD.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Leiji Matsumoto",
@@ -9266,6 +9276,11 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "image",
-    "image": "/images/library/image/EdwardRiteman_ ExploringtheGeometryofNature_1989_LD.jpg"
+    "image": "/images/library/image/EdwardRiteman_ ExploringtheGeometryofNature_1989_LD.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   }
 ]

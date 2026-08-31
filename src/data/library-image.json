@@ -9258,7 +9258,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "image",
-    "image": "/images/library/image/LeijiMatsumoto_GalaxyExpress999_1982_LD"
+    "image": "/images/library/image/LeijiMatsumoto_GalaxyExpress999_1982_LD",
+    "color": [
+      200,
+      56,
+      120
+    ]
   },
   {
     "title": "MicroLichens",
@@ -9267,7 +9272,12 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "image",
-    "image": "/images/library/image/EilifDahl&HildurKrog_MicroLichens_2006_LD"
+    "image": "/images/library/image/EilifDahl&HildurKrog_MicroLichens_2006_LD",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "Edward Riteman",

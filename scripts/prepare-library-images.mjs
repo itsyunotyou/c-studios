@@ -122,7 +122,13 @@ async function processCategory(category) {
       // 1) Dominant color
       if (needsColor) {
         try {
-          const { dominant } = await sharp(srcPath).stats();
+          // .rotate() with no args auto-orients from the source's EXIF
+          // Orientation tag (and strips it) — scanned covers routinely carry
+          // one (a flatbed scan fed in sideways, say), and without this the
+          // dominant color, thumb, and large all silently come out rotated
+          // to match the raw sensor data instead of how the image actually
+          // looks.
+          const { dominant } = await sharp(srcPath).rotate().stats();
           entry.color = [dominant.r, dominant.g, dominant.b];
           coloredCount++;
         } catch (e) {
@@ -134,6 +140,7 @@ async function processCategory(category) {
       if (needsThumb) {
         try {
           await sharp(srcPath)
+            .rotate()
             .resize(THUMB_WIDTH, null, { withoutEnlargement: true })
             .webp({ quality: THUMB_QUALITY })
             .toFile(thumbPath);
@@ -147,6 +154,7 @@ async function processCategory(category) {
       if (needsLarge) {
         try {
           await sharp(srcPath)
+            .rotate()
             .resize(LARGE_WIDTH, null, { withoutEnlargement: true })
             .webp({ quality: LARGE_QUALITY })
             .toFile(largePath);

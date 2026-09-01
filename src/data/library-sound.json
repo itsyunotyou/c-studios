@@ -6110,6 +6110,11 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "sound",
-    "image": "/images/library/sound/AnkokuTairikuJagatara_Tango_2007_YK.jpg"
+    "image": "/images/library/sound/AnkokuTairikuJagatara_Tango_2007_YK.jpg",
+    "color": [
+      248,
+      168,
+      8
+    ]
   }
 ]

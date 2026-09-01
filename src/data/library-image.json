@@ -9286,6 +9286,11 @@
     "added": "26/08/2026",
     "by": "Lucas Dupuy",
     "category": "image",
-    "image": "/images/library/image/EdwardRiteman_ ExploringtheGeometryofNature_1989_LD.jpg"
+    "image": "/images/library/image/EdwardRiteman_ ExploringtheGeometryofNature_1989_LD.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   }
 ]

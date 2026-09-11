@@ -9300,7 +9300,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "image",
-    "image": "/images/library/image/ToshioMatsumoto_FuneralParadeOfRoses_1969_YK.jpg"
+    "image": "/images/library/image/ToshioMatsumoto_FuneralParadeOfRoses_1969_YK.jpg",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "Double Life of Veronique",
@@ -9309,7 +9314,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "image",
-    "image": "/images/library/image/KrzysztofKieślowski_DoubleLife_Of_Veronique_1991_YK.jpg"
+    "image": "/images/library/image/KrzysztofKieślowski_DoubleLife_Of_Veronique_1991_YK.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Dogra Magra Kadogawa Bunko Cover",
@@ -9318,7 +9328,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "image",
-    "image": "/images/library/image/MasakaneYonekura_DograMagraKadogawaBunkoCover_1976_YK.jpg"
+    "image": "/images/library/image/MasakaneYonekura_DograMagraKadogawaBunkoCover_1976_YK.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "Dirk Bikkembergs FW 2000",
@@ -9327,7 +9342,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "image",
-    "image": "/images/library/image/MichelComte_DirkBikkembergsFW2000_YK.webp"
+    "image": "/images/library/image/MichelComte_DirkBikkembergsFW2000_YK.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Mishima: A Life in Four Chapters",
@@ -9336,7 +9356,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "image",
-    "image": "/images/library/image/EikoIshioka_Mishima_1985_YK.jpg"
+    "image": "/images/library/image/EikoIshioka_Mishima_1985_YK.jpg",
+    "color": [
+      104,
+      88,
+      72
+    ]
   },
   {
     "title": "Boy in suit with mobile phone",

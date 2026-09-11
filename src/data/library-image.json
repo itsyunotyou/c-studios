@@ -9300,7 +9300,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "image",
-    "image": "/images/library/image/Face to Face studios_Boy in suit with mobile phone_1993_ JE.PNG"
+    "image": "/images/library/image/Face to Face studios_Boy in suit with mobile phone_1993_ JE.PNG",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Women Lying Down with Flowers",
@@ -9309,7 +9314,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "image",
-    "image": "/images/library/image/Face to Face_ Women Lying Down with Flowers_1990_JE.PNG"
+    "image": "/images/library/image/Face to Face_ Women Lying Down with Flowers_1990_JE.PNG",
+    "color": [
+      104,
+      40,
+      104
+    ]
   },
   {
     "title": "Norman Parkinson",
@@ -9327,7 +9337,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "image",
-    "image": "/images/library/image/The Otolith Group_Mascon_2024_JE.JPG"
+    "image": "/images/library/image/The Otolith Group_Mascon_2024_JE.JPG",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Last Supper",
@@ -9336,7 +9351,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "image",
-    "image": "/images/library/image/Vanessa Beecroft_The Last Supper _2009_JE.jpg"
+    "image": "/images/library/image/Vanessa Beecroft_The Last Supper _2009_JE.jpg",
+    "color": [
+      232,
+      232,
+      248
+    ]
   },
   {
     "title": "Banquet",

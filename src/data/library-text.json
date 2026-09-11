@@ -2622,5 +2622,32 @@
       248,
       232
     ]
+  },
+  {
+    "title": "Death Kit",
+    "author": "Susan Sontag",
+    "year": "1967",
+    "added": "",
+    "by": "Yu Kakinoki",
+    "category": "text",
+    "image": "/images/library/text/SusanSontag_DeathKit_1967_YK.jpg"
+  },
+  {
+    "title": "Shoujo Jidai",
+    "author": "Yoshio Kataoka",
+    "year": "1990",
+    "added": "",
+    "by": "Yu Kakinoki",
+    "category": "text",
+    "image": "/images/library/text/YoshioKataoka_ShoujoJidai_1990_YK.webp"
+  },
+  {
+    "title": "Subete No Kotoba Ga Okorimasuyouni",
+    "author": "Kentaro Eto",
+    "year": "2024",
+    "added": "",
+    "by": "Yu Kakinoki",
+    "category": "text",
+    "image": "/images/library/text/KentaroEto_SubeteNoKotobaGaOkorimasuyouni_2024_YK"
   }
 ]

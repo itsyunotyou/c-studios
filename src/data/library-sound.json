@@ -2001,7 +2001,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/HadiAzrak+CharlesKhoury_JenoNeto_JenoNeto_2023_JY.jpg"
+    "image": "/images/library/sound/HadiAzrak+CharlesKhoury_JenoNeto_JenoNeto_2023_JY.jpg",
+    "color": [
+      8,
+      24,
+      56
+    ]
   },
   {
     "title": "la paradoja",
@@ -2010,7 +2015,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/JuanaMolina_laparadoja_DOGA_2025_JY.jpg"
+    "image": "/images/library/sound/JuanaMolina_laparadoja_DOGA_2025_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Borough Park",
@@ -2019,7 +2029,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Chaia_BoroughPark_YiddishElectronic_2025_JY.jpg"
+    "image": "/images/library/sound/Chaia_BoroughPark_YiddishElectronic_2025_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Every Grain Of Palestinian Sand",
@@ -2028,7 +2043,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Muslimgauze_EveryGrainofPalestinianSand_MullahSaid_1998_JY.jpg"
+    "image": "/images/library/sound/Muslimgauze_EveryGrainofPalestinianSand_MullahSaid_1998_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Shmaali شمالي",
@@ -2037,7 +2057,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/YasmineHamdan_Shmaali_IrememberIforget_2025_JY.jpg"
+    "image": "/images/library/sound/YasmineHamdan_Shmaali_IrememberIforget_2025_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Mantra of Buddha Akshobhya 不动佛心咒",
@@ -2046,7 +2071,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/HowieLee_MantraofBuddhaAkshobhya不动佛心咒_AtTheDrolmaWesel-LingMonastery_2024_JY.jpg"
+    "image": "/images/library/sound/HowieLee_MantraofBuddhaAkshobhya不动佛心咒_AtTheDrolmaWesel-LingMonastery_2024_JY.jpg",
+    "color": [
+      120,
+      40,
+      56
+    ]
   },
   {
     "title": "Porcelana",
@@ -2055,7 +2085,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/ROSALÍA+DougieF_Porcelana_LUX_2025_JY.jpg"
+    "image": "/images/library/sound/ROSALÍA+DougieF_Porcelana_LUX_2025_JY.jpg",
+    "color": [
+      120,
+      152,
+      168
+    ]
   },
   {
     "title": "Sadeness",
@@ -2064,7 +2099,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Enigma_Sadeness_LoveSensualityDevotion:TheGreatestHits_2001_JY.png"
+    "image": "/images/library/sound/Enigma_Sadeness_LoveSensualityDevotion:TheGreatestHits_2001_JY.png",
+    "color": [
+      56,
+      56,
+      40
+    ]
   },
   {
     "title": "A Dream Goes On Forever",
@@ -2073,7 +2113,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Vegyn+JohnGlacier_ADreamGoesOnForever_TheRoadToHellIsPavedWithGoodIntentions_2024_JY.jpg"
+    "image": "/images/library/sound/Vegyn+JohnGlacier_ADreamGoesOnForever_TheRoadToHellIsPavedWithGoodIntentions_2024_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Blessed Easter",
@@ -2082,7 +2127,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/HolgerCzukay_BlessedEaster_RomeRemainsRome_2018_JY.jpg"
+    "image": "/images/library/sound/HolgerCzukay_BlessedEaster_RomeRemainsRome_2018_JY.jpg",
+    "color": [
+      232,
+      8,
+      104
+    ]
   },
   {
     "title": "God Only Knows",
@@ -2091,7 +2141,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/TheLangleySchoolsMusicProject_GodOnlyKnows_InnocenceandDespair_2001_JY.jpg"
+    "image": "/images/library/sound/TheLangleySchoolsMusicProject_GodOnlyKnows_InnocenceandDespair_2001_JY.jpg",
+    "color": [
+      88,
+      88,
+      72
+    ]
   },
   {
     "title": "Tapestry from an Asteroid",
@@ -2100,7 +2155,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/SunRa_TapestryfromanAsteroid_WeTraveltheSpaceways_2014_JY.jpg"
+    "image": "/images/library/sound/SunRa_TapestryfromanAsteroid_WeTraveltheSpaceways_2014_JY.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "The Man With The Golden Arm",
@@ -2109,7 +2169,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/BarryAdamson_TheManWithTheGoldenArm_MossSideStory_1989_JY.jpg"
+    "image": "/images/library/sound/BarryAdamson_TheManWithTheGoldenArm_MossSideStory_1989_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Nobody Knows",
@@ -2118,7 +2183,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/PastorT.L.BarrettandtheYouthforChristChoir_LikeaShip(WithoutaSail)_1971_JY.jpg"
+    "image": "/images/library/sound/PastorT.L.BarrettandtheYouthforChristChoir_LikeaShip(WithoutaSail)_1971_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Oh Qué Será?",
@@ -2127,7 +2197,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/WillieColón_OhQuéSerá_GreatestHits_2008_JY.jpg"
+    "image": "/images/library/sound/WillieColón_OhQuéSerá_GreatestHits_2008_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Children of Tomorrow's Dreams",
@@ -2136,7 +2211,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/ThreatreWest+BlackFire_ChildrenofTomorrow'sDreams_BowtothePeople_2021_JY.jpg"
+    "image": "/images/library/sound/ThreatreWest+BlackFire_ChildrenofTomorrow'sDreams_BowtothePeople_2021_JY.jpg",
+    "color": [
+      72,
+      56,
+      56
+    ]
   },
   {
     "title": "Anchi Bale Game",
@@ -2145,7 +2225,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Admas_AnchiBaleGame_SonsofEthiopia_2020_JY.jpg"
+    "image": "/images/library/sound/Admas_AnchiBaleGame_SonsofEthiopia_2020_JY.jpg",
+    "color": [
+      104,
+      104,
+      104
+    ]
   },
   {
     "title": "Agrim Agadez",
@@ -2154,7 +2239,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/EtrandeL'AÏr_AgrimAgadez_No.1_2018_JY.jpg"
+    "image": "/images/library/sound/EtrandeL'AÏr_AgrimAgadez_No.1_2018_JY.jpg",
+    "color": [
+      8,
+      152,
+      216
+    ]
   },
   {
     "title": "4 Words Hardens",
@@ -2163,7 +2253,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/AsayakeProduction_4WordsHardens_AsayakeBreaksRecorddictionary_2020_JY.jpg"
+    "image": "/images/library/sound/AsayakeProduction_4WordsHardens_AsayakeBreaksRecorddictionary_2020_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Big Time Sensuality",
@@ -2172,7 +2267,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Björk_BigTimeSensuality_Debut_1993_JY.jpg"
+    "image": "/images/library/sound/Björk_BigTimeSensuality_Debut_1993_JY.jpg",
+    "color": [
+      200,
+      184,
+      168
+    ]
   },
   {
     "title": "Continuum 3",
@@ -2181,7 +2281,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/NalaSinephro_Continuum3_Endlessness_2024_JY.jpg"
+    "image": "/images/library/sound/NalaSinephro_Continuum3_Endlessness_2024_JY.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "daj mi",
@@ -2190,7 +2295,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/RatSection_dajmi_dajmi_2025_JY.jpg"
+    "image": "/images/library/sound/RatSection_dajmi_dajmi_2025_JY.jpg",
+    "color": [
+      232,
+      152,
+      168
+    ]
   },
   {
     "title": "Wiip Intro",
@@ -2199,7 +2309,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/EmmaDJ_WiipIntro_Lay2g_2024_JY.jpg"
+    "image": "/images/library/sound/EmmaDJ_WiipIntro_Lay2g_2024_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Eg",
@@ -2208,7 +2323,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/mutate+NEXCYIA+ExzaldS_Eg_Labège_2025_JY.jpg"
+    "image": "/images/library/sound/mutate+NEXCYIA+ExzaldS_Eg_Labège_2025_JY.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Truisms 4 Dummies",
@@ -2217,7 +2337,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Headache_Truisms4Dummies_TheHeadHurtsbuttheHeartKnowstheTruth_2023_JY.jpg"
+    "image": "/images/library/sound/Headache_Truisms4Dummies_TheHeadHurtsbuttheHeartKnowstheTruth_2023_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "ZOOT KOOK",
@@ -2226,7 +2351,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/SANDII_ZOOTKOOK_EATINGPLEASURE_2006_JY.jpg"
+    "image": "/images/library/sound/SANDII_ZOOTKOOK_EATINGPLEASURE_2006_JY.jpg",
+    "color": [
+      72,
+      56,
+      56
+    ]
   },
   {
     "title": "Heart2Heart",
@@ -2235,7 +2365,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/trickpony_Heart2Heart_24_7Heaven_2025_JY.jpg"
+    "image": "/images/library/sound/trickpony_Heart2Heart_24_7Heaven_2025_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "distance",
@@ -2244,7 +2379,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/HypeWilliams_distance_L's_2020_JY.jpg"
+    "image": "/images/library/sound/HypeWilliams_distance_L's_2020_JY.jpg",
+    "color": [
+      152,
+      184,
+      216
+    ]
   },
   {
     "title": "99.3",
@@ -2253,7 +2393,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/AnysiaKym_99.3_PressureSensitive_2023_JY.jpg"
+    "image": "/images/library/sound/AnysiaKym_99.3_PressureSensitive_2023_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Hard Refresh [DJ_Dave Remix]",
@@ -2262,7 +2407,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/DJDave_HardRefresh[DJDaveRemix]_2025_JY.jpg"
+    "image": "/images/library/sound/DJDave_HardRefresh[DJDaveRemix]_2025_JY.jpg",
+    "color": [
+      8,
+      40,
+      56
+    ]
   },
   {
     "title": "Chastity (Somewhen Remix)",
@@ -2271,7 +2421,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/PussyRiot+BoysNoize+AliceGlass+Somewhen_Chastity(SomewhenRemix)_ChastityRemixes_2023_JY.jpg"
+    "image": "/images/library/sound/PussyRiot+BoysNoize+AliceGlass+Somewhen_Chastity(SomewhenRemix)_ChastityRemixes_2023_JY.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "London is the Place for Me",
@@ -2280,7 +2435,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/LordKitchener_LondonisthePlaceforMe_8_2019_JY.jpg"
+    "image": "/images/library/sound/LordKitchener_LondonisthePlaceforMe_8_2019_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "When Sly Calls (Don't Touch That Phone)",
@@ -2289,7 +2449,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/MichaelFranks_WhenSlyCalls(Don'tTouchThatPhone)_PassionFruit_1983_JY.jpg"
+    "image": "/images/library/sound/MichaelFranks_WhenSlyCalls(Don'tTouchThatPhone)_PassionFruit_1983_JY.jpg",
+    "color": [
+      248,
+      248,
+      200
+    ]
   },
   {
     "title": "Tunan",
@@ -2298,7 +2463,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/MammanSani_Tunan_LaMusiqueÉlectroniqueDuNiger_2013_JY.jpg"
+    "image": "/images/library/sound/MammanSani_Tunan_LaMusiqueÉlectroniqueDuNiger_2013_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Blue Sky And Yellow Sunflower",
@@ -2307,7 +2477,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/SusumuYakota_BlueSkyAndYellowSunflower_Symbol_2005_JY.jpg"
+    "image": "/images/library/sound/SusumuYakota_BlueSkyAndYellowSunflower_Symbol_2005_JY.jpg",
+    "color": [
+      56,
+      40,
+      40
+    ]
   },
   {
     "title": "Reverie",
@@ -2316,7 +2491,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/ClaudeDebussy+IsaoTomita_Reverie_SnowflakesAreDancing_1974_JY.jpg"
+    "image": "/images/library/sound/ClaudeDebussy+IsaoTomita_Reverie_SnowflakesAreDancing_1974_JY.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Make Her Feel Good",
@@ -2325,7 +2505,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/TeairraMarí_MakeHerFeelGood_Roc-A-FellaRecordsPresentsTeairraMari_2005_CI.jpg"
+    "image": "/images/library/sound/TeairraMarí_MakeHerFeelGood_Roc-A-FellaRecordsPresentsTeairraMari_2005_CI.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "f****y dub",
@@ -2334,7 +2519,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/amr*_f****ydub_dubmuzik_2024_CI.jpg"
+    "image": "/images/library/sound/amr*_f****ydub_dubmuzik_2024_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "A Part Of A Fool",
@@ -2343,7 +2533,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/One'SyMack_APartOfAFool_DrugStory_2022_CI.jpg"
+    "image": "/images/library/sound/One'SyMack_APartOfAFool_DrugStory_2022_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Love Hater",
@@ -2352,7 +2547,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Outkast_LoveHater_Speakerboxxx_TheLoveBelow_2003_CI.jpg"
+    "image": "/images/library/sound/Outkast_LoveHater_Speakerboxxx_TheLoveBelow_2003_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "POPPING",
@@ -2361,7 +2561,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/LilXelly+TonyShhnow_POPPING_POPPING_2021_CI.jpg"
+    "image": "/images/library/sound/LilXelly+TonyShhnow_POPPING_POPPING_2021_CI.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Jump the Turnstile",
@@ -2370,7 +2575,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Jordana+TVGirl_jumptheTurnstile_Summer'sOver_2021_CI.jpg"
+    "image": "/images/library/sound/Jordana+TVGirl_jumptheTurnstile_Summer'sOver_2021_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "You Can't Change a Man",
@@ -2379,7 +2589,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ChristyEssienIgbokwe_YouCan'tChangeaMan_OneUnderstanding_1979_CI.jpg"
+    "image": "/images/library/sound/ChristyEssienIgbokwe_YouCan'tChangeaMan_OneUnderstanding_1979_CI.jpg",
+    "color": [
+      232,
+      216,
+      216
+    ]
   },
   {
     "title": "Kinetica",
@@ -2388,7 +2603,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/PortHenry_Kinetica_LaughWithoutaSound_2020_CI.jpg"
+    "image": "/images/library/sound/PortHenry_Kinetica_LaughWithoutaSound_2020_CI.jpg",
+    "color": [
+      216,
+      56,
+      56
+    ]
   },
   {
     "title": "Big Yellow Taxi",
@@ -2397,7 +2617,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/JoniMitchell_BigYellowTaxi_LadiesoftheCanyon_1970_CI.jpg"
+    "image": "/images/library/sound/JoniMitchell_BigYellowTaxi_LadiesoftheCanyon_1970_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Shine",
@@ -2406,7 +2631,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Hafeez_Shine_Amateur_2024_CI.jpg"
+    "image": "/images/library/sound/Hafeez_Shine_Amateur_2024_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Dog-tired",
@@ -2415,7 +2645,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/CamilleKeller_Dog-tired_dog-tired_2022_CI.jpg"
+    "image": "/images/library/sound/CamilleKeller_Dog-tired_dog-tired_2022_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "if you're listening (interlude)",
@@ -2424,7 +2659,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Laila!_ifyou'relistening(interlude)_GapYear!_2024.jpg"
+    "image": "/images/library/sound/Laila!_ifyou'relistening(interlude)_GapYear!_2024.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Je'nwi Temi (Don't Gag Me)",
@@ -2433,7 +2673,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/FelaKuti_Je'nwiTemi(Don'tGagMe)_Afrodisiac_1973_CI.jpg"
+    "image": "/images/library/sound/FelaKuti_Je'nwiTemi(Don'tGagMe)_Afrodisiac_1973_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Mi Manchi Ancora - 1997 Remaster",
@@ -2442,7 +2687,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/MatiaBazar_MiManchiAncora-1997Remaster_Melò(1997Remaster)_1979_CI.jpg"
+    "image": "/images/library/sound/MatiaBazar_MiManchiAncora-1997Remaster_Melò(1997Remaster)_1979_CI.jpg",
+    "color": [
+      40,
+      8,
+      24
+    ]
   },
   {
     "title": "Living In The Past",

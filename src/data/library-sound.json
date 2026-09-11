@@ -3527,7 +3527,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ArthurRussell_AnswersMe_WorldOfEcho_1986_CI.jpg"
+    "image": "/images/library/sound/ArthurRussell_AnswersMe_WorldOfEcho_1986_CI.jpg",
+    "color": [
+      24,
+      72,
+      40
+    ]
   },
   {
     "title": "Express Your Love",
@@ -3536,7 +3541,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Sweet&Innocent+TheMemphisMustangs_ExpressYourLove_CryLove_1972_CI.jpg"
+    "image": "/images/library/sound/Sweet&Innocent+TheMemphisMustangs_ExpressYourLove_CryLove_1972_CI.jpg",
+    "color": [
+      248,
+      232,
+      200
+    ]
   },
   {
     "title": "Eternal Life",
@@ -3545,7 +3555,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ShiraSmall_EternalLife_TheLineOfTimeAndThePlaneOfNow_1974_CI.jpg"
+    "image": "/images/library/sound/ShiraSmall_EternalLife_TheLineOfTimeAndThePlaneOfNow_1974_CI.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "The Memory",
@@ -3554,7 +3569,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/RoyAyersUbiquity_TheMemory_Vibrations_1976_CI.jpg"
+    "image": "/images/library/sound/RoyAyersUbiquity_TheMemory_Vibrations_1976_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "How Can You Say It",
@@ -3563,7 +3583,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/GloriaAnnTaylor_HowCanYouSayIt_LoveisaHurtin'Thing_2015_CI.webp"
+    "image": "/images/library/sound/GloriaAnnTaylor_HowCanYouSayIt_LoveisaHurtin'Thing_2015_CI.webp",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Ef",
@@ -3572,7 +3597,12 @@
     "added": "14/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ChanelBeads_Ef_Ef_2022_CI.jpg"
+    "image": "/images/library/sound/ChanelBeads_Ef_Ef_2022_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Swimming with the Crocodiles",
@@ -3581,7 +3611,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/TheVeils_SwimmingwiththeCrocodiles_TotalDepravity_2016_AHI.jpg"
+    "image": "/images/library/sound/TheVeils_SwimmingwiththeCrocodiles_TotalDepravity_2016_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Cruel 698",
@@ -3590,7 +3625,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/CruelSantino_Cruel698_Suzie'sFuneral_2016_AHI.jpg"
+    "image": "/images/library/sound/CruelSantino_Cruel698_Suzie'sFuneral_2016_AHI.jpg",
+    "color": [
+      232,
+      200,
+      136
+    ]
   },
   {
     "title": "Def Jam: Fight for Ldn",

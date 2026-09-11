@@ -1911,7 +1911,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Smerz+GAEA_Nårdetblåser,velteover_Tidligeredendagen_2024_JY.jpg"
+    "image": "/images/library/sound/Smerz+GAEA_Nårdetblåser,velteover_Tidligeredendagen_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Brill verb",
@@ -1920,7 +1925,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/FelicityJLord_Brillverb_FJL_2025_JY.jpg"
+    "image": "/images/library/sound/FelicityJLord_Brillverb_FJL_2025_JY.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Just Because It's a Funeral Doesn't Mean We Can't Rave",
@@ -1929,7 +1939,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/CRYSTALLMESS_JustBecauseIt'saFuneralDoesn'tMeanWeCan'tRave_MereNoises_2018_JY.jpg"
+    "image": "/images/library/sound/CRYSTALLMESS_JustBecauseIt'saFuneralDoesn'tMeanWeCan'tRave_MereNoises_2018_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Paparazzi",
@@ -1938,7 +1953,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/RatSection_Paparazzi_WhatStaysInVegas_2023_JY.jpg"
+    "image": "/images/library/sound/RatSection_Paparazzi_WhatStaysInVegas_2023_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Kitam gyvenime outro",
@@ -1947,7 +1967,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/MicroOne_Kitamgyvenimeoutro_Nekronomikonas_2022_JY.jpg"
+    "image": "/images/library/sound/MicroOne_Kitamgyvenimeoutro_Nekronomikonas_2022_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Rain Water Promise",
@@ -1956,7 +1981,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/NourishedbyTime_RainWaterPromise_EroticProbiotic2_2023_JY.jpg"
+    "image": "/images/library/sound/NourishedbyTime_RainWaterPromise_EroticProbiotic2_2023_JY.jpg",
+    "color": [
+      104,
+      184,
+      216
+    ]
   },
   {
     "title": "THOUSAND KNIVES",
@@ -1965,7 +1995,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/RyuichiSakamoto+KazumiWatanabe_THOUSANDKNIVES_TOKYOJOE_1997_JY.jpg"
+    "image": "/images/library/sound/RyuichiSakamoto+KazumiWatanabe_THOUSANDKNIVES_TOKYOJOE_1997_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Night And Day",
@@ -1974,7 +2009,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/RaymondScott_NightandDay_ManhattanResearch,Inc._2000_JY.jpg"
+    "image": "/images/library/sound/RaymondScott_NightandDay_ManhattanResearch,Inc._2000_JY.jpg",
+    "color": [
+      8,
+      104,
+      152
+    ]
   },
   {
     "title": "Spacelab - 2009 Remaster",
@@ -1983,7 +2023,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/Kraftwerk_Spacelab-2009Remaster_TheMan-Machine(2009Remaster)_1978_JY.jpg"
+    "image": "/images/library/sound/Kraftwerk_Spacelab-2009Remaster_TheMan-Machine(2009Remaster)_1978_JY.jpg",
+    "color": [
+      232,
+      8,
+      24
+    ]
   },
   {
     "title": "Si veriash a la rana",
@@ -1992,7 +2037,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/TartaRelena_Siveriashalarana_Éspregunta_2024_JY.jpg"
+    "image": "/images/library/sound/TartaRelena_Siveriashalarana_Éspregunta_2024_JY.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Jeno Neto",
@@ -3639,7 +3689,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/DenzelHimself+LordApex_DefJam:FightforLdn_DefJam:FightforLdn_2021_AHI.jpg"
+    "image": "/images/library/sound/DenzelHimself+LordApex_DefJam:FightforLdn_DefJam:FightforLdn_2021_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Don't Spoil It",
@@ -3648,7 +3703,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/CZARFACE+MFDOOM_Don'tSpoilIt_CzarfaceMeetsMetalFace_2018_AHI.jpg"
+    "image": "/images/library/sound/CZARFACE+MFDOOM_Don'tSpoilIt_CzarfaceMeetsMetalFace_2018_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Maggot Brain",
@@ -3657,7 +3717,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/Funkadelic_MaggotBrain_MaggotBrain_1971_AHI.jpg"
+    "image": "/images/library/sound/Funkadelic_MaggotBrain_MaggotBrain_1971_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Rack of His",
@@ -3666,7 +3731,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/FionaApple_RackofHis_FetchtheBoltCutters_2020_AHI.jpg"
+    "image": "/images/library/sound/FionaApple_RackofHis_FetchtheBoltCutters_2020_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Lost My Brain",
@@ -3675,7 +3745,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/Jawnino_LostMyBrain_40_2024_AHI.jpg"
+    "image": "/images/library/sound/Jawnino_LostMyBrain_40_2024_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Street Scooter",
@@ -3684,7 +3759,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/Jptntn_StreetScooter_NothingSpecial_2019_AHI.png"
+    "image": "/images/library/sound/Jptntn_StreetScooter_NothingSpecial_2019_AHI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Eyes In the Back of My Head",
@@ -3693,7 +3773,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/TheCliks_EyesInTheBackOfMyHead_Snakehouse_2007_AHI.jpg"
+    "image": "/images/library/sound/TheCliks_EyesInTheBackOfMyHead_Snakehouse_2007_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Why Knock For You",
@@ -3702,7 +3787,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/KelseyLu_WhyKnowForYou_Blood_2019_AHI.jpg"
+    "image": "/images/library/sound/KelseyLu_WhyKnowForYou_Blood_2019_AHI.jpg",
+    "color": [
+      136,
+      40,
+      8
+    ]
   },
   {
     "title": "10K",
@@ -3711,7 +3801,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "sound",
-    "image": "/images/library/sound/Obongjayar_10K_WhichWayisForward_2020_AHI.webp"
+    "image": "/images/library/sound/Obongjayar_10K_WhichWayisForward_2020_AHI.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Jeu 2 la mort",
@@ -3720,7 +3815,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/Rohff_Jeu2lamort_Lavieavantlamort_2001_LD.jpg"
+    "image": "/images/library/sound/Rohff_Jeu2lamort_Lavieavantlamort_2001_LD.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Laura",
@@ -3729,7 +3829,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/MatthewJamal+ShabakaHutchings_Laura_Laura_2025_LD.jpg"
+    "image": "/images/library/sound/MatthewJamal+ShabakaHutchings_Laura_Laura_2025_LD.jpg",
+    "color": [
+      216,
+      232,
+      232
+    ]
   },
   {
     "title": "Nobody Crosses Me",
@@ -3738,7 +3843,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/KingpinSkinnyPimp_NobodyCrossesMe_KingofdaPlayazBall_1996_LD.jpg"
+    "image": "/images/library/sound/KingpinSkinnyPimp_NobodyCrossesMe_KingofdaPlayazBall_1996_LD.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "NOLA Freestyle",
@@ -3747,7 +3857,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_LD.jpg"
+    "image": "/images/library/sound/DeanBlunt_NOLAFreestyle_NOLAFreestyle_2023_LD.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Free",
@@ -3756,7 +3871,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/BABYXSOSA_Free_SOS_2024_LD.jpg"
+    "image": "/images/library/sound/BABYXSOSA_Free_SOS_2024_LD.jpg",
+    "color": [
+      184,
+      152,
+      136
+    ]
   },
   {
     "title": "BB Belt",
@@ -3765,7 +3885,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/DJRudeOne_BBBelt_TheONEderfulNephew_2023_LD.webp"
+    "image": "/images/library/sound/DJRudeOne_BBBelt_TheONEderfulNephew_2023_LD.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "When I See It",
@@ -3774,7 +3899,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/KanyeWest+TheWeeknd_WhenISeeIt_WhenISeeIt_2015_LD.jpg"
+    "image": "/images/library/sound/KanyeWest+TheWeeknd_WhenISeeIt_WhenISeeIt_2015_LD.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Say A Prayer",
@@ -3783,7 +3913,12 @@
     "added": "19/05/2026",
     "by": "Ladji Diaby",
     "category": "sound",
-    "image": "/images/library/sound/T-Fire_SayAPrayer_TheNewTestament_2025_LD.jpg"
+    "image": "/images/library/sound/T-Fire_SayAPrayer_TheNewTestament_2025_LD.jpg",
+    "color": [
+      232,
+      232,
+      200
+    ]
   },
   {
     "title": "Make It Your Own - 1978 Demo",
@@ -3792,7 +3927,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/DonnyHathaway_MakeItYourOwn-1978Demo_SomedayWe'llAllBeFree_2010_CI.jpg"
+    "image": "/images/library/sound/DonnyHathaway_MakeItYourOwn-1978Demo_SomedayWe'llAllBeFree_2010_CI.jpg",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Practice - Instrumental",
@@ -3801,7 +3941,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/FreddieGibbs+Madlib_Practice-Instrumental_BandanaBeats_2020_CI.jpg"
+    "image": "/images/library/sound/FreddieGibbs+Madlib_Practice-Instrumental_BandanaBeats_2020_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Main Title (From \"Taxi Driver\")",
@@ -3810,7 +3955,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/BernardHerrmann_MainTitle(From\"TaxiDriver\")_TaxiDriver_1976_CI.jpg"
+    "image": "/images/library/sound/BernardHerrmann_MainTitle(From\"TaxiDriver\")_TaxiDriver_1976_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "born again freestyle (shed a tear).mp3",
@@ -3819,7 +3969,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/SambaJean-Baptiste_bornagainfreestyle(shedatear).mp3_bornagainfreestyle(shedatear).mp3_2025_CI.jpg"
+    "image": "/images/library/sound/SambaJean-Baptiste_bornagainfreestyle(shedatear).mp3_bornagainfreestyle(shedatear).mp3_2025_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "#2BaddiesFighting",
@@ -3828,7 +3983,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/PrettyV_2BaddiesFighting_DaRiseofSmokesito_2025_CI.jpg"
+    "image": "/images/library/sound/PrettyV_2BaddiesFighting_DaRiseofSmokesito_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Jagged Edge",
@@ -3837,7 +3997,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Promise_JaggedEdge_J.E.Heartbreak_2000_CI.jpg"
+    "image": "/images/library/sound/Promise_JaggedEdge_J.E.Heartbreak_2000_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "only you can pilot this eva, *CLASSIFIED*",
@@ -3846,7 +4011,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/svn4vr_onlyyoucanpilotthiseva,*CLASSIFIED*_onlyyoucanpilotthiseva,*CLASSIFIED*_2025_CI.jpg"
+    "image": "/images/library/sound/svn4vr_onlyyoucanpilotthiseva,*CLASSIFIED*_onlyyoucanpilotthiseva,*CLASSIFIED*_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "mi ELEGANZA",
@@ -3855,7 +4025,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/JoshuaChuquimiaCrampton_miELEGANZA_ProfundoAmor_2023_CI.jpg"
+    "image": "/images/library/sound/JoshuaChuquimiaCrampton_miELEGANZA_ProfundoAmor_2023_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "under heaven's weight",
@@ -3864,7 +4039,12 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Holodec_underheaven'sweight_TRUFOLK_2026_CI.jpg"
+    "image": "/images/library/sound/Holodec_underheaven'sweight_TRUFOLK_2026_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Lose You Beau",
@@ -3873,7 +4053,12 @@
     "added": "19/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/SpaceAfrika_LoseYouBeau_HonestLabour_2021_AGC.jpg"
+    "image": "/images/library/sound/SpaceAfrika_LoseYouBeau_HonestLabour_2021_AGC.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sense of Latent Power",
@@ -3882,7 +4067,12 @@
     "added": "19/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/JanaWinderen_SenseofLatentPower_EnergyField_2011_AGC.jpg"
+    "image": "/images/library/sound/JanaWinderen_SenseofLatentPower_EnergyField_2011_AGC.jpg",
+    "color": [
+      152,
+      152,
+      184
+    ]
   },
   {
     "title": "By This River",
@@ -3891,7 +4081,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/alvanoto+RyuichiSakamoto_ByThisRiver_Summvs_2011_AGC.jpg"
+    "image": "/images/library/sound/alvanoto+RyuichiSakamoto_ByThisRiver_Summvs_2011_AGC.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Alabama (Low)",
@@ -3900,7 +4095,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/sojourn_Alabama(Low)_JazzWindow_2025_AGC.jpg"
+    "image": "/images/library/sound/sojourn_Alabama(Low)_JazzWindow_2025_AGC.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Restaurants (Feat. Moor Mother)",
@@ -3909,7 +4109,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/RichieCulver_Restaurants(Feat.MoorMother)_ScreamIfYouDon'tExist_2023_AGC.jpg"
+    "image": "/images/library/sound/RichieCulver_Restaurants(Feat.MoorMother)_ScreamIfYouDon'tExist_2023_AGC.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Lust Is Stronger Than Us",
@@ -3918,7 +4123,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/VoiceActor+Squu_LustIsStrongerThanUs_Lust(1)_2025_AGC.jpg"
+    "image": "/images/library/sound/VoiceActor+Squu_LustIsStrongerThanUs_Lust(1)_2025_AGC.jpg",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "gg",
@@ -3927,7 +4137,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/Lolina_gg_gg_2025_AGC.png"
+    "image": "/images/library/sound/Lolina_gg_gg_2025_AGC.png",
+    "color": [
+      152,
+      152,
+      168
+    ]
   },
   {
     "title": "Difficult",
@@ -3936,7 +4151,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/RichieCulver_Difficult_HostileEnvironments_2024_AGC.jpg"
+    "image": "/images/library/sound/RichieCulver_Difficult_HostileEnvironments_2024_AGC.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "BUTTON (feat. MarrV)",
@@ -3945,7 +4165,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/Skino+Marrv_BUTTON(Feat.Marrv)_GhaziLiving_2024_AGC.jpg"
+    "image": "/images/library/sound/Skino+Marrv_BUTTON(Feat.Marrv)_GhaziLiving_2024_AGC.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "CHOPPA CITY",
@@ -3954,7 +4179,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/KPSKYWALKA+Skino_CHOPPACITY_CHOPPACITY_2025_AGC.jpg"
+    "image": "/images/library/sound/KPSKYWALKA+Skino_CHOPPACITY_CHOPPACITY_2025_AGC.jpg",
+    "color": [
+      168,
+      152,
+      120
+    ]
   },
   {
     "title": "20v1",
@@ -3963,7 +4193,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/KPSKYWALKA_20v1_20v1_2025_AGC.png"
+    "image": "/images/library/sound/KPSKYWALKA_20v1_20v1_2025_AGC.png",
+    "color": [
+      24,
+      56,
+      24
+    ]
   },
   {
     "title": "Back on the Bricks",
@@ -3972,7 +4207,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/Gizwop_BackontheBricks_KillorGetKilled_2025_AGC.jpg"
+    "image": "/images/library/sound/Gizwop_BackontheBricks_KillorGetKilled_2025_AGC.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Show Me",
@@ -3981,7 +4221,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/Goonew+XanMan+LilDude_ShowMe_ShortTemper_2021_AGC.jpg"
+    "image": "/images/library/sound/Goonew+XanMan+LilDude_ShowMe_ShortTemper_2021_AGC.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Night of the Roundtable",
@@ -3990,7 +4235,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/JAYELECTRONICA_NightoftheRoundtable_ActII:ThePatentsofNobility(theturn)_2025_AGC.jpg"
+    "image": "/images/library/sound/JAYELECTRONICA_NightoftheRoundtable_ActII:ThePatentsofNobility(theturn)_2025_AGC.jpg",
+    "color": [
+      72,
+      8,
+      8
+    ]
   },
   {
     "title": "B£E (feat. Blackhaine)",

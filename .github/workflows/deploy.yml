@@ -1,0 +1,40 @@
+name: Deploy site
+
+# Builds and deploys the site to Cloudflare on every push to main — closes
+# the gap that caused most of the confusion in the library cover cleanup:
+# the sheet's "Publish to site" commits data straight to GitHub, but nothing
+# used to actually rebuild + redeploy the live site, so it could silently
+# run weeks behind what was actually published. This makes every push
+# (a sheet publish, the image-processing bot, or a manual commit) end in a
+# live deploy automatically, with no one needing to remember to run
+# `wrangler deploy` by hand.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  # A newer push always supersedes whatever's mid-deploy — no reason to
+  # finish deploying stale content when something newer already landed.
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

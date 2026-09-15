@@ -190,6 +190,21 @@ function findHeaderRow(values) {
   throw new Error('Could not find a header row (no "TITLE" column found in the first 20 rows)');
 }
 
+// Renaming the NAME column actually happened in production and broke
+// silently: colIndex() just returned -1, row[-1] reads as undefined, and
+// every row's author quietly went blank on every publish from then on —
+// no error, nothing to notice until someone spots the whole site missing
+// creator names. Tries a short list of reasonable synonyms before giving
+// up, so a rename to something else obvious doesn't reintroduce the same
+// silent, sitewide data loss.
+function colIndexAny(headers, candidates) {
+  for (const name of candidates) {
+    const i = headers.indexOf(name);
+    if (i >= 0) return i;
+  }
+  return -1;
+}
+
 function collectRows(sheet) {
   const values = sheet.getDataRange().getValues();
   const headerRow = findHeaderRow(values);
@@ -199,7 +214,7 @@ function collectRows(sheet) {
   const notesCol = headers.findIndex(h => h.indexOf('NOTES') === 0);
   const cols = {
     title: colIndex('TITLE'),
-    name: colIndex('NAME'),
+    name: colIndexAny(headers, ['NAME', 'AUTHOR', 'ARTIST', 'CREATOR']),
     year: colIndex('YEAR'),
     added: colIndex('ADDED'),
     by: colIndex('BY'),
@@ -208,6 +223,12 @@ function collectRows(sheet) {
   };
   if (cols.title < 0 || cols.fileName < 0) {
     throw new Error('Sheet is missing a TITLE or FILE NAME column');
+  }
+  // Checked separately from title/fileName above only so this error message
+  // can name the actual problem — blocking the publish here is exactly
+  // what should happen instead of silently wiping every author again.
+  if (cols.name < 0) {
+    throw new Error('Sheet is missing a NAME/AUTHOR/ARTIST/CREATOR column — every entry\'s creator would silently end up blank');
   }
 
   const rows = [];

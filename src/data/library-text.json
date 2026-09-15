@@ -286,7 +286,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_RJ.webp"
+    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_RJ.webp",
+    "color": [
+      248,
+      104,
+      72
+    ]
   },
   {
     "title": "Call and Response: Journeys in African Art",
@@ -295,7 +300,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse:JourneysinAfricanArt_2000_CI.jpg"
+    "image": "/images/library/text/SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse:JourneysinAfricanArt_2000_CI.jpg",
+    "color": [
+      248,
+      104,
+      104
+    ]
   },
   {
     "title": "Black Art Notes",
@@ -304,7 +314,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/TomLloyd_BlackArtNotes_1971_CI.jpg"
+    "image": "/images/library/text/TomLloyd_BlackArtNotes_1971_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Samuel Fosso",
@@ -313,7 +328,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_CI.jpg"
+    "image": "/images/library/text/MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "The Ghosts of Songs: The Film Art of the Black Audio Film Collective",
@@ -322,7 +342,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/KodwoEshun+AnjalikaSagar_TheGhostsofSongs:TheFilmArtoftheBlackAudioFilmCollective_2007_CI.jpg"
+    "image": "/images/library/text/KodwoEshun+AnjalikaSagar_TheGhostsofSongs:TheFilmArtoftheBlackAudioFilmCollective_2007_CI.jpg",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "Structural Anthropology",
@@ -331,7 +356,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ClaudeLévi-Strauss_StructuralAnthropology_1968_CI.jpg"
+    "image": "/images/library/text/ClaudeLévi-Strauss_StructuralAnthropology_1968_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Familiar Stranger: A Life Between Two Islands",
@@ -340,7 +370,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/StuartHall_FamiliarStranger:ALifeBetweenTwoIslands_2017_CI.jpg"
+    "image": "/images/library/text/StuartHall_FamiliarStranger:ALifeBetweenTwoIslands_2017_CI.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "Modern Nature: Journals, 1989-1990",
@@ -349,7 +384,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/DerekJarman_ModernNature:Journals,1989-1990_2018_RJ.jpg"
+    "image": "/images/library/text/DerekJarman_ModernNature:Journals,1989-1990_2018_RJ.jpg",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Danse Africaine",
@@ -358,7 +398,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/GermaineAcogny_DanseAfricaine_1994_CI.jpg"
+    "image": "/images/library/text/GermaineAcogny_DanseAfricaine_1994_CI.jpg",
+    "color": [
+      184,
+      184,
+      200
+    ]
   },
   {
     "title": "Assata: An Autobiography",
@@ -367,7 +412,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/AssataShakur_Assata:AnAutobiography_1999_RJ.jpg"
+    "image": "/images/library/text/AssataShakur_Assata:AnAutobiography_1999_RJ.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Black Aliveness, or A Poetics of Being (Black Outdoors: Innovations in the Poetics of Study)",
@@ -1302,7 +1352,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/FionaMaine+VictoriaCook+TuuliLähdesmäki_ReconceptualizingCulturalLiteracyasaDialogicPractice_2019_JY.png"
+    "image": "/images/library/text/FionaMaine+VictoriaCook+TuuliLähdesmäki_ReconceptualizingCulturalLiteracyasaDialogicPractice_2019_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Disordered Attention: How We Look at Art and Performance Today",
@@ -1311,7 +1366,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/ClaireBishop_DisorderedAttention:HowWeLookatArtandPerformanceToday_2024_JY.jpg"
+    "image": "/images/library/text/ClaireBishop_DisorderedAttention:HowWeLookatArtandPerformanceToday_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "On Photography",
@@ -1320,7 +1380,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_OnPhotography_2008_JY.jpg"
+    "image": "/images/library/text/SusanSontag_OnPhotography_2008_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Notes on Camp",
@@ -1329,7 +1394,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_NotesonCamp_2018_JY.jpg"
+    "image": "/images/library/text/SusanSontag_NotesonCamp_2018_JY.jpg",
+    "color": [
+      200,
+      216,
+      216
+    ]
   },
   {
     "title": "Medium Design: Knowing How to Work on the World",
@@ -1338,7 +1408,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KellerEasterling_MediumDesign:KnowingHowtoWorkontheWorld_2021_JY.jpg"
+    "image": "/images/library/text/KellerEasterling_MediumDesign:KnowingHowtoWorkontheWorld_2021_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Critical Spatial Practice",
@@ -1348,7 +1423,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/JaneRendell_CriticalSpatialPractice_2008_JY.png"
+    "image": "/images/library/text/JaneRendell_CriticalSpatialPractice_2008_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism",
@@ -1357,7 +1437,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/DonnaHaraway_ACyborgManifesto:Science,Technology,andSocialist-Feminism_1983_JY.png"
+    "image": "/images/library/text/DonnaHaraway_ACyborgManifesto:Science,Technology,andSocialist-Feminism_1983_JY.png",
+    "color": [
+      104,
+      168,
+      216
+    ]
   },
   {
     "title": "The Work of Art in the Age of Mechanical Reproduction",
@@ -1366,7 +1451,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/WalterBenjamin_TheWorkofArtintheAgeofMechanicalReproduction_2021_JY.jpg"
+    "image": "/images/library/text/WalterBenjamin_TheWorkofArtintheAgeofMechanicalReproduction_2021_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "The Story of Art",
@@ -1375,7 +1465,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/E.H.Gombrich_TheStoryofArt_2007_JY.jpg"
+    "image": "/images/library/text/E.H.Gombrich_TheStoryofArt_2007_JY.jpg",
+    "color": [
+      184,
+      168,
+      168
+    ]
   },
   {
     "title": "The Field of Cultural Production: Essays on Art and Literature",
@@ -1384,7 +1479,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/PierreBordieu_TheFieldofCulturalProduction:EssaysonArtandLiterature_1993_JY.jpg"
+    "image": "/images/library/text/PierreBordieu_TheFieldofCulturalProduction:EssaysonArtandLiterature_1993_JY.jpg",
+    "color": [
+      232,
+      248,
+      184
+    ]
   },
   {
     "title": "The Culture Industry: Selected Essays on Mass Culture",

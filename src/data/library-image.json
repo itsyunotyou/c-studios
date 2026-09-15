@@ -4405,7 +4405,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LadjiDiaby_Angel(AuroraConsurgens)_N_A_CI.png"
+    "image": "/images/library/image/LadjiDiaby_Angel(AuroraConsurgens)_N_A_CI.png",
+    "color": [
+      152,
+      104,
+      88
+    ]
   },
   {
     "title": "Nina Simone",
@@ -4414,7 +4419,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KenHarris_NinaSimone_ca.1970_CI.jpg"
+    "image": "/images/library/image/KenHarris_NinaSimone_ca.1970_CI.jpg",
+    "color": [
+      72,
+      72,
+      56
+    ]
   },
   {
     "title": "sou ni tile (Album Cover)",
@@ -4423,7 +4433,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AmadouetMariam_sounitile(AlbumCover)_2005_CI.png"
+    "image": "/images/library/image/AmadouetMariam_sounitile(AlbumCover)_2005_CI.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Y-3 Spring 2010 Fashion Show",
@@ -4432,7 +4447,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Y-3_Y-3Spring2010FashionShow_2010_CI.jpg"
+    "image": "/images/library/image/Y-3_Y-3Spring2010FashionShow_2010_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Twen Magazine",
@@ -4441,7 +4461,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_TwenMagazine_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_TwenMagazine_N_A_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Twen Magazine Editorial (April 1969)",

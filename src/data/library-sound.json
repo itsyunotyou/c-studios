@@ -5902,7 +5902,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "sound",
-    "image": "/images/library/sound/Dinamarca,Eartheater_Tu Y Yo_2019_JE"
+    "image": "/images/library/sound/Dinamarca,Eartheater_Tu Y Yo_2019_JE",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Party Hard",

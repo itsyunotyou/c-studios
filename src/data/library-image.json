@@ -2915,7 +2915,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2924,7 +2924,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_2.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2978,7 +2978,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_1.jpg"
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
+    "color": [
+      8,
+      8,
+      104
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -2987,7 +2992,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_2.jpg"
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
+    "color": [
+      8,
+      8,
+      104
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -2996,7 +3006,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_3.webp"
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
+    "color": [
+      8,
+      8,
+      104
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -3020,16 +3035,6 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_1.webp"
-  },
-  {
-    "title": "Akira",
-    "author": "Katsuji Misawa",
-    "year": "1988",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "notes": "Ladji Diaby_Kunstverein Nurnberg",
     "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
     "color": [
       8,
@@ -3045,12 +3050,17 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_2.jpg"
+  },
+  {
+    "title": "Akira",
+    "author": "Katsuji Misawa",
+    "year": "1988",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "notes": "Ladji Diaby_Kunstverein Nurnberg",
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_3.webp"
   },
   {
     "title": "Akira",
@@ -3075,12 +3085,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_2",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_1.jpg"
   },
   {
     "title": "Perfect Blue",
@@ -3104,7 +3109,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI"
+    "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI.jpg"
   },
   {
     "title": "America",
@@ -3113,7 +3118,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GarrettBradley_America_2019_CI"
+    "image": "/images/library/image/GarrettBradley_America_2019_CI.webp"
   },
   {
     "title": "N/A",
@@ -3136,7 +3141,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_2"
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_1.jpg"
   },
   {
     "title": "N/A",
@@ -3173,7 +3178,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI"
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg"
   },
   {
     "title": "Disney's Pinocchio",
@@ -3182,7 +3187,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI"
+    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg"
   },
   {
     "title": "Samuel L. Jackson for Adidas",
@@ -3191,7 +3196,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI"
+    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg"
   },
   {
     "title": "Vortex Drawing 19",
@@ -3200,7 +3205,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI"
+    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp"
   },
   {
     "title": "Super Limbo",

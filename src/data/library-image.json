@@ -2841,7 +2841,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_2.webp"
+    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_2.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Interstellar Tesseract Scene",
@@ -4492,7 +4497,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GarrettBradley_Safe_2022_CI.png"
+    "image": "/images/library/image/GarrettBradley_Safe_2022_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -4519,7 +4529,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RobertValley_N_A_2025_CI.jpg"
+    "image": "/images/library/image/RobertValley_N_A_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4528,7 +4543,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4555,7 +4575,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JimLegxacy_BLACKBRITISHMUSIC2025Hat_2025_CI.png"
+    "image": "/images/library/image/JimLegxacy_BLACKBRITISHMUSIC2025Hat_2025_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "BLACK PICTURE SHOW",
@@ -4564,7 +4589,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillGunn_BLACKPICTURESHOW_1975_CI.png"
+    "image": "/images/library/image/BillGunn_BLACKPICTURESHOW_1975_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Street Portraits of 1980's NYC",
@@ -4573,7 +4603,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_2.webp"
+    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_2.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Tlalnepantla Park",
@@ -4582,7 +4617,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_2.jpg"
+    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_2.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Tlalnepantla Park",
@@ -4591,7 +4631,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_2.jpg"
+    "image": "/images/library/image/PRODUCTORA_TlalnepantlaPark_2019_CI_2.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Pluto at the Zoo",
@@ -4600,7 +4645,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Disney_PlutoattheZoo_1942_CI.jpg"
+    "image": "/images/library/image/Disney_PlutoattheZoo_1942_CI.jpg",
+    "color": [
+      104,
+      136,
+      168
+    ]
   },
   {
     "title": "Art in Our Time",
@@ -4609,7 +4659,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/FredWilson_ArtinOurTime_1998_CI.jpg"
+    "image": "/images/library/image/FredWilson_ArtinOurTime_1998_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Adidas Originals by Wales Bonner",
@@ -4618,7 +4673,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RenellMedrano_AdidasOriginalsbyWalesBonner_2024_CI.jpg"
+    "image": "/images/library/image/RenellMedrano_AdidasOriginalsbyWalesBonner_2024_CI.jpg",
+    "color": [
+      168,
+      152,
+      136
+    ]
   },
   {
     "title": "2 hommes dansent un pas de deux",
@@ -4627,7 +4687,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/JeanDepara_2hommesdansentunpasdedeux_1955-1965_AHI.jpg"
+    "image": "/images/library/image/JeanDepara_2hommesdansentunpasdedeux_1955-1965_AHI.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Couple en noir et blanc",
@@ -4636,7 +4701,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/JeanDepara_Coupleennoiretblanc_1955-1965_AHI.jpg"
+    "image": "/images/library/image/JeanDepara_Coupleennoiretblanc_1955-1965_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Les jeunes twistent",
@@ -4645,7 +4715,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/JeanDepara_Lesjeunestwistent_1955-1965_AHI.jpg"
+    "image": "/images/library/image/JeanDepara_Lesjeunestwistent_1955-1965_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "AHI X IB X PU",
@@ -4654,7 +4729,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/AngelHarvey-Ideozu_AHIXIBXPU_2026_AHI.png"
+    "image": "/images/library/image/AngelHarvey-Ideozu_AHIXIBXPU_2026_AHI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "A \"mistake\" with Negritude, Pan-Africanism, and Postcolonial African Identity: African Portrait Photography",
@@ -4672,7 +4752,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/JojoRecords_BengaTunesVol.2-DJJjojo(AlbumCover)_2020_AHI.jpg"
+    "image": "/images/library/image/JojoRecords_BengaTunesVol.2-DJJjojo(AlbumCover)_2020_AHI.jpg",
+    "color": [
+      168,
+      184,
+      152
+    ]
   },
   {
     "title": "Candy Darling on Her Deathbed",
@@ -4681,7 +4766,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/PeterHujar_CandyDarlingonHerDeathbed_1973_AHI.jpg"
+    "image": "/images/library/image/PeterHujar_CandyDarlingonHerDeathbed_1973_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Charles Mombaya - Retro (Album Cover)",
@@ -4690,7 +4780,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/CharlesMombaya_CharlesMombara–Retro(AlbumCover)_ 1999_AHI.jpg"
+    "image": "/images/library/image/CharlesMombaya_CharlesMombara–Retro(AlbumCover)_ 1999_AHI.jpg",
+    "color": [
+      200,
+      184,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -4713,7 +4808,12 @@
     "added": "17/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/DavidKoppel_JoannaLumley,CarnegieTower,NYC,1994(Verso)_2015_AHI.jpg"
+    "image": "/images/library/image/DavidKoppel_JoannaLumley,CarnegieTower,NYC,1994(Verso)_2015_AHI.jpg",
+    "color": [
+      168,
+      120,
+      88
+    ]
   },
   {
     "title": "Instagram Image",
@@ -4722,7 +4822,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/Whak&Mo_InstagramImage_2022_AHI.jpg"
+    "image": "/images/library/image/Whak&Mo_InstagramImage_2022_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Magazine Cover",
@@ -4731,7 +4836,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/TrimMagazine_MagazineCover_1959_AHI.png"
+    "image": "/images/library/image/TrimMagazine_MagazineCover_1959_AHI.png",
+    "color": [
+      248,
+      56,
+      72
+    ]
   },
   {
     "title": "Tony Allen",
@@ -4740,7 +4850,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_TonyAllen_N_A_AHI.jpg"
+    "image": "/images/library/image/N_A_TonyAllen_N_A_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Tomy Wright III Promotional Poster",
@@ -4749,7 +4864,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_TomyWrightIII_PromotionalPoster_N_A_AHI.jpg"
+    "image": "/images/library/image/N_A_TomyWrightIII_PromotionalPoster_N_A_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Telfar Sweat Skirt",
@@ -4758,7 +4878,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/Telfar_TelfarSweatSkirt_2023_AHI.png"
+    "image": "/images/library/image/Telfar_TelfarSweatSkirt_2023_AHI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Tangled Roots",
@@ -4767,7 +4892,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/BrixtonArtGallery_TangledRoots_1986_AHI.jpg"
+    "image": "/images/library/image/BrixtonArtGallery_TangledRoots_1986_AHI.jpg",
+    "color": [
+      168,
+      248,
+      56
+    ]
   },
   {
     "title": "Sampha Process",
@@ -4776,7 +4906,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/KhaliJoseph_SamphaProcess_2017_AHI.png"
+    "image": "/images/library/image/KhaliJoseph_SamphaProcess_2017_AHI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Passage",
@@ -4785,7 +4920,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/SaintHeron_Passage_2021_AHI.png"
+    "image": "/images/library/image/SaintHeron_Passage_2021_AHI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Tulip Boy",
@@ -4794,7 +4934,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/RotimiFani-Kayode_Tulip Boy _1989_AHI.jpg"
+    "image": "/images/library/image/RotimiFani-Kayode_Tulip Boy _1989_AHI.jpg",
+    "color": [
+      232,
+      200,
+      200
+    ]
   },
   {
     "title": "Self-Portrait of Macky Kane and Fatou Thioune, Saint Louis (Senegal)",
@@ -4803,7 +4948,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/MackyKane+FatouThioune_Self-PortraitofMackyKaneandFatouThioune_SaintLouis(Senegal)_1941_AHI.jpg"
+    "image": "/images/library/image/MackyKane+FatouThioune_Self-PortraitofMackyKaneandFatouThioune_SaintLouis(Senegal)_1941_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Issue 3: Earthbound",
@@ -4812,7 +4962,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/SportsBanger_Issue3:Earthbound_2021_AHI.webp"
+    "image": "/images/library/image/SportsBanger_Issue3:Earthbound_2021_AHI.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Silver Lake Lounge",
@@ -4821,7 +4976,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/KevinMcCarty_SilverLakeLounge_N_A_AHI.jpg"
+    "image": "/images/library/image/KevinMcCarty_SilverLakeLounge_N_A_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Signature",
@@ -4830,7 +4990,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/IsamuNoguchi_Signature_1984_AHI.jpg"
+    "image": "/images/library/image/IsamuNoguchi_Signature_1984_AHI.jpg",
+    "color": [
+      152,
+      136,
+      120
+    ]
   },
   {
     "title": "Charles Bursey",
@@ -4839,7 +5004,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/Ruth-MarionBaruch_CharlesBursey_ca.1970_AHI.png"
+    "image": "/images/library/image/Ruth-MarionBaruch_CharlesBursey_ca.1970_AHI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "smack",
@@ -4848,7 +5018,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/GoogleDictionary_smack_N_A_AHI.png"
+    "image": "/images/library/image/GoogleDictionary_smack_N_A_AHI.png",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Casa Insinga Floor Plan",
@@ -4857,7 +5032,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_CasaInsingaFloorPlan_ca.1987_AHI.jpg"
+    "image": "/images/library/image/N_A_CasaInsingaFloorPlan_ca.1987_AHI.jpg",
+    "color": [
+      248,
+      232,
+      232
+    ]
   },
   {
     "title": "The Ritual of Contemplation - Shifting Landscapes",

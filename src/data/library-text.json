@@ -426,7 +426,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors:InnovationsinthePoeticsofStudy)_2021_RJ.jpg"
+    "image": "/images/library/text/KevinQuashie_BlackAliveness,orAPoeticsofBeing(BlackOutdoors:InnovationsinthePoeticsofStudy)_2021_RJ.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Go Tell it on the Mountain",
@@ -435,7 +440,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/JamesBaldwin_GoTellItontheMountain_2001_RJ.jpg"
+    "image": "/images/library/text/JamesBaldwin_GoTellItontheMountain_2001_RJ.jpg",
+    "color": [
+      152,
+      184,
+      56
+    ]
   },
   {
     "title": "Essential Essays, Volume 1: Foundations of Cultural Studies",
@@ -444,7 +454,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/StuartHall_EssentialEssays,Volume1:FoundationsofCulturalStudies_2019_CI.jpg"
+    "image": "/images/library/text/StuartHall_EssentialEssays,Volume1:FoundationsofCulturalStudies_2019_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Black Style",
@@ -453,7 +468,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/CarolTulloch_BlackStyle_2004_CI.jpg"
+    "image": "/images/library/text/CarolTulloch_BlackStyle_2004_CI.jpg",
+    "color": [
+      40,
+      40,
+      24
+    ]
   },
   {
     "title": "More Brilliant Than the Sun: Adventures in Sonic Fiction",
@@ -462,7 +482,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/KodwoEshun_MoreBrilliantThantheSun:AdventuresinSonicFiction_1998_CI.jpg"
+    "image": "/images/library/text/KodwoEshun_MoreBrilliantThantheSun:AdventuresinSonicFiction_1998_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Freeestyle: The Studio Museum in Harlem",
@@ -471,7 +496,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ThelmaGolden_Freestyle:TheStudioMuseuminHarlem_2001_CI.jpg"
+    "image": "/images/library/text/ThelmaGolden_Freestyle:TheStudioMuseuminHarlem_2001_CI.jpg",
+    "color": [
+      200,
+      216,
+      248
+    ]
   },
   {
     "title": "The Black Interior: Essays",
@@ -480,7 +510,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/ElizabethAlexander_TheBlackInterior:Essays_2004_RJ.png"
+    "image": "/images/library/text/ElizabethAlexander_TheBlackInterior:Essays_2004_RJ.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Beloved",
@@ -489,7 +524,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ToniMorrison_Beloved_1987_CI.jpg"
+    "image": "/images/library/text/ToniMorrison_Beloved_1987_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Maud Martha",
@@ -498,7 +538,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/GwendolynBrooks_MaudMartha_1953_RJ.jpg"
+    "image": "/images/library/text/GwendolynBrooks_MaudMartha_1953_RJ.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "a tooth for a tooth",
@@ -507,7 +552,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/YusufHassan+KwaméOmari_atoothforatooth_2022_CI.png"
+    "image": "/images/library/text/YusufHassan+KwaméOmari_atoothforatooth_2022_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "House of Music",
@@ -516,7 +566,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/PeterDoig_PeterDoig:HouseofMusic_2026_CI.png"
+    "image": "/images/library/text/PeterDoig_PeterDoig:HouseofMusic_2026_CI.png",
+    "color": [
+      200,
+      40,
+      56
+    ]
   },
   {
     "title": "The Care Manifesto: The Politics of Interdependence",
@@ -525,7 +580,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/TheCareCollective_TheCareManifesto:ThePoliticsofInterdependence_2020_CI.jpg"
+    "image": "/images/library/text/TheCareCollective_TheCareManifesto:ThePoliticsofInterdependence_2020_CI.jpg",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "A Time for New Dreams",
@@ -534,7 +594,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/GraceWalesBonner_ATimeforNewDreams_2019_CI.png"
+    "image": "/images/library/text/GraceWalesBonner_ATimeforNewDreams_2019_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Architecture and Land in and out of the Americas",
@@ -543,7 +608,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/LuciaAllais_ArchitectureandLandinandoutoftheAmericas_2023_CI.jpg"
+    "image": "/images/library/text/LuciaAllais_ArchitectureandLandinandoutoftheAmericas_2023_CI.jpg",
+    "color": [
+      232,
+      88,
+      40
+    ]
   },
   {
     "title": "Dilla Time: The Life and Afterlife of J Dilla, the Hip-Hop Producer Who Invented Rhythm",
@@ -552,7 +622,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/DanCharnas_DillaTime:TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI.png"
+    "image": "/images/library/text/DanCharnas_DillaTime:TheLifeandAfterlifeofJDilla,theHip-HopProducerWhoInventedRhythm_2023_CI.png",
+    "color": [
+      104,
+      136,
+      184
+    ]
   },
   {
     "title": "Design Anthropological Futures",

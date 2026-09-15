@@ -5355,12 +5355,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg"
   },
   {
     "title": "Mick Jagger and Jerry Hall",
@@ -5369,12 +5364,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg"
   },
   {
     "title": "Polaroids",
@@ -5383,12 +5373,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg"
   },
   {
     "title": "Puck Ball (The Gang's All Here)",
@@ -5397,12 +5382,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg",
-    "color": [
-      40,
-      40,
-      40
-    ]
+    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg"
   },
   {
     "title": "Diane Keaton and Carol Kane",
@@ -5411,12 +5391,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png",
-    "color": [
-      216,
-      216,
-      216
-    ]
+    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png"
   },
   {
     "title": "Betty Davis",
@@ -5434,7 +5409,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_1.jpg"
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Come Out!!",
@@ -5470,7 +5450,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarlonRiggs_TonguesUntied_1989_CI.jpg"
+    "image": "/images/library/image/MarlonRiggs_TonguesUntied_1989_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "On the Street",
@@ -5479,7 +5464,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg"
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Debbie Harry",
@@ -5488,7 +5478,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KateSimons_DebbieHarry_ca.1980_CI.png"
+    "image": "/images/library/image/KateSimons_DebbieHarry_ca.1980_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Aluminum Foil #1 (Self-Portrait)",
@@ -5497,7 +5492,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JimmyDeSana_AluminumFoil1(Self-Portrait)_1985_CI.jpg"
+    "image": "/images/library/image/JimmyDeSana_AluminumFoil1(Self-Portrait)_1985_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Portrait Project",
@@ -5506,7 +5506,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CarleenDeSozer_ThePortraitProject_2019_CI.jpg"
+    "image": "/images/library/image/CarleenDeSozer_ThePortraitProject_2019_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Broken Silence (Official Video)",

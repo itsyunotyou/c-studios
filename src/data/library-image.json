@@ -7032,7 +7032,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/VivienneGriffin_The New Note_2024_JCB"
+    "image": "/images/library/image/VivienneGriffin_The New Note_2024_JCB",
+    "color": [
+      72,
+      56,
+      56
+    ]
   },
   {
     "title": "Kosmic Music",
@@ -7041,6 +7046,11 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/WadadaLeo Smith_KosmicMusic_2008_JCB"
+    "image": "/images/library/image/WadadaLeo Smith_KosmicMusic_2008_JCB",
+    "color": [
+      232,
+      232,
+      216
+    ]
   }
 ]

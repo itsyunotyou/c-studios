@@ -996,7 +996,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/StudioInternational_CyberneticSerendipity:TheComputerandtheArts_1968_JY.png"
+    "image": "/images/library/text/StudioInternational_CyberneticSerendipity:TheComputerandtheArts_1968_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Semiotics and the Philosophy of Language",
@@ -1005,7 +1010,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/UmbertoEco_SemioticsandthePhilosophyofLanguage_1986_JY.jpg"
+    "image": "/images/library/text/UmbertoEco_SemioticsandthePhilosophyofLanguage_1986_JY.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Aktuelle Kunstin Osteuropa: Jugoslawien, Polen, Rumänien, Sowjetunion, Tschechoslowakien, Ungarn",
@@ -1014,7 +1024,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KlausGroh_AktuelleKunstinOsteuropa:Jugoslawien,Polen,Rumänien,Sowjetunion,Tschechoslowakien,Ungarn_1972_JY.png"
+    "image": "/images/library/text/KlausGroh_AktuelleKunstinOsteuropa:Jugoslawien,Polen,Rumänien,Sowjetunion,Tschechoslowakien,Ungarn_1972_JY.png",
+    "color": [
+      232,
+      216,
+      72
+    ]
   },
   {
     "title": "Play Matters (Playful Thinking)",
@@ -1023,7 +1038,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MiguelSicart_PlayMatters(PlayfulThinking)_2017_JY.jpg"
+    "image": "/images/library/text/MiguelSicart_PlayMatters(PlayfulThinking)_2017_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Architecture of Happiness",
@@ -1032,7 +1052,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/AlaindeBotton_TheArchitectureofHappiness_2007_JY.jpg"
+    "image": "/images/library/text/AlaindeBotton_TheArchitectureofHappiness_2007_JY.jpg",
+    "color": [
+      200,
+      184,
+      200
+    ]
   },
   {
     "title": "Ficciones",
@@ -1041,7 +1066,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/JorgeLuisBorges_Ficciones_2012_JY.jpg"
+    "image": "/images/library/text/JorgeLuisBorges_Ficciones_2012_JY.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "\"Twenty One Pleasures of Translating (and a Silver Lining)\" in Essays Two: On Proust, Translation, Foreign Languages, and the City of Arles",
@@ -1050,7 +1080,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/LydiaDavis_\"TwentyOnePleasuresofTranslating(andaSilverLining)\"inEssaysTwo:OnProust,Translation,ForeignLanguages,andtheCityofArles_2021_JY.jpg"
+    "image": "/images/library/text/LydiaDavis_\"TwentyOnePleasuresofTranslating(andaSilverLining)\"inEssaysTwo:OnProust,Translation,ForeignLanguages,andtheCityofArles_2021_JY.jpg",
+    "color": [
+      72,
+      152,
+      216
+    ]
   },
   {
     "title": "Homo Ludens: A Study of the Play-Element in Culture",
@@ -1059,7 +1094,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/JohnaHuizinga_HomoLudens:AStudyofthePlay-ElemetinCulture_2016_JY.png"
+    "image": "/images/library/text/JohnaHuizinga_HomoLudens:AStudyofthePlay-ElemetinCulture_2016_JY.png",
+    "color": [
+      216,
+      200,
+      184
+    ]
   },
   {
     "title": "Visual Pleasure and Narrative Cinema",
@@ -1069,7 +1109,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/LauraMulvey_VisualPleasureandNarrativeCinema_1975_JY.png"
+    "image": "/images/library/text/LauraMulvey_VisualPleasureandNarrativeCinema_1975_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Towards a Philosophy of Photography",
@@ -1078,7 +1123,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/VilémFlusser_TowardsaPhilosophyofPhotography_2000_JY.jpg"
+    "image": "/images/library/text/VilémFlusser_TowardsaPhilosophyofPhotography_2000_JY.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Capitalist Realism: Is There No Alternative?",
@@ -1087,7 +1137,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MarkFisher_CapitalistRealism:IsThereNoAlternative_2012_JY.jpg"
+    "image": "/images/library/text/MarkFisher_CapitalistRealism:IsThereNoAlternative_2012_JY.jpg",
+    "color": [
+      216,
+      72,
+      56
+    ]
   },
   {
     "title": "Reconceptualizing Cultural Literacy as a Dialogic Practice",
@@ -1097,7 +1152,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/FionaMaine+VictoriaCook+TuuliLähdesmäki_ReconceptualizingCulturalLiteracyasaDialogicPractice_2019_JY.png"
+    "image": "/images/library/text/FionaMaine+VictoriaCook+TuuliLähdesmäki_ReconceptualizingCulturalLiteracyasaDialogicPractice_2019_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Disordered Attention: How We Look at Art and Performance Today",
@@ -1106,7 +1166,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/ClaireBishop_DisorderedAttention:HowWeLookatArtandPerformanceToday_2024_JY.jpg"
+    "image": "/images/library/text/ClaireBishop_DisorderedAttention:HowWeLookatArtandPerformanceToday_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "On Photography",
@@ -1115,7 +1180,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_OnPhotography_2008_JY.jpg"
+    "image": "/images/library/text/SusanSontag_OnPhotography_2008_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Notes on Camp",
@@ -1124,7 +1194,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_NotesonCamp_2018_JY.jpg"
+    "image": "/images/library/text/SusanSontag_NotesonCamp_2018_JY.jpg",
+    "color": [
+      200,
+      216,
+      216
+    ]
   },
   {
     "title": "Medium Design: Knowing How to Work on the World",
@@ -1133,7 +1208,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KellerEasterling_MediumDesign:KnowingHowtoWorkontheWorld_2021_JY.jpg"
+    "image": "/images/library/text/KellerEasterling_MediumDesign:KnowingHowtoWorkontheWorld_2021_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Critical Spatial Practice",
@@ -1143,7 +1223,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/JaneRendell_CriticalSpatialPractice_2008_JY.png"
+    "image": "/images/library/text/JaneRendell_CriticalSpatialPractice_2008_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism",
@@ -1152,7 +1237,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/DonnaHaraway_ACyborgManifesto:Science,Technology,andSocialist-Feminism_1983_JY.png"
+    "image": "/images/library/text/DonnaHaraway_ACyborgManifesto:Science,Technology,andSocialist-Feminism_1983_JY.png",
+    "color": [
+      104,
+      168,
+      216
+    ]
   },
   {
     "title": "The Work of Art in the Age of Mechanical Reproduction",
@@ -1161,7 +1251,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/WalterBenjamin_TheWorkofArtintheAgeofMechanicalReproduction_2021_JY.jpg"
+    "image": "/images/library/text/WalterBenjamin_TheWorkofArtintheAgeofMechanicalReproduction_2021_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "The Story of Art",
@@ -1170,7 +1265,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/E.H.Gombrich_TheStoryofArt_2007_JY.jpg"
+    "image": "/images/library/text/E.H.Gombrich_TheStoryofArt_2007_JY.jpg",
+    "color": [
+      184,
+      168,
+      168
+    ]
   },
   {
     "title": "The Field of Cultural Production: Essays on Art and Literature",
@@ -1179,7 +1279,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/PierreBordieu_TheFieldofCulturalProduction:EssaysonArtandLiterature_1993_JY.jpg"
+    "image": "/images/library/text/PierreBordieu_TheFieldofCulturalProduction:EssaysonArtandLiterature_1993_JY.jpg",
+    "color": [
+      232,
+      248,
+      184
+    ]
   },
   {
     "title": "The Culture Industry: Selected Essays on Mass Culture",
@@ -1188,7 +1293,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/ThedorW.Adorno+J.M.Bernstein_TheCultureIndustry:SelectedEssaysonMassCulture_1991_JY.jpg"
+    "image": "/images/library/text/ThedorW.Adorno+J.M.Bernstein_TheCultureIndustry:SelectedEssaysonMassCulture_1991_JY.jpg",
+    "color": [
+      232,
+      216,
+      88
+    ]
   },
   {
     "title": "\"Cultural Studies: Two Paradigms\" in Media, Culture, and Society",
@@ -1198,7 +1308,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/StuartHall_\"CulturalStudies:TwoParadigms\"inMedia,Culture,andSociety_1980_JY.png"
+    "image": "/images/library/text/StuartHall_\"CulturalStudies:TwoParadigms\"inMedia,Culture,andSociety_1980_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Systems Model of Creativity: The Collected Works of Mihaly Csikszentmihalyi",
@@ -1207,7 +1322,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/Mihaly Csikszentmihalyi_TheSystemsModelofCreativity:TheCollectedWorksofMihalyCsikszentmihalyi_2016_JY.jpg"
+    "image": "/images/library/text/Mihaly Csikszentmihalyi_TheSystemsModelofCreativity:TheCollectedWorksofMihalyCsikszentmihalyi_2016_JY.jpg",
+    "color": [
+      56,
+      72,
+      168
+    ]
   },
   {
     "title": "Vision in Motion",
@@ -1216,7 +1336,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/LaszloMoholy-Nagy_VisioninMotion_2014_JY.jpg"
+    "image": "/images/library/text/LaszloMoholy-Nagy_VisioninMotion_2014_JY.jpg",
+    "color": [
+      216,
+      40,
+      8
+    ]
   },
   {
     "title": "Black Mountain College: Experiment in Art",
@@ -1225,7 +1350,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/VincentKatz+MartinBrody+RobertCreeley+KevinPower_BlackMountainCollege:ExperimentinArt_2013_JY.jpg"
+    "image": "/images/library/text/VincentKatz+MartinBrody+RobertCreeley+KevinPower_BlackMountainCollege:ExperimentinArt_2013_JY.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "The Society of the Spectacle",
@@ -1234,7 +1364,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/GuyDebord_TheSocietyoftheSpectacle_2002_JY.jpg"
+    "image": "/images/library/text/GuyDebord_TheSocietyoftheSpectacle_2002_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Networking the Bloc: Experimental Art in Eastern Europe 1965 - 1981",
@@ -1243,7 +1378,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KlaraKemp-Welch_NetworkingtheBloc:ExperimentalArtinEasternEurope1965-1981_2019_JY.jpg"
+    "image": "/images/library/text/KlaraKemp-Welch_NetworkingtheBloc:ExperimentalArtinEasternEurope1965-1981_2019_JY.jpg",
+    "color": [
+      24,
+      56,
+      40
+    ]
   },
   {
     "title": "Principles of Archaeological Stratigraphy",
@@ -1252,7 +1392,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/EdwardHarris_PrinciplesofArchaeologicalStratigraphy_1989_JY.jpg"
+    "image": "/images/library/text/EdwardHarris_PrinciplesofArchaeologicalStratigraphy_1989_JY.jpg",
+    "color": [
+      248,
+      248,
+      200
+    ]
   },
   {
     "title": "Fashion Army",
@@ -1261,7 +1406,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MatthieuNicol_FashionArmy_2024_JY.jpg"
+    "image": "/images/library/text/MatthieuNicol_FashionArmy_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Unlicensed: Bootlegging as Creative Practice",

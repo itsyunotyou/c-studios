@@ -976,7 +976,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RachelJones_RachelJones:AShornRoot_2024_CI.jpg"
+    "image": "/images/library/text/RachelJones_RachelJones:AShornRoot_2024_CI.jpg",
+    "color": [
+      40,
+      24,
+      24
+    ]
   },
   {
     "title": "Pedagogy of the Oppressed",
@@ -985,7 +990,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/PauloFreire_PedgagogyoftheOppressed_1996_JY.jpg"
+    "image": "/images/library/text/PauloFreire_PedgagogyoftheOppressed_1996_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Technofeudalism: What Killed Capitalism",
@@ -994,7 +1004,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/YanisVaroufakis_Technofeudalism:WhatKilledCapitalism_2023_JY.jpg"
+    "image": "/images/library/text/YanisVaroufakis_Technofeudalism:WhatKilledCapitalism_2023_JY.jpg",
+    "color": [
+      248,
+      232,
+      40
+    ]
   },
   {
     "title": "Understanding Media: The Extension of Man",
@@ -1003,7 +1018,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MarshallMcLuhan_UnderstandingMedia:TheExtensionofMan_2001_JY.jpg"
+    "image": "/images/library/text/MarshallMcLuhan_UnderstandingMedia:TheExtensionofMan_2001_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Media Archaeology: Approaches, Applications, and Implications",
@@ -1012,7 +1032,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/ErkkiHuhtamo+JussiParikka_MediaArchaeology:Approaches,Applications,andImplications_2011_JY.png"
+    "image": "/images/library/text/ErkkiHuhtamo+JussiParikka_MediaArchaeology:Approaches,Applications,andImplications_2011_JY.png",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "Cybernetic Serendipity: The ComputerandtheArts",
@@ -1021,7 +1046,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/StudioInternational_CyberneticSerendipity:TheComputerandtheArts_1968_JY.png"
+    "image": "/images/library/text/StudioInternational_CyberneticSerendipity:TheComputerandtheArts_1968_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Semiotics and the Philosophy of Language",
@@ -1030,7 +1060,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/UmbertoEco_SemioticsandthePhilosophyofLanguage_1986_JY.jpg"
+    "image": "/images/library/text/UmbertoEco_SemioticsandthePhilosophyofLanguage_1986_JY.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Aktuelle Kunstin Osteuropa: Jugoslawien, Polen, Rumänien, Sowjetunion, Tschechoslowakien, Ungarn",
@@ -1039,7 +1074,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KlausGroh_AktuelleKunstinOsteuropa:Jugoslawien,Polen,Rumänien,Sowjetunion,Tschechoslowakien,Ungarn_1972_JY.png"
+    "image": "/images/library/text/KlausGroh_AktuelleKunstinOsteuropa:Jugoslawien,Polen,Rumänien,Sowjetunion,Tschechoslowakien,Ungarn_1972_JY.png",
+    "color": [
+      232,
+      216,
+      72
+    ]
   },
   {
     "title": "Play Matters (Playful Thinking)",
@@ -1048,7 +1088,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MiguelSicart_PlayMatters(PlayfulThinking)_2017_JY.jpg"
+    "image": "/images/library/text/MiguelSicart_PlayMatters(PlayfulThinking)_2017_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Architecture of Happiness",
@@ -1057,7 +1102,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/AlaindeBotton_TheArchitectureofHappiness_2007_JY.jpg"
+    "image": "/images/library/text/AlaindeBotton_TheArchitectureofHappiness_2007_JY.jpg",
+    "color": [
+      200,
+      184,
+      200
+    ]
   },
   {
     "title": "Ficciones",
@@ -1066,7 +1116,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/JorgeLuisBorges_Ficciones_2012_JY.jpg"
+    "image": "/images/library/text/JorgeLuisBorges_Ficciones_2012_JY.jpg",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "\"Twenty One Pleasures of Translating (and a Silver Lining)\" in Essays Two: On Proust, Translation, Foreign Languages, and the City of Arles",
@@ -1075,7 +1130,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/LydiaDavis_\"TwentyOnePleasuresofTranslating(andaSilverLining)\"inEssaysTwo:OnProust,Translation,ForeignLanguages,andtheCityofArles_2021_JY.jpg"
+    "image": "/images/library/text/LydiaDavis_\"TwentyOnePleasuresofTranslating(andaSilverLining)\"inEssaysTwo:OnProust,Translation,ForeignLanguages,andtheCityofArles_2021_JY.jpg",
+    "color": [
+      72,
+      152,
+      216
+    ]
   },
   {
     "title": "Homo Ludens: A Study of the Play-Element in Culture",
@@ -1084,7 +1144,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/JohnaHuizinga_HomoLudens:AStudyofthePlay-ElemetinCulture_2016_JY.png"
+    "image": "/images/library/text/JohnaHuizinga_HomoLudens:AStudyofthePlay-ElemetinCulture_2016_JY.png",
+    "color": [
+      216,
+      200,
+      184
+    ]
   },
   {
     "title": "Visual Pleasure and Narrative Cinema",
@@ -1094,7 +1159,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/LauraMulvey_VisualPleasureandNarrativeCinema_1975_JY.png"
+    "image": "/images/library/text/LauraMulvey_VisualPleasureandNarrativeCinema_1975_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Towards a Philosophy of Photography",
@@ -1103,7 +1173,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/VilémFlusser_TowardsaPhilosophyofPhotography_2000_JY.jpg"
+    "image": "/images/library/text/VilémFlusser_TowardsaPhilosophyofPhotography_2000_JY.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Capitalist Realism: Is There No Alternative?",
@@ -1112,7 +1187,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MarkFisher_CapitalistRealism:IsThereNoAlternative_2012_JY.jpg"
+    "image": "/images/library/text/MarkFisher_CapitalistRealism:IsThereNoAlternative_2012_JY.jpg",
+    "color": [
+      216,
+      72,
+      56
+    ]
   },
   {
     "title": "Reconceptualizing Cultural Literacy as a Dialogic Practice",

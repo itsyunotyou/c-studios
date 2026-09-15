@@ -96,7 +96,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/RichardReeves_OfBoysandMen_2023_JY.jpg"
+    "image": "/images/library/text/RichardReeves_OfBoysandMen_2023_JY.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "Designing in Coexistence: Reflections on Systemic Change",
@@ -105,7 +110,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/CroatianArchitects'Association_DesigninginCoexistence:ReflectionsonSystemicChange_2023_JY.jpg"
+    "image": "/images/library/text/CroatianArchitects'Association_DesigninginCoexistence:ReflectionsonSystemicChange_2023_JY.jpg",
+    "color": [
+      56,
+      40,
+      8
+    ]
   },
   {
     "title": "Time on Quaaludes and Red Wine",
@@ -114,7 +124,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/AnnaGalí_TimeonQuaaludesandRedWine_2024_JY.webp"
+    "image": "/images/library/text/AnnaGalí_TimeonQuaaludesandRedWine_2024_JY.webp",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Japanese Style",
@@ -123,7 +138,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SuzanneSlesin+StaffordCliff+DanielRozensztroch_JapaneseStyle_1987_CI.jpg"
+    "image": "/images/library/text/SuzanneSlesin+StaffordCliff+DanielRozensztroch_JapaneseStyle_1987_CI.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Close the App, Make the Ting: Transformative Prompts for the Modern Artist (Elijah)",
@@ -132,7 +152,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/Elijah_ClosetheApp,MaketheTing:TransformativePromptsfortheModernArtist(Elijah)_2025_CI.png"
+    "image": "/images/library/text/Elijah_ClosetheApp,MaketheTing:TransformativePromptsfortheModernArtist(Elijah)_2025_CI.png",
+    "color": [
+      232,
+      216,
+      72
+    ]
   },
   {
     "title": "Beyond Cultural Diversity: The Case for Creativity",
@@ -141,7 +166,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RichardAppignanesi_BeyondCulturalDiversity:TheCaseforCreativity_2010_CI.jpg"
+    "image": "/images/library/text/RichardAppignanesi_BeyondCulturalDiversity:TheCaseforCreativity_2010_CI.jpg",
+    "color": [
+      24,
+      56,
+      56
+    ]
   },
   {
     "title": "say cheeeeese",
@@ -150,7 +180,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RachelJones+ZoéWhitley+AnaïsDuplan+EllenGrieg+AïchaMehrez+ClaudiaRankine+YatesNorton_saycheeeeese_2023_CI.png"
+    "image": "/images/library/text/RachelJones+ZoéWhitley+AnaïsDuplan+EllenGrieg+AïchaMehrez+ClaudiaRankine+YatesNorton_saycheeeeese_2023_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Summer of Something Special 2021",
@@ -159,7 +194,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SomethingSpecialStudios_SummerofSomethingSpecial2021_2021_CI.png"
+    "image": "/images/library/text/SomethingSpecialStudios_SummerofSomethingSpecial2021_2021_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "No Logo",
@@ -168,7 +208,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/NaomiKlein_NoLogo_2000_CI.png"
+    "image": "/images/library/text/NaomiKlein_NoLogo_2000_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Quiet",
@@ -177,7 +222,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/VictoriaAdukweiBulley_Quiet_2022_RJ.webp"
+    "image": "/images/library/text/VictoriaAdukweiBulley_Quiet_2022_RJ.webp",
+    "color": [
+      120,
+      56,
+      24
+    ]
   },
   {
     "title": "Issue 1: Let's Get Physical",
@@ -186,7 +236,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_RJ.webp"
+    "image": "/images/library/text/TheBittersweetReview_Issue1:Let'sGetPhysical_2022_RJ.webp",
+    "color": [
+      248,
+      104,
+      72
+    ]
   },
   {
     "title": "Call and Response: Journeys in African Art",
@@ -195,7 +250,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse:JourneysinAfricanArt_2000_CI.jpg"
+    "image": "/images/library/text/SarahAdams+LyneiseWilliams+BarbaroMartinez-Ruiz+JoannaWever_CallandResponse:JourneysinAfricanArt_2000_CI.jpg",
+    "color": [
+      248,
+      104,
+      104
+    ]
   },
   {
     "title": "Black Art Notes",
@@ -204,7 +264,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/TomLloyd_BlackArtNotes_1971_CI.jpg"
+    "image": "/images/library/text/TomLloyd_BlackArtNotes_1971_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Samuel Fosso",
@@ -213,7 +278,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_CI.jpg"
+    "image": "/images/library/text/MariaFrancescaBonetti+ThelmaGolden_SamuelFosso_2008_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "The Ghosts of Songs: The Film Art of the Black Audio Film Collective",
@@ -222,7 +292,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/KodwoEshun+AnjalikaSagar_TheGhostsofSongs:TheFilmArtoftheBlackAudioFilmCollective_2007_CI.jpg"
+    "image": "/images/library/text/KodwoEshun+AnjalikaSagar_TheGhostsofSongs:TheFilmArtoftheBlackAudioFilmCollective_2007_CI.jpg",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "Structural Anthropology",
@@ -231,7 +306,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/ClaudeLévi-Strauss_StructuralAnthropology_1968_CI.jpg"
+    "image": "/images/library/text/ClaudeLévi-Strauss_StructuralAnthropology_1968_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Familiar Stranger: A Life Between Two Islands",
@@ -240,7 +320,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/StuartHall_FamiliarStranger:ALifeBetweenTwoIslands_2017_CI.jpg"
+    "image": "/images/library/text/StuartHall_FamiliarStranger:ALifeBetweenTwoIslands_2017_CI.jpg",
+    "color": [
+      232,
+      232,
+      216
+    ]
   },
   {
     "title": "Modern Nature: Journals, 1989-1990",
@@ -249,7 +334,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/DerekJarman_ModernNature:Journals,1989-1990_2018_RJ.jpg"
+    "image": "/images/library/text/DerekJarman_ModernNature:Journals,1989-1990_2018_RJ.jpg",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Danse Africaine",
@@ -258,7 +348,12 @@
     "added": "07/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/GermaineAcogny_DanseAfricaine_1994_CI.jpg"
+    "image": "/images/library/text/GermaineAcogny_DanseAfricaine_1994_CI.jpg",
+    "color": [
+      184,
+      184,
+      200
+    ]
   },
   {
     "title": "Assata: An Autobiography",
@@ -267,7 +362,12 @@
     "added": "07/05/2026",
     "by": "Rachel Jones",
     "category": "text",
-    "image": "/images/library/text/AssataShakur_Assata:AnAutobiography_1999_RJ.jpg"
+    "image": "/images/library/text/AssataShakur_Assata:AnAutobiography_1999_RJ.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Black Aliveness, or A Poetics of Being (Black Outdoors: Innovations in the Poetics of Study)",
@@ -1202,7 +1302,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/FionaMaine+VictoriaCook+TuuliLähdesmäki_ReconceptualizingCulturalLiteracyasaDialogicPractice_2019_JY.png"
+    "image": "/images/library/text/FionaMaine+VictoriaCook+TuuliLähdesmäki_ReconceptualizingCulturalLiteracyasaDialogicPractice_2019_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Disordered Attention: How We Look at Art and Performance Today",
@@ -1211,7 +1316,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/ClaireBishop_DisorderedAttention:HowWeLookatArtandPerformanceToday_2024_JY.jpg"
+    "image": "/images/library/text/ClaireBishop_DisorderedAttention:HowWeLookatArtandPerformanceToday_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "On Photography",
@@ -1220,7 +1330,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_OnPhotography_2008_JY.jpg"
+    "image": "/images/library/text/SusanSontag_OnPhotography_2008_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Notes on Camp",
@@ -1229,7 +1344,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_NotesonCamp_2018_JY.jpg"
+    "image": "/images/library/text/SusanSontag_NotesonCamp_2018_JY.jpg",
+    "color": [
+      200,
+      216,
+      216
+    ]
   },
   {
     "title": "Medium Design: Knowing How to Work on the World",
@@ -1238,7 +1358,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KellerEasterling_MediumDesign:KnowingHowtoWorkontheWorld_2021_JY.jpg"
+    "image": "/images/library/text/KellerEasterling_MediumDesign:KnowingHowtoWorkontheWorld_2021_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Critical Spatial Practice",
@@ -1248,7 +1373,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/JaneRendell_CriticalSpatialPractice_2008_JY.png"
+    "image": "/images/library/text/JaneRendell_CriticalSpatialPractice_2008_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "A Cyborg Manifesto: Science, Technology, and Socialist-Feminism",
@@ -1257,7 +1387,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/DonnaHaraway_ACyborgManifesto:Science,Technology,andSocialist-Feminism_1983_JY.png"
+    "image": "/images/library/text/DonnaHaraway_ACyborgManifesto:Science,Technology,andSocialist-Feminism_1983_JY.png",
+    "color": [
+      104,
+      168,
+      216
+    ]
   },
   {
     "title": "The Work of Art in the Age of Mechanical Reproduction",
@@ -1266,7 +1401,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/WalterBenjamin_TheWorkofArtintheAgeofMechanicalReproduction_2021_JY.jpg"
+    "image": "/images/library/text/WalterBenjamin_TheWorkofArtintheAgeofMechanicalReproduction_2021_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "The Story of Art",
@@ -1275,7 +1415,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/E.H.Gombrich_TheStoryofArt_2007_JY.jpg"
+    "image": "/images/library/text/E.H.Gombrich_TheStoryofArt_2007_JY.jpg",
+    "color": [
+      184,
+      168,
+      168
+    ]
   },
   {
     "title": "The Field of Cultural Production: Essays on Art and Literature",
@@ -1284,7 +1429,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/PierreBordieu_TheFieldofCulturalProduction:EssaysonArtandLiterature_1993_JY.jpg"
+    "image": "/images/library/text/PierreBordieu_TheFieldofCulturalProduction:EssaysonArtandLiterature_1993_JY.jpg",
+    "color": [
+      232,
+      248,
+      184
+    ]
   },
   {
     "title": "The Culture Industry: Selected Essays on Mass Culture",
@@ -1293,7 +1443,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/ThedorW.Adorno+J.M.Bernstein_TheCultureIndustry:SelectedEssaysonMassCulture_1991_JY.jpg"
+    "image": "/images/library/text/ThedorW.Adorno+J.M.Bernstein_TheCultureIndustry:SelectedEssaysonMassCulture_1991_JY.jpg",
+    "color": [
+      232,
+      216,
+      88
+    ]
   },
   {
     "title": "\"Cultural Studies: Two Paradigms\" in Media, Culture, and Society",
@@ -1303,7 +1458,12 @@
     "by": "Jess Young",
     "category": "text",
     "notes": "Journal article, no cover image",
-    "image": "/images/library/text/StuartHall_\"CulturalStudies:TwoParadigms\"inMedia,Culture,andSociety_1980_JY.png"
+    "image": "/images/library/text/StuartHall_\"CulturalStudies:TwoParadigms\"inMedia,Culture,andSociety_1980_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Systems Model of Creativity: The Collected Works of Mihaly Csikszentmihalyi",
@@ -1312,7 +1472,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/Mihaly Csikszentmihalyi_TheSystemsModelofCreativity:TheCollectedWorksofMihalyCsikszentmihalyi_2016_JY.jpg"
+    "image": "/images/library/text/Mihaly Csikszentmihalyi_TheSystemsModelofCreativity:TheCollectedWorksofMihalyCsikszentmihalyi_2016_JY.jpg",
+    "color": [
+      56,
+      72,
+      168
+    ]
   },
   {
     "title": "Vision in Motion",
@@ -1321,7 +1486,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/LaszloMoholy-Nagy_VisioninMotion_2014_JY.jpg"
+    "image": "/images/library/text/LaszloMoholy-Nagy_VisioninMotion_2014_JY.jpg",
+    "color": [
+      216,
+      40,
+      8
+    ]
   },
   {
     "title": "Black Mountain College: Experiment in Art",
@@ -1330,7 +1500,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/VincentKatz+MartinBrody+RobertCreeley+KevinPower_BlackMountainCollege:ExperimentinArt_2013_JY.jpg"
+    "image": "/images/library/text/VincentKatz+MartinBrody+RobertCreeley+KevinPower_BlackMountainCollege:ExperimentinArt_2013_JY.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "The Society of the Spectacle",
@@ -1339,7 +1514,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/GuyDebord_TheSocietyoftheSpectacle_2002_JY.jpg"
+    "image": "/images/library/text/GuyDebord_TheSocietyoftheSpectacle_2002_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Networking the Bloc: Experimental Art in Eastern Europe 1965 - 1981",
@@ -1348,7 +1528,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/KlaraKemp-Welch_NetworkingtheBloc:ExperimentalArtinEasternEurope1965-1981_2019_JY.jpg"
+    "image": "/images/library/text/KlaraKemp-Welch_NetworkingtheBloc:ExperimentalArtinEasternEurope1965-1981_2019_JY.jpg",
+    "color": [
+      24,
+      56,
+      40
+    ]
   },
   {
     "title": "Principles of Archaeological Stratigraphy",
@@ -1357,7 +1542,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/EdwardHarris_PrinciplesofArchaeologicalStratigraphy_1989_JY.jpg"
+    "image": "/images/library/text/EdwardHarris_PrinciplesofArchaeologicalStratigraphy_1989_JY.jpg",
+    "color": [
+      248,
+      248,
+      200
+    ]
   },
   {
     "title": "Fashion Army",
@@ -1366,7 +1556,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/MatthieuNicol_FashionArmy_2024_JY.jpg"
+    "image": "/images/library/text/MatthieuNicol_FashionArmy_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Unlicensed: Bootlegging as Creative Practice",
@@ -1375,7 +1570,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/BenSchwartz_Unlicensed:BootleggingasCreativePractice_2023_JY.jpg"
+    "image": "/images/library/text/BenSchwartz_Unlicensed:BootleggingasCreativePractice_2023_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michael Clark: Cosmic Dancer",
@@ -1384,7 +1584,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/FlorenceOstende_MichaelClark:CosmicDancer_2020_JY.jpg"
+    "image": "/images/library/text/FlorenceOstende_MichaelClark:CosmicDancer_2020_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Yoruba Proverbs",
@@ -1393,7 +1598,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/OyekanOwomoyela_YorubaProverbs_2008_CI.jpg"
+    "image": "/images/library/text/OyekanOwomoyela_YorubaProverbs_2008_CI.jpg",
+    "color": [
+      56,
+      72,
+      248
+    ]
   },
   {
     "title": "New York Magazine's 2022 'Reasons to Love New York'  Issue",
@@ -1402,7 +1612,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/NewYorkMagazine_NewYorkMagazine's2022'ReasonstoLoveNewYork'Issue_2022_CI.webp"
+    "image": "/images/library/text/NewYorkMagazine_NewYorkMagazine's2022'ReasonstoLoveNewYork'Issue_2022_CI.webp",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Darkwater: Voices from Within the Veil",
@@ -1411,7 +1626,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/W.E.B.DuBois_Darkwater:VoicesfromWithintheVeil_1920_CI.png"
+    "image": "/images/library/text/W.E.B.DuBois_Darkwater:VoicesfromWithintheVeil_1920_CI.png",
+    "color": [
+      56,
+      72,
+      88
+    ]
   },
   {
     "title": "Rhythms of the Afro-Atlantic World: Rituals and Remembrances",
@@ -1420,7 +1640,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MamadouDiouf+IfeomaKiddoeNwankwo_RhythmsoftheAfro-AtlanticWorld:RitualsandRemembrances_2010_CI.jpg"
+    "image": "/images/library/text/MamadouDiouf+IfeomaKiddoeNwankwo_RhythmsoftheAfro-AtlanticWorld:RitualsandRemembrances_2010_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Flash of the Spirit: African & Afro-American Art & Philosophy",
@@ -1429,7 +1654,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/RobertFarrisThompson_FlashoftheSpirit:African&Afro-AmericanArt&Philosophy_1983_CI.jpg"
+    "image": "/images/library/text/RobertFarrisThompson_FlashoftheSpirit:African&Afro-AmericanArt&Philosophy_1983_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Orientalism",
@@ -1438,7 +1668,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/EdwardW.Said_Orientalism_1978_CI.jpg"
+    "image": "/images/library/text/EdwardW.Said_Orientalism_1978_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Sportsbanger, Earthbound, Issue 3",
@@ -1447,7 +1682,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "text",
-    "image": "/images/library/text/SportsBanger_Sportsbanger,Earthbound,Issue3_2025_AHI.jpg"
+    "image": "/images/library/text/SportsBanger_Sportsbanger,Earthbound,Issue3_2025_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Collecting Memory. Volume (01)",
@@ -1456,7 +1696,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "text",
-    "image": "/images/library/text/MollyMaltman_CollectingMemory.Volume(01)_2023_AHI.png"
+    "image": "/images/library/text/MollyMaltman_CollectingMemory.Volume(01)_2023_AHI.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Roots to Fruits, no.2, Champeta: A Colombian Caribbean Cultural Resistance",
@@ -1465,7 +1710,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "text",
-    "image": "/images/library/text/LolaOlufeami_RootstoFruits,no.2,Champeta:AColpmbianCarribeanCulturalResistance_2023_AHI.webp"
+    "image": "/images/library/text/LolaOlufeami_RootstoFruits,no.2,Champeta:AColpmbianCarribeanCulturalResistance_2023_AHI.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "M Archive: After the End of the World",

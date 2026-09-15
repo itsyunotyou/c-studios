@@ -5355,7 +5355,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg"
+    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Mick Jagger and Jerry Hall",
@@ -5364,7 +5369,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg"
+    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Polaroids",
@@ -5373,7 +5383,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg"
+    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Puck Ball (The Gang's All Here)",
@@ -5382,7 +5397,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg"
+    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Diane Keaton and Carol Kane",
@@ -5391,7 +5411,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png"
+    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Betty Davis",
@@ -5400,7 +5425,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI.jpg"
+    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "On the Street",
@@ -5418,7 +5448,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI.jpg"
+    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Lisa Lyon",
@@ -5427,7 +5462,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI.jpg"
+    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Fran Lebowitz at Home in Morristown",
@@ -5436,7 +5476,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI.jpg"
+    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Tongues Untied",
@@ -5625,7 +5670,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg"
+    "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Workers Leaving the Lumière Factory",
@@ -5634,7 +5684,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/LouisLumière_WorkersLeavingtheLumièreFactory_1895_JY.jpg"
+    "image": "/images/library/image/LouisLumière_WorkersLeavingtheLumièreFactory_1895_JY.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "A Trip to the Moon",
@@ -5643,7 +5698,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/GeorgesMéliès_ATriptotheMoon_1902_JY.jpg"
+    "image": "/images/library/image/GeorgesMéliès_ATriptotheMoon_1902_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Goin' On",
@@ -5652,7 +5712,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/WilliamMcRae_Goin'On_1981_JY.jpg"
+    "image": "/images/library/image/WilliamMcRae_Goin'On_1981_JY.jpg",
+    "color": [
+      40,
+      24,
+      24
+    ]
   },
   {
     "title": "David Foster Wallace on Reading, Consumerism, and American Politics",
@@ -5661,7 +5726,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/ManufacturingIntellect(YouTubeChannel)_DavidFosterWallaceonReading,Consumerism,andAmericanPolitics_2003_JY.png"
+    "image": "/images/library/image/ManufacturingIntellect(YouTubeChannel)_DavidFosterWallaceonReading,Consumerism,andAmericanPolitics_2003_JY.png",
+    "color": [
+      152,
+      184,
+      200
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -5670,7 +5740,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png",
+    "color": [
+      104,
+      104,
+      88
+    ]
   },
   {
     "title": "City of God",
@@ -5679,7 +5754,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KátiaLund+FernandoMeirelles_CityofGod_2002_CI.png"
+    "image": "/images/library/image/KátiaLund+FernandoMeirelles_CityofGod_2002_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Hero",
@@ -5688,7 +5768,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ZhangYimou_Hero_2002_CI.jpg"
+    "image": "/images/library/image/ZhangYimou_Hero_2002_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -5697,7 +5782,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BarryJenkins_MedicineforMelancholy_2008_CI.jpg"
+    "image": "/images/library/image/BarryJenkins_MedicineforMelancholy_2008_CI.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -5706,7 +5796,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DavidLynch_MulhollandDrive_2001_CI.png"
+    "image": "/images/library/image/DavidLynch_MulhollandDrive_2001_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",

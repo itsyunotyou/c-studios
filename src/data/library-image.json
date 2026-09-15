@@ -4285,7 +4285,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EbonyMagazine_MaxSiegel'sIndianapolisHome_2007_CI.png"
+    "image": "/images/library/image/EbonyMagazine_MaxSiegel'sIndianapolisHome_2007_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Manu Dibango (Air Afrique)",
@@ -4294,7 +4299,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AirAfrique_ManuDibango(AirAfrique)_1996_CI.jpg"
+    "image": "/images/library/image/AirAfrique_ManuDibango(AirAfrique)_1996_CI.jpg",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "Born Like This (Album Cover)",
@@ -4303,7 +4313,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MFDoom_BornLikeThis(AlbumCover)_2009_CI.jpg"
+    "image": "/images/library/image/MFDoom_BornLikeThis(AlbumCover)_2009_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Stalker",
@@ -4312,7 +4327,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Stalker_1979_CI.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_Stalker_1979_CI.jpg",
+    "color": [
+      152,
+      168,
+      152
+    ]
   },
   {
     "title": "The Good, positive/The Bad, positive",
@@ -4321,7 +4341,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MarinaAbramović_TheGood,positive_TheBad,positive_2019_CI.jpg"
+    "image": "/images/library/image/MarinaAbramović_TheGood,positive_TheBad,positive_2019_CI.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Angel (Aurora Consurgens)",

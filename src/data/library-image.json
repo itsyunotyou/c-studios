@@ -1884,7 +1884,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/ZofiaKulik+PrzemysławKwiek_Kwiekulik:ActivitieswithDobromierz_2008_JY.jpg"
+    "image": "/images/library/image/ZofiaKulik+PrzemysławKwiek_Kwiekulik:ActivitieswithDobromierz_2008_JY.jpg",
+    "color": [
+      120,
+      104,
+      72
+    ]
   },
   {
     "title": "World Finance Corporation and Associates, ca. 1970 - 84: Miami - Ajman - Bogota - Caracas (7th Version)",
@@ -1893,7 +1898,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/MarkLombardi_WorldFinanceCorporationandAssociates,ca.1970-84:Miami-Ajman-Bogota-Caracas(7thVersion)_1999_JY.jpg"
+    "image": "/images/library/image/MarkLombardi_WorldFinanceCorporationandAssociates,ca.1970-84:Miami-Ajman-Bogota-Caracas(7thVersion)_1999_JY.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "Man With Clouds",
@@ -1902,7 +1912,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/WolfgangTillmans_ManWithClouds_1998_JY.jpg"
+    "image": "/images/library/image/WolfgangTillmans_ManWithClouds_1998_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Bilderatlas Mnemosyne, Panel 39",
@@ -1911,7 +1926,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/AbyWarburg_BilderatlasMnemosyne,Panel39_1929_JY.png"
+    "image": "/images/library/image/AbyWarburg_BilderatlasMnemosyne,Panel39_1929_JY.png",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Bilderatlas Mnemosyne, Panel 55",
@@ -1920,7 +1940,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/AbyWarburg_BilderatlasMnemosyne,Panel55_1929_JY.png"
+    "image": "/images/library/image/AbyWarburg_BilderatlasMnemosyne,Panel55_1929_JY.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Bilderatlas Mnemosyne, Panel 77",
@@ -1930,7 +1955,12 @@
     "by": "Jess Young",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/AbyWarburg_BilderatlasMnemosyne,Panel77_1929_JY.png"
+    "image": "/images/library/image/AbyWarburg_BilderatlasMnemosyne,Panel77_1929_JY.png",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Seven Twists I-V1",
@@ -1940,7 +1970,12 @@
     "by": "Jess Young",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY.png"
+    "image": "/images/library/image/DóraMaurer_SevenTwistsI-VI_1979_JY.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Apparition, Blueberries",
@@ -1949,7 +1984,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/GiliTal_Apparition,Blueberries_2026_JY.webp"
+    "image": "/images/library/image/GiliTal_Apparition,Blueberries_2026_JY.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Four Blackboards",
@@ -1958,7 +1998,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/JosephBeuys_FourBlackboards_1972_JY.jpg"
+    "image": "/images/library/image/JosephBeuys_FourBlackboards_1972_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Diagram for Gesture Dance",
@@ -1967,7 +2012,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/OskarSchlemmer_DiagramforGestureDance_1926_JY.jpg"
+    "image": "/images/library/image/OskarSchlemmer_DiagramforGestureDance_1926_JY.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Camera Recording its Own Condition (7 Apertures, 10 Speeds, 2 Mirrors)",

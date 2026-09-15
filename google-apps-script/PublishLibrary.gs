@@ -150,15 +150,31 @@ function splitExt(name) {
   return { base: name, ext: null };
 }
 
+// Matching a Drive filename against the sheet's FILE NAME column is exact
+// string equality, which broke silently (no error — just an entry that never
+// gets a cover, forever) for two real cases found in production: (1) the
+// same accented character stored in a different Unicode normalization form
+// on each side (e.g. "é" as one composed codepoint vs "e" + a combining
+// accent — visually identical, byte-different), and (2) a straight
+// apostrophe on one side rendered as "_" on the other (common when someone
+// hand-types a Drive filename from a title that has one, since "'" is an
+// awkward character to type into a filename on some platforms). Both sides
+// of the match now run through this before comparing, so those differences
+// stop mattering instead of silently blocking a cover forever.
+function normalizeForMatch(s) {
+  return s.normalize('NFC').trim().toLowerCase().replace(/['_]/g, '_');
+}
+
 // Map every file in a Drive folder by its basename (no extension,
-// lowercased) so it can be matched against the sheet's extension-less
-// FILE NAME column regardless of case or actual file type.
+// normalized) so it can be matched against the sheet's extension-less
+// FILE NAME column regardless of case, actual file type, or the Unicode/
+// punctuation quirks normalizeForMatch() accounts for.
 function indexDriveFolder(folder) {
   const files = folder.getFiles();
   const map = {};
   while (files.hasNext()) {
     const file = files.next();
-    const base = splitExt(file.getName()).base.trim().toLowerCase();
+    const base = normalizeForMatch(splitExt(file.getName()).base);
     map[base] = file;
   }
   return map;
@@ -252,7 +268,7 @@ function encodeImages(rows, imagesByBase, needsImage, hasTimeLeft) {
   for (const r of rows) {
     if (!hasTimeLeft()) break;
     if (!r.fileName || !needsImage.has(r.fileName.toLowerCase())) continue;
-    const file = imagesByBase[r.fileName.toLowerCase()];
+    const file = imagesByBase[normalizeForMatch(r.fileName)];
     if (!file) continue;
     const key = keyFor(file);
     if (!images[key]) {

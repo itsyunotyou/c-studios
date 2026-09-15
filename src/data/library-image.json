@@ -307,7 +307,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_BlackStar(2)_2012_CI.webp"
+    "image": "/images/library/image/KerryJamesMarshall_BlackStar(2)_2012_CI.webp",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Invisible Man",
@@ -317,7 +322,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_InvisibleMan_1986_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_InvisibleMan_1986_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Untitled (Sofa Girl)",
@@ -327,7 +337,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_Untitled(SofaGirl)_2014_CI.webp"
+    "image": "/images/library/image/KerryJamesMarshall_Untitled(SofaGirl)_2014_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Bride of Frankenstein",
@@ -337,7 +352,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_BrideofFrankeinstein_2009_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_BrideofFrankeinstein_2009_CI.jpg",
+    "color": [
+      56,
+      72,
+      88
+    ]
   },
   {
     "title": "Self-Portrait of the Artist as a Super Model",
@@ -347,7 +367,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_Self-PortraitoftheArtistasaSuperModel_1994_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_Self-PortraitoftheArtistasaSuperModel_1994_CI.jpg",
+    "color": [
+      24,
+      8,
+      24
+    ]
   },
   {
     "title": "Data Visualizations",
@@ -357,7 +382,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png"
+    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png",
+    "color": [
+      232,
+      216,
+      200
+    ]
   },
   {
     "title": "Data Visualizations",
@@ -367,7 +397,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png"
+    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png",
+    "color": [
+      232,
+      216,
+      200
+    ]
   },
   {
     "title": "Data Visualizations",
@@ -377,7 +412,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png"
+    "image": "/images/library/image/W.E.B.DuBois_DataVisualizations_1900_CI_3.png",
+    "color": [
+      232,
+      216,
+      200
+    ]
   },
   {
     "title": "Two Women, Mannequin's Hand",
@@ -387,7 +427,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/RoyDecarava_TwoWomen,Mannequin'sHand_1952_CI.jpg"
+    "image": "/images/library/image/RoyDecarava_TwoWomen,Mannequin'sHand_1952_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "This Was Tomorrow",
@@ -397,7 +442,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/PeterSavilleforSupremexYohjiYamamoto_ThisWasTomorrow_1991_CI.jpg"
+    "image": "/images/library/image/PeterSavilleforSupremexYohjiYamamoto_ThisWasTomorrow_1991_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "E-Z Go",
@@ -407,7 +457,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/YohjiYamamoto_E-ZGo_1992_CI.jpg"
+    "image": "/images/library/image/YohjiYamamoto_E-ZGo_1992_CI.jpg",
+    "color": [
+      152,
+      8,
+      40
+    ]
   },
   {
     "title": "Two Men, Subway Stairs",
@@ -417,7 +472,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/RoyDecarava_TwoMen,SubwayStairs_1954_CI.jpg"
+    "image": "/images/library/image/RoyDecarava_TwoMen,SubwayStairs_1954_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sojourn",
@@ -427,7 +487,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Sojourn",
@@ -437,7 +502,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Sojourn",
@@ -447,7 +517,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Sojourn",
@@ -457,7 +532,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Allen Golder Carpenter",
-    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg"
+    "image": "/images/library/image/Allen-GolderCarpenter_Sojourn_2025_CI_4.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Grace Jones Invites You to Celebrate the Publication of Richard Bernstein's Book Megastar",
@@ -467,7 +547,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/AREANightclub_GraceJonesInvitesYoutoCelebratethePublicationofRichardBernstein'sBookMegastar_1984_CI.png"
+    "image": "/images/library/image/AREANightclub_GraceJonesInvitesYoutoCelebratethePublicationofRichardBernstein'sBookMegastar_1984_CI.png",
+    "color": [
+      136,
+      72,
+      216
+    ]
   },
   {
     "title": "Fashion",
@@ -477,7 +562,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/AREANightclub_Fashion_1984_CI.png"
+    "image": "/images/library/image/AREANightclub_Fashion_1984_CI.png",
+    "color": [
+      216,
+      200,
+      216
+    ]
   },
   {
     "title": "Invitation to a Private Party for Cindy Sherman at the Palladium",
@@ -487,7 +577,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "C-Studios",
-    "image": "/images/library/image/MetroPictures_InvitationtoaPrivatePartyforCindyShermanatthePalladium_1985_CI.png"
+    "image": "/images/library/image/MetroPictures_InvitationtoaPrivatePartyforCindyShermanatthePalladium_1985_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Martine Rose Fall/Winter 2020",
@@ -497,7 +592,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/MartineRose_MartineRoseFall_Winter2020_2020_CI.jpg"
+    "image": "/images/library/image/MartineRose_MartineRoseFall_Winter2020_2020_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Black Ark",
@@ -507,7 +607,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -517,7 +622,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -527,7 +637,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -537,7 +652,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -547,7 +667,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -557,7 +682,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -567,7 +697,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -577,7 +712,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -587,7 +727,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -597,7 +742,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Black Ark",
@@ -607,7 +757,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg"
+    "image": "/images/library/image/LeeScratchPerry_BlackArk_2026_CI_11.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -617,7 +772,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Edition Patrick Frey, Black Ark",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -627,7 +787,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -637,7 +802,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -647,7 +817,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -657,7 +832,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -667,7 +847,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "NTS Radio",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -677,7 +862,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Ganja & Hess",
@@ -687,7 +877,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg"
+    "image": "/images/library/image/BillGunn_Ganja&Hess_1973_CI_8.jpg",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -697,7 +892,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg",
+    "color": [
+      104,
+      136,
+      168
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -707,7 +907,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg",
+    "color": [
+      104,
+      136,
+      168
+    ]
   },
   {
     "title": "Un Oiseau contre une vitre, des gens voient le diable dans les nuages",
@@ -717,7 +922,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg"
+    "image": "/images/library/image/LadjiDiaby_UnOiseaucontreunevitre,desgensvoientlediabledanslesnuages_2023_CI_3.jpg",
+    "color": [
+      104,
+      136,
+      168
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -727,7 +937,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -737,7 +952,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "A Different Type of Church",
@@ -747,7 +967,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg"
+    "image": "/images/library/image/RyanCardoso_ADifferentTypeofChurch_2023_CI_3.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "M.C",
@@ -757,7 +982,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg"
+    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "M.C",
@@ -767,7 +997,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg"
+    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "M.C",
@@ -777,7 +1012,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg"
+    "image": "/images/library/image/JosianeM.H.Pozi_N_A_N_A_CI_3.jpg",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "Studio Books",
@@ -787,7 +1027,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "BLK NWS",
-    "image": "/images/library/image/DauanJacari_StudioBooks_2023_CI.jpg"
+    "image": "/images/library/image/DauanJacari_StudioBooks_2023_CI.jpg",
+    "color": [
+      200,
+      168,
+      120
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -796,7 +1041,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -805,7 +1055,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "There Where Silence Reigns",
@@ -814,7 +1069,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg"
+    "image": "/images/library/image/NellaTarantino_ThereWhereSilenceReigns_2022_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -893,7 +1153,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/AlexWebb_GrandArmyPlaza_1994_BG.jpg"
+    "image": "/images/library/image/AlexWebb_GrandArmyPlaza_1994_BG.jpg",
+    "color": [
+      72,
+      120,
+      168
+    ]
   },
   {
     "title": "Untitled from \"The Road to Salvador Do Mundo\"",
@@ -902,7 +1167,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/BharatSikka_Untitledfrom\"TheRoadtoSalvadorDoMundo\"_2009_BG.jpg"
+    "image": "/images/library/image/BharatSikka_Untitledfrom\"TheRoadtoSalvadorDoMundo\"_2009_BG.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "\"always to your truth\"",
@@ -911,7 +1181,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/CarlotaGuerrero_\"alwaystoyourtruth\"_2019_BG.jpg"
+    "image": "/images/library/image/CarlotaGuerrero_\"alwaystoyourtruth\"_2019_BG.jpg",
+    "color": [
+      72,
+      56,
+      56
+    ]
   },
   {
     "title": "Flamenco (Eva la Yerbabuena)",
@@ -920,7 +1195,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/AlbertoSchommer_Flamenco(EvalaYerbabuena)_1997_BG.jpg"
+    "image": "/images/library/image/AlbertoSchommer_Flamenco(EvalaYerbabuena)_1997_BG.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "\"Seeking Balance\"",
@@ -929,7 +1209,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/DebraSmith_\"SeekingBalance\"_2019_BG.jpg"
+    "image": "/images/library/image/DebraSmith_\"SeekingBalance\"_2019_BG.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "\"Elad Lassry at Galerie Francesca Pia\"",
@@ -938,7 +1223,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/EladLassry_\"EladLassryatGalerieFrancescaPia\"_2013_BG.jpg"
+    "image": "/images/library/image/EladLassry_\"EladLassryatGalerieFrancescaPia\"_2013_BG.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Typical Alpine Flora at the Hochschwab Area",
@@ -947,7 +1237,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/ThomasAlbdorf_TypicalAlpineFloraattheHochshwabArea_2014_BG.jpg"
+    "image": "/images/library/image/ThomasAlbdorf_TypicalAlpineFloraattheHochshwabArea_2014_BG.jpg",
+    "color": [
+      8,
+      24,
+      24
+    ]
   },
   {
     "title": "Drying Rack",
@@ -956,7 +1251,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/FarahAlQasimi_DryingRack_2018_BG.webp"
+    "image": "/images/library/image/FarahAlQasimi_DryingRack_2018_BG.webp",
+    "color": [
+      184,
+      200,
+      168
+    ]
   },
   {
     "title": "Graphis Magazine Issue 103 Cover",
@@ -965,7 +1265,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/PinoTovaglia_GraphisMagazineIssue103Cover_1962_BG.webp"
+    "image": "/images/library/image/PinoTovaglia_GraphisMagazineIssue103Cover_1962_BG.webp",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Sri Lanka, Nuwara Eliya, Races 2005, from \"The Luxury Series, 1995 - 2009\"",
@@ -974,7 +1279,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/MartinParr_SriLanka,NuwaraEliya,Races2005from\"TheLuxurySeries,1995-2009\"_2005_BG.webp"
+    "image": "/images/library/image/MartinParr_SriLanka,NuwaraEliya,Races2005from\"TheLuxurySeries,1995-2009\"_2005_BG.webp",
+    "color": [
+      184,
+      136,
+      136
+    ]
   },
   {
     "title": "Silo",
@@ -983,7 +1293,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/LouiseGiovanelli_Silo_2022_BG.jpg"
+    "image": "/images/library/image/LouiseGiovanelli_Silo_2022_BG.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Tier 9",
@@ -992,7 +1307,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/KateTucker_Tier9_2022_BG.jpg"
+    "image": "/images/library/image/KateTucker_Tier9_2022_BG.jpg",
+    "color": [
+      104,
+      120,
+      120
+    ]
   },
   {
     "title": "Odeur",
@@ -1001,7 +1321,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/KatrienDeBlauwer_Odeur_N_A_BG.jpg"
+    "image": "/images/library/image/KatrienDeBlauwer_Odeur_N_A_BG.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "\"1000 kys og kram, din forevigt og altid...\"",
@@ -1010,7 +1335,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/JuliusAmbrosius_\"1000kysogkram,dinforevigtogaltid...\"_2024_BG.jpg"
+    "image": "/images/library/image/JuliusAmbrosius_\"1000kysogkram,dinforevigtogaltid...\"_2024_BG.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "N/A",
@@ -1033,7 +1363,12 @@
     "added": "08/05/2026",
     "by": "Bea Gemperle",
     "category": "image",
-    "image": "/images/library/image/@111044666(Tumblr)_\"summerscrapbook2\"_N_A_BG.jpg"
+    "image": "/images/library/image/@111044666(Tumblr)_\"summerscrapbook2\"_N_A_BG.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Gap (PRODUCT) RED Campaign, Mary J. Blige",
@@ -1042,7 +1377,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,MaryJ.Blige_2006_CI.jpg"
+    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,MaryJ.Blige_2006_CI.jpg",
+    "color": [
+      168,
+      40,
+      72
+    ]
   },
   {
     "title": "Gap (PRODUCT) RED Campaign, Anne Hathaway",
@@ -1051,7 +1391,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,AnneHathaway_2006_CI.jpg"
+    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,AnneHathaway_2006_CI.jpg",
+    "color": [
+      152,
+      40,
+      40
+    ]
   },
   {
     "title": "Gap (PRODUCT) RED Campaign, Penelope Cruz",
@@ -1060,7 +1405,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,PenelopeCruz_2006_CI.jpg"
+    "image": "/images/library/image/Gap_Gap(PRODUCT)REDCampagin,PenelopeCruz_2006_CI.jpg",
+    "color": [
+      152,
+      40,
+      72
+    ]
   },
   {
     "title": "Rainbow Dance",
@@ -1070,7 +1420,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_2.jpg"
+    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_2.jpg",
+    "color": [
+      232,
+      232,
+      200
+    ]
   },
   {
     "title": "Rainbow Dance",
@@ -1080,7 +1435,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_2.jpg"
+    "image": "/images/library/image/LenLye_RainbowDance_1936_CI_2.jpg",
+    "color": [
+      232,
+      232,
+      200
+    ]
   },
   {
     "title": "Free Radicals",
@@ -1090,7 +1450,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_FreeRadicals_1958-1979_CI.png"
+    "image": "/images/library/image/LenLye_FreeRadicals_1958-1979_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "A Colour Box",
@@ -1100,7 +1465,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_AColourBox_1935_CI.png"
+    "image": "/images/library/image/LenLye_AColourBox_1935_CI.png",
+    "color": [
+      184,
+      152,
+      120
+    ]
   },
   {
     "title": "Twilight",
@@ -1110,7 +1480,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones_Messianen Cycles_Snape Maltings",
-    "image": "/images/library/image/LenLye_Twilight_1945_CI.png"
+    "image": "/images/library/image/LenLye_Twilight_1945_CI.png",
+    "color": [
+      168,
+      152,
+      120
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2008",
@@ -1119,7 +1494,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_1.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_1.png",
+    "color": [
+      24,
+      24,
+      40
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2010",
@@ -1128,7 +1508,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_2.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_2.png",
+    "color": [
+      120,
+      136,
+      200
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2012",
@@ -1137,7 +1522,12 @@
     "added": "08/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_3.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_3.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2013",
@@ -1146,7 +1536,12 @@
     "added": "17/08/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_4.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_4.png",
+    "color": [
+      104,
+      104,
+      120
+    ]
   },
   {
     "title": "The Devil in Miss Jones, Dazed November 2014",
@@ -1155,7 +1550,12 @@
     "added": "17/08/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_5.png"
+    "image": "/images/library/image/ChrisCunningham_TheDevilinMissJones,DazedNovemeber2008_2008_CI_5.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1165,7 +1565,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_1.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_1.png",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1175,7 +1580,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_2.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_2.png",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1185,7 +1595,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_3.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_3.png",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Untitled Notebook",
@@ -1195,7 +1610,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Adidas Originals by Wales Bonner",
-    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_4.png"
+    "image": "/images/library/image/ArthurJafa_UntitledNotebook_1990-2007_CI_4.png",
+    "color": [
+      216,
+      216,
+      232
+    ]
   },
   {
     "title": "Apex",
@@ -1205,7 +1625,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_1.png"
+    "image": "/images/library/image/ArthurJafa_Apex_2013_CI_1.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Apex",

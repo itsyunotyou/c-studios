@@ -3048,7 +3048,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_1.jpg"
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
+    "color": [
+      8,
+      8,
+      104
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -3057,7 +3062,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_2.jpg"
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
+    "color": [
+      8,
+      8,
+      104
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -3066,7 +3076,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_3.webp"
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
+    "color": [
+      8,
+      8,
+      104
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -3090,7 +3105,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_1.webp"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -3100,7 +3120,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_2.jpg"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -3110,7 +3135,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_3.webp"
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Akira",
@@ -3135,7 +3165,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_1.jpg"
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_2",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -3191,7 +3226,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_1.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_2"
   },
   {
     "title": "N/A",
@@ -3228,12 +3263,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg",
-    "color": [
-      40,
-      24,
-      120
-    ]
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg"
   },
   {
     "title": "Disney's Pinocchio",
@@ -3242,12 +3272,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg",
-    "color": [
-      8,
-      8,
-      24
-    ]
+    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg"
   },
   {
     "title": "Samuel L. Jackson for Adidas",
@@ -3256,12 +3281,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg"
   },
   {
     "title": "Vortex Drawing 19",
@@ -3270,12 +3290,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp"
   },
   {
     "title": "Super Limbo",
@@ -3284,12 +3299,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
-    "color": [
-      232,
-      216,
-      184
-    ]
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
   },
   {
     "title": "Super Limbo",
@@ -3298,12 +3308,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
-    "color": [
-      232,
-      216,
-      184
-    ]
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
   },
   {
     "title": "Super Limbo",
@@ -3312,12 +3317,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
-    "color": [
-      232,
-      216,
-      184
-    ]
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
   },
   {
     "title": "Togo National Museum",
@@ -3326,12 +3326,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg",
-    "color": [
-      152,
-      152,
-      152
-    ]
+    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg"
   },
   {
     "title": "Astro Boy",
@@ -3340,12 +3335,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp",
-    "color": [
-      120,
-      120,
-      120
-    ]
+    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp"
   },
   {
     "title": "N/A",
@@ -3368,12 +3358,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_BillGunninStop(1970)_1970_CI.webp",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/N_A_BillGunninStop(1970)_1970_CI.webp"
   },
   {
     "title": "Near the Cross",
@@ -3382,12 +3367,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheMississippiMassChoir_NeartheCross_2014_CI.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/TheMississippiMassChoir_NeartheCross_2014_CI.png"
   },
   {
     "title": "Ricky Dillard & New G - There Is No Way, featuring Nikki Ross",
@@ -3396,12 +3376,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RickyDillard&NewG+NikkiRoss_RickyDillard&NewG-ThereIsNoWay,featuringNikkiRoss_2009_CI.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RickyDillard&NewG+NikkiRoss_RickyDillard&NewG-ThereIsNoWay,featuringNikkiRoss_2009_CI.png"
   },
   {
     "title": "F50 YY Tunit Tiger",
@@ -3410,12 +3385,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Y-3_F50YYTunitTiger_2006_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/Y-3_F50YYTunitTiger_2006_CI.jpg"
   },
   {
     "title": "Mémoire",
@@ -3424,12 +3394,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI.jpg",
-    "color": [
-      184,
-      184,
-      184
-    ]
+    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI.jpg"
   },
   {
     "title": "Untitled 17",
@@ -3438,7 +3403,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SammyBaloji_Untitled17_2004-06_CI"
+    "image": "/images/library/image/SammyBaloji_Untitled17_2004-06_CI.webp"
   },
   {
     "title": "Precious Renee Tucker Live (Poster)",
@@ -3447,7 +3412,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JonasPequeno_PreciousReneeTuckerLive(Poster)_2025_CI"
+    "image": "/images/library/image/JonasPequeno_PreciousReneeTuckerLive(Poster)_2025_CI.jpg"
   },
   {
     "title": "Precious at Holy Trinity Church, London",
@@ -3456,7 +3421,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/YumiMameko_PreciousatHolyTrinityChurch_2025_CI"
+    "image": "/images/library/image/YumiMameko_PreciousatHolyTrinityChurch_2025_CI.jpg"
   },
   {
     "title": "The Backrooms",
@@ -3465,7 +3430,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI_2"
+    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI_1.png"
   },
   {
     "title": "The Backrooms",
@@ -3474,7 +3439,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI_2"
+    "image": "/images/library/image/KaneParsons_TheBackrooms_2022_CI_2.png"
   },
   {
     "title": "Parchment Makulatura",

@@ -4933,7 +4933,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_AHI_2.png"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "N/A",
@@ -4942,7 +4947,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_AHI_3.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Edgar Cairo",
@@ -5016,7 +5026,7 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDoig_Speaker_Girl_2015_CI"
+    "image": "/images/library/image/PeterDoig_Speaker_Girl_2015_CI.png"
   },
   {
     "title": "Congo",
@@ -5025,7 +5035,7 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NoahDavis_Congo_2015_CI"
+    "image": "/images/library/image/NoahDavis_Congo_2015_CI.png"
   },
   {
     "title": "Hair Advertisement",
@@ -5034,7 +5044,7 @@
     "added": "19/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DeanaLawson_HairAdvertisement_2005_CI"
+    "image": "/images/library/image/DeanaLawson_HairAdvertisement_2005_CI.webp"
   },
   {
     "title": "A Time of Innocence",
@@ -5043,7 +5053,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamelShabazz_ATimeofInnocence_1980_CI"
+    "image": "/images/library/image/JamelShabazz_ATimeofInnocence_1980_CI.jpg"
   },
   {
     "title": "Howard Universal",
@@ -5066,7 +5076,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GeorgeHoyningen-Huene_JosephineBaker_ca.1927_CI"
+    "image": "/images/library/image/GeorgeHoyningen-Huene_JosephineBaker_ca.1927_CI.webp"
   },
   {
     "title": "N/A",
@@ -5075,12 +5085,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_9",
-    "color": [
-      200,
-      200,
-      168
-    ]
+    "image": "/images/library/image/N_A_N_A_N_A_CI_2.jpg"
   },
   {
     "title": "Alessando de Medici",
@@ -5089,7 +5094,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_AlessandrodeMedici_ca.1570_CI"
+    "image": "/images/library/image/N_A_AlessandrodeMedici_ca.1570_CI.jpg"
   },
   {
     "title": "Working Girls",
@@ -5098,7 +5103,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LizzieBorden_WorkingGirls_1986_CI"
+    "image": "/images/library/image/LizzieBorden_WorkingGirls_1986_CI.jpg"
   },
   {
     "title": "Keith Haring",
@@ -5107,7 +5112,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TsengKwongChi_ KeithHaring_ca.1983_CI"
+    "image": "/images/library/image/TsengKwongChi_ KeithHaring_ca.1983_CI.jpg"
   },
   {
     "title": "Nina Chow",
@@ -5116,7 +5121,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TonyViramontes_NinaChow_ca.1980_CI"
+    "image": "/images/library/image/TonyViramontes_NinaChow_ca.1980_CI.jpg"
   },
   {
     "title": "Jackie Kennedy Onasis",

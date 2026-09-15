@@ -4185,7 +4185,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DozieKanu+FedericoCampagna_ALibraryasLargeastheWorld_2025_CI.jpg"
+    "image": "/images/library/image/DozieKanu+FedericoCampagna_ALibraryasLargeastheWorld_2025_CI.jpg",
+    "color": [
+      200,
+      184,
+      168
+    ]
   },
   {
     "title": "Gabu Qu",
@@ -4194,7 +4199,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GoogleMaps_GabuQu_N_A_CI.png"
+    "image": "/images/library/image/GoogleMaps_GabuQu_N_A_CI.png",
+    "color": [
+      104,
+      88,
+      72
+    ]
   },
   {
     "title": "Notes Line C Exposition",
@@ -4203,7 +4213,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KandisWilliams_NotesLineCExposition_2021_CI.jpg"
+    "image": "/images/library/image/KandisWilliams_NotesLineCExposition_2021_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Performance: Sheryl Sutton",
@@ -4212,7 +4227,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SherylSutton_Performance:SherylSutton_1979_CI.png"
+    "image": "/images/library/image/SherylSutton_Performance:SherylSutton_1979_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Import/Export Funk Office",
@@ -4221,7 +4241,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RenéeGreen_Import_ExportFunkOffice_1992-93_CI.jpg"
+    "image": "/images/library/image/RenéeGreen_Import_ExportFunkOffice_1992-93_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Max Siegel's Indianapolis Home",
@@ -5319,7 +5344,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_AlessandrodeMedici_ca.1570_CI.jpg"
+    "image": "/images/library/image/N_A_AlessandrodeMedici_ca.1570_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Working Girls",
@@ -5328,7 +5358,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LizzieBorden_WorkingGirls_1986_CI.jpg"
+    "image": "/images/library/image/LizzieBorden_WorkingGirls_1986_CI.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "Keith Haring",
@@ -5337,7 +5372,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TsengKwongChi_ KeithHaring_ca.1983_CI.jpg"
+    "image": "/images/library/image/TsengKwongChi_ KeithHaring_ca.1983_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Nina Chow",
@@ -5346,7 +5386,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TonyViramontes_NinaChow_ca.1980_CI.jpg"
+    "image": "/images/library/image/TonyViramontes_NinaChow_ca.1980_CI.jpg",
+    "color": [
+      40,
+      24,
+      8
+    ]
   },
   {
     "title": "Jackie Kennedy Onasis",

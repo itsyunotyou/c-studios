@@ -5630,7 +5630,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI.jpg"
+    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Christo's Valley Curtain",
@@ -5639,7 +5644,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png"
+    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png",
+    "color": [
+      152,
+      168,
+      200
+    ]
   },
   {
     "title": "Arcadia",
@@ -5648,7 +5658,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg"
+    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Vasulka Effect: Grandparents of Video Art",
@@ -5657,7 +5672,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg"
+    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "How Not to Be Seen: A Fucking Didactic Educational",

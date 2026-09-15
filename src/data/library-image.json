@@ -3048,12 +3048,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
-    "color": [
-      8,
-      8,
-      104
-    ]
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_1.jpg"
   },
   {
     "title": "Mulholland Drive",
@@ -3062,12 +3057,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
-    "color": [
-      8,
-      8,
-      104
-    ]
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_2.jpg"
   },
   {
     "title": "Mulholland Drive",
@@ -3076,12 +3066,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_4",
-    "color": [
-      8,
-      8,
-      104
-    ]
+    "image": "/images/library/image/PeterDeming_MulhollandDrive_2001_CI_3.webp"
   },
   {
     "title": "Mulholland Drive",
@@ -3105,12 +3090,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_1.webp"
   },
   {
     "title": "Akira",
@@ -3120,12 +3100,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_2.jpg"
   },
   {
     "title": "Akira",
@@ -3135,12 +3110,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_4",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KatsujiMisawa_Akira_1988_CI_3.webp"
   },
   {
     "title": "Akira",
@@ -3165,12 +3135,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Ladji Diaby_Kunstverein Nurnberg",
-    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_2",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/HisaoShirai_PerfectBlue_1997_CI_1.jpg"
   },
   {
     "title": "Perfect Blue",
@@ -3226,7 +3191,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_2"
+    "image": "/images/library/image/AndreiTarkovsky_Ivan'sChildhood_1962_CI_1.jpg"
   },
   {
     "title": "N/A",
@@ -3263,7 +3228,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg"
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg",
+    "color": [
+      40,
+      24,
+      120
+    ]
   },
   {
     "title": "Disney's Pinocchio",
@@ -3272,7 +3242,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg"
+    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg",
+    "color": [
+      8,
+      8,
+      24
+    ]
   },
   {
     "title": "Samuel L. Jackson for Adidas",
@@ -3281,7 +3256,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg"
+    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Vortex Drawing 19",
@@ -3290,7 +3270,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp"
+    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3299,7 +3284,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_1.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3308,7 +3298,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_2.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3317,7 +3312,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Togo National Museum",
@@ -3326,7 +3326,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "Astro Boy",
@@ -3335,7 +3340,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp"
+    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "N/A",
@@ -3344,7 +3354,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_1.jpg"
+    "image": "/images/library/image/N_A_N_A_N_A_CI_9",
+    "color": [
+      200,
+      200,
+      168
+    ]
   },
   {
     "title": "Bill Gunn in Stop (1970)",

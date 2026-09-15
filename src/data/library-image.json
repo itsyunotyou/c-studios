@@ -2915,7 +2915,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_5.jpg"
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
+    "color": [
+      88,
+      104,
+      152
+    ]
   },
   {
     "title": "City of God",
@@ -2938,7 +2943,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_1.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -2947,7 +2957,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_2.jpg"
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Medicine for Melancholy",
@@ -2970,7 +2985,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_1.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2979,7 +2994,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_2.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -3179,12 +3194,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI.jpg"
   },
   {
     "title": "America",
@@ -3193,12 +3203,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GarrettBradley_America_2019_CI.webp",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/GarrettBradley_America_2019_CI.webp"
   },
   {
     "title": "N/A",
@@ -3258,12 +3263,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg",
-    "color": [
-      40,
-      24,
-      120
-    ]
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg"
   },
   {
     "title": "Disney's Pinocchio",
@@ -3272,12 +3272,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg",
-    "color": [
-      8,
-      8,
-      24
-    ]
+    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg"
   },
   {
     "title": "Samuel L. Jackson for Adidas",
@@ -3286,12 +3281,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg"
   },
   {
     "title": "Vortex Drawing 19",
@@ -3300,12 +3290,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp",
-    "color": [
-      232,
-      232,
-      232
-    ]
+    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp"
   },
   {
     "title": "Super Limbo",
@@ -3314,12 +3299,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
-    "color": [
-      232,
-      216,
-      184
-    ]
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_1.jpg"
   },
   {
     "title": "Super Limbo",
@@ -3328,12 +3308,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
-    "color": [
-      232,
-      216,
-      184
-    ]
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_2.jpg"
   },
   {
     "title": "Super Limbo",
@@ -3342,12 +3317,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
-    "color": [
-      232,
-      216,
-      184
-    ]
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
   },
   {
     "title": "Togo National Museum",
@@ -3356,12 +3326,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg",
-    "color": [
-      152,
-      152,
-      152
-    ]
+    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg"
   },
   {
     "title": "Astro Boy",
@@ -3370,12 +3335,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp",
-    "color": [
-      120,
-      120,
-      120
-    ]
+    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp"
   },
   {
     "title": "N/A",
@@ -3384,12 +3344,7 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_N_A_N_A_CI_9",
-    "color": [
-      200,
-      200,
-      168
-    ]
+    "image": "/images/library/image/N_A_N_A_N_A_CI_1.jpg"
   },
   {
     "title": "Bill Gunn in Stop (1970)",

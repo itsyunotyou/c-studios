@@ -1,24 +1,32 @@
 name: Deploy site
 
-# Builds and deploys the site to Cloudflare on every push to main — closes
-# the gap that caused most of the confusion in the library cover cleanup:
-# the sheet's "Publish to site" commits data straight to GitHub, but nothing
-# used to actually rebuild + redeploy the live site, so it could silently
-# run weeks behind what was actually published. This makes every push
-# (a sheet publish, the image-processing bot, or a manual commit) end in a
-# live deploy automatically, with no one needing to remember to run
-# `wrangler deploy` by hand.
+# Builds and deploys the site to Cloudflare — closes the gap that caused
+# most of the confusion in the library cover cleanup: the sheet's "Publish
+# to site" commits data straight to GitHub, but nothing used to actually
+# rebuild + redeploy the live site, so it could silently run weeks behind
+# what was actually published.
+#
+# Runs on a schedule rather than per-push on purpose: this originally
+# triggered on every push to main, which sounds more "live," but during a
+# burst of sheet activity commits can land every few seconds — far faster
+# than a build+deploy (~1-2 min) can finish. With cancel-in-progress
+# concurrency, every run kept getting killed by the next push before
+# completing, so NO deploy ever succeeded for as long as the burst lasted
+# (confirmed: 30+ consecutive cancelled runs, nothing live-deployed for a
+# long stretch despite dozens of pushes). Deploying on a fixed cadence
+# instead means staleness is bounded by the schedule interval, not by how
+# bursty publishing happens to be — worst case the site is one interval
+# (5 min) behind, not indefinitely behind.
 on:
-  push:
-    branches: [main]
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}
 
 permissions:
   contents: read
 
 concurrency:
   group: deploy
-  # A newer push always supersedes whatever's mid-deploy — no reason to
-  # finish deploying stale content when something newer already landed.
   cancel-in-progress: true
 
 jobs:

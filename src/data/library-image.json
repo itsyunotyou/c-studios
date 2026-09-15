@@ -7691,7 +7691,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/FredSandback_Untitled(RedFloorPiece)_1967_ME.png"
+    "image": "/images/library/image/FredSandback_Untitled(RedFloorPiece)_1967_ME.png",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Tomorrow's Apples (5 In White)",
@@ -7700,7 +7705,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/EvaHesse_Tomorrow'sApples(5inWhite)_1965_ME.jpg"
+    "image": "/images/library/image/EvaHesse_Tomorrow'sApples(5inWhite)_1965_ME.jpg",
+    "color": [
+      232,
+      216,
+      200
+    ]
   },
   {
     "title": "Ringaround Arosie",
@@ -7709,7 +7719,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/EvaHesse_RingaroundArosie_1965_ME.jpg"
+    "image": "/images/library/image/EvaHesse_RingaroundArosie_1965_ME.jpg",
+    "color": [
+      120,
+      120,
+      104
+    ]
   },
   {
     "title": "Untitled",
@@ -7718,7 +7733,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/ErnestoBurgos_Untitled_2022_ME.webp"
+    "image": "/images/library/image/ErnestoBurgos_Untitled_2022_ME.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Arena",
@@ -7727,7 +7747,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/ErnestoBurgos_Arena_2018_ME.webp"
+    "image": "/images/library/image/ErnestoBurgos_Arena_2018_ME.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Cut the Cameras",
@@ -7736,7 +7761,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/EricN.Mack_CuttheCameras_2022_ME.webp"
+    "image": "/images/library/image/EricN.Mack_CuttheCameras_2022_ME.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Triple Disk Red Metal Flake - Black Edge",
@@ -7745,7 +7775,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/DeWainValentine_TripleDiskRedMetalFlake-BlackEdge_1966_ME.jpg"
+    "image": "/images/library/image/DeWainValentine_TripleDiskRedMetalFlake-BlackEdge_1966_ME.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "to Ward Jackson, an old friend and colleague who, during the Fall of 1957 when I finally returned to New York from Washington and joined him to work together in this museum, kindly communicated)",
@@ -9628,7 +9663,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Ishmael Houston-Jones_Dance Series_1983_ JCB.jpg"
+    "image": "/images/library/image/Ishmael Houston-Jones_Dance Series_1983_ JCB.jpg",
+    "color": [
+      136,
+      136,
+      136
+    ]
   },
   {
     "title": "Untitled",
@@ -9637,7 +9677,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Jamal Cyrus_Untitled_2010_JCB.jpg"
+    "image": "/images/library/image/Jamal Cyrus_Untitled_2010_JCB.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Ulysses Dove with the Merce Cunningham Dance Company in Tread",
@@ -9646,7 +9691,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/James Klosty_Ulysses Dove with the Merce Cunningham Dance Company in Tread_1970_JCB.jpg"
+    "image": "/images/library/image/James Klosty_Ulysses Dove with the Merce Cunningham Dance Company in Tread_1970_JCB.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Veils of the Horizon",
@@ -9669,7 +9719,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Jennifer Packer_The Body Has Memory_2018_JCB.jpg"
+    "image": "/images/library/image/Jennifer Packer_The Body Has Memory_2018_JCB.jpg",
+    "color": [
+      248,
+      232,
+      232
+    ]
   },
   {
     "title": "Eternal Presence",
@@ -9692,7 +9747,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Josefa Ntjam_Intrications_2025_JCB.jpg"
+    "image": "/images/library/image/Josefa Ntjam_Intrications_2025_JCB.jpg",
+    "color": [
+      120,
+      88,
+      120
+    ]
   },
   {
     "title": "Extract of Beethoven ## edition",
@@ -9701,7 +9761,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Jules Carlito Beurrier-Loncan_extract of Beethoven  edition_2026_JCB.jpg"
+    "image": "/images/library/image/Jules Carlito Beurrier-Loncan_extract of Beethoven  edition_2026_JCB.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "LANNWIT",
@@ -9724,7 +9789,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Jules Carlito Beurrier-Loncan_Selected Works I_2026_JCB.jpg"
+    "image": "/images/library/image/Jules Carlito Beurrier-Loncan_Selected Works I_2026_JCB.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "The Dancer and the Musician",
@@ -9761,7 +9831,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Julius Eastman_Evil Nigger_1979_JCB.jpg"
+    "image": "/images/library/image/Julius Eastman_Evil Nigger_1979_JCB.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "N/A",
@@ -9770,7 +9845,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Julius Eastman_N_A_1974_JCB.jpg"
+    "image": "/images/library/image/Julius Eastman_N_A_1974_JCB.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "MUSCLE",
@@ -9821,7 +9901,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Lee Scratch Perry_Mirror master Futures Yard_2019_JCB.jpg"
+    "image": "/images/library/image/Lee Scratch Perry_Mirror master Futures Yard_2019_JCB.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "performance flier",
@@ -9844,7 +9929,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Liz Johnson Artur_PDA_2011 - 2021_JCB.jpg"
+    "image": "/images/library/image/Liz Johnson Artur_PDA_2011 - 2021_JCB.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Untitled (Classics)",
@@ -9867,7 +9957,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Lorna Simpson_Night Fall_2023_JCB.jpg"
+    "image": "/images/library/image/Lorna Simpson_Night Fall_2023_JCB.jpg",
+    "color": [
+      8,
+      24,
+      56
+    ]
   },
   {
     "title": "Logobi tu nous manques (series)",
@@ -9876,7 +9971,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Luna Mahoux_Logobi tu nous manques (series)_2024_JCB.png"
+    "image": "/images/library/image/Luna Mahoux_Logobi tu nous manques (series)_2024_JCB.png",
+    "color": [
+      152,
+      136,
+      152
+    ]
   },
   {
     "title": "Logobi tu nous manques",
@@ -9885,7 +9985,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Luna Mahoux_Logobi tu nous manques_2024_JCB.jpg"
+    "image": "/images/library/image/Luna Mahoux_Logobi tu nous manques_2024_JCB.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Other Queen of Memphis",
@@ -9922,7 +10027,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Mac Collins_Dancing before the Moon_2023_JCB.jpg"
+    "image": "/images/library/image/Mac Collins_Dancing before the Moon_2023_JCB.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Genitilla al-Wilada",
@@ -9931,7 +10041,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Maimouna Guerresi_Genitilla al-Wilada_2007_JCB.jpg"
+    "image": "/images/library/image/Maimouna Guerresi_Genitilla al-Wilada_2007_JCB.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Barbara Chase-Riboud dans son atelier rue Dutot",
@@ -9954,7 +10069,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Marco Fusinato_Mass Black Implosion_2019_JCB.jpg"
+    "image": "/images/library/image/Marco Fusinato_Mass Black Implosion_2019_JCB.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Song for a Mad King",
@@ -9963,7 +10083,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Mathieu Kleyebe Abonnenc_Song for a Mad King_2013_JCB.jpg"
+    "image": "/images/library/image/Mathieu Kleyebe Abonnenc_Song for a Mad King_2013_JCB.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Dark Silhouette - Mother and Child in Intervals",
@@ -9972,7 +10097,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Matthew Angelo Harrison_Dark Silhouette - Mother and Child in Intervals_2018_JCB.jpg"
+    "image": "/images/library/image/Matthew Angelo Harrison_Dark Silhouette - Mother and Child in Intervals_2018_JCB.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Prototype of Dark Silhouettes",
@@ -9981,7 +10111,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Matthew Angelo Harrison_Prototype of Dark Silhouettes_2018_JCB.jpg"
+    "image": "/images/library/image/Matthew Angelo Harrison_Prototype of Dark Silhouettes_2018_JCB.jpg",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Bracelet électronique",

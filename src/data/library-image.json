@@ -5355,12 +5355,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg"
   },
   {
     "title": "Mick Jagger and Jerry Hall",
@@ -5369,12 +5364,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg"
   },
   {
     "title": "Polaroids",
@@ -5383,12 +5373,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg"
   },
   {
     "title": "Puck Ball (The Gang's All Here)",
@@ -5397,12 +5382,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg",
-    "color": [
-      40,
-      40,
-      40
-    ]
+    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg"
   },
   {
     "title": "Diane Keaton and Carol Kane",
@@ -5411,12 +5391,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png",
-    "color": [
-      216,
-      216,
-      216
-    ]
+    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png"
   },
   {
     "title": "Betty Davis",
@@ -5425,12 +5400,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI.jpg",
-    "color": [
-      248,
-      248,
-      248
-    ]
+    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI.jpg"
   },
   {
     "title": "On the Street",
@@ -5439,7 +5409,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg"
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Come Out!!",
@@ -5448,12 +5423,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI.jpg"
   },
   {
     "title": "Lisa Lyon",
@@ -5462,12 +5432,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
+    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI.jpg"
   },
   {
     "title": "Fran Lebowitz at Home in Morristown",
@@ -5476,12 +5441,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI.jpg"
   },
   {
     "title": "Tongues Untied",

@@ -2630,7 +2630,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "text",
-    "image": "/images/library/text/SusanSontag_DeathKit_1967_YK.jpg"
+    "image": "/images/library/text/SusanSontag_DeathKit_1967_YK.jpg",
+    "color": [
+      72,
+      72,
+      72
+    ]
   },
   {
     "title": "Shoujo Jidai",
@@ -2639,7 +2644,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "text",
-    "image": "/images/library/text/YoshioKataoka_ShoujoJidai_1990_YK.webp"
+    "image": "/images/library/text/YoshioKataoka_ShoujoJidai_1990_YK.webp",
+    "color": [
+      248,
+      232,
+      216
+    ]
   },
   {
     "title": "Subete No Kotoba Ga Okorimasuyouni",

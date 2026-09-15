@@ -7519,7 +7519,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RobertIrwin_Faust_2015_ME.png"
+    "image": "/images/library/image/RobertIrwin_Faust_2015_ME.png",
+    "color": [
+      72,
+      56,
+      40
+    ]
   },
   {
     "title": "Excursus: Homage to the Square^3",
@@ -7528,7 +7533,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RobertIrwin_Excursus:HomagetotheSquare^3_1998_2015_ME.png"
+    "image": "/images/library/image/RobertIrwin_Excursus:HomagetotheSquare^3_1998_2015_ME.png",
+    "color": [
+      152,
+      168,
+      216
+    ]
   },
   {
     "title": "Untitled",

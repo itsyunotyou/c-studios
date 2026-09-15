@@ -47,12 +47,23 @@ function baseOf(imagePath) {
   return b.replace(IMAGE_EXT_RE, '');
 }
 
+// Two files can render identically ("é") while being stored as different
+// byte sequences — one precomposed codepoint vs a base letter plus a
+// separate combining accent mark. A raw `===` comparison treats those as
+// different names and the match silently fails forever (this actually
+// happened: a staged file created via a plain `cp` ended up in a different
+// Unicode form than the sheet's stored value). Normalizing both sides to
+// NFC before comparing makes the match immune to which form either side
+// happens to be in.
+const normalizeForMatch = (s) => s.normalize('NFC');
+
 // Find a raw source file for `base` (the image field's filename, sans
 // extension) in a directory, matching regardless of the actual extension —
 // the sheet's FILE NAME column never includes one.
 function findByBase(dir, base) {
   if (!existsSync(dir)) return null;
-  const match = readdirSync(dir).find(f => basename(f, extname(f)) === base);
+  const target = normalizeForMatch(base);
+  const match = readdirSync(dir).find(f => normalizeForMatch(basename(f, extname(f))) === target);
   return match ? join(dir, match) : null;
 }
 
@@ -94,9 +105,19 @@ async function processCategory(category) {
     let srcPath = null;
     let fromIncoming = false;
 
+    // Tracked explicitly rather than re-checking existsSync() after the
+    // fact — sharp's .toFile() can write a partial/corrupt file before
+    // throwing, so a file "existing" post-failure doesn't mean it's valid.
+    // Trusting existsSync() alone here is what let a failed HEIC conversion
+    // (this sharp build can't decode HEIC) delete the only copy of a raw
+    // source anyway, since the half-written thumb/large happened to exist
+    // on disk despite being broken.
+    let thumbOk = existsSync(thumbPath);
+    let largeOk = existsSync(largePath);
+
     for (const entry of group) {
-      const needsThumb = !existsSync(thumbPath);
-      const needsLarge = !existsSync(largePath);
+      const needsThumb = !thumbOk;
+      const needsLarge = !largeOk;
       const needsColor = !entry.color;
       if (!needsColor) colorAlreadyPresent++;
       if (!needsThumb) thumbAlreadyPresent++;
@@ -145,8 +166,13 @@ async function processCategory(category) {
             .webp({ quality: THUMB_QUALITY })
             .toFile(thumbPath);
           thumbedCount++;
+          thumbOk = true;
         } catch (e) {
           console.warn(`  thumb fail ${entry.image}: ${e.message}`);
+          // toFile() can leave a partial/corrupt file behind when the
+          // decode fails partway through — remove it so it doesn't get
+          // served as a broken thumbnail or mistaken for success later.
+          if (existsSync(thumbPath)) unlinkSync(thumbPath);
         }
       }
 
@@ -159,8 +185,10 @@ async function processCategory(category) {
             .webp({ quality: LARGE_QUALITY })
             .toFile(largePath);
           largedCount++;
+          largeOk = true;
         } catch (e) {
           console.warn(`  large fail ${entry.image}: ${e.message}`);
+          if (existsSync(largePath)) unlinkSync(largePath);
         }
       }
     }
@@ -178,7 +206,7 @@ async function processCategory(category) {
         fromIncoming = true;
       }
     }
-    if (fromIncoming && existsSync(srcPath) && existsSync(thumbPath) && existsSync(largePath)) {
+    if (fromIncoming && existsSync(srcPath) && thumbOk && largeOk) {
       unlinkSync(srcPath);
       orphanedCleaned++;
     }

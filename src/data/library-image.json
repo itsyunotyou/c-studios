@@ -4070,7 +4070,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DozieKanu+FedericoCampagna_ALibraryasLargeastheWorld_2025_CI.jpg"
+    "image": "/images/library/image/DozieKanu+FedericoCampagna_ALibraryasLargeastheWorld_2025_CI.jpg",
+    "color": [
+      200,
+      184,
+      168
+    ]
   },
   {
     "title": "Gabu Qu",
@@ -4079,7 +4084,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GoogleMaps_GabuQu_N_A_CI.png"
+    "image": "/images/library/image/GoogleMaps_GabuQu_N_A_CI.png",
+    "color": [
+      104,
+      88,
+      72
+    ]
   },
   {
     "title": "Notes Line C Exposition",
@@ -4088,7 +4098,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KandisWilliams_NotesLineCExposition_2021_CI.jpg"
+    "image": "/images/library/image/KandisWilliams_NotesLineCExposition_2021_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Performance: Sheryl Sutton",
@@ -4097,7 +4112,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SherylSutton_Performance:SherylSutton_1979_CI.png"
+    "image": "/images/library/image/SherylSutton_Performance:SherylSutton_1979_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Import/Export Funk Office",
@@ -4106,7 +4126,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RenéeGreen_Import_ExportFunkOffice_1992-93_CI.jpg"
+    "image": "/images/library/image/RenéeGreen_Import_ExportFunkOffice_1992-93_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Max Siegel's Indianapolis Home",

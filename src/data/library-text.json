@@ -2667,7 +2667,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "text",
-    "image": "/images/library/text/Dal Choda_You Gotta Keep your head straight about clothes, an appreciation of Cheap chic_2023_JE.jpg"
+    "image": "/images/library/text/Dal Choda_You Gotta Keep your head straight about clothes, an appreciation of Cheap chic_2023_JE.jpg",
+    "color": [
+      248,
+      184,
+      40
+    ]
   },
   {
     "title": "Le Boubu - C'est Chic",
@@ -2676,7 +2681,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "text",
-    "image": "/images/library/text/Gardi Bernhard_LE boubou, cest chic_2003_JE.jpg"
+    "image": "/images/library/text/Gardi Bernhard_LE boubou, cest chic_2003_JE.jpg",
+    "color": [
+      56,
+      72,
+      88
+    ]
   },
   {
     "title": "Shining Lights: Black Women Photographers In 1980s-1990's Britain",
@@ -2685,7 +2695,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "text",
-    "image": "/images/library/text/Joy Gregory_Shining Lights Black Women Photographers in 1980s-1990s Britain_ 2024_JE.jpg"
+    "image": "/images/library/text/Joy Gregory_Shining Lights Black Women Photographers in 1980s-1990s Britain_ 2024_JE.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Front Room, Migrant Aesthetics in the Home",
@@ -2694,7 +2709,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "text",
-    "image": "/images/library/text/Micheal McMillan_The Front Room,Migrant aesthetics in the home_2009_JE.jpg"
+    "image": "/images/library/text/Micheal McMillan_The Front Room,Migrant aesthetics in the home_2009_JE.jpg",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Kitsch Cultural Politics and Taste",
@@ -2703,6 +2723,11 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "text",
-    "image": "/images/library/text/Ruth Holiday_Kitsch Cultural Polictics and Taste_2012_JE.jpg"
+    "image": "/images/library/text/Ruth Holiday_Kitsch Cultural Polictics and Taste_2012_JE.jpg",
+    "color": [
+      24,
+      24,
+      72
+    ]
   }
 ]

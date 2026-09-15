@@ -2150,7 +2150,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/Supreme_ClayBrick_2016_JY.png"
+    "image": "/images/library/image/Supreme_ClayBrick_2016_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Personal Cuts",
@@ -2159,7 +2164,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/SanjaIveković_PersonalCuts_1982_JY.jpg"
+    "image": "/images/library/image/SanjaIveković_PersonalCuts_1982_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Classroom (Book Cover)",
@@ -2168,7 +2178,12 @@
     "added": "10/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HichamBenohoud_TheClassroom(BookCover)_2025_JY.jpg"
+    "image": "/images/library/image/HichamBenohoud_TheClassroom(BookCover)_2025_JY.jpg",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Psychology Class",
@@ -2177,7 +2192,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BlackMountainCollege_PsychologyClass_1941-42_CI.jpg"
+    "image": "/images/library/image/BlackMountainCollege_PsychologyClass_1941-42_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "The Studies Building",
@@ -2186,7 +2206,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BlackMountainCollege_TheStudiesBuilding_ca.1940_CI.webp"
+    "image": "/images/library/image/BlackMountainCollege_TheStudiesBuilding_ca.1940_CI.webp",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Students with Barn and Grain Silo (Black Mountain College)",
@@ -2195,7 +2220,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JosefBreitenbach_StudentswithBarnandGrainSilo(BlackMountainCollege)_ca.1940_CI.png"
+    "image": "/images/library/image/JosefBreitenbach_StudentswithBarnandGrainSilo(BlackMountainCollege)_ca.1940_CI.png",
+    "color": [
+      104,
+      104,
+      88
+    ]
   },
   {
     "title": "Blue Sail",
@@ -2204,7 +2234,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/HansHaacke_BlueSail_1964-65_CI.webp"
+    "image": "/images/library/image/HansHaacke_BlueSail_1964-65_CI.webp",
+    "color": [
+      56,
+      72,
+      72
+    ]
   },
   {
     "title": "Condensation Cube",
@@ -2213,7 +2248,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/HansHaacke_CondensationCube_1963-67_CI.png"
+    "image": "/images/library/image/HansHaacke_CondensationCube_1963-67_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The History of the World",
@@ -2222,7 +2262,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeremyDeller_TheHistoryoftheWorld_1997-2004_CI.jpg"
+    "image": "/images/library/image/JeremyDeller_TheHistoryoftheWorld_1997-2004_CI.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Common Side Effects",
@@ -2231,7 +2276,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI_2"
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI_2",
+    "color": [
+      248,
+      232,
+      200
+    ]
   },
   {
     "title": "Common Side Effects",
@@ -2240,7 +2290,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI_2.webp"
+    "image": "/images/library/image/JoeBennett+SteveHely_CommonSideEffects_2024_CI_2.webp",
+    "color": [
+      248,
+      232,
+      200
+    ]
   },
   {
     "title": "Schema: Art-Public Space",
@@ -2249,7 +2304,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:Art-Public_2016-2022_CI.jpg"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:Art-Public_2016-2022_CI.jpg",
+    "color": [
+      200,
+      200,
+      216
+    ]
   },
   {
     "title": "Schema: Art as Movement",
@@ -2258,7 +2318,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:ArtasMovement_2025_CI.jpg"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:ArtasMovement_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Schema: Natural Friend + Natural Enemies",
@@ -2267,7 +2332,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThomasHirschhorn_Schema:NaturalFriend+NaturalEnemies_2023_CI.jpg"
+    "image": "/images/library/image/ThomasHirschhorn_Schema:NaturalFriend+NaturalEnemies_2023_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Village Voice Covers",
@@ -2276,7 +2346,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheVillageVoice_TheVillageVoiceCovers_1955-2018_CI.png"
+    "image": "/images/library/image/TheVillageVoice_TheVillageVoiceCovers_1955-2018_CI.png",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Bad Brains: Hardcore of Darkness",
@@ -2285,7 +2360,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GregTate_BadBrains:HardcoreofDarkness_1982_CI.png"
+    "image": "/images/library/image/GregTate_BadBrains:HardcoreofDarkness_1982_CI.png",
+    "color": [
+      216,
+      216,
+      200
+    ]
   },
   {
     "title": "Nobody Loves a Genius Child",
@@ -2294,7 +2374,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GregTate_NobodyLovesaGeniusChild_1989_CI.jpg"
+    "image": "/images/library/image/GregTate_NobodyLovesaGeniusChild_1989_CI.jpg",
+    "color": [
+      216,
+      216,
+      200
+    ]
   },
   {
     "title": "Jasper Marsalis (Slauson Malone 1) performing The Stone Breakers at Bourse de Commerce",
@@ -2303,7 +2388,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/YasminaGonin_JasperMarsalis(SlausonMalone1)PerformingTheStoneBreakersatBoursedeCommerce_2024_CI.jpg"
+    "image": "/images/library/image/YasminaGonin_JasperMarsalis(SlausonMalone1)PerformingTheStoneBreakersatBoursedeCommerce_2024_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Event 46 (Eyes)",

@@ -9930,7 +9930,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Marc Riboud_Barbara Chase-Riboud dans son atelier rue Dutot_1973_JCB"
+    "image": "/images/library/image/Marc Riboud_Barbara Chase-Riboud dans son atelier rue Dutot_1973_JCB",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Mass Black Implosion",

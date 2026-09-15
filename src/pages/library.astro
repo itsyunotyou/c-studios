@@ -638,8 +638,17 @@ function getImgAt(ref, idx){
 }
 function imgCount(ref){ return 1+(ref.images?ref.images.length:0); }
 
-// LRU-evicting image cache — caps memory at 1000-entry scale.
-const IMG_CACHE_MAX=200;
+// LRU-evicting image cache. The comment here always said "1000-entry
+// scale" but the cap itself was left at 200 — with the library now past
+// 1200 entries and preloadImages() touching every one of them up front,
+// that meant entries past the 200th got evicted and their Image object
+// recreated from scratch before the previous load could ever finish,
+// leaving drawRef() stuck seeing im.complete===false forever and falling
+// back to the flat color swatch permanently, even across reloads (preload
+// just re-triggers the same churn). Sized with real headroom above the
+// current ~1200 unique entries rather than guessing exactly at today's
+// count again.
+const IMG_CACHE_MAX=3000;
 function getImg(ref){
   if(!ref||!ref.img)return null;
   if(imgCache.has(ref)){

@@ -17,7 +17,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI_1.webp"
+    "image": "/images/library/image/FridaOrupabo_Untitled_2020_CI_2.jpg"
   },
   {
     "title": "N/A",
@@ -42,7 +42,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Acne paper",
-    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI_1.jpg"
+    "image": "/images/library/image/FridaOrupabo_Untitled_2019_CI_2",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Untitled",
@@ -137,7 +142,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/FridaOrupabo_Waiting_2022_CI"
+    "image": "/images/library/image/FridaOrupabo_Waiting_2022_CI.webp"
   },
   {
     "title": "A Portrait of the Artist as a Shadow of His Former Self",
@@ -147,7 +152,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_APortraitoftheArtistasaShadowofHisFormerSelf_1980_CI"
+    "image": "/images/library/image/KerryJamesMarshall_APortraitoftheArtistasaShadowofHisFormerSelf_1980_CI.webp"
   },
   {
     "title": "Untitled (Pin-Up)",
@@ -157,7 +162,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_Untitled(Pin-Up)_2008_CI"
+    "image": "/images/library/image/KerryJamesMarshall_Untitled(Pin-Up)_2008_CI.jpg"
   },
   {
     "title": "Nude (Spotlight)",
@@ -167,7 +172,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_Nude(Spotlight)_2009_CI"
+    "image": "/images/library/image/KerryJamesMarshall_Nude(Spotlight)_2009_CI.jpg"
   },
   {
     "title": "Black Star",
@@ -177,7 +182,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_BlackStar_2011_CI"
+    "image": "/images/library/image/KerryJamesMarshall_BlackStar_2011_CI.jpg"
   },
   {
     "title": "Untitled (Underpainting)",
@@ -187,7 +192,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_Untitled(Underpainting)_2018_CI"
+    "image": "/images/library/image/KerryJamesMarshall_Untitled(Underpainting)_2018_CI.jpg"
   },
   {
     "title": "When Frustration Threatens Desire",
@@ -197,7 +202,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_WhenFrustrationThreatensDesire_1990_CI"
+    "image": "/images/library/image/KerryJamesMarshall_WhenFrustrationThreatensDesire_1990_CI.jpg"
   },
   {
     "title": "Could This Be Love",
@@ -207,7 +212,7 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_CouldThisBeLove_1992_CI"
+    "image": "/images/library/image/KerryJamesMarshall_CouldThisBeLove_1992_CI.jpg"
   },
   {
     "title": "Black Star (2)",

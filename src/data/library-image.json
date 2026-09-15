@@ -5580,7 +5580,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Levy's_TheHomeofMusic_N_A_CI.jpg"
+    "image": "/images/library/image/Levy's_TheHomeofMusic_N_A_CI.jpg",
+    "color": [
+      248,
+      216,
+      184
+    ]
   },
   {
     "title": "Brady Club Social Hanbury Street",
@@ -5589,7 +5594,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_BradyClubSocialHanburyStreet_ca.1960_CI.jpg"
+    "image": "/images/library/image/N_A_BradyClubSocialHanburyStreet_ca.1960_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Dizzee Rascal and Wiley in front of Crossways Estate",
@@ -5598,7 +5608,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_DizzeeRascalandWileyinfrontofCrosswaysEstate_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_DizzeeRascalandWileyinfrontofCrosswaysEstate_N_A_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "Amy Winehouse at George Tavern",
@@ -5607,7 +5622,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BlakeWood_AmyWinehouseatGeorgeTavern_2008_CI.jpg"
+    "image": "/images/library/image/BlakeWood_AmyWinehouseatGeorgeTavern_2008_CI.jpg",
+    "color": [
+      232,
+      184,
+      120
+    ]
   },
   {
     "title": "About Us",
@@ -5616,7 +5636,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheGeorge_AboutUs_N_A_CI.jpg"
+    "image": "/images/library/image/TheGeorge_AboutUs_N_A_CI.jpg",
+    "color": [
+      120,
+      136,
+      136
+    ]
   },
   {
     "title": "Crossways Estate",
@@ -5625,7 +5650,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI.jpg"
+    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Christo's Valley Curtain",
@@ -5634,7 +5664,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png"
+    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png",
+    "color": [
+      152,
+      168,
+      200
+    ]
   },
   {
     "title": "Arcadia",
@@ -5643,7 +5678,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg"
+    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Vasulka Effect: Grandparents of Video Art",
@@ -5652,7 +5692,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg"
+    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "How Not to Be Seen: A Fucking Didactic Educational",
@@ -5661,7 +5706,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HitoSteyerl_HowNottoBeSeen:AFuckingDidacticEducational_2013_JY.jpg"
+    "image": "/images/library/image/HitoSteyerl_HowNottoBeSeen:AFuckingDidacticEducational_2013_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "As You See",
@@ -5670,12 +5720,7 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/HarunFarocki_AsYouSee_1986_JY.jpg"
   },
   {
     "title": "Workers Leaving the Lumière Factory",
@@ -5684,12 +5729,7 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/LouisLumière_WorkersLeavingtheLumièreFactory_1895_JY.jpg",
-    "color": [
-      248,
-      248,
-      232
-    ]
+    "image": "/images/library/image/LouisLumière_WorkersLeavingtheLumièreFactory_1895_JY.jpg"
   },
   {
     "title": "A Trip to the Moon",
@@ -5698,12 +5738,7 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/GeorgesMéliès_ATriptotheMoon_1902_JY.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/GeorgesMéliès_ATriptotheMoon_1902_JY.jpg"
   },
   {
     "title": "Goin' On",
@@ -5712,12 +5747,7 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/WilliamMcRae_Goin'On_1981_JY.jpg",
-    "color": [
-      40,
-      24,
-      24
-    ]
+    "image": "/images/library/image/WilliamMcRae_Goin'On_1981_JY.jpg"
   },
   {
     "title": "David Foster Wallace on Reading, Consumerism, and American Politics",
@@ -5726,12 +5756,7 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/ManufacturingIntellect(YouTubeChannel)_DavidFosterWallaceonReading,Consumerism,andAmericanPolitics_2003_JY.png",
-    "color": [
-      152,
-      184,
-      200
-    ]
+    "image": "/images/library/image/ManufacturingIntellect(YouTubeChannel)_DavidFosterWallaceonReading,Consumerism,andAmericanPolitics_2003_JY.png"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -5740,12 +5765,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png",
-    "color": [
-      104,
-      104,
-      88
-    ]
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_2009_CI_4.png"
   },
   {
     "title": "City of God",
@@ -5754,12 +5774,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KátiaLund+FernandoMeirelles_CityofGod_2002_CI.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/KátiaLund+FernandoMeirelles_CityofGod_2002_CI.png"
   },
   {
     "title": "Hero",
@@ -5768,12 +5783,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ZhangYimou_Hero_2002_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/ZhangYimou_Hero_2002_CI.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -5782,12 +5792,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BarryJenkins_MedicineforMelancholy_2008_CI.jpg",
-    "color": [
-      248,
-      248,
-      232
-    ]
+    "image": "/images/library/image/BarryJenkins_MedicineforMelancholy_2008_CI.jpg"
   },
   {
     "title": "Mulholland Drive",
@@ -5796,12 +5801,7 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/DavidLynch_MulhollandDrive_2001_CI.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/DavidLynch_MulhollandDrive_2001_CI.png"
   },
   {
     "title": "Akira",

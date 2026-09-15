@@ -202,7 +202,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_Untitled(Pin-Up)_2008_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_Untitled(Pin-Up)_2008_CI.jpg",
+    "color": [
+      88,
+      88,
+      104
+    ]
   },
   {
     "title": "Nude (Spotlight)",
@@ -212,7 +217,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_Nude(Spotlight)_2009_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_Nude(Spotlight)_2009_CI.jpg",
+    "color": [
+      24,
+      24,
+      40
+    ]
   },
   {
     "title": "Black Star",
@@ -222,7 +232,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Locally Grown",
-    "image": "/images/library/image/KerryJamesMarshall_BlackStar_2011_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_BlackStar_2011_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Untitled (Underpainting)",
@@ -232,7 +247,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_Untitled(Underpainting)_2018_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_Untitled(Underpainting)_2018_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "When Frustration Threatens Desire",
@@ -242,7 +262,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_WhenFrustrationThreatensDesire_1990_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_WhenFrustrationThreatensDesire_1990_CI.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Could This Be Love",
@@ -252,7 +277,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_CouldThisBeLove_1992_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_CouldThisBeLove_1992_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Black Star (2)",
@@ -262,7 +292,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_BlackStar(2)_2012_CI.webp"
+    "image": "/images/library/image/KerryJamesMarshall_BlackStar(2)_2012_CI.webp",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Invisible Man",
@@ -272,7 +307,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_InvisibleMan_1986_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_InvisibleMan_1986_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Untitled (Sofa Girl)",
@@ -282,7 +322,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_Untitled(SofaGirl)_2014_CI.webp"
+    "image": "/images/library/image/KerryJamesMarshall_Untitled(SofaGirl)_2014_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Bride of Frankenstein",
@@ -292,7 +337,12 @@
     "by": "Cynthia Igbokwe",
     "category": "image",
     "notes": "Rachel Jones A shorn root",
-    "image": "/images/library/image/KerryJamesMarshall_BrideofFrankeinstein_2009_CI.jpg"
+    "image": "/images/library/image/KerryJamesMarshall_BrideofFrankeinstein_2009_CI.jpg",
+    "color": [
+      56,
+      72,
+      88
+    ]
   },
   {
     "title": "Self-Portrait of the Artist as a Super Model",

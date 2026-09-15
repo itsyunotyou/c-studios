@@ -6,7 +6,12 @@
     "added": "05/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/AnitraNelson+VincentLiegey_ExploringDegrowth:ACriticalGuide_2020_CI.jpg"
+    "image": "/images/library/text/AnitraNelson+VincentLiegey_ExploringDegrowth:ACriticalGuide_2020_CI.jpg",
+    "color": [
+      104,
+      168,
+      40
+    ]
   },
   {
     "title": "Power/Knowledge: Selected Interviews and Other Writings, 1972-1977",
@@ -15,7 +20,12 @@
     "added": "05/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "text",
-    "image": "/images/library/text/MichelFoucault_Power_Knowledge:SelectedInterviewsandOtherWritings,1972-1977_1980_CI.jpg"
+    "image": "/images/library/text/MichelFoucault_Power_Knowledge:SelectedInterviewsandOtherWritings,1972-1977_1980_CI.jpg",
+    "color": [
+      248,
+      248,
+      216
+    ]
   },
   {
     "title": "Philosophy of the Home: Domestic Space and Happiness",
@@ -24,7 +34,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/EmenualeCoccia_PhilosophyoftheHome_2024_N_A.png"
+    "image": "/images/library/text/EmenualeCoccia_PhilosophyoftheHome_2024_N_A.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Ways of Seeing",
@@ -33,7 +48,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/JohnBerger_WaysofSeeing_1972_JY.png"
+    "image": "/images/library/text/JohnBerger_WaysofSeeing_1972_JY.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Portraits: John Berger on Artists",
@@ -42,7 +62,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/JohnBerger_Portraits:JohnBergeronArtists_2017_JY.png"
+    "image": "/images/library/text/JohnBerger_Portraits:JohnBergeronArtists_2017_JY.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Ways of Curating",
@@ -51,7 +76,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/HansUlrichObrist_WaysofCurating_2014_JY.jpg"
+    "image": "/images/library/text/HansUlrichObrist_WaysofCurating_2014_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Perfection",
@@ -60,7 +90,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/VincenzoLatronico_Perfection_2025_JY.png"
+    "image": "/images/library/text/VincenzoLatronico_Perfection_2025_JY.png",
+    "color": [
+      24,
+      56,
+      136
+    ]
   },
   {
     "title": "Trophy Lives: On the Celebrity as an Art Object",
@@ -69,7 +104,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/PhilippaSnow_TrophyLives:OntheCelebrityasanArtObject_2024_JY.jpg"
+    "image": "/images/library/text/PhilippaSnow_TrophyLives:OntheCelebrityasanArtObject_2024_JY.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Right to Sex",
@@ -78,7 +118,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/AmiaSrinivasan_TheRighttoSex_2021_JY.jpg"
+    "image": "/images/library/text/AmiaSrinivasan_TheRighttoSex_2021_JY.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Walking Through Clear Water In a Pool Painted Black",
@@ -87,7 +132,12 @@
     "added": "06/05/2026",
     "by": "Jess Young",
     "category": "text",
-    "image": "/images/library/text/CookieMueller_WalkingThroughClearWaterInaPoolPaintedBlack_2022_JY.png"
+    "image": "/images/library/text/CookieMueller_WalkingThroughClearWaterInaPoolPaintedBlack_2022_JY.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Of Boys and Men",

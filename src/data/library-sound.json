@@ -5893,7 +5893,12 @@
     "added": "28/08/2026",
     "by": "Yu Kakinoki",
     "category": "sound",
-    "image": "/images/library/sound/JanetKay_SillyGames_1979_YK"
+    "image": "/images/library/sound/JanetKay_SillyGames_1979_YK",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Tu Y Yo",

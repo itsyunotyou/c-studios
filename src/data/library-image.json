@@ -5725,7 +5725,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KatsuhiroOtomo_Akira_1988_CI.jpg"
+    "image": "/images/library/image/KatsuhiroOtomo_Akira_1988_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -5734,7 +5739,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI.jpg"
+    "image": "/images/library/image/SatoshiKon_PerfectBlue_1997_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Mirror",
@@ -5743,7 +5753,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AndreiTarkovsky_TheMirror_1975_CI.jpg"
+    "image": "/images/library/image/AndreiTarkovsky_TheMirror_1975_CI.jpg",
+    "color": [
+      24,
+      40,
+      24
+    ]
   },
   {
     "title": "Peter Hujar's Day",
@@ -5752,7 +5767,12 @@
     "added": "23/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/IraSachs_PeterHujar'sDay_2025_CI.png"
+    "image": "/images/library/image/IraSachs_PeterHujar'sDay_2025_CI.png",
+    "color": [
+      136,
+      88,
+      56
+    ]
   },
   {
     "title": "Mos Def and the Black Jack Johnson - Umi Says (Live at the Bowery Ballroom, New York, July 31 2001)",
@@ -5761,7 +5781,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/MosDef&TheBlackJackJohnsonProject_TalibKweli_MosDefandtheBlackJackJohnson-UmiSays(LiveattheBoweryBallroom,NewYork,July312001)_2001_AHI.jpg"
+    "image": "/images/library/image/MosDef&TheBlackJackJohnsonProject_TalibKweli_MosDefandtheBlackJackJohnson-UmiSays(LiveattheBoweryBallroom,NewYork,July312001)_2001_AHI.jpg",
+    "color": [
+      40,
+      40,
+      56
+    ]
   },
   {
     "title": "Twin Peaks",
@@ -5770,7 +5795,12 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/DavidLynch_TwinPeaks_1990_AHI.jpg"
+    "image": "/images/library/image/DavidLynch_TwinPeaks_1990_AHI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "No Hammer (Original Music Video)",
@@ -5779,7 +5809,7 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/A$APNAST_NoHammer(OriginalMusicVideo)_2025_AHI.jpg"
+    "image": "/images/library/image/A$APNAST_NoHammer(OriginalMusicVideo)_2025_AHI"
   },
   {
     "title": "Drop (Original Music Video)",
@@ -5788,7 +5818,7 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/ThePharcyde_Drop(OriginalMusicVideo)_1995_AHI.jpg"
+    "image": "/images/library/image/ThePharcyde_Drop(OriginalMusicVideo)_1995_AHI"
   },
   {
     "title": "Babylon",
@@ -5797,7 +5827,7 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/FrancoRosso_Babylon_1980_AHI.jpg"
+    "image": "/images/library/image/FrancoRosso_Babylon_1980_AHI"
   },
   {
     "title": "My Father's Shadow",
@@ -5806,7 +5836,7 @@
     "added": "24/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/AkinolaDaviesJr._MyFathers'sShadow_2025_AHI.jpg"
+    "image": "/images/library/image/AkinolaDaviesJr._MyFathers'sShadow_2025_AHI"
   },
   {
     "title": "The Watermelon Woman",
@@ -5995,7 +6025,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3"
+    "image": "/images/library/image/N_A_Untitled_N_A_NS.png"
   },
   {
     "title": "Untitled",
@@ -6004,7 +6034,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_1.jpg"
   },
   {
     "title": "Untitled",
@@ -6013,7 +6043,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_2.png"
   },
   {
     "title": "Untitled",
@@ -6022,7 +6052,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3"
+    "image": "/images/library/image/RobinMaddocks_Untitled_N_A_NS_3.png"
   },
   {
     "title": "Untitled",
@@ -6031,7 +6061,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/PhilippeKoudjina_Untitled_ca.1960-75_NS"
+    "image": "/images/library/image/PhilippeKoudjina_Untitled_ca.1960-75_NS.png"
   },
   {
     "title": "Iconic Women of Allah",
@@ -6040,7 +6070,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/ShirinNeshat_IconicWomenofAllah_1993-1997_NS"
+    "image": "/images/library/image/ShirinNeshat_IconicWomenofAllah_1993-1997_NS.jpg"
   },
   {
     "title": "N/A",
@@ -6049,7 +6079,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/TheBlackMusicHistoryLibrary_N_A_N_A_CI"
+    "image": "/images/library/image/N_A_N_A_N_A_NS_1.png"
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6058,7 +6088,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_2"
+    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_1.jpg"
   },
   {
     "title": "Things People Wear in Kenya",
@@ -6067,7 +6097,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_2"
+    "image": "/images/library/image/Chaumont-Zaerpour_ThingsPeopleWearinKenya_2019_NS_2.png"
   },
   {
     "title": "N/A",
@@ -6076,7 +6106,7 @@
     "added": "26/05/2026",
     "by": "Naomi Soquar",
     "category": "image",
-    "image": "/images/library/image/TheBlackMusicHistoryLibrary_N_A_N_A_CI"
+    "image": "/images/library/image/N_A_N_A_N_A_NS_2.png"
   },
   {
     "title": "Cerberus Theaters, Washington, D.C.",

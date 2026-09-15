@@ -5953,7 +5953,12 @@
     "added": "08/09/2026",
     "by": "Joshua Ewusie",
     "category": "sound",
-    "image": "/images/library/sound/Solange Knowles_Don't Wish Me Well_2016_JE.jpg"
+    "image": "/images/library/sound/Solange Knowles_Don't Wish Me Well_2016_JE.jpg",
+    "color": [
+      8,
+      56,
+      88
+    ]
   },
   {
     "title": "Obviously",

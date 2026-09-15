@@ -211,7 +211,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/DonnyHathaway_MakeItOnYourOwn_SomedayWe'llAllBeFree_1978_CI"
+    "image": "/images/library/sound/DonnyHathaway_MakeItOnYourOwn_SomedayWe'llAllBeFree_1978_CI",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "S.I.T.W.S.M.",

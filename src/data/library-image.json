@@ -7571,7 +7571,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/PaulThek_TechnologicalReliquaries_1966_ME.jpg"
+    "image": "/images/library/image/PaulThek_TechnologicalReliquaries_1966_ME.jpg",
+    "color": [
+      136,
+      136,
+      136
+    ]
   },
   {
     "title": "Won - By a Nose",
@@ -7580,7 +7585,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/MaryLovelaceO'Neal_Won-ByaNose_2021-23_ME.jpg"
+    "image": "/images/library/image/MaryLovelaceO'Neal_Won-ByaNose_2021-23_ME.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Blue Whale a.k.a. #12",
@@ -7589,7 +7599,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/MaryLovelaceO'Neal_BlueWhalea.k.a.12_1983_ME.webp"
+    "image": "/images/library/image/MaryLovelaceO'Neal_BlueWhalea.k.a.12_1983_ME.webp",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Porte-Bouteilles",
@@ -7598,7 +7613,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/MarcelDuchamp_Porte-Bouteilles_1941_1959_ME.webp"
+    "image": "/images/library/image/MarcelDuchamp_Porte-Bouteilles_1941_1959_ME.webp",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Divider",
@@ -7607,7 +7627,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/LygiaPape_Divider_1968_ME.webp"
+    "image": "/images/library/image/LygiaPape_Divider_1968_ME.webp",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Bichos",
@@ -7616,7 +7641,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/LygiaClark_Bichos_1960_ME.jpg"
+    "image": "/images/library/image/LygiaClark_Bichos_1960_ME.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Corner Lamp",
@@ -7625,7 +7655,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/LarryBell_CornerLamp_1981_ME.jpg"
+    "image": "/images/library/image/LarryBell_CornerLamp_1981_ME.jpg",
+    "color": [
+      72,
+      72,
+      56
+    ]
   },
   {
     "title": "Ba-O-Ba VI (Secondary Triad)",
@@ -7634,7 +7669,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/KeithSonnier_Ba-O-BaVI(SecondaryTriad)_1970_ME.jpg"
+    "image": "/images/library/image/KeithSonnier_Ba-O-BaVI(SecondaryTriad)_1970_ME.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Flare",
@@ -7643,7 +7683,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/JohnMcCracken_Flare_2008_ME.jpg"
+    "image": "/images/library/image/JohnMcCracken_Flare_2008_ME.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "Untitled #7",
@@ -7652,7 +7697,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/JohnChamberlain_Untitled7_1967_ME.webp"
+    "image": "/images/library/image/JohnChamberlain_Untitled7_1967_ME.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Untitled",
@@ -7661,7 +7711,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/JohnChamberlain_Untitled_1966_ME.webp"
+    "image": "/images/library/image/JohnChamberlain_Untitled_1966_ME.webp",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Untitled",
@@ -7670,7 +7725,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/JohnChamberlain_Untitled_1965_ME.jpg"
+    "image": "/images/library/image/JohnChamberlain_Untitled_1965_ME.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "A",
@@ -7679,7 +7739,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/JohnChamberlain_A_1969-70_ME.jpg"
+    "image": "/images/library/image/JohnChamberlain_A_1969-70_ME.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Room 19",
@@ -7688,7 +7753,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/ImiKnoebel_Room19_1968_ME.jpg"
+    "image": "/images/library/image/ImiKnoebel_Room19_1968_ME.jpg",
+    "color": [
+      136,
+      120,
+      120
+    ]
   },
   {
     "title": "The Future Is Now",
@@ -7697,7 +7767,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/GiselaColon_TheFutureIsNow_2020_ME.jpg"
+    "image": "/images/library/image/GiselaColon_TheFutureIsNow_2020_ME.jpg",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "Untitled (Red Floor Piece)",
@@ -10228,7 +10303,7 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Buerrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Rebecca Horn_Concert for Anarchy_1990_JCB.jpg",
+    "image": "/images/library/image/Rebecca Horn_Concert for Anarchy_1990_JCB",
     "color": [
       184,
       184,

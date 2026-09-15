@@ -2652,7 +2652,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_3.png"
+    "image": "/images/library/image/MamoruOshii_GhostintheShell_1995_CI_6"
   },
   {
     "title": "Street Portraits of 1980's NYC",
@@ -2661,7 +2661,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_1.jpg"
+    "image": "/images/library/image/KeizoKitajima_StreetPortraitsof1983_1983_CI_2"
   },
   {
     "title": "Interstellar Tesseract Scene",
@@ -2679,7 +2679,7 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_1.jpg"
+    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_2.jpg"
   },
   {
     "title": "Dancer in the Dark",
@@ -2706,7 +2706,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_1.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2715,7 +2715,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_2.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2733,7 +2733,30 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_1.png"
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4",
+    "color": [
+      72,
+      24,
+      8
+    ]
+  },
+  {
+    "title": "Hero",
+    "author": "Christopher Doyle",
+    "year": "2002",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_2.jpg"
+  },
+  {
+    "title": "Hero",
+    "author": "Christopher Doyle",
+    "year": "2002",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_3.jpg"
   },
   {
     "title": "Hero",
@@ -2750,32 +2773,13 @@
     ]
   },
   {
-    "title": "Hero",
-    "author": "Christopher Doyle",
+    "title": "City of God",
+    "author": "César Charlone",
     "year": "2002",
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4",
-    "color": [
-      72,
-      24,
-      8
-    ]
-  },
-  {
-    "title": "Hero",
-    "author": "Christopher Doyle",
-    "year": "2002",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/ChristopherDoyle_Hero_2002_CI_4",
-    "color": [
-      72,
-      24,
-      8
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_1.jpg"
   },
   {
     "title": "City of God",
@@ -2784,12 +2788,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
-    "color": [
-      88,
-      104,
-      152
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_2.jpg"
   },
   {
     "title": "City of God",
@@ -2798,12 +2797,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
-    "color": [
-      88,
-      104,
-      152
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_3.jpg"
   },
   {
     "title": "City of God",
@@ -2812,12 +2806,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
-    "color": [
-      88,
-      104,
-      152
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_4.jpg"
   },
   {
     "title": "City of God",
@@ -2826,26 +2815,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
-    "color": [
-      88,
-      104,
-      152
-    ]
-  },
-  {
-    "title": "City of God",
-    "author": "César Charlone",
-    "year": "2002",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
-    "color": [
-      88,
-      104,
-      152
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_5.jpg"
   },
   {
     "title": "City of God",
@@ -2868,12 +2838,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3",
-    "color": [
-      200,
-      200,
-      200
-    ]
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_1.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2882,12 +2847,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3",
-    "color": [
-      200,
-      200,
-      200
-    ]
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_2.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2910,7 +2870,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_1.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",

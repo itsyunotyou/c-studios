@@ -4759,7 +4759,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/Ruth-MarionBaruch_CharlesBursey_ca.1970_AHI.png"
+    "image": "/images/library/image/Ruth-MarionBaruch_CharlesBursey_ca.1970_AHI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "smack",
@@ -4768,7 +4773,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/GoogleDictionary_smack_N_A_AHI.png"
+    "image": "/images/library/image/GoogleDictionary_smack_N_A_AHI.png",
+    "color": [
+      24,
+      40,
+      40
+    ]
   },
   {
     "title": "Casa Insinga Floor Plan",
@@ -4777,7 +4787,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_CasaInsingaFloorPlan_ca.1987_AHI.jpg"
+    "image": "/images/library/image/N_A_CasaInsingaFloorPlan_ca.1987_AHI.jpg",
+    "color": [
+      248,
+      232,
+      232
+    ]
   },
   {
     "title": "The Ritual of Contemplation - Shifting Landscapes",
@@ -4786,7 +4801,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/MelissaAndreaCortes_TheRitualofContemplation-ShiftingLandscapes_2014_AHI.jpg"
+    "image": "/images/library/image/MelissaAndreaCortes_TheRitualofContemplation-ShiftingLandscapes_2014_AHI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Lucille",
@@ -4795,7 +4815,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/LucianoCastelli_Lucille_1973_AHI.jpg"
+    "image": "/images/library/image/LucianoCastelli_Lucille_1973_AHI.jpg",
+    "color": [
+      248,
+      232,
+      232
+    ]
   },
   {
     "title": "Richie Havens",
@@ -4804,7 +4829,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/GüntherKIESER_RichieHavens_ca.1970_AHI.jpg"
+    "image": "/images/library/image/GüntherKIESER_RichieHavens_ca.1970_AHI.jpg",
+    "color": [
+      40,
+      40,
+      24
+    ]
   },
   {
     "title": "The Pharcyde",
@@ -4813,7 +4843,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/N_A_ThePharcyde_N_A_AHI.jpg"
+    "image": "/images/library/image/N_A_ThePharcyde_N_A_AHI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Walmer Yard Drawing",
@@ -4822,7 +4857,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/PeterSalter_WalmerYardDrawing_2004_AHI.jpg"
+    "image": "/images/library/image/PeterSalter_WalmerYardDrawing_2004_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "The Original Paradise Garage, 1971",
@@ -4831,7 +4871,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/DavidParkinson_TheOriginalParadiseGarage,1971_1971_AHI.jpg"
+    "image": "/images/library/image/DavidParkinson_TheOriginalParadiseGarage,1971_1971_AHI.jpg",
+    "color": [
+      88,
+      104,
+      136
+    ]
   },
   {
     "title": "Intervention on the facade of the Auditorium",
@@ -4840,7 +4885,12 @@
     "added": "19/05/2026",
     "by": "Angel Harvey-Ideozu",
     "category": "image",
-    "image": "/images/library/image/PabloPalazuelo_InterventiononthefacadeoftheAuditorium_1989_AHI.jpg"
+    "image": "/images/library/image/PabloPalazuelo_InterventiononthefacadeoftheAuditorium_1989_AHI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Original Image",

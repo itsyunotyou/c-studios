@@ -5355,12 +5355,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RonGalella_JackieKennedyOnasis_1971_CI.jpg"
   },
   {
     "title": "Mick Jagger and Jerry Hall",
@@ -5369,12 +5364,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/RonGalella_MickJaggerandJerryHall_1978_CI.jpg"
   },
   {
     "title": "Polaroids",
@@ -5383,12 +5373,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/Maripol_Polaroids_N_A_CI.jpg"
   },
   {
     "title": "Puck Ball (The Gang's All Here)",
@@ -5397,12 +5382,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg",
-    "color": [
-      40,
-      40,
-      40
-    ]
+    "image": "/images/library/image/TsengKwongChi_PuckBall(TheGang'sAllHere)_1983_CI.jpg"
   },
   {
     "title": "Diane Keaton and Carol Kane",
@@ -5411,12 +5391,7 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png",
-    "color": [
-      216,
-      216,
-      216
-    ]
+    "image": "/images/library/image/BillCunningham_DianeKeatonandCarolKane_1989_CI.png"
   },
   {
     "title": "Betty Davis",
@@ -5425,7 +5400,52 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI.jpg",
+    "image": "/images/library/image/BillCunningham_BettyDavis_1969_CI.jpg"
+  },
+  {
+    "title": "On the Street",
+    "author": "",
+    "year": "N/A",
+    "added": "21/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_1.jpg"
+  },
+  {
+    "title": "Come Out!!",
+    "author": "",
+    "year": "1970",
+    "added": "21/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI.jpg"
+  },
+  {
+    "title": "Lisa Lyon",
+    "author": "",
+    "year": "1980",
+    "added": "21/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI.jpg"
+  },
+  {
+    "title": "Fran Lebowitz at Home in Morristown",
+    "author": "",
+    "year": "1974",
+    "added": "21/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI.jpg"
+  },
+  {
+    "title": "Tongues Untied",
+    "author": "",
+    "year": "1989",
+    "added": "21/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/MarlonRiggs_TonguesUntied_1989_CI.jpg",
     "color": [
       248,
       248,
@@ -5439,67 +5459,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg"
-  },
-  {
-    "title": "Come Out!!",
-    "author": "",
-    "year": "1970",
-    "added": "21/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/PeterHujar_ComeOut!!_1970_CI.jpg",
+    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg",
     "color": [
-      8,
-      8,
-      8
+      184,
+      184,
+      184
     ]
-  },
-  {
-    "title": "Lisa Lyon",
-    "author": "",
-    "year": "1980",
-    "added": "21/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/RobertMapplethorpe_LisaLyon_1980_CI.jpg",
-    "color": [
-      24,
-      24,
-      24
-    ]
-  },
-  {
-    "title": "Fran Lebowitz at Home in Morristown",
-    "author": "",
-    "year": "1974",
-    "added": "21/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/PeterHujar_FranLebowitzatHomeinMorristown_1974_CI.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
-  },
-  {
-    "title": "Tongues Untied",
-    "author": "",
-    "year": "1989",
-    "added": "21/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/MarlonRiggs_TonguesUntied_1989_CI.jpg"
-  },
-  {
-    "title": "On the Street",
-    "author": "",
-    "year": "N/A",
-    "added": "21/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/BillCunningham_OntheStreet_N_A_CI_2.jpg"
   },
   {
     "title": "Debbie Harry",
@@ -5508,7 +5473,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/KateSimons_DebbieHarry_ca.1980_CI.png"
+    "image": "/images/library/image/KateSimons_DebbieHarry_ca.1980_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Aluminum Foil #1 (Self-Portrait)",
@@ -5517,7 +5487,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JimmyDeSana_AluminumFoil1(Self-Portrait)_1985_CI.jpg"
+    "image": "/images/library/image/JimmyDeSana_AluminumFoil1(Self-Portrait)_1985_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Portrait Project",
@@ -5526,7 +5501,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CarleenDeSozer_ThePortraitProject_2019_CI.jpg"
+    "image": "/images/library/image/CarleenDeSozer_ThePortraitProject_2019_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Broken Silence (Official Video)",
@@ -5535,7 +5515,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SoSolidCrew_BrokenSilence(OfficialVideo)_2003_CI.png"
+    "image": "/images/library/image/SoSolidCrew_BrokenSilence(OfficialVideo)_2003_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Rinse FM 100.3",
@@ -5544,7 +5529,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/WileyandFlowdan_RinseFM100.3(2005)_2005_CI.png"
+    "image": "/images/library/image/WileyandFlowdan_RinseFM100.3(2005)_2005_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "That's Not Me (Official Video)",
@@ -5553,7 +5543,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Skepta+JME_That'sNotMe(OfficialVideo)_2016_CI.png"
+    "image": "/images/library/image/Skepta+JME_That'sNotMe(OfficialVideo)_2016_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Wot Do U Call It? (High Quality Video)",
@@ -5562,7 +5557,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Wiley_WotDoUCallIt(HighQualityVideo)_2004_CI.png"
+    "image": "/images/library/image/Wiley_WotDoUCallIt(HighQualityVideo)_2004_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Paul Simonon",
@@ -5571,7 +5571,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SydShelton_PaulSimonon_1978_CI.jpg"
+    "image": "/images/library/image/SydShelton_PaulSimonon_1978_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Home of Music",
@@ -5580,7 +5585,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Levy's_TheHomeofMusic_N_A_CI.jpg"
+    "image": "/images/library/image/Levy's_TheHomeofMusic_N_A_CI.jpg",
+    "color": [
+      248,
+      216,
+      184
+    ]
   },
   {
     "title": "Brady Club Social Hanbury Street",
@@ -5589,7 +5599,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_BradyClubSocialHanburyStreet_ca.1960_CI.jpg"
+    "image": "/images/library/image/N_A_BradyClubSocialHanburyStreet_ca.1960_CI.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Dizzee Rascal and Wiley in front of Crossways Estate",
@@ -5598,7 +5613,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_DizzeeRascalandWileyinfrontofCrosswaysEstate_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_DizzeeRascalandWileyinfrontofCrosswaysEstate_N_A_CI.jpg",
+    "color": [
+      88,
+      88,
+      88
+    ]
   },
   {
     "title": "Amy Winehouse at George Tavern",
@@ -5607,7 +5627,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BlakeWood_AmyWinehouseatGeorgeTavern_2008_CI.jpg"
+    "image": "/images/library/image/BlakeWood_AmyWinehouseatGeorgeTavern_2008_CI.jpg",
+    "color": [
+      232,
+      184,
+      120
+    ]
   },
   {
     "title": "About Us",
@@ -5616,7 +5641,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheGeorge_AboutUs_N_A_CI.jpg"
+    "image": "/images/library/image/TheGeorge_AboutUs_N_A_CI.jpg",
+    "color": [
+      120,
+      136,
+      136
+    ]
   },
   {
     "title": "Crossways Estate",
@@ -5625,7 +5655,12 @@
     "added": "21/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI.jpg"
+    "image": "/images/library/image/GaryKinsman_CrosswaysEstate_2016_CI.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Christo's Valley Curtain",
@@ -5634,7 +5669,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png"
+    "image": "/images/library/image/EllenHovde+AlbertMaysles+DavidMaysles_Christo'sValleyCurtain_1974_JY.png",
+    "color": [
+      152,
+      168,
+      200
+    ]
   },
   {
     "title": "Arcadia",
@@ -5643,7 +5683,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg"
+    "image": "/images/library/image/PaulWright_Arcadia_2017_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "The Vasulka Effect: Grandparents of Video Art",
@@ -5652,7 +5697,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg"
+    "image": "/images/library/image/HrafnhildurGunnarsdòttir_TheVasulkaEffect:TheGrandparentsofVideoArt_2019_JY.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "How Not to Be Seen: A Fucking Didactic Educational",
@@ -5661,7 +5711,12 @@
     "added": "23/05/2026",
     "by": "Jess Young",
     "category": "image",
-    "image": "/images/library/image/HitoSteyerl_HowNottoBeSeen:AFuckingDidacticEducational_2013_JY.jpg"
+    "image": "/images/library/image/HitoSteyerl_HowNottoBeSeen:AFuckingDidacticEducational_2013_JY.jpg",
+    "color": [
+      56,
+      56,
+      56
+    ]
   },
   {
     "title": "As You See",

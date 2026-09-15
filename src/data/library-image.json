@@ -2915,12 +2915,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_6",
-    "color": [
-      88,
-      104,
-      152
-    ]
+    "image": "/images/library/image/CésarCharlone_CityofGod_2002_CI_5.jpg"
   },
   {
     "title": "City of God",
@@ -2943,12 +2938,16 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3",
-    "color": [
-      200,
-      200,
-      200
-    ]
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_1.jpg"
+  },
+  {
+    "title": "Medicine for Melancholy",
+    "author": "James Laxton",
+    "year": "2008",
+    "added": "12/05/2026",
+    "by": "Cynthia Igbokwe",
+    "category": "image",
+    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_2.jpg"
   },
   {
     "title": "Medicine for Melancholy",
@@ -2965,18 +2964,13 @@
     ]
   },
   {
-    "title": "Medicine for Melancholy",
-    "author": "James Laxton",
-    "year": "2008",
+    "title": "Michel Gondry for Louis Vuitton",
+    "author": "Michel Gondry",
+    "year": "2023",
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JamesLaxton_MedicineforMelancholy_2008_CI_3",
-    "color": [
-      200,
-      200,
-      200
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_1.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2985,12 +2979,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_2.jpg"
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2999,26 +2988,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
-  },
-  {
-    "title": "Michel Gondry for Louis Vuitton",
-    "author": "Michel Gondry",
-    "year": "2023",
-    "added": "12/05/2026",
-    "by": "Cynthia Igbokwe",
-    "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
   },
   {
     "title": "Be Kind Rewind",
@@ -3027,12 +2997,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_BeKindRewind_2008_CI.webp",
-    "color": [
-      152,
-      200,
-      168
-    ]
+    "image": "/images/library/image/MichelGondry_BeKindRewind_2008_CI.webp"
   },
   {
     "title": "The Science of Sleep",
@@ -3041,12 +3006,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_TheScienceofSleep_2006_CI.webp",
-    "color": [
-      120,
-      120,
-      120
-    ]
+    "image": "/images/library/image/MichelGondry_TheScienceofSleep_2006_CI.webp"
   },
   {
     "title": "Michel Gondry for Chanel",
@@ -3055,12 +3015,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforChanel_2025_CI.jpg",
-    "color": [
-      104,
-      152,
-      152
-    ]
+    "image": "/images/library/image/MichelGondry_MichelGondryforChanel_2025_CI.jpg"
   },
   {
     "title": "Daft Punk Around the World (Music Video)",
@@ -3069,12 +3024,7 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_DaftPunkAroundtheWorld(MusicVideo)_1997_CI.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/MichelGondry_DaftPunkAroundtheWorld(MusicVideo)_1997_CI.png"
   },
   {
     "title": "Mulholland Drive",

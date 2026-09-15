@@ -2156,7 +2156,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BlackMountainCollege_TheStudiesBuilding_ca.1940_CI.webp"
+    "image": "/images/library/image/BlackMountainCollege_TheStudiesBuilding_ca.1940_CI.webp",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "Students with Barn and Grain Silo (Black Mountain College)",
@@ -2165,7 +2170,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JosefBreitenbach_StudentswithBarnandGrainSilo(BlackMountainCollege)_ca.1940_CI.png"
+    "image": "/images/library/image/JosefBreitenbach_StudentswithBarnandGrainSilo(BlackMountainCollege)_ca.1940_CI.png",
+    "color": [
+      104,
+      104,
+      88
+    ]
   },
   {
     "title": "Blue Sail",
@@ -2174,7 +2184,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/HansHaacke_BlueSail_1964-65_CI.webp"
+    "image": "/images/library/image/HansHaacke_BlueSail_1964-65_CI.webp",
+    "color": [
+      56,
+      72,
+      72
+    ]
   },
   {
     "title": "Condensation Cube",
@@ -2598,7 +2613,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TwenMagazine_TwenMagazineCover_1963_CI.jpg"
+    "image": "/images/library/image/TwenMagazine_TwenMagazineCover_1963_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Twen Magazine Cover",
@@ -2607,7 +2627,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TwenMagazine_TwenMagazineCover_1965_CI.png"
+    "image": "/images/library/image/TwenMagazine_TwenMagazineCover_1965_CI.png",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Global Tools Bulletin No. 1",
@@ -2616,7 +2641,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RemoButi_GlobalToolsBulletinNo1._1974_CI.png"
+    "image": "/images/library/image/RemoButi_GlobalToolsBulletinNo1._1974_CI.png",
+    "color": [
+      248,
+      248,
+      232
+    ]
   },
   {
     "title": "Global Tools",
@@ -2625,7 +2655,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/CarloBachi_GlobalTools_1973_CI.png"
+    "image": "/images/library/image/CarloBachi_GlobalTools_1973_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Ghost in the Shell",
@@ -2670,7 +2705,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/AkosHalasz_InterstellarTesseractScene_2014_CI.jpg"
+    "image": "/images/library/image/AkosHalasz_InterstellarTesseractScene_2014_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Dancer in the Dark",
@@ -2679,7 +2719,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_2.jpg"
+    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_2.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Dancer in the Dark",
@@ -2688,7 +2733,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_2.jpg"
+    "image": "/images/library/image/LarsvonTrier_DancerintheDark_2000_CI_2.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video Set)",
@@ -2697,7 +2747,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RichardBerg_MichaelJacksonScream(MusicVideoSet)_1995_CI.jpg"
+    "image": "/images/library/image/RichardBerg_MichaelJacksonScream(MusicVideoSet)_1995_CI.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2706,7 +2761,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2715,7 +2775,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Michael Jackson Scream (Music Video)",
@@ -2724,7 +2789,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg"
+    "image": "/images/library/image/BrianDrucker_MichaelJacksonScream(MusicVideo)_1995_CI_3.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Hero",
@@ -2915,7 +2985,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2924,7 +2999,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Michel Gondry for Louis Vuitton",
@@ -2933,7 +3013,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforLouisVuitton_2023_CI_3.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Be Kind Rewind",
@@ -2942,7 +3027,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_BeKindRewind_2008_CI.webp"
+    "image": "/images/library/image/MichelGondry_BeKindRewind_2008_CI.webp",
+    "color": [
+      152,
+      200,
+      168
+    ]
   },
   {
     "title": "The Science of Sleep",
@@ -2951,7 +3041,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_TheScienceofSleep_2006_CI.webp"
+    "image": "/images/library/image/MichelGondry_TheScienceofSleep_2006_CI.webp",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "Michel Gondry for Chanel",
@@ -2960,7 +3055,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_MichelGondryforChanel_2025_CI.jpg"
+    "image": "/images/library/image/MichelGondry_MichelGondryforChanel_2025_CI.jpg",
+    "color": [
+      104,
+      152,
+      152
+    ]
   },
   {
     "title": "Daft Punk Around the World (Music Video)",
@@ -2969,7 +3069,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/MichelGondry_DaftPunkAroundtheWorld(MusicVideo)_1997_CI.png"
+    "image": "/images/library/image/MichelGondry_DaftPunkAroundtheWorld(MusicVideo)_1997_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Mulholland Drive",
@@ -3124,7 +3229,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI.jpg"
+    "image": "/images/library/image/SETUPDesign_ExtremaNoir2023_2023_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "America",
@@ -3133,7 +3243,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GarrettBradley_America_2019_CI.webp"
+    "image": "/images/library/image/GarrettBradley_America_2019_CI.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "N/A",
@@ -3193,7 +3308,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg"
+    "image": "/images/library/image/RonClements+JohnMusker_Disney'sAladdin_1993_CI.jpg",
+    "color": [
+      40,
+      24,
+      120
+    ]
   },
   {
     "title": "Disney's Pinocchio",
@@ -3202,7 +3322,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg"
+    "image": "/images/library/image/BenShapersteen+HamiltonLuske+NormFerguson+WilfredJackson+BillRoberts+JackKinney+T.Hee_Disney'sPinocchio_1940_CI.jpg",
+    "color": [
+      8,
+      8,
+      24
+    ]
   },
   {
     "title": "Samuel L. Jackson for Adidas",
@@ -3211,7 +3336,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg"
+    "image": "/images/library/image/ThibautGrevet_SamuelL.Jackson_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Vortex Drawing 19",
@@ -3220,7 +3350,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp"
+    "image": "/images/library/image/NnenaKalu_VortexDrawing19_2018_CI.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3229,7 +3364,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3238,7 +3378,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Super Limbo",
@@ -3247,7 +3392,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg"
+    "image": "/images/library/image/LimboAccra+SuperYaya_SuperLimbo_2023_CI_3.jpg",
+    "color": [
+      232,
+      216,
+      184
+    ]
   },
   {
     "title": "Togo National Museum",
@@ -3256,7 +3406,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg"
+    "image": "/images/library/image/N_A_TogoNationalMuseum_N_A_CI.jpg",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "Astro Boy",
@@ -3265,7 +3420,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp"
+    "image": "/images/library/image/OsamuTezuka_AstroBoy_1963_CI.webp",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "N/A",
@@ -3288,7 +3448,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/N_A_BillGunninStop(1970)_1970_CI.webp"
+    "image": "/images/library/image/N_A_BillGunninStop(1970)_1970_CI.webp",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Near the Cross",
@@ -3297,7 +3462,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/TheMississippiMassChoir_NeartheCross_2014_CI.png"
+    "image": "/images/library/image/TheMississippiMassChoir_NeartheCross_2014_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Ricky Dillard & New G - There Is No Way, featuring Nikki Ross",
@@ -3306,7 +3476,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RickyDillard&NewG+NikkiRoss_RickyDillard&NewG-ThereIsNoWay,featuringNikkiRoss_2009_CI.png"
+    "image": "/images/library/image/RickyDillard&NewG+NikkiRoss_RickyDillard&NewG-ThereIsNoWay,featuringNikkiRoss_2009_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "F50 YY Tunit Tiger",
@@ -3315,7 +3490,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/Y-3_F50YYTunitTiger_2006_CI.jpg"
+    "image": "/images/library/image/Y-3_F50YYTunitTiger_2006_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Mémoire",
@@ -3324,7 +3504,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI.jpg"
+    "image": "/images/library/image/SammyBaloji_Mémoire_2004-06_CI.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Untitled 17",

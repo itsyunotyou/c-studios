@@ -4522,7 +4522,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/GarrettBradley_Safe_2022_CI.png"
+    "image": "/images/library/image/GarrettBradley_Safe_2022_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Perfect Blue",
@@ -4559,7 +4564,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/RobertValley_N_A_2025_CI.jpg"
+    "image": "/images/library/image/RobertValley_N_A_2025_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4568,7 +4578,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4577,7 +4592,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "Augustus Hill (Oz)",
@@ -4586,7 +4606,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png"
+    "image": "/images/library/image/JeandeSegonzac_AugustusHill(Oz)_1998_CI_3.png",
+    "color": [
+      232,
+      248,
+      248
+    ]
   },
   {
     "title": "BLACK BRITISH MUSIC 2025 Hat",
@@ -4595,7 +4620,12 @@
     "added": "13/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/JimLegxacy_BLACKBRITISHMUSIC2025Hat_2025_CI.png"
+    "image": "/images/library/image/JimLegxacy_BLACKBRITISHMUSIC2025Hat_2025_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "BLACK PICTURE SHOW",

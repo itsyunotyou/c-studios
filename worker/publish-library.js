@@ -81,7 +81,7 @@ function sanitizeForFilename(s) {
   return s.replace(/[#?]/g, '').replace(/[/\\]/g, '_').replace(/[\x00-\x1f]/g, '');
 }
 
-async function gh(env, path, options = {}) {
+export async function gh(env, path, options = {}) {
   const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/${path}`, {
     ...options,
     headers: {
@@ -97,10 +97,10 @@ async function gh(env, path, options = {}) {
 
 // Base64 -> UTF-8 string, and back. GitHub's Contents API always deals in
 // base64, but JSON needs decoding to text to parse/modify it as JS.
-function b64ToText(b64) {
+export function b64ToText(b64) {
   return new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g, '')), c => c.charCodeAt(0)));
 }
-function textToB64(text) {
+export function textToB64(text) {
   const bytes = new TextEncoder().encode(text);
   // Spreading the whole array into String.fromCharCode blows the call-stack
   // limit once `text` is large enough (library-image.json, with 400+
@@ -121,11 +121,11 @@ function textToB64(text) {
 // everything from "?" on as a query string. Every path segment needs its
 // own encodeURIComponent — encoding the whole path at once would also
 // escape the "/" separators.
-function encodePath(path) {
+export function encodePath(path) {
   return path.split('/').map(encodeURIComponent).join('/');
 }
 
-async function getFile(env, path) {
+export async function getFile(env, path) {
   const res = await gh(env, `contents/${encodePath(path)}?ref=${BRANCH}`);
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`GET ${path} failed: ${res.status} ${await res.text()}`);
@@ -155,7 +155,7 @@ async function listIncomingBasenames(env, category) {
   );
 }
 
-async function ghJson(env, path, options) {
+export async function ghJson(env, path, options) {
   const res = await gh(env, path, options);
   if (!res.ok) throw new Error(`${options?.method || 'GET'} ${path} failed: ${res.status} ${await res.text()}`);
   return res.json();
@@ -180,7 +180,7 @@ async function ghJson(env, path, options) {
 // an actual "Too many subrequests" failure: a batch of 10 files costs ~15
 // subrequests for one attempt, and repeating that on every retry (blobs
 // included) pushed a 2-retry run to ~45, right at the cap.
-async function commitFiles(env, files, message) {
+export async function commitFiles(env, files, message) {
   const tree = [];
   for (const file of files) {
     // A generic "POST git/blobs failed: 400 malformed request" gives no clue

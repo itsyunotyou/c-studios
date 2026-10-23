@@ -114,6 +114,26 @@ After first deploy, in the Cloudflare dashboard:
 Alternative: **Netlify** — drag and drop `dist/` into Netlify's dashboard,
 or connect your GitHub repo for auto-deploy on push.
 
+## Projects come from the master sheet
+
+The homepage Projects section is published from the **PROJECTS** tab of the
+C-S WEBSITE_MASTER SHEET via **C-STUDIOS → Publish projects to site**:
+
+- Only rows with COPY APPROVED ticked are shown, in row order.
+- CATEGORY, TITLE, YEAR and DESCRIPTION are shown as typed.
+- DRIVE LINK is the project's own folder. Images whose file name starts with
+  a number are shown in number order (01, 02 … 10); other files are ignored.
+- A project whose folder isn't ready keeps the images it already has.
+
+Pipeline: Apps Script (`google-apps-script/PublishProjects.gs`) →
+`worker/publish-projects.js` (commits `src/data/projects-sheet.json` + raw
+images under `_incoming/projects/`) → `.github/workflows/process-projects.yml`
+(makes the webp sizes, rebuilds `src/data/projects.json`) → `deploy.yml`.
+
+`src/data/projects.json` is now generated — edit the sheet, not the file.
+`npm run sync-projects` and `scripts/refresh-project-images.mjs` would
+overwrite it from the old CSV / image folders, so don't run them any more.
+
 ## Editing references later
 
 Two options:

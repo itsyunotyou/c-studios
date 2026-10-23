@@ -7660,12 +7660,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_1.png",
-    "color": [
-      184,
-      72,
-      72
-    ]
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_6"
   },
   {
     "title": "Carribean Commercial",
@@ -7674,12 +7669,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_2.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_6"
   },
   {
     "title": "Carribean Commercial",
@@ -7688,12 +7678,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_3.png",
-    "color": [
-      88,
-      88,
-      88
-    ]
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_6"
   },
   {
     "title": "Carribean Commercial",
@@ -7702,12 +7687,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_4.png",
-    "color": [
-      8,
-      8,
-      8
-    ]
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_6"
   },
   {
     "title": "Carribean Commercial",
@@ -7716,12 +7696,7 @@
     "added": "22/06/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_5.png",
-    "color": [
-      56,
-      72,
-      56
-    ]
+    "image": "/images/library/image/EthanAllen_CarribeanCommercial_1998_CI_6"
   },
   {
     "title": "Carribean Commercial",
@@ -9302,5 +9277,104 @@
       232,
       216
     ]
+  },
+  {
+    "title": "Mind Field",
+    "author": "Alien Workshop",
+    "year": "2009",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Alien Workshop_Mindfield_2009_TYH"
+  },
+  {
+    "title": "Afronautic Research Lab",
+    "author": "Camille Turner",
+    "year": "2016",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Camille Turner_Afronautic Research Lab_2016_TYH"
+  },
+  {
+    "title": "Cold Shoulder",
+    "author": "David Hammons",
+    "year": "1990",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/David Hammons_Cold Shoulder_1990_TYH"
+  },
+  {
+    "title": "Organism",
+    "author": "Hilary Harris",
+    "year": "1975",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Hilary Harris_Organism_1975_TYH"
+  },
+  {
+    "title": "Hloni",
+    "author": "Nontsikelelo'Lolo'Veleko",
+    "year": "2004",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Nontsikelelo'Lolo'Veleko_Hloni_2004_TYH"
+  },
+  {
+    "title": "Black Girl",
+    "author": "Ousmane Sembène",
+    "year": "1966",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Ousmane Sembène_Black Girl_1966_TYH"
+  },
+  {
+    "title": "Fountain",
+    "author": "Rebecca Belmore",
+    "year": "2005",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Rebecca Belmore_Fountain_2005_TYH"
+  },
+  {
+    "title": "SIXSIXSIX",
+    "author": "Samuel Fosso",
+    "year": "2015",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Samuel Fosso_SIXSIXSIX_2015_TYH"
+  },
+  {
+    "title": "Shinichiro Arakawa Autumn Winter 1999",
+    "author": "Shinichiro Arakawa",
+    "year": "1999",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Shinichiro Arakawa_Shinichiro Arakawa Autumn-Winter_1999_TYH"
+  },
+  {
+    "title": "Shinichiro Arakawa Spring Summer 1998",
+    "author": "Shinichiro Arakawa",
+    "year": "1998",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/Shinichiro Arakawa_Shinichiro Arakawa Spring-Summer_1998_TYH"
+  },
+  {
+    "title": "N/A",
+    "author": "N/A",
+    "year": "1999",
+    "added": "14/10/2026",
+    "by": "Timothy Yanick Hunter",
+    "category": "image",
+    "image": "/images/library/image/N_A_N_A_1999_TYH"
   }
 ]

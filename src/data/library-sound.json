@@ -1887,7 +1887,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Niontay_DaCityofaHunnidPlays_Dontay'sInferno_2023_CI.jpg"
+    "image": "/images/library/sound/Niontay_DaCityofaHunnidPlays_Dontay'sInferno_2023_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "How Will I Know",
@@ -1896,7 +1901,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/WhitneyHouston_HowWillIKnow_WhitneyHouston_1985_CI.jpg"
+    "image": "/images/library/sound/WhitneyHouston_HowWillIKnow_WhitneyHouston_1985_CI.jpg",
+    "color": [
+      216,
+      104,
+      56
+    ]
   },
   {
     "title": "Billie Jean",
@@ -1905,7 +1915,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/MichaelJackson_BillieJean_Thriller_1983_CI.jpg"
+    "image": "/images/library/sound/MichaelJackson_BillieJean_Thriller_1983_CI.jpg",
+    "color": [
+      216,
+      216,
+      200
+    ]
   },
   {
     "title": "Black Matter",
@@ -1914,7 +1929,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/VoiceActor_BlackMatter_SentFromMyTelephone_2022_CI.jpg"
+    "image": "/images/library/sound/VoiceActor_BlackMatter_SentFromMyTelephone_2022_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Birds, Pt. 1",
@@ -1923,7 +1943,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Chassol_Birds,Pt.1_BigSun_2015_CI.jpg"
+    "image": "/images/library/sound/Chassol_Birds,Pt.1_BigSun_2015_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Love Sosa",
@@ -1932,7 +1957,12 @@
     "added": "12/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ChiefKeef_LoveSosa_FinallyRich_2012_CI.jpg"
+    "image": "/images/library/sound/ChiefKeef_LoveSosa_FinallyRich_2012_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Mass - ‘Emmanuel’",
@@ -1941,7 +1971,12 @@
     "added": "14/05/2026",
     "by": "Jess Young",
     "category": "sound",
-    "image": "/images/library/sound/SisterIreneO'Connor_Mass-'Emmanuel'_FireofGod'sLove_1973_JY.webp"
+    "image": "/images/library/sound/SisterIreneO'Connor_Mass-'Emmanuel'_FireofGod'sLove_1973_JY.webp",
+    "color": [
+      56,
+      40,
+      40
+    ]
   },
   {
     "title": "Stani Mi Maytcho",

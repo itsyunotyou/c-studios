@@ -1,0 +1,51 @@
+name: Process projects from sheet
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_incoming/projects/**'
+      - 'src/data/projects-sheet.json'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: process-projects
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: node scripts/build-projects-from-sheet.mjs
+
+      - name: Commit results, if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A -- src/data/projects.json src/data/projects-sheet-processed.json public/images/projects _incoming
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "Update projects from sheet [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git push origin main; then
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          exit 1

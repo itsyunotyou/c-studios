@@ -388,7 +388,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Gorillaz_TomorrowComesToday_Gorillaz_2001_CI.jpg"
+    "image": "/images/library/sound/Gorillaz_TomorrowComesToday_Gorillaz_2001_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Kaotic Harmony",
@@ -397,7 +402,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/DerrickMay_KaoticHarmony_Innovator(Mayday)_2008_CI.jpg"
+    "image": "/images/library/sound/DerrickMay_KaoticHarmony_Innovator(Mayday)_2008_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The SlipN'Fall (E₂ Fix)",
@@ -406,7 +416,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Rooster+Ecco2k_TheSlipN'Fall(E₂Fix)_RoosterSlipped_2025_CI.jpg"
+    "image": "/images/library/sound/Rooster+Ecco2k_TheSlipN'Fall(E₂Fix)_RoosterSlipped_2025_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Why Are You Going to New York",
@@ -415,7 +430,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ChristopherBear+DanielRossen_WhyAreYouGoingtoNewYork_WhyAreYouGoingtoNewYork_2023_CI.jpg"
+    "image": "/images/library/sound/ChristopherBear+DanielRossen_WhyAreYouGoingtoNewYork_WhyAreYouGoingtoNewYork_2023_CI.jpg",
+    "color": [
+      72,
+      88,
+      88
+    ]
   },
   {
     "title": "he made",
@@ -424,7 +444,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Tirzah_hemade_trip9love..._2023_CI.jpg"
+    "image": "/images/library/sound/Tirzah_hemade_trip9love..._2023_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Pilentze Pee (Pilentze Sings)",
@@ -433,7 +458,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/BulgarianStateTelevisionFemaleVocalChoir_PiletzePee(PilentzeSings)_LeMystereDesVoixBulgaresVol.1_1975_CI.jpg"
+    "image": "/images/library/sound/BulgarianStateTelevisionFemaleVocalChoir_PiletzePee(PilentzeSings)_LeMystereDesVoixBulgaresVol.1_1975_CI.jpg",
+    "color": [
+      184,
+      168,
+      152
+    ]
   },
   {
     "title": "Fire and Light",
@@ -442,7 +472,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Actress_FireandLight_Karma&Desire_2020_CI.jpg"
+    "image": "/images/library/sound/Actress_FireandLight_Karma&Desire_2020_CI.jpg",
+    "color": [
+      152,
+      152,
+      152
+    ]
   },
   {
     "title": "Burn",
@@ -451,7 +486,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/BlueEyedSoul_Burn_YouAin'tNoWeight_1980_CI.jpg"
+    "image": "/images/library/sound/BlueEyedSoul_Burn_YouAin'tNoWeight_1980_CI.jpg",
+    "color": [
+      8,
+      120,
+      216
+    ]
   },
   {
     "title": "not what loving is",
@@ -460,7 +500,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/VanessaAmara_notwhatlovingis_caféLIFE_2025_CI.jpg"
+    "image": "/images/library/sound/VanessaAmara_notwhatlovingis_caféLIFE_2025_CI.jpg",
+    "color": [
+      184,
+      168,
+      152
+    ]
   },
   {
     "title": "Purified by the Fire",
@@ -469,7 +514,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/YvesTumor_PurifiedBytheFire_PraiseALordWhoChewsButWhichDoesNotConsume(OrSimply,HotBetweenWorlds)_2023_CI.jpg"
+    "image": "/images/library/sound/YvesTumor_PurifiedBytheFire_PraiseALordWhoChewsButWhichDoesNotConsume(OrSimply,HotBetweenWorlds)_2023_CI.jpg",
+    "color": [
+      168,
+      168,
+      152
+    ]
   },
   {
     "title": "How Do You Let the Love Into the Heart That Isn't Split Wide Open",

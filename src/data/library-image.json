@@ -7436,7 +7436,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/TerryAdkins_DivineMute_1998_ME.jpg"
+    "image": "/images/library/image/TerryAdkins_DivineMute_1998_ME.jpg",
+    "color": [
+      184,
+      184,
+      184
+    ]
   },
   {
     "title": "Water Composition III",
@@ -7445,7 +7450,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/SengaNengudi_WaterCompositionIII_1970_2018_ME.jpg"
+    "image": "/images/library/image/SengaNengudi_WaterCompositionIII_1970_2018_ME.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Water Composition (Green)",
@@ -7463,7 +7473,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/SamGilliam_10_27_69_2000_ME.jpg"
+    "image": "/images/library/image/SamGilliam_10_27_69_2000_ME.jpg",
+    "color": [
+      248,
+      232,
+      232
+    ]
   },
   {
     "title": "6th One",
@@ -7472,7 +7487,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RonGorchov_6thOne_2006_ME.jpg"
+    "image": "/images/library/image/RonGorchov_6thOne_2006_ME.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Spiral Jetty",
@@ -7481,7 +7501,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RobertSmithson_SpiralJetty_1970_ME.webp"
+    "image": "/images/library/image/RobertSmithson_SpiralJetty_1970_ME.webp",
+    "color": [
+      104,
+      40,
+      56
+    ]
   },
   {
     "title": "Who's Afraid of Red, Yellow & Blue",
@@ -7490,7 +7515,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RobertIrwin_Who'sAfraidofRed,Yellow&Blue_2006-07_ME.webp"
+    "image": "/images/library/image/RobertIrwin_Who'sAfraidofRed,Yellow&Blue_2006-07_ME.webp",
+    "color": [
+      216,
+      200,
+      184
+    ]
   },
   {
     "title": "Faust",
@@ -7499,7 +7529,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RobertIrwin_Faust_2015_ME.png"
+    "image": "/images/library/image/RobertIrwin_Faust_2015_ME.png",
+    "color": [
+      72,
+      56,
+      40
+    ]
   },
   {
     "title": "Excursus: Homage to the Square^3",
@@ -7508,7 +7543,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/RobertIrwin_Excursus:HomagetotheSquare^3_1998_2015_ME.png"
+    "image": "/images/library/image/RobertIrwin_Excursus:HomagetotheSquare^3_1998_2015_ME.png",
+    "color": [
+      152,
+      168,
+      216
+    ]
   },
   {
     "title": "Untitled",
@@ -7531,7 +7571,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/PaulThek_TechnologicalReliquaries_1966_ME.jpg"
+    "image": "/images/library/image/PaulThek_TechnologicalReliquaries_1966_ME.jpg",
+    "color": [
+      136,
+      136,
+      136
+    ]
   },
   {
     "title": "Won - By a Nose",
@@ -7540,7 +7585,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/MaryLovelaceO'Neal_Won-ByaNose_2021-23_ME.jpg"
+    "image": "/images/library/image/MaryLovelaceO'Neal_Won-ByaNose_2021-23_ME.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Blue Whale a.k.a. #12",

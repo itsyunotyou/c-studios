@@ -2672,7 +2672,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "text",
-    "image": "/images/library/text/WalterCampbellJonathanGlazer_UnderTheSkin_2008_YK.jpg"
+    "image": "/images/library/text/WalterCampbellJonathanGlazer_UnderTheSkin_2008_YK.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Ai-tachi Kemono-tachi Kami-tachi",

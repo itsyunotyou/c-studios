@@ -7296,7 +7296,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/NickKnight_CourrègesEdge_1995_CI.jpg"
+    "image": "/images/library/image/NickKnight_CourrègesEdge_1995_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "1 m3 light",
@@ -7305,7 +7310,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OlafurEliasson_1m3light_1995_CI_1.jpg"
+    "image": "/images/library/image/OlafurEliasson_1m3light_1995_CI_1.jpg",
+    "color": [
+      72,
+      88,
+      88
+    ]
   },
   {
     "title": "2 m3 light",
@@ -7314,7 +7324,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/OlafurEliasson_1m3light_1995_CI_2.jpg"
+    "image": "/images/library/image/OlafurEliasson_1m3light_1995_CI_2.jpg",
+    "color": [
+      40,
+      24,
+      8
+    ]
   },
   {
     "title": "Miles Davis",
@@ -7323,7 +7338,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/ShigeruUchiyama_MilesDavis_1986_CI.jpg"
+    "image": "/images/library/image/ShigeruUchiyama_MilesDavis_1986_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "All That Jazz (Poster)",
@@ -7332,7 +7352,12 @@
     "added": "26/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "image",
-    "image": "/images/library/image/StephenFrankfurt+PhilipGips_AllThatJazz(Poster)_1979_CI.jpg"
+    "image": "/images/library/image/StephenFrankfurt+PhilipGips_AllThatJazz(Poster)_1979_CI.jpg",
+    "color": [
+      168,
+      168,
+      168
+    ]
   },
   {
     "title": "Charlemagne 2: Piltzer",
@@ -7341,7 +7366,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/PaulSharits_Charlemagne2:Piltzer_2002_ME.jpg"
+    "image": "/images/library/image/PaulSharits_Charlemagne2:Piltzer_2002_ME.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Frozen Film Frame",
@@ -7350,7 +7380,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/PaulSharits_FrozenFilmFrame_ca.1966-77_ME.webp"
+    "image": "/images/library/image/PaulSharits_FrozenFilmFrame_ca.1966-77_ME.webp",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "So much intellectual work to remain wrong",
@@ -7359,7 +7394,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/WalterPrice_Somuchintellectualworktoremainwrong_2020_ME.webp"
+    "image": "/images/library/image/WalterPrice_Somuchintellectualworktoremainwrong_2020_ME.webp",
+    "color": [
+      168,
+      200,
+      120
+    ]
   },
   {
     "title": "The Lightning Field",
@@ -7368,7 +7408,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/WalterDeMaria_TheLightningField_1977_ME.webp"
+    "image": "/images/library/image/WalterDeMaria_TheLightningField_1977_ME.webp",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Veleuro",
@@ -7377,7 +7422,12 @@
     "added": "26/05/2026",
     "by": "Maggie Ewert",
     "category": "image",
-    "image": "/images/library/image/TomLloyd_Veleuro_1968_ME.png"
+    "image": "/images/library/image/TomLloyd_Veleuro_1968_ME.png",
+    "color": [
+      136,
+      136,
+      136
+    ]
   },
   {
     "title": "Divine Mute",

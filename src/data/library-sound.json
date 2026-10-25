@@ -6324,7 +6324,12 @@
     "added": "16/08/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "sound",
-    "image": "/images/library/sound/Mahmoud Ahmed_Ere Mela Mela_2011_JCB.jpg"
+    "image": "/images/library/sound/Mahmoud Ahmed_Ere Mela Mela_2011_JCB.jpg",
+    "color": [
+      136,
+      248,
+      232
+    ]
   },
   {
     "title": "2012-2016",
@@ -6333,7 +6338,12 @@
     "added": "16/08/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "sound",
-    "image": "/images/library/sound/Mija Milovic_2012-2016_2020_JCB.jpg"
+    "image": "/images/library/sound/Mija Milovic_2012-2016_2020_JCB.jpg",
+    "color": [
+      120,
+      88,
+      56
+    ]
   },
   {
     "title": "Broken Re/Broken",
@@ -6342,7 +6352,12 @@
     "added": "16/08/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "sound",
-    "image": "/images/library/sound/Milan Knizak_Broken Re_Broken_2014_JCB.jpg"
+    "image": "/images/library/sound/Milan Knizak_Broken Re_Broken_2014_JCB.jpg",
+    "color": [
+      216,
+      216,
+      200
+    ]
   },
   {
     "title": "Ich mag das",

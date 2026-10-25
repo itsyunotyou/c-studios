@@ -1004,7 +1004,12 @@
     "added": "11/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI.png"
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Wey U",
@@ -4463,7 +4468,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/LilDude_Magic_Magic_2018_AGC.jpg"
+    "image": "/images/library/sound/LilDude_Magic_Magic_2018_AGC.jpg",
+    "color": [
+      40,
+      40,
+      24
+    ]
   },
   {
     "title": "Vienna",
@@ -4472,7 +4482,12 @@
     "added": "20/05/2026",
     "by": "Allen-Golder Carpenter",
     "category": "sound",
-    "image": "/images/library/sound/sojourn_Vienna_Vienna_2025_AGC.png"
+    "image": "/images/library/sound/sojourn_Vienna_Vienna_2025_AGC.png",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "a rose blooms in chaos",
@@ -4481,7 +4496,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Davishmar_arosebloomsinchaos_arosebloomsinchaos_2021_CI.jpg"
+    "image": "/images/library/sound/Davishmar_arosebloomsinchaos_arosebloomsinchaos_2021_CI.jpg",
+    "color": [
+      24,
+      24,
+      8
+    ]
   },
   {
     "title": "Dusk",
@@ -4490,7 +4510,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/CobySey_Dusk_Dusk_2026_CI.jpg"
+    "image": "/images/library/sound/CobySey_Dusk_Dusk_2026_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Could be us",
@@ -4499,7 +4524,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Whitearmor_Couldbeus_IntheAbyss:MusicforWeddings_2022_CI.jpg"
+    "image": "/images/library/sound/Whitearmor_Couldbeus_IntheAbyss:MusicforWeddings_2022_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "retire (final)",
@@ -4508,7 +4538,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Alvedon_retire(final)_hurryupmixtape_2021_CI.jpg"
+    "image": "/images/library/sound/Alvedon_retire(final)_hurryupmixtape_2021_CI.jpg",
+    "color": [
+      120,
+      120,
+      120
+    ]
   },
   {
     "title": "get 2 kno",
@@ -4531,7 +4566,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Niontay+LeradoKhalil_3am@Tony's-feat.LeradoKhalil_SouljaHateRepellant_2025_CI.jpg"
+    "image": "/images/library/sound/Niontay+LeradoKhalil_3am@Tony's-feat.LeradoKhalil_SouljaHateRepellant_2025_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "LYRICZ",
@@ -4540,7 +4580,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI.png"
+    "image": "/images/library/sound/Thirteendegrees_LYRICZ_LYRICZ_2026_CI.png",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Open",
@@ -4549,7 +4594,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/jamesK+YvesTumor_Open_036_2021_CI.jpg"
+    "image": "/images/library/sound/jamesK+YvesTumor_Open_036_2021_CI.jpg",
+    "color": [
+      120,
+      104,
+      88
+    ]
   },
   {
     "title": "95",
@@ -4558,7 +4608,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ParkerLondon_95_95_2025_CI.png"
+    "image": "/images/library/sound/ParkerLondon_95_95_2025_CI.png",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Out of the Past",
@@ -4567,7 +4622,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Romance_OutofthePast_LoveIsColderThanDeath_2025_CI.jpg"
+    "image": "/images/library/sound/Romance_OutofthePast_LoveIsColderThanDeath_2025_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Love in Lungs",
@@ -4576,7 +4636,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Ouri_LoveinLungs_Crusts(OriginalSoundtrack)_2026_CI.jpg"
+    "image": "/images/library/sound/Ouri_LoveinLungs_Crusts(OriginalSoundtrack)_2026_CI.jpg",
+    "color": [
+      216,
+      168,
+      8
+    ]
   },
   {
     "title": "Down with the Clique",
@@ -4585,7 +4650,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Solange_DownWiththeClique_WhenIGetHome_2019_CI.webp"
+    "image": "/images/library/sound/Solange_DownWiththeClique_WhenIGetHome_2019_CI.webp",
+    "color": [
+      40,
+      56,
+      72
+    ]
   },
   {
     "title": "I Know Now (2003)",
@@ -4594,7 +4664,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Ojerime_IKnowNow(2003)_IKnowNow(2003)_2018_CI.jpg"
+    "image": "/images/library/sound/Ojerime_IKnowNow(2003)_IKnowNow(2003)_2018_CI.jpg",
+    "color": [
+      8,
+      24,
+      24
+    ]
   },
   {
     "title": "El Camino Real",
@@ -4603,7 +4678,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/WilliamBasinski_ElCaminoReal_ElCaminoReal_2007_CI.jpg"
+    "image": "/images/library/sound/WilliamBasinski_ElCaminoReal_ElCaminoReal_2007_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Veins",
@@ -4612,7 +4692,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Godflesh_Veins_Godflesh_1988_CI.jpg"
+    "image": "/images/library/sound/Godflesh_Veins_Godflesh_1988_CI.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Camp Orchestra",
@@ -4621,7 +4706,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ShowMetheBody_CampOrchestra_DogWhistle_2019_CI.jpg"
+    "image": "/images/library/sound/ShowMetheBody_CampOrchestra_DogWhistle_2019_CI.jpg",
+    "color": [
+      40,
+      40,
+      24
+    ]
   },
   {
     "title": "Pretender",
@@ -4630,7 +4720,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/BlackMarble_Pretender_ADifferentArangement_2012_CI.jpg"
+    "image": "/images/library/sound/BlackMarble_Pretender_ADifferentArangement_2012_CI.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "JACKBOYS",
@@ -4639,7 +4734,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/JACKBOYS_JACKBOYS_JACKBOYS_2019_CI.jpg"
+    "image": "/images/library/sound/JACKBOYS_JACKBOYS_JACKBOYS_2019_CI.jpg",
+    "color": [
+      40,
+      40,
+      8
+    ]
   },
   {
     "title": "Highway",
@@ -4648,7 +4748,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/Chinyé_Highway_Highway_2021_CI.png"
+    "image": "/images/library/sound/Chinyé_Highway_Highway_2021_CI.png",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Jetlag (feat. Chief Keef)",
@@ -4657,7 +4762,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/MattOX+ChiefKeef_Jetlag(feat.ChiefKeef)_OX_2018_CI.jpg"
+    "image": "/images/library/sound/MattOX+ChiefKeef_Jetlag(feat.ChiefKeef)_OX_2018_CI.jpg",
+    "color": [
+      24,
+      24,
+      24
+    ]
   },
   {
     "title": "Just for Now",
@@ -4666,7 +4776,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/ImogenHeap_JustForNow_SpeakforYourself(DeluxeVersion)_2005_CI.jpg"
+    "image": "/images/library/sound/ImogenHeap_JustForNow_SpeakforYourself(DeluxeVersion)_2005_CI.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Welcome to L.A.",
@@ -4675,7 +4790,12 @@
     "added": "20/05/2026",
     "by": "Cynthia Igbokwe",
     "category": "sound",
-    "image": "/images/library/sound/TLFTrio_WelcometoL.A._Desire_2025_CI.jpg"
+    "image": "/images/library/sound/TLFTrio_WelcometoL.A._Desire_2025_CI.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Improvisation One",

@@ -10246,7 +10246,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Ousmane Sow_Ousmane Sow_2006_JCB.jpg"
+    "image": "/images/library/image/Ousmane Sow_Ousmane Sow_2006_JCB.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "The Longest Sleep",
@@ -10255,7 +10260,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Rafik Greiss_The Longest Sleep_2025_JCB.jpg"
+    "image": "/images/library/image/Rafik Greiss_The Longest Sleep_2025_JCB.jpg",
+    "color": [
+      8,
+      24,
+      40
+    ]
   },
   {
     "title": "Anchaing et Héva",
@@ -10264,7 +10274,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Raphael Barontini_Anchaing et Héva_2023_JCB.jpg"
+    "image": "/images/library/image/Raphael Barontini_Anchaing et Héva_2023_JCB.jpg",
+    "color": [
+      232,
+      232,
+      232
+    ]
   },
   {
     "title": "Concert for Anarchy",
@@ -10273,7 +10288,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Rebecca Horn_Concert for Anarchy_1990_JCB.jpg"
+    "image": "/images/library/image/Rebecca Horn_Concert for Anarchy_1990_JCB.jpg",
+    "color": [
+      184,
+      184,
+      200
+    ]
   },
   {
     "title": "Blur 8",
@@ -10282,7 +10302,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Sandra Brewster_Blur 8_2017_JCB.jpg"
+    "image": "/images/library/image/Sandra Brewster_Blur 8_2017_JCB.jpg",
+    "color": [
+      248,
+      248,
+      248
+    ]
   },
   {
     "title": "Shaping Spirits",
@@ -10291,7 +10316,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Seyni Awa Camara_Shaping Spirits_2024_JCB.jpg"
+    "image": "/images/library/image/Seyni Awa Camara_Shaping Spirits_2024_JCB.jpg",
+    "color": [
+      200,
+      216,
+      232
+    ]
   },
   {
     "title": "Noshad Bee",
@@ -10300,7 +10330,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Spandita Malik_Noshad Bee_2023_JCB.jpg"
+    "image": "/images/library/image/Spandita Malik_Noshad Bee_2023_JCB.jpg",
+    "color": [
+      200,
+      200,
+      200
+    ]
   },
   {
     "title": "African Still Life 3 - A Tribute to Patric McCoy and Marva Jolly",
@@ -10309,7 +10344,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Theaster Gates_African Still Life 3 - A Tribute to Patric McCoy and Marva Jolly_2025_JCB.jpg"
+    "image": "/images/library/image/Theaster Gates_African Still Life 3 - A Tribute to Patric McCoy and Marva Jolly_2025_JCB.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Untitled",
@@ -10318,7 +10358,12 @@
     "added": "10/09/2026",
     "by": "Jules Carlito Beurrier-Loncan",
     "category": "image",
-    "image": "/images/library/image/Trisha Donnelly_Untitled_2019_JCB.jpg"
+    "image": "/images/library/image/Trisha Donnelly_Untitled_2019_JCB.jpg",
+    "color": [
+      216,
+      216,
+      216
+    ]
   },
   {
     "title": "The New Note",

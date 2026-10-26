@@ -9279,7 +9279,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "image",
-    "image": "/images/library/image/KrzysztofKieślowski_DoubleLife_Of_Veronique_1991_YK.jpg"
+    "image": "/images/library/image/KrzysztofKieślowski_DoubleLife_Of_Veronique_1991_YK.jpg",
+    "color": [
+      8,
+      8,
+      8
+    ]
   },
   {
     "title": "Dogra Magra Kadogawa Bunko Cover",

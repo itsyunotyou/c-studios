@@ -2672,7 +2672,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "text",
-    "image": "/images/library/text/AlanWarner_MorvernCallar_1995_YK.jpg"
+    "image": "/images/library/text/AlanWarner_MorvernCallar_1995_YK.jpg",
+    "color": [
+      40,
+      40,
+      40
+    ]
   },
   {
     "title": "Ai-tachi Kemono-tachi Kami-tachi",

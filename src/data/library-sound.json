@@ -5926,7 +5926,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "sound",
-    "image": "/images/library/sound/HyunA_BubblePop_2011_YK.png"
+    "image": "/images/library/sound/HyunA_BubblePop_2011_YK.png",
+    "color": [
+      24,
+      8,
+      8
+    ]
   },
   {
     "title": "Tadashii Machi",
@@ -5935,7 +5940,12 @@
     "added": "",
     "by": "Yu Kakinoki",
     "category": "sound",
-    "image": "/images/library/sound/SheenaRingo_TadashiiMachi_1999_YK.jpg"
+    "image": "/images/library/sound/SheenaRingo_TadashiiMachi_1999_YK.jpg",
+    "color": [
+      40,
+      24,
+      24
+    ]
   },
   {
     "title": "Nurse",
